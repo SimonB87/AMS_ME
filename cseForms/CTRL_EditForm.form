@@ -1,0 +1,1217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<Form>
+  <Name value="CTRL_EditForm" />
+  <Caption value="Detail přehodnocení povolení" />
+  <Content>
+    <Panel>
+      <Name value="CTRL_EditFormPnl_parent" />
+      <Orientation value="Horizontal" />
+      <Panel.Height value="#" />
+      <Panel.Width value="*" />
+      <Children>
+        <Panel>
+          <Name value="CTRL_EditFormPnl" />
+          <Orientation value="Vertical" />
+          <Panel.Height value="#" />
+          <Panel.Width value="50%" />
+          <Children>
+            <Panel>
+              <Name value="pnl_Breadcrumbs" />
+              <Orientation value="Horizontal" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <Children>
+                <Breadcrumbs identity="Breadcrumbs.4d3eeadca3c54f1caa1d677db7e07acb">
+                  <Name value="breadcrumbs" />
+                  <controller reference="+GlobalApiObjects.breadcrumbsCtr" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="*" />
+                </Breadcrumbs>
+              </Children>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-panel" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+                <CssClassConditional>
+                  <ClassName value="{theme}-breadcrumbs" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </Panel>
+            <Panel>
+              <Name value="edb_TIN_parent" />
+              <Orientation value="Horizontal" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <Children>
+                <TextBox>
+                  <Name value="edb_TIN" />
+                  <Caption value="EORI" />
+                  <CaptionPosition value="Top" />
+                  <IsEnabled value="False" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="33%" />
+                  <Bindings>
+                    <Binding SourceProperty="Data" Expression="" />
+                  </Bindings>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-textbox" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </TextBox>
+                <TextBox>
+                  <Name value="edb_IssuingCountry" />
+                  <Caption value="Evid." />
+                  <CaptionPosition value="Top" />
+                  <IsEnabled value="False" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="33%" />
+                  <Bindings>
+                    <Binding SourceProperty="Data" Expression="" />
+                  </Bindings>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-textbox" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </TextBox>
+                <TextBox>
+                  <Name value="edb_AMSID" />
+                  <Caption value="číslo povolení" />
+                  <CaptionPosition value="Top" />
+                  <IsEnabled value="False" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="33%" />
+                  <Bindings>
+                    <Binding SourceProperty="Data" Expression="" />
+                  </Bindings>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-textbox" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </TextBox>
+              </Children>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-panel" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </Panel>
+            <Panel>
+              <Name value="edb_ResponsibleCustomsOffice_parent" />
+              <Orientation value="Horizontal" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <Children>
+                <TextBox>
+                  <Name value="edb_ResponsibleCustomsOffice" />
+                  <Caption value="Zodpovědný CÚ" />
+                  <CaptionPosition value="Top" />
+                  <IsEnabled value="False" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="33%" />
+                  <Bindings>
+                    <Binding SourceProperty="Data" Expression="" />
+                  </Bindings>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-textbox" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </TextBox>
+                <ReferenceCombo>
+                  <Name value="cbb_AuthorizationType" />
+                  <Caption value="Typ povolení" />
+                  <CaptionPosition value="Top" />
+                  <DisplayMember value="Description" />
+                  <IsEnabled value="False" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="33%" />
+                  <ReferenceList reference="+GlobalApiObjects.prototypeCodelist" />
+                  <Bindings>
+                    <Binding SourceProperty="Data" Expression="reference1" />
+                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="reference1.isRequired()" />
+                  </Bindings>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-referencecombo" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </ReferenceCombo>
+                <DatePicker>
+                  <Name value="dtp_ControlDateTime" />
+                  <Caption value="Datum přehodnocení" />
+                  <CaptionPosition value="Top" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="33%" />
+                  <Bindings>
+                    <Binding SourceProperty="Data" Expression="" />
+                  </Bindings>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-datepicker" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </DatePicker>
+              </Children>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-panel" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </Panel>
+            <Panel>
+              <Name value="dtp_SuggestDate_parent" />
+              <Orientation value="Horizontal" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <Children>
+                <DatePicker>
+                  <Name value="dtp_SuggestDate" />
+                  <Caption value="Nejzazší datum příštího přehodnocení" />
+                  <CaptionPosition value="Top" />
+                  <IsEnabled value="False" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="33%" />
+                  <Bindings>
+                    <Binding SourceProperty="Data" Expression="" />
+                  </Bindings>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-datepicker" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </DatePicker>
+                <DatePicker>
+                  <Name value="dtp_SuggestDateByUser" />
+                  <Caption value="Změna lhůty příštího přehodnocení" />
+                  <CaptionPosition value="Top" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="33%" />
+                  <Bindings>
+                    <Binding SourceProperty="Data" Expression="" />
+                  </Bindings>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-datepicker" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </DatePicker>
+                <DatePicker>
+                  <Name value="dtp_EvidenceDate" />
+                  <Caption value="Datum zápisu do aplikace" />
+                  <CaptionPosition value="Top" />
+                  <IsEnabled value="False" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="33%" />
+                  <Bindings>
+                    <Binding SourceProperty="Data" Expression="" />
+                  </Bindings>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-datepicker" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </DatePicker>
+              </Children>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-panel" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </Panel>
+            <Panel>
+              <Name value="edb_ControledByUser_parent" />
+              <Orientation value="Horizontal" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <Children>
+                <TextBox>
+                  <Name value="edb_ControledByUser" />
+                  <Caption value="Osobní číslo uživatele" />
+                  <CaptionPosition value="Top" />
+                  <IsEnabled value="False" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="33%" />
+                  <Bindings>
+                    <Binding SourceProperty="Data" Expression="" />
+                  </Bindings>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-textbox" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </TextBox>
+                <TextBox>
+                  <Name value="edb_ControledByCustomsOffice" />
+                  <Caption value="Celní úřad zapisující" />
+                  <CaptionPosition value="Top" />
+                  <IsEnabled value="False" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="33%" />
+                  <Bindings>
+                    <Binding SourceProperty="Data" Expression="" />
+                  </Bindings>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-textbox" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </TextBox>
+                <TextBox>
+                  <Name value="edb_ControlReferenceNumber" />
+                  <Caption value="Číslo jednací kontroly" />
+                  <CaptionPosition value="Top" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="33%" />
+                  <Bindings>
+                    <Binding SourceProperty="Data" Expression="" />
+                  </Bindings>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-textbox" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </TextBox>
+              </Children>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-panel" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </Panel>
+            <Panel>
+              <Name value="cbb_Result_parent" />
+              <Orientation value="Horizontal" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <Children>
+                <ReferenceCombo>
+                  <Name value="cbb_Result" />
+                  <Caption value="Výsledek" />
+                  <CaptionPosition value="Top" />
+                  <DisplayMember value="Description" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="33%" />
+                  <ReferenceList reference="+GlobalApiObjects.prototypeCodelist" />
+                  <Bindings>
+                    <Binding SourceProperty="Data" Expression="reference2" />
+                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="reference2.isRequired()" />
+                  </Bindings>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-referencecombo" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </ReferenceCombo>
+                <TextBox>
+                  <Name value="edb_ControlDescription" />
+                  <Caption value="Popis" />
+                  <CaptionPosition value="Top" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="33%" />
+                  <Bindings>
+                    <Binding SourceProperty="Data" Expression="" />
+                  </Bindings>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-textbox" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </TextBox>
+              </Children>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-panel" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </Panel>
+            <Panel>
+              <Name value="btn_History_parent" />
+              <Orientation value="Horizontal" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <Children>
+                <Button>
+                  <Name value="btn_History" />
+                  <Caption value="Historie" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="150px" />
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-button" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </Button>
+                <Button>
+                  <Name value="btn_ShowFile" />
+                  <Caption value="Zobrazení souboru" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="150px" />
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-button" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </Button>
+              </Children>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-panel" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </Panel>
+            <DataTable>
+              <Name value="tbl_File" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <Columns>
+                <DataColumn>
+                  <Name value="edb_FileGUIDCol" />
+                  <Caption value="edb_FileGUID" />
+                  <Content>
+                    <TextBox>
+                      <Name value="edb_FileGUID" />
+                      <CaptionPosition value="Hide" />
+                      <IsEnabled value="False" />
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-textbox" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </TextBox>
+                  </Content>
+                  <HeaderCssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-datacolumn" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </HeaderCssClass>
+                </DataColumn>
+                <DataColumn>
+                  <Name value="edb_FileNameCol" />
+                  <Caption value="Název souboru" />
+                  <Content>
+                    <TextBox>
+                      <Name value="edb_FileName" />
+                      <CaptionPosition value="Hide" />
+                      <IsEnabled value="False" />
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-textbox" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </TextBox>
+                  </Content>
+                  <HeaderCssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-datacolumn" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </HeaderCssClass>
+                </DataColumn>
+                <DataColumn>
+                  <Name value="edb_FileTypeCol" />
+                  <Caption value="Typ" />
+                  <Content>
+                    <TextBox>
+                      <Name value="edb_FileType" />
+                      <CaptionPosition value="Hide" />
+                      <IsEnabled value="False" />
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-textbox" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </TextBox>
+                  </Content>
+                  <HeaderCssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-datacolumn" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </HeaderCssClass>
+                </DataColumn>
+                <DataColumn>
+                  <Name value="edb_FileContentCol" />
+                  <Caption value="edb_FileContent" />
+                  <Content>
+                    <TextBox>
+                      <Name value="edb_FileContent" />
+                      <CaptionPosition value="Hide" />
+                      <IsEnabled value="False" />
+                      <Bindings>
+                        <Binding SourceProperty="Data" Expression="" />
+                      </Bindings>
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-textbox" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </TextBox>
+                  </Content>
+                  <HeaderCssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-datacolumn" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </HeaderCssClass>
+                </DataColumn>
+                <DataColumn>
+                  <Name value="edb_FileSizeCol" />
+                  <Caption value="Velikost" />
+                  <Content>
+                    <TextBox>
+                      <Name value="edb_FileSize" />
+                      <CaptionPosition value="Hide" />
+                      <IsEnabled value="False" />
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-textbox" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </TextBox>
+                  </Content>
+                  <HeaderCssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-datacolumn" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </HeaderCssClass>
+                </DataColumn>
+              </Columns>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-datatable" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </DataTable>
+            <Panel>
+              <Name value="edb_ControlGUID_parent" />
+              <Orientation value="Horizontal" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <Children>
+                <TextBox>
+                  <Name value="edb_ControlGUID" />
+                  <Caption value="edb_ControlGUID" />
+                  <CaptionPosition value="Top" />
+                  <IsEnabled value="False" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="33%" />
+                  <Bindings>
+                    <Binding SourceProperty="Data" Expression="" />
+                  </Bindings>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-textbox" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </TextBox>
+                <TextBox>
+                  <Name value="edb_AMSGUID" />
+                  <Caption value="edb_AMSGUID" />
+                  <CaptionPosition value="Top" />
+                  <IsEnabled value="False" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="33%" />
+                  <Bindings>
+                    <Binding SourceProperty="Data" Expression="" />
+                  </Bindings>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-textbox" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </TextBox>
+              </Children>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-panel" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </Panel>
+            <Panel>
+              <Name value="pnl_LowerButtons" />
+              <Orientation value="Horizontal" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <Children>
+                <Button>
+                  <Name value="btn_OK" />
+                  <Caption value="OK" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="150px" />
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-button" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </Button>
+                <Button>
+                  <Name value="btn_Close" />
+                  <Caption value="Zavřít" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="150px" />
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-button" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </Button>
+                <Button>
+                  <Name value="btn_Validate" />
+                  <Caption value="Validace" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="150px" />
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-button" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </Button>
+                <Button>
+                  <Name value="btn_RunControl" />
+                  <Caption value="Provést přehodnocení" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="150px" />
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-button" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </Button>
+              </Children>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-panel" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </Panel>
+            <CollapsibleGroupBox identity="collapsibleGroupBox.cfca4faa9e574885bad67cbe322167a7">
+              <Name value="grp_Audit" />
+              <caption value="Audity subjektu" />
+              <collapsedIconClass value="fa fa-plus-square-o" />
+              <nonCollapsedIconClass value="fa fa-minus-square-o" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <Content>
+                <Panel>
+                  <Name value="grp_AuditPnl" />
+                  <Orientation value="Vertical" />
+                  <Children>
+                    <DataTable>
+                      <Name value="tbl_AuditEvent" />
+                      <Panel.Height value="#" />
+                      <Panel.Width value="*" />
+                      <Columns>
+                        <DataColumn>
+                          <Name value="cbb_Result_AuditCol" />
+                          <Caption value="Výsledek" />
+                          <Content>
+                            <ReferenceCombo>
+                              <Name value="cbb_Result_Audit" />
+                              <CaptionPosition value="Hide" />
+                              <DisplayMember value="Description" />
+                              <IsEnabled value="False" />
+                              <ReferenceList reference="+GlobalApiObjects.prototypeCodelist" />
+                              <Bindings>
+                                <Binding SourceProperty="Data" Expression="form.reference3" />
+                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.reference3.isRequired()" />
+                                <Binding SourceProperty="Caption" Expression="form.reference3.caption()" />
+                              </Bindings>
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-referencecombo" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </ReferenceCombo>
+                          </Content>
+                          <HeaderCssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-datacolumn" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                          </HeaderCssClass>
+                        </DataColumn>
+                        <DataColumn>
+                          <Name value="edb_AuditNumberCol" />
+                          <Caption value="Číslo kontroly" />
+                          <Content>
+                            <TextBox>
+                              <Name value="edb_AuditNumber" />
+                              <CaptionPosition value="Hide" />
+                              <IsEnabled value="False" />
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-textbox" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </TextBox>
+                          </Content>
+                          <HeaderCssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-datacolumn" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                          </HeaderCssClass>
+                        </DataColumn>
+                        <DataColumn>
+                          <Name value="edb_AuditProtocolNumberCol" />
+                          <Caption value="Číslo protokolu" />
+                          <Content>
+                            <TextBox>
+                              <Name value="edb_AuditProtocolNumber" />
+                              <CaptionPosition value="Hide" />
+                              <IsEnabled value="False" />
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-textbox" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </TextBox>
+                          </Content>
+                          <HeaderCssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-datacolumn" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                          </HeaderCssClass>
+                        </DataColumn>
+                        <DataColumn>
+                          <Name value="edb_ControledByUser_AuditCol" />
+                          <Caption value="Pracovník provádějící audit" />
+                          <Content>
+                            <TextBox>
+                              <Name value="edb_ControledByUser_Audit" />
+                              <CaptionPosition value="Hide" />
+                              <IsEnabled value="False" />
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-textbox" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </TextBox>
+                          </Content>
+                          <HeaderCssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-datacolumn" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                          </HeaderCssClass>
+                        </DataColumn>
+                      </Columns>
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-datatable" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </DataTable>
+                    <PagingRepeaterCtrl identity="PagingRepeaterCtrl.280e5bd891d54eda9e7c2bfaaf9e4af4">
+                      <Name value="rpt_AuditEventCtr" />
+                      <AllowAdd value="True" />
+                      <AllowRemove value="True" />
+                      <Panel.Height value="#" />
+                      <Panel.Width value="*" />
+                      <Bindings>
+                        <Binding SourceProperty="Data" Expression="collection1" />
+                        <Binding SourceProperty="Index" Expression="index_collection1" />
+                      </Bindings>
+                    </PagingRepeaterCtrl>
+                    <PagingRepeater identity="pagingRepeater.36d02d015fb0460b9372e4a46959c4bf">
+                      <Name value="rpt_AuditEvent" />
+                      <Panel.Height value="#" />
+                      <Panel.Width value="*" />
+                      <Content>
+                        <Panel>
+                          <Name value="rpt_AuditEventPnl" />
+                          <Orientation value="Vertical" />
+                          <Children>
+                            <Panel>
+                              <Name value="btn_ShowFile_Audit_parent" />
+                              <Orientation value="Horizontal" />
+                              <Panel.Height value="#" />
+                              <Panel.Width value="*" />
+                              <Children>
+                                <Button>
+                                  <Name value="btn_ShowFile_Audit" />
+                                  <Caption value="Zobrazení souboru" />
+                                  <Panel.Height value="#" />
+                                  <Panel.Width value="150px" />
+                                  <CssClass>
+                                    <CssClassConditional>
+                                      <ClassName value="{theme}-button" />
+                                      <IsThemedStyle value="True" />
+                                    </CssClassConditional>
+                                  </CssClass>
+                                </Button>
+                                <Button>
+                                  <Name value="btn_History_Audit" />
+                                  <Caption value="Historie" />
+                                  <Panel.Height value="#" />
+                                  <Panel.Width value="150px" />
+                                  <CssClass>
+                                    <CssClassConditional>
+                                      <ClassName value="{theme}-button" />
+                                      <IsThemedStyle value="True" />
+                                    </CssClassConditional>
+                                  </CssClass>
+                                </Button>
+                              </Children>
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-panel" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </Panel>
+                            <DataTable>
+                              <Name value="tbl_AuditFile" />
+                              <Panel.Height value="#" />
+                              <Panel.Width value="*" />
+                              <Bindings>
+                                <Binding SourceProperty="DataItems" Expression="collection2" />
+                              </Bindings>
+                              <Columns>
+                                <DataColumn>
+                                  <Name value="edb_FileGUID_AuditCol" />
+                                  <Caption value="edb_FileGUID_Audit" />
+                                  <Content>
+                                    <TextBox>
+                                      <Name value="edb_FileGUID_Audit" />
+                                      <CaptionPosition value="Hide" />
+                                      <IsEnabled value="False" />
+                                      <Bindings>
+                                        <Binding SourceProperty="Data" Expression="FileGUID" />
+                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="FileGUID.isRequired()" />
+                                        <Binding SourceProperty="Caption" Expression="FileGUID.caption()" />
+                                      </Bindings>
+                                      <CssClass>
+                                        <CssClassConditional>
+                                          <ClassName value="{theme}-textbox" />
+                                          <IsThemedStyle value="True" />
+                                        </CssClassConditional>
+                                      </CssClass>
+                                    </TextBox>
+                                  </Content>
+                                  <HeaderCssClass>
+                                    <CssClassConditional>
+                                      <ClassName value="{theme}-datacolumn" />
+                                      <IsThemedStyle value="True" />
+                                    </CssClassConditional>
+                                  </HeaderCssClass>
+                                </DataColumn>
+                                <DataColumn>
+                                  <Name value="edb_FileName_AuditCol" />
+                                  <Caption value="Název souboru" />
+                                  <Content>
+                                    <TextBox>
+                                      <Name value="edb_FileName_Audit" />
+                                      <CaptionPosition value="Hide" />
+                                      <IsEnabled value="False" />
+                                      <Bindings>
+                                        <Binding SourceProperty="Data" Expression="FileName" />
+                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="FileName.isRequired()" />
+                                        <Binding SourceProperty="Caption" Expression="FileName.caption()" />
+                                      </Bindings>
+                                      <CssClass>
+                                        <CssClassConditional>
+                                          <ClassName value="{theme}-textbox" />
+                                          <IsThemedStyle value="True" />
+                                        </CssClassConditional>
+                                      </CssClass>
+                                    </TextBox>
+                                  </Content>
+                                  <HeaderCssClass>
+                                    <CssClassConditional>
+                                      <ClassName value="{theme}-datacolumn" />
+                                      <IsThemedStyle value="True" />
+                                    </CssClassConditional>
+                                  </HeaderCssClass>
+                                </DataColumn>
+                                <DataColumn>
+                                  <Name value="edb_FileType_AuditCol" />
+                                  <Caption value="Typ" />
+                                  <Content>
+                                    <TextBox>
+                                      <Name value="edb_FileType_Audit" />
+                                      <CaptionPosition value="Hide" />
+                                      <IsEnabled value="False" />
+                                      <Bindings>
+                                        <Binding SourceProperty="Data" Expression="FileType" />
+                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="FileType.isRequired()" />
+                                        <Binding SourceProperty="Caption" Expression="FileType.caption()" />
+                                      </Bindings>
+                                      <CssClass>
+                                        <CssClassConditional>
+                                          <ClassName value="{theme}-textbox" />
+                                          <IsThemedStyle value="True" />
+                                        </CssClassConditional>
+                                      </CssClass>
+                                    </TextBox>
+                                  </Content>
+                                  <HeaderCssClass>
+                                    <CssClassConditional>
+                                      <ClassName value="{theme}-datacolumn" />
+                                      <IsThemedStyle value="True" />
+                                    </CssClassConditional>
+                                  </HeaderCssClass>
+                                </DataColumn>
+                                <DataColumn>
+                                  <Name value="edb_FileContent_AuditCol" />
+                                  <Caption value="edb_FileContent_Audit" />
+                                  <Content>
+                                    <TextBox>
+                                      <Name value="edb_FileContent_Audit" />
+                                      <CaptionPosition value="Hide" />
+                                      <IsEnabled value="False" />
+                                      <Bindings>
+                                        <Binding SourceProperty="Data" Expression="FileContent" />
+                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="FileContent.isRequired()" />
+                                        <Binding SourceProperty="Caption" Expression="FileContent.caption()" />
+                                      </Bindings>
+                                      <CssClass>
+                                        <CssClassConditional>
+                                          <ClassName value="{theme}-textbox" />
+                                          <IsThemedStyle value="True" />
+                                        </CssClassConditional>
+                                      </CssClass>
+                                    </TextBox>
+                                  </Content>
+                                  <HeaderCssClass>
+                                    <CssClassConditional>
+                                      <ClassName value="{theme}-datacolumn" />
+                                      <IsThemedStyle value="True" />
+                                    </CssClassConditional>
+                                  </HeaderCssClass>
+                                </DataColumn>
+                                <DataColumn>
+                                  <Name value="edb_FileSize_AuditCol" />
+                                  <Caption value="Velikost" />
+                                  <Content>
+                                    <TextBox>
+                                      <Name value="edb_FileSize_Audit" />
+                                      <CaptionPosition value="Hide" />
+                                      <IsEnabled value="False" />
+                                      <Bindings>
+                                        <Binding SourceProperty="Data" Expression="FileSize" />
+                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="FileSize.isRequired()" />
+                                        <Binding SourceProperty="Caption" Expression="FileSize.caption()" />
+                                      </Bindings>
+                                      <CssClass>
+                                        <CssClassConditional>
+                                          <ClassName value="{theme}-textbox" />
+                                          <IsThemedStyle value="True" />
+                                        </CssClassConditional>
+                                      </CssClass>
+                                    </TextBox>
+                                  </Content>
+                                  <HeaderCssClass>
+                                    <CssClassConditional>
+                                      <ClassName value="{theme}-datacolumn" />
+                                      <IsThemedStyle value="True" />
+                                    </CssClassConditional>
+                                  </HeaderCssClass>
+                                </DataColumn>
+                              </Columns>
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-datatable" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </DataTable>
+                            <TextBox>
+                              <Name value="edb_EventGUID" />
+                              <Caption value="edb_EventGUID" />
+                              <CaptionPosition value="Top" />
+                              <Panel.Height value="#" />
+                              <Panel.Width value="33%" />
+                              <Bindings>
+                                <Binding SourceProperty="Data" Expression="EventGUID" />
+                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="EventGUID.isRequired()" />
+                              </Bindings>
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-textbox" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </TextBox>
+                          </Children>
+                          <CssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-panel" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                          </CssClass>
+                        </Panel>
+                      </Content>
+                      <Bindings>
+                        <Binding SourceProperty="Data" Expression="collection1" />
+                        <Binding SourceProperty="Index" Expression="index_collection1" />
+                      </Bindings>
+                    </PagingRepeater>
+                    <TextBox>
+                      <Name value="edb_AuditGUID" />
+                      <Caption value="edb_AuditGUID" />
+                      <CaptionPosition value="Top" />
+                      <IsEnabled value="False" />
+                      <Panel.Height value="#" />
+                      <Panel.Width value="33%" />
+                      <Bindings>
+                        <Binding SourceProperty="Data" Expression="" />
+                      </Bindings>
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-textbox" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </TextBox>
+                    <Button>
+                      <Name value="btn_DWHReport" />
+                      <Caption value="DWH Report" />
+                      <Panel.Height value="#" />
+                      <Panel.Width value="150px" />
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-button" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </Button>
+                  </Children>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-panel" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </Panel>
+              </Content>
+              <conditionalCssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-collapsiblegroupbox" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </conditionalCssClass>
+            </CollapsibleGroupBox>
+          </Children>
+          <CssClass>
+            <CssClassConditional>
+              <ClassName value="{theme}-panel" />
+              <IsThemedStyle value="True" />
+            </CssClassConditional>
+          </CssClass>
+        </Panel>
+      </Children>
+      <CssClass>
+        <CssClassConditional>
+          <ClassName value="{theme}-panel" />
+          <IsThemedStyle value="True" />
+        </CssClassConditional>
+      </CssClass>
+    </Panel>
+  </Content>
+  <DataContext>
+    <DataContext>
+      <Children>
+        <Reference>
+          <Name value="reference1" />
+          <Caption value="Reference 1" />
+          <Children>
+            <Attribute>
+              <Name value="Key" />
+              <Caption value="Key" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="Description" />
+              <Caption value="Description" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+          </Children>
+        </Reference>
+        <Reference>
+          <Name value="reference2" />
+          <Caption value="Reference 2" />
+          <Children>
+            <Attribute>
+              <Name value="Key" />
+              <Caption value="Key" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="Description" />
+              <Caption value="Description" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+          </Children>
+        </Reference>
+        <Reference>
+          <Name value="reference3" />
+          <Caption value="Reference 3" />
+          <Children>
+            <Attribute>
+              <Name value="Key" />
+              <Caption value="Key" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="Description" />
+              <Caption value="Description" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+          </Children>
+        </Reference>
+        <Collection>
+          <Name value="collection1" />
+          <Caption value="Collection 1" />
+          <Children>
+            <Collection>
+              <Name value="collection2" />
+              <Caption value="collection2" />
+              <Children>
+                <Attribute>
+                  <Name value="FileGUID" />
+                  <Caption value="FileGUID" />
+                  <DeclaredType>
+                    <AttributeType />
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="FileName" />
+                  <Caption value="FileName" />
+                  <DeclaredType>
+                    <AttributeType />
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="FileType" />
+                  <Caption value="FileType" />
+                  <DeclaredType>
+                    <AttributeType />
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="FileContent" />
+                  <Caption value="FileContent" />
+                  <DeclaredType>
+                    <AttributeType />
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="FileSize" />
+                  <Caption value="FileSize" />
+                  <DeclaredType>
+                    <AttributeType />
+                  </DeclaredType>
+                </Attribute>
+              </Children>
+            </Collection>
+            <Attribute>
+              <Name value="EventGUID" />
+              <Caption value="EventGUID" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+          </Children>
+        </Collection>
+        <Attribute>
+          <Name value="index_collection1" />
+          <Caption value="index_collection1" />
+          <DeclaredType>
+            <AttributeType>
+              <BaseType value="Integer" />
+            </AttributeType>
+          </DeclaredType>
+        </Attribute>
+      </Children>
+    </DataContext>
+  </DataContext>
+  <OnCreate>
+    <ActionEvent ReferencedAction="~handler_CTRL_EditForm_OnCreate" />
+  </OnCreate>
+  <Actions>
+    <ActionBlock>
+      <Name value="handler_hyperLink1_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[navigation.main.Master.go()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_CTRL_EditForm_OnCreate" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[var url = packages.main.apiobjects.urlRouter.findFormUrl(navigation.cseForms.CTRL_EditForm.fullName)
+url.updatePageUrl()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+  </Actions>
+</Form>

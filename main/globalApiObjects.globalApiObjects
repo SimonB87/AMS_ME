@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<GlobalApiObjects>
+  <Name value="globalApiObjects" />
+  <ApiObjects>
+    <UrlRouter identity="UrlRouter.69a71809c45249cbb2999d13bb9100c0">
+      <Name value="urlRouter" />
+      <routes>
+        <UrlRouteCfg identity="UrlRouter.69a71809c45249cbb2999d13bb9100c0">
+          <form reference="/(cseForms.b5b300393a7b425eaf69acead7edfe1a)+UiParts.AMS_CodeList" />
+          <masterPage reference="+UiParts.Master" />
+          <url value="CodeList" />
+        </UrlRouteCfg>
+        <UrlRouteCfg identity="UrlRouter.69a71809c45249cbb2999d13bb9100c0">
+          <form reference="/(cseForms.b5b300393a7b425eaf69acead7edfe1a)+UiParts.AMS_History" />
+          <masterPage reference="+UiParts.Master" />
+          <url value="History" />
+        </UrlRouteCfg>
+        <UrlRouteCfg identity="UrlRouter.69a71809c45249cbb2999d13bb9100c0">
+          <form reference="/(cseForms.b5b300393a7b425eaf69acead7edfe1a)+UiParts.Audit_EditForm" />
+          <masterPage reference="+UiParts.Master" />
+          <url value="Audit_Edit" />
+        </UrlRouteCfg>
+        <UrlRouteCfg identity="UrlRouter.69a71809c45249cbb2999d13bb9100c0">
+          <form reference="/(cseForms.b5b300393a7b425eaf69acead7edfe1a)+UiParts.CTRLMulti_EditForm" />
+          <masterPage reference="+UiParts.Master" />
+          <url value="CTRL_MultiEdit" />
+        </UrlRouteCfg>
+        <UrlRouteCfg identity="UrlRouter.69a71809c45249cbb2999d13bb9100c0">
+          <form reference="/(cseForms.b5b300393a7b425eaf69acead7edfe1a)+UiParts.CTRL_EditForm" />
+          <masterPage reference="+UiParts.Master" />
+          <url value="CTRL_Edit" />
+        </UrlRouteCfg>
+        <UrlRouteCfg identity="UrlRouter.69a71809c45249cbb2999d13bb9100c0">
+          <form reference="/(cseForms.b5b300393a7b425eaf69acead7edfe1a)+UiParts.EC_EditForm" />
+          <masterPage reference="+UiParts.Master" />
+          <url value="EC_Edit" />
+        </UrlRouteCfg>
+        <UrlRouteCfg identity="UrlRouter.69a71809c45249cbb2999d13bb9100c0">
+          <form reference="/(cseForms.b5b300393a7b425eaf69acead7edfe1a)+UiParts.Login" />
+          <masterPage reference="+UiParts.Master" />
+          <url value="Login" />
+        </UrlRouteCfg>
+        <UrlRouteCfg identity="UrlRouter.69a71809c45249cbb2999d13bb9100c0">
+          <form reference="/(cseForms.b5b300393a7b425eaf69acead7edfe1a)+UiParts.MainForm" />
+          <masterPage reference="+UiParts.Master" />
+          <url value="Main" />
+        </UrlRouteCfg>
+        <UrlRouteCfg identity="UrlRouter.69a71809c45249cbb2999d13bb9100c0">
+          <form reference="/(cseForms.b5b300393a7b425eaf69acead7edfe1a)+UiParts.PL_EditForm" />
+          <masterPage reference="+UiParts.Master" />
+          <url value="PL_Edit" />
+        </UrlRouteCfg>
+        <UrlRouteCfg identity="UrlRouter.69a71809c45249cbb2999d13bb9100c0">
+          <form reference="/(cseForms.b5b300393a7b425eaf69acead7edfe1a)+UiParts.PWEI_EditForm" />
+          <masterPage reference="+UiParts.Master" />
+          <url value="PWEI_Edit" />
+        </UrlRouteCfg>
+        <UrlRouteCfg identity="UrlRouter.69a71809c45249cbb2999d13bb9100c0">
+          <form reference="/(cseForms.b5b300393a7b425eaf69acead7edfe1a)+UiParts.SP_EditForm" />
+          <masterPage reference="+UiParts.Master" />
+          <url value="SP_Edit" />
+        </UrlRouteCfg>
+      </routes>
+    </UrlRouter>
+    <ServerConnection identity="ServerConnection.db7b3eef075548988df768923691922c">
+      <Name value="northwind" />
+      <rootUrl value="https://services.odata.org/V3/Northwind/Northwind.svc/" />
+      <OnIsAliveTimeout>
+        <ActionEvent ReferencedAction="+GlobalActions.handler_northwind_OnIsAliveTimeout" />
+      </OnIsAliveTimeout>
+    </ServerConnection>
+  </ApiObjects>
+</GlobalApiObjects>

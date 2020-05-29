@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<Package>
+  <Identity value="model.13c525570c9b4339a1f151f546c52d45" />
+  <Items>
+    <ResourceItem ResourceName="mtsimport.ini" Action="None" OutputFileName="mtsimport.ini" Src="mtsimport.ini" />
+    <PackageFolder Name="Messages">
+      <Items>
+        <PackageItem Src="Messages\DataRequest.dataEntity" />
+        <PackageItem Src="Messages\PLData.dataEntity" />
+        <PackageItem Src="Messages\SECData.dataEntity" />
+        <PackageItem Src="Messages\SPData.dataEntity" />
+      </Items>
+    </PackageFolder>
+    <PackageFolder Name="MetaTypes">
+      <Items>
+        <PackageItem Src="MetaTypes\Zeme.metaType" />
+        <PackageItem Src="MetaTypes\AMSID.metaType" />
+        <PackageItem Src="MetaTypes\CustomsOfficeRefNum_type.metaType" />
+        <PackageItem Src="MetaTypes\TIN.metaType" />
+        <PackageItem Src="MetaTypes\StreetAndNr.metaType" />
+        <PackageItem Src="MetaTypes\City.metaType" />
+        <PackageItem Src="MetaTypes\PostCode.metaType" />
+        <PackageItem Src="MetaTypes\Pracovnik.metaType" />
+        <PackageItem Src="MetaTypes\OperatorName.metaType" />
+        <PackageItem Src="MetaTypes\String100_type.metaType" />
+        <PackageItem Src="MetaTypes\String200_type.metaType" />
+        <PackageItem Src="MetaTypes\GuaranteeType.metaType" />
+        <PackageItem Src="MetaTypes\GRN.metaType" />
+        <PackageItem Src="MetaTypes\PeriodDuration.metaType" />
+        <PackageItem Src="MetaTypes\SealIdType.metaType" />
+      </Items>
+    </PackageFolder>
+    <PackageFolder Name="Enumerations">
+      <Items>
+        <PackageItem Src="Enumerations\EventTypeEnum.dataEntity" />
+        <PackageItem Src="Enumerations\TypeOfTimerEnum.dataEntity" />
+        <PackageItem Src="Enumerations\ZoneTypeEnum.dataEntity" />
+        <PackageItem Src="Enumerations\TypeOfPaybackPeriodEnum.dataEntity" />
+        <PackageItem Src="Enumerations\ControlResultEnum.dataEntity" />
+      </Items>
+    </PackageFolder>
+    <PackageFolder Name="CodeLists">
+      <Items>
+        <PackageItem Src="CodeLists\CustomsOffice.dataEntity" />
+        <PackageItem Src="CodeLists\codeListDescription.customExpressionFunction" />
+        <PackageItem Src="CodeLists\MJT.dataEntity" />
+      </Items>
+    </PackageFolder>
+  </Items>
+</Package>

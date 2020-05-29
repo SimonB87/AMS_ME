@@ -1,0 +1,1035 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<DataEntity>
+  <Name value="SECData" />
+  <Caption value="SECData" />
+  <MtsImportOptions.MTS.ID value="/SECData" />
+  <MtsImportOptions.MTS.Type value="message" />
+  <Children>
+    <Complex>
+      <Name value="AMS" />
+      <Caption value="AMS" />
+      <Description value="Povolení nebo zjednodušený postup" />
+      <IsRequired value="True" />
+      <MtsImportOptions.MTS.ID value="/SECData/AMS" />
+      <MtsImportOptions.MTS.Type value="group" />
+      <Children>
+        <Attribute>
+          <Name value="GUID" />
+          <Caption value="GUID" />
+          <IsRequired value="True" />
+          <MtsImportOptions.MTS.ID value="/SECData/AMS/GUID" />
+          <MtsImportOptions.MTS.Type value="element" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
+          <Name value="IssuingCountry" />
+          <Caption value="Vydávající země" />
+          <MetaType reference="+MetaTypes.Zeme" />
+          <MtsImportOptions.MTS.ID value="/SECData/AMS/IssuingCountry" />
+          <MtsImportOptions.MTS.Type value="element" />
+          <Validators>
+            <Validator Name="regex">
+              <MtsImportOptions.MTS.Regex value="[A-Z]{2}" />
+              <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
+              <ErrorMessage IsValid="True">
+                <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+                <ResultType>
+                  <BaseType value="String" />
+                </ResultType>
+              </ErrorMessage>
+              <IsValid IsValid="True">
+                <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "^[A-Z]{2}$") : true)]]></ExpressionText>
+                <ResultType>
+                  <BaseType value="Bool" />
+                </ResultType>
+              </IsValid>
+            </Validator>
+          </Validators>
+        </Attribute>
+        <Attribute>
+          <Name value="AMSID" />
+          <Caption value="Evidenční číslo zjednodušeného postupu" />
+          <MtsImportOptions.MTS.ID value="/SECData/AMS/AMSID" />
+          <MtsImportOptions.MTS.Type value="element" />
+          <DeclaredType>
+            <AttributeType>
+              <StrMaxLength value="20" />
+            </AttributeType>
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
+          <Name value="TIN" />
+          <Caption value="TIN / EORI číslo" />
+          <IsRequired value="True" />
+          <MetaType reference="+MetaTypes.TIN" />
+          <MtsImportOptions.MTS.ID value="/SECData/AMS/TIN" />
+          <MtsImportOptions.MTS.Type value="element" />
+        </Attribute>
+        <Attribute>
+          <Name value="State" />
+          <Caption value="Stav" />
+          <IsRequired value="True" />
+          <MtsImportOptions.MTS.ID value="/SECData/AMS/State" />
+          <MtsImportOptions.MTS.Type value="element" />
+          <DeclaredType>
+            <AttributeType>
+              <StrMaxLength value="100" />
+            </AttributeType>
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
+          <Name value="AuthorizationType" />
+          <Caption value="Typ povolení/ZJP" />
+          <IsRequired value="True" />
+          <MtsImportOptions.MTS.ID value="/SECData/AMS/AuthorizationType" />
+          <MtsImportOptions.MTS.Type value="element" />
+          <DeclaredType>
+            <AttributeType>
+              <StrMaxLength value="2" />
+              <StrMinLength value="2" />
+            </AttributeType>
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
+          <Name value="ResponsibleCustomsOffice" />
+          <Caption value="Celní úřad zodpovědný za modifikaci a údržbu povolení" />
+          <IsRequired value="True" />
+          <MetaType reference="+MetaTypes.CustomsOfficeRefNum_type" />
+          <MtsImportOptions.MTS.ID value="/SECData/AMS/ResponsibleCustomsOffice" />
+          <MtsImportOptions.MTS.Type value="element" />
+          <Validators>
+            <Validator Name="regex">
+              <MtsImportOptions.MTS.Regex value="[A-Z]{2}[A-Z0-9]{6}" />
+              <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
+              <ErrorMessage IsValid="True">
+                <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+                <ResultType>
+                  <BaseType value="String" />
+                </ResultType>
+              </ErrorMessage>
+              <IsValid IsValid="True">
+                <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "^[A-Z]{2}[A-Z0-9]{6}$") : true)]]></ExpressionText>
+                <ResultType>
+                  <BaseType value="Bool" />
+                </ResultType>
+              </IsValid>
+            </Validator>
+          </Validators>
+        </Attribute>
+        <Attribute>
+          <Name value="Cancelled" />
+          <Caption value="Zrušeno" />
+          <MtsImportOptions.MTS.ID value="/SECData/AMS/Cancelled" />
+          <MtsImportOptions.MTS.Type value="element" />
+          <DeclaredType>
+            <AttributeType>
+              <BaseType value="Bool" />
+            </AttributeType>
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
+          <Name value="LastEventValidityStartDate" />
+          <Caption value="Datum poslední události" />
+          <MtsImportOptions.MTS.ID value="/SECData/AMS/LastEventValidityStartDate" />
+          <MtsImportOptions.MTS.Type value="element" />
+          <DeclaredType>
+            <AttributeType>
+              <BaseType value="DateTime" />
+            </AttributeType>
+          </DeclaredType>
+        </Attribute>
+        <Complex>
+          <Name value="Event" />
+          <Caption value="Událost / Rozhodnutí" />
+          <IsRequired value="True" />
+          <MtsImportOptions.MTS.ID value="/SECData/AMS/Event" />
+          <MtsImportOptions.MTS.Type value="group" />
+          <Children>
+            <Attribute>
+              <Name value="GUID" />
+              <Caption value="GUID" />
+              <IsRequired value="True" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/GUID" />
+              <MtsImportOptions.MTS.Type value="element" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+            <Reference>
+              <Name value="EventType" />
+              <Caption value="Typ události/rozhodnutí" />
+              <IsRequired value="True" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/EventType" />
+              <MtsImportOptions.MTS.Type value="element" />
+              <Children>
+                <Include>
+                  <Include reference="+DataEntities.EventTypeEnum" />
+                </Include>
+              </Children>
+            </Reference>
+            <Attribute>
+              <Name value="OperatorName" />
+              <Caption value="Název subjektu" />
+              <MetaType reference="+MetaTypes.OperatorName" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/OperatorName" />
+              <MtsImportOptions.MTS.Type value="element" />
+            </Attribute>
+            <Attribute>
+              <Name value="OperatorStreetAndNr" />
+              <Caption value="Ulice a č.p. sídla" />
+              <MetaType reference="+MetaTypes.StreetAndNr" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/OperatorStreetAndNr" />
+              <MtsImportOptions.MTS.Type value="element" />
+            </Attribute>
+            <Attribute>
+              <Name value="OperatorCity" />
+              <Caption value="Město sídla subjektu" />
+              <MetaType reference="+MetaTypes.City" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/OperatorCity" />
+              <MtsImportOptions.MTS.Type value="element" />
+            </Attribute>
+            <Attribute>
+              <Name value="OperatorPostCode" />
+              <Caption value="PSČ" />
+              <MetaType reference="+MetaTypes.PostCode" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/OperatorPostCode" />
+              <MtsImportOptions.MTS.Type value="element" />
+            </Attribute>
+            <Attribute>
+              <Name value="OperatorCountry" />
+              <Caption value="Země sídla subjektu" />
+              <MetaType reference="+MetaTypes.Zeme" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/OperatorCountry" />
+              <MtsImportOptions.MTS.Type value="element" />
+              <Validators>
+                <Validator Name="regex">
+                  <MtsImportOptions.MTS.Regex value="[A-Z]{2}" />
+                  <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
+                  <ErrorMessage IsValid="True">
+                    <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+                    <ResultType>
+                      <BaseType value="String" />
+                    </ResultType>
+                  </ErrorMessage>
+                  <IsValid IsValid="True">
+                    <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "^[A-Z]{2}$") : true)]]></ExpressionText>
+                    <ResultType>
+                      <BaseType value="Bool" />
+                    </ResultType>
+                  </IsValid>
+                </Validator>
+              </Validators>
+            </Attribute>
+            <Attribute>
+              <Name value="ReferenceNumber" />
+              <Caption value="Číslo jednací" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/ReferenceNumber" />
+              <MtsImportOptions.MTS.Type value="element" />
+              <DeclaredType>
+                <AttributeType>
+                  <StrMaxLength value="30" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="YourMark" />
+              <Caption value="Vaše značka" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/YourMark" />
+              <MtsImportOptions.MTS.Type value="element" />
+              <DeclaredType>
+                <AttributeType>
+                  <StrMaxLength value="30" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="HandledBy" />
+              <Caption value="Vyřizuje/linka" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/HandledBy" />
+              <MtsImportOptions.MTS.Type value="element" />
+              <DeclaredType>
+                <AttributeType>
+                  <StrMaxLength value="20" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="DecisionDate" />
+              <Caption value="Datum vydání rozhodnutí" />
+              <IsRequired value="True" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/DecisionDate" />
+              <MtsImportOptions.MTS.Type value="element" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Date" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="ValidityStartDate" />
+              <Caption value="Platné od" />
+              <IsRequired value="True" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/ValidityStartDate" />
+              <MtsImportOptions.MTS.Type value="element" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="DateTime" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="EvidenceDate" />
+              <Caption value="EvidenceDate" />
+              <IsRequired value="True" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/EvidenceDate" />
+              <MtsImportOptions.MTS.Type value="element" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="DateTime" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="DecidingCustomsOffice" />
+              <Caption value="Rozhodující celní úřad" />
+              <IsRequired value="True" />
+              <MetaType reference="+MetaTypes.CustomsOfficeRefNum_type" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/DecidingCustomsOffice" />
+              <MtsImportOptions.MTS.Type value="element" />
+              <Validators>
+                <Validator Name="regex">
+                  <MtsImportOptions.MTS.Regex value="[A-Z]{2}[A-Z0-9]{6}" />
+                  <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
+                  <ErrorMessage IsValid="True">
+                    <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+                    <ResultType>
+                      <BaseType value="String" />
+                    </ResultType>
+                  </ErrorMessage>
+                  <IsValid IsValid="True">
+                    <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "^[A-Z]{2}[A-Z0-9]{6}$") : true)]]></ExpressionText>
+                    <ResultType>
+                      <BaseType value="Bool" />
+                    </ResultType>
+                  </IsValid>
+                </Validator>
+              </Validators>
+            </Attribute>
+            <Attribute>
+              <Name value="DecidingPerson" />
+              <Caption value="Osobní číslo vydavatele rozhodnutí" />
+              <IsRequired value="True" />
+              <MetaType reference="+MetaTypes.Pracovnik" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/DecidingPerson" />
+              <MtsImportOptions.MTS.Type value="element" />
+            </Attribute>
+            <Attribute>
+              <Name value="DecidingPersonName" />
+              <Caption value="Jméno, funkce a titul vydávající osoby" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/DecidingPersonName" />
+              <MtsImportOptions.MTS.Type value="element" />
+              <DeclaredType>
+                <AttributeType>
+                  <StrMaxLength value="50" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="ValidityEndDate" />
+              <Caption value="Konec platnosti této události (dopočítávané v okamžiku vzniku následujícího události)" />
+              <IsRequired value="True" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/ValidityEndDate" />
+              <MtsImportOptions.MTS.Type value="element" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="DateTime" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Collection>
+              <Name value="File" />
+              <Caption value="Soubor přílohy" />
+              <MaxCount value="1000" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/File" />
+              <MtsImportOptions.MTS.Type value="group" />
+              <Children>
+                <Attribute>
+                  <Name value="GUID" />
+                  <Caption value="GUID" />
+                  <IsRequired value="True" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/File/GUID" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType />
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="IsFulltext" />
+                  <Caption value="Je plný text či jen doplněk plného textu?" />
+                  <IsRequired value="True" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/File/IsFulltext" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <BaseType value="Bool" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="FileName" />
+                  <Caption value="Název souboru" />
+                  <IsRequired value="True" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/File/FileName" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="255" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="FileType" />
+                  <Caption value="Typ souboru" />
+                  <IsRequired value="True" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/File/FileType" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="255" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+              </Children>
+            </Collection>
+            <Complex>
+              <Name value="Authorization" />
+              <Caption value="Základní prvky povolení" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/Authorization" />
+              <MtsImportOptions.MTS.Type value="group" />
+              <Children>
+                <Attribute>
+                  <Name value="LimitedAuthorizationValidity" />
+                  <Caption value="Je délka platnosti omezená?" />
+                  <IsRequired value="True" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/Authorization/LimitedAuthorizationValidity" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <BaseType value="Bool" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="AuthorizationValidUntil" />
+                  <Caption value="Rozhodnutí platné do" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/Authorization/AuthorizationValidUntil" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <BaseType value="Date" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="ResponsiblePersonName" />
+                  <Caption value="Jméno zodpovědné osoby na straně deklaranta" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/Authorization/ResponsiblePersonName" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="50" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="ResponsiblePersonPhone" />
+                  <Caption value="Telefon na zodpovědnou osobu na straně deklaranta" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/Authorization/ResponsiblePersonPhone" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="50" />
+                    </AttributeType>
+                  </DeclaredType>
+                  <Validators>
+                    <Validator Name="regex">
+                      <MtsImportOptions.MTS.Regex value="\+\d+" />
+                      <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
+                      <ErrorMessage IsValid="True">
+                        <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+                        <ResultType>
+                          <BaseType value="String" />
+                        </ResultType>
+                      </ErrorMessage>
+                      <IsValid IsValid="True">
+                        <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "^\\+\\d+$") : true)]]></ExpressionText>
+                        <ResultType>
+                          <BaseType value="Bool" />
+                        </ResultType>
+                      </IsValid>
+                    </Validator>
+                  </Validators>
+                </Attribute>
+                <Attribute>
+                  <Name value="ResponsiblePersonEMail" />
+                  <Caption value="ResponsiblePersonEMail" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/Authorization/ResponsiblePersonEMail" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="200" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="ResponsiblePersonWantsToBeNotified" />
+                  <Caption value="Zodpovědná osoba chce být notifikována o změnách v CŘ" />
+                  <IsRequired value="True" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/Authorization/ResponsiblePersonWantsToBeNotified" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <BaseType value="Bool" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+              </Children>
+            </Complex>
+            <Complex>
+              <Name value="ApplicationRejection" />
+              <Caption value="Zamítnutí žádosti" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/ApplicationRejection" />
+              <MtsImportOptions.MTS.Type value="group" />
+              <Children>
+                <Attribute>
+                  <Name value="ApplicationRejectionDescription" />
+                  <Caption value="Popis důvodu zamítnutí" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/ApplicationRejection/ApplicationRejectionDescription" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="3000" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+              </Children>
+            </Complex>
+            <Complex>
+              <Name value="AuthorizationWithdrawal" />
+              <Caption value="Odejmutí/zrušení povolení/ZJP" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/AuthorizationWithdrawal" />
+              <MtsImportOptions.MTS.Type value="group" />
+              <Children>
+                <Attribute>
+                  <Name value="AutohrizationWithdrawalDescription" />
+                  <Caption value="Důvod odejmutí/zrušení povolení" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/AuthorizationWithdrawal/AutohrizationWithdrawalDescription" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="3000" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+              </Children>
+            </Complex>
+            <Collection>
+              <Name value="CertificateSign" />
+              <Caption value="Certifkát pro podepisování" />
+              <MaxCount value="999" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateSign" />
+              <MtsImportOptions.MTS.Type value="group" />
+              <Children>
+                <Attribute>
+                  <Name value="GUID" />
+                  <Caption value="GUID certifikátu" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateSign/GUID" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType />
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="IsSystemCert" />
+                  <Caption value="Systémový certifikát" />
+                  <IsRequired value="True" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateSign/IsSystemCert" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <BaseType value="Bool" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="SerialNumber" />
+                  <Caption value="Sériové číslo" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateSign/SerialNumber" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="64" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="IssuerCode" />
+                  <Caption value="IssuerCode" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateSign/IssuerCode" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="100" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="Issuer" />
+                  <Caption value="Vydavatel" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateSign/Issuer" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="256" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="ValidFromDate" />
+                  <Caption value="Počátek platnosti" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateSign/ValidFromDate" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <BaseType value="DateTime" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="ValidToDate" />
+                  <Caption value="Konec platnosti" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateSign/ValidToDate" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <BaseType value="DateTime" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="JMBG" />
+                  <Caption value="Rodné číslo" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateSign/JMBG" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="13" />
+                      <StrMinLength value="13" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="User" />
+                  <Caption value="Uživatel certifikátu" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateSign/User" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="255" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="Email" />
+                  <Caption value="e-mail ldržitele certifikátu" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateSign/Email" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="50" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="Usage" />
+                  <Caption value="Použití certifkátu" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateSign/Usage" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="1" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+              </Children>
+            </Collection>
+            <Collection>
+              <Name value="CertificateMaint" />
+              <Caption value="Certifikáty pro el. údržbu parametrů komunikace" />
+              <MaxCount value="999" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateMaint" />
+              <MtsImportOptions.MTS.Type value="group" />
+              <Children>
+                <Attribute>
+                  <Name value="GUID" />
+                  <Caption value="GUID certifikátu" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateMaint/GUID" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType />
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="SerialNumber" />
+                  <Caption value="Sériové číslo" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateMaint/SerialNumber" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="64" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="IssuerCode" />
+                  <Caption value="IssuerCode" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateMaint/IssuerCode" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="100" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="Issuer" />
+                  <Caption value="Vydavatel" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateMaint/Issuer" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="256" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="ValidFromDate" />
+                  <Caption value="Počátek platnosti" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateMaint/ValidFromDate" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <BaseType value="DateTime" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="ValidToDate" />
+                  <Caption value="Konec platnosti" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateMaint/ValidToDate" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <BaseType value="DateTime" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="JMBG" />
+                  <Caption value="Rodné číslo" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateMaint/JMBG" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="13" />
+                      <StrMinLength value="13" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="User" />
+                  <Caption value="Uživatel certifikátu" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateMaint/User" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="255" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="Email" />
+                  <Caption value="e-mail ldržitele certifikátu" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateMaint/Email" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="50" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="Usage" />
+                  <Caption value="Použití certifkátu" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateMaint/Usage" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="1" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+              </Children>
+            </Collection>
+            <Complex>
+              <Name value="CertificateEncr" />
+              <Caption value="Certifkát pro šifrování" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateEncr" />
+              <MtsImportOptions.MTS.Type value="group" />
+              <Children>
+                <Attribute>
+                  <Name value="GUID" />
+                  <Caption value="GUID certifikátu" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateEncr/GUID" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType />
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="SerialNumber" />
+                  <Caption value="Sériové číslo" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateEncr/SerialNumber" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="64" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="IssuerCode" />
+                  <Caption value="IssuerCode" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateEncr/IssuerCode" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="100" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="Issuer" />
+                  <Caption value="Vydavatel" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateEncr/Issuer" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="256" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="ValidFromDate" />
+                  <Caption value="Počátek platnosti" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateEncr/ValidFromDate" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <BaseType value="DateTime" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="ValidToDate" />
+                  <Caption value="Konec platnosti" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateEncr/ValidToDate" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <BaseType value="DateTime" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="JMBG" />
+                  <Caption value="Rodné číslo" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateEncr/JMBG" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="50" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="User" />
+                  <Caption value="Uživatel certifikátu" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateEncr/User" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="255" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="Email" />
+                  <Caption value="e-mail ldržitele certifikátu" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateEncr/Email" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="50" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="Usage" />
+                  <Caption value="Použití certifkátu" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/CertificateEncr/Usage" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="1" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+              </Children>
+            </Complex>
+            <Complex>
+              <Name value="AMSEC" />
+              <Caption value="Komunikační povolení" />
+              <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/AMSEC" />
+              <MtsImportOptions.MTS.Type value="group" />
+              <Children>
+                <Attribute>
+                  <Name value="IMP" />
+                  <Caption value="Povolení podávat e-CP do režimu dovozu" />
+                  <IsRequired value="True" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/AMSEC/IMP" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <BaseType value="Bool" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="ENL" />
+                  <Caption value="Povolení podávat vstupní SCP a oznámení o příjezdu" />
+                  <IsRequired value="True" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/AMSEC/ENL" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <BaseType value="Bool" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="DEPDES" />
+                  <Caption value="Povolení předkládat elektronicky celní prohlášení do režimu tranzit / povolení elektronicky komunikovat s CÚ určení v tranzitu" />
+                  <IsRequired value="True" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/AMSEC/DEPDES" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <BaseType value="Bool" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="EXP" />
+                  <Caption value="Povolení předkládat elektronicky celní prohlášení do vývozu" />
+                  <IsRequired value="True" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/AMSEC/EXP" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <BaseType value="Bool" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="EXT" />
+                  <Caption value="Povolení elektronicky komunikovat s úřadem výstupu ve vývozu" />
+                  <IsRequired value="True" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/AMSEC/EXT" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <BaseType value="Bool" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="GUA" />
+                  <Caption value="Povolení elektronicky komunikovat s CÚ záruky" />
+                  <IsRequired value="True" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/AMSEC/GUA" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <BaseType value="Bool" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="ECR" />
+                  <Caption value="Zprávy ke vstupnímu souhrnnému celnímu prohlášení podaných osobou uvedenou v článku 36b odst. 4 celního kodex v případech, kdy je žadatel uveden jako přepravce nebo zástupce" />
+                  <IsRequired value="True" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/AMSEC/ECR" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <BaseType value="Bool" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="EXC" />
+                  <Caption value="Sdělení o podmínkách elektronické komunikace v EMCS" />
+                  <IsRequired value="True" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/AMSEC/EXC" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <BaseType value="Bool" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="RZL" />
+                  <Caption value="Sdělení o podmínkách elektronické komunikace v RZL" />
+                  <IsRequired value="True" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/AMSEC/RZL" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <BaseType value="Bool" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="PollingPassword" />
+                  <Caption value="Polling Password" />
+                  <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/AMSEC/PollingPassword" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <StrMaxLength value="80" />
+                    </AttributeType>
+                  </DeclaredType>
+                </Attribute>
+              </Children>
+            </Complex>
+          </Children>
+        </Complex>
+      </Children>
+    </Complex>
+  </Children>
+</DataEntity>

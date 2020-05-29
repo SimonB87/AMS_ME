@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<GlobalVariables>
+  <Name value="globalVariables" />
+  <Children>
+    <Reference>
+      <Name value="prototypeReference" />
+      <Caption value="prototype reference" />
+      <Children>
+        <Attribute>
+          <Name value="Key" />
+          <Caption value="Key" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
+          <Name value="Description" />
+          <Caption value="Description" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
+      </Children>
+    </Reference>
+    <Attribute>
+      <Name value="listGrid2State" />
+      <Caption value="List grid 2 state" />
+      <DeclaredType>
+        <AttributeType />
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="listGrid2Columns" />
+      <Caption value="List grid 2 columns" />
+      <DeclaredType>
+        <AttributeType />
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="collectionDataProvider2State" />
+      <Caption value="Collection data provider 2 state" />
+      <DeclaredType>
+        <AttributeType />
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="collectionDataProvider2Columns" />
+      <Caption value="Collection data provider 2 columns" />
+      <DeclaredType>
+        <AttributeType />
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="isLoading" />
+      <Caption value="Is loading" />
+      <DeclaredType>
+        <AttributeType>
+          <BaseType value="Bool" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+  </Children>
+</GlobalVariables>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<Package>
+  <Identity value="main.54b271120be14de18033000f6ed59f52" />
+  <Items>
+    <PackageItem Src="Master.form" />
+    <PackageFolder Name="CSS">
+      <Items>
+        <ResourceItem ResourceName="main.css" LinkerAction="Css" OutputFileName="main.css" Src="CSS\main.css" />
+      </Items>
+    </PackageFolder>
+    <PackageItem Src="globalApiObjects.globalApiObjects" />
+    <PackageItem Src="globalActions.globalActions" />
+  </Items>
+</Package>

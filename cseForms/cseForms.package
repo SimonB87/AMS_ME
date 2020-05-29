@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<Package>
+  <Identity value="cseForms.b5b300393a7b425eaf69acead7edfe1a" />
+  <Items>
+    <PackageItem Src="AMS_CodeList.form" />
+    <PackageItem Src="AMS_History.form" />
+    <PackageItem Src="Audit_EditForm.form" />
+    <PackageItem Src="CTRLMulti_EditForm.form" />
+    <PackageItem Src="CTRL_EditForm.form" />
+    <PackageItem Src="EC_EditForm.form" />
+    <PackageItem Src="Login.form" />
+    <PackageItem Src="MainForm.form" />
+    <PackageItem Src="PL_EditForm.form" />
+    <PackageItem Src="PWEI_EditForm.form" />
+    <PackageItem Src="SP_EditForm.form" />
+    <PackageItem Src="globalApiObjects.globalApiObjects" />
+    <PackageItem Src="globalVariables.globalVariables" />
+  </Items>
+</Package>

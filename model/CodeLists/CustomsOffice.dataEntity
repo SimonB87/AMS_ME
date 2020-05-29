@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<DataEntity>
+  <Name value="CustomsOffice" />
+  <Caption value="Customs offices" />
+  <Description value="List of customs offices (both Serbian and foreign) and its basic attributes" />
+  <MtsImportOptions.MTS.ID value="CustomsOffice" />
+  <MtsImportOptions.MTS.Type value="codelist" />
+  <Children>
+    <Attribute>
+      <Name value="Code" />
+      <Caption value="Customs office reference number" />
+      <Description value="First two characters contain country of the customs office" />
+      <MtsImportOptions.MTS.ID value="CustomsOffice/Code" />
+      <MtsImportOptions.MTS.Type value="codelist-item" />
+      <DeclaredType>
+        <AttributeType>
+          <StrMaxLength value="8" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="Description" />
+      <Caption value="Customs office name" />
+      <MetaType reference="+MetaTypes.String100_type" />
+      <MtsImportOptions.MTS.ID value="CustomsOffice/Description" />
+      <MtsImportOptions.MTS.Type value="codelist-item" />
+    </Attribute>
+    <Attribute>
+      <Name value="StreetNumber" />
+      <Caption value="Street and number" />
+      <MtsImportOptions.MTS.ID value="CustomsOffice/StreetNumber" />
+      <MtsImportOptions.MTS.Type value="codelist-item" />
+      <DeclaredType>
+        <AttributeType>
+          <StrMaxLength value="35" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="City" />
+      <Caption value="City" />
+      <MtsImportOptions.MTS.ID value="CustomsOffice/City" />
+      <MtsImportOptions.MTS.Type value="codelist-item" />
+      <DeclaredType>
+        <AttributeType>
+          <StrMaxLength value="35" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="PostalCode" />
+      <Caption value="Postal code" />
+      <MtsImportOptions.MTS.ID value="CustomsOffice/PostalCode" />
+      <MtsImportOptions.MTS.Type value="codelist-item" />
+      <DeclaredType>
+        <AttributeType>
+          <StrMaxLength value="9" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="Country" />
+      <Caption value="Country code" />
+      <MtsImportOptions.MTS.ID value="CustomsOffice/Country" />
+      <MtsImportOptions.MTS.Type value="codelist-item" />
+      <DeclaredType>
+        <AttributeType>
+          <StrMaxLength value="2" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="Phone" />
+      <Caption value="Phone number" />
+      <MtsImportOptions.MTS.ID value="CustomsOffice/Phone" />
+      <MtsImportOptions.MTS.Type value="codelist-item" />
+      <DeclaredType>
+        <AttributeType>
+          <StrMaxLength value="35" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="Fax" />
+      <Caption value="Fax number" />
+      <MtsImportOptions.MTS.ID value="CustomsOffice/Fax" />
+      <MtsImportOptions.MTS.Type value="codelist-item" />
+      <DeclaredType>
+        <AttributeType>
+          <StrMaxLength value="35" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="SuperiorCustomsOffice" />
+      <Caption value="Superior customs office reference number" />
+      <Description value="Reference number of customs office which is superior of the customs office." />
+      <MtsImportOptions.MTS.ID value="CustomsOffice/SuperiorCustomsOffice" />
+      <MtsImportOptions.MTS.Type value="codelist-item" />
+      <DeclaredType>
+        <AttributeType>
+          <StrMaxLength value="8" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="GeoInfoCode" />
+      <Caption value="Geo info code" />
+      <Description value="reference to DDNTA code list 15" />
+      <MtsImportOptions.MTS.ID value="CustomsOffice/GeoInfoCode" />
+      <MtsImportOptions.MTS.Type value="codelist-item" />
+      <DeclaredType>
+        <AttributeType>
+          <StrMaxLength value="6" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="NCTSEntryDate" />
+      <Caption value="NCTS Entry date" />
+      <Description value="Date when Customs office will start fully behave as NCTS customs office." />
+      <MtsImportOptions.MTS.ID value="CustomsOffice/NCTSEntryDate" />
+      <MtsImportOptions.MTS.Type value="codelist-item" />
+      <DeclaredType>
+        <AttributeType>
+          <BaseType value="DateTime" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="FullName" />
+      <Caption value="Customs office full name" />
+      <MetaType reference="+MetaTypes.String200_type" />
+      <MtsImportOptions.MTS.ID value="CustomsOffice/FullName" />
+      <MtsImportOptions.MTS.Type value="codelist-item" />
+    </Attribute>
+    <Attribute>
+      <Name value="EmailAddress" />
+      <Caption value="E-mail address" />
+      <MtsImportOptions.MTS.ID value="CustomsOffice/EmailAddress" />
+      <MtsImportOptions.MTS.Type value="codelist-item" />
+      <DeclaredType>
+        <AttributeType>
+          <StrMaxLength value="70" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="AuthorityOfEnquiry" />
+      <Caption value="Competent Authority of Enquiry - Reference number" />
+      <Description value="Reference number of customs office which acts as a authority of enquiry. If empty then it means that the customs office self acts as a authority of enquiry." />
+      <MtsImportOptions.MTS.ID value="CustomsOffice/AuthorityOfEnquiry" />
+      <MtsImportOptions.MTS.Type value="codelist-item" />
+      <DeclaredType>
+        <AttributeType>
+          <StrMaxLength value="8" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="AuthorityOfRecovery" />
+      <Caption value="Competent Authority of Recovery - Reference number" />
+      <Description value="Reference number of customs office which acts as a authority of recovery. If empty then it means that the customs office self acts as a authority of recovery." />
+      <MtsImportOptions.MTS.ID value="CustomsOffice/AuthorityOfRecovery" />
+      <MtsImportOptions.MTS.Type value="codelist-item" />
+      <DeclaredType>
+        <AttributeType>
+          <StrMaxLength value="8" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="NearestOffice" />
+      <Caption value="Nearest office" />
+      <Description value="Customs office nearest across border in opposite country. Will be filled only for customs offices which are situated on national border.&#xA;From common transit parties: filled as reference number&#xA;From other countries: filled as name" />
+      <MtsImportOptions.MTS.ID value="CustomsOffice/NearestOffice" />
+      <MtsImportOptions.MTS.Type value="codelist-item" />
+      <DeclaredType>
+        <AttributeType>
+          <StrMaxLength value="175" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="ValidFrom" />
+      <Caption value="Valid from" />
+      <MtsImportOptions.MTS.ID value="CustomsOffice/ValidFrom" />
+      <MtsImportOptions.MTS.Type value="codelist-item" />
+      <DeclaredType>
+        <AttributeType>
+          <BaseType value="DateTime" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="ValidTo" />
+      <Caption value="Valid to" />
+      <MtsImportOptions.MTS.ID value="CustomsOffice/ValidTo" />
+      <MtsImportOptions.MTS.Type value="codelist-item" />
+      <DeclaredType>
+        <AttributeType>
+          <BaseType value="DateTime" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Computed>
+      <Name value="_description" />
+      <Caption value="_ description" />
+      <Expression IsValid="True">
+        <ExpressionText><![CDATA[functions.codeListDescription(Code,Description)]]></ExpressionText>
+        <ResultType>
+          <BaseType value="String" />
+        </ResultType>
+      </Expression>
+    </Computed>
+  </Children>
+</DataEntity>
