@@ -39,24 +39,6 @@
                   <Orientation value="Horizontal" />
                   <Panel.Height value="#" />
                   <Panel.Width value="20%" />
-                  <Children>
-                    <TextBox>
-                      <Name value="tbVyhledatPovoleni" />
-                      <Caption value="Vyhledat povoleni" />
-                      <CaptionLength value="30%" />
-                      <Panel.Height value="30px" />
-                      <Panel.Width value="250px" />
-                      <Bindings>
-                        <Binding SourceProperty="Data" Expression="" />
-                      </Bindings>
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-textbox" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </TextBox>
-                  </Children>
                   <CssClass>
                     <CssClassConditional>
                       <ClassName value="{theme}-panel" />
@@ -66,13 +48,13 @@
                 </Panel>
                 <Panel>
                   <Name value="MiddlePnl" />
-                  <Orientation value="Horizontal" />
+                  <Orientation value="Vertical" />
                   <Panel.Height value="#" />
                   <Panel.Width value="50%" />
                   <Children>
                     <Label>
                       <Name value="label1" />
-                      <Data value="AMS Pre-alpha" />
+                      <Data value="AMS klient - Montenegro" />
                       <Heading value="h2" />
                       <Panel.Height value="#" />
                       <Panel.Width value="*" />
@@ -86,6 +68,21 @@
                         </CssClassConditional>
                         <CssClassConditional>
                           <ClassName value="clickable" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </Label>
+                    <Label>
+                      <Name value="appVersion_label" />
+                      <Panel.Height value="#" />
+                      <Panel.HorizontalAlignment value="Center" />
+                      <Panel.Width value="200px" />
+                      <Bindings>
+                        <Binding SourceProperty="Data" Expression="form.appVersion" />
+                      </Bindings>
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-label" />
+                          <IsThemedStyle value="True" />
                         </CssClassConditional>
                       </CssClass>
                     </Label>
@@ -114,7 +111,7 @@
                       <Children>
                         <Label>
                           <Name value="label4" />
-                          <Data value="CO: RS123450" />
+                          <Data value="CO: ME123450" />
                           <Heading value="h5" />
                           <Margin value="2, 6, 2, 6 px" />
                           <Panel.Height value="#" />
@@ -333,21 +330,6 @@
                   </CssClass>
                 </HyperLink>
                 <HyperLink>
-                  <Name value="EC_EditForm" />
-                  <Data value="EC_EditForm" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="*" />
-                  <OnClick>
-                    <ActionEvent ReferencedAction="~handler_EC_EditForm_OnClick" />
-                  </OnClick>
-                  <CssClass>
-                    <CssClassConditional>
-                      <ClassName value="{theme}-hyperlink" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                  </CssClass>
-                </HyperLink>
-                <HyperLink>
                   <Name value="Login" />
                   <Data value="Login" />
                   <Panel.Height value="#" />
@@ -378,42 +360,12 @@
                   </CssClass>
                 </HyperLink>
                 <HyperLink>
-                  <Name value="PL_EditForm" />
-                  <Data value="PL_EditForm" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="*" />
-                  <OnClick>
-                    <ActionEvent ReferencedAction="~handler_PL_EditForm_OnClick" />
-                  </OnClick>
-                  <CssClass>
-                    <CssClassConditional>
-                      <ClassName value="{theme}-hyperlink" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                  </CssClass>
-                </HyperLink>
-                <HyperLink>
                   <Name value="PWEI_EditForm" />
                   <Data value="PWEI_EditForm" />
                   <Panel.Height value="#" />
                   <Panel.Width value="*" />
                   <OnClick>
                     <ActionEvent ReferencedAction="~handler_PWEI_EditForm_OnClick" />
-                  </OnClick>
-                  <CssClass>
-                    <CssClassConditional>
-                      <ClassName value="{theme}-hyperlink" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                  </CssClass>
-                </HyperLink>
-                <HyperLink>
-                  <Name value="SP_EditForm" />
-                  <Data value="SP_EditForm" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="*" />
-                  <OnClick>
-                    <ActionEvent ReferencedAction="~handler_SP_EditForm_OnClick" />
                   </OnClick>
                   <CssClass>
                     <CssClassConditional>
@@ -450,9 +402,15 @@
   </Content>
   <DataContext>
     <DataContext>
-      <OnCreate>
-        <ActionEvent ReferencedAction="+UiParts.Master.scrollMenu" />
-      </OnCreate>
+      <Children>
+        <Attribute>
+          <Name value="appVersion" />
+          <Caption value="App version" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
+      </Children>
     </DataContext>
   </DataContext>
   <OnCreate>
@@ -462,27 +420,12 @@
     <ActionBlock>
       <Name value="init" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[packages.cseForms.apiobjects.prototypeCodelist.fillFromJson("[{\"Key\": \"A\", \"Description\": \"prototype item\"}]")
+        <Script><![CDATA[packages.cseForms.apiobjects.prototypeCodelist.fillFromJson("[{\"Key\": \"NO\", \"Description\": \"NO\"},{\"Key\": \"NP\", \"Description\": \"NP\"},{\"Key\": \"PT\", \"Description\": \"PT\"},{\"Key\": \"PP\", \"Description\": \"PP\"}]")
 
-apiobjects.urlRouter.clearUrl()]]></Script>
+apiobjects.urlRouter.clearUrl()
+
+form.appVersion = apiobjects.appVersion.get()]]></Script>
       </ActionLangBody>
-      <DataContext>
-        <ActionDataContext />
-      </DataContext>
-    </ActionBlock>
-    <ActionBlock>
-      <Name value="scrollMenu" />
-      <IsJavascript value="True" />
-      <Script><![CDATA[window.onscroll = function() {setStickyMenu()};
-
-function setStickyMenu() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementsByTagName("html")[0].className = "scrolled";
-  }else{
-    document.getElementsByTagName("html")[0].className = "";
-  }
-}]]></Script>
-      <ActionLangBody IsValid="True" />
       <DataContext>
         <ActionDataContext />
       </DataContext>
@@ -549,16 +492,6 @@ function setStickyMenu() {
       </DataContext>
     </ActionBlock>
     <ActionBlock>
-      <Name value="handler_EC_EditForm_OnClick" />
-      <IsPrivate value="True" />
-      <ActionLangBody IsValid="True">
-        <Script><![CDATA[navigation.cseForms.EC_EditForm.go()]]></Script>
-      </ActionLangBody>
-      <DataContext>
-        <ActionDataContext />
-      </DataContext>
-    </ActionBlock>
-    <ActionBlock>
       <Name value="handler_Login_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
@@ -579,30 +512,10 @@ function setStickyMenu() {
       </DataContext>
     </ActionBlock>
     <ActionBlock>
-      <Name value="handler_PL_EditForm_OnClick" />
-      <IsPrivate value="True" />
-      <ActionLangBody IsValid="True">
-        <Script><![CDATA[navigation.cseForms.PL_EditForm.go()]]></Script>
-      </ActionLangBody>
-      <DataContext>
-        <ActionDataContext />
-      </DataContext>
-    </ActionBlock>
-    <ActionBlock>
       <Name value="handler_PWEI_EditForm_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
         <Script><![CDATA[navigation.cseForms.PWEI_EditForm.go()]]></Script>
-      </ActionLangBody>
-      <DataContext>
-        <ActionDataContext />
-      </DataContext>
-    </ActionBlock>
-    <ActionBlock>
-      <Name value="handler_SP_EditForm_OnClick" />
-      <IsPrivate value="True" />
-      <ActionLangBody IsValid="True">
-        <Script><![CDATA[navigation.cseForms.SP_EditForm.go()]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />

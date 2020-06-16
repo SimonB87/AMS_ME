@@ -11,405 +11,133 @@
       <Panel.Width value="*" />
       <Children>
         <Panel>
+          <Name value="navigation_pnl" />
+          <Orientation value="Vertical" />
+          <Panel.Height value="#" />
+          <Panel.Width value="263px" />
+          <Children>
+            <Label>
+              <Name value="NavigationLbl" />
+              <Data value="Navigation" />
+              <Heading value="h3" />
+              <Panel.Height value="#" />
+              <Panel.Width value="100%" />
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-label" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </Label>
+            <HyperLink>
+              <Name value="general_link" />
+              <Data value="General" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <OnClick>
+                <ActionEvent ReferencedAction="~handler_general_link_OnClick" />
+              </OnClick>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-hyperlink" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+                <CssClassConditional>
+                  <ClassName value="active" />
+                  <Bindings>
+                    <Binding SourceProperty="Condition" Expression="form.panelsVisibility.isGeneralVisible" />
+                  </Bindings>
+                </CssClassConditional>
+              </CssClass>
+            </HyperLink>
+            <HyperLink>
+              <Name value="detail_link" />
+              <Data value="Detail místa" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <Target value="_self" />
+              <OnClick>
+                <ActionEvent ReferencedAction="~handler_detail_link_OnClick" />
+              </OnClick>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-hyperlink" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+                <CssClassConditional>
+                  <ClassName value="active" />
+                  <Bindings>
+                    <Binding SourceProperty="Condition" Expression="form.panelsVisibility.isPlaceVisible" />
+                  </Bindings>
+                </CssClassConditional>
+              </CssClass>
+            </HyperLink>
+          </Children>
+          <CssClass>
+            <CssClassConditional>
+              <ClassName value="{theme}-panel" />
+              <IsThemedStyle value="True" />
+            </CssClassConditional>
+            <CssClassConditional>
+              <ClassName value="{theme}-nav" />
+              <IsThemedStyle value="True" />
+            </CssClassConditional>
+          </CssClass>
+        </Panel>
+        <Panel>
           <Name value="PL_EditFormPnl" />
           <Orientation value="Vertical" />
           <Panel.Height value="#" />
-          <Panel.Width value="50%" />
+          <Panel.Width value="*" />
           <Children>
             <Panel>
-              <Name value="pnl_Breadcrumbs" />
+              <Name value="ControlPnl" />
               <Orientation value="Horizontal" />
               <Panel.Height value="#" />
-              <Panel.Width value="*" />
+              <Panel.HorizontalAlignment value="Right" />
+              <Panel.Width value="100%" />
               <Children>
-                <Breadcrumbs identity="Breadcrumbs.4d3eeadca3c54f1caa1d677db7e07acb">
-                  <Name value="breadcrumbs" />
-                  <controller reference="+GlobalApiObjects.breadcrumbsCtr" />
+                <Panel>
+                  <Name value="ControlPnlHolder" />
+                  <Orientation value="Horizontal" />
                   <Panel.Height value="#" />
                   <Panel.Width value="*" />
-                </Breadcrumbs>
-              </Children>
-              <CssClass>
-                <CssClassConditional>
-                  <ClassName value="{theme}-panel" />
-                  <IsThemedStyle value="True" />
-                </CssClassConditional>
-                <CssClassConditional>
-                  <ClassName value="{theme}-breadcrumbs" />
-                  <IsThemedStyle value="True" />
-                </CssClassConditional>
-              </CssClass>
-            </Panel>
-            <Panel>
-              <Name value="edb_PlaceCountry_parent" />
-              <Orientation value="Horizontal" />
-              <Panel.Height value="#" />
-              <Panel.Width value="*" />
-              <Children>
-                <TextBox>
-                  <Name value="edb_PlaceCountry" />
-                  <Caption value="Evid." />
-                  <CaptionPosition value="Top" />
-                  <IsEnabled value="False" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="33%" />
-                  <Bindings>
-                    <Binding SourceProperty="Data" Expression="form.model.Country" />
-                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.model.Country.isRequired()" />
-                  </Bindings>
-                  <CssClass>
-                    <CssClassConditional>
-                      <ClassName value="{theme}-textbox" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                  </CssClass>
-                </TextBox>
-                <TextBox>
-                  <Name value="edb_PlaceID" />
-                  <Caption value="číslo schváleného místa" />
-                  <CaptionPosition value="Top" />
-                  <IsEnabled value="False" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="33%" />
-                  <Bindings>
-                    <Binding SourceProperty="Data" Expression="form.model.PlaceID" />
-                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.model.PlaceID.isRequired()" />
-                  </Bindings>
-                  <CssClass>
-                    <CssClassConditional>
-                      <ClassName value="{theme}-textbox" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                  </CssClass>
-                </TextBox>
-                <TextBox>
-                  <Name value="edb_ResponsibleCustomsOffice" />
-                  <Caption value="Celní úřad zapisující" />
-                  <CaptionPosition value="Top" />
-                  <IsEnabled value="False" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="33%" />
-                  <Bindings>
-                    <Binding SourceProperty="Data" Expression="form.model.ResponsibleCustomsOfiice" />
-                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.model.ResponsibleCustomsOfiice.isRequired()" />
-                  </Bindings>
-                  <CssClass>
-                    <CssClassConditional>
-                      <ClassName value="{theme}-textbox" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                  </CssClass>
-                </TextBox>
-              </Children>
-              <CssClass>
-                <CssClassConditional>
-                  <ClassName value="{theme}-panel" />
-                  <IsThemedStyle value="True" />
-                </CssClassConditional>
-              </CssClass>
-            </Panel>
-            <Panel>
-              <Name value="edb_TIN_parent" />
-              <Orientation value="Horizontal" />
-              <Panel.Height value="#" />
-              <Panel.Width value="*" />
-              <Children>
-                <TextBox>
-                  <Name value="edb_TIN" />
-                  <Caption value="Osoba, které bylo místo schváleno (EORI)" />
-                  <CaptionPosition value="Top" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="33%" />
-                  <Bindings>
-                    <Binding SourceProperty="Data" Expression="form.model.TIN" />
-                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.model.TIN.isRequired()" />
-                  </Bindings>
-                  <CssClass>
-                    <CssClassConditional>
-                      <ClassName value="{theme}-textbox" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                  </CssClass>
-                </TextBox>
-                <TextBox>
-                  <Name value="edb_TinName" />
-                  <Caption value="Název / jméno subjektu" />
-                  <CaptionPosition value="Top" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="33%" />
-                  <Bindings>
-                    <Binding SourceProperty="Data" Expression="form.model.TinName" />
-                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.model.TinName.isRequired()" />
-                  </Bindings>
-                  <CssClass>
-                    <CssClassConditional>
-                      <ClassName value="{theme}-textbox" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                  </CssClass>
-                </TextBox>
-              </Children>
-              <CssClass>
-                <CssClassConditional>
-                  <ClassName value="{theme}-panel" />
-                  <IsThemedStyle value="True" />
-                </CssClassConditional>
-              </CssClass>
-            </Panel>
-            <CollapsibleGroupBox identity="collapsibleGroupBox.cfca4faa9e574885bad67cbe322167a7">
-              <Name value="grp_PlaceDetail" />
-              <caption value="Detail schváleného místa" />
-              <collapsedIconClass value="fa fa-plus-square-o" />
-              <nonCollapsedIconClass value="fa fa-minus-square-o" />
-              <Panel.Height value="#" />
-              <Panel.Width value="*" />
-              <Content>
-                <Panel>
-                  <Name value="grp_PlaceDetailPnl" />
-                  <Orientation value="Vertical" />
                   <Children>
-                    <Panel>
-                      <Name value="panel1" />
-                      <Orientation value="Vertical" />
+                    <ImageButton identity="ImageButton.d5705fac3ef94ff185b0260525af877a">
+                      <Name value="btn_ToTop" />
+                      <Caption value="{fa-arrow-circle-o-up }" />
                       <Panel.Height value="#" />
-                      <Panel.Width value="*" />
+                      <Panel.Width value="80px" />
+                      <OnClick>
+                        <ActionEvent ReferencedAction="~handler_imageButton1_OnClick" />
+                      </OnClick>
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-imagebutton" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-button" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                        <CssClassConditional>
+                          <ClassName value="flleft" />
+                        </CssClassConditional>
+                        <CssClassConditional>
+                          <ClassName value="toTop" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </ImageButton>
+                    <Panel>
+                      <Name value="btn_Delete_parent" />
+                      <IsVisible value="False" />
+                      <Orientation value="Horizontal" />
+                      <Panel.Height value="#" />
+                      <Panel.Width value="50%" />
                       <Children>
-                        <Panel>
-                          <Name value="edb_name2_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <TextBox>
-                              <Name value="edb_name2" />
-                              <CaptionPosition value="Top" />
-                              <CaptionVAlign value="Middle" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="33%" />
-                              <Bindings>
-                                <Binding SourceProperty="Data" Expression="model.PlaceDetail.Name" />
-                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.Name.isRequired()" />
-                                <Binding SourceProperty="Caption" Expression="model.PlaceDetail.Name.caption()" />
-                              </Bindings>
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-textbox" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </TextBox>
-                            <TextBox>
-                              <Name value="edb_streetAndNr2" />
-                              <CaptionPosition value="Top" />
-                              <CaptionVAlign value="Middle" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="33%" />
-                              <Bindings>
-                                <Binding SourceProperty="Data" Expression="model.PlaceDetail.StreetAndNr" />
-                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.StreetAndNr.isRequired()" />
-                                <Binding SourceProperty="Caption" Expression="model.PlaceDetail.StreetAndNr.caption()" />
-                              </Bindings>
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-textbox" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </TextBox>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="edb_city2_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <TextBox>
-                              <Name value="edb_city2" />
-                              <CaptionPosition value="Top" />
-                              <CaptionVAlign value="Middle" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="33%" />
-                              <Bindings>
-                                <Binding SourceProperty="Data" Expression="model.PlaceDetail.City" />
-                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.City.isRequired()" />
-                                <Binding SourceProperty="Caption" Expression="model.PlaceDetail.City.caption()" />
-                              </Bindings>
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-textbox" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </TextBox>
-                            <TextBox>
-                              <Name value="edb_postCode2" />
-                              <CaptionPosition value="Top" />
-                              <CaptionVAlign value="Middle" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="33%" />
-                              <Bindings>
-                                <Binding SourceProperty="Data" Expression="model.PlaceDetail.PostCode" />
-                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.PostCode.isRequired()" />
-                                <Binding SourceProperty="Caption" Expression="model.PlaceDetail.PostCode.caption()" />
-                              </Bindings>
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-textbox" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </TextBox>
-                            <TextBox>
-                              <Name value="edb_placeSpecification2" />
-                              <CaptionPosition value="Top" />
-                              <CaptionVAlign value="Middle" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="33%" />
-                              <Bindings>
-                                <Binding SourceProperty="Data" Expression="model.PlaceDetail.PlaceSpecification" />
-                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.PlaceSpecification.isRequired()" />
-                                <Binding SourceProperty="Caption" Expression="model.PlaceDetail.PlaceSpecification.caption()" />
-                              </Bindings>
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-textbox" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </TextBox>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="edb_validityCustomsOffice_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <TextBox>
-                              <Name value="edb_validityCustomsOffice" />
-                              <CaptionPosition value="Top" />
-                              <CaptionVAlign value="Middle" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="33%" />
-                              <Bindings>
-                                <Binding SourceProperty="Data" Expression="model.PlaceDetail.ValidityCustomsOffice" />
-                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.ValidityCustomsOffice.isRequired()" />
-                                <Binding SourceProperty="Caption" Expression="model.PlaceDetail.ValidityCustomsOffice.caption()" />
-                              </Bindings>
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-textbox" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </TextBox>
-                            <DatePicker>
-                              <Name value="dtp_validityStartDate2" />
-                              <CaptionPosition value="Top" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="33%" />
-                              <Bindings>
-                                <Binding SourceProperty="Data" Expression="model.PlaceDetail.ValidityStartDate" />
-                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.ValidityStartDate.isRequired()" />
-                                <Binding SourceProperty="Caption" Expression="model.PlaceDetail.ValidityStartDate.caption()" />
-                              </Bindings>
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-datepicker" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </DatePicker>
-                            <DatePicker>
-                              <Name value="dtp_validityEndDate2" />
-                              <CaptionPosition value="Top" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="33%" />
-                              <Bindings>
-                                <Binding SourceProperty="Data" Expression="model.PlaceDetail.ValidityEndDate" />
-                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.ValidityEndDate.isRequired()" />
-                                <Binding SourceProperty="Caption" Expression="model.PlaceDetail.ValidityEndDate.caption()" />
-                              </Bindings>
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-datepicker" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </DatePicker>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="edb_responsiblePerson2_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <TextBox>
-                              <Name value="edb_responsiblePerson2" />
-                              <CaptionPosition value="Top" />
-                              <CaptionVAlign value="Middle" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="33%" />
-                              <Bindings>
-                                <Binding SourceProperty="Data" Expression="model.PlaceDetail.ResponsiblePerson" />
-                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.ResponsiblePerson.isRequired()" />
-                                <Binding SourceProperty="Caption" Expression="model.PlaceDetail.ResponsiblePerson.caption()" />
-                              </Bindings>
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-textbox" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </TextBox>
-                            <DatePicker>
-                              <Name value="dtp_evidenceDate2" />
-                              <CaptionPosition value="Top" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="33%" />
-                              <Bindings>
-                                <Binding SourceProperty="Data" Expression="model.PlaceDetail.EvidenceDate" />
-                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.EvidenceDate.isRequired()" />
-                                <Binding SourceProperty="Caption" Expression="model.PlaceDetail.EvidenceDate.caption()" />
-                              </Bindings>
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-datepicker" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </DatePicker>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
                         <Button>
-                          <Name value="btn_ReloadCodelists" />
-                          <Caption value="Obnovit číselníky" />
+                          <Name value="btn_Delete" />
+                          <Caption value="Zrušení" />
                           <Panel.Height value="#" />
                           <Panel.Width value="150px" />
                           <CssClass>
@@ -419,23 +147,192 @@
                             </CssClassConditional>
                           </CssClass>
                         </Button>
+                        <Button>
+                          <Name value="button1" />
+                          <Caption value="Validace" />
+                          <Panel.Height value="#" />
+                          <Panel.Width value="150px" />
+                          <CssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-button" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                            <CssClassConditional>
+                              <ClassName value="btn-secondary" />
+                            </CssClassConditional>
+                          </CssClass>
+                        </Button>
+                      </Children>
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-panel" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </Panel>
+                    <Panel>
+                      <Name value="panel2" />
+                      <Orientation value="Horizontal" />
+                      <Panel.Height value="#" />
+                      <Panel.Width value="300px" />
+                      <Children>
+                        <Button>
+                          <Name value="button3" />
+                          <Caption value="OK" />
+                          <IsVisible value="False" />
+                          <Panel.Height value="#" />
+                          <Panel.Width value="150px" />
+                          <OnClick>
+                            <ActionEvent ReferencedAction="~handler_button3_OnClick" />
+                          </OnClick>
+                          <CssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-button" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                            <CssClassConditional>
+                              <ClassName value="btn-success" />
+                            </CssClassConditional>
+                            <CssClassConditional>
+                              <ClassName value="flright" />
+                            </CssClassConditional>
+                          </CssClass>
+                        </Button>
+                        <Button>
+                          <Name value="button7" />
+                          <Caption value="Modifikace" />
+                          <IsVisible value="False" />
+                          <Panel.Height value="#" />
+                          <Panel.Width value="150px" />
+                          <OnClick>
+                            <ActionEvent ReferencedAction="~handler_button7_OnClick" />
+                          </OnClick>
+                          <CssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-button" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                            <CssClassConditional>
+                              <ClassName value="flright" />
+                            </CssClassConditional>
+                            <CssClassConditional>
+                              <ClassName value="btn-secondary" />
+                            </CssClassConditional>
+                          </CssClass>
+                        </Button>
+                        <Button>
+                          <Name value="btn_Close" />
+                          <Caption value="Zavřít" />
+                          <Panel.Height value="#" />
+                          <Panel.Width value="150px" />
+                          <OnClick>
+                            <ActionEvent ReferencedAction="~action1" />
+                          </OnClick>
+                          <CssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-button" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                            <CssClassConditional>
+                              <ClassName value="btn-secondary" />
+                            </CssClassConditional>
+                            <CssClassConditional>
+                              <ClassName value="flright" />
+                            </CssClassConditional>
+                          </CssClass>
+                        </Button>
+                      </Children>
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-panel" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                        <CssClassConditional>
+                          <ClassName value="flright" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </Panel>
+                  </Children>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-panel" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="flright" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-nav-bar-controls" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </Panel>
+                <Panel>
+                  <Name value="ControlPnlSpace" />
+                  <Orientation value="Horizontal" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="*" />
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-panel" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-nav-bar-space" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </Panel>
+              </Children>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-panel" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+                <CssClassConditional>
+                  <ClassName value="{theme}-nav-bar" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+                <CssClassConditional>
+                  <ClassName value="flright" />
+                </CssClassConditional>
+              </CssClass>
+            </Panel>
+            <Panel>
+              <Name value="edb_State_parent" />
+              <Orientation value="Horizontal" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <Bindings>
+                <Binding SourceProperty="IsVisible" Expression="panelsVisibility.isGeneralVisible" />
+              </Bindings>
+              <Children>
+                <CollapsibleGroupBox identity="collapsibleGroupBox.cfca4faa9e574885bad67cbe322167a7">
+                  <Name value="collapsibleGroupBox1" />
+                  <caption value="General" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="*" />
+                  <Content>
+                    <Panel>
+                      <Name value="panel4" />
+                      <Orientation value="Vertical" />
+                      <Children>
                         <Panel>
-                          <Name value="edb_guid2_parent" />
+                          <Name value="placeHeader_pnl" />
                           <Orientation value="Horizontal" />
                           <Panel.Height value="#" />
                           <Panel.Width value="*" />
                           <Children>
                             <TextBox>
-                              <Name value="edb_guid2" />
+                              <Name value="edb_PlaceCountry" />
+                              <Caption value="Evid." />
                               <CaptionPosition value="Top" />
-                              <CaptionVAlign value="Middle" />
                               <IsEnabled value="False" />
                               <Panel.Height value="#" />
-                              <Panel.Width value="33%" />
+                              <Panel.Width value="14%" />
                               <Bindings>
-                                <Binding SourceProperty="Data" Expression="model.PlaceDetail.GUID" />
-                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.GUID.isRequired()" />
-                                <Binding SourceProperty="Caption" Expression="model.PlaceDetail.GUID.caption()" />
+                                <Binding SourceProperty="Data" Expression="form.model.Country" />
+                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.model.Country.isRequired()" />
                               </Bindings>
                               <CssClass>
                                 <CssClassConditional>
@@ -445,15 +342,81 @@
                               </CssClass>
                             </TextBox>
                             <TextBox>
-                              <Name value="edb_country2" />
+                              <Name value="edb_PlaceID" />
+                              <Caption value="číslo schváleného místa" />
                               <CaptionPosition value="Top" />
-                              <CaptionVAlign value="Middle" />
+                              <IsEnabled value="False" />
                               <Panel.Height value="#" />
                               <Panel.Width value="33%" />
                               <Bindings>
-                                <Binding SourceProperty="Data" Expression="model.PlaceDetail.Country" />
-                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.Country.isRequired()" />
-                                <Binding SourceProperty="Caption" Expression="model.PlaceDetail.Country.caption()" />
+                                <Binding SourceProperty="Data" Expression="form.model.PlaceID" />
+                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.model.PlaceID.isRequired()" />
+                              </Bindings>
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-textbox" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </TextBox>
+                            <TextBox>
+                              <Name value="edb_ResponsibleCustomsOffice" />
+                              <Caption value="Celní úřad zapisující" />
+                              <CaptionPosition value="Top" />
+                              <IsEnabled value="False" />
+                              <Panel.Height value="#" />
+                              <Panel.Width value="33%" />
+                              <Bindings>
+                                <Binding SourceProperty="Data" Expression="form.model.ResponsibleCustomsOfiice" />
+                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.model.ResponsibleCustomsOfiice.isRequired()" />
+                              </Bindings>
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-textbox" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </TextBox>
+                          </Children>
+                          <CssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-panel" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                          </CssClass>
+                        </Panel>
+                        <Panel>
+                          <Name value="edb_TIN_parent" />
+                          <Orientation value="Horizontal" />
+                          <Panel.Height value="#" />
+                          <Panel.Width value="*" />
+                          <Children>
+                            <TextBox>
+                              <Name value="edb_TIN" />
+                              <Caption value="Osoba, které bylo místo schváleno (EORI)" />
+                              <CaptionPosition value="Top" />
+                              <Panel.Height value="#" />
+                              <Panel.Width value="40%" />
+                              <Bindings>
+                                <Binding SourceProperty="Data" Expression="form.model.TIN" />
+                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.model.TIN.isRequired()" />
+                              </Bindings>
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-textbox" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </TextBox>
+                            <TextBox>
+                              <Name value="edb_TinName" />
+                              <Caption value="Název / jméno subjektu" />
+                              <CaptionPosition value="Top" />
+                              <Panel.Height value="#" />
+                              <Panel.Width value="40%" />
+                              <Bindings>
+                                <Binding SourceProperty="Data" Expression="form.model.TinName" />
+                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.model.TinName.isRequired()" />
                               </Bindings>
                               <CssClass>
                                 <CssClassConditional>
@@ -478,25 +441,327 @@
                         </CssClassConditional>
                       </CssClass>
                     </Panel>
-                    <PagingRepeaterCtrl identity="PagingRepeaterCtrl.280e5bd891d54eda9e7c2bfaaf9e4af4">
-                      <Name value="rpt_PlaceDetailCtr" />
-                      <AllowAdd value="True" />
-                      <AllowRemove value="True" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Bindings>
-                        <Binding SourceProperty="Data" Expression="collection1" />
-                        <Binding SourceProperty="Index" Expression="index_collection1" />
-                      </Bindings>
-                    </PagingRepeaterCtrl>
-                    <PagingRepeater identity="pagingRepeater.36d02d015fb0460b9372e4a46959c4bf">
-                      <Name value="rpt_PlaceDetail" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Content>
+                  </Content>
+                  <conditionalCssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-collapsiblegroupbox" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </conditionalCssClass>
+                </CollapsibleGroupBox>
+              </Children>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-panel" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+              </CssClass>
+            </Panel>
+            <Panel>
+              <Name value="grp_PlaceDetail_parent" />
+              <Orientation value="Horizontal" />
+              <Panel.Height value="#" />
+              <Panel.Width value="*" />
+              <Bindings>
+                <Binding SourceProperty="IsVisible" Expression="panelsVisibility.isPlaceVisible" />
+              </Bindings>
+              <Children>
+                <CollapsibleGroupBox identity="collapsibleGroupBox.cfca4faa9e574885bad67cbe322167a7">
+                  <Name value="grp_PlaceDetail" />
+                  <caption value="Detail schváleného místa" />
+                  <collapsedIconClass value="fa fa-plus-square-o" />
+                  <nonCollapsedIconClass value="fa fa-minus-square-o" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="*" />
+                  <Content>
+                    <Panel>
+                      <Name value="grp_PlaceDetailPnl" />
+                      <Orientation value="Vertical" />
+                      <Children>
+                        <Panel>
+                          <Name value="panel1" />
+                          <Orientation value="Vertical" />
+                          <Panel.Height value="#" />
+                          <Panel.Width value="*" />
+                          <Children>
+                            <Panel>
+                              <Name value="edb_name2_parent" />
+                              <Orientation value="Horizontal" />
+                              <Panel.Height value="#" />
+                              <Panel.Width value="*" />
+                              <Children>
+                                <TextBox>
+                                  <Name value="edb_name2" />
+                                  <CaptionPosition value="Top" />
+                                  <CaptionVAlign value="Middle" />
+                                  <Panel.Height value="#" />
+                                  <Panel.Width value="33%" />
+                                  <Bindings>
+                                    <Binding SourceProperty="Data" Expression="model.PlaceDetail.Name" />
+                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.Name.isRequired()" />
+                                    <Binding SourceProperty="Caption" Expression="model.PlaceDetail.Name.caption()" />
+                                  </Bindings>
+                                  <CssClass>
+                                    <CssClassConditional>
+                                      <ClassName value="{theme}-textbox" />
+                                      <IsThemedStyle value="True" />
+                                    </CssClassConditional>
+                                  </CssClass>
+                                </TextBox>
+                                <TextBox>
+                                  <Name value="edb_streetAndNr2" />
+                                  <CaptionPosition value="Top" />
+                                  <CaptionVAlign value="Middle" />
+                                  <Panel.Height value="#" />
+                                  <Panel.Width value="33%" />
+                                  <Bindings>
+                                    <Binding SourceProperty="Data" Expression="model.PlaceDetail.StreetAndNr" />
+                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.StreetAndNr.isRequired()" />
+                                    <Binding SourceProperty="Caption" Expression="model.PlaceDetail.StreetAndNr.caption()" />
+                                  </Bindings>
+                                  <CssClass>
+                                    <CssClassConditional>
+                                      <ClassName value="{theme}-textbox" />
+                                      <IsThemedStyle value="True" />
+                                    </CssClassConditional>
+                                  </CssClass>
+                                </TextBox>
+                              </Children>
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-panel" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </Panel>
+                            <Panel>
+                              <Name value="edb_city2_parent" />
+                              <Orientation value="Horizontal" />
+                              <Panel.Height value="#" />
+                              <Panel.Width value="*" />
+                              <Children>
+                                <TextBox>
+                                  <Name value="edb_city2" />
+                                  <CaptionPosition value="Top" />
+                                  <CaptionVAlign value="Middle" />
+                                  <Panel.Height value="#" />
+                                  <Panel.Width value="33%" />
+                                  <Bindings>
+                                    <Binding SourceProperty="Data" Expression="model.PlaceDetail.City" />
+                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.City.isRequired()" />
+                                    <Binding SourceProperty="Caption" Expression="model.PlaceDetail.City.caption()" />
+                                  </Bindings>
+                                  <CssClass>
+                                    <CssClassConditional>
+                                      <ClassName value="{theme}-textbox" />
+                                      <IsThemedStyle value="True" />
+                                    </CssClassConditional>
+                                  </CssClass>
+                                </TextBox>
+                                <TextBox>
+                                  <Name value="edb_postCode2" />
+                                  <CaptionPosition value="Top" />
+                                  <CaptionVAlign value="Middle" />
+                                  <Panel.Height value="#" />
+                                  <Panel.Width value="33%" />
+                                  <Bindings>
+                                    <Binding SourceProperty="Data" Expression="model.PlaceDetail.PostCode" />
+                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.PostCode.isRequired()" />
+                                    <Binding SourceProperty="Caption" Expression="model.PlaceDetail.PostCode.caption()" />
+                                  </Bindings>
+                                  <CssClass>
+                                    <CssClassConditional>
+                                      <ClassName value="{theme}-textbox" />
+                                      <IsThemedStyle value="True" />
+                                    </CssClassConditional>
+                                  </CssClass>
+                                </TextBox>
+                                <TextBox>
+                                  <Name value="edb_placeSpecification2" />
+                                  <CaptionPosition value="Top" />
+                                  <CaptionVAlign value="Middle" />
+                                  <Panel.Height value="#" />
+                                  <Panel.Width value="33%" />
+                                  <Bindings>
+                                    <Binding SourceProperty="Data" Expression="model.PlaceDetail.PlaceSpecification" />
+                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.PlaceSpecification.isRequired()" />
+                                    <Binding SourceProperty="Caption" Expression="model.PlaceDetail.PlaceSpecification.caption()" />
+                                  </Bindings>
+                                  <CssClass>
+                                    <CssClassConditional>
+                                      <ClassName value="{theme}-textbox" />
+                                      <IsThemedStyle value="True" />
+                                    </CssClassConditional>
+                                  </CssClass>
+                                </TextBox>
+                              </Children>
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-panel" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </Panel>
+                            <Panel>
+                              <Name value="edb_validityCustomsOffice_parent" />
+                              <Orientation value="Horizontal" />
+                              <Panel.Height value="#" />
+                              <Panel.Width value="*" />
+                              <Children>
+                                <TextBox>
+                                  <Name value="edb_validityCustomsOffice" />
+                                  <CaptionPosition value="Top" />
+                                  <CaptionVAlign value="Middle" />
+                                  <Panel.Height value="#" />
+                                  <Panel.Width value="33%" />
+                                  <Bindings>
+                                    <Binding SourceProperty="Data" Expression="model.PlaceDetail.ValidityCustomsOffice" />
+                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.ValidityCustomsOffice.isRequired()" />
+                                    <Binding SourceProperty="Caption" Expression="model.PlaceDetail.ValidityCustomsOffice.caption()" />
+                                  </Bindings>
+                                  <CssClass>
+                                    <CssClassConditional>
+                                      <ClassName value="{theme}-textbox" />
+                                      <IsThemedStyle value="True" />
+                                    </CssClassConditional>
+                                  </CssClass>
+                                </TextBox>
+                                <DatePicker>
+                                  <Name value="dtp_validityStartDate2" />
+                                  <CaptionPosition value="Top" />
+                                  <Panel.Height value="#" />
+                                  <Panel.Width value="33%" />
+                                  <Bindings>
+                                    <Binding SourceProperty="Data" Expression="model.PlaceDetail.ValidityStartDate" />
+                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.ValidityStartDate.isRequired()" />
+                                    <Binding SourceProperty="Caption" Expression="model.PlaceDetail.ValidityStartDate.caption()" />
+                                  </Bindings>
+                                  <CssClass>
+                                    <CssClassConditional>
+                                      <ClassName value="{theme}-datepicker" />
+                                      <IsThemedStyle value="True" />
+                                    </CssClassConditional>
+                                  </CssClass>
+                                </DatePicker>
+                                <DatePicker>
+                                  <Name value="dtp_validityEndDate2" />
+                                  <CaptionPosition value="Top" />
+                                  <Panel.Height value="#" />
+                                  <Panel.Width value="33%" />
+                                  <Bindings>
+                                    <Binding SourceProperty="Data" Expression="model.PlaceDetail.ValidityEndDate" />
+                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.ValidityEndDate.isRequired()" />
+                                    <Binding SourceProperty="Caption" Expression="model.PlaceDetail.ValidityEndDate.caption()" />
+                                  </Bindings>
+                                  <CssClass>
+                                    <CssClassConditional>
+                                      <ClassName value="{theme}-datepicker" />
+                                      <IsThemedStyle value="True" />
+                                    </CssClassConditional>
+                                  </CssClass>
+                                </DatePicker>
+                              </Children>
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-panel" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </Panel>
+                            <Panel>
+                              <Name value="edb_responsiblePerson2_parent" />
+                              <Orientation value="Horizontal" />
+                              <Panel.Height value="#" />
+                              <Panel.Width value="*" />
+                              <Children>
+                                <TextBox>
+                                  <Name value="edb_responsiblePerson2" />
+                                  <CaptionPosition value="Top" />
+                                  <CaptionVAlign value="Middle" />
+                                  <Panel.Height value="#" />
+                                  <Panel.Width value="33%" />
+                                  <Bindings>
+                                    <Binding SourceProperty="Data" Expression="model.PlaceDetail.ResponsiblePerson" />
+                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.ResponsiblePerson.isRequired()" />
+                                    <Binding SourceProperty="Caption" Expression="model.PlaceDetail.ResponsiblePerson.caption()" />
+                                  </Bindings>
+                                  <CssClass>
+                                    <CssClassConditional>
+                                      <ClassName value="{theme}-textbox" />
+                                      <IsThemedStyle value="True" />
+                                    </CssClassConditional>
+                                  </CssClass>
+                                </TextBox>
+                                <DatePicker>
+                                  <Name value="dtp_evidenceDate2" />
+                                  <CaptionPosition value="Top" />
+                                  <Panel.Height value="#" />
+                                  <Panel.Width value="33%" />
+                                  <Bindings>
+                                    <Binding SourceProperty="Data" Expression="model.PlaceDetail.EvidenceDate" />
+                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.EvidenceDate.isRequired()" />
+                                    <Binding SourceProperty="Caption" Expression="model.PlaceDetail.EvidenceDate.caption()" />
+                                  </Bindings>
+                                  <CssClass>
+                                    <CssClassConditional>
+                                      <ClassName value="{theme}-datepicker" />
+                                      <IsThemedStyle value="True" />
+                                    </CssClassConditional>
+                                  </CssClass>
+                                </DatePicker>
+                              </Children>
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-panel" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </Panel>
+                            <Panel>
+                              <Name value="edb_Country_parent" />
+                              <Orientation value="Horizontal" />
+                              <Panel.Height value="#" />
+                              <Panel.Width value="*" />
+                              <Children>
+                                <TextBox>
+                                  <Name value="edb_country2" />
+                                  <CaptionPosition value="Top" />
+                                  <CaptionVAlign value="Middle" />
+                                  <Panel.Height value="#" />
+                                  <Panel.Width value="33%" />
+                                  <Bindings>
+                                    <Binding SourceProperty="Data" Expression="model.PlaceDetail.Country" />
+                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.Country.isRequired()" />
+                                    <Binding SourceProperty="Caption" Expression="model.PlaceDetail.Country.caption()" />
+                                  </Bindings>
+                                  <CssClass>
+                                    <CssClassConditional>
+                                      <ClassName value="{theme}-textbox" />
+                                      <IsThemedStyle value="True" />
+                                    </CssClassConditional>
+                                  </CssClass>
+                                </TextBox>
+                              </Children>
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-panel" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </Panel>
+                          </Children>
+                          <CssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-panel" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                          </CssClass>
+                        </Panel>
                         <Panel>
                           <Name value="rpt_PlaceDetailPnl" />
                           <Orientation value="Vertical" />
+                          <Panel.Height value="#" />
+                          <Panel.Width value="*" />
                           <Children>
                             <Panel>
                               <Name value="edb_Name_parent" />
@@ -511,8 +776,8 @@
                                   <Panel.Height value="#" />
                                   <Panel.Width value="33%" />
                                   <Bindings>
-                                    <Binding SourceProperty="Data" Expression="Name" />
-                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="Name.isRequired()" />
+                                    <Binding SourceProperty="Data" Expression="model.placeDetail.Name" />
+                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.placeDetail.Name.isRequired()" />
                                   </Bindings>
                                   <CssClass>
                                     <CssClassConditional>
@@ -528,8 +793,8 @@
                                   <Panel.Height value="#" />
                                   <Panel.Width value="33%" />
                                   <Bindings>
-                                    <Binding SourceProperty="Data" Expression="StreetAndNr" />
-                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="StreetAndNr.isRequired()" />
+                                    <Binding SourceProperty="Data" Expression="model.PlaceDetail.StreetAndNr" />
+                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.StreetAndNr.isRequired()" />
                                   </Bindings>
                                   <CssClass>
                                     <CssClassConditional>
@@ -559,8 +824,8 @@
                                   <Panel.Height value="#" />
                                   <Panel.Width value="33%" />
                                   <Bindings>
-                                    <Binding SourceProperty="Data" Expression="City" />
-                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="City.isRequired()" />
+                                    <Binding SourceProperty="Data" Expression="model.PlaceDetail.City" />
+                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.City.isRequired()" />
                                   </Bindings>
                                   <CssClass>
                                     <CssClassConditional>
@@ -576,8 +841,8 @@
                                   <Panel.Height value="#" />
                                   <Panel.Width value="33%" />
                                   <Bindings>
-                                    <Binding SourceProperty="Data" Expression="PostCode" />
-                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="PostCode.isRequired()" />
+                                    <Binding SourceProperty="Data" Expression="model.PlaceDetail.PostCode" />
+                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.PostCode.isRequired()" />
                                   </Bindings>
                                   <CssClass>
                                     <CssClassConditional>
@@ -593,8 +858,8 @@
                                   <Panel.Height value="#" />
                                   <Panel.Width value="33%" />
                                   <Bindings>
-                                    <Binding SourceProperty="Data" Expression="PlaceSpecification" />
-                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="PlaceSpecification.isRequired()" />
+                                    <Binding SourceProperty="Data" Expression="model.PlaceDetail.PlaceSpecification" />
+                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.PlaceSpecification.isRequired()" />
                                   </Bindings>
                                   <CssClass>
                                     <CssClassConditional>
@@ -617,25 +882,23 @@
                               <Panel.Height value="#" />
                               <Panel.Width value="*" />
                               <Children>
-                                <ReferenceCombo>
-                                  <Name value="acb_ValidityCustomsOffice" />
-                                  <Caption value="CÚ příslušný ke schválenému místu" />
+                                <TextBox>
+                                  <Name value="textBox1" />
                                   <CaptionPosition value="Top" />
-                                  <DisplayMember value="Description" />
                                   <Panel.Height value="#" />
-                                  <Panel.Width value="33%" />
-                                  <ReferenceList reference="+GlobalApiObjects.prototypeCodelist" />
+                                  <Panel.Width value="150px" />
                                   <Bindings>
-                                    <Binding SourceProperty="Data" Expression="ValidityCustomsOffice" />
-                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="ValidityCustomsOffice.isRequired()" />
+                                    <Binding SourceProperty="Data" Expression="model.PlaceDetail.ValidityCustomsOffice" />
+                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.ValidityCustomsOffice.isRequired()" />
+                                    <Binding SourceProperty="Caption" Expression="model.PlaceDetail.ValidityCustomsOffice.caption()" />
                                   </Bindings>
                                   <CssClass>
                                     <CssClassConditional>
-                                      <ClassName value="{theme}-referencecombo" />
+                                      <ClassName value="{theme}-textbox" />
                                       <IsThemedStyle value="True" />
                                     </CssClassConditional>
                                   </CssClass>
-                                </ReferenceCombo>
+                                </TextBox>
                                 <DatePicker>
                                   <Name value="dtp_ValidityStartDate" />
                                   <Caption value="Datum zápisu schváleného místa" />
@@ -643,8 +906,8 @@
                                   <Panel.Height value="#" />
                                   <Panel.Width value="33%" />
                                   <Bindings>
-                                    <Binding SourceProperty="Data" Expression="ValidityStartDate" />
-                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="ValidityStartDate.isRequired()" />
+                                    <Binding SourceProperty="Data" Expression="model.PlaceDetail.ValidityStartDate" />
+                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.ValidityStartDate.isRequired()" />
                                   </Bindings>
                                   <CssClass>
                                     <CssClassConditional>
@@ -661,8 +924,8 @@
                                   <Panel.Height value="#" />
                                   <Panel.Width value="33%" />
                                   <Bindings>
-                                    <Binding SourceProperty="Data" Expression="ValidityEndDate" />
-                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="ValidityEndDate.isRequired()" />
+                                    <Binding SourceProperty="Data" Expression="model.PlaceDetail.ValidityEndDate" />
+                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.ValidityEndDate.isRequired()" />
                                   </Bindings>
                                   <CssClass>
                                     <CssClassConditional>
@@ -685,26 +948,23 @@
                               <Panel.Height value="#" />
                               <Panel.Width value="*" />
                               <Children>
-                                <ReferenceCombo>
-                                  <Name value="cbb_ResponsiblePerson" />
-                                  <Caption value="Osobní číslo uživatele" />
+                                <TextBox>
+                                  <Name value="textBox2" />
                                   <CaptionPosition value="Top" />
-                                  <DisplayMember value="Description" />
-                                  <IsEnabled value="False" />
                                   <Panel.Height value="#" />
-                                  <Panel.Width value="33%" />
-                                  <ReferenceList reference="+GlobalApiObjects.prototypeCodelist" />
+                                  <Panel.Width value="150px" />
                                   <Bindings>
-                                    <Binding SourceProperty="Data" Expression="ResponsiblePerson" />
-                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="ResponsiblePerson.isRequired()" />
+                                    <Binding SourceProperty="Data" Expression="model.PlaceDetail.ResponsiblePerson" />
+                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.ResponsiblePerson.isRequired()" />
+                                    <Binding SourceProperty="Caption" Expression="model.PlaceDetail.ResponsiblePerson.caption()" />
                                   </Bindings>
                                   <CssClass>
                                     <CssClassConditional>
-                                      <ClassName value="{theme}-referencecombo" />
+                                      <ClassName value="{theme}-textbox" />
                                       <IsThemedStyle value="True" />
                                     </CssClassConditional>
                                   </CssClass>
-                                </ReferenceCombo>
+                                </TextBox>
                                 <DatePicker>
                                   <Name value="dtp_EvidenceDate" />
                                   <Caption value="Datum zápisu do aplikace" />
@@ -713,8 +973,8 @@
                                   <Panel.Height value="#" />
                                   <Panel.Width value="33%" />
                                   <Bindings>
-                                    <Binding SourceProperty="Data" Expression="EvidenceDate" />
-                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="EvidenceDate.isRequired()" />
+                                    <Binding SourceProperty="Data" Expression="model.PlaceDetail.EvidenceDate" />
+                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.EvidenceDate.isRequired()" />
                                   </Bindings>
                                   <CssClass>
                                     <CssClassConditional>
@@ -732,21 +992,20 @@
                               </CssClass>
                             </Panel>
                             <Panel>
-                              <Name value="edb_DetailGUID_parent" />
+                              <Name value="edb_DetailCountry_parent" />
                               <Orientation value="Horizontal" />
                               <Panel.Height value="#" />
                               <Panel.Width value="*" />
                               <Children>
                                 <TextBox>
-                                  <Name value="edb_DetailGUID" />
-                                  <Caption value="edb_DetailGUID" />
+                                  <Name value="textBox3" />
                                   <CaptionPosition value="Top" />
-                                  <IsEnabled value="False" />
                                   <Panel.Height value="#" />
-                                  <Panel.Width value="33%" />
+                                  <Panel.Width value="150px" />
                                   <Bindings>
-                                    <Binding SourceProperty="Data" Expression="DetailGUID" />
-                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="DetailGUID.isRequired()" />
+                                    <Binding SourceProperty="Data" Expression="model.PlaceDetail.Country" />
+                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.PlaceDetail.Country.isRequired()" />
+                                    <Binding SourceProperty="Caption" Expression="model.PlaceDetail.Country.caption()" />
                                   </Bindings>
                                   <CssClass>
                                     <CssClassConditional>
@@ -755,25 +1014,6 @@
                                     </CssClassConditional>
                                   </CssClass>
                                 </TextBox>
-                                <ReferenceCombo>
-                                  <Name value="cbb_Country" />
-                                  <Caption value="Země" />
-                                  <CaptionPosition value="Top" />
-                                  <DisplayMember value="Description" />
-                                  <Panel.Height value="#" />
-                                  <Panel.Width value="33%" />
-                                  <ReferenceList reference="+GlobalApiObjects.prototypeCodelist" />
-                                  <Bindings>
-                                    <Binding SourceProperty="Data" Expression="Country" />
-                                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="Country.isRequired()" />
-                                  </Bindings>
-                                  <CssClass>
-                                    <CssClassConditional>
-                                      <ClassName value="{theme}-referencecombo" />
-                                      <IsThemedStyle value="True" />
-                                    </CssClassConditional>
-                                  </CssClass>
-                                </ReferenceCombo>
                               </Children>
                               <CssClass>
                                 <CssClassConditional>
@@ -790,221 +1030,25 @@
                             </CssClassConditional>
                           </CssClass>
                         </Panel>
-                      </Content>
-                      <Bindings>
-                        <Binding SourceProperty="Data" Expression="collection1" />
-                        <Binding SourceProperty="Index" Expression="index_collection1" />
-                      </Bindings>
-                    </PagingRepeater>
-                  </Children>
-                  <CssClass>
-                    <CssClassConditional>
-                      <ClassName value="{theme}-panel" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                    <CssClassConditional>
-                      <ClassName value="fullWidth" />
-                    </CssClassConditional>
-                  </CssClass>
-                </Panel>
-              </Content>
-              <conditionalCssClass>
-                <CssClassConditional>
-                  <ClassName value="{theme}-collapsiblegroupbox" />
-                  <IsThemedStyle value="True" />
-                </CssClassConditional>
-              </conditionalCssClass>
-            </CollapsibleGroupBox>
-            <DataTable>
-              <Name value="tbl_PlaceDetail" />
-              <Panel.Height value="#" />
-              <Panel.Width value="*" />
-              <Bindings>
-                <Binding SourceProperty="DataItems" Expression="" />
-              </Bindings>
-              <CssClass>
-                <CssClassConditional>
-                  <ClassName value="{theme}-datatable" />
-                  <IsThemedStyle value="True" />
-                </CssClassConditional>
-              </CssClass>
-            </DataTable>
-            <Panel>
-              <Name value="pnl_LowerButtons" />
-              <Orientation value="Vertical" />
-              <Panel.Height value="#" />
-              <Panel.Width value="*" />
-              <Children>
-                <Panel>
-                  <Name value="btn_OK_parent" />
-                  <Orientation value="Horizontal" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="*" />
-                  <Children>
-                    <Button>
-                      <Name value="btn_OK" />
-                      <Caption value="OK" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="150px" />
+                      </Children>
                       <CssClass>
                         <CssClassConditional>
-                          <ClassName value="{theme}-button" />
+                          <ClassName value="{theme}-panel" />
                           <IsThemedStyle value="True" />
                         </CssClassConditional>
-                      </CssClass>
-                    </Button>
-                    <Button>
-                      <Name value="btn_Close" />
-                      <Caption value="Zavřít" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="150px" />
-                      <CssClass>
                         <CssClassConditional>
-                          <ClassName value="{theme}-button" />
-                          <IsThemedStyle value="True" />
+                          <ClassName value="fullWidth" />
                         </CssClassConditional>
                       </CssClass>
-                    </Button>
-                    <Button>
-                      <Name value="btn_Modify" />
-                      <Caption value="Modifikace" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="150px" />
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-button" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Button>
-                  </Children>
-                  <CssClass>
+                    </Panel>
+                  </Content>
+                  <conditionalCssClass>
                     <CssClassConditional>
-                      <ClassName value="{theme}-panel" />
+                      <ClassName value="{theme}-collapsiblegroupbox" />
                       <IsThemedStyle value="True" />
                     </CssClassConditional>
-                  </CssClass>
-                </Panel>
-                <Panel>
-                  <Name value="pnl_Spacer" />
-                  <Orientation value="Vertical" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="*" />
-                  <CssClass>
-                    <CssClassConditional>
-                      <ClassName value="{theme}-panel" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                  </CssClass>
-                </Panel>
-                <Panel>
-                  <Name value="btn_Delete_parent" />
-                  <Orientation value="Horizontal" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="*" />
-                  <Children>
-                    <Button>
-                      <Name value="btn_Delete" />
-                      <Caption value="Zrušení" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="150px" />
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-button" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Button>
-                    <Button>
-                      <Name value="btn_Validate" />
-                      <Caption value="Validace" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="150px" />
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-button" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Button>
-                  </Children>
-                  <CssClass>
-                    <CssClassConditional>
-                      <ClassName value="{theme}-panel" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                  </CssClass>
-                </Panel>
-              </Children>
-              <CssClass>
-                <CssClassConditional>
-                  <ClassName value="{theme}-panel" />
-                  <IsThemedStyle value="True" />
-                </CssClassConditional>
-              </CssClass>
-            </Panel>
-            <Panel>
-              <Name value="edb_State_parent" />
-              <Orientation value="Horizontal" />
-              <Panel.Height value="#" />
-              <Panel.Width value="*" />
-              <Children>
-                <TextBox>
-                  <Name value="edb_State" />
-                  <Caption value="edb_State" />
-                  <CaptionPosition value="Top" />
-                  <IsEnabled value="False" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="33%" />
-                  <Bindings>
-                    <Binding SourceProperty="Data" Expression="form.model.State" />
-                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.model.State.isRequired()" />
-                  </Bindings>
-                  <CssClass>
-                    <CssClassConditional>
-                      <ClassName value="{theme}-textbox" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                  </CssClass>
-                </TextBox>
-                <TextBox>
-                  <Name value="edb_GUID" />
-                  <Caption value="edb_GUID" />
-                  <CaptionPosition value="Top" />
-                  <IsEnabled value="False" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="33%" />
-                  <Bindings>
-                    <Binding SourceProperty="Data" Expression="form.model.GUID" />
-                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.model.GUID.isRequired()" />
-                  </Bindings>
-                  <CssClass>
-                    <CssClassConditional>
-                      <ClassName value="{theme}-textbox" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                  </CssClass>
-                </TextBox>
-                <ReferenceCombo>
-                  <Name value="cbb_AuthorizationType" />
-                  <Caption value="Typ povolení ZJP" />
-                  <CaptionPosition value="Top" />
-                  <DisplayMember value="Description" />
-                  <IsEnabled value="False" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="33%" />
-                  <ReferenceList reference="+GlobalApiObjects.prototypeCodelist" />
-                  <Bindings>
-                    <Binding SourceProperty="Data" Expression="reference1" />
-                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="reference1.isRequired()" />
-                  </Bindings>
-                  <CssClass>
-                    <CssClassConditional>
-                      <ClassName value="{theme}-referencecombo" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                  </CssClass>
-                </ReferenceCombo>
+                  </conditionalCssClass>
+                </CollapsibleGroupBox>
               </Children>
               <CssClass>
                 <CssClassConditional>
@@ -1140,8 +1184,8 @@
               </DeclaredType>
             </Attribute>
             <Attribute>
-              <Name value="DetailGUID" />
-              <Caption value="Detail GUID" />
+              <Name value="DetailID" />
+              <Caption value="Detail ID" />
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
@@ -1204,31 +1248,166 @@
             <Include>
               <Include reference="/(model.13c525570c9b4339a1f151f546c52d45)+DataEntities.PLData" />
             </Include>
+            <Attribute>
+              <Name value="_actualDate" />
+              <Caption value="_actualDate" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="DateTime" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
           </Children>
         </Complex>
+        <Attribute>
+          <Name value="isEditing" />
+          <Caption value="Is editing" />
+          <DeclaredType>
+            <AttributeType>
+              <BaseType value="Bool" />
+            </AttributeType>
+          </DeclaredType>
+        </Attribute>
+        <Complex>
+          <Name value="panelsVisibility" />
+          <Caption value="Panels visibility" />
+          <Children>
+            <Attribute>
+              <Name value="isGeneralVisible" />
+              <Caption value="Is general visible" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isPlaceVisible" />
+              <Caption value="Is place visible" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+          </Children>
+        </Complex>
+        <Attribute>
+          <Name value="eventState" />
+          <DataContextParameter.IsInput value="True" />
+          <DataContextParameter.IsInputRequired value="True" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
       </Children>
+      <Modifiers>
+        <Modifier>
+          <Name value="modifier_59508CA7_ValidityStartDate" />
+          <ShowAsChanges value="True" />
+          <SourcePath value="model.PlaceDetail.ValidityStartDate" />
+          <Validators>
+            <Validator Name="df_validateAttribute_ValidityStartDate">
+              <ErrorMessage IsValid="True">
+                <ExpressionText><![CDATA["VAL056"]]></ExpressionText>
+                <ResultType>
+                  <BaseType value="String" />
+                </ResultType>
+              </ErrorMessage>
+              <IsValid IsValid="True">
+                <ExpressionText><![CDATA[attr.hasValue() ? (this.ValidityStartDate <= form.model._actualDate) : true]]></ExpressionText>
+                <ResultType>
+                  <BaseType value="Bool" />
+                </ResultType>
+              </IsValid>
+            </Validator>
+          </Validators>
+        </Modifier>
+      </Modifiers>
     </DataContext>
   </DataContext>
   <OnCreate>
-    <ActionEvent ReferencedAction="~handler_PL_EditForm_OnCreate" />
+    <ActionEvent ReferencedAction="~init" />
   </OnCreate>
   <Actions>
     <ActionBlock>
-      <Name value="handler_hyperLink1_OnClick" />
+      <Name value="action1" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[navigation.main.Master.go()]]></Script>
+        <Script><![CDATA[navigation.cseForms.MainForm.go()]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
       </DataContext>
     </ActionBlock>
     <ActionBlock>
-      <Name value="handler_PL_EditForm_OnCreate" />
+      <Name value="handler_button7_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.isEditing = true]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_button3_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.isEditing = false]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="init" />
+      <ActionLangBody IsValid="True">
         <Script><![CDATA[var url = packages.main.apiobjects.urlRouter.findFormUrl(navigation.cseForms.PL_EditForm.fullName)
-url.updatePageUrl()]]></Script>
+url.updatePageUrl()
+
+form.model._actualDate = getDateTime()
+
+form.isEditing = false
+
+form.panelsVisibility.isGeneralVisible = true
+form.panelsVisibility.isPlaceVisible = false]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_general_link_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.panelsVisibility.isGeneralVisible = true
+form.panelsVisibility.isPlaceVisible = false
+
+page.scrollToTop()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_detail_link_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.panelsVisibility.isGeneralVisible = false
+form.panelsVisibility.isPlaceVisible = true
+
+page.scrollToTop()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_imageButton1_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[apiobjects.page.scrollToTop()]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />

@@ -4,6 +4,11 @@
   <Identity value="main.54b271120be14de18033000f6ed59f52" />
   <Items>
     <PackageItem Src="Master.form" />
+    <PackageFolder Name="JS">
+      <Items>
+        <ResourceItem ResourceName="ScrollFromTop.js" LinkerAction="Script" OutputFileName="ScrollFromTop.js" Src="JS\ScrollFromTop.js" />
+      </Items>
+    </PackageFolder>
     <PackageFolder Name="CSS">
       <Items>
         <ResourceItem ResourceName="main.css" LinkerAction="Css" OutputFileName="main.css" Src="CSS\main.css" />

@@ -14,7 +14,7 @@
           <Name value="PWEI_EditFormPnl" />
           <Orientation value="Vertical" />
           <Panel.Height value="#" />
-          <Panel.Width value="50%" />
+          <Panel.Width value="100%" />
           <Children>
             <Panel>
               <Name value="pnl_Breadcrumbs" />
@@ -812,18 +812,6 @@
                                     </CssClassConditional>
                                   </CssClass>
                                 </Panel>
-                                <Button>
-                                  <Name value="btn_ReloadCodelists" />
-                                  <Caption value="Obnovit číselníky" />
-                                  <Panel.Height value="#" />
-                                  <Panel.Width value="150px" />
-                                  <CssClass>
-                                    <CssClassConditional>
-                                      <ClassName value="{theme}-button" />
-                                      <IsThemedStyle value="True" />
-                                    </CssClassConditional>
-                                  </CssClass>
-                                </Button>
                               </Children>
                               <CssClass>
                                 <CssClassConditional>
@@ -1021,23 +1009,6 @@
                             </CssClassConditional>
                           </conditionalCssClass>
                         </CollapsibleGroupBox>
-                        <TextBox>
-                          <Name value="edb_EventGUID" />
-                          <Caption value="edb_EventGUID" />
-                          <CaptionPosition value="Top" />
-                          <IsEnabled value="False" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="33%" />
-                          <Bindings>
-                            <Binding SourceProperty="Data" Expression="" />
-                          </Bindings>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-textbox" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </TextBox>
                         <DataTable>
                           <Name value="tbl_Goods" />
                           <Panel.Height value="#" />
@@ -2962,29 +2933,6 @@
                           <Panel.Width value="*" />
                           <Columns>
                             <DataColumn>
-                              <Name value="edb_FileGUIDCol" />
-                              <Caption value="edb_FileGUID" />
-                              <Content>
-                                <TextBox>
-                                  <Name value="edb_FileGUID" />
-                                  <CaptionPosition value="Hide" />
-                                  <IsEnabled value="False" />
-                                  <CssClass>
-                                    <CssClassConditional>
-                                      <ClassName value="{theme}-textbox" />
-                                      <IsThemedStyle value="True" />
-                                    </CssClassConditional>
-                                  </CssClass>
-                                </TextBox>
-                              </Content>
-                              <HeaderCssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-datacolumn" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </HeaderCssClass>
-                            </DataColumn>
-                            <DataColumn>
                               <Name value="edb_FileNameCol" />
                               <Caption value="Název souboru" />
                               <Content>
@@ -3129,6 +3077,9 @@
                           <Name value="tbl_Control" />
                           <Panel.Height value="#" />
                           <Panel.Width value="*" />
+                          <Bindings>
+                            <Binding SourceProperty="DataItems" Expression="" />
+                          </Bindings>
                           <Columns>
                             <DataColumn>
                               <Name value="cbb_ResultCol" />
@@ -3168,29 +3119,9 @@
                                   <Name value="edb_ControledByUser" />
                                   <CaptionPosition value="Hide" />
                                   <IsEnabled value="False" />
-                                  <CssClass>
-                                    <CssClassConditional>
-                                      <ClassName value="{theme}-textbox" />
-                                      <IsThemedStyle value="True" />
-                                    </CssClassConditional>
-                                  </CssClass>
-                                </TextBox>
-                              </Content>
-                              <HeaderCssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-datacolumn" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </HeaderCssClass>
-                            </DataColumn>
-                            <DataColumn>
-                              <Name value="edb_GUID_CTRLCol" />
-                              <Caption value="GUID" />
-                              <Content>
-                                <TextBox>
-                                  <Name value="edb_GUID_CTRL" />
-                                  <CaptionPosition value="Hide" />
-                                  <IsEnabled value="False" />
+                                  <Bindings>
+                                    <Binding SourceProperty="Data" Expression="" />
+                                  </Bindings>
                                   <CssClass>
                                     <CssClassConditional>
                                       <ClassName value="{theme}-textbox" />
@@ -3251,29 +3182,6 @@
                                   <Panel.Height value="#" />
                                   <Panel.Width value="*" />
                                   <Columns>
-                                    <DataColumn>
-                                      <Name value="edb_FileGUID_CTRLCol" />
-                                      <Caption value="edb_FileGUID_CTRL" />
-                                      <Content>
-                                        <TextBox>
-                                          <Name value="edb_FileGUID_CTRL" />
-                                          <CaptionPosition value="Hide" />
-                                          <IsEnabled value="False" />
-                                          <CssClass>
-                                            <CssClassConditional>
-                                              <ClassName value="{theme}-textbox" />
-                                              <IsThemedStyle value="True" />
-                                            </CssClassConditional>
-                                          </CssClass>
-                                        </TextBox>
-                                      </Content>
-                                      <HeaderCssClass>
-                                        <CssClassConditional>
-                                          <ClassName value="{theme}-datacolumn" />
-                                          <IsThemedStyle value="True" />
-                                        </CssClassConditional>
-                                      </HeaderCssClass>
-                                    </DataColumn>
                                     <DataColumn>
                                       <Name value="edb_FileName_CTRLCol" />
                                       <Caption value="Název souboru" />
@@ -3817,23 +3725,6 @@
                 </CssClassConditional>
               </CssClass>
             </Panel>
-            <TextBox>
-              <Name value="edb_GUID" />
-              <Caption value="GUID" />
-              <CaptionPosition value="Top" />
-              <IsEnabled value="False" />
-              <Panel.Height value="#" />
-              <Panel.Width value="33%" />
-              <Bindings>
-                <Binding SourceProperty="Data" Expression="" />
-              </Bindings>
-              <CssClass>
-                <CssClassConditional>
-                  <ClassName value="{theme}-textbox" />
-                  <IsThemedStyle value="True" />
-                </CssClassConditional>
-              </CssClass>
-            </TextBox>
           </Children>
           <CssClass>
             <CssClassConditional>

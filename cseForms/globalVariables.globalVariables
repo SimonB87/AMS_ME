@@ -60,5 +60,12 @@
         </AttributeType>
       </DeclaredType>
     </Attribute>
+    <Attribute>
+      <Name value="loadedState" />
+      <Caption value="Loaded state" />
+      <DeclaredType>
+        <AttributeType />
+      </DeclaredType>
+    </Attribute>
   </Children>
 </GlobalVariables>

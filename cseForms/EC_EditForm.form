@@ -18,10 +18,12 @@
           <Children>
             <Label>
               <Name value="NavigationLbl" />
-              <Data value="Navigation" />
               <Heading value="h3" />
               <Panel.Height value="#" />
               <Panel.Width value="100%" />
+              <Bindings>
+                <Binding SourceProperty="Data" Expression="globals.loadedState" />
+              </Bindings>
               <CssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-label" />
@@ -37,10 +39,19 @@
               <OnClick>
                 <ActionEvent ReferencedAction="~handler_general_link_OnClick" />
               </OnClick>
+              <Bindings>
+                <Binding SourceProperty="IsVisible" Expression="form.menusVisibility.isGeneralMenuVisible" />
+              </Bindings>
               <CssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-hyperlink" />
                   <IsThemedStyle value="True" />
+                </CssClassConditional>
+                <CssClassConditional>
+                  <ClassName value="active" />
+                  <Bindings>
+                    <Binding SourceProperty="Condition" Expression="form.menusVisibility.isGeneralMenuActive" />
+                  </Bindings>
                 </CssClassConditional>
               </CssClass>
             </HyperLink>
@@ -53,10 +64,19 @@
               <OnClick>
                 <ActionEvent ReferencedAction="~handler_subject_link_OnClick" />
               </OnClick>
+              <Bindings>
+                <Binding SourceProperty="IsVisible" Expression="form.menusVisibility.isSubjectMenuVisible" />
+              </Bindings>
               <CssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-hyperlink" />
                   <IsThemedStyle value="True" />
+                </CssClassConditional>
+                <CssClassConditional>
+                  <ClassName value="active" />
+                  <Bindings>
+                    <Binding SourceProperty="Condition" Expression="form.menusVisibility.isSubjectMenuActive" />
+                  </Bindings>
                 </CssClassConditional>
               </CssClass>
             </HyperLink>
@@ -69,10 +89,19 @@
               <OnClick>
                 <ActionEvent ReferencedAction="~handler_amsec_link_OnClick" />
               </OnClick>
+              <Bindings>
+                <Binding SourceProperty="IsVisible" Expression="form.menusVisibility.isAMSECMenuVisible" />
+              </Bindings>
               <CssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-hyperlink" />
                   <IsThemedStyle value="True" />
+                </CssClassConditional>
+                <CssClassConditional>
+                  <ClassName value="active" />
+                  <Bindings>
+                    <Binding SourceProperty="Condition" Expression="form.menusVisibility.isAMSECMenuActive" />
+                  </Bindings>
                 </CssClassConditional>
               </CssClass>
             </HyperLink>
@@ -84,10 +113,19 @@
               <OnClick>
                 <ActionEvent ReferencedAction="~handler_sign_link_OnClick" />
               </OnClick>
+              <Bindings>
+                <Binding SourceProperty="IsVisible" Expression="form.menusVisibility.isSignMenuVisible" />
+              </Bindings>
               <CssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-hyperlink" />
                   <IsThemedStyle value="True" />
+                </CssClassConditional>
+                <CssClassConditional>
+                  <ClassName value="active" />
+                  <Bindings>
+                    <Binding SourceProperty="Condition" Expression="form.menusVisibility.isSignMenuActive" />
+                  </Bindings>
                 </CssClassConditional>
               </CssClass>
             </HyperLink>
@@ -100,10 +138,19 @@
               <OnClick>
                 <ActionEvent ReferencedAction="~handler_maint_link_OnClick" />
               </OnClick>
+              <Bindings>
+                <Binding SourceProperty="IsVisible" Expression="form.menusVisibility.isMaintMenuVisible" />
+              </Bindings>
               <CssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-hyperlink" />
                   <IsThemedStyle value="True" />
+                </CssClassConditional>
+                <CssClassConditional>
+                  <ClassName value="active" />
+                  <Bindings>
+                    <Binding SourceProperty="Condition" Expression="form.menusVisibility.isMaintMenuActive" />
+                  </Bindings>
                 </CssClassConditional>
               </CssClass>
             </HyperLink>
@@ -116,10 +163,19 @@
               <OnClick>
                 <ActionEvent ReferencedAction="~handler_encr_link_OnClick" />
               </OnClick>
+              <Bindings>
+                <Binding SourceProperty="IsVisible" Expression="form.menusVisibility.isEncrMenuVisible" />
+              </Bindings>
               <CssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-hyperlink" />
                   <IsThemedStyle value="True" />
+                </CssClassConditional>
+                <CssClassConditional>
+                  <ClassName value="active" />
+                  <Bindings>
+                    <Binding SourceProperty="Condition" Expression="form.menusVisibility.isEncrMenuActive" />
+                  </Bindings>
                 </CssClassConditional>
               </CssClass>
             </HyperLink>
@@ -132,10 +188,19 @@
               <OnClick>
                 <ActionEvent ReferencedAction="~handler_files_link_OnClick" />
               </OnClick>
+              <Bindings>
+                <Binding SourceProperty="IsVisible" Expression="form.menusVisibility.isFilesMenuVisible" />
+              </Bindings>
               <CssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-hyperlink" />
                   <IsThemedStyle value="True" />
+                </CssClassConditional>
+                <CssClassConditional>
+                  <ClassName value="active" />
+                  <Bindings>
+                    <Binding SourceProperty="Condition" Expression="form.menusVisibility.isFilesMenuActive" />
+                  </Bindings>
                 </CssClassConditional>
               </CssClass>
             </HyperLink>
@@ -148,10 +213,19 @@
               <OnClick>
                 <ActionEvent ReferencedAction="~handler_events_link_OnClick" />
               </OnClick>
+              <Bindings>
+                <Binding SourceProperty="IsVisible" Expression="form.menusVisibility.isEventsMenuVisible" />
+              </Bindings>
               <CssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-hyperlink" />
                   <IsThemedStyle value="True" />
+                </CssClassConditional>
+                <CssClassConditional>
+                  <ClassName value="active" />
+                  <Bindings>
+                    <Binding SourceProperty="Condition" Expression="form.menusVisibility.isEventsMenuActive" />
+                  </Bindings>
                 </CssClassConditional>
               </CssClass>
             </HyperLink>
@@ -164,10 +238,19 @@
               <OnClick>
                 <ActionEvent ReferencedAction="~handler_dates_link_OnClick" />
               </OnClick>
+              <Bindings>
+                <Binding SourceProperty="IsVisible" Expression="form.menusVisibility.isDatesMenuVisible " />
+              </Bindings>
               <CssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-hyperlink" />
                   <IsThemedStyle value="True" />
+                </CssClassConditional>
+                <CssClassConditional>
+                  <ClassName value="active" />
+                  <Bindings>
+                    <Binding SourceProperty="Condition" Expression="form.menusVisibility.isDatesMenuActive" />
+                  </Bindings>
                 </CssClassConditional>
               </CssClass>
             </HyperLink>
@@ -180,10 +263,19 @@
               <OnClick>
                 <ActionEvent ReferencedAction="~handler_rejection_link_OnClick" />
               </OnClick>
+              <Bindings>
+                <Binding SourceProperty="IsVisible" Expression="form.menusVisibility.isDatesMenuActive" />
+              </Bindings>
               <CssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-hyperlink" />
                   <IsThemedStyle value="True" />
+                </CssClassConditional>
+                <CssClassConditional>
+                  <ClassName value="active" />
+                  <Bindings>
+                    <Binding SourceProperty="Condition" Expression="form.menusVisibility.isDatesMenuVisible" />
+                  </Bindings>
                 </CssClassConditional>
               </CssClass>
             </HyperLink>
@@ -206,37 +298,70 @@
           <Panel.Width value="*" />
           <Children>
             <Panel>
-              <Name value="pnl_Breadcrumbs" />
+              <Name value="ControlPnl" />
               <Orientation value="Horizontal" />
               <Panel.Height value="#" />
-              <Panel.Width value="*" />
+              <Panel.HorizontalAlignment value="Right" />
+              <Panel.Width value="100%" />
               <Children>
-                <Breadcrumbs identity="Breadcrumbs.4d3eeadca3c54f1caa1d677db7e07acb">
-                  <Name value="breadcrumbs" />
+                <Panel>
+                  <Name value="ControlPnlHolder" />
+                  <Orientation value="Horizontal" />
                   <Panel.Height value="#" />
                   <Panel.Width value="*" />
-                </Breadcrumbs>
-                <Panel>
-                  <Name value="pnl_LowerButtons" />
-                  <Orientation value="Vertical" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="#" />
                   <Children>
+                    <ImageButton identity="ImageButton.d5705fac3ef94ff185b0260525af877a">
+                      <Name value="btn_ToTop" />
+                      <Caption value="{fa-arrow-circle-o-up }" />
+                      <Panel.Height value="#" />
+                      <Panel.Width value="80px" />
+                      <OnClick>
+                        <ActionEvent ReferencedAction="~handler_imageButton1_OnClick" />
+                      </OnClick>
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-imagebutton" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-button" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                        <CssClassConditional>
+                          <ClassName value="flleft" />
+                        </CssClassConditional>
+                        <CssClassConditional>
+                          <ClassName value="toTop" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </ImageButton>
                     <Panel>
                       <Name value="btn_OK_parent" />
                       <Orientation value="Horizontal" />
                       <Panel.Height value="#" />
-                      <Panel.Width value="*" />
+                      <Panel.Width value="300px" />
                       <Children>
                         <Button>
                           <Name value="btn_OK" />
                           <Caption value="OK" />
                           <Panel.Height value="#" />
                           <Panel.Width value="150px" />
+                          <OnClick>
+                            <ActionEvent ReferencedAction="~handler_btn_OK_OnClick" />
+                          </OnClick>
+                          <Bindings>
+                            <Binding SourceProperty="IsVisible" Expression="isEditing" />
+                          </Bindings>
                           <CssClass>
                             <CssClassConditional>
                               <ClassName value="{theme}-button" />
                               <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                            <CssClassConditional>
+                              <ClassName value="btn-success" />
+                            </CssClassConditional>
+                            <CssClassConditional>
+                              <ClassName value="flright" />
                             </CssClassConditional>
                           </CssClass>
                         </Button>
@@ -253,17 +378,11 @@
                               <ClassName value="{theme}-button" />
                               <IsThemedStyle value="True" />
                             </CssClassConditional>
-                          </CssClass>
-                        </Button>
-                        <Button>
-                          <Name value="btn_Modify" />
-                          <Caption value="Modifikace" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="150px" />
-                          <CssClass>
                             <CssClassConditional>
-                              <ClassName value="{theme}-button" />
-                              <IsThemedStyle value="True" />
+                              <ClassName value="btn-secondary" />
+                            </CssClassConditional>
+                            <CssClassConditional>
+                              <ClassName value="flright" />
                             </CssClassConditional>
                           </CssClass>
                         </Button>
@@ -273,158 +392,8 @@
                           <ClassName value="{theme}-panel" />
                           <IsThemedStyle value="True" />
                         </CssClassConditional>
-                      </CssClass>
-                    </Panel>
-                    <Panel>
-                      <Name value="btn_NewAuthorization_df_parent" />
-                      <IsVisible value="False" />
-                      <Orientation value="Horizontal" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Children>
-                        <Button>
-                          <Name value="btn_NewAuthorization_df" />
-                          <Caption value="Povolení" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="150px" />
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-button" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Button>
-                        <Button>
-                          <Name value="btn_NewRejection_df" />
-                          <Caption value="Zamítnutí" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="150px" />
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-button" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Button>
-                        <Button>
-                          <Name value="btn_NewWithdrawal_df" />
-                          <Caption value="Odnětí" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="150px" />
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-button" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Button>
-                      </Children>
-                      <CssClass>
                         <CssClassConditional>
-                          <ClassName value="{theme}-panel" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Panel>
-                    <Panel>
-                      <Name value="btn_NewCancel_df_parent" />
-                      <IsVisible value="False" />
-                      <Orientation value="Horizontal" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Children>
-                        <Button>
-                          <Name value="btn_NewCancel_df" />
-                          <Caption value="Zrušení" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="150px" />
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-button" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Button>
-                        <Button>
-                          <Name value="btn_Remove_df" />
-                          <Caption value="Odstranění" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="150px" />
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-button" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Button>
-                        <Button>
-                          <Name value="btn_Authorization_Exhausted_df" />
-                          <Caption value="Povolení" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="150px" />
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-button" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Button>
-                      </Children>
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-panel" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Panel>
-                    <Panel>
-                      <Name value="btn_Authorization_Withdrawed_df_parent" />
-                      <IsVisible value="False" />
-                      <Orientation value="Horizontal" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Children>
-                        <Button>
-                          <Name value="btn_Authorization_Withdrawed_df" />
-                          <Caption value="Povolení" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="150px" />
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-button" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Button>
-                        <Button>
-                          <Name value="btn_Validate" />
-                          <Caption value="Validace" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="150px" />
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-button" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Button>
-                        <Button>
-                          <Name value="btn_AddFile" />
-                          <Caption value="Vložit soubor" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="150px" />
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-button" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Button>
-                      </Children>
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-panel" />
-                          <IsThemedStyle value="True" />
+                          <ClassName value="flright" />
                         </CssClassConditional>
                       </CssClass>
                     </Panel>
@@ -437,6 +406,26 @@
                     <CssClassConditional>
                       <ClassName value="flright" />
                     </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-nav-bar-controls" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </Panel>
+                <Panel>
+                  <Name value="ControlPnlSpace" />
+                  <Orientation value="Horizontal" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="*" />
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-panel" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-nav-bar-space" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
                   </CssClass>
                 </Panel>
               </Children>
@@ -446,9 +435,11 @@
                   <IsThemedStyle value="True" />
                 </CssClassConditional>
                 <CssClassConditional>
-                  <ClassName value="{theme}-breadcrumbs" />
-                  <Condition value="False" />
+                  <ClassName value="{theme}-nav-bar" />
                   <IsThemedStyle value="True" />
+                </CssClassConditional>
+                <CssClassConditional>
+                  <ClassName value="flright" />
                 </CssClassConditional>
               </CssClass>
             </Panel>
@@ -490,29 +481,11 @@
                                   <Panel.Width value="*" />
                                   <Children>
                                     <TextBox>
-                                      <Name value="edb_GUID" />
-                                      <Caption value="GUID" />
-                                      <CaptionPosition value="Top" />
-                                      <IsEnabled value="False" />
-                                      <Panel.Height value="#" />
-                                      <Panel.Width value="25%" />
-                                      <Bindings>
-                                        <Binding SourceProperty="Data" Expression="Model.AMS.GUID" />
-                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="Model.AMS.GUID.isRequired()" />
-                                      </Bindings>
-                                      <CssClass>
-                                        <CssClassConditional>
-                                          <ClassName value="{theme}-textbox" />
-                                          <IsThemedStyle value="True" />
-                                        </CssClassConditional>
-                                      </CssClass>
-                                    </TextBox>
-                                    <TextBox>
                                       <Name value="edb_TIN" />
                                       <Caption value="EORI" />
                                       <CaptionPosition value="Top" />
                                       <Panel.Height value="#" />
-                                      <Panel.Width value="25%" />
+                                      <Panel.Width value="33%" />
                                       <Bindings>
                                         <Binding SourceProperty="Data" Expression="Model.AMS.TIN" />
                                         <Binding SourceProperty="IsRequiredMarkVisible" Expression="Model.AMS.TIN.isRequired()" />
@@ -524,35 +497,33 @@
                                         </CssClassConditional>
                                       </CssClass>
                                     </TextBox>
-                                    <ReferenceCombo>
-                                      <Name value="cbb_AuthorizationType" />
-                                      <Caption value="Celní režim" />
-                                      <CaptionPosition value="Top" />
-                                      <DisplayMember value="Description" />
-                                      <IsEnabled value="False" />
-                                      <Panel.Height value="#" />
-                                      <Panel.Width value="25%" />
-                                      <ReferenceList reference="+GlobalApiObjects.prototypeCodelist" />
-                                      <Bindings>
-                                        <Binding SourceProperty="Data" Expression="reference1" />
-                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="reference1.isRequired()" />
-                                      </Bindings>
-                                      <CssClass>
-                                        <CssClassConditional>
-                                          <ClassName value="{theme}-referencecombo" />
-                                          <IsThemedStyle value="True" />
-                                        </CssClassConditional>
-                                      </CssClass>
-                                    </ReferenceCombo>
                                     <TextBox>
                                       <Name value="edb_IssuingCountry" />
                                       <Caption value="Evid." />
                                       <CaptionPosition value="Top" />
                                       <Panel.Height value="#" />
-                                      <Panel.Width value="25%" />
+                                      <Panel.Width value="15%" />
                                       <Bindings>
                                         <Binding SourceProperty="Data" Expression="model.AMS.IssuingCountry" />
                                         <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.AMS.IssuingCountry.isRequired()" />
+                                      </Bindings>
+                                      <CssClass>
+                                        <CssClassConditional>
+                                          <ClassName value="{theme}-textbox" />
+                                          <IsThemedStyle value="True" />
+                                        </CssClassConditional>
+                                      </CssClass>
+                                    </TextBox>
+                                    <TextBox>
+                                      <Name value="edb_AMSID" />
+                                      <Caption value="číslo povolení" />
+                                      <CaptionPosition value="Top" />
+                                      <IsEnabled value="False" />
+                                      <Panel.Height value="#" />
+                                      <Panel.Width value="33%" />
+                                      <Bindings>
+                                        <Binding SourceProperty="Data" Expression="model.AMS.AMSID" />
+                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.AMS.AMSID.isRequired()" />
                                       </Bindings>
                                       <CssClass>
                                         <CssClassConditional>
@@ -575,24 +546,26 @@
                                   <Panel.Height value="#" />
                                   <Panel.Width value="*" />
                                   <Children>
-                                    <TextBox>
-                                      <Name value="edb_AMSID" />
-                                      <Caption value="číslo povolení" />
+                                    <ReferenceCombo>
+                                      <Name value="cbb_AuthorizationType" />
+                                      <Caption value="Celní režim" />
                                       <CaptionPosition value="Top" />
+                                      <DisplayMember value="Description" />
                                       <IsEnabled value="False" />
                                       <Panel.Height value="#" />
-                                      <Panel.Width value="33%" />
+                                      <Panel.Width value="25%" />
+                                      <ReferenceList reference="+GlobalApiObjects.prototypeCodelist" />
                                       <Bindings>
-                                        <Binding SourceProperty="Data" Expression="model.AMS.AMSID" />
-                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.AMS.AMSID.isRequired()" />
+                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="reference1.isRequired()" />
+                                        <Binding SourceProperty="Data" Expression="reference1" />
                                       </Bindings>
                                       <CssClass>
                                         <CssClassConditional>
-                                          <ClassName value="{theme}-textbox" />
+                                          <ClassName value="{theme}-referencecombo" />
                                           <IsThemedStyle value="True" />
                                         </CssClassConditional>
                                       </CssClass>
-                                    </TextBox>
+                                    </ReferenceCombo>
                                     <TextBox>
                                       <Name value="edb_ResponsibleCustomsOffice" />
                                       <Caption value="Zodpovědný CÚ" />
@@ -636,82 +609,6 @@
                                     </CssClassConditional>
                                   </CssClass>
                                 </Panel>
-                                <Panel>
-                                  <Name value="chb_IsAdHoc_parent" />
-                                  <Orientation value="Horizontal" />
-                                  <Panel.Height value="#" />
-                                  <Panel.Width value="*" />
-                                  <Children>
-                                    <CheckBox>
-                                      <Name value="chb_IsAdHoc" />
-                                      <Caption value="Přijetím CP" />
-                                      <CaptionPosition value="Top" />
-                                      <IsEnabled value="False" />
-                                      <Panel.Height value="#" />
-                                      <Panel.Width value="25%" />
-                                      <Bindings>
-                                        <Binding SourceProperty="Data" Expression="" />
-                                      </Bindings>
-                                    </CheckBox>
-                                    <TextBox>
-                                      <Name value="edb_IsAdHoc" />
-                                      <Caption value="Přijetím CP" />
-                                      <CaptionPosition value="Top" />
-                                      <IsEnabled value="False" />
-                                      <Panel.Height value="#" />
-                                      <Panel.Width value="25%" />
-                                      <Bindings>
-                                        <Binding SourceProperty="Data" Expression="" />
-                                      </Bindings>
-                                      <CssClass>
-                                        <CssClassConditional>
-                                          <ClassName value="{theme}-textbox" />
-                                          <IsThemedStyle value="True" />
-                                        </CssClassConditional>
-                                      </CssClass>
-                                    </TextBox>
-                                    <DatePicker>
-                                      <Name value="dtp_LastEventValidityStartDate" />
-                                      <Caption value="dtp_LastEventValidityStartDate" />
-                                      <CaptionPosition value="Top" />
-                                      <IsEnabled value="False" />
-                                      <Panel.Height value="#" />
-                                      <Panel.Width value="25%" />
-                                      <Bindings>
-                                        <Binding SourceProperty="Data" Expression="model.AMS.LastEventValidityStartDate" />
-                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="model.AMS.LastEventValidityStartDate.isRequired()" />
-                                      </Bindings>
-                                      <CssClass>
-                                        <CssClassConditional>
-                                          <ClassName value="{theme}-datepicker" />
-                                          <IsThemedStyle value="True" />
-                                        </CssClassConditional>
-                                      </CssClass>
-                                    </DatePicker>
-                                    <CheckBox>
-                                      <Name value="chb_PartNumber" />
-                                      <Caption value="Part Number" />
-                                      <CaptionPosition value="Top" />
-                                      <Panel.Height value="#" />
-                                      <Panel.Width value="25%" />
-                                      <Bindings>
-                                        <Binding SourceProperty="Data" Expression="" />
-                                      </Bindings>
-                                      <CssClass>
-                                        <CssClassConditional>
-                                          <ClassName value="{theme}-checkbox" />
-                                          <IsThemedStyle value="True" />
-                                        </CssClassConditional>
-                                      </CssClass>
-                                    </CheckBox>
-                                  </Children>
-                                  <CssClass>
-                                    <CssClassConditional>
-                                      <ClassName value="{theme}-panel" />
-                                      <IsThemedStyle value="True" />
-                                    </CssClassConditional>
-                                  </CssClass>
-                                </Panel>
                               </Children>
                               <CssClass>
                                 <CssClassConditional>
@@ -747,7 +644,7 @@
                       <Children>
                         <CollapsibleGroupBox identity="collapsibleGroupBox.cfca4faa9e574885bad67cbe322167a7">
                           <Name value="grp_ContactsData" />
-                          <caption value="Údaje o subjektu" />
+                          <caption value="Údaje o držiteli" />
                           <Panel.Height value="#" />
                           <Panel.Width value="*" />
                           <Content>
@@ -958,23 +855,6 @@
                                         </CssClassConditional>
                                       </CssClass>
                                     </TextBox>
-                                    <TextBox>
-                                      <Name value="edb_DecidingPersonName" />
-                                      <Caption value="Jméno a funkce uživatele" />
-                                      <CaptionPosition value="Top" />
-                                      <Panel.Height value="#" />
-                                      <Panel.Width value="33%" />
-                                      <Bindings>
-                                        <Binding SourceProperty="Data" Expression="form.Model.AMS.event.DecidingPersonName" />
-                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.Model.AMS.event.DecidingPersonName.isRequired()" />
-                                      </Bindings>
-                                      <CssClass>
-                                        <CssClassConditional>
-                                          <ClassName value="{theme}-textbox" />
-                                          <IsThemedStyle value="True" />
-                                        </CssClassConditional>
-                                      </CssClass>
-                                    </TextBox>
                                   </Children>
                                   <CssClass>
                                     <CssClassConditional>
@@ -1021,7 +901,7 @@
                       <Children>
                         <CollapsibleGroupBox identity="collapsibleGroupBox.cfca4faa9e574885bad67cbe322167a7">
                           <Name value="grp_CustomsData" />
-                          <caption value="grp_CustomsData" />
+                          <caption value="Administrativní údaje" />
                           <Panel.Height value="#" />
                           <Panel.Width value="*" />
                           <Content>
@@ -1029,6 +909,72 @@
                               <Name value="grp_CustomsDataPnl" />
                               <Orientation value="Vertical" />
                               <Children>
+                                <Panel>
+                                  <Name value="dtp_DecisionDate_parent" />
+                                  <Orientation value="Horizontal" />
+                                  <Panel.Height value="#" />
+                                  <Panel.Width value="*" />
+                                  <Children>
+                                    <DatePicker>
+                                      <Name value="dtp_ValidityStartDate" />
+                                      <Caption value="Počátek platnosti rozhodnutí" />
+                                      <CaptionPosition value="Top" />
+                                      <Panel.Height value="#" />
+                                      <Panel.Width value="33%" />
+                                      <Bindings>
+                                        <Binding SourceProperty="Data" Expression="form.Model.AMS.Event.ValidityStartDate" />
+                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.Model.AMS.Event.ValidityStartDate.isRequired()" />
+                                      </Bindings>
+                                      <CssClass>
+                                        <CssClassConditional>
+                                          <ClassName value="{theme}-datepicker" />
+                                          <IsThemedStyle value="True" />
+                                        </CssClassConditional>
+                                      </CssClass>
+                                    </DatePicker>
+                                    <DatePicker>
+                                      <Name value="dtp_EvidenceDate" />
+                                      <Caption value="Datum zápisu do aplikace" />
+                                      <CaptionPosition value="Top" />
+                                      <IsEnabled value="False" />
+                                      <Panel.Height value="#" />
+                                      <Panel.Width value="33%" />
+                                      <Bindings>
+                                        <Binding SourceProperty="Data" Expression="form.Model.AMS.Event.EvidenceDate" />
+                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.Model.AMS.Event.EvidenceDate.isRequired()" />
+                                      </Bindings>
+                                      <CssClass>
+                                        <CssClassConditional>
+                                          <ClassName value="{theme}-datepicker" />
+                                          <IsThemedStyle value="True" />
+                                        </CssClassConditional>
+                                      </CssClass>
+                                    </DatePicker>
+                                    <DatePicker>
+                                      <Name value="dtp_DecisionDate" />
+                                      <Caption value="Datum rozhodnutí" />
+                                      <CaptionPosition value="Top" />
+                                      <Panel.Height value="#" />
+                                      <Panel.Width value="33%" />
+                                      <Bindings>
+                                        <Binding SourceProperty="Data" Expression="form.Model.AMS.Event.DecisionDate" />
+                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.Model.AMS.Event.DecisionDate.isRequired()" />
+                                      </Bindings>
+                                      <CssClass>
+                                        <CssClassConditional>
+                                          <ClassName value="{theme}-datepicker" />
+                                          <IsThemedStyle value="True" />
+                                        </CssClassConditional>
+                                      </CssClass>
+                                    </DatePicker>
+                                  </Children>
+                                  <CssClass>
+                                    <CssClassConditional>
+                                      <ClassName value="{theme}-panel" />
+                                      <IsThemedStyle value="True" />
+                                    </CssClassConditional>
+                                  </CssClass>
+                                </Panel>
                                 <Panel>
                                   <Name value="edb_ReferenceNumber_parent" />
                                   <Orientation value="Horizontal" />
@@ -1095,105 +1041,31 @@
                                   </CssClass>
                                 </Panel>
                                 <Panel>
-                                  <Name value="dtp_DecisionDate_parent" />
+                                  <Name value="dtp_EvidenceDate_parent" />
                                   <Orientation value="Horizontal" />
                                   <Panel.Height value="#" />
                                   <Panel.Width value="*" />
                                   <Children>
-                                    <DatePicker>
-                                      <Name value="dtp_DecisionDate" />
-                                      <Caption value="Datum rozhodnutí" />
+                                    <ReferenceCombo>
+                                      <Name value="cbb_DecidingPerson" />
+                                      <Caption value="Osobní číslo uživatele" />
                                       <CaptionPosition value="Top" />
-                                      <Panel.Height value="#" />
-                                      <Panel.Width value="33%" />
-                                      <Bindings>
-                                        <Binding SourceProperty="Data" Expression="form.Model.AMS.Event.DecisionDate" />
-                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.Model.AMS.Event.DecisionDate.isRequired()" />
-                                      </Bindings>
-                                      <CssClass>
-                                        <CssClassConditional>
-                                          <ClassName value="{theme}-datepicker" />
-                                          <IsThemedStyle value="True" />
-                                        </CssClassConditional>
-                                      </CssClass>
-                                    </DatePicker>
-                                    <DatePicker>
-                                      <Name value="dtp_ValidityStartDate" />
-                                      <Caption value="Počátek platnosti rozhodnutí" />
-                                      <CaptionPosition value="Top" />
-                                      <Panel.Height value="#" />
-                                      <Panel.Width value="33%" />
-                                      <Bindings>
-                                        <Binding SourceProperty="Data" Expression="form.Model.AMS.Event.ValidityStartDate" />
-                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.Model.AMS.Event.ValidityStartDate.isRequired()" />
-                                      </Bindings>
-                                      <CssClass>
-                                        <CssClassConditional>
-                                          <ClassName value="{theme}-datepicker" />
-                                          <IsThemedStyle value="True" />
-                                        </CssClassConditional>
-                                      </CssClass>
-                                    </DatePicker>
-                                    <DatePicker>
-                                      <Name value="dtp_ValidityEndDate" />
-                                      <Caption value="Konec platnosti rozhodnutí" />
-                                      <CaptionPosition value="Top" />
-                                      <Panel.Height value="#" />
-                                      <Panel.Width value="33%" />
-                                      <Bindings>
-                                        <Binding SourceProperty="Data" Expression="form.Model.AMS.Event.ValidityEndDate" />
-                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.Model.AMS.Event.ValidityEndDate.isRequired()" />
-                                      </Bindings>
-                                      <CssClass>
-                                        <CssClassConditional>
-                                          <ClassName value="{theme}-datepicker" />
-                                          <IsThemedStyle value="True" />
-                                        </CssClassConditional>
-                                      </CssClass>
-                                    </DatePicker>
-                                  </Children>
-                                  <CssClass>
-                                    <CssClassConditional>
-                                      <ClassName value="{theme}-panel" />
-                                      <IsThemedStyle value="True" />
-                                    </CssClassConditional>
-                                  </CssClass>
-                                </Panel>
-                                <Panel>
-                                  <Name value="chb_LimitedAuthorizationValidity_parent" />
-                                  <Orientation value="Horizontal" />
-                                  <Panel.Height value="#" />
-                                  <Panel.Width value="*" />
-                                  <Children>
-                                    <CheckBox>
-                                      <Name value="chb_LimitedAuthorizationValidity" />
-                                      <Caption value="Omezení délky platnosti" />
-                                      <CaptionPosition value="Top" />
-                                      <Panel.Height value="#" />
-                                      <Panel.Width value="33%" />
-                                      <Bindings>
-                                        <Binding SourceProperty="Data" Expression="form.Model.AMS.Event.Authorization.LimitedAuthorizationValidity" />
-                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.Model.AMS.Event.Authorization.LimitedAuthorizationValidity.isRequired()" />
-                                      </Bindings>
-                                    </CheckBox>
-                                    <DatePicker>
-                                      <Name value="dtp_AuthorizationValidUntil" />
-                                      <Caption value="Datum ukončení rozhodnutí" />
-                                      <CaptionPosition value="Top" />
+                                      <DisplayMember value="Description" />
                                       <IsEnabled value="False" />
                                       <Panel.Height value="#" />
                                       <Panel.Width value="33%" />
+                                      <ReferenceList reference="+GlobalApiObjects.prototypeCodelist" />
                                       <Bindings>
-                                        <Binding SourceProperty="Data" Expression="form.Model.AMS.Event.Authorization.AuthorizationValidUntil" />
-                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.Model.AMS.Event.Authorization.AuthorizationValidUntil.isRequired()" />
+                                        <Binding SourceProperty="Data" Expression="form.reference4" />
+                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.reference4.isRequired()" />
                                       </Bindings>
                                       <CssClass>
                                         <CssClassConditional>
-                                          <ClassName value="{theme}-datepicker" />
+                                          <ClassName value="{theme}-referencecombo" />
                                           <IsThemedStyle value="True" />
                                         </CssClassConditional>
                                       </CssClass>
-                                    </DatePicker>
+                                    </ReferenceCombo>
                                   </Children>
                                   <CssClass>
                                     <CssClassConditional>
@@ -1202,18 +1074,6 @@
                                     </CssClassConditional>
                                   </CssClass>
                                 </Panel>
-                                <Button>
-                                  <Name value="btn_ReloadCodelists" />
-                                  <Caption value="Obnovit číselníky" />
-                                  <Panel.Height value="#" />
-                                  <Panel.Width value="150px" />
-                                  <CssClass>
-                                    <CssClassConditional>
-                                      <ClassName value="{theme}-button" />
-                                      <IsThemedStyle value="True" />
-                                    </CssClassConditional>
-                                  </CssClass>
-                                </Button>
                               </Children>
                               <CssClass>
                                 <CssClassConditional>
@@ -1271,13 +1131,12 @@
                                       <Caption value="Typ události / rozhodnutí" />
                                       <CaptionPosition value="Top" />
                                       <DisplayMember value="Description" />
-                                      <IsEnabled value="False" />
                                       <Panel.Height value="#" />
                                       <Panel.Width value="33%" />
                                       <ReferenceList reference="+GlobalApiObjects.prototypeCodelist" />
                                       <Bindings>
-                                        <Binding SourceProperty="Data" Expression="form.reference3" />
-                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.reference3.isRequired()" />
+                                        <Binding SourceProperty="Data" Expression="form.Model.AMS.Event.EventType" />
+                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.Model.AMS.Event.EventType.isRequired()" />
                                       </Bindings>
                                       <CssClass>
                                         <CssClassConditional>
@@ -1304,58 +1163,6 @@
                                         </CssClassConditional>
                                       </CssClass>
                                     </TextBox>
-                                  </Children>
-                                  <CssClass>
-                                    <CssClassConditional>
-                                      <ClassName value="{theme}-panel" />
-                                      <IsThemedStyle value="True" />
-                                    </CssClassConditional>
-                                  </CssClass>
-                                </Panel>
-                                <Panel>
-                                  <Name value="dtp_EvidenceDate_parent" />
-                                  <Orientation value="Horizontal" />
-                                  <Panel.Height value="#" />
-                                  <Panel.Width value="*" />
-                                  <Children>
-                                    <DatePicker>
-                                      <Name value="dtp_EvidenceDate" />
-                                      <Caption value="Datum zápisu do aplikace" />
-                                      <CaptionPosition value="Top" />
-                                      <IsEnabled value="False" />
-                                      <Panel.Height value="#" />
-                                      <Panel.Width value="33%" />
-                                      <Bindings>
-                                        <Binding SourceProperty="Data" Expression="form.Model.AMS.Event.EvidenceDate" />
-                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.Model.AMS.Event.EvidenceDate.isRequired()" />
-                                      </Bindings>
-                                      <CssClass>
-                                        <CssClassConditional>
-                                          <ClassName value="{theme}-datepicker" />
-                                          <IsThemedStyle value="True" />
-                                        </CssClassConditional>
-                                      </CssClass>
-                                    </DatePicker>
-                                    <ReferenceCombo>
-                                      <Name value="cbb_DecidingPerson" />
-                                      <Caption value="Osobní číslo uživatele" />
-                                      <CaptionPosition value="Top" />
-                                      <DisplayMember value="Description" />
-                                      <IsEnabled value="False" />
-                                      <Panel.Height value="#" />
-                                      <Panel.Width value="33%" />
-                                      <ReferenceList reference="+GlobalApiObjects.prototypeCodelist" />
-                                      <Bindings>
-                                        <Binding SourceProperty="Data" Expression="form.reference4" />
-                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.reference4.isRequired()" />
-                                      </Bindings>
-                                      <CssClass>
-                                        <CssClassConditional>
-                                          <ClassName value="{theme}-referencecombo" />
-                                          <IsThemedStyle value="True" />
-                                        </CssClassConditional>
-                                      </CssClass>
-                                    </ReferenceCombo>
                                   </Children>
                                   <CssClass>
                                     <CssClassConditional>
@@ -1407,7 +1214,7 @@
                           <Panel.Width value="*" />
                           <Content>
                             <Panel>
-                              <Name value="panel2" />
+                              <Name value="panel10" />
                               <Orientation value="Vertical" />
                               <Children>
                                 <Panel>
@@ -1416,24 +1223,6 @@
                                   <Panel.Height value="#" />
                                   <Panel.Width value="*" />
                                   <Children>
-                                    <TextBox>
-                                      <Name value="edb_EventGUID" />
-                                      <Caption value="edb_EventGUID" />
-                                      <CaptionPosition value="Top" />
-                                      <IsEnabled value="False" />
-                                      <Panel.Height value="#" />
-                                      <Panel.Width value="33%" />
-                                      <Bindings>
-                                        <Binding SourceProperty="Data" Expression="form.Model.AMS.Event.GUID" />
-                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.Model.AMS.Event.GUID.isRequired()" />
-                                      </Bindings>
-                                      <CssClass>
-                                        <CssClassConditional>
-                                          <ClassName value="{theme}-textbox" />
-                                          <IsThemedStyle value="True" />
-                                        </CssClassConditional>
-                                      </CssClass>
-                                    </TextBox>
                                     <TextBox>
                                       <Name value="edb_PollingPassword" />
                                       <Caption value="Polling Password" />
@@ -1466,34 +1255,6 @@
                                   <Panel.Width value="*" />
                                   <Children>
                                     <CheckBox>
-                                      <Name value="chb_IMP" />
-                                      <Caption value="Povolení podávat e-CP do režimu dovozu" />
-                                      <CaptionPosition value="Top" />
-                                      <Panel.Height value="#" />
-                                      <Panel.Width value="33%" />
-                                      <Bindings>
-                                        <Binding SourceProperty="Data" Expression="form.Model.AMS.Event.AMSEC.IMP" />
-                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.Model.AMS.Event.AMSEC.IMP.isRequired()" />
-                                      </Bindings>
-                                    </CheckBox>
-                                    <CheckBox>
-                                      <Name value="chb_ENL" />
-                                      <Caption value="Povolení podávat vstupní SCP a oznámení o příjezdu" />
-                                      <CaptionPosition value="Top" />
-                                      <Panel.Height value="#" />
-                                      <Panel.Width value="33%" />
-                                      <Bindings>
-                                        <Binding SourceProperty="Data" Expression="form.Model.AMS.Event.AMSEC.ENL" />
-                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.Model.AMS.Event.AMSEC.ENL.isRequired()" />
-                                      </Bindings>
-                                      <CssClass>
-                                        <CssClassConditional>
-                                          <ClassName value="{theme}-checkbox" />
-                                          <IsThemedStyle value="True" />
-                                        </CssClassConditional>
-                                      </CssClass>
-                                    </CheckBox>
-                                    <CheckBox>
                                       <Name value="chb_DEPDES" />
                                       <Caption value="Povolení předkládat elektronicky celní prohlášení do režimu tranzit / povolení elektronicky komunikovat s CÚ určení v tranzitu" />
                                       <CaptionPosition value="Top" />
@@ -1502,48 +1263,6 @@
                                       <Bindings>
                                         <Binding SourceProperty="Data" Expression="form.Model.AMS.Event.AMSEC.DEPDES" />
                                         <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.Model.AMS.Event.AMSEC.DEPDES.isRequired()" />
-                                      </Bindings>
-                                      <CssClass>
-                                        <CssClassConditional>
-                                          <ClassName value="{theme}-checkbox" />
-                                          <IsThemedStyle value="True" />
-                                        </CssClassConditional>
-                                      </CssClass>
-                                    </CheckBox>
-                                  </Children>
-                                  <CssClass>
-                                    <CssClassConditional>
-                                      <ClassName value="{theme}-panel" />
-                                      <IsThemedStyle value="True" />
-                                    </CssClassConditional>
-                                  </CssClass>
-                                </Panel>
-                                <Panel>
-                                  <Name value="chb_EXP_parent" />
-                                  <Orientation value="Horizontal" />
-                                  <Panel.Height value="#" />
-                                  <Panel.Width value="*" />
-                                  <Children>
-                                    <CheckBox>
-                                      <Name value="chb_EXP" />
-                                      <Caption value="Povolení předkládat elektronicky celní prohlášení do vývozu" />
-                                      <CaptionPosition value="Top" />
-                                      <Panel.Height value="#" />
-                                      <Panel.Width value="33%" />
-                                      <Bindings>
-                                        <Binding SourceProperty="Data" Expression="form.Model.AMS.Event.AMSEC.EXP" />
-                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.Model.AMS.Event.AMSEC.EXP.isRequired()" />
-                                      </Bindings>
-                                    </CheckBox>
-                                    <CheckBox>
-                                      <Name value="chb_EXT" />
-                                      <Caption value="Povolení elektronicky komunikovat s úřadem výstupu ve vývozu" />
-                                      <CaptionPosition value="Top" />
-                                      <Panel.Height value="#" />
-                                      <Panel.Width value="33%" />
-                                      <Bindings>
-                                        <Binding SourceProperty="Data" Expression="form.Model.AMS.Event.AMSEC.EXT" />
-                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.Model.AMS.Event.AMSEC.EXT.isRequired()" />
                                       </Bindings>
                                       <CssClass>
                                         <CssClassConditional>
@@ -1561,65 +1280,6 @@
                                       <Bindings>
                                         <Binding SourceProperty="Data" Expression="form.Model.AMS.Event.AMSEC.GUA" />
                                         <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.Model.AMS.Event.AMSEC.GUA.isRequired()" />
-                                      </Bindings>
-                                      <CssClass>
-                                        <CssClassConditional>
-                                          <ClassName value="{theme}-checkbox" />
-                                          <IsThemedStyle value="True" />
-                                        </CssClassConditional>
-                                      </CssClass>
-                                    </CheckBox>
-                                  </Children>
-                                  <CssClass>
-                                    <CssClassConditional>
-                                      <ClassName value="{theme}-panel" />
-                                      <IsThemedStyle value="True" />
-                                    </CssClassConditional>
-                                  </CssClass>
-                                </Panel>
-                                <Panel>
-                                  <Name value="chb_ECR_parent" />
-                                  <Orientation value="Horizontal" />
-                                  <Panel.Height value="#" />
-                                  <Panel.Width value="*" />
-                                  <Children>
-                                    <CheckBox>
-                                      <Name value="chb_ECR" />
-                                      <Caption value="Zprávy ke vstupnímu souhrnnému celnímu prohlášení podaných osobou uvedenou v článku 36b odst. 4 celního kodex v případech, kdy je žadatel uveden jako přepravce nebo zástupce" />
-                                      <CaptionPosition value="Top" />
-                                      <Panel.Height value="#" />
-                                      <Panel.Width value="33%" />
-                                      <Bindings>
-                                        <Binding SourceProperty="Data" Expression="form.Model.AMS.Event.AMSEC.ECR" />
-                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.Model.AMS.Event.AMSEC.ECR.isRequired()" />
-                                      </Bindings>
-                                    </CheckBox>
-                                    <CheckBox>
-                                      <Name value="chb_EXC" />
-                                      <Caption value="Sdělení o podmínkách elektronické komunikace v EMCS" />
-                                      <CaptionPosition value="Top" />
-                                      <Panel.Height value="#" />
-                                      <Panel.Width value="33%" />
-                                      <Bindings>
-                                        <Binding SourceProperty="Data" Expression="form.Model.AMS.Event.AMSEC.EXC" />
-                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.Model.AMS.Event.AMSEC.EXC.isRequired()" />
-                                      </Bindings>
-                                      <CssClass>
-                                        <CssClassConditional>
-                                          <ClassName value="{theme}-checkbox" />
-                                          <IsThemedStyle value="True" />
-                                        </CssClassConditional>
-                                      </CssClass>
-                                    </CheckBox>
-                                    <CheckBox>
-                                      <Name value="chb_RZL" />
-                                      <Caption value="Sdělení o podmínkách elektronické komunikace v RZL" />
-                                      <CaptionPosition value="Top" />
-                                      <Panel.Height value="#" />
-                                      <Panel.Width value="33%" />
-                                      <Bindings>
-                                        <Binding SourceProperty="Data" Expression="form.Model.AMS.Event.AMSEC.RZL" />
-                                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.Model.AMS.Event.AMSEC.RZL.isRequired()" />
                                       </Bindings>
                                       <CssClass>
                                         <CssClassConditional>
@@ -1749,34 +1409,6 @@
                                         <Binding SourceProperty="DataItems" Expression="form.Model.AMS.Event.CertificateSign" />
                                       </Bindings>
                                       <Columns>
-                                        <DataColumn>
-                                          <Name value="edb_GUID_EC_SignCol" />
-                                          <Caption value="GUID" />
-                                          <Content>
-                                            <TextBox>
-                                              <Name value="edb_GUID_EC_Sign" />
-                                              <CaptionPosition value="Hide" />
-                                              <IsEnabled value="False" />
-                                              <Bindings>
-                                                <Binding SourceProperty="Data" Expression="GUID" />
-                                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="GUID.isRequired()" />
-                                                <Binding SourceProperty="Caption" Expression="GUID.caption()" />
-                                              </Bindings>
-                                              <CssClass>
-                                                <CssClassConditional>
-                                                  <ClassName value="{theme}-textbox" />
-                                                  <IsThemedStyle value="True" />
-                                                </CssClassConditional>
-                                              </CssClass>
-                                            </TextBox>
-                                          </Content>
-                                          <HeaderCssClass>
-                                            <CssClassConditional>
-                                              <ClassName value="{theme}-datacolumn" />
-                                              <IsThemedStyle value="True" />
-                                            </CssClassConditional>
-                                          </HeaderCssClass>
-                                        </DataColumn>
                                         <DataColumn>
                                           <Name value="edb_SerialNumber_EC_SignCol" />
                                           <Caption value="Číslo certifikátu" />
@@ -1967,58 +1599,6 @@
                                             </CssClassConditional>
                                           </HeaderCssClass>
                                         </DataColumn>
-                                        <DataColumn>
-                                          <Name value="edb_ErrorDescription_EC_SignCol" />
-                                          <Caption value="edb_ErrorDescription_EC_Sign" />
-                                          <Content>
-                                            <TextBox>
-                                              <Name value="edb_ErrorDescription_EC_Sign" />
-                                              <CaptionPosition value="Hide" />
-                                              <IsEnabled value="False" />
-                                              <Bindings>
-                                                <Binding SourceProperty="Data" Expression="" />
-                                              </Bindings>
-                                              <CssClass>
-                                                <CssClassConditional>
-                                                  <ClassName value="{theme}-textbox" />
-                                                  <IsThemedStyle value="True" />
-                                                </CssClassConditional>
-                                              </CssClass>
-                                            </TextBox>
-                                          </Content>
-                                          <HeaderCssClass>
-                                            <CssClassConditional>
-                                              <ClassName value="{theme}-datacolumn" />
-                                              <IsThemedStyle value="True" />
-                                            </CssClassConditional>
-                                          </HeaderCssClass>
-                                        </DataColumn>
-                                        <DataColumn>
-                                          <Name value="edb_Data_EC_SignCol" />
-                                          <Caption value="edb_Data_EC_Sign" />
-                                          <Content>
-                                            <TextBox>
-                                              <Name value="edb_Data_EC_Sign" />
-                                              <CaptionPosition value="Hide" />
-                                              <IsEnabled value="False" />
-                                              <Bindings>
-                                                <Binding SourceProperty="Data" Expression="" />
-                                              </Bindings>
-                                              <CssClass>
-                                                <CssClassConditional>
-                                                  <ClassName value="{theme}-textbox" />
-                                                  <IsThemedStyle value="True" />
-                                                </CssClassConditional>
-                                              </CssClass>
-                                            </TextBox>
-                                          </Content>
-                                          <HeaderCssClass>
-                                            <CssClassConditional>
-                                              <ClassName value="{theme}-datacolumn" />
-                                              <IsThemedStyle value="True" />
-                                            </CssClassConditional>
-                                          </HeaderCssClass>
-                                        </DataColumn>
                                       </Columns>
                                       <CssClass>
                                         <CssClassConditional>
@@ -2186,34 +1766,6 @@
                                         <Binding SourceProperty="DataItems" Expression="form.Model.AMS.Event.CertificateMaint" />
                                       </Bindings>
                                       <Columns>
-                                        <DataColumn>
-                                          <Name value="edb_GUID_EC_MaintCol" />
-                                          <Caption value="GUID" />
-                                          <Content>
-                                            <TextBox>
-                                              <Name value="edb_GUID_EC_Maint" />
-                                              <CaptionPosition value="Hide" />
-                                              <IsEnabled value="False" />
-                                              <Bindings>
-                                                <Binding SourceProperty="Data" Expression="GUID" />
-                                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="GUID.isRequired()" />
-                                                <Binding SourceProperty="Caption" Expression="GUID.caption()" />
-                                              </Bindings>
-                                              <CssClass>
-                                                <CssClassConditional>
-                                                  <ClassName value="{theme}-textbox" />
-                                                  <IsThemedStyle value="True" />
-                                                </CssClassConditional>
-                                              </CssClass>
-                                            </TextBox>
-                                          </Content>
-                                          <HeaderCssClass>
-                                            <CssClassConditional>
-                                              <ClassName value="{theme}-datacolumn" />
-                                              <IsThemedStyle value="True" />
-                                            </CssClassConditional>
-                                          </HeaderCssClass>
-                                        </DataColumn>
                                         <DataColumn>
                                           <Name value="edb_SerialNumber_EC_MaintCol" />
                                           <Caption value="Číslo certifikátu" />
@@ -2628,34 +2180,6 @@
                                       </Bindings>
                                       <Columns>
                                         <DataColumn>
-                                          <Name value="edb_GUID_EC_EncrCol" />
-                                          <Caption value="GUID" />
-                                          <Content>
-                                            <TextBox>
-                                              <Name value="edb_GUID_EC_Encr" />
-                                              <CaptionPosition value="Hide" />
-                                              <IsEnabled value="False" />
-                                              <Bindings>
-                                                <Binding SourceProperty="Data" Expression="GUID" />
-                                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="GUID.isRequired()" />
-                                                <Binding SourceProperty="Caption" Expression="GUID.caption()" />
-                                              </Bindings>
-                                              <CssClass>
-                                                <CssClassConditional>
-                                                  <ClassName value="{theme}-textbox" />
-                                                  <IsThemedStyle value="True" />
-                                                </CssClassConditional>
-                                              </CssClass>
-                                            </TextBox>
-                                          </Content>
-                                          <HeaderCssClass>
-                                            <CssClassConditional>
-                                              <ClassName value="{theme}-datacolumn" />
-                                              <IsThemedStyle value="True" />
-                                            </CssClassConditional>
-                                          </HeaderCssClass>
-                                        </DataColumn>
-                                        <DataColumn>
                                           <Name value="edb_SerialNumber_EC_EncrCol" />
                                           <Caption value="Číslo certifikátu" />
                                           <Content>
@@ -2830,6 +2354,9 @@
                                               <Name value="edb_ErrorDescription_EC_Encr" />
                                               <CaptionPosition value="Hide" />
                                               <IsEnabled value="False" />
+                                              <Bindings>
+                                                <Binding SourceProperty="Data" Expression="" />
+                                              </Bindings>
                                               <CssClass>
                                                 <CssClassConditional>
                                                   <ClassName value="{theme}-textbox" />
@@ -3100,34 +2627,6 @@
                                         <Binding SourceProperty="DataItems" Expression="Model.AMS.Event.File" />
                                       </Bindings>
                                       <Columns>
-                                        <DataColumn>
-                                          <Name value="edb_FileGUIDCol" />
-                                          <Caption value="edb_FileGUID" />
-                                          <Content>
-                                            <TextBox>
-                                              <Name value="edb_FileGUID" />
-                                              <CaptionPosition value="Hide" />
-                                              <IsEnabled value="False" />
-                                              <Bindings>
-                                                <Binding SourceProperty="Data" Expression="GUID" />
-                                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="GUID.isRequired()" />
-                                                <Binding SourceProperty="Caption" Expression="GUID.caption()" />
-                                              </Bindings>
-                                              <CssClass>
-                                                <CssClassConditional>
-                                                  <ClassName value="{theme}-textbox" />
-                                                  <IsThemedStyle value="True" />
-                                                </CssClassConditional>
-                                              </CssClass>
-                                            </TextBox>
-                                          </Content>
-                                          <HeaderCssClass>
-                                            <CssClassConditional>
-                                              <ClassName value="{theme}-datacolumn" />
-                                              <IsThemedStyle value="True" />
-                                            </CssClassConditional>
-                                          </HeaderCssClass>
-                                        </DataColumn>
                                         <DataColumn>
                                           <Name value="edb_FileNameCol" />
                                           <Caption value="Název souboru" />
@@ -3899,7 +3398,242 @@
             </Attribute>
           </Children>
         </Complex>
+        <Attribute>
+          <Name value="isEditing" />
+          <Caption value="Is editing" />
+          <DeclaredType>
+            <AttributeType>
+              <BaseType value="Bool" />
+            </AttributeType>
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
+          <Name value="_actualDate" />
+          <Caption value="_ actual date" />
+          <DeclaredType>
+            <AttributeType>
+              <BaseType value="Date" />
+            </AttributeType>
+          </DeclaredType>
+        </Attribute>
+        <Complex>
+          <Name value="menusVisibility" />
+          <Caption value="Menus visibility" />
+          <Children>
+            <Attribute>
+              <Name value="isGeneralMenuVisible" />
+              <Caption value="Is general menu visible" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isSubjectMenuVisible" />
+              <Caption value="Is subject menu visible" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isAMSECMenuVisible" />
+              <Caption value="Is AMSEC menu visible" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isSignMenuVisible" />
+              <Caption value="Is sign menu visible" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isMaintMenuVisible" />
+              <Caption value="Is maint menu visible" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isEncrMenuVisible" />
+              <Caption value="Is encr menu visible" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isFilesMenuVisible" />
+              <Caption value="Is files menu visible" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isEventsMenuVisible" />
+              <Caption value="Is events menu visible" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isDatesMenuVisible" />
+              <Caption value="Is dates menu visible" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isRejectionMenuVisible" />
+              <Caption value="Is rejection menu visible" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isGeneralMenuActive" />
+              <Caption value="Is general menu active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isSubjectMenuActive" />
+              <Caption value="Is subject menu active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isAMSECMenuActive" />
+              <Caption value="Is AMSEC menu active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isSignMenuActive" />
+              <Caption value="Is sign menu active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isMaintMenuActive" />
+              <Caption value="Is maint menu active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isEncrMenuActive" />
+              <Caption value="Is encr menu active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isFilesMenuActive" />
+              <Caption value="Is files menu active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isEventsMenuActive" />
+              <Caption value="Is events menu active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isDatesMenuActive" />
+              <Caption value="Is dates menu active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isRejectionMenuActive" />
+              <Caption value="Is rejection menu active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+          </Children>
+        </Complex>
+        <Attribute>
+          <Name value="eventState" />
+          <DataContextParameter.IsInput value="True" />
+          <DataContextParameter.IsInputRequired value="True" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
       </Children>
+      <Modifiers>
+        <Modifier>
+          <Name value="modifier_B66625F0_ValidityStartDate" />
+          <ShowAsChanges value="True" />
+          <SourcePath value="Model.AMS.Event.ValidityStartDate" />
+          <Validators>
+            <Validator Name="df_validateAttribute_ValidityStartDate">
+              <ErrorMessage IsValid="True">
+                <ExpressionText><![CDATA["VAL056"]]></ExpressionText>
+                <ResultType>
+                  <BaseType value="String" />
+                </ResultType>
+              </ErrorMessage>
+              <IsValid IsValid="True">
+                <ExpressionText><![CDATA[attr.hasValue() ? (form.Model.AMS.Event.ValidityStartDate <= toDateTime(form._actualDate)) : true]]></ExpressionText>
+                <ResultType>
+                  <BaseType value="Bool" />
+                </ResultType>
+              </IsValid>
+            </Validator>
+          </Validators>
+        </Modifier>
+      </Modifiers>
     </DataContext>
   </DataContext>
   <OnCreate>
@@ -3907,39 +3641,16 @@
   </OnCreate>
   <Actions>
     <ActionBlock>
-      <Name value="handler_hyperLink1_OnClick" />
-      <IsPrivate value="True" />
-      <ActionLangBody IsValid="True">
-        <Script><![CDATA[navigation.main.Master.go()]]></Script>
-      </ActionLangBody>
-      <DataContext>
-        <ActionDataContext />
-      </DataContext>
-    </ActionBlock>
-    <ActionBlock>
       <Name value="init" />
       <ActionLangBody IsValid="True">
         <Script><![CDATA[//Init url
 var url = packages.main.apiobjects.urlRouter.findFormUrl(navigation.cseForms.EC_EditForm.fullName)
 url.updatePageUrl()
 
-//apiobjects.breadcrumbsCtr.init(globals._breadcrumbsCtrlStruct.homeTitle)
-//if apiobjects.breadcrumbsCtr.count() = 0 then
-//	apiobjects.breadcrumbsCtr.addBreadcrumb("Home", "Home", "Main", defaultString(), true)
-//	apiobjects.breadcrumbsCtr.addBreadcrumb("EC_General", "General", "", defaultString(), false)
-//endif
+form.actions.setVisibility()
 
-// Panels toggle
-form.panelsVisibility.isGeneralVisible = true
-form.panelsVisibility.isSubjectVisible = false
-form.panelsVisibility.isAMSECVisible = false
-form.panelsVisibility.isSignVisible = false
-form.panelsVisibility.isMaintVisible = false
-form.panelsVisibility.isEncrVisible = false
-form.panelsVisibility.isFilesVisible = false
-form.panelsVisibility.isEventsVisible = false
-form.panelsVisibility.isDatesVisible = false
-form.panelsVisibility.isRejectionVisible = false]]></Script>
+form._actualDate = getDate()
+form.isEditing = false]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
@@ -3959,16 +3670,10 @@ form.panelsVisibility.isRejectionVisible = false]]></Script>
       <Name value="handler_subject_link_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[form.panelsVisibility.isGeneralVisible = false
-form.panelsVisibility.isSubjectVisible = true
-form.panelsVisibility.isAMSECVisible = false
-form.panelsVisibility.isSignVisible = false
-form.panelsVisibility.isMaintVisible = false
-form.panelsVisibility.isEncrVisible = false
-form.panelsVisibility.isFilesVisible = false
-form.panelsVisibility.isEventsVisible = false
-form.panelsVisibility.isDatesVisible = false
-form.panelsVisibility.isRejectionVisible = false]]></Script>
+        <Script><![CDATA[form.actions.clearMenuActive()
+form.menusVisibility.isSubjectMenuActive = true
+form.actions.setPanelsVisibility()
+page.scrollToTop()]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
@@ -3978,16 +3683,12 @@ form.panelsVisibility.isRejectionVisible = false]]></Script>
       <Name value="handler_general_link_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[form.panelsVisibility.isGeneralVisible = true
-form.panelsVisibility.isSubjectVisible = false
-form.panelsVisibility.isAMSECVisible = false
-form.panelsVisibility.isSignVisible = false
-form.panelsVisibility.isMaintVisible = false
-form.panelsVisibility.isEncrVisible = false
-form.panelsVisibility.isFilesVisible = false
-form.panelsVisibility.isEventsVisible = false
-form.panelsVisibility.isDatesVisible = false
-form.panelsVisibility.isRejectionVisible = false]]></Script>
+        <Script><![CDATA[form.actions.clearMenuActive()
+form.menusVisibility.isGeneralMenuActive = true
+form.actions.setPanelsVisibility()
+page.scrollToTop()
+
+]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
@@ -3997,16 +3698,10 @@ form.panelsVisibility.isRejectionVisible = false]]></Script>
       <Name value="handler_amsec_link_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[form.panelsVisibility.isGeneralVisible = false
-form.panelsVisibility.isSubjectVisible = false
-form.panelsVisibility.isAMSECVisible = true
-form.panelsVisibility.isSignVisible = false
-form.panelsVisibility.isMaintVisible = false
-form.panelsVisibility.isEncrVisible = false
-form.panelsVisibility.isFilesVisible = false
-form.panelsVisibility.isEventsVisible = false
-form.panelsVisibility.isDatesVisible = false
-form.panelsVisibility.isRejectionVisible = false]]></Script>
+        <Script><![CDATA[form.actions.clearMenuActive()
+form.menusVisibility.isAMSECMenuActive = true
+form.actions.setPanelsVisibility()
+page.scrollToTop()]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
@@ -4016,16 +3711,10 @@ form.panelsVisibility.isRejectionVisible = false]]></Script>
       <Name value="handler_sign_link_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[form.panelsVisibility.isGeneralVisible = false
-form.panelsVisibility.isSubjectVisible = false
-form.panelsVisibility.isAMSECVisible = false
-form.panelsVisibility.isSignVisible = true
-form.panelsVisibility.isMaintVisible = false
-form.panelsVisibility.isEncrVisible = false
-form.panelsVisibility.isFilesVisible = false
-form.panelsVisibility.isEventsVisible = false
-form.panelsVisibility.isDatesVisible = false
-form.panelsVisibility.isRejectionVisible = false]]></Script>
+        <Script><![CDATA[form.actions.clearMenuActive()
+form.menusVisibility.isSignMenuActive = true
+form.actions.setPanelsVisibility()
+page.scrollToTop()]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
@@ -4035,16 +3724,10 @@ form.panelsVisibility.isRejectionVisible = false]]></Script>
       <Name value="handler_maint_link_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[form.panelsVisibility.isGeneralVisible = false
-form.panelsVisibility.isSubjectVisible = false
-form.panelsVisibility.isAMSECVisible = false
-form.panelsVisibility.isSignVisible = false
-form.panelsVisibility.isMaintVisible = true
-form.panelsVisibility.isEncrVisible = false
-form.panelsVisibility.isFilesVisible = false
-form.panelsVisibility.isEventsVisible = false
-form.panelsVisibility.isDatesVisible = false
-form.panelsVisibility.isRejectionVisible = false]]></Script>
+        <Script><![CDATA[form.actions.clearMenuActive()
+form.menusVisibility.isMaintMenuActive = true
+form.actions.setPanelsVisibility()
+page.scrollToTop()]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
@@ -4054,16 +3737,10 @@ form.panelsVisibility.isRejectionVisible = false]]></Script>
       <Name value="handler_encr_link_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[form.panelsVisibility.isGeneralVisible = false
-form.panelsVisibility.isSubjectVisible = false
-form.panelsVisibility.isAMSECVisible = false
-form.panelsVisibility.isSignVisible = false
-form.panelsVisibility.isMaintVisible = false
-form.panelsVisibility.isEncrVisible = true
-form.panelsVisibility.isFilesVisible = false
-form.panelsVisibility.isEventsVisible = false
-form.panelsVisibility.isDatesVisible = false
-form.panelsVisibility.isRejectionVisible = false]]></Script>
+        <Script><![CDATA[form.actions.clearMenuActive()
+form.menusVisibility.isEncrMenuActive = true
+form.actions.setPanelsVisibility()
+page.scrollToTop()]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
@@ -4073,16 +3750,10 @@ form.panelsVisibility.isRejectionVisible = false]]></Script>
       <Name value="handler_files_link_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[form.panelsVisibility.isGeneralVisible = false
-form.panelsVisibility.isSubjectVisible = false
-form.panelsVisibility.isAMSECVisible = false
-form.panelsVisibility.isSignVisible = false
-form.panelsVisibility.isMaintVisible = false
-form.panelsVisibility.isEncrVisible = false
-form.panelsVisibility.isFilesVisible = true
-form.panelsVisibility.isEventsVisible = false
-form.panelsVisibility.isDatesVisible = false
-form.panelsVisibility.isRejectionVisible = false]]></Script>
+        <Script><![CDATA[form.actions.clearMenuActive()
+form.menusVisibility.isFilesMenuActive = true
+form.actions.setPanelsVisibility()
+page.scrollToTop()]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
@@ -4092,16 +3763,10 @@ form.panelsVisibility.isRejectionVisible = false]]></Script>
       <Name value="handler_events_link_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[form.panelsVisibility.isGeneralVisible = false
-form.panelsVisibility.isSubjectVisible = false
-form.panelsVisibility.isAMSECVisible = false
-form.panelsVisibility.isSignVisible = false
-form.panelsVisibility.isMaintVisible = false
-form.panelsVisibility.isEncrVisible = false
-form.panelsVisibility.isFilesVisible = false
-form.panelsVisibility.isEventsVisible = true
-form.panelsVisibility.isDatesVisible = false
-form.panelsVisibility.isRejectionVisible = false]]></Script>
+        <Script><![CDATA[form.actions.clearMenuActive()
+form.menusVisibility.isEventsMenuActive = true
+form.actions.setPanelsVisibility()
+page.scrollToTop()]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
@@ -4111,16 +3776,10 @@ form.panelsVisibility.isRejectionVisible = false]]></Script>
       <Name value="handler_dates_link_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[form.panelsVisibility.isGeneralVisible = false
-form.panelsVisibility.isSubjectVisible = false
-form.panelsVisibility.isAMSECVisible = false
-form.panelsVisibility.isSignVisible = false
-form.panelsVisibility.isMaintVisible = false
-form.panelsVisibility.isEncrVisible = false
-form.panelsVisibility.isFilesVisible = false
-form.panelsVisibility.isEventsVisible = false
-form.panelsVisibility.isDatesVisible = true
-form.panelsVisibility.isRejectionVisible = false]]></Script>
+        <Script><![CDATA[form.actions.clearMenuActive()
+form.menusVisibility.isDatesMenuActive = true
+form.actions.setPanelsVisibility()
+page.scrollToTop()]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
@@ -4129,6 +3788,235 @@ form.panelsVisibility.isRejectionVisible = false]]></Script>
     <ActionBlock>
       <Name value="handler_rejection_link_OnClick" />
       <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.actions.clearMenuActive()
+form.menusVisibility.isRejectionMenuActive = true
+form.actions.setPanelsVisibility()
+page.scrollToTop()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_btn_OK_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.isEditing = false]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_imageButton1_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[apiobjects.page.scrollToTop()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="setVisibility" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[system.console("setVisibility")
+
+form.actions.clearMenuVisibility()
+form.actions.clearPanelsVisibility()
+
+if form.eventState = "New" then
+endif
+
+if form.eventState="Application Accepted" then
+
+	if globals.loadedState = "Modify" then
+	endif
+
+	if globals.loadedState = "Authorize" then
+		/*
+		form.menusVisibilty.isCustomsOfficesMenuVisible = true
+		form.menusVisibilty.isGoodsMenuVisible = true
+		form.menusVisibilty.isSpecialAXMenuVisible = true
+		form.menusVisibilty.isAuthorizationMenuVisible = true
+		
+		form.panelsVisibility.isCustomsOfficesVisible = true
+		form.panelsVisibility.isGoodsVisible = true
+		form.panelsVisibility.isSpecialAXVisible = true
+		form.panelsVisibility.isAuthorizationVisible = true*/
+	endif
+
+	if globals.loadedState = "Reject" then
+		//form.menusVisibilty.isApplicationRejectionMenuVisible = true
+		//form.panelsVisibility.isApplicationRejectedVisible = true
+	endif
+
+endif
+
+if form.eventState="Application Rejected" then
+	//form.menusVisibilty.isApplicationRejectionMenuVisible = true
+	//form.panelsVisibility.isApplicationRejectedVisible = true
+endif
+
+if form.eventState="Authorization Granted" then
+
+	if globals.loadedState = "Modify" then
+		/*
+		form.menusVisibilty.isCustomsOfficesMenuVisible = true
+		form.menusVisibilty.isGoodsMenuVisible = true
+		form.menusVisibilty.isSpecialAXMenuVisible = true
+		form.menusVisibilty.isAuthorizationMenuVisible = true		
+		
+		form.panelsVisibility.isCustomsOfficesVisible = true
+		form.panelsVisibility.isGoodsVisible = true
+		form.panelsVisibility.isSpecialAXVisible = true
+		form.panelsVisibility.isAuthorizationVisible = true*/
+	endif
+
+	if globals.loadedState = "Withdraw" then
+		//form.menusVisibilty.isAuthorizationWithdrawalMenuVisible = true
+		//form.panelsVisibility.isAuthorizationWithdrawalVisible = true
+	endif
+
+	if globals.loadedState = "Cancel" then
+		//form.menusVisibilty.isAuthorizationMenuVisible = true
+		//form.panelsVisibility.isAuthorizationWithdrawalVisible = true
+	endif
+
+endif
+
+if form.eventState="Authorization Cancelled" then
+	/*
+	form.menusVisibilty.isSpecialAXMenuVisible = true
+	form.menusVisibilty.isGoodsMenuVisible = true
+	form.menusVisibilty.isCustomsOfficesMenuVisible = true
+	form.menusVisibilty.isAuthorizationMenuVisible = true
+	*/
+endif
+
+if form.eventState="Authorization Withdrawn" then
+	
+	if globals.loadedState = "Modify" then
+		//form.menusVisibilty.isAuthorizationWithdrawalMenuVisible = true
+	endif
+	
+	if globals.loadedState = "Authorize" then
+		/*
+		form.menusVisibilty.isSpecialAXMenuVisible = true
+		form.menusVisibilty.isGoodsMenuVisible = true
+		form.menusVisibilty.isCustomsOfficesMenuVisible = true
+		form.menusVisibilty.isAuthorizationMenuVisible = true
+		//form.menusVisibilty.isSealsMenuVisible = true
+		*/
+	endif
+	
+endif
+
+if form.eventState="Authorization Expired" then
+	/*
+	form.menusVisibilty.isCustomsOfficesMenuVisible = true
+	form.menusVisibilty.isGoodsMenuVisible = true
+	form.menusVisibilty.isSpecialAXMenuVisible = true
+	form.menusVisibilty.isAuthorizationMenuVisible = true
+	*/
+endif
+
+form.actions.setPanelsVisibility()
+]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="clearMenuActive" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.menusVisibility.isGeneralMenuActive = false
+form.menusVisibility.isSubjectMenuActive = false
+form.menusVisibility.isAMSECMenuActive = false
+form.menusVisibility.isSignMenuActive = false
+form.menusVisibility.isMaintMenuActive = false
+form.menusVisibility.isEncrMenuActive = false
+form.menusVisibility.isFilesMenuActive = false
+form.menusVisibility.isEventsMenuActive = false
+form.menusVisibility.isDatesMenuActive = false
+form.menusVisibility.isRejectionMenuActive = false]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="setPanelsVisibility" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.actions.clearPanelsVisibility()
+
+if form.menusVisibility.isGeneralMenuActive then
+	form.panelsVisibility.isGeneralVisible = true
+endif
+
+if form.menusVisibility.isSubjectMenuActive then
+	form.panelsVisibility.isSubjectVisible = true
+endif
+
+if form.menusVisibility.isAMSECMenuActive then
+	form.panelsVisibility.isAMSECVisible = true
+endif
+
+if form.menusVisibility.isSignMenuActive then
+	form.panelsVisibility.isSignVisible = true
+endif
+
+if form.menusVisibility.isMaintMenuActive then
+	form.panelsVisibility.isMaintVisible = true
+endif
+
+if form.menusVisibility.isEncrMenuActive then
+	form.panelsVisibility.isEncrVisible = true
+endif
+
+if form.menusVisibility.isFilesMenuActive then
+	form.panelsVisibility.isFilesVisible = true
+endif
+
+if form.menusVisibility.isEventsMenuActive then
+	form.panelsVisibility.isEventsVisible = true
+endif
+
+if form.menusVisibility.isDatesMenuActive then
+	form.panelsVisibility.isDatesVisible = true
+endif 
+
+if form.menusVisibility.isRejectionMenuActive then
+	form.panelsVisibility.isRejectionVisible = true
+endif]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="clearMenuVisibility" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.menusVisibility.isGeneralMenuVisible = true
+form.menusVisibility.isSubjectMenuVisible = false
+form.menusVisibility.isAMSECMenuVisible = false
+form.menusVisibility.isSignMenuVisible = false
+form.menusVisibility.isMaintMenuVisible = false
+form.menusVisibility.isEncrMenuVisible = false
+form.menusVisibility.isFilesMenuVisible = false
+form.menusVisibility.isEventsMenuVisible = false
+form.menusVisibility.isDatesMenuVisible = false
+form.menusVisibility.isRejectionMenuVisible = false
+form.menusVisibility.isGeneralMenuActive = true]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="clearPanelsVisibility" />
       <ActionLangBody IsValid="True">
         <Script><![CDATA[form.panelsVisibility.isGeneralVisible = false
 form.panelsVisibility.isSubjectVisible = false
@@ -4139,7 +4027,8 @@ form.panelsVisibility.isEncrVisible = false
 form.panelsVisibility.isFilesVisible = false
 form.panelsVisibility.isEventsVisible = false
 form.panelsVisibility.isDatesVisible = false
-form.panelsVisibility.isRejectionVisible = true]]></Script>
+form.panelsVisibility.isRejectionVisible = false
+]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />

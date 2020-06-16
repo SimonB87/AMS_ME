@@ -195,29 +195,6 @@
               </Bindings>
               <Columns>
                 <DataColumn>
-                  <Name value="edb_FileGUIDCol" />
-                  <Caption value="edb_FileGUID" />
-                  <Content>
-                    <TextBox>
-                      <Name value="edb_FileGUID" />
-                      <CaptionPosition value="Hide" />
-                      <IsEnabled value="False" />
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-textbox" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </TextBox>
-                  </Content>
-                  <HeaderCssClass>
-                    <CssClassConditional>
-                      <ClassName value="{theme}-datacolumn" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                  </HeaderCssClass>
-                </DataColumn>
-                <DataColumn>
                   <Name value="edb_FileNameCol" />
                   <Caption value="Název souboru" />
                   <Content>
@@ -486,55 +463,6 @@
                             </CssClassConditional>
                           </HeaderCssClass>
                         </DataColumn>
-                        <DataColumn>
-                          <Name value="edb_AMSGUIDCol" />
-                          <Caption value="edb_AMSGUID" />
-                          <Content>
-                            <TextBox>
-                              <Name value="edb_AMSGUID" />
-                              <CaptionPosition value="Hide" />
-                              <IsEnabled value="False" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-textbox" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </TextBox>
-                          </Content>
-                          <HeaderCssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-datacolumn" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </HeaderCssClass>
-                        </DataColumn>
-                        <DataColumn>
-                          <Name value="edb_ControlGUIDCol" />
-                          <Caption value="edb_ControlGUID" />
-                          <Content>
-                            <TextBox>
-                              <Name value="edb_ControlGUID" />
-                              <CaptionPosition value="Hide" />
-                              <IsEnabled value="False" />
-                              <Bindings>
-                                <Binding SourceProperty="Data" Expression="" />
-                              </Bindings>
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-textbox" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </TextBox>
-                          </Content>
-                          <HeaderCssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-datacolumn" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </HeaderCssClass>
-                        </DataColumn>
                       </Columns>
                       <CssClass>
                         <CssClassConditional>
@@ -575,6 +503,9 @@
                       <Name value="tbl_AuditEvent" />
                       <Panel.Height value="#" />
                       <Panel.Width value="*" />
+                      <Bindings>
+                        <Binding SourceProperty="DataItems" Expression="" />
+                      </Bindings>
                       <Columns>
                         <DataColumn>
                           <Name value="cbb_Result_AuditCol" />
@@ -747,32 +678,6 @@
                               <Panel.Width value="*" />
                               <Columns>
                                 <DataColumn>
-                                  <Name value="edb_FileGUID_AuditCol" />
-                                  <Caption value="edb_FileGUID_Audit" />
-                                  <Content>
-                                    <TextBox>
-                                      <Name value="edb_FileGUID_Audit" />
-                                      <CaptionPosition value="Hide" />
-                                      <IsEnabled value="False" />
-                                      <Bindings>
-                                        <Binding SourceProperty="Data" Expression="" />
-                                      </Bindings>
-                                      <CssClass>
-                                        <CssClassConditional>
-                                          <ClassName value="{theme}-textbox" />
-                                          <IsThemedStyle value="True" />
-                                        </CssClassConditional>
-                                      </CssClass>
-                                    </TextBox>
-                                  </Content>
-                                  <HeaderCssClass>
-                                    <CssClassConditional>
-                                      <ClassName value="{theme}-datacolumn" />
-                                      <IsThemedStyle value="True" />
-                                    </CssClassConditional>
-                                  </HeaderCssClass>
-                                </DataColumn>
-                                <DataColumn>
                                   <Name value="edb_FileName_AuditCol" />
                                   <Caption value="Název souboru" />
                                   <Content>
@@ -872,22 +777,6 @@
                                 </CssClassConditional>
                               </CssClass>
                             </DataTable>
-                            <TextBox>
-                              <Name value="edb_EventGUID" />
-                              <Caption value="edb_EventGUID" />
-                              <CaptionPosition value="Top" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="33%" />
-                              <Bindings>
-                                <Binding SourceProperty="Data" Expression="" />
-                              </Bindings>
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-textbox" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </TextBox>
                           </Children>
                           <CssClass>
                             <CssClassConditional>
@@ -902,23 +791,6 @@
                         <Binding SourceProperty="Index" Expression="index_collection1" />
                       </Bindings>
                     </PagingRepeater>
-                    <TextBox>
-                      <Name value="edb_AuditGUID" />
-                      <Caption value="edb_AuditGUID" />
-                      <CaptionPosition value="Top" />
-                      <IsEnabled value="False" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="33%" />
-                      <Bindings>
-                        <Binding SourceProperty="Data" Expression="" />
-                      </Bindings>
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-textbox" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </TextBox>
                     <Button>
                       <Name value="btn_DWHReport" />
                       <Caption value="DWH Report" />
@@ -1036,7 +908,7 @@
               <Caption value="collection2" />
               <Children>
                 <Attribute>
-                  <Name value="FileGUID" />
+                  <Name value="FileID" />
                   <Caption value="FileGUID" />
                   <DeclaredType>
                     <AttributeType />
@@ -1073,7 +945,7 @@
               </Children>
             </Collection>
             <Attribute>
-              <Name value="EventGUID" />
+              <Name value="EventID" />
               <Caption value="EventGUID" />
               <DeclaredType>
                 <AttributeType />
@@ -1097,16 +969,6 @@
     <ActionEvent ReferencedAction="~handler_CTRLMulti_EditForm_OnCreate" />
   </OnCreate>
   <Actions>
-    <ActionBlock>
-      <Name value="handler_hyperLink1_OnClick" />
-      <IsPrivate value="True" />
-      <ActionLangBody IsValid="True">
-        <Script><![CDATA[navigation.main.Master.go()]]></Script>
-      </ActionLangBody>
-      <DataContext>
-        <ActionDataContext />
-      </DataContext>
-    </ActionBlock>
     <ActionBlock>
       <Name value="handler_CTRLMulti_EditForm_OnCreate" />
       <IsPrivate value="True" />

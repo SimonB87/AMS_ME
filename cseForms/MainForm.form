@@ -29,18 +29,19 @@
                 </CssClassConditional>
               </CssClass>
             </Label>
-            <HyperLink>
-              <Name value="transit_link" />
+            <Label>
+              <Name value="label1" />
               <Data value="Transit" />
+              <Heading value="h5" />
               <Panel.Height value="#" />
               <Panel.Width value="*" />
               <CssClass>
                 <CssClassConditional>
-                  <ClassName value="{theme}-hyperlink" />
+                  <ClassName value="{theme}-label" />
                   <IsThemedStyle value="True" />
                 </CssClassConditional>
               </CssClass>
-            </HyperLink>
+            </Label>
             <Panel>
               <Name value="transitSubMenu_pnl" />
               <Orientation value="Vertical" />
@@ -48,14 +49,14 @@
               <Panel.Width value="*" />
               <Children>
                 <HyperLink>
-                  <Name value="applications_link" />
-                  <Data value="Applications" />
+                  <Name value="all_link" />
+                  <Data value="All " />
                   <Margin value="12, 12, 12, 12 px" />
                   <Panel.Height value="#" />
                   <Panel.Width value="*" />
                   <Target value="_self" />
                   <OnClick>
-                    <ActionEvent ReferencedAction="~LoadSP" />
+                    <ActionEvent ReferencedAction="~handler_all_link_OnClick" />
                   </OnClick>
                   <CssClass>
                     <CssClassConditional>
@@ -64,6 +65,38 @@
                     </CssClassConditional>
                     <CssClassConditional>
                       <ClassName value="subMenuItem" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="active" />
+                      <Bindings>
+                        <Binding SourceProperty="Condition" Expression="activeMenuItem.all_link_active" />
+                      </Bindings>
+                    </CssClassConditional>
+                  </CssClass>
+                </HyperLink>
+                <HyperLink>
+                  <Name value="applications_link" />
+                  <Data value="Accepted applications" />
+                  <Margin value="12, 12, 12, 12 px" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="*" />
+                  <Target value="_self" />
+                  <OnClick>
+                    <ActionEvent ReferencedAction="~handler_applications_link_OnClick" />
+                  </OnClick>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-hyperlink" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="subMenuItem" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="active" />
+                      <Bindings>
+                        <Binding SourceProperty="Condition" Expression="activeMenuItem.applications_link_active" />
+                      </Bindings>
                     </CssClassConditional>
                   </CssClass>
                 </HyperLink>
@@ -75,7 +108,7 @@
                   <Panel.Width value="*" />
                   <Target value="_self" />
                   <OnClick>
-                    <ActionEvent ReferencedAction="~LoadSP" />
+                    <ActionEvent ReferencedAction="~handler_rejectedApplications_link_OnClick" />
                   </OnClick>
                   <CssClass>
                     <CssClassConditional>
@@ -84,6 +117,12 @@
                     </CssClassConditional>
                     <CssClassConditional>
                       <ClassName value="subMenuItem" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="active" />
+                      <Bindings>
+                        <Binding SourceProperty="Condition" Expression="activeMenuItem.rejectedApplications_link_active" />
+                      </Bindings>
                     </CssClassConditional>
                   </CssClass>
                 </HyperLink>
@@ -95,7 +134,7 @@
                   <Panel.Width value="*" />
                   <Target value="_self" />
                   <OnClick>
-                    <ActionEvent ReferencedAction="~LoadSP" />
+                    <ActionEvent ReferencedAction="~handler_grantedAuthorizations_link_OnClick" />
                   </OnClick>
                   <CssClass>
                     <CssClassConditional>
@@ -104,6 +143,12 @@
                     </CssClassConditional>
                     <CssClassConditional>
                       <ClassName value="subMenuItem" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="active" />
+                      <Bindings>
+                        <Binding SourceProperty="Condition" Expression="activeMenuItem.grantedAuthorizations_link_active" />
+                      </Bindings>
                     </CssClassConditional>
                   </CssClass>
                 </HyperLink>
@@ -115,7 +160,7 @@
                   <Panel.Width value="*" />
                   <Target value="_self" />
                   <OnClick>
-                    <ActionEvent ReferencedAction="~LoadSP" />
+                    <ActionEvent ReferencedAction="~action1" />
                   </OnClick>
                   <CssClass>
                     <CssClassConditional>
@@ -124,6 +169,38 @@
                     </CssClassConditional>
                     <CssClassConditional>
                       <ClassName value="subMenuItem" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="active" />
+                      <Bindings>
+                        <Binding SourceProperty="Condition" Expression="activeMenuItem.withdrawnAuthorizations_link_active" />
+                      </Bindings>
+                    </CssClassConditional>
+                  </CssClass>
+                </HyperLink>
+                <HyperLink>
+                  <Name value="cancelledAuthorizations_link" />
+                  <Data value="Cancelled authorizations" />
+                  <Margin value="12, 12, 12, 12 px" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="*" />
+                  <Target value="_self" />
+                  <OnClick>
+                    <ActionEvent ReferencedAction="~action2" />
+                  </OnClick>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-hyperlink" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="subMenuItem" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="active" />
+                      <Bindings>
+                        <Binding SourceProperty="Condition" Expression="form.activeMenuItem.cancelledAuthorizations_link_active" />
+                      </Bindings>
                     </CssClassConditional>
                   </CssClass>
                 </HyperLink>
@@ -135,7 +212,7 @@
                   <Panel.Width value="*" />
                   <Target value="_self" />
                   <OnClick>
-                    <ActionEvent ReferencedAction="~LoadSP" />
+                    <ActionEvent ReferencedAction="~handler_expiredAuthorizations_link_OnClick" />
                   </OnClick>
                   <CssClass>
                     <CssClassConditional>
@@ -145,25 +222,11 @@
                     <CssClassConditional>
                       <ClassName value="subMenuItem" />
                     </CssClassConditional>
-                  </CssClass>
-                </HyperLink>
-                <HyperLink>
-                  <Name value="all_link" />
-                  <Data value="All" />
-                  <Margin value="12, 12, 12, 12 px" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="*" />
-                  <Target value="_self" />
-                  <OnClick>
-                    <ActionEvent ReferencedAction="~LoadSP" />
-                  </OnClick>
-                  <CssClass>
                     <CssClassConditional>
-                      <ClassName value="{theme}-hyperlink" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                    <CssClassConditional>
-                      <ClassName value="subMenuItem" />
+                      <ClassName value="active" />
+                      <Bindings>
+                        <Binding SourceProperty="Condition" Expression="activeMenuItem.expiredAuthorizations_link_active" />
+                      </Bindings>
                     </CssClassConditional>
                   </CssClass>
                 </HyperLink>
@@ -175,19 +238,19 @@
                 </CssClassConditional>
               </CssClass>
             </Panel>
-            <HyperLink>
-              <Name value="places_link" />
+            <Label>
+              <Name value="label2" />
               <Data value="Places" />
+              <Heading value="h5" />
               <Panel.Height value="#" />
               <Panel.Width value="*" />
-              <Target value="_self" />
               <CssClass>
                 <CssClassConditional>
-                  <ClassName value="{theme}-hyperlink" />
+                  <ClassName value="{theme}-label" />
                   <IsThemedStyle value="True" />
                 </CssClassConditional>
               </CssClass>
-            </HyperLink>
+            </Label>
             <Panel>
               <Name value="placesSubMenu_pnl" />
               <Orientation value="Vertical" />
@@ -202,7 +265,7 @@
                   <Panel.Width value="*" />
                   <Target value="_self" />
                   <OnClick>
-                    <ActionEvent ReferencedAction="~LoadPL" />
+                    <ActionEvent ReferencedAction="~handler_authorizedPlaces_link_OnClick" />
                   </OnClick>
                   <CssClass>
                     <CssClassConditional>
@@ -211,6 +274,12 @@
                     </CssClassConditional>
                     <CssClassConditional>
                       <ClassName value="subMenuItem" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="active" />
+                      <Bindings>
+                        <Binding SourceProperty="Condition" Expression="form.activeMenuItem.authorizedPlaces_link_active" />
+                      </Bindings>
                     </CssClassConditional>
                   </CssClass>
                 </HyperLink>
@@ -222,7 +291,7 @@
                   <Panel.Width value="*" />
                   <Target value="_self" />
                   <OnClick>
-                    <ActionEvent ReferencedAction="~LoadPL" />
+                    <ActionEvent ReferencedAction="~handler_cancelledPlaces_link_OnClick" />
                   </OnClick>
                   <CssClass>
                     <CssClassConditional>
@@ -231,6 +300,12 @@
                     </CssClassConditional>
                     <CssClassConditional>
                       <ClassName value="subMenuItem" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="active" />
+                      <Bindings>
+                        <Binding SourceProperty="Condition" Expression="form.activeMenuItem.cancelledPlaces_link_active" />
+                      </Bindings>
                     </CssClassConditional>
                   </CssClass>
                 </HyperLink>
@@ -242,19 +317,19 @@
                 </CssClassConditional>
               </CssClass>
             </Panel>
-            <HyperLink>
-              <Name value="communication_link" />
+            <Label>
+              <Name value="label3" />
               <Data value="Communication authorization" />
+              <Heading value="h5" />
               <Panel.Height value="#" />
               <Panel.Width value="*" />
-              <Target value="_self" />
               <CssClass>
                 <CssClassConditional>
-                  <ClassName value="{theme}-hyperlink" />
+                  <ClassName value="{theme}-label" />
                   <IsThemedStyle value="True" />
                 </CssClassConditional>
               </CssClass>
-            </HyperLink>
+            </Label>
             <Panel>
               <Name value="communicationSubMenu_pnl" />
               <Orientation value="Vertical" />
@@ -262,14 +337,14 @@
               <Panel.Width value="*" />
               <Children>
                 <HyperLink>
-                  <Name value="applications_link2" />
-                  <Data value="Applications" />
+                  <Name value="all_link2" />
+                  <Data value="All" />
                   <Margin value="12, 12, 12, 12 px" />
                   <Panel.Height value="#" />
                   <Panel.Width value="*" />
                   <Target value="_self" />
                   <OnClick>
-                    <ActionEvent ReferencedAction="~LoadEC" />
+                    <ActionEvent ReferencedAction="~handler_all_link2_OnClick" />
                   </OnClick>
                   <CssClass>
                     <CssClassConditional>
@@ -278,6 +353,38 @@
                     </CssClassConditional>
                     <CssClassConditional>
                       <ClassName value="subMenuItem" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="active" />
+                      <Bindings>
+                        <Binding SourceProperty="Condition" Expression="form.activeMenuItem.all_link2_active" />
+                      </Bindings>
+                    </CssClassConditional>
+                  </CssClass>
+                </HyperLink>
+                <HyperLink>
+                  <Name value="applications_link2" />
+                  <Data value="Applications" />
+                  <Margin value="12, 12, 12, 12 px" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="*" />
+                  <Target value="_self" />
+                  <OnClick>
+                    <ActionEvent ReferencedAction="~handler_applications_link2_OnClick" />
+                  </OnClick>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-hyperlink" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="subMenuItem" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="active" />
+                      <Bindings>
+                        <Binding SourceProperty="Condition" Expression="form.activeMenuItem.applications_link2_active" />
+                      </Bindings>
                     </CssClassConditional>
                   </CssClass>
                 </HyperLink>
@@ -289,7 +396,7 @@
                   <Panel.Width value="*" />
                   <Target value="_self" />
                   <OnClick>
-                    <ActionEvent ReferencedAction="~LoadEC" />
+                    <ActionEvent ReferencedAction="~handler_rejectedApplications_link2_OnClick" />
                   </OnClick>
                   <CssClass>
                     <CssClassConditional>
@@ -298,6 +405,12 @@
                     </CssClassConditional>
                     <CssClassConditional>
                       <ClassName value="subMenuItem" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="active" />
+                      <Bindings>
+                        <Binding SourceProperty="Condition" Expression="form.activeMenuItem.rejectedApplications_link2_active" />
+                      </Bindings>
                     </CssClassConditional>
                   </CssClass>
                 </HyperLink>
@@ -309,7 +422,7 @@
                   <Panel.Width value="*" />
                   <Target value="_self" />
                   <OnClick>
-                    <ActionEvent ReferencedAction="~LoadEC" />
+                    <ActionEvent ReferencedAction="~handler_grantedAuthorizations_link2_OnClick" />
                   </OnClick>
                   <CssClass>
                     <CssClassConditional>
@@ -318,6 +431,12 @@
                     </CssClassConditional>
                     <CssClassConditional>
                       <ClassName value="subMenuItem" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="active" />
+                      <Bindings>
+                        <Binding SourceProperty="Condition" Expression="form.activeMenuItem.grantedAuthorizations_link2_active" />
+                      </Bindings>
                     </CssClassConditional>
                   </CssClass>
                 </HyperLink>
@@ -329,12 +448,43 @@
                   <Panel.Width value="*" />
                   <Target value="_self" />
                   <OnClick>
-                    <ActionEvent ReferencedAction="~LoadEC" />
+                    <ActionEvent ReferencedAction="~handler_withdrawnAuthorizations_link2_OnClick" />
                   </OnClick>
                   <CssClass>
                     <CssClassConditional>
                       <ClassName value="{theme}-hyperlink" />
                       <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="subMenuItem" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="active" />
+                      <Bindings>
+                        <Binding SourceProperty="Condition" Expression="form.activeMenuItem.withdrawnAuthorizations_link2_active" />
+                      </Bindings>
+                    </CssClassConditional>
+                  </CssClass>
+                </HyperLink>
+                <HyperLink>
+                  <Name value="cancelledAuthorizations_link2" />
+                  <Data value="Cancelled authorizations" />
+                  <Margin value="12, 12, 12, 12 px" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="*" />
+                  <OnClick>
+                    <ActionEvent ReferencedAction="~handler_cancelledAuthorizations_link2_OnClick" />
+                  </OnClick>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-hyperlink" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="active" />
+                      <Bindings>
+                        <Binding SourceProperty="Condition" Expression="form.activeMenuItem.cancelledAuthorizations_link2_active" />
+                      </Bindings>
                     </CssClassConditional>
                     <CssClassConditional>
                       <ClassName value="subMenuItem" />
@@ -349,7 +499,7 @@
                   <Panel.Width value="*" />
                   <Target value="_self" />
                   <OnClick>
-                    <ActionEvent ReferencedAction="~LoadEC" />
+                    <ActionEvent ReferencedAction="~handler_expiredAuthorizations_link2_OnClick" />
                   </OnClick>
                   <CssClass>
                     <CssClassConditional>
@@ -359,25 +509,11 @@
                     <CssClassConditional>
                       <ClassName value="subMenuItem" />
                     </CssClassConditional>
-                  </CssClass>
-                </HyperLink>
-                <HyperLink>
-                  <Name value="all_link2" />
-                  <Data value="All" />
-                  <Margin value="12, 12, 12, 12 px" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="*" />
-                  <Target value="_self" />
-                  <OnClick>
-                    <ActionEvent ReferencedAction="~LoadEC" />
-                  </OnClick>
-                  <CssClass>
                     <CssClassConditional>
-                      <ClassName value="{theme}-hyperlink" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                    <CssClassConditional>
-                      <ClassName value="subMenuItem" />
+                      <ClassName value="active" />
+                      <Bindings>
+                        <Binding SourceProperty="Condition" Expression="form.activeMenuItem.expiredAuthorizations_link2_active" />
+                      </Bindings>
                     </CssClassConditional>
                   </CssClass>
                 </HyperLink>
@@ -408,48 +544,310 @@
           <Panel.Width value="*" />
           <Children>
             <Panel>
-              <Name value="ControlPnl" />
-              <Orientation value="Horizontal" />
-              <Panel.Height value="#" />
-              <Panel.Width value="*" />
-              <Children>
-                <Breadcrumbs identity="Breadcrumbs.4d3eeadca3c54f1caa1d677db7e07acb">
-                  <Name value="breadcrumbs" />
-                  <controller reference="+GlobalApiObjects.breadcrumbsCtr" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="*" />
-                </Breadcrumbs>
-                <Button>
-                  <Name value="button1" />
-                  <Caption value="Button 1" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="150px" />
-                  <CssClass>
-                    <CssClassConditional>
-                      <ClassName value="{theme}-button" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                  </CssClass>
-                </Button>
-              </Children>
-              <CssClass>
-                <CssClassConditional>
-                  <ClassName value="{theme}-panel" />
-                  <IsThemedStyle value="True" />
-                </CssClassConditional>
-                <CssClassConditional>
-                  <ClassName value="{theme}-breadcrumbs" />
-                  <Condition value="False" />
-                  <IsThemedStyle value="True" />
-                </CssClassConditional>
-              </CssClass>
-            </Panel>
-            <Panel>
               <Name value="BodyPnl" />
               <Orientation value="Vertical" />
               <Panel.Height value="#" />
               <Panel.Width value="*" />
               <Children>
+                <Panel>
+                  <Name value="ControlPnl" />
+                  <Orientation value="Horizontal" />
+                  <Panel.Height value="#" />
+                  <Panel.HorizontalAlignment value="Right" />
+                  <Panel.Width value="100%" />
+                  <Children>
+                    <Panel>
+                      <Name value="ControlPnlHolder" />
+                      <Orientation value="Horizontal" />
+                      <Panel.Height value="#" />
+                      <Panel.Width value="*" />
+                      <Children>
+                        <Panel>
+                          <Name value="ui_btns" />
+                          <Orientation value="Horizontal" />
+                          <Panel.Height value="#" />
+                          <Panel.Width value="*" />
+                          <Children>
+                            <ImageButton identity="ImageButton.d5705fac3ef94ff185b0260525af877a">
+                              <Name value="btn_ToTop" />
+                              <Caption value="{fa-arrow-circle-o-up }" />
+                              <Panel.Height value="#" />
+                              <Panel.Width value="80px" />
+                              <OnClick>
+                                <ActionEvent ReferencedAction="~handler_imageButton1_OnClick" />
+                              </OnClick>
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-imagebutton" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-button" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                                <CssClassConditional>
+                                  <ClassName value="flleft" />
+                                </CssClassConditional>
+                                <CssClassConditional>
+                                  <ClassName value="toTop" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </ImageButton>
+                          </Children>
+                          <CssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-panel" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                          </CssClass>
+                        </Panel>
+                        <Panel>
+                          <Name value="search_pnl" />
+                          <Orientation value="Horizontal" />
+                          <Panel.Height value="#" />
+                          <Panel.Width value="*" />
+                          <Children>
+                            <TextBox>
+                              <Name value="textBox1" />
+                              <Caption value="Vyhledat povoleni" />
+                              <CaptionLength value="30%" />
+                              <Panel.Height value="30px" />
+                              <Panel.Width value="250px" />
+                              <Bindings>
+                                <Binding SourceProperty="Data" Expression="" />
+                              </Bindings>
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-textbox" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                                <CssClassConditional>
+                                  <ClassName value="flleft" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </TextBox>
+                          </Children>
+                          <CssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-panel" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                          </CssClass>
+                        </Panel>
+                        <Panel>
+                          <Name value="control_btns" />
+                          <Orientation value="Horizontal" />
+                          <Panel.Height value="#" />
+                          <Panel.Width value="*" />
+                          <Children>
+                            <Button>
+                              <Name value="modify" />
+                              <Caption value="Modify" />
+                              <Panel.Height value="#" />
+                              <Panel.Width value="150px" />
+                              <OnClick>
+                                <ActionEvent ReferencedAction="~handler_modify_OnClick" />
+                              </OnClick>
+                              <Bindings>
+                                <Binding SourceProperty="IsVisible" Expression="form.buttonsVisibility.isModifyVisible" />
+                              </Bindings>
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-button" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                                <CssClassConditional>
+                                  <ClassName value="flright" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </Button>
+                            <Button>
+                              <Name value="authorize" />
+                              <Caption value="Authorize" />
+                              <Panel.Height value="#" />
+                              <Panel.Width value="150px" />
+                              <OnClick>
+                                <ActionEvent ReferencedAction="~handler_authorize_OnClick" />
+                              </OnClick>
+                              <Bindings>
+                                <Binding SourceProperty="IsVisible" Expression="form.buttonsVisibility.isAuthorizeVisible" />
+                              </Bindings>
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-button" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                                <CssClassConditional>
+                                  <ClassName value="flright" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </Button>
+                            <Button>
+                              <Name value="reject" />
+                              <Caption value="Reject" />
+                              <Panel.Height value="#" />
+                              <Panel.Width value="150px" />
+                              <OnClick>
+                                <ActionEvent ReferencedAction="~handler_reject_OnClick" />
+                              </OnClick>
+                              <Bindings>
+                                <Binding SourceProperty="IsVisible" Expression="form.buttonsVisibility.isRejectVisible" />
+                              </Bindings>
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-button" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                                <CssClassConditional>
+                                  <ClassName value="flright" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </Button>
+                            <Button>
+                              <Name value="withdraw" />
+                              <Caption value="Withdraw" />
+                              <Panel.Height value="#" />
+                              <Panel.Width value="150px" />
+                              <OnClick>
+                                <ActionEvent ReferencedAction="~handler_withdraw_OnClick" />
+                              </OnClick>
+                              <Bindings>
+                                <Binding SourceProperty="IsVisible" Expression="form.buttonsVisibility.isWithdrawVisible" />
+                              </Bindings>
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-button" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                                <CssClassConditional>
+                                  <ClassName value="flright" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </Button>
+                            <Button>
+                              <Name value="cancel" />
+                              <Caption value="Cancel" />
+                              <Panel.Height value="#" />
+                              <Panel.Width value="150px" />
+                              <OnClick>
+                                <ActionEvent ReferencedAction="~handler_cancel_OnClick" />
+                              </OnClick>
+                              <Bindings>
+                                <Binding SourceProperty="IsVisible" Expression="form.buttonsVisibility.isCancelVisible" />
+                              </Bindings>
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-button" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                                <CssClassConditional>
+                                  <ClassName value="flright" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </Button>
+                          </Children>
+                          <CssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-panel" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-newBtns" />
+                              <Condition value="False" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                            <CssClassConditional>
+                              <ClassName value="flright" />
+                            </CssClassConditional>
+                          </CssClass>
+                        </Panel>
+                        <Panel>
+                          <Name value="new_btns" />
+                          <Orientation value="Horizontal" />
+                          <Panel.Height value="#" />
+                          <Panel.Width value="*" />
+                          <Children>
+                            <Button>
+                              <Name value="newApp" />
+                              <Panel.Height value="#" />
+                              <Panel.Width value="150px" />
+                              <OnClick>
+                                <ActionEvent ReferencedAction="~handler_newCommunication_OnClick" />
+                              </OnClick>
+                              <Bindings>
+                                <Binding SourceProperty="Caption" Expression="form.buttonsVisibility.newItemCaption" />
+                              </Bindings>
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-button" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                                <CssClassConditional>
+                                  <ClassName value="btn-success" />
+                                </CssClassConditional>
+                                <CssClassConditional>
+                                  <ClassName value="flright" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </Button>
+                          </Children>
+                          <CssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-panel" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-newBtns" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                          </CssClass>
+                        </Panel>
+                      </Children>
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-panel" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                        <CssClassConditional>
+                          <ClassName value="flright" />
+                        </CssClassConditional>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-nav-bar-controls" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </Panel>
+                    <Panel>
+                      <Name value="ControlPnlSpace" />
+                      <Orientation value="Horizontal" />
+                      <Panel.Height value="#" />
+                      <Panel.Width value="*" />
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-panel" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-nav-bar-space" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </Panel>
+                  </Children>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-panel" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-nav-bar" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="flright" />
+                    </CssClassConditional>
+                  </CssClass>
+                </Panel>
                 <Panel>
                   <Name value="ContentPnl" />
                   <Orientation value="Vertical" />
@@ -458,11 +856,13 @@
                   <Children>
                     <ListGrid2 identity="ListGrid2.9fb164761a48454e9ed5f1f2734b6bbb">
                       <Name value="listGrid21" />
+                      <actionButtonsColumnWidth value="70px" />
                       <allowSelectAll value="True" />
                       <controller reference="~listCtrl" />
                       <isMultiselect value="True" />
+                      <lastClickedRowSelectWhenCheckboxesOff value="True" />
                       <listName value="Orders" />
-                      <pagingTemplate value="$previous|$next|$refresh|$editableCurrentPage|$records|$pageSize|$viewSettings|$clearFilters" />
+                      <pagingTemplate value="$previous|$next|$refresh|$editableCurrentPage|$records|$pageSize|$viewSettings" />
                       <Panel.Height value="#" />
                       <Panel.Width value="100%" />
                       <OnButtonClicked>
@@ -474,23 +874,36 @@
                       <OnRowsChanged>
                         <ActionEvent ReferencedAction="~handler_listGrid21_OnRowsChanged" />
                       </OnRowsChanged>
+                      <OnSelectionChange>
+                        <ActionEvent ReferencedAction="~handler_listGrid21_OnSelectionChange" />
+                      </OnSelectionChange>
+                      <actionButtons>
+                        <gridActionButton identity="ListGrid2.9fb164761a48454e9ed5f1f2734b6bbb">
+                          <ButtonCaption value="Detail" />
+                          <ButtonClass value="fa fa-search" />
+                          <ButtonName value="btn_detail" />
+                          <IsEnabled value="btn1Enabled" />
+                          <IsVisible value="btn1Visible" />
+                          <TitleText value="Detail" />
+                        </gridActionButton>
+                      </actionButtons>
                       <Bindings>
                         <Binding SourceProperty="savedColumns" Expression="globals.collectionDataProvider2Columns" />
                         <Binding SourceProperty="savedState" Expression="globals.collectionDataProvider2State" />
                         <Binding SourceProperty="dataCollection" Expression="dataCollection" />
                         <Binding SourceProperty="lastActionButtonClickedName" Expression="clickedActionButtonName" />
-                        <Binding SourceProperty="lastClickedRow" Expression="reference7" />
-                        <Binding SourceProperty="showCheckboxes" Expression="ShowCheckboxes" />
+                        <Binding SourceProperty="lastClickedRow" Expression="selectedRowData" />
                       </Bindings>
                       <columns>
                         <gridColumn identity="ListGrid2.9fb164761a48454e9ed5f1f2734b6bbb">
-                          <Name value="gridColumn1" />
+                          <Name value="Status" />
                           <Caption value="Status" />
                           <ColumnName value="Status" />
                           <DataType value="string" />
                           <DisableRemove value="True" />
+                          <EnableFilter value="False" />
                           <IsHtml value="True" />
-                          <UnderlyingColumnName value="CustomerID" />
+                          <UnderlyingColumnName value="Status" />
                         </gridColumn>
                         <gridColumn identity="ListGrid2.9fb164761a48454e9ed5f1f2734b6bbb">
                           <Name value="gridColumn2" />
@@ -583,7 +996,7 @@
                       <Panel.Width value="*" />
                       <Children>
                         <TextBox>
-                          <Name value="tbVyhledatPovoleni" />
+                          <Name value="textBox2" />
                           <Caption value="tbVyhledatPovoleni" />
                           <CaptionPosition value="Top" />
                           <Panel.Height value="#" />
@@ -8929,8 +9342,8 @@
           <Caption value="Source data collection" />
           <Children>
             <Attribute>
-              <Name value="CustomerID" />
-              <Caption value="Customer ID" />
+              <Name value="Status" />
+              <Caption value="Status" />
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
@@ -9009,8 +9422,8 @@
           <Caption value="Data collection" />
           <Children>
             <Attribute>
-              <Name value="CustomerID" />
-              <Caption value="Customer ID" />
+              <Name value="Status" />
+              <Caption value="Status" />
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
@@ -9081,8 +9494,8 @@
               </DeclaredType>
             </Attribute>
             <Computed>
-              <Name value="Status" />
-              <Caption value="Status" />
+              <Name value="StatusBG" />
+              <Caption value="Status BG" />
               <Expression IsValid="True">
                 <ExpressionText><![CDATA[true]]></ExpressionText>
                 <ResultType>
@@ -9201,12 +9614,12 @@
           </DeclaredType>
         </Attribute>
         <Reference>
-          <Name value="reference7" />
-          <Caption value="Reference 7" />
+          <Name value="selectedRowData" />
+          <Caption value="Selected row data" />
           <Children>
             <Attribute>
-              <Name value="CustomerID" />
-              <Caption value="Customer ID" />
+              <Name value="Status" />
+              <Caption value="Status" />
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
@@ -9284,8 +9697,208 @@
               </DeclaredType>
             </Attribute>
             <Attribute>
+              <Name value="isWithdrawVisible" />
+              <Caption value="Is withdraw visible" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
               <Name value="isRejectVisible" />
               <Caption value="Is reject visible" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isCancelVisible" />
+              <Caption value="Is cancel visible" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isNewCommunicationApplicationVisible" />
+              <Caption value="Is new communication application visible" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="isNewPlacevisible" />
+              <Caption value="Is new placevisible" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="newItemCaption" />
+              <Caption value="New item caption" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+          </Children>
+        </Complex>
+        <Attribute>
+          <Name value="loadedAuthorizationType" />
+          <Caption value="Loaded authorization type" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
+        <Complex>
+          <Name value="activeMenuItem" />
+          <Caption value="Active menu item" />
+          <Children>
+            <Attribute>
+              <Name value="applications_link_active" />
+              <Caption value="Applications _ link _ active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="rejectedApplications_link_active" />
+              <Caption value="Rejected applications _ link _ active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="grantedAuthorizations_link_active" />
+              <Caption value="Granted authorizations _ link _ active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="withdrawnAuthorizations_link_active" />
+              <Caption value="Withdrawn authorizations _ link _ active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="expiredAuthorizations_link_active" />
+              <Caption value="Expired authorizations _ link _ active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="all_link_active" />
+              <Caption value="All _ link _ active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="authorizedPlaces_link_active" />
+              <Caption value="Authorized places _ link _ active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="cancelledPlaces_link_active" />
+              <Caption value="Cancelled places _ link _ active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="applications_link2_active" />
+              <Caption value="Applications _ link 2_ active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="rejectedApplications_link2_active" />
+              <Caption value="Rejected applications _ link 2_ active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="grantedAuthorizations_link2_active" />
+              <Caption value="Granted authorizations _ link 2_ active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="withdrawnAuthorizations_link2_active" />
+              <Caption value="Withdrawn authorizations _ link 2_ active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="expiredAuthorizations_link2_active" />
+              <Caption value="Expired authorizations _ link 2_ active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="all_link2_active" />
+              <Caption value="All _ link 2_ active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="cancelledAuthorizations_link_active" />
+              <Caption value="Cancelled authorizations _ link _ active" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Bool" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="cancelledAuthorizations_link2_active" />
+              <Caption value="Cancelled authorizations _ link 2_ active" />
               <DeclaredType>
                 <AttributeType>
                   <BaseType value="Bool" />
@@ -9295,8 +9908,8 @@
           </Children>
         </Complex>
         <Attribute>
-          <Name value="loadedAuthorizationType" />
-          <Caption value="Loaded authorization type" />
+          <Name value="loadedAuthorizationState" />
+          <Caption value="Loaded authorization state" />
           <DeclaredType>
             <AttributeType />
           </DeclaredType>
@@ -9317,6 +9930,14 @@ url.updatePageUrl()
 
 var msg = form.model.msg
 var dt = getDate()
+
+
+// Menu active items reset
+form.actions.clearActiveMenus()
+
+// Load default data
+form.actions.LoadSP()
+
 
 // Tab konstanty
 var tabs = form.constants.tabs
@@ -9375,14 +9996,16 @@ tabs._All_EC = 6
 // Codelisty
 // pokud Codelist používá sl. '_description', ve zprávě musí příslušná reference obsahovat atribut '_description'
 
+// Opening default settings to show all SPs
+form.activeMenuItem.all_link_active = true
 form.actions.LoadSP()
-
-
+// ----------------------------------------- //
+/*
 if form.sourceDataCollection.count() > 0 then
 	var first = form.sourceDataCollection.selectFirst()
 	first.OrderDate = getDateTime()
 endif
-
+*/
 //form.localizedColumn = "Muj sloupec"
 
 if globals.collectionDataProvider2State = defaultString() then
@@ -9408,7 +10031,19 @@ form.apiobjects.listCtrl.setReady(true)
       <Name value="handler_listGrid21_OnButtonClicked" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[system.console(form.clickedActionButtonName + " clicked!")]]></Script>
+        <Script><![CDATA[globals.loadedState = "Detail"
+
+if form.loadedAuthorizationType = "SP" then
+	navigation.cseForms.SP_EditForm.go(form.selectedRowData.Status)
+endif
+
+if form.loadedAuthorizationType = "EC" then
+	navigation.cseForms.EC_EditForm.go(form.selectedRowData.Status)
+endif
+
+if form.loadedAuthorizationType = "PL" then
+	navigation.cseForms.PL_EditForm.go(form.selectedRowData.Status)
+endif]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
@@ -9418,24 +10053,7 @@ form.apiobjects.listCtrl.setReady(true)
       <Name value="handler_listGrid21_OnRowClicked" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[if form.loadedAuthorizationType = "SP" then
-	navigation.cseForms.SP_EditForm.go()
-endif
-
-if form.loadedAuthorizationType = "EC" then
-	navigation.cseForms.EC_EditForm.go()
-endif
-
-if form.loadedAuthorizationType = "PL" then
-	navigation.cseForms.PL_EditForm.go()
-endif
-
-
-
-
-
-
-//console.log(this.reference1.CustomerID.$value());]]></Script>
+        <Script><![CDATA[form.actions.processButtons()]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
@@ -9466,14 +10084,29 @@ listCtrl.clearInvisibleColumnsFilters()]]></Script>
     <ActionBlock>
       <Name value="LoadEC" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[packages.cseForms.globals.isLoading = true
+        <Script><![CDATA[/* Loading screen before data procesing */
+packages.cseForms.globals.isLoading = true
 form.apiobjects.listCtrl.setReady(false)
 
-form.sourceDataCollection.fromJson(
-"[{\"CustomerID\":\"HILAA\",\"ShipVia\":3,\"Freight\":\"81.9100\",\"ShipCountry\":\"Venezuela\",\"OrderDate\":\"1996-07-16T00:00:00.000\",\"_idxStr\":\"10\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"ERNSH\",\"ShipVia\":1,\"Freight\":\"140.5100\",\"ShipCountry\":\"Austria\",\"OrderDate\":\"1996-07-17T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"11\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"CENTC\",\"ShipVia\":3,\"Freight\":\"3.2500\",\"ShipCountry\":\"Mexico\",\"OrderDate\":\"1996-07-18T00:00:00.000\",\"_idxStr\":\"12\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"OTTIK\",\"ShipVia\":1,\"Freight\":\"55.0900\",\"ShipCountry\":\"Germany\",\"OrderDate\":\"1996-07-19T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"13\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"QUEDE\",\"ShipVia\":2,\"Freight\":\"3.0500\",\"ShipCountry\":\"Brazil\",\"OrderDate\":\"1996-07-19T00:00:00.000\",\"_idxStr\":\"14\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"RATTC\",\"ShipVia\":3,\"Freight\":\"48.2900\",\"ShipCountry\":\"USA\",\"OrderDate\":\"1996-07-22T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"15\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"ERNSH\",\"ShipVia\":3,\"Freight\":\"146.0600\",\"ShipCountry\":\"Austria\",\"OrderDate\":\"1996-07-23T00:00:00.000\",\"_idxStr\":\"16\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"FOLKO\",\"ShipVia\":3,\"Freight\":\"3.6700\",\"ShipCountry\":\"Sweden\",\"OrderDate\":\"1996-07-24T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"17\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"BLONP\",\"ShipVia\":1,\"Freight\":\"55.2800\",\"ShipCountry\":\"France\",\"OrderDate\":\"1996-07-25T00:00:00.000\",\"_idxStr\":\"18\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"WARTH\",\"ShipVia\":3,\"Freight\":\"25.7300\",\"ShipCountry\":\"Finland\",\"OrderDate\":\"1996-07-26T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"19\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"FRANK\",\"ShipVia\":1,\"Freight\":\"208.5800\",\"ShipCountry\":\"Germany\",\"OrderDate\":\"1996-07-29T00:00:00.000\",\"_idxStr\":\"20\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"}]")
-
+/* Keeping type in variable */
 form.loadedAuthorizationType = "EC"
+form.buttonsVisibility.newItemCaption = "New authorization"
 
+/* Defining and preparing filter state for display on listgrid */
+var loadedState = form.loadedAuthorizationState
+
+/* Filling listgrid with data - TODO Change for real server data */
+form.sourceDataCollection.fromJson(
+"[{\"Status\":\"Application Accepted\",\"ShipVia\":3,\"Freight\":\"81.9100\",\"ShipCountry\":\"Venezuela\",\"OrderDate\":\"1996-07-16T00:00:00.000\",\"_idxStr\":\"10\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Application Rejected\",\"ShipVia\":1,\"Freight\":\"140.5100\",\"ShipCountry\":\"Austria\",\"OrderDate\":\"1996-07-17T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"11\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Granted\",\"ShipVia\":3,\"Freight\":\"3.2500\",\"ShipCountry\":\"Mexico\",\"OrderDate\":\"1996-07-18T00:00:00.000\",\"_idxStr\":\"12\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Withdrawn\",\"ShipVia\":1,\"Freight\":\"55.0900\",\"ShipCountry\":\"Germany\",\"OrderDate\":\"1996-07-19T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"13\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Cancelled\",\"ShipVia\":2,\"Freight\":\"3.0500\",\"ShipCountry\":\"Brazil\",\"OrderDate\":\"1996-07-19T00:00:00.000\",\"_idxStr\":\"14\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Expired\",\"ShipVia\":3,\"Freight\":\"48.2900\",\"ShipCountry\":\"USA\",\"OrderDate\":\"1996-07-22T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"15\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Application Accepted\",\"ShipVia\":3,\"Freight\":\"146.0600\",\"ShipCountry\":\"Austria\",\"OrderDate\":\"1996-07-23T00:00:00.000\",\"_idxStr\":\"16\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Application Rejected\",\"ShipVia\":3,\"Freight\":\"3.6700\",\"ShipCountry\":\"Sweden\",\"OrderDate\":\"1996-07-24T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"17\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Granted\",\"ShipVia\":1,\"Freight\":\"55.2800\",\"ShipCountry\":\"France\",\"OrderDate\":\"1996-07-25T00:00:00.000\",\"_idxStr\":\"18\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Withdrawn\",\"ShipVia\":3,\"Freight\":\"25.7300\",\"ShipCountry\":\"Finland\",\"OrderDate\":\"1996-07-26T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"19\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Cancelled\",\"ShipVia\":1,\"Freight\":\"208.5800\",\"ShipCountry\":\"Germany\",\"OrderDate\":\"1996-07-29T00:00:00.000\",\"_idxStr\":\"20\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"}]")
+
+/* Applying filters by meu selection */
+if loadedState = "All" then
+	form.apiobjects.listCtrl.clearVisibleFilters()
+else
+	form.apiobjects.listCtrl.setTextFilter("Status", loadedState)
+endif
+
+/* Populating filtered results */
 form.apiobjects.listCtrl.setReady(true)]]></Script>
       </ActionLangBody>
       <DataContext>
@@ -9483,15 +10116,29 @@ form.apiobjects.listCtrl.setReady(true)]]></Script>
     <ActionBlock>
       <Name value="LoadSP" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[packages.cseForms.globals.isLoading = true
-
+        <Script><![CDATA[/* Loading screen before data procesing */
+packages.cseForms.globals.isLoading = true
 form.apiobjects.listCtrl.setReady(false)
 
-form.sourceDataCollection.fromJson(
-"[{\"CustomerID\":\"RATTC\",\"ShipVia\":3,\"Freight\":\"48.2900\",\"ShipCountry\":\"USA\",\"OrderDate\":\"1996-07-22T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"15\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"ERNSH\",\"ShipVia\":3,\"Freight\":\"146.0600\",\"ShipCountry\":\"Austria\",\"OrderDate\":\"1996-07-23T00:00:00.000\",\"_idxStr\":\"16\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"FOLKO\",\"ShipVia\":3,\"Freight\":\"3.6700\",\"ShipCountry\":\"Sweden\",\"OrderDate\":\"1996-07-24T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"17\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"BLONP\",\"ShipVia\":1,\"Freight\":\"55.2800\",\"ShipCountry\":\"France\",\"OrderDate\":\"1996-07-25T00:00:00.000\",\"_idxStr\":\"18\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"WARTH\",\"ShipVia\":3,\"Freight\":\"25.7300\",\"ShipCountry\":\"Finland\",\"OrderDate\":\"1996-07-26T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"19\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"FRANK\",\"ShipVia\":1,\"Freight\":\"208.5800\",\"ShipCountry\":\"Germany\",\"OrderDate\":\"1996-07-29T00:00:00.000\",\"_idxStr\":\"20\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"HILAA\",\"ShipVia\":3,\"Freight\":\"81.9100\",\"ShipCountry\":\"Venezuela\",\"OrderDate\":\"1996-07-16T00:00:00.000\",\"_idxStr\":\"10\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"ERNSH\",\"ShipVia\":1,\"Freight\":\"140.5100\",\"ShipCountry\":\"Austria\",\"OrderDate\":\"1996-07-17T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"11\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"CENTC\",\"ShipVia\":3,\"Freight\":\"3.2500\",\"ShipCountry\":\"Mexico\",\"OrderDate\":\"1996-07-18T00:00:00.000\",\"_idxStr\":\"12\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"OTTIK\",\"ShipVia\":1,\"Freight\":\"55.0900\",\"ShipCountry\":\"Germany\",\"OrderDate\":\"1996-07-19T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"13\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"QUEDE\",\"ShipVia\":2,\"Freight\":\"3.0500\",\"ShipCountry\":\"Brazil\",\"OrderDate\":\"1996-07-19T00:00:00.000\",\"_idxStr\":\"14\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"RATTC\",\"ShipVia\":3,\"Freight\":\"48.2900\",\"ShipCountry\":\"USA\",\"OrderDate\":\"1996-07-22T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"15\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"ERNSH\",\"ShipVia\":3,\"Freight\":\"146.0600\",\"ShipCountry\":\"Austria\",\"OrderDate\":\"1996-07-23T00:00:00.000\",\"_idxStr\":\"16\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"FOLKO\",\"ShipVia\":3,\"Freight\":\"3.6700\",\"ShipCountry\":\"Sweden\",\"OrderDate\":\"1996-07-24T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"17\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"BLONP\",\"ShipVia\":1,\"Freight\":\"55.2800\",\"ShipCountry\":\"France\",\"OrderDate\":\"1996-07-25T00:00:00.000\",\"_idxStr\":\"18\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"WARTH\",\"ShipVia\":3,\"Freight\":\"25.7300\",\"ShipCountry\":\"Finland\",\"OrderDate\":\"1996-07-26T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"19\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"FRANK\",\"ShipVia\":1,\"Freight\":\"208.5800\",\"ShipCountry\":\"Germany\",\"OrderDate\":\"1996-07-29T00:00:00.000\",\"_idxStr\":\"20\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"}]")
-
+/* Keeping type in variable */
 form.loadedAuthorizationType = "SP"
+form.buttonsVisibility.newItemCaption = "New application"
 
+/* Defining and preparing filter state for display on listgrid */
+var loadedState = form.loadedAuthorizationState
+
+/* Filling listgrid with data - TODO Change for real server data */
+form.sourceDataCollection.fromJson(
+"[{\"Status\":\"Authorization Granted\",\"ShipVia\":3,\"Freight\":\"48.2900\",\"ShipCountry\":\"USA\",\"OrderDate\":\"1996-07-22T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"15\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Application Rejected\",\"ShipVia\":3,\"Freight\":\"146.0600\",\"ShipCountry\":\"Austria\",\"OrderDate\":\"1996-07-23T00:00:00.000\",\"_idxStr\":\"16\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Application Rejected\",\"ShipVia\":3,\"Freight\":\"3.6700\",\"ShipCountry\":\"Sweden\",\"OrderDate\":\"1996-07-24T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"17\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Withdrawn\",\"ShipVia\":1,\"Freight\":\"55.2800\",\"ShipCountry\":\"France\",\"OrderDate\":\"1996-07-25T00:00:00.000\",\"_idxStr\":\"18\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Application Accepted\",\"ShipVia\":3,\"Freight\":\"25.7300\",\"ShipCountry\":\"Finland\",\"OrderDate\":\"1996-07-26T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"19\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Application Accepted\",\"ShipVia\":1,\"Freight\":\"208.5800\",\"ShipCountry\":\"Germany\",\"OrderDate\":\"1996-07-29T00:00:00.000\",\"_idxStr\":\"20\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Granted\",\"ShipVia\":3,\"Freight\":\"81.9100\",\"ShipCountry\":\"Venezuela\",\"OrderDate\":\"1996-07-16T00:00:00.000\",\"_idxStr\":\"10\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Withdrawn\",\"ShipVia\":1,\"Freight\":\"140.5100\",\"ShipCountry\":\"Austria\",\"OrderDate\":\"1996-07-17T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"11\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Application Accepted\",\"ShipVia\":3,\"Freight\":\"3.2500\",\"ShipCountry\":\"Mexico\",\"OrderDate\":\"1996-07-18T00:00:00.000\",\"_idxStr\":\"12\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Expired\",\"ShipVia\":1,\"Freight\":\"55.0900\",\"ShipCountry\":\"Germany\",\"OrderDate\":\"1996-07-19T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"13\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Withdrawn\",\"ShipVia\":2,\"Freight\":\"3.0500\",\"ShipCountry\":\"Brazil\",\"OrderDate\":\"1996-07-19T00:00:00.000\",\"_idxStr\":\"14\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Application Rejected\",\"ShipVia\":3,\"Freight\":\"48.2900\",\"ShipCountry\":\"USA\",\"OrderDate\":\"1996-07-22T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"15\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Expired\",\"ShipVia\":3,\"Freight\":\"146.0600\",\"ShipCountry\":\"Austria\",\"OrderDate\":\"1996-07-23T00:00:00.000\",\"_idxStr\":\"16\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Cancelled\",\"ShipVia\":3,\"Freight\":\"3.6700\",\"ShipCountry\":\"Sweden\",\"OrderDate\":\"1996-07-24T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"17\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Withdrawn\",\"ShipVia\":1,\"Freight\":\"55.2800\",\"ShipCountry\":\"France\",\"OrderDate\":\"1996-07-25T00:00:00.000\",\"_idxStr\":\"18\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Cancelled\",\"ShipVia\":3,\"Freight\":\"25.7300\",\"ShipCountry\":\"Finland\",\"OrderDate\":\"1996-07-26T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"19\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Application Accepted\",\"ShipVia\":1,\"Freight\":\"208.5800\",\"ShipCountry\":\"Germany\",\"OrderDate\":\"1996-07-29T00:00:00.000\",\"_idxStr\":\"20\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"}]")
+
+/* Applying filters by meu selection */
+if loadedState = "All" then
+	form.apiobjects.listCtrl.clearVisibleFilters()
+else
+	form.apiobjects.listCtrl.setTextFilter("Status", loadedState)
+endif
+
+/* Populating filtered results */
 form.apiobjects.listCtrl.setReady(true)]]></Script>
       </ActionLangBody>
       <DataContext>
@@ -9505,9 +10152,10 @@ form.apiobjects.listCtrl.setReady(true)]]></Script>
 form.apiobjects.listCtrl.setReady(false)
 
 form.sourceDataCollection.fromJson(
-"[{\"CustomerID\":\"HILAA\",\"ShipVia\":3,\"Freight\":\"81.9100\",\"ShipCountry\":\"Venezuela\",\"OrderDate\":\"1996-07-16T00:00:00.000\",\"_idxStr\":\"10\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"ERNSH\",\"ShipVia\":1,\"Freight\":\"140.5100\",\"ShipCountry\":\"Austria\",\"OrderDate\":\"1996-07-17T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"11\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"CENTC\",\"ShipVia\":3,\"Freight\":\"3.2500\",\"ShipCountry\":\"Mexico\",\"OrderDate\":\"1996-07-18T00:00:00.000\",\"_idxStr\":\"12\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"OTTIK\",\"ShipVia\":1,\"Freight\":\"55.0900\",\"ShipCountry\":\"Germany\",\"OrderDate\":\"1996-07-19T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"13\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"CustomerID\":\"QUEDE\",\"ShipVia\":2,\"Freight\":\"3.0500\",\"ShipCountry\":\"Brazil\",\"OrderDate\":\"1996-07-19T00:00:00.000\",\"_idxStr\":\"14\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"}]")
+"[{\"Status\":\"Authorized place\",\"ShipVia\":3,\"Freight\":\"81.9100\",\"ShipCountry\":\"Venezuela\",\"OrderDate\":\"1996-07-16T00:00:00.000\",\"_idxStr\":\"10\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Cancelled place\",\"ShipVia\":1,\"Freight\":\"140.5100\",\"ShipCountry\":\"Austria\",\"OrderDate\":\"1996-07-17T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"11\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorized place\",\"ShipVia\":3,\"Freight\":\"3.2500\",\"ShipCountry\":\"Mexico\",\"OrderDate\":\"1996-07-18T00:00:00.000\",\"_idxStr\":\"12\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Cancelled place\",\"ShipVia\":1,\"Freight\":\"55.0900\",\"ShipCountry\":\"Germany\",\"OrderDate\":\"1996-07-19T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"13\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorized place\",\"ShipVia\":2,\"Freight\":\"3.0500\",\"ShipCountry\":\"Brazil\",\"OrderDate\":\"1996-07-19T00:00:00.000\",\"_idxStr\":\"14\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"}]")
 
 form.loadedAuthorizationType = "PL"
+form.buttonsVisibility.newItemCaption = "New place"
 
 form.apiobjects.listCtrl.setReady(true)]]></Script>
       </ActionLangBody>
@@ -9520,6 +10168,469 @@ form.apiobjects.listCtrl.setReady(true)]]></Script>
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
         <Script><![CDATA[packages.cseForms.globals.isLoading = false]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_applications_link_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.actions.clearActiveMenus()
+form.activeMenuItem.applications_link_active = true
+form.loadedAuthorizationState = "Application Accepted"
+form.actions.LoadSP()
+form.actions.hideButtons()
+page.scrollToTop()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_rejectedApplications_link_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.actions.clearActiveMenus()
+form.activeMenuItem.rejectedApplications_link_active = true
+form.loadedAuthorizationState = "Application Rejected"
+form.actions.LoadSP()
+form.actions.hideButtons()
+page.scrollToTop()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_grantedAuthorizations_link_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.actions.clearActiveMenus()
+form.activeMenuItem.grantedAuthorizations_link_active = true
+form.loadedAuthorizationState = "Authorization Granted"
+form.actions.LoadSP()
+form.actions.hideButtons()
+page.scrollToTop()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="action1" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.actions.clearActiveMenus()
+form.activeMenuItem.withdrawnAuthorizations_link_active = true
+form.loadedAuthorizationState = "Authorization Withdrawn"
+form.actions.LoadSP()
+form.actions.hideButtons()
+page.scrollToTop()	]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_expiredAuthorizations_link_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.actions.clearActiveMenus()
+form.activeMenuItem.expiredAuthorizations_link_active = true
+form.loadedAuthorizationState = "Authorization Expired"
+form.actions.LoadSP()
+form.actions.hideButtons()
+page.scrollToTop()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_all_link_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.actions.clearActiveMenus()
+form.activeMenuItem.all_link_active = true
+form.loadedAuthorizationState = "All"
+form.actions.hideButtons()
+form.actions.LoadSP()
+page.scrollToTop()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="clearActiveMenus" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[/* Clearing SP Menus */
+form.activeMenuItem.all_link_active = false
+form.activeMenuItem.applications_link_active = false
+form.activeMenuItem.rejectedApplications_link_active = false
+form.activeMenuItem.grantedAuthorizations_link_active = false
+form.activeMenuItem.withdrawnAuthorizations_link_active = false
+form.activeMenuItem.cancelledAuthorizations_link_active = false
+form.activeMenuItem.expiredAuthorizations_link_active = false
+
+/* Clearing PL Menus */
+form.activeMenuItem.authorizedPlaces_link_active = false
+form.activeMenuItem.cancelledPlaces_link_active = false
+
+/* Clearing EC Menus */
+form.activeMenuItem.all_link2_active = false
+form.activeMenuItem.applications_link2_active = false
+form.activeMenuItem.rejectedApplications_link2_active = false
+form.activeMenuItem.grantedAuthorizations_link2_active = false
+form.activeMenuItem.withdrawnAuthorizations_link2_active = false
+form.activeMenuItem.cancelledAuthorizations_link2_active = false
+form.activeMenuItem.expiredAuthorizations_link2_active = false]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_authorizedPlaces_link_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.actions.clearActiveMenus()
+form.activeMenuItem.authorizedPlaces_link_active = true
+form.loadedAuthorizationState = "Authorized place"
+form.actions.LoadPL()
+page.scrollToTop()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_cancelledPlaces_link_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.actions.clearActiveMenus()
+form.activeMenuItem.cancelledPlaces_link_active = true
+form.loadedAuthorizationState = "Cancelled place"
+form.actions.LoadPL()
+page.scrollToTop()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_applications_link2_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.actions.clearActiveMenus()
+form.activeMenuItem.applications_link2_active = true
+form.loadedAuthorizationState = "Application Accepted"
+form.actions.LoadEC()
+form.actions.hideButtons()
+page.scrollToTop()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_rejectedApplications_link2_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.actions.clearActiveMenus()
+form.activeMenuItem.rejectedApplications_link2_active = true
+form.loadedAuthorizationState = "Application Rejected"
+form.actions.LoadEC()
+form.actions.hideButtons()
+page.scrollToTop()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_grantedAuthorizations_link2_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.actions.clearActiveMenus()
+form.activeMenuItem.grantedAuthorizations_link2_active = true
+form.loadedAuthorizationState = "Authorization Granted"
+form.actions.LoadEC()
+form.actions.hideButtons()
+page.scrollToTop()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_withdrawnAuthorizations_link2_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.actions.clearActiveMenus()
+form.activeMenuItem.withdrawnAuthorizations_link2_active = true
+form.loadedAuthorizationState = "Authorization Withdrawn"
+form.actions.LoadEC()
+form.actions.hideButtons()
+page.scrollToTop()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_expiredAuthorizations_link2_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.actions.clearActiveMenus()
+form.activeMenuItem.expiredAuthorizations_link2_active = true
+form.loadedAuthorizationState = "Authorization Expired"
+form.actions.LoadEC()
+form.actions.hideButtons()
+page.scrollToTop()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_all_link2_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.actions.clearActiveMenus()
+form.activeMenuItem.all_link2_active = true
+form.loadedAuthorizationState = "All"
+form.actions.LoadEC()
+form.actions.hideButtons()
+page.scrollToTop()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_imageButton1_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[apiobjects.page.scrollToTop()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="action2" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.actions.clearActiveMenus()
+form.activeMenuItem.cancelledAuthorizations_link_active = true
+form.loadedAuthorizationState = "Authorization Cancelled"
+form.actions.LoadSP()
+form.actions.hideButtons()
+page.scrollToTop()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="processButtons" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[/* Defining and preparing filter state for display on listgrid */
+var loadedState = form.selectedRowData.Status
+
+/* Application Accepted */
+if loadedState = "Application Accepted" then
+	form.buttonsVisibility.isModifyVisible = true
+	form.buttonsVisibility.isAuthorizeVisible = true
+	form.buttonsVisibility.isRejectVisible = true
+	form.buttonsVisibility.isWithdrawVisible = false
+	form.buttonsVisibility.isCancelVisible = false
+endif
+
+/* Application Rejected */
+if loadedState = "Application Rejected" then
+	form.buttonsVisibility.isModifyVisible = true
+	form.buttonsVisibility.isAuthorizeVisible = false
+	form.buttonsVisibility.isRejectVisible = false
+	form.buttonsVisibility.isWithdrawVisible = false
+	form.buttonsVisibility.isCancelVisible = false
+endif
+
+/* Authorization Granted */
+if loadedState = "Authorization Granted" then
+	form.buttonsVisibility.isModifyVisible = true
+	form.buttonsVisibility.isAuthorizeVisible = false
+	form.buttonsVisibility.isRejectVisible = false
+	form.buttonsVisibility.isWithdrawVisible = true
+	form.buttonsVisibility.isCancelVisible = true
+endif
+
+/* Authorization Withdrawn */
+if loadedState = "Authorization Withdrawn" then
+	form.buttonsVisibility.isModifyVisible = true
+	form.buttonsVisibility.isAuthorizeVisible = true
+	form.buttonsVisibility.isRejectVisible = false
+	form.buttonsVisibility.isWithdrawVisible = false
+	form.buttonsVisibility.isCancelVisible = false
+endif
+
+/* Authorization Cancelled */
+if loadedState = "Authorization Cancelled" then
+	form.buttonsVisibility.isModifyVisible = false
+	form.buttonsVisibility.isAuthorizeVisible = true
+	form.buttonsVisibility.isRejectVisible = false
+	form.buttonsVisibility.isWithdrawVisible = false
+	form.buttonsVisibility.isCancelVisible = false
+endif
+
+/* Authorization Expired */
+if loadedState = "Authorization Expired" then
+	form.buttonsVisibility.isModifyVisible = false
+	form.buttonsVisibility.isAuthorizeVisible = true
+	form.buttonsVisibility.isRejectVisible = false
+	form.buttonsVisibility.isWithdrawVisible = false
+	form.buttonsVisibility.isCancelVisible = false
+endif
+]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_listGrid21_OnSelectionChange" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[//]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="hideButtons" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.buttonsVisibility.isModifyVisible = false
+form.buttonsVisibility.isAuthorizeVisible = false
+form.buttonsVisibility.isRejectVisible = false
+form.buttonsVisibility.isWithdrawVisible = false
+form.buttonsVisibility.isCancelVisible = false]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_modify_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[globals.loadedState = "Modify"
+form.actions.navigateToDetail()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="navigateToDetail" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[var loadedAuthorizationType = form.loadedAuthorizationType
+
+if loadedAuthorizationType = "SP" then
+	navigation.cseForms.SP_EditForm.go(form.selectedRowData.Status)
+endif
+
+if loadedAuthorizationType = "EC" then
+	navigation.cseForms.EC_EditForm.go(form.selectedRowData.Status)
+endif
+
+if loadedAuthorizationType = "PL" then
+	navigation.cseForms.PL_EditForm.go(form.selectedRowData.Status)
+endif]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_authorize_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[globals.loadedState = "Authorize"
+form.actions.navigateToDetail()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_reject_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[globals.loadedState = "Reject"
+form.actions.navigateToDetail()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_cancel_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[globals.loadedState = "Cancel"
+form.actions.navigateToDetail()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_withdraw_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[globals.loadedState = "Withdraw"
+form.actions.navigateToDetail()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_cancelledAuthorizations_link2_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.actions.clearActiveMenus()
+form.activeMenuItem.cancelledAuthorizations_link2_active = true
+form.loadedAuthorizationState = "Authorization Cancelled"
+form.actions.LoadEC()
+form.actions.hideButtons()
+page.scrollToTop()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_newCommunication_OnClick" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[globals.loadedState = "New"
+
+if(form.loadedAuthorizationType = "SP") then
+	navigation.cseForms.SP_EditForm.go("New")
+endif
+
+if(form.loadedAuthorizationType = "PL") then
+	navigation.cseForms.PL_EditForm.go("New")
+endif
+
+if(form.loadedAuthorizationType = "EC") then
+	navigation.cseForms.EC_EditForm.go("New")
+endif]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />

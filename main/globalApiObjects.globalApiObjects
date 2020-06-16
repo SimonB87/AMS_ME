@@ -70,5 +70,9 @@
         <ActionEvent ReferencedAction="+GlobalActions.handler_northwind_OnIsAliveTimeout" />
       </OnIsAliveTimeout>
     </ServerConnection>
+    <ConfigValue>
+      <Name value="appVersion" />
+      <Value value="0.1.2" />
+    </ConfigValue>
   </ApiObjects>
 </GlobalApiObjects>

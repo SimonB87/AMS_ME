@@ -329,34 +329,6 @@
                   </Bindings>
                   <Columns>
                     <DataColumn>
-                      <Name value="edb_FileGUIDCol" />
-                      <Caption value="edb_FileGUID" />
-                      <Content>
-                        <TextBox>
-                          <Name value="edb_FileGUID" />
-                          <CaptionPosition value="Hide" />
-                          <IsEnabled value="False" />
-                          <Bindings>
-                            <Binding SourceProperty="Data" Expression="FileGUID" />
-                            <Binding SourceProperty="IsRequiredMarkVisible" Expression="FileGUID.isRequired()" />
-                            <Binding SourceProperty="Caption" Expression="FileGUID.caption()" />
-                          </Bindings>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-textbox" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </TextBox>
-                      </Content>
-                      <HeaderCssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-datacolumn" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </HeaderCssClass>
-                    </DataColumn>
-                    <DataColumn>
                       <Name value="edb_FileNameCol" />
                       <Caption value="Název souboru" />
                       <Content>
@@ -514,23 +486,6 @@
                     </CssClassConditional>
                   </CssClass>
                 </Panel>
-                <TextBox>
-                  <Name value="edb_EventGUID" />
-                  <Caption value="edb_EventGUID" />
-                  <CaptionPosition value="Top" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="33%" />
-                  <Bindings>
-                    <Binding SourceProperty="Data" Expression="EventGUID" />
-                    <Binding SourceProperty="IsRequiredMarkVisible" Expression="EventGUID.isRequired()" />
-                  </Bindings>
-                  <CssClass>
-                    <CssClassConditional>
-                      <ClassName value="{theme}-textbox" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                  </CssClass>
-                </TextBox>
               </Children>
               <CssClass>
                 <CssClassConditional>
@@ -545,23 +500,6 @@
             <Binding SourceProperty="Index" Expression="index_collection1" />
           </Bindings>
         </PagingRepeater>
-        <TextBox>
-          <Name value="edb_AuditGUID" />
-          <Caption value="GUID" />
-          <CaptionPosition value="Top" />
-          <IsEnabled value="False" />
-          <Panel.Height value="#" />
-          <Panel.Width value="50%" />
-          <Bindings>
-            <Binding SourceProperty="Data" Expression="" />
-          </Bindings>
-          <CssClass>
-            <CssClassConditional>
-              <ClassName value="{theme}-textbox" />
-              <IsThemedStyle value="True" />
-            </CssClassConditional>
-          </CssClass>
-        </TextBox>
         <Panel>
           <Name value="btn_AMSDetail_parent" />
           <Orientation value="Horizontal" />
@@ -726,29 +664,6 @@
               <Content>
                 <TextBox>
                   <Name value="edb_SupervisingCustomsOffices" />
-                  <CaptionPosition value="Hide" />
-                  <IsEnabled value="False" />
-                  <CssClass>
-                    <CssClassConditional>
-                      <ClassName value="{theme}-textbox" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                  </CssClass>
-                </TextBox>
-              </Content>
-              <HeaderCssClass>
-                <CssClassConditional>
-                  <ClassName value="{theme}-datacolumn" />
-                  <IsThemedStyle value="True" />
-                </CssClassConditional>
-              </HeaderCssClass>
-            </DataColumn>
-            <DataColumn>
-              <Name value="edb_AMSGUIDCol" />
-              <Caption value="edb_AMSGUID" />
-              <Content>
-                <TextBox>
-                  <Name value="edb_AMSGUID" />
                   <CaptionPosition value="Hide" />
                   <IsEnabled value="False" />
                   <CssClass>
@@ -996,7 +911,7 @@
               <Caption value="collection2" />
               <Children>
                 <Attribute>
-                  <Name value="FileGUID" />
+                  <Name value="FileID" />
                   <Caption value="FileGUID" />
                   <DeclaredType>
                     <AttributeType />
@@ -1033,7 +948,7 @@
               </Children>
             </Collection>
             <Attribute>
-              <Name value="EventGUID" />
+              <Name value="EventID" />
               <Caption value="EventGUID" />
               <DeclaredType>
                 <AttributeType />
@@ -1088,16 +1003,6 @@
     <ActionEvent ReferencedAction="~handler_Audit_EditForm_OnCreate" />
   </OnCreate>
   <Actions>
-    <ActionBlock>
-      <Name value="handler_hyperLink1_OnClick" />
-      <IsPrivate value="True" />
-      <ActionLangBody IsValid="True">
-        <Script><![CDATA[navigation.main.Master.go()]]></Script>
-      </ActionLangBody>
-      <DataContext>
-        <ActionDataContext />
-      </DataContext>
-    </ActionBlock>
     <ActionBlock>
       <Name value="handler_Audit_EditForm_OnCreate" />
       <IsPrivate value="True" />
