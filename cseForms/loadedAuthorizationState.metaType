@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<MetaType>
+  <Name value="loadedAuthorizationState" />
+  <Caption value="Loaded authorization state" />
+  <TypeSpec>
+    <AttributeType>
+      <BaseType value="Enum" />
+      <EnumValues>
+        <AttributeEnumValue>
+          <Name value="Application_Accepted" />
+          <Caption value="Application _ accepted" />
+          <Value value="Application_Accepted" />
+        </AttributeEnumValue>
+        <AttributeEnumValue>
+          <Name value="Application_Rejected" />
+          <Caption value="Application _ rejected" />
+          <Value value="Application_Rejected" />
+        </AttributeEnumValue>
+        <AttributeEnumValue>
+          <Name value="Authorization_Granted" />
+          <Caption value="Authorization _ granted" />
+          <Value value="Authorization_Granted" />
+        </AttributeEnumValue>
+        <AttributeEnumValue>
+          <Name value="Authorization_Withdrawn" />
+          <Caption value="Authorization _ withdrawn" />
+          <Value value="Authorization_Withdrawn" />
+        </AttributeEnumValue>
+        <AttributeEnumValue>
+          <Name value="Authorization_Cancelled" />
+          <Caption value="Authorization _ cancelled" />
+          <Value value="Authorization_Cancelled" />
+        </AttributeEnumValue>
+        <AttributeEnumValue>
+          <Name value="Authorization_Expired" />
+          <Caption value="Authorization _ expired" />
+          <Value value="Authorization_Expired" />
+        </AttributeEnumValue>
+      </EnumValues>
+    </AttributeType>
+  </TypeSpec>
+</MetaType>

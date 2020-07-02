@@ -410,6 +410,11 @@
             <AttributeType />
           </DeclaredType>
         </Attribute>
+        <Attribute>
+          <Name value="mode" />
+          <Caption value="Mode" />
+          <MetaType reference="/(cseForms.b5b300393a7b425eaf69acead7edfe1a)+MetaTypes.mode" />
+        </Attribute>
       </Children>
     </DataContext>
   </DataContext>
@@ -434,7 +439,7 @@ form.appVersion = apiobjects.appVersion.get()]]></Script>
       <Name value="handler_label1_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[navigation.cseForms.MainForm.go()]]></Script>
+        <Script><![CDATA[navigation.cseForms.MainForm.go(form.mode)]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
@@ -505,7 +510,7 @@ form.appVersion = apiobjects.appVersion.get()]]></Script>
       <Name value="handler_MainForm_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[navigation.cseForms.MainForm.go()]]></Script>
+        <Script><![CDATA[//navigation.cseForms.MainForm.go()]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />

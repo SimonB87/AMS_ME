@@ -16,5 +16,6 @@
     <PackageItem Src="SP_EditForm.form" />
     <PackageItem Src="globalApiObjects.globalApiObjects" />
     <PackageItem Src="globalVariables.globalVariables" />
+    <PackageItem Src="mode.metaType" />
   </Items>
 </Package>

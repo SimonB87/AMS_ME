@@ -554,7 +554,7 @@
                   <Orientation value="Horizontal" />
                   <Panel.Height value="#" />
                   <Panel.HorizontalAlignment value="Right" />
-                  <Panel.Width value="100%" />
+                  <Panel.Width value="*" />
                   <Children>
                     <Panel>
                       <Name value="ControlPnlHolder" />
@@ -603,6 +603,7 @@
                         </Panel>
                         <Panel>
                           <Name value="search_pnl" />
+                          <IsVisible value="False" />
                           <Orientation value="Horizontal" />
                           <Panel.Height value="#" />
                           <Panel.Width value="*" />
@@ -644,7 +645,7 @@
                               <Name value="modify" />
                               <Caption value="Modify" />
                               <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
+                              <Panel.Width value="130px" />
                               <OnClick>
                                 <ActionEvent ReferencedAction="~handler_modify_OnClick" />
                               </OnClick>
@@ -663,14 +664,14 @@
                             </Button>
                             <Button>
                               <Name value="authorize" />
-                              <Caption value="Authorize" />
                               <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
+                              <Panel.Width value="130px" />
                               <OnClick>
                                 <ActionEvent ReferencedAction="~handler_authorize_OnClick" />
                               </OnClick>
                               <Bindings>
                                 <Binding SourceProperty="IsVisible" Expression="form.buttonsVisibility.isAuthorizeVisible" />
+                                <Binding SourceProperty="Caption" Expression="form._AuthorizeButtonCaption" />
                               </Bindings>
                               <CssClass>
                                 <CssClassConditional>
@@ -686,7 +687,7 @@
                               <Name value="reject" />
                               <Caption value="Reject" />
                               <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
+                              <Panel.Width value="130px" />
                               <OnClick>
                                 <ActionEvent ReferencedAction="~handler_reject_OnClick" />
                               </OnClick>
@@ -707,7 +708,7 @@
                               <Name value="withdraw" />
                               <Caption value="Withdraw" />
                               <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
+                              <Panel.Width value="130px" />
                               <OnClick>
                                 <ActionEvent ReferencedAction="~handler_withdraw_OnClick" />
                               </OnClick>
@@ -728,7 +729,7 @@
                               <Name value="cancel" />
                               <Caption value="Cancel" />
                               <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
+                              <Panel.Width value="130px" />
                               <OnClick>
                                 <ActionEvent ReferencedAction="~handler_cancel_OnClick" />
                               </OnClick>
@@ -752,8 +753,7 @@
                               <IsThemedStyle value="True" />
                             </CssClassConditional>
                             <CssClassConditional>
-                              <ClassName value="{theme}-newBtns" />
-                              <Condition value="False" />
+                              <ClassName value="{theme}-controlBtns" />
                               <IsThemedStyle value="True" />
                             </CssClassConditional>
                             <CssClassConditional>
@@ -854,122 +854,98 @@
                   <Panel.Height value="100%" />
                   <Panel.Width value="100%" />
                   <Children>
-                    <ListGrid2 identity="ListGrid2.9fb164761a48454e9ed5f1f2734b6bbb">
-                      <Name value="listGrid21" />
-                      <actionButtonsColumnWidth value="70px" />
-                      <allowSelectAll value="True" />
-                      <controller reference="~listCtrl" />
-                      <isMultiselect value="True" />
-                      <lastClickedRowSelectWhenCheckboxesOff value="True" />
-                      <listName value="Orders" />
-                      <pagingTemplate value="$previous|$next|$refresh|$editableCurrentPage|$records|$pageSize|$viewSettings" />
+                    <Panel>
+                      <Name value="decList_parent" />
+                      <Orientation value="Vertical" />
                       <Panel.Height value="#" />
-                      <Panel.Width value="100%" />
-                      <OnButtonClicked>
-                        <ActionEvent ReferencedAction="~handler_listGrid21_OnButtonClicked" />
-                      </OnButtonClicked>
-                      <OnRowClicked>
-                        <ActionEvent ReferencedAction="~handler_listGrid21_OnRowClicked" />
-                      </OnRowClicked>
-                      <OnRowsChanged>
-                        <ActionEvent ReferencedAction="~handler_listGrid21_OnRowsChanged" />
-                      </OnRowsChanged>
-                      <OnSelectionChange>
-                        <ActionEvent ReferencedAction="~handler_listGrid21_OnSelectionChange" />
-                      </OnSelectionChange>
-                      <actionButtons>
-                        <gridActionButton identity="ListGrid2.9fb164761a48454e9ed5f1f2734b6bbb">
-                          <ButtonCaption value="Detail" />
-                          <ButtonClass value="fa fa-search" />
-                          <ButtonName value="btn_detail" />
-                          <IsEnabled value="btn1Enabled" />
-                          <IsVisible value="btn1Visible" />
-                          <TitleText value="Detail" />
-                        </gridActionButton>
-                      </actionButtons>
-                      <Bindings>
-                        <Binding SourceProperty="savedColumns" Expression="globals.collectionDataProvider2Columns" />
-                        <Binding SourceProperty="savedState" Expression="globals.collectionDataProvider2State" />
-                        <Binding SourceProperty="dataCollection" Expression="dataCollection" />
-                        <Binding SourceProperty="lastActionButtonClickedName" Expression="clickedActionButtonName" />
-                        <Binding SourceProperty="lastClickedRow" Expression="selectedRowData" />
-                      </Bindings>
-                      <columns>
-                        <gridColumn identity="ListGrid2.9fb164761a48454e9ed5f1f2734b6bbb">
-                          <Name value="Status" />
-                          <Caption value="Status" />
-                          <ColumnName value="Status" />
-                          <DataType value="string" />
-                          <DisableRemove value="True" />
-                          <EnableFilter value="False" />
-                          <IsHtml value="True" />
-                          <UnderlyingColumnName value="Status" />
-                        </gridColumn>
-                        <gridColumn identity="ListGrid2.9fb164761a48454e9ed5f1f2734b6bbb">
-                          <Name value="gridColumn2" />
-                          <Caption value="Authorization" />
-                          <ColumnName value="ShipVia" />
-                          <ColumnWidth value="10%" />
-                          <DataType value="integer" />
-                          <IsHtml value="True" />
-                          <filterOptions>
-                            <filterOption identity="ListGrid2.9fb164761a48454e9ed5f1f2734b6bbb">
-                              <text value="foShipVia1" />
-                              <value value="1" />
-                            </filterOption>
-                            <filterOption identity="ListGrid2.9fb164761a48454e9ed5f1f2734b6bbb">
-                              <text value="foShipVia2" />
-                              <value value="2" />
-                            </filterOption>
-                          </filterOptions>
-                        </gridColumn>
-                        <gridColumn identity="ListGrid2.9fb164761a48454e9ed5f1f2734b6bbb">
-                          <Name value="gridColumn3" />
-                          <Caption value="TIN" />
-                          <ColumnName value="Freight" />
-                          <ColumnWidth value="150px" />
-                          <DataType value="decimal" />
-                        </gridColumn>
-                        <gridColumn identity="ListGrid2.9fb164761a48454e9ed5f1f2734b6bbb">
-                          <Name value="gridColumn4" />
-                          <Caption value="Authorization type" />
-                          <ColumnName value="ShipCountry" />
-                          <DataType value="string" />
-                          <filterOptions>
-                            <filterOption identity="ListGrid2.9fb164761a48454e9ed5f1f2734b6bbb">
-                              <text value="France" />
-                              <value value="France" />
-                            </filterOption>
-                            <filterOption identity="ListGrid2.9fb164761a48454e9ed5f1f2734b6bbb">
-                              <text value="Austria" />
-                              <value value="Austria" />
-                            </filterOption>
-                          </filterOptions>
-                        </gridColumn>
-                        <gridColumn identity="ListGrid2.9fb164761a48454e9ed5f1f2734b6bbb">
-                          <Name value="gridColumn5" />
-                          <Caption value="Responsible CO" />
-                          <ColumnName value="OrderDate" />
-                        </gridColumn>
-                        <gridColumn identity="ListGrid2.9fb164761a48454e9ed5f1f2734b6bbb">
-                          <Name value="gridColumn6" />
-                          <Caption value="Subject name" />
-                          <ColumnName value="SubjectName" />
-                        </gridColumn>
-                        <gridColumn identity="ListGrid2.9fb164761a48454e9ed5f1f2734b6bbb">
-                          <Name value="gridColumn7" />
-                          <Caption value="Application date" />
-                          <ColumnName value="ApplicationDate" />
-                          <DataType value="date" />
-                        </gridColumn>
-                        <gridColumn identity="ListGrid2.9fb164761a48454e9ed5f1f2734b6bbb">
-                          <Name value="gridColumn8" />
-                          <Caption value="Authorization valid from" />
-                          <ColumnName value="AuthorizationValidFrom" />
-                          <DataType value="date" />
-                        </gridColumn>
-                      </columns>
-                    </ListGrid2>
+                      <Panel.Width value="*" />
+                      <Children>
+                        <List identity="List.a6f439c3b8e944f383863f66ff1261c8">
+                          <Name value="decList" />
+                          <controller reference="~listCtrl" />
+                          <listName value="Dataset_DEP" />
+                          <Panel.Height value="#" />
+                          <Panel.Width value="*" />
+                          <OnRowClicked>
+                            <ActionEvent ReferencedAction="~handler_decList_OnRowClicked" />
+                          </OnRowClicked>
+                          <OnRowsChanged>
+                            <ActionEvent ReferencedAction="~handler_decList_OnRowsChanged" />
+                          </OnRowsChanged>
+                          <Bindings>
+                            <Binding SourceProperty="selectedRow" Expression="form.decListReferenceRow" />
+                          </Bindings>
+                          <columns>
+                            <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
+                              <Name value="GUID" />
+                              <Caption value="GUID" />
+                              <ColumnName value="GUID" />
+                              <DataType value="string" />
+                              <IsVisible value="False" />
+                            </listColumn>
+                            <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
+                              <Name value="Status" />
+                              <Caption value="Status" />
+                              <ColumnName value="Status" />
+                              <DataType value="string" />
+                              <EnableFilter value="False" />
+                            </listColumn>
+                            <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
+                              <Name value="Authorization" />
+                              <Caption value="Authorization" />
+                              <ColumnName value="Authorization" />
+                              <DataType value="string" />
+                            </listColumn>
+                            <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
+                              <Name value="TIN" />
+                              <Caption value="TIN" />
+                              <ColumnName value="TIN" />
+                              <DataType value="string" />
+                            </listColumn>
+                            <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
+                              <Name value="AuthorizationType" />
+                              <Caption value="Authorization type" />
+                              <ColumnName value="AuthorizationType" />
+                              <DataType value="string" />
+                            </listColumn>
+                            <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
+                              <Name value="ResponsibleCO" />
+                              <Caption value="Responsible CO" />
+                              <ColumnName value="ResponsibleCO" />
+                              <DataType value="string" />
+                            </listColumn>
+                            <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
+                              <Name value="SubjectName" />
+                              <Caption value="Subject name" />
+                              <ColumnName value="SubjectName" />
+                              <DataType value="string" />
+                            </listColumn>
+                            <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
+                              <Name value="ApplicationDate" />
+                              <Caption value="Application date" />
+                              <ColumnName value="ApplicationDate" />
+                              <DataType value="date" />
+                            </listColumn>
+                            <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
+                              <Name value="AuthorizationValidFrom" />
+                              <Caption value="Authorization valid from" />
+                              <ColumnName value="AuthorizationValidFrom" />
+                              <DataType value="date" />
+                            </listColumn>
+                          </columns>
+                        </List>
+                      </Children>
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-panel" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-datatable" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </Panel>
                   </Children>
                   <CssClass>
                     <CssClassConditional>
@@ -978,2171 +954,6 @@
                     </CssClassConditional>
                     <CssClassConditional>
                       <ClassName value="{theme}-datatable" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                  </CssClass>
-                </Panel>
-                <Panel>
-                  <Name value="OLD" />
-                  <IsVisible value="False" />
-                  <Orientation value="Horizontal" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="*" />
-                  <Children>
-                    <Panel>
-                      <Name value="fpn_Head" />
-                      <Orientation value="Vertical" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Children>
-                        <TextBox>
-                          <Name value="textBox2" />
-                          <Caption value="tbVyhledatPovoleni" />
-                          <CaptionPosition value="Top" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="33%" />
-                          <Bindings>
-                            <Binding SourceProperty="Data" Expression="" />
-                          </Bindings>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-textbox" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </TextBox>
-                        <Button>
-                          <Name value="btnVyhledatPovoleni" />
-                          <Caption value="Vyhledat" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="150px" />
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-button" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Button>
-                        <Panel>
-                          <Name value="cap_User_Name_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Label>
-                              <Name value="cap_User_Name" />
-                              <Data value="Uživatel:" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="33%" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-label" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Label>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="cap_User_Role_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Label>
-                              <Name value="cap_User_Role" />
-                              <Data value="Role:" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="33%" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-label" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Label>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="cap_User_CU_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Label>
-                              <Name value="cap_User_CU" />
-                              <Data value="CÚ:" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="33%" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-label" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Label>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Button>
-                          <Name value="btn_Help" />
-                          <Caption value="Nápověda" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="150px" />
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-button" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Button>
-                        <TabControl identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tbc_AMS" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Bindings>
-                            <Binding SourceProperty="SelectedTab" Expression="ui.tabControls.tbc_AMS.SelectedTab" />
-                          </Bindings>
-                          <Tabs>
-                            <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                              <Name value="tab_PWEI" />
-                              <Title value="PWEI" />
-                            </tab>
-                            <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                              <Name value="tab_SP" />
-                              <Title value="ZJP" />
-                            </tab>
-                            <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                              <Name value="tab_CCR" />
-                              <Title value="CCŘ" />
-                            </tab>
-                            <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                              <Name value="tab_Other" />
-                              <Title value="Ostaní povolení" />
-                            </tab>
-                            <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                              <Name value="tab_TR" />
-                              <Title value="Ostatní povolení" />
-                            </tab>
-                            <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                              <Name value="tab_PL" />
-                              <Title value="Místa" />
-                            </tab>
-                            <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                              <Name value="tab_CTRL" />
-                              <Title value="Kontroly" />
-                            </tab>
-                            <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                              <Name value="tab_Audit" />
-                              <Title value="Audity" />
-                            </tab>
-                            <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                              <Name value="tab_EC" />
-                              <Title value="Komunikační povolení" />
-                            </tab>
-                          </Tabs>
-                        </TabControl>
-                      </Children>
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-panel" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Panel>
-                    <TabControl identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                      <Name value="tbc_PWEI" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Bindings>
-                        <Binding SourceProperty="SelectedTab" Expression="ui.tabControls.tbc_PWEI.SelectedTab" />
-                      </Bindings>
-                      <Tabs>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Application_Accepted" />
-                          <Title value="Přijaté žádosti" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Rejected" />
-                          <Title value="Zamítnuté žádosti" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Accepted" />
-                          <Title value="Platná povolení" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Withdrawal" />
-                          <Title value="Odňatá / Zrušená povolení" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Expired" />
-                          <Title value="Expirovaná povolení" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_All" />
-                          <Title value="Celkový přehled" />
-                        </tab>
-                      </Tabs>
-                    </TabControl>
-                    <Panel>
-                      <Name value="fpn_Buttons" />
-                      <Orientation value="Vertical" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Children>
-                        <ReferenceCombo>
-                          <Name value="cmb_Type_NewRecord" />
-                          <Caption value="Vyberte akci" />
-                          <CaptionPosition value="Top" />
-                          <DisplayMember value="Description" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="33%" />
-                          <ReferenceList reference="+GlobalApiObjects.prototypeCodelist" />
-                          <Bindings>
-                            <Binding SourceProperty="Data" Expression="reference1" />
-                            <Binding SourceProperty="IsRequiredMarkVisible" Expression="reference1.isRequired()" />
-                          </Bindings>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-referencecombo" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </ReferenceCombo>
-                        <Panel>
-                          <Name value="btn_NewExistingAuthorization_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_NewExistingAuthorization" />
-                              <Caption value="Zaznamenat cizí povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewForeignAuthorization" />
-                              <Caption value="Zaznamenat cizí povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewApplication" />
-                              <Caption value="Nová žádost" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="pnl_Spacer" />
-                          <Orientation value="Vertical" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="btn_Modify_mf_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_Modify_mf" />
-                              <Caption value="btn_Modify_mf" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewAuthorization" />
-                              <Caption value="Povolení uděleno" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewRejection" />
-                              <Caption value="Zamítnutí žádosti" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="btn_NewWithdrawal_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_NewWithdrawal" />
-                              <Caption value="Odnětí povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewCancel" />
-                              <Caption value="btn_NewCancel" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_Remove" />
-                              <Caption value="Odstranění" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="btn_Detail_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_Detail" />
-                              <Caption value="Detail" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_Authorization_Exhausted" />
-                              <Caption value="Povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_Authorization_Withdrawed" />
-                              <Caption value="Povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                      </Children>
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-panel" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Panel>
-                    <TabControl identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                      <Name value="tbc_SP" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Bindings>
-                        <Binding SourceProperty="SelectedTab" Expression="ui.tabControls.tbc_SP.SelectedTab" />
-                      </Bindings>
-                      <Tabs>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Application_Accepted_SP" />
-                          <Title value="Přijaté žádosti" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Rejected_SP" />
-                          <Title value="Zamítnuté žádosti" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Accepted_SP" />
-                          <Title value="Platná povolení" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Withdrawal_SP" />
-                          <Title value="Odňatá / Zrušená povolení" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Expired_SP" />
-                          <Title value="Expirovaná povolení" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_All_SP" />
-                          <Title value="Celkový přehled" />
-                        </tab>
-                      </Tabs>
-                    </TabControl>
-                    <Panel>
-                      <Name value="fpn_Buttons_SP" />
-                      <Orientation value="Vertical" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-panel" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Panel>
-                    <ReferenceCombo>
-                      <Name value="cmb_Type_NewRecord_SP" />
-                      <Caption value="Vyberte akci" />
-                      <CaptionPosition value="Top" />
-                      <DisplayMember value="Description" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="33%" />
-                      <ReferenceList reference="+GlobalApiObjects.prototypeCodelist" />
-                      <Bindings>
-                        <Binding SourceProperty="IsRequiredMarkVisible" Expression="reference2.isRequired()" />
-                        <Binding SourceProperty="Data" Expression="reference2" />
-                      </Bindings>
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-referencecombo" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </ReferenceCombo>
-                    <Panel>
-                      <Name value="btn_NewExistingAuthorization_SP_parent" />
-                      <Orientation value="Horizontal" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-panel" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Panel>
-                    <Button>
-                      <Name value="btn_NewExistingAuthorization_SP" />
-                      <Caption value="Zaznamenat existující povolení" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="150px" />
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-button" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Button>
-                    <Button>
-                      <Name value="btn_NewForeignAuthorization_SP" />
-                      <Caption value="Zaznamenat cizí povolení" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="150px" />
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-button" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Button>
-                    <Button>
-                      <Name value="btn_NewApplication_SP" />
-                      <Caption value="Nová žádost" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="150px" />
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-button" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Button>
-                    <Panel>
-                      <Name value="pnl_Spacer_SP" />
-                      <Orientation value="Vertical" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-panel" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Panel>
-                    <Panel>
-                      <Name value="btn_Modify_mf_SP_parent" />
-                      <Orientation value="Horizontal" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-panel" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Panel>
-                    <Button>
-                      <Name value="btn_Modify_mf_SP" />
-                      <Caption value="btn_Modify_mf_SP" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="150px" />
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-button" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Button>
-                    <Button>
-                      <Name value="btn_NewAuthorization_SP" />
-                      <Caption value="Povolení uděleno" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="150px" />
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-button" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Button>
-                    <Button>
-                      <Name value="btn_NewRejection_SP" />
-                      <Caption value="Zamítnutí žádosti" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="150px" />
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-button" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Button>
-                    <Panel>
-                      <Name value="btn_NewWithdrawal_SP_parent" />
-                      <Orientation value="Horizontal" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-panel" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Panel>
-                    <Button>
-                      <Name value="btn_NewWithdrawal_SP" />
-                      <Caption value="Odnětí povolení" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="150px" />
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-button" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Button>
-                    <Button>
-                      <Name value="btn_NewCancel_SP" />
-                      <Caption value="btn_NewCancel_SP" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="150px" />
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-button" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Button>
-                    <Button>
-                      <Name value="btn_Remove_SP" />
-                      <Caption value="Odstranění" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="150px" />
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-button" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Button>
-                    <Panel>
-                      <Name value="btn_Detail_SP_parent" />
-                      <Orientation value="Horizontal" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-panel" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Panel>
-                    <Button>
-                      <Name value="btn_Detail_SP" />
-                      <Caption value="Detail" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="150px" />
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-button" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Button>
-                    <Button>
-                      <Name value="btn_Authorization_Exhausted_SP" />
-                      <Caption value="Povolení" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="150px" />
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-button" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Button>
-                    <Button>
-                      <Name value="btn_Authorization_Withdrawed_SP" />
-                      <Caption value="Povolení" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="150px" />
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-button" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Button>
-                    <TabControl identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                      <Name value="tbc_CCR" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Bindings>
-                        <Binding SourceProperty="SelectedTab" Expression="ui.tabControls.tbc_CCR.SelectedTab" />
-                      </Bindings>
-                      <Tabs>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Application_Accepted_CCR" />
-                          <Title value="Přijaté žádosti" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Rejected_CCR" />
-                          <Title value="Zamítnuté žádosti" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Accepted_CCR" />
-                          <Title value="Platná povolení" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Withdrawal_CCR" />
-                          <Title value="Odňatá / Zrušená povolení" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Expired_CCR" />
-                          <Title value="Expirovaná povolení" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_All_CCR" />
-                          <Title value="Celkový přehled" />
-                        </tab>
-                      </Tabs>
-                    </TabControl>
-                    <Panel>
-                      <Name value="fpn_Buttons_CCR" />
-                      <Orientation value="Vertical" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Children>
-                        <ReferenceCombo>
-                          <Name value="cmb_Type_NewRecord_CCR" />
-                          <Caption value="Vyberte akci" />
-                          <CaptionPosition value="Top" />
-                          <DisplayMember value="Description" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="33%" />
-                          <ReferenceList reference="+GlobalApiObjects.prototypeCodelist" />
-                          <Bindings>
-                            <Binding SourceProperty="Data" Expression="reference3" />
-                            <Binding SourceProperty="IsRequiredMarkVisible" Expression="reference3.isRequired()" />
-                          </Bindings>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-referencecombo" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </ReferenceCombo>
-                        <Panel>
-                          <Name value="btn_NewExistingAuthorization_CCR_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_NewExistingAuthorization_CCR" />
-                              <Caption value="Zaznamenat cizí povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewForeignAuthorization_CCR" />
-                              <Caption value="Zaznamenat cizí povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewApplication_CCR" />
-                              <Caption value="Nová žádost" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="pnl_Spacer_CCR" />
-                          <Orientation value="Vertical" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="btn_Modify_mf_CCR_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_Modify_mf_CCR" />
-                              <Caption value="btn_Modify_mf_CCR" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewAuthorization_CCR" />
-                              <Caption value="Povolení uděleno" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewRejection_CCR" />
-                              <Caption value="Zamítnutí žádosti" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="btn_NewWithdrawal_CCR_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_NewWithdrawal_CCR" />
-                              <Caption value="Odnětí povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewCancel_CCR" />
-                              <Caption value="btn_NewCancel_CCR" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_Remove_CCR" />
-                              <Caption value="Odstranění" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="btn_Detail_CCR_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_Detail_CCR" />
-                              <Caption value="Detail" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_Authorization_Exhausted_CCR" />
-                              <Caption value="Povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_Authorization_Withdrawed_CCR" />
-                              <Caption value="Povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                      </Children>
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-panel" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Panel>
-                    <TabControl identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                      <Name value="tbc_Other" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Bindings>
-                        <Binding SourceProperty="SelectedTab" Expression="ui.tabControls.tbc_Other.SelectedTab" />
-                      </Bindings>
-                      <Tabs>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Application_Accepted_Other" />
-                          <Title value="Přijaté žádosti" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Rejected_Other" />
-                          <Title value="Zamítnuté žádosti" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Accepted_Other" />
-                          <Title value="Platná povolení" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Withdrawal_Other" />
-                          <Title value="Odňatá / Zrušená povolení" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Expired_Other" />
-                          <Title value="Expirovaná povolení" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_All_Other" />
-                          <Title value="Celkový přehled" />
-                        </tab>
-                      </Tabs>
-                    </TabControl>
-                    <Panel>
-                      <Name value="fpn_Buttons_Other" />
-                      <Orientation value="Vertical" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Children>
-                        <ReferenceCombo>
-                          <Name value="cmb_Type_NewRecord_Other" />
-                          <Caption value="Vyberte akci" />
-                          <CaptionPosition value="Top" />
-                          <DisplayMember value="Description" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="33%" />
-                          <ReferenceList reference="+GlobalApiObjects.prototypeCodelist" />
-                          <Bindings>
-                            <Binding SourceProperty="Data" Expression="reference4" />
-                            <Binding SourceProperty="IsRequiredMarkVisible" Expression="reference4.isRequired()" />
-                          </Bindings>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-referencecombo" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </ReferenceCombo>
-                        <Panel>
-                          <Name value="btn_NewExistingAuthorization_Other_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_NewExistingAuthorization_Other" />
-                              <Caption value="Zaznamenat existující povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewForeignAuthorization_Other" />
-                              <Caption value="Zaznamenat cizí povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewApplication_Other" />
-                              <Caption value="Nová žádost" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="pnl_Spacer_Other" />
-                          <Orientation value="Vertical" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="btn_Modify_mf_Other_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_Modify_mf_Other" />
-                              <Caption value="btn_Modify_mf_Other" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewAuthorization_Other" />
-                              <Caption value="Povolení uděleno" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewRejection_Other" />
-                              <Caption value="Zamítnutí žádosti" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="btn_NewWithdrawal_Other_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_NewWithdrawal_Other" />
-                              <Caption value="Odnětí povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewCancel_Other" />
-                              <Caption value="btn_NewCancel_Other" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_Remove_Other" />
-                              <Caption value="Odstranění" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="btn_Detail_Other_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_Detail_Other" />
-                              <Caption value="Detail" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_Authorization_Exhausted_Other" />
-                              <Caption value="Povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_Authorization_Withdrawed_Other" />
-                              <Caption value="Povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                      </Children>
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-panel" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Panel>
-                    <TabControl identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                      <Name value="tbc_TR" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Bindings>
-                        <Binding SourceProperty="SelectedTab" Expression="ui.tabControls.tbc_TR.SelectedTab" />
-                      </Bindings>
-                      <Tabs>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Application_Accepted_TR" />
-                          <Title value="Přijaté žádosti" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Rejected_TR" />
-                          <Title value="Zamítnuté žádosti" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Accepted_TR" />
-                          <Title value="Platná povolení" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Withdrawal_TR" />
-                          <Title value="Odňatá / Zrušená povolení" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Expired_TR" />
-                          <Title value="Expirovaná povolení" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_All_TR" />
-                          <Title value="Celkový přehled" />
-                        </tab>
-                      </Tabs>
-                    </TabControl>
-                    <Panel>
-                      <Name value="fpn_Buttons_TR" />
-                      <Orientation value="Vertical" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Children>
-                        <ReferenceCombo>
-                          <Name value="cmb_Type_NewRecord_TR" />
-                          <Caption value="Vyberte akci" />
-                          <CaptionPosition value="Top" />
-                          <DisplayMember value="Description" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="33%" />
-                          <ReferenceList reference="+GlobalApiObjects.prototypeCodelist" />
-                          <Bindings>
-                            <Binding SourceProperty="Data" Expression="reference5" />
-                            <Binding SourceProperty="IsRequiredMarkVisible" Expression="reference5.isRequired()" />
-                          </Bindings>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-referencecombo" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </ReferenceCombo>
-                        <Panel>
-                          <Name value="btn_NewExistingAuthorization_TR_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_NewExistingAuthorization_TR" />
-                              <Caption value="Zaznamenat existující povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewForeignAuthorization_TR" />
-                              <Caption value="Zaznamenat cizí povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewApplication_TR" />
-                              <Caption value="Nová žádost" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="pnl_Spacer_TR" />
-                          <Orientation value="Vertical" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="btn_Modify_mf_TR_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_Modify_mf_TR" />
-                              <Caption value="btn_Modify_mf_TR" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewAuthorization_TR" />
-                              <Caption value="Povolení uděleno" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewRejection_TR" />
-                              <Caption value="Zamítnutí žádosti" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="btn_NewWithdrawal_TR_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_NewWithdrawal_TR" />
-                              <Caption value="Odnětí povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewCancel_TR" />
-                              <Caption value="btn_NewCancel_TR" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_Remove_TR" />
-                              <Caption value="Odstranění" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="btn_Detail_TR_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_Detail_TR" />
-                              <Caption value="Detail" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_Authorization_Exhausted_TR" />
-                              <Caption value="Povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_Authorization_Withdrawed_TR" />
-                              <Caption value="Povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <TabControl identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tbc_PL" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Bindings>
-                            <Binding SourceProperty="SelectedTab" Expression="ui.tabControls.tbc_PL.SelectedTab" />
-                          </Bindings>
-                          <Tabs>
-                            <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                              <Name value="tab_All_PL" />
-                              <Title value="Celkový přehled" />
-                            </tab>
-                            <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                              <Name value="tab_Deleted_PL" />
-                              <Title value="Neplatná místa" />
-                            </tab>
-                          </Tabs>
-                        </TabControl>
-                      </Children>
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-panel" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Panel>
-                    <Panel>
-                      <Name value="fpn_Buttons_PL" />
-                      <Orientation value="Vertical" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Children>
-                        <Panel>
-                          <Name value="btn_New_PL_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_New_PL" />
-                              <Caption value="Nové místo" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_Modify_PL" />
-                              <Caption value="Modifikace" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_Delete_PL" />
-                              <Caption value="Výmaz" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Button>
-                          <Name value="btn_Detail_PL" />
-                          <Caption value="Detail" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="150px" />
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-button" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Button>
-                      </Children>
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-panel" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Panel>
-                    <TabControl identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                      <Name value="tbc_CTRL" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Bindings>
-                        <Binding SourceProperty="SelectedTab" Expression="ui.tabControls.tbc_CTRL.SelectedTab" />
-                      </Bindings>
-                      <Tabs>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_ToControl_CTRL" />
-                          <Title value="Ke kontrole" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_All_CTRL" />
-                          <Title value="Vše" />
-                        </tab>
-                      </Tabs>
-                    </TabControl>
-                    <Panel>
-                      <Name value="fpn_Buttons_CTRL" />
-                      <Orientation value="Vertical" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Children>
-                        <Panel>
-                          <Name value="btn_RunControl_CTRL_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_RunControl_CTRL" />
-                              <Caption value="Zaznamenat kontrolu" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_RunControl_Multi_CTRL" />
-                              <Caption value="Zaznamenat kontrolu" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_Detail_CTRL" />
-                              <Caption value="Detail" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Button>
-                          <Name value="btn_AMSDetail_CTRL" />
-                          <Caption value="btn_AMSDetail_CTRL" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="150px" />
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-button" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Button>
-                      </Children>
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-panel" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Panel>
-                    <TabControl identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                      <Name value="tbc_Audit" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Bindings>
-                        <Binding SourceProperty="SelectedTab" Expression="ui.tabControls.tbc_Audit.SelectedTab" />
-                      </Bindings>
-                      <Tabs>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_AuditSubjects" />
-                          <Title value="Subjekty" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_All_Audit" />
-                          <Title value="Subjekty" />
-                        </tab>
-                      </Tabs>
-                    </TabControl>
-                    <Panel>
-                      <Name value="fpn_Buttons_Audit" />
-                      <Orientation value="Vertical" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Children>
-                        <Panel>
-                          <Name value="btn_RunAudit_Audit_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_RunAudit_Audit" />
-                              <Caption value="Vložit zprávu" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_Detail_Audit" />
-                              <Caption value="Detail" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                      </Children>
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-panel" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Panel>
-                    <TabControl identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                      <Name value="tbc_EC" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Bindings>
-                        <Binding SourceProperty="SelectedTab" Expression="ui.tabControls.tbc_EC.SelectedTab" />
-                      </Bindings>
-                      <Tabs>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Application_Accepted_EC" />
-                          <Title value="Přijaté žádosti" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Rejected_EC" />
-                          <Title value="Zamítnuté žádosti" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Accepted_EC" />
-                          <Title value="Platná povolení" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Withdrawal_EC" />
-                          <Title value="Odňatá / Zrušená povolení" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_Authorization_Expired_EC" />
-                          <Title value="Expirovaná povolení" />
-                        </tab>
-                        <tab identity="TabControl.060fd7850ded45d3aceb7bf1f53aebb6">
-                          <Name value="tab_All_EC" />
-                          <Title value="Celkový přehled" />
-                        </tab>
-                      </Tabs>
-                    </TabControl>
-                    <Panel>
-                      <Name value="fpn_Buttons_EC" />
-                      <Orientation value="Vertical" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Children>
-                        <ReferenceCombo>
-                          <Name value="cmb_Type_NewRecord_EC" />
-                          <Caption value="Vyberte akci" />
-                          <CaptionPosition value="Top" />
-                          <DisplayMember value="Description" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="33%" />
-                          <ReferenceList reference="+GlobalApiObjects.prototypeCodelist" />
-                          <Bindings>
-                            <Binding SourceProperty="Data" Expression="reference6" />
-                            <Binding SourceProperty="IsRequiredMarkVisible" Expression="reference6.isRequired()" />
-                          </Bindings>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-referencecombo" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </ReferenceCombo>
-                        <Panel>
-                          <Name value="btn_NewExistingAuthorization_EC_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_NewExistingAuthorization_EC" />
-                              <Caption value="Zaznamenat existující povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewForeignAuthorization_EC" />
-                              <Caption value="Zaznamenat cizí povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewApplication_EC" />
-                              <Caption value="Nová žádost" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="pnl_Spacer_EC" />
-                          <Orientation value="Vertical" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="btn_Modify_mf_EC_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_Modify_mf_EC" />
-                              <Caption value="btn_Modify_mf_EC" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewAuthorization_EC" />
-                              <Caption value="Povolení uděleno" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewRejection_EC" />
-                              <Caption value="Zamítnutí žádosti" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="btn_NewWithdrawal_EC_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_NewWithdrawal_EC" />
-                              <Caption value="Odnětí povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_NewCancel_EC" />
-                              <Caption value="btn_NewCancel_EC" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_Remove_EC" />
-                              <Caption value="Odstranění" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                        <Panel>
-                          <Name value="btn_Detail_EC_parent" />
-                          <Orientation value="Horizontal" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="*" />
-                          <Children>
-                            <Button>
-                              <Name value="btn_Detail_EC" />
-                              <Caption value="Detail" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_Authorization_Exhausted_EC" />
-                              <Caption value="Povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                            <Button>
-                              <Name value="btn_Authorization_Withdrawed_EC" />
-                              <Caption value="Povolení" />
-                              <Panel.Height value="#" />
-                              <Panel.Width value="150px" />
-                              <CssClass>
-                                <CssClassConditional>
-                                  <ClassName value="{theme}-button" />
-                                  <IsThemedStyle value="True" />
-                                </CssClassConditional>
-                              </CssClass>
-                            </Button>
-                          </Children>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-panel" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Panel>
-                      </Children>
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-panel" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Panel>
-                    <Panel>
-                      <Name value="btn_LanguageEnglish_parent" />
-                      <Orientation value="Horizontal" />
-                      <Panel.Height value="#" />
-                      <Panel.Width value="*" />
-                      <Children>
-                        <Button>
-                          <Name value="btn_LanguageEnglish" />
-                          <Caption value="English" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="150px" />
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-button" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Button>
-                        <Button>
-                          <Name value="btn_LanguageCzech" />
-                          <Caption value="Czech" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="150px" />
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-button" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Button>
-                        <Button>
-                          <Name value="btn_LanguageSerbia" />
-                          <Caption value="Serbia" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="150px" />
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-button" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Button>
-                      </Children>
-                      <CssClass>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-panel" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                      </CssClass>
-                    </Panel>
-                  </Children>
-                  <CssClass>
-                    <CssClassConditional>
-                      <ClassName value="{theme}-panel" />
                       <IsThemedStyle value="True" />
                     </CssClassConditional>
                   </CssClass>
@@ -3175,6 +986,20 @@
   <DataContext>
     <DataContext>
       <Children>
+        <Attribute>
+          <Name value="mode" />
+          <Caption value="Mode" />
+          <DataContextParameter.IsInput value="True" />
+          <DataContextParameter.IsInputRequired value="True" />
+          <MetaType reference="+MetaTypes.mode" />
+        </Attribute>
+        <Attribute>
+          <Name value="guid" />
+          <Caption value="Guid" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
         <Complex>
           <Name value="ui" />
           <Caption value="ui" />
@@ -9338,9 +7163,16 @@
           </Children>
         </Complex>
         <Collection>
-          <Name value="sourceDataCollection" />
-          <Caption value="Source data collection" />
+          <Name value="decListDataSource" />
+          <Caption value="Dec list data source" />
           <Children>
+            <Attribute>
+              <Name value="GUID" />
+              <Caption value="GUID" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
             <Attribute>
               <Name value="Status" />
               <Caption value="Status" />
@@ -9349,102 +7181,29 @@
               </DeclaredType>
             </Attribute>
             <Attribute>
-              <Name value="ShipVia" />
-              <Caption value="Ship via" />
+              <Name value="Authorization" />
+              <Caption value="Authorization" />
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
             </Attribute>
             <Attribute>
-              <Name value="Freight" />
-              <Caption value="Freight" />
+              <Name value="TIN" />
+              <Caption value="TIN" />
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
             </Attribute>
             <Attribute>
-              <Name value="ShipCountry" />
-              <Caption value="Ship country" />
+              <Name value="AuthorizationType" />
+              <Caption value="Authorization type" />
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
             </Attribute>
             <Attribute>
-              <Name value="OrderDate" />
-              <Caption value="Order date" />
-              <DeclaredType>
-                <AttributeType>
-                  <BaseType value="DateTime" />
-                </AttributeType>
-              </DeclaredType>
-            </Attribute>
-            <Attribute>
-              <Name value="hasCheckbox" />
-              <Caption value="Has checkbox" />
-              <DeclaredType>
-                <AttributeType />
-              </DeclaredType>
-            </Attribute>
-            <Computed>
-              <Name value="_idxStr" />
-              <Expression IsValid="True">
-                <ExpressionText><![CDATA[toString(this.index())]]></ExpressionText>
-                <ResultType>
-                  <BaseType value="String" />
-                </ResultType>
-              </Expression>
-            </Computed>
-            <Attribute>
-              <Name value="SubjectName" />
-              <Caption value="Subject name" />
-              <DeclaredType>
-                <AttributeType />
-              </DeclaredType>
-            </Attribute>
-            <Attribute>
-              <Name value="ApplicationDate" />
-              <Caption value="Application date" />
-              <DeclaredType>
-                <AttributeType />
-              </DeclaredType>
-            </Attribute>
-            <Attribute>
-              <Name value="AuthorizationValidFrom" />
-              <Caption value="Authorization valid from" />
-              <DeclaredType>
-                <AttributeType />
-              </DeclaredType>
-            </Attribute>
-          </Children>
-        </Collection>
-        <Collection>
-          <Name value="dataCollection" />
-          <Caption value="Data collection" />
-          <Children>
-            <Attribute>
-              <Name value="Status" />
-              <Caption value="Status" />
-              <DeclaredType>
-                <AttributeType />
-              </DeclaredType>
-            </Attribute>
-            <Attribute>
-              <Name value="ShipVia" />
-              <Caption value="Ship via" />
-              <DeclaredType>
-                <AttributeType />
-              </DeclaredType>
-            </Attribute>
-            <Attribute>
-              <Name value="Freight" />
-              <Caption value="Freight" />
-              <DeclaredType>
-                <AttributeType />
-              </DeclaredType>
-            </Attribute>
-            <Attribute>
-              <Name value="ShipCountry" />
-              <Caption value="Ship country" />
+              <Name value="ResponsibleCO" />
+              <Caption value="Responsible CO" />
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
@@ -9456,136 +7215,6 @@
                 <AttributeType />
               </DeclaredType>
             </Attribute>
-            <Computed>
-              <Name value="computed1" />
-              <Caption value="Computed 1" />
-              <Expression IsValid="True">
-                <ExpressionText><![CDATA[true]]></ExpressionText>
-                <ResultType>
-                  <BaseType value="Bool" />
-                </ResultType>
-              </Expression>
-            </Computed>
-            <Computed>
-              <Name value="computed2" />
-              <Caption value="Computed 2" />
-              <Expression IsValid="True">
-                <ExpressionText><![CDATA[true]]></ExpressionText>
-                <ResultType>
-                  <BaseType value="Bool" />
-                </ResultType>
-              </Expression>
-            </Computed>
-            <Computed>
-              <Name value="computed3" />
-              <Caption value="Computed 3" />
-              <Expression IsValid="True">
-                <ExpressionText><![CDATA[true]]></ExpressionText>
-                <ResultType>
-                  <BaseType value="Bool" />
-                </ResultType>
-              </Expression>
-            </Computed>
-            <Attribute>
-              <Name value="_selected" />
-              <Caption value="_ selected" />
-              <DeclaredType>
-                <AttributeType />
-              </DeclaredType>
-            </Attribute>
-            <Computed>
-              <Name value="StatusBG" />
-              <Caption value="Status BG" />
-              <Expression IsValid="True">
-                <ExpressionText><![CDATA[true]]></ExpressionText>
-                <ResultType>
-                  <BaseType value="Bool" />
-                </ResultType>
-              </Expression>
-            </Computed>
-            <Computed>
-              <Name value="btn1Enabled" />
-              <Caption value="Btn 1 enabled" />
-              <Expression IsValid="True">
-                <ExpressionText><![CDATA[true]]></ExpressionText>
-                <ResultType>
-                  <BaseType value="Bool" />
-                </ResultType>
-              </Expression>
-            </Computed>
-            <Computed>
-              <Name value="btn1Visible" />
-              <Caption value="Btn 1 visible" />
-              <Expression IsValid="True">
-                <ExpressionText><![CDATA[true]]></ExpressionText>
-                <ResultType>
-                  <BaseType value="Bool" />
-                </ResultType>
-              </Expression>
-            </Computed>
-            <Attribute>
-              <Name value="OrderDate" />
-              <Caption value="Order date" />
-              <DeclaredType>
-                <AttributeType />
-              </DeclaredType>
-            </Attribute>
-            <Attribute>
-              <Name value="HasCheckbox" />
-              <Caption value="Has checkbox" />
-              <DeclaredType>
-                <AttributeType />
-              </DeclaredType>
-            </Attribute>
-            <Computed>
-              <Name value="_idxStr" />
-              <Expression IsValid="True">
-                <ExpressionText><![CDATA[toString(this.index())]]></ExpressionText>
-                <ResultType>
-                  <BaseType value="String" />
-                </ResultType>
-              </Expression>
-            </Computed>
-            <Computed>
-              <Name value="btn2Enabled" />
-              <Caption value="Btn 2 enabled" />
-              <Expression IsValid="True">
-                <ExpressionText><![CDATA[true]]></ExpressionText>
-                <ResultType>
-                  <BaseType value="Bool" />
-                </ResultType>
-              </Expression>
-            </Computed>
-            <Computed>
-              <Name value="btn2Visible" />
-              <Caption value="Btn 2 visible" />
-              <Expression IsValid="True">
-                <ExpressionText><![CDATA[true]]></ExpressionText>
-                <ResultType>
-                  <BaseType value="Bool" />
-                </ResultType>
-              </Expression>
-            </Computed>
-            <Computed>
-              <Name value="btn2Href" />
-              <Caption value="Btn 2 href" />
-              <Expression IsValid="True">
-                <ExpressionText><![CDATA[true]]></ExpressionText>
-                <ResultType>
-                  <BaseType value="Bool" />
-                </ResultType>
-              </Expression>
-            </Computed>
-            <Computed>
-              <Name value="btn2Target" />
-              <Caption value="Btn 2 target" />
-              <Expression IsValid="True">
-                <ExpressionText><![CDATA[true]]></ExpressionText>
-                <ResultType>
-                  <BaseType value="Bool" />
-                </ResultType>
-              </Expression>
-            </Computed>
             <Attribute>
               <Name value="ApplicationDate" />
               <Caption value="Application date" />
@@ -9606,17 +7235,17 @@
             </Attribute>
           </Children>
         </Collection>
-        <Attribute>
-          <Name value="clickedActionButtonName" />
-          <Caption value="Clicked action button name" />
-          <DeclaredType>
-            <AttributeType />
-          </DeclaredType>
-        </Attribute>
         <Reference>
-          <Name value="selectedRowData" />
-          <Caption value="Selected row data" />
+          <Name value="decListReferenceRow" />
+          <Caption value="Dec list reference row" />
           <Children>
+            <Attribute>
+              <Name value="GUID" />
+              <Caption value="GUID" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
             <Attribute>
               <Name value="Status" />
               <Caption value="Status" />
@@ -9625,46 +7254,62 @@
               </DeclaredType>
             </Attribute>
             <Attribute>
-              <Name value="ShipVia" />
-              <Caption value="Ship via" />
+              <Name value="Authorization" />
+              <Caption value="Authorization" />
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
             </Attribute>
             <Attribute>
-              <Name value="Freight" />
-              <Caption value="Freight" />
+              <Name value="TIN" />
+              <Caption value="TIN" />
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
             </Attribute>
             <Attribute>
-              <Name value="_idxStr" />
-              <Caption value="_ idx str" />
-              <DeclaredType>
-                <AttributeType />
-              </DeclaredType>
-            </Attribute>
-            <Attribute>
-              <Name value="OrderDate" />
-              <Caption value="Order date" />
+              <Name value="AuthorizationType" />
+              <Caption value="Authorization type" />
               <DeclaredType>
                 <AttributeType>
                   <BaseType value="DateTime" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="ResponsibleCO" />
+              <Caption value="Responsible CO" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="SubjectName" />
+              <Caption value="Subject name" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="ApplicationDate" />
+              <Caption value="Application date" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Date" />
+                </AttributeType>
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="AuthorizationValidFrom" />
+              <Caption value="Authorization valid from" />
+              <DeclaredType>
+                <AttributeType>
+                  <BaseType value="Date" />
                 </AttributeType>
               </DeclaredType>
             </Attribute>
           </Children>
         </Reference>
-        <Attribute>
-          <Name value="ShowCheckboxes" />
-          <Caption value="Show checkboxes" />
-          <DeclaredType>
-            <AttributeType>
-              <BaseType value="Bool" />
-            </AttributeType>
-          </DeclaredType>
-        </Attribute>
         <Complex>
           <Name value="buttonsVisibility" />
           <Caption value="Buttons visibility" />
@@ -9750,13 +7395,6 @@
             </Attribute>
           </Children>
         </Complex>
-        <Attribute>
-          <Name value="loadedAuthorizationType" />
-          <Caption value="Loaded authorization type" />
-          <DeclaredType>
-            <AttributeType />
-          </DeclaredType>
-        </Attribute>
         <Complex>
           <Name value="activeMenuItem" />
           <Caption value="Active menu item" />
@@ -9908,8 +7546,22 @@
           </Children>
         </Complex>
         <Attribute>
+          <Name value="loadedAuthorizationType" />
+          <Caption value="Loaded authorization type" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
           <Name value="loadedAuthorizationState" />
           <Caption value="Loaded authorization state" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
+          <Name value="_AuthorizeButtonCaption" />
+          <Caption value="_ authorize button caption" />
           <DeclaredType>
             <AttributeType />
           </DeclaredType>
@@ -9999,61 +7651,9 @@ tabs._All_EC = 6
 // Opening default settings to show all SPs
 form.activeMenuItem.all_link_active = true
 form.actions.LoadSP()
-// ----------------------------------------- //
-/*
-if form.sourceDataCollection.count() > 0 then
-	var first = form.sourceDataCollection.selectFirst()
-	first.OrderDate = getDateTime()
-endif
-*/
-//form.localizedColumn = "Muj sloupec"
 
-if globals.collectionDataProvider2State = defaultString() then
-	// set defaults
-	form.apiobjects.listCtrl.setSorting("OrderDate:desc")
-
-	var dte = toDate("1996-01-01", getdate())
-	form.apiobjects.listCtrl.setDateRangeFilter("OrderDate", dte, defaultDate())
-
-//	form.apiobjects.listCtrl.setTextFilter("ShipCountry", "France,Austria")
-//	form.apiobjects.listCtrl.focusFirstRecord()
-endif
-
-form.apiobjects.listCtrl.setReady(true)
-
-]]></Script>
-      </ActionLangBody>
-      <DataContext>
-        <ActionDataContext />
-      </DataContext>
-    </ActionBlock>
-    <ActionBlock>
-      <Name value="handler_listGrid21_OnButtonClicked" />
-      <IsPrivate value="True" />
-      <ActionLangBody IsValid="True">
-        <Script><![CDATA[globals.loadedState = "Detail"
-
-if form.loadedAuthorizationType = "SP" then
-	navigation.cseForms.SP_EditForm.go(form.selectedRowData.Status)
-endif
-
-if form.loadedAuthorizationType = "EC" then
-	navigation.cseForms.EC_EditForm.go(form.selectedRowData.Status)
-endif
-
-if form.loadedAuthorizationType = "PL" then
-	navigation.cseForms.PL_EditForm.go(form.selectedRowData.Status)
-endif]]></Script>
-      </ActionLangBody>
-      <DataContext>
-        <ActionDataContext />
-      </DataContext>
-    </ActionBlock>
-    <ActionBlock>
-      <Name value="handler_listGrid21_OnRowClicked" />
-      <IsPrivate value="True" />
-      <ActionLangBody IsValid="True">
-        <Script><![CDATA[form.actions.processButtons()]]></Script>
+// Populating decList
+form.apiobjects.listCtrl.setReady(true)]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
@@ -10096,8 +7696,8 @@ form.buttonsVisibility.newItemCaption = "New authorization"
 var loadedState = form.loadedAuthorizationState
 
 /* Filling listgrid with data - TODO Change for real server data */
-form.sourceDataCollection.fromJson(
-"[{\"Status\":\"Application Accepted\",\"ShipVia\":3,\"Freight\":\"81.9100\",\"ShipCountry\":\"Venezuela\",\"OrderDate\":\"1996-07-16T00:00:00.000\",\"_idxStr\":\"10\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Application Rejected\",\"ShipVia\":1,\"Freight\":\"140.5100\",\"ShipCountry\":\"Austria\",\"OrderDate\":\"1996-07-17T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"11\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Granted\",\"ShipVia\":3,\"Freight\":\"3.2500\",\"ShipCountry\":\"Mexico\",\"OrderDate\":\"1996-07-18T00:00:00.000\",\"_idxStr\":\"12\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Withdrawn\",\"ShipVia\":1,\"Freight\":\"55.0900\",\"ShipCountry\":\"Germany\",\"OrderDate\":\"1996-07-19T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"13\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Cancelled\",\"ShipVia\":2,\"Freight\":\"3.0500\",\"ShipCountry\":\"Brazil\",\"OrderDate\":\"1996-07-19T00:00:00.000\",\"_idxStr\":\"14\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Expired\",\"ShipVia\":3,\"Freight\":\"48.2900\",\"ShipCountry\":\"USA\",\"OrderDate\":\"1996-07-22T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"15\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Application Accepted\",\"ShipVia\":3,\"Freight\":\"146.0600\",\"ShipCountry\":\"Austria\",\"OrderDate\":\"1996-07-23T00:00:00.000\",\"_idxStr\":\"16\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Application Rejected\",\"ShipVia\":3,\"Freight\":\"3.6700\",\"ShipCountry\":\"Sweden\",\"OrderDate\":\"1996-07-24T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"17\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Granted\",\"ShipVia\":1,\"Freight\":\"55.2800\",\"ShipCountry\":\"France\",\"OrderDate\":\"1996-07-25T00:00:00.000\",\"_idxStr\":\"18\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Withdrawn\",\"ShipVia\":3,\"Freight\":\"25.7300\",\"ShipCountry\":\"Finland\",\"OrderDate\":\"1996-07-26T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"19\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Cancelled\",\"ShipVia\":1,\"Freight\":\"208.5800\",\"ShipCountry\":\"Germany\",\"OrderDate\":\"1996-07-29T00:00:00.000\",\"_idxStr\":\"20\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"}]")
+form.decListDataSource.fromJson(
+"[{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Application Accepted\",\"Authorization\":\"RS14RS123450EC0021\",\"TIN\":\"81.9100\",\"AuthorizationType\":\"Venezuela\",\"ResponsibleCO\":\"1996-07-16T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Application Rejected\",\"Authorization\":\"RS14RS123450EC0022\",\"TIN\":\"140.5100\",\"AuthorizationType\":\"Austria\",\"ResponsibleCO\":\"1996-07-17T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorization Granted\",\"Authorization\":\"RS14RS123450EC0024\",\"TIN\":\"3.2500\",\"AuthorizationType\":\"Mexico\",\"ResponsibleCO\":\"1996-07-18T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorization Withdrawn\",\"Authorization\":\"RS14RS123450EC0025\",\"TIN\":\"55.0900\",\"AuthorizationType\":\"Germany\",\"ResponsibleCO\":\"1996-07-19T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorization Cancelled\",\"Authorization\":\"RS14RS123450EC0026\",\"TIN\":\"3.0500\",\"AuthorizationType\":\"Brazil\",\"ResponsibleCO\":\"1996-07-19T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorization Expired\",\"Authorization\":\"RS14RS123450EC0027\",\"TIN\":\"48.2900\",\"AuthorizationType\":\"USA\",\"ResponsibleCO\":\"1996-07-22T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Application Accepted\",\"Authorization\":\"RS14RS123450EC0028\",\"TIN\":\"146.0600\",\"AuthorizationType\":\"Austria\",\"ResponsibleCO\":\"1996-07-23T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Application Rejected\",\"Authorization\":\"RS14RS123450EC0029\",\"TIN\":\"3.6700\",\"AuthorizationType\":\"Sweden\",\"ResponsibleCO\":\"1996-07-24T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorization Granted\",\"Authorization\":\"RS14RS123450EC0030\",\"TIN\":\"55.2800\",\"AuthorizationType\":\"France\",\"ResponsibleCO\":\"1996-07-25T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorization Withdrawn\",\"Authorization\":\"RS14RS123450EC0031\",\"TIN\":\"25.7300\",\"AuthorizationType\":\"Finland\",\"ResponsibleCO\":\"1996-07-26T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorization Cancelled\",\"Authorization\":\"RS14RS123450EC0032\",\"TIN\":\"208.5800\",\"AuthorizationType\":\"Germany\",\"ResponsibleCO\":\"1996-07-29T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"}]")
 
 /* Applying filters by meu selection */
 if loadedState = "All" then
@@ -10128,8 +7728,9 @@ form.buttonsVisibility.newItemCaption = "New application"
 var loadedState = form.loadedAuthorizationState
 
 /* Filling listgrid with data - TODO Change for real server data */
-form.sourceDataCollection.fromJson(
-"[{\"Status\":\"Authorization Granted\",\"ShipVia\":3,\"Freight\":\"48.2900\",\"ShipCountry\":\"USA\",\"OrderDate\":\"1996-07-22T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"15\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Application Rejected\",\"ShipVia\":3,\"Freight\":\"146.0600\",\"ShipCountry\":\"Austria\",\"OrderDate\":\"1996-07-23T00:00:00.000\",\"_idxStr\":\"16\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Application Rejected\",\"ShipVia\":3,\"Freight\":\"3.6700\",\"ShipCountry\":\"Sweden\",\"OrderDate\":\"1996-07-24T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"17\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Withdrawn\",\"ShipVia\":1,\"Freight\":\"55.2800\",\"ShipCountry\":\"France\",\"OrderDate\":\"1996-07-25T00:00:00.000\",\"_idxStr\":\"18\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Application Accepted\",\"ShipVia\":3,\"Freight\":\"25.7300\",\"ShipCountry\":\"Finland\",\"OrderDate\":\"1996-07-26T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"19\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Application Accepted\",\"ShipVia\":1,\"Freight\":\"208.5800\",\"ShipCountry\":\"Germany\",\"OrderDate\":\"1996-07-29T00:00:00.000\",\"_idxStr\":\"20\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Granted\",\"ShipVia\":3,\"Freight\":\"81.9100\",\"ShipCountry\":\"Venezuela\",\"OrderDate\":\"1996-07-16T00:00:00.000\",\"_idxStr\":\"10\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Withdrawn\",\"ShipVia\":1,\"Freight\":\"140.5100\",\"ShipCountry\":\"Austria\",\"OrderDate\":\"1996-07-17T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"11\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Application Accepted\",\"ShipVia\":3,\"Freight\":\"3.2500\",\"ShipCountry\":\"Mexico\",\"OrderDate\":\"1996-07-18T00:00:00.000\",\"_idxStr\":\"12\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Expired\",\"ShipVia\":1,\"Freight\":\"55.0900\",\"ShipCountry\":\"Germany\",\"OrderDate\":\"1996-07-19T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"13\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Withdrawn\",\"ShipVia\":2,\"Freight\":\"3.0500\",\"ShipCountry\":\"Brazil\",\"OrderDate\":\"1996-07-19T00:00:00.000\",\"_idxStr\":\"14\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Application Rejected\",\"ShipVia\":3,\"Freight\":\"48.2900\",\"ShipCountry\":\"USA\",\"OrderDate\":\"1996-07-22T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"15\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Expired\",\"ShipVia\":3,\"Freight\":\"146.0600\",\"ShipCountry\":\"Austria\",\"OrderDate\":\"1996-07-23T00:00:00.000\",\"_idxStr\":\"16\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Cancelled\",\"ShipVia\":3,\"Freight\":\"3.6700\",\"ShipCountry\":\"Sweden\",\"OrderDate\":\"1996-07-24T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"17\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Withdrawn\",\"ShipVia\":1,\"Freight\":\"55.2800\",\"ShipCountry\":\"France\",\"OrderDate\":\"1996-07-25T00:00:00.000\",\"_idxStr\":\"18\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorization Cancelled\",\"ShipVia\":3,\"Freight\":\"25.7300\",\"ShipCountry\":\"Finland\",\"OrderDate\":\"1996-07-26T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"19\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Application Accepted\",\"ShipVia\":1,\"Freight\":\"208.5800\",\"ShipCountry\":\"Germany\",\"OrderDate\":\"1996-07-29T00:00:00.000\",\"_idxStr\":\"20\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"}]")
+form.decListDataSource.fromJson(
+"[{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorization Granted\",\"Authorization\":\"RS14RS123450EC0021\",\"TIN\":\"48.2900\",\"AuthorizationType\":\"USA\",\"ResponsibleCO\":\"1996-07-22T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Application Rejected\",\"Authorization\":\"RS14RS123450EC0022\",\"TIN\":\"146.0600\",\"AuthorizationType\":\"Austria\",\"ResponsibleCO\":\"1996-07-23T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Application Rejected\",\"Authorization\":\"RS14RS123450EC0023\",\"TIN\":\"3.6700\",\"AuthorizationType\":\"Sweden\",\"ResponsibleCO\":\"1996-07-24T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorization Withdrawn\",\"Authorization\":\"RS14RS123450EC0024\",\"TIN\":\"55.2800\",\"AuthorizationType\":\"France\",\"ResponsibleCO\":\"1996-07-25T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Application Accepted\",\"Authorization\":\"RS14RS123450EC0025\",\"TIN\":\"25.7300\",\"AuthorizationType\":\"Finland\",\"ResponsibleCO\":\"1996-07-26T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Application Accepted\",\"Authorization\":\"RS14RS123450EC0026\",\"TIN\":\"208.5800\",\"AuthorizationType\":\"Germany\",\"ResponsibleCO\":\"1996-07-29T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorization Granted\",\"Authorization\":\"RS14RS123450EC0027\",\"TIN\":\"81.9100\",\"AuthorizationType\":\"Venezuela\",\"ResponsibleCO\":\"1996-07-16T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorization Withdrawn\",\"Authorization\":\"RS14RS123450EC0028\",\"TIN\":\"140.5100\",\"AuthorizationType\":\"Austria\",\"ResponsibleCO\":\"1996-07-17T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Application Accepted\",\"Authorization\":\"RS14RS123450EC0029\",\"TIN\":\"3.2500\",\"AuthorizationType\":\"Mexico\",\"ResponsibleCO\":\"1996-07-18T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorization Expired\",\"Authorization\":\"RS14RS123450EC0030\",\"TIN\":\"55.0900\",\"AuthorizationType\":\"Germany\",\"ResponsibleCO\":\"1996-07-19T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorization Withdrawn\",\"Authorization\":\"RS14RS123450EC0031\",\"TIN\":\"3.0500\",\"AuthorizationType\":\"Brazil\",\"ResponsibleCO\":\"1996-07-19T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Application Rejected\",\"Authorization\":\"RS14RS123450EC0032\",\"TIN\":\"48.2900\",\"AuthorizationType\":\"USA\",\"ResponsibleCO\":\"1996-07-22T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorization Expired\",\"Authorization\":\"RS14RS123450EC0033\",\"TIN\":\"146.0600\",\"AuthorizationType\":\"Austria\",\"ResponsibleCO\":\"1996-07-23T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorization Cancelled\",\"Authorization\":\"RS14RS123450EC0034\",\"TIN\":\"3.6700\",\"AuthorizationType\":\"Sweden\",\"ResponsibleCO\":\"1996-07-24T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorization Withdrawn\",\"Authorization\":\"RS14RS123450EC0035\",\"TIN\":\"55.2800\",\"AuthorizationType\":\"France\",\"ResponsibleCO\":\"1996-07-25T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorization Cancelled\",\"Authorization\":\"RS14RS123450EC0036\",\"TIN\":\"25.7300\",\"AuthorizationType\":\"Finland\",\"ResponsibleCO\":\"1996-07-26T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Application Accepted\",\"Authorization\":\"RS14RS123450EC0037\",\"TIN\":\"208.5800\",\"AuthorizationType\":\"Germany\",\"ResponsibleCO\":\"1996-07-29T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"}]")
+
 
 /* Applying filters by meu selection */
 if loadedState = "All" then
@@ -10148,26 +7749,31 @@ form.apiobjects.listCtrl.setReady(true)]]></Script>
     <ActionBlock>
       <Name value="LoadPL" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[packages.cseForms.globals.isLoading = true
+        <Script><![CDATA[/* Loading screen before data procesing */
+packages.cseForms.globals.isLoading = true
 form.apiobjects.listCtrl.setReady(false)
 
-form.sourceDataCollection.fromJson(
-"[{\"Status\":\"Authorized place\",\"ShipVia\":3,\"Freight\":\"81.9100\",\"ShipCountry\":\"Venezuela\",\"OrderDate\":\"1996-07-16T00:00:00.000\",\"_idxStr\":\"10\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Cancelled place\",\"ShipVia\":1,\"Freight\":\"140.5100\",\"ShipCountry\":\"Austria\",\"OrderDate\":\"1996-07-17T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"11\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorized place\",\"ShipVia\":3,\"Freight\":\"3.2500\",\"ShipCountry\":\"Mexico\",\"OrderDate\":\"1996-07-18T00:00:00.000\",\"_idxStr\":\"12\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Cancelled place\",\"ShipVia\":1,\"Freight\":\"55.0900\",\"ShipCountry\":\"Germany\",\"OrderDate\":\"1996-07-19T00:00:00.000\",\"HasCheckbox\":true,\"_idxStr\":\"13\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"Status\":\"Authorized place\",\"ShipVia\":2,\"Freight\":\"3.0500\",\"ShipCountry\":\"Brazil\",\"OrderDate\":\"1996-07-19T00:00:00.000\",\"_idxStr\":\"14\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"}]")
-
+/* Keeping type in variable */
 form.loadedAuthorizationType = "PL"
 form.buttonsVisibility.newItemCaption = "New place"
 
+/* Defining and preparing filter state for display on listgrid */
+var loadedState = form.loadedAuthorizationState
+
+/* Filling listgrid with data - TODO Change for real server data */
+form.decListDataSource.fromJson(
+"[{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorized place\",\"Authorization\":\"RS14RS123450EC0030\",\"TIN\":\"55.0900\",\"AuthorizationType\":\"Germany\",\"ResponsibleCO\":\"1996-07-19T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorized place\",\"Authorization\":\"RS14RS123450EC0031\",\"TIN\":\"3.0500\",\"AuthorizationType\":\"Brazil\",\"ResponsibleCO\":\"1996-07-19T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorized place\",\"Authorization\":\"RS14RS123450EC0032\",\"TIN\":\"48.2900\",\"AuthorizationType\":\"USA\",\"ResponsibleCO\":\"1996-07-22T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorized place\",\"Authorization\":\"RS14RS123450EC0033\",\"TIN\":\"146.0600\",\"AuthorizationType\":\"Austria\",\"ResponsibleCO\":\"1996-07-23T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorized place\",\"Authorization\":\"RS14RS123450EC0034\",\"TIN\":\"3.6700\",\"AuthorizationType\":\"Sweden\",\"ResponsibleCO\":\"1996-07-24T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorized place\",\"Authorization\":\"RS14RS123450EC0035\",\"TIN\":\"55.2800\",\"AuthorizationType\":\"France\",\"ResponsibleCO\":\"1996-07-25T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Cancelled place\",\"Authorization\":\"RS14RS123450EC0036\",\"TIN\":\"25.7300\",\"AuthorizationType\":\"Finland\",\"ResponsibleCO\":\"1996-07-26T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"},{\"GUID\":\"ea30402a-86cf-4053-9dab-f6a2fb80d26a\",\"Status\":\"Authorized place\",\"Authorization\":\"RS14RS123450EC0037\",\"TIN\":\"208.5800\",\"AuthorizationType\":\"Germany\",\"ResponsibleCO\":\"1996-07-29T00:00:00.000\",\"SubjectName\":\"Zdeněk Rišavý\",\"ApplicationDate\":\"1996-07-05T00:00:00.000\",\"AuthorizationValidFrom\":\"1996-07-05T00:00:00.000\"}]")
+
+
+/* Applying filters by meu selection */
+if loadedState = "All" then
+	form.apiobjects.listCtrl.clearVisibleFilters()
+else
+	form.apiobjects.listCtrl.setTextFilter("Status", loadedState)
+endif
+
+/* Populating filtered results */
 form.apiobjects.listCtrl.setReady(true)]]></Script>
-      </ActionLangBody>
-      <DataContext>
-        <ActionDataContext />
-      </DataContext>
-    </ActionBlock>
-    <ActionBlock>
-      <Name value="handler_listGrid21_OnRowsChanged" />
-      <IsPrivate value="True" />
-      <ActionLangBody IsValid="True">
-        <Script><![CDATA[packages.cseForms.globals.isLoading = false]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
@@ -10439,12 +8045,13 @@ page.scrollToTop()]]></Script>
       <Name value="processButtons" />
       <ActionLangBody IsValid="True">
         <Script><![CDATA[/* Defining and preparing filter state for display on listgrid */
-var loadedState = form.selectedRowData.Status
+var loadedState = form.decListReferenceRow.Status
 
 /* Application Accepted */
 if loadedState = "Application Accepted" then
 	form.buttonsVisibility.isModifyVisible = true
 	form.buttonsVisibility.isAuthorizeVisible = true
+	form._AuthorizeButtonCaption="Authorize"
 	form.buttonsVisibility.isRejectVisible = true
 	form.buttonsVisibility.isWithdrawVisible = false
 	form.buttonsVisibility.isCancelVisible = false
@@ -10472,6 +8079,7 @@ endif
 if loadedState = "Authorization Withdrawn" then
 	form.buttonsVisibility.isModifyVisible = true
 	form.buttonsVisibility.isAuthorizeVisible = true
+	form._AuthorizeButtonCaption="Authorize"
 	form.buttonsVisibility.isRejectVisible = false
 	form.buttonsVisibility.isWithdrawVisible = false
 	form.buttonsVisibility.isCancelVisible = false
@@ -10481,6 +8089,7 @@ endif
 if loadedState = "Authorization Cancelled" then
 	form.buttonsVisibility.isModifyVisible = false
 	form.buttonsVisibility.isAuthorizeVisible = true
+	form._AuthorizeButtonCaption="Authorize"
 	form.buttonsVisibility.isRejectVisible = false
 	form.buttonsVisibility.isWithdrawVisible = false
 	form.buttonsVisibility.isCancelVisible = false
@@ -10490,21 +8099,17 @@ endif
 if loadedState = "Authorization Expired" then
 	form.buttonsVisibility.isModifyVisible = false
 	form.buttonsVisibility.isAuthorizeVisible = true
+	form._AuthorizeButtonCaption="Re-Approval"
 	form.buttonsVisibility.isRejectVisible = false
 	form.buttonsVisibility.isWithdrawVisible = false
 	form.buttonsVisibility.isCancelVisible = false
 endif
+
+if loadedState = "Authorized place" then
+	form.buttonsVisibility.isModifyVisible = true
+	form.buttonsVisibility.isCancelVisible = true
+endif	
 ]]></Script>
-      </ActionLangBody>
-      <DataContext>
-        <ActionDataContext />
-      </DataContext>
-    </ActionBlock>
-    <ActionBlock>
-      <Name value="handler_listGrid21_OnSelectionChange" />
-      <IsPrivate value="True" />
-      <ActionLangBody IsValid="True">
-        <Script><![CDATA[//]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
@@ -10527,7 +8132,7 @@ form.buttonsVisibility.isCancelVisible = false]]></Script>
       <Name value="handler_modify_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[globals.loadedState = "Modify"
+        <Script><![CDATA[form.mode = enums.mode.Modify
 form.actions.navigateToDetail()]]></Script>
       </ActionLangBody>
       <DataContext>
@@ -10538,17 +8143,19 @@ form.actions.navigateToDetail()]]></Script>
       <Name value="navigateToDetail" />
       <ActionLangBody IsValid="True">
         <Script><![CDATA[var loadedAuthorizationType = form.loadedAuthorizationType
+form.guid = form.decListReferenceRow.GUID
+
 
 if loadedAuthorizationType = "SP" then
-	navigation.cseForms.SP_EditForm.go(form.selectedRowData.Status)
+	navigation.cseForms.SP_EditForm.withGuid(form.guid).go(form.mode)
 endif
 
 if loadedAuthorizationType = "EC" then
-	navigation.cseForms.EC_EditForm.go(form.selectedRowData.Status)
+	navigation.cseForms.EC_EditForm.withGuid(form.guid).go(form.mode)
 endif
 
 if loadedAuthorizationType = "PL" then
-	navigation.cseForms.PL_EditForm.go(form.selectedRowData.Status)
+	navigation.cseForms.PL_EditForm.withGuid(form.guid).go(form.mode)
 endif]]></Script>
       </ActionLangBody>
       <DataContext>
@@ -10559,7 +8166,7 @@ endif]]></Script>
       <Name value="handler_authorize_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[globals.loadedState = "Authorize"
+        <Script><![CDATA[form.mode = enums.mode.Authorize
 form.actions.navigateToDetail()]]></Script>
       </ActionLangBody>
       <DataContext>
@@ -10570,7 +8177,7 @@ form.actions.navigateToDetail()]]></Script>
       <Name value="handler_reject_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[globals.loadedState = "Reject"
+        <Script><![CDATA[form.mode = enums.mode.Reject
 form.actions.navigateToDetail()]]></Script>
       </ActionLangBody>
       <DataContext>
@@ -10581,7 +8188,7 @@ form.actions.navigateToDetail()]]></Script>
       <Name value="handler_cancel_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[globals.loadedState = "Cancel"
+        <Script><![CDATA[form.mode = enums.mode.Cancel
 form.actions.navigateToDetail()]]></Script>
       </ActionLangBody>
       <DataContext>
@@ -10592,7 +8199,7 @@ form.actions.navigateToDetail()]]></Script>
       <Name value="handler_withdraw_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[globals.loadedState = "Withdraw"
+        <Script><![CDATA[form.mode = enums.mode.Withdraw
 form.actions.navigateToDetail()]]></Script>
       </ActionLangBody>
       <DataContext>
@@ -10618,19 +8225,39 @@ page.scrollToTop()]]></Script>
       <Name value="handler_newCommunication_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[globals.loadedState = "New"
+        <Script><![CDATA[form.mode = enums.mode.Create
 
 if(form.loadedAuthorizationType = "SP") then
-	navigation.cseForms.SP_EditForm.go("New")
+	navigation.cseForms.SP_EditForm.withGuid(form.guid).go(form.mode)
 endif
 
 if(form.loadedAuthorizationType = "PL") then
-	navigation.cseForms.PL_EditForm.go("New")
+	navigation.cseForms.PL_EditForm.withGuid(form.guid).go(form.mode)
 endif
 
 if(form.loadedAuthorizationType = "EC") then
-	navigation.cseForms.EC_EditForm.go("New")
+	navigation.cseForms.EC_EditForm.withGuid(form.guid).go(form.mode)
 endif]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_decList_OnRowClicked" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[form.actions.processButtons()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="handler_decList_OnRowsChanged" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[packages.cseForms.globals.isLoading = false]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
@@ -10639,12 +8266,12 @@ endif]]></Script>
   </Actions>
   <ApiObjects>
     <CollectionDataProvider2 identity="CollectionDataProvider2.796ba28ddaf44db78bd2cdf0b9f3628c">
-      <Name value="collectionDataProvider2" />
-      <dataSourceCollectionReference value="sourceDataCollection" />
+      <Name value="decListData" />
+      <dataSourceCollectionReference value="decListDataSource" />
     </CollectionDataProvider2>
     <ListCtrl identity="ListCtrl.459ff3780ab145df985191cfc1336ce1">
       <Name value="listCtrl" />
-      <dataProvider reference="~collectionDataProvider2" />
+      <dataProvider reference="~decListData" />
       <server reference="/(main.54b271120be14de18033000f6ed59f52)+GlobalApiObjects.northwind" />
       <OnColumnsChanged>
         <ActionEvent ReferencedAction="~handler_listCtrl_OnColumnsChanged" />

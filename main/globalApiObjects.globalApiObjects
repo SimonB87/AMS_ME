@@ -34,6 +34,7 @@
         <UrlRouteCfg identity="UrlRouter.69a71809c45249cbb2999d13bb9100c0">
           <form reference="/(cseForms.b5b300393a7b425eaf69acead7edfe1a)+UiParts.EC_EditForm" />
           <masterPage reference="+UiParts.Master" />
+          <params value="guid?,mode" />
           <url value="EC_Edit" />
         </UrlRouteCfg>
         <UrlRouteCfg identity="UrlRouter.69a71809c45249cbb2999d13bb9100c0">
@@ -59,6 +60,7 @@
         <UrlRouteCfg identity="UrlRouter.69a71809c45249cbb2999d13bb9100c0">
           <form reference="/(cseForms.b5b300393a7b425eaf69acead7edfe1a)+UiParts.SP_EditForm" />
           <masterPage reference="+UiParts.Master" />
+          <params value="guid?,mode" />
           <url value="SP_Edit" />
         </UrlRouteCfg>
       </routes>
@@ -72,7 +74,7 @@
     </ServerConnection>
     <ConfigValue>
       <Name value="appVersion" />
-      <Value value="0.1.2" />
+      <Value value="0.2.0" />
     </ConfigValue>
   </ApiObjects>
 </GlobalApiObjects>
