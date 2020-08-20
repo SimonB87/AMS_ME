@@ -260,36 +260,97 @@
                   <Panel.Height value="#" />
                   <Panel.Width value="*" />
                   <Children>
-                    <ImageButton identity="ImageButton.d5705fac3ef94ff185b0260525af877a">
-                      <Name value="btn_ToTop" />
-                      <Caption value="{fa-arrow-circle-o-up }" />
+                    <Panel>
+                      <Name value="ui_btns" />
+                      <Orientation value="Horizontal" />
                       <Panel.Height value="#" />
-                      <Panel.Width value="80px" />
-                      <OnClick>
-                        <ActionEvent ReferencedAction="~handler_imageButton1_OnClick" />
-                      </OnClick>
+                      <Panel.Width value="20%" />
+                      <Children>
+                        <ImageButton identity="ImageButton.d5705fac3ef94ff185b0260525af877a">
+                          <Name value="btn_ToTop" />
+                          <Caption value="{fa-arrow-circle-o-up }" />
+                          <Panel.Height value="#" />
+                          <Panel.Width value="80px" />
+                          <OnClick>
+                            <ActionEvent ReferencedAction="~handler_imageButton1_OnClick" />
+                          </OnClick>
+                          <CssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-imagebutton" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-button" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                            <CssClassConditional>
+                              <ClassName value="flleft" />
+                            </CssClassConditional>
+                            <CssClassConditional>
+                              <ClassName value="toTop" />
+                            </CssClassConditional>
+                          </CssClass>
+                        </ImageButton>
+                        <ImageButton identity="ImageButton.d5705fac3ef94ff185b0260525af877a">
+                          <Name value="validation_btn" />
+                          <Caption value="{fa-exclamation-circle}" />
+                          <Panel.Height value="#" />
+                          <Panel.Width value="80px" />
+                          <CssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-imagebutton" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-button" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                            <CssClassConditional>
+                              <ClassName value="flleft" />
+                            </CssClassConditional>
+                            <CssClassConditional>
+                              <ClassName value="toTop" />
+                            </CssClassConditional>
+                          </CssClass>
+                        </ImageButton>
+                        <ImageButton identity="ImageButton.d5705fac3ef94ff185b0260525af877a">
+                          <Name value="limitWidth_btn" />
+                          <Caption value="{fa-window-maximize}" />
+                          <Panel.Height value="#" />
+                          <Panel.Width value="80px" />
+                          <OnClick>
+                            <ActionEvent ReferencedAction="~action8" />
+                          </OnClick>
+                          <CssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-imagebutton" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-button" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                            <CssClassConditional>
+                              <ClassName value="flleft" />
+                            </CssClassConditional>
+                            <CssClassConditional>
+                              <ClassName value="toTop" />
+                            </CssClassConditional>
+                          </CssClass>
+                        </ImageButton>
+                      </Children>
                       <CssClass>
                         <CssClassConditional>
-                          <ClassName value="{theme}-imagebutton" />
+                          <ClassName value="{theme}-panel" />
                           <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                        <CssClassConditional>
-                          <ClassName value="{theme}-button" />
-                          <IsThemedStyle value="True" />
-                        </CssClassConditional>
-                        <CssClassConditional>
-                          <ClassName value="flleft" />
-                        </CssClassConditional>
-                        <CssClassConditional>
-                          <ClassName value="toTop" />
                         </CssClassConditional>
                       </CssClass>
-                    </ImageButton>
+                    </Panel>
                     <Panel>
                       <Name value="btn_OK_parent" />
                       <Orientation value="Horizontal" />
                       <Panel.Height value="#" />
-                      <Panel.Width value="300px" />
+                      <Panel.Width value="80%" />
                       <Children>
                         <Button>
                           <Name value="btn_OK" />
@@ -299,9 +360,6 @@
                           <OnClick>
                             <ActionEvent ReferencedAction="~handler_btn_OK_OnClick" />
                           </OnClick>
-                          <Bindings>
-                            <Binding SourceProperty="IsVisible" Expression="isEditing" />
-                          </Bindings>
                           <CssClass>
                             <CssClassConditional>
                               <ClassName value="{theme}-button" />
@@ -355,6 +413,7 @@
                     </CssClassConditional>
                     <CssClassConditional>
                       <ClassName value="flright" />
+                      <Condition value="False" />
                     </CssClassConditional>
                     <CssClassConditional>
                       <ClassName value="{theme}-nav-bar-controls" />
@@ -390,6 +449,7 @@
                 </CssClassConditional>
                 <CssClassConditional>
                   <ClassName value="flright" />
+                  <Condition value="False" />
                 </CssClassConditional>
               </CssClass>
             </Panel>
@@ -399,6 +459,107 @@
               <Panel.Height value="#" />
               <Panel.Width value="*" />
               <Children>
+                <Panel>
+                  <Name value="validations_pnl" />
+                  <Orientation value="Vertical" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="100%" />
+                  <Bindings>
+                    <Binding SourceProperty="IsVisible" Expression="globals.globalUIState.isValidationsActive" />
+                  </Bindings>
+                  <Children>
+                    <GroupBox>
+                      <Name value="validations_grp" />
+                      <Caption value="Validation summary" />
+                      <Panel.Height value="#" />
+                      <Panel.Width value="*" />
+                      <Content>
+                        <Panel>
+                          <Name value="panel11" />
+                          <Orientation value="Horizontal" />
+                          <Children>
+                            <ClientValidationSummary identity="ValidationSummary.0f608ab4a81a4349b35a8398ddd72445">
+                              <Name value="cliValidations_lst" />
+                              <Panel.Height value="#" />
+                              <Panel.Width value="*" />
+                              <Bindings>
+                                <Binding SourceProperty="validationErrors" Expression="globals.errors.clientValidationErrors" />
+                                <Binding SourceProperty="validationRoot" Expression="form.model" />
+                              </Bindings>
+                              <columns>
+                                <validationSummaryColumn identity="ValidationSummary.0f608ab4a81a4349b35a8398ddd72445">
+                                  <Name value="cliPointer_col" />
+                                  <columnCaption value="Pointer" />
+                                  <columnRole value="pointer" />
+                                  <columnWidth value="30%" />
+                                  <propertyName value="Pointer" />
+                                </validationSummaryColumn>
+                                <validationSummaryColumn identity="ValidationSummary.0f608ab4a81a4349b35a8398ddd72445">
+                                  <Name value="cliMessage_col" />
+                                  <columnCaption value="Message" />
+                                  <columnWidth value="70%" />
+                                  <propertyName value="Message" />
+                                </validationSummaryColumn>
+                              </columns>
+                            </ClientValidationSummary>
+                            <ServerValidationSummary identity="ValidationSummary.0f608ab4a81a4349b35a8398ddd72445">
+                              <Name value="serverValidationSummary1" />
+                              <Panel.Height value="#" />
+                              <Panel.Width value="*" />
+                              <Bindings>
+                                <Binding SourceProperty="validationErrors" Expression="globals.errors.serverValidationErrors" />
+                              </Bindings>
+                              <columns>
+                                <validationSummaryColumn identity="ValidationSummary.0f608ab4a81a4349b35a8398ddd72445">
+                                  <Name value="srvPointer_col" />
+                                  <columnCaption value="Pointer" />
+                                  <columnRole value="pointer" />
+                                  <columnWidth value="30%" />
+                                  <propertyName value="Pointer" />
+                                </validationSummaryColumn>
+                                <validationSummaryColumn identity="ValidationSummary.0f608ab4a81a4349b35a8398ddd72445">
+                                  <Name value="srvMessage_col" />
+                                  <columnCaption value="Message" />
+                                  <columnWidth value="70%" />
+                                  <propertyName value="Reason" />
+                                </validationSummaryColumn>
+                              </columns>
+                            </ServerValidationSummary>
+                          </Children>
+                          <CssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-panel" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                          </CssClass>
+                        </Panel>
+                      </Content>
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-groupbox" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-datatable" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </GroupBox>
+                  </Children>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-panel" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-panel-limited" />
+                      <IsThemedStyle value="True" />
+                      <Bindings>
+                        <Binding SourceProperty="Condition" Expression="globals.isLimitedWidth" />
+                      </Bindings>
+                    </CssClassConditional>
+                  </CssClass>
+                </Panel>
                 <Panel>
                   <Name value="pnl_EventTabsPanel" />
                   <Orientation value="Vertical" />
@@ -410,9 +571,6 @@
                       <Orientation value="Horizontal" />
                       <Panel.Height value="#" />
                       <Panel.Width value="*" />
-                      <Bindings>
-                        <Binding SourceProperty="IsVisible" Expression="panelsVisibility.isGeneralVisible" />
-                      </Bindings>
                       <Children>
                         <CollapsibleGroupBox identity="collapsibleGroupBox.cfca4faa9e574885bad67cbe322167a7">
                           <Name value="grp_Application" />
@@ -1759,7 +1917,7 @@
                           <Panel.Width value="*" />
                           <Content>
                             <Panel>
-                              <Name value="panel3" />
+                              <Name value="panel2" />
                               <Orientation value="Vertical" />
                               <Children>
                                 <Panel>
@@ -2881,6 +3039,27 @@
                         </CssClassConditional>
                       </CssClass>
                     </Panel>
+                  </Children>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-panel" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-panel-limited" />
+                      <IsThemedStyle value="True" />
+                      <Bindings>
+                        <Binding SourceProperty="Condition" Expression="globals.isLimitedWidth" />
+                      </Bindings>
+                    </CssClassConditional>
+                  </CssClass>
+                </Panel>
+                <Panel>
+                  <Name value="panel3" />
+                  <Orientation value="Horizontal" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="*" />
+                  <Children>
                     <Panel>
                       <Name value="grp_Events_parent" />
                       <Orientation value="Horizontal" />
@@ -3650,6 +3829,15 @@
           <MetaType reference="+MetaTypes.mode" />
         </Attribute>
         <Attribute>
+          <Name value="state" />
+          <Caption value="State" />
+          <DataContextParameter.IsInput value="True" />
+          <DataContextParameter.IsInputRequired value="True" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
           <Name value="guid" />
           <Caption value="Guid" />
           <DataContextParameter.IsInput value="True" />
@@ -3920,6 +4108,8 @@ form.actions.setUrlDeepLink()
 
 form.actions.setVisibility()
 
+form.Model.AMS.Event.ValidityStartDate = addHours(getDateTime(), 1)
+
 form._actualDate = getDate()
 form.isEditing = false]]></Script>
       </ActionLangBody>
@@ -3931,7 +4121,7 @@ form.isEditing = false]]></Script>
       <Name value="handler_btn_Close_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[navigation.cseForms.MainForm.go(form.mode)]]></Script>
+        <Script><![CDATA[navigation.cseForms.MainForm.go()]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
@@ -4032,7 +4222,24 @@ page.scrollToTop()]]></Script>
       <Name value="handler_btn_OK_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[form.isEditing = false]]></Script>
+        <Script><![CDATA[if(form.model.validationErrorsCount() = 0) then
+// SAVE HERE
+else
+	globals.globalUIState.isValidationsActive = true
+	
+	var errorMessage = defaultString()
+	var errorCount = defaultInt()
+
+	errorCount = form.model.validationErrorsCount() + globals.errors.serverValidationErrors.count()
+
+	if (errorCount > 1) then 
+		errorMessage = "There are " + toString(errorCount) + " errors in the message, please fix them to continue."
+	else
+		errorMessage = "There is " + toString(errorCount) + " error in the message, please fix it to continue."
+	endif
+	
+	apiobjects.notificationsCtrl.addError(errorMessage)
+endif]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
@@ -4055,7 +4262,6 @@ page.scrollToTop()]]></Script>
 form.actions.clearPanelsVisibility()
 
 if form.Model.AMS.State = "Application Accepted" then
-system.console("ahoj")
 	if form.mode = enums.mode.Authorize then
 		form.menusVisibility.isAMSECMenuVisible = true
 		form.menusVisibility.isSignMenuVisible = true
@@ -4327,6 +4533,25 @@ page.scrollToTop()]]></Script>
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
         <Script><![CDATA[form.Model.AMS.Event.CertificateMaint.addItem()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="action8" />
+      <IsPrivate value="True" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[/* Toggle limited width of edit forms */
+var isLimitedWitdh = globals.isLimitedWidth
+
+if(isLimitedWitdh = true) then
+	globals.isLimitedWidth = false
+else
+	globals.isLimitedWidth = true	
+endif
+
+]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />

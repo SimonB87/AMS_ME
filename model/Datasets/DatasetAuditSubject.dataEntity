@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<DataEntity>
+  <Name value="DatasetAuditSubject" />
+  <Caption value="Dataset Auditu subjektu" />
+  <MtsImportOptions.MTS.ID value="DatasetAuditSubject" />
+  <MtsImportOptions.MTS.Type value="client-dataset" />
+  <Children>
+    <Attribute>
+      <Name value="GUID" />
+      <Caption value="GUID" />
+      <IsRequired value="True" />
+      <MtsImportOptions.MTS.ID value="DatasetAuditSubject/GUID" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <DeclaredType>
+        <AttributeType />
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="TIN" />
+      <Caption value="TIN / EORI číslo" />
+      <IsRequired value="True" />
+      <MetaType reference="+MetaTypes.TIN" />
+      <MtsImportOptions.MTS.ID value="DatasetAuditSubject/TIN" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+    </Attribute>
+    <Attribute>
+      <Name value="OperatorName" />
+      <Caption value="Název subjektu" />
+      <IsRequired value="True" />
+      <MetaType reference="+MetaTypes.OperatorName" />
+      <MtsImportOptions.MTS.ID value="DatasetAuditSubject/OperatorName" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+    </Attribute>
+    <Attribute>
+      <Name value="AuditStartDate" />
+      <Caption value="Datum zahájení auditu" />
+      <MtsImportOptions.MTS.ID value="DatasetAuditSubject/AuditStartDate" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <DeclaredType>
+        <AttributeType>
+          <BaseType value="Date" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="AuditEndDate" />
+      <Caption value="Datum konce auditu" />
+      <MtsImportOptions.MTS.ID value="DatasetAuditSubject/AuditEndDate" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <DeclaredType>
+        <AttributeType>
+          <BaseType value="Date" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="ResultValue" />
+      <Caption value="Výsledek auditu" />
+      <MtsImportOptions.MTS.ID value="DatasetAuditSubject/ResultValue" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <DeclaredType>
+        <AttributeType>
+          <StrMaxLength value="50" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="ResultText" />
+      <Caption value="Výsledek auditu textem" />
+      <MetaType reference="+MetaTypes.String200_type" />
+      <MtsImportOptions.MTS.ID value="DatasetAuditSubject/ResultText" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+    </Attribute>
+    <Attribute>
+      <Name value="SupervisingCustomsOffices" />
+      <Caption value="CU dohledu" />
+      <MtsImportOptions.MTS.ID value="DatasetAuditSubject/SupervisingCustomsOffices" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <DeclaredType>
+        <AttributeType>
+          <StrMaxLength value="255" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+  </Children>
+</DataEntity>

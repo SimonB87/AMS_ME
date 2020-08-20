@@ -32,5 +32,158 @@
         </AttributeType>
       </DeclaredType>
     </Attribute>
+    <Complex>
+      <Name value="globalUIState" />
+      <Caption value="Global UI state" />
+      <Children>
+        <Attribute>
+          <Name value="isTransitActive" />
+          <Caption value="Is transit active" />
+          <DeclaredType>
+            <AttributeType>
+              <BaseType value="Bool" />
+            </AttributeType>
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
+          <Name value="isPlacesActive" />
+          <Caption value="Is places active" />
+          <DeclaredType>
+            <AttributeType>
+              <BaseType value="Bool" />
+            </AttributeType>
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
+          <Name value="isCommunicationActive" />
+          <Caption value="Is communication active" />
+          <DeclaredType>
+            <AttributeType>
+              <BaseType value="Bool" />
+            </AttributeType>
+          </DeclaredType>
+        </Attribute>
+        <Attribute>
+          <Name value="isValidationsActive" />
+          <Caption value="Is validations active" />
+          <DeclaredType>
+            <AttributeType>
+              <BaseType value="Bool" />
+            </AttributeType>
+          </DeclaredType>
+        </Attribute>
+      </Children>
+    </Complex>
+    <Complex>
+      <Name value="errors" />
+      <Caption value="Errors" />
+      <Children>
+        <Collection>
+          <Name value="serverValidationErrors" />
+          <Caption value="Server validation errors" />
+          <Children>
+            <Attribute>
+              <Name value="Reason" />
+              <Caption value="Reason" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="ErrorType" />
+              <Caption value="Error type" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="Pointer" />
+              <Caption value="Pointer" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+          </Children>
+        </Collection>
+        <Complex>
+          <Name value="serverValidationComplex" />
+          <Caption value="Server validation complex" />
+          <Children>
+            <Collection>
+              <Name value="MessageCheckError" />
+              <Caption value="Message check error" />
+              <Children>
+                <Attribute>
+                  <Name value="ErrorType" />
+                  <Caption value="Error type" />
+                  <DeclaredType>
+                    <AttributeType />
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="Pointer" />
+                  <Caption value="Pointer" />
+                  <DeclaredType>
+                    <AttributeType />
+                  </DeclaredType>
+                </Attribute>
+                <Attribute>
+                  <Name value="Reason" />
+                  <Caption value="Reason" />
+                  <DeclaredType>
+                    <AttributeType />
+                  </DeclaredType>
+                </Attribute>
+              </Children>
+            </Collection>
+          </Children>
+        </Complex>
+        <Collection>
+          <Name value="clientValidationErrors" />
+          <Caption value="Client validation errors" />
+          <Children>
+            <Attribute>
+              <Name value="Message" />
+              <Caption value="Message" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="Pointer" />
+              <Caption value="Pointer" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+            <Attribute>
+              <Name value="Type" />
+              <Caption value="Type" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+            </Attribute>
+          </Children>
+        </Collection>
+      </Children>
+    </Complex>
+    <Attribute>
+      <Name value="isConfirm" />
+      <Caption value="Is confirm" />
+      <DeclaredType>
+        <AttributeType>
+          <BaseType value="Bool" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="isLimitedWidth" />
+      <Caption value="Is limited width" />
+      <DeclaredType>
+        <AttributeType>
+          <BaseType value="Bool" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
   </Children>
 </GlobalVariables>

@@ -50,17 +50,6 @@
           </Validators>
         </Attribute>
         <Attribute>
-          <Name value="AMSID" />
-          <Caption value="Evidenční číslo zjednodušeného postupu" />
-          <MtsImportOptions.MTS.ID value="/SECData/AMS/AMSID" />
-          <MtsImportOptions.MTS.Type value="element" />
-          <DeclaredType>
-            <AttributeType>
-              <StrMaxLength value="20" />
-            </AttributeType>
-          </DeclaredType>
-        </Attribute>
-        <Attribute>
           <Name value="TIN" />
           <Caption value="TIN / EORI číslo" />
           <IsRequired value="True" />
@@ -1029,6 +1018,31 @@
             </Complex>
           </Children>
         </Complex>
+        <Attribute>
+          <Name value="AMSID" />
+          <Caption value="Evidenční číslo zjednodušeného postupu" />
+          <MetaType reference="+MetaTypes.CisloZJPPovoleni" />
+          <MtsImportOptions.MTS.ID value="/SECData/AMS/AMSID" />
+          <MtsImportOptions.MTS.Type value="element" />
+          <Validators>
+            <Validator Name="regex">
+              <MtsImportOptions.MTS.Regex value="ME[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}" />
+              <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
+              <ErrorMessage IsValid="True">
+                <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+                <ResultType>
+                  <BaseType value="String" />
+                </ResultType>
+              </ErrorMessage>
+              <IsValid IsValid="True">
+                <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "^ME[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}$") : true)]]></ExpressionText>
+                <ResultType>
+                  <BaseType value="Bool" />
+                </ResultType>
+              </IsValid>
+            </Validator>
+          </Validators>
+        </Attribute>
       </Children>
     </Complex>
   </Children>

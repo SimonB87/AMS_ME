@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<DataEntity>
+  <Name value="DatasetSPClient" />
+  <Caption value="Dataset SP" />
+  <MtsImportOptions.MTS.ID value="DatasetSPClient" />
+  <MtsImportOptions.MTS.Type value="client-dataset" />
+  <Children>
+    <Attribute>
+      <Name value="GUID" />
+      <Caption value="GUID" />
+      <IsRequired value="True" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/GUID" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <DeclaredType>
+        <AttributeType />
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="IssuingCountry" />
+      <Caption value="Země vydání" />
+      <IsRequired value="True" />
+      <MetaType reference="+MetaTypes.Zeme" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/IssuingCountry" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <Validators>
+        <Validator Name="regex">
+          <MtsImportOptions.MTS.Regex value="[A-Z]{2}" />
+          <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
+          <ErrorMessage IsValid="True">
+            <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+            <ResultType>
+              <BaseType value="String" />
+            </ResultType>
+          </ErrorMessage>
+          <IsValid IsValid="True">
+            <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "^[A-Z]{2}$") : true)]]></ExpressionText>
+            <ResultType>
+              <BaseType value="Bool" />
+            </ResultType>
+          </IsValid>
+        </Validator>
+      </Validators>
+    </Attribute>
+    <Attribute>
+      <Name value="TIN" />
+      <Caption value="EORI/TIN" />
+      <IsRequired value="True" />
+      <MetaType reference="+MetaTypes.TIN" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/TIN" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+    </Attribute>
+    <Attribute>
+      <Name value="State" />
+      <Caption value="Stav" />
+      <IsRequired value="True" />
+      <MetaType reference="+MetaTypes.ASState" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/State" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+    </Attribute>
+    <Attribute>
+      <Name value="AuthorizationType" />
+      <Caption value="Typ povolení" />
+      <IsRequired value="True" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/AuthorizationType" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <DeclaredType>
+        <AttributeType>
+          <StrMaxLength value="4" />
+          <StrMinLength value="3" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="ResponsibleCustomsOffice" />
+      <Caption value="Zodpovědný celní úřad" />
+      <IsRequired value="True" />
+      <MetaType reference="+MetaTypes.CustomsOfficeRefNum_type" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/ResponsibleCustomsOffice" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <Validators>
+        <Validator Name="regex">
+          <MtsImportOptions.MTS.Regex value="[A-Z]{2}[A-Z0-9]{6}" />
+          <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
+          <ErrorMessage IsValid="True">
+            <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+            <ResultType>
+              <BaseType value="String" />
+            </ResultType>
+          </ErrorMessage>
+          <IsValid IsValid="True">
+            <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "^[A-Z]{2}[A-Z0-9]{6}$") : true)]]></ExpressionText>
+            <ResultType>
+              <BaseType value="Bool" />
+            </ResultType>
+          </IsValid>
+        </Validator>
+      </Validators>
+    </Attribute>
+    <Attribute>
+      <Name value="OperatorName" />
+      <Caption value="Název držitele povolení" />
+      <MetaType reference="+MetaTypes.OperatorName" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/OperatorName" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+    </Attribute>
+    <Attribute>
+      <Name value="OperatorStreetAndNr" />
+      <Caption value="Ulice a č.p." />
+      <MetaType reference="+MetaTypes.StreetAndNr" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/OperatorStreetAndNr" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+    </Attribute>
+    <Attribute>
+      <Name value="OperatorCity" />
+      <Caption value="Město" />
+      <MetaType reference="+MetaTypes.City" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/OperatorCity" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+    </Attribute>
+    <Attribute>
+      <Name value="OperatorPostCode" />
+      <Caption value="PSČ" />
+      <MetaType reference="+MetaTypes.PostCode" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/OperatorPostCode" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+    </Attribute>
+    <Attribute>
+      <Name value="OperatorCountry" />
+      <Caption value="Země sídla" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/OperatorCountry" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <DeclaredType>
+        <AttributeType>
+          <StrMaxLength value="2" />
+          <StrMinLength value="2" />
+        </AttributeType>
+      </DeclaredType>
+      <Validators>
+        <Validator Name="regex">
+          <MtsImportOptions.MTS.Regex value="[A-Z]{2}" />
+          <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
+          <ErrorMessage IsValid="True">
+            <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+            <ResultType>
+              <BaseType value="String" />
+            </ResultType>
+          </ErrorMessage>
+          <IsValid IsValid="True">
+            <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "^[A-Z]{2}$") : true)]]></ExpressionText>
+            <ResultType>
+              <BaseType value="Bool" />
+            </ResultType>
+          </IsValid>
+        </Validator>
+      </Validators>
+    </Attribute>
+    <Attribute>
+      <Name value="DecisionDate" />
+      <Caption value="Datum vydání rozhodnutí" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/DecisionDate" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <DeclaredType>
+        <AttributeType>
+          <BaseType value="Date" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="ValidityStartDate" />
+      <Caption value="Datum platnosti poslední události" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/ValidityStartDate" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <DeclaredType>
+        <AttributeType>
+          <BaseType value="DateTime" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="EvidenceDate" />
+      <Caption value="Datum zápisu" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/EvidenceDate" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <DeclaredType>
+        <AttributeType>
+          <BaseType value="DateTime" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="DecidingCustomsOffice" />
+      <Caption value="Rozhodnující CÚ" />
+      <MetaType reference="+MetaTypes.CustomsOfficeRefNum_type" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/DecidingCustomsOffice" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <Validators>
+        <Validator Name="regex">
+          <MtsImportOptions.MTS.Regex value="[A-Z]{2}[A-Z0-9]{6}" />
+          <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
+          <ErrorMessage IsValid="True">
+            <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+            <ResultType>
+              <BaseType value="String" />
+            </ResultType>
+          </ErrorMessage>
+          <IsValid IsValid="True">
+            <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "^[A-Z]{2}[A-Z0-9]{6}$") : true)]]></ExpressionText>
+            <ResultType>
+              <BaseType value="Bool" />
+            </ResultType>
+          </IsValid>
+        </Validator>
+      </Validators>
+    </Attribute>
+    <Attribute>
+      <Name value="ValidityEndDate" />
+      <Caption value="Konec platnosti události" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/ValidityEndDate" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <DeclaredType>
+        <AttributeType>
+          <BaseType value="DateTime" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="LimitedAuthorizationValidity" />
+      <Caption value="Je délka platnosti omezená?" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/LimitedAuthorizationValidity" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <DeclaredType>
+        <AttributeType>
+          <BaseType value="Bool" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="AuthorizationValidUntil" />
+      <Caption value="Rozhodnutí platné do" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/AuthorizationValidUntil" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <DeclaredType>
+        <AttributeType>
+          <BaseType value="Date" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="EventType" />
+      <Caption value="Typ poslení události" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/EventType" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <DeclaredType>
+        <AttributeType>
+          <StrMaxLength value="2" />
+          <StrMinLength value="2" />
+        </AttributeType>
+      </DeclaredType>
+      <Validators>
+        <Validator Name="regex">
+          <MtsImportOptions.MTS.Regex value="[A-Za-z]*" />
+          <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
+          <ErrorMessage IsValid="True">
+            <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+            <ResultType>
+              <BaseType value="String" />
+            </ResultType>
+          </ErrorMessage>
+          <IsValid IsValid="True">
+            <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "^[A-Za-z]*$") : true)]]></ExpressionText>
+            <ResultType>
+              <BaseType value="Bool" />
+            </ResultType>
+          </IsValid>
+        </Validator>
+      </Validators>
+    </Attribute>
+    <Attribute>
+      <Name value="StateName" />
+      <Caption value="Stav" />
+      <MetaType reference="+MetaTypes.String200_type" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/StateName" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+    </Attribute>
+    <Attribute>
+      <Name value="AuthorizationTypeName" />
+      <Caption value="Typ povolení" />
+      <MetaType reference="+MetaTypes.String200_type" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/AuthorizationTypeName" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+    </Attribute>
+    <Attribute>
+      <Name value="Cancelled" />
+      <Caption value="Zrušeno se zpětnou účinností" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/Cancelled" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <DeclaredType>
+        <AttributeType>
+          <BaseType value="Bool" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="ApplicationSubmissionDate" />
+      <Caption value="Datum podání žádosti" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/ApplicationSubmissionDate" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <DeclaredType>
+        <AttributeType>
+          <BaseType value="Date" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="DecisionStartDate" />
+      <Caption value="Datum platnosti posledního rozhodnutí" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/DecisionStartDate" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <DeclaredType>
+        <AttributeType>
+          <BaseType value="DateTime" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="AMSCompleteID" />
+      <Caption value="ID včetně kódu země" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/AMSCompleteID" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <DeclaredType>
+        <AttributeType>
+          <StrMaxLength value="22" />
+        </AttributeType>
+      </DeclaredType>
+      <Validators>
+        <Validator Name="regex">
+          <MtsImportOptions.MTS.Regex value="ME[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}" />
+          <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
+          <ErrorMessage IsValid="True">
+            <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+            <ResultType>
+              <BaseType value="String" />
+            </ResultType>
+          </ErrorMessage>
+          <IsValid IsValid="True">
+            <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "^ME[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}$") : true)]]></ExpressionText>
+            <ResultType>
+              <BaseType value="Bool" />
+            </ResultType>
+          </IsValid>
+        </Validator>
+      </Validators>
+    </Attribute>
+    <Attribute>
+      <Name value="AMSType" />
+      <Caption value="Typ AMS povolení" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/AMSType" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <DeclaredType>
+        <AttributeType>
+          <StrMaxLength value="10" />
+        </AttributeType>
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="AMSID" />
+      <Caption value="Evidenční číslo povolení" />
+      <MetaType reference="+MetaTypes.CisloZJPPovoleni" />
+      <MtsImportOptions.MTS.ID value="DatasetSPClient/AMSID" />
+      <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <Validators>
+        <Validator Name="regex">
+          <MtsImportOptions.MTS.Regex value="ME[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}" />
+          <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
+          <ErrorMessage IsValid="True">
+            <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+            <ResultType>
+              <BaseType value="String" />
+            </ResultType>
+          </ErrorMessage>
+          <IsValid IsValid="True">
+            <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "^ME[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}$") : true)]]></ExpressionText>
+            <ResultType>
+              <BaseType value="Bool" />
+            </ResultType>
+          </IsValid>
+        </Validator>
+      </Validators>
+    </Attribute>
+  </Children>
+</DataEntity>

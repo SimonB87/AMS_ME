@@ -7,8 +7,8 @@
   <MtsImportOptions.MTS.Type value="enumeration" />
   <Children>
     <Attribute>
-      <Name value="Key" />
-      <Caption value="Key" />
+      <Name value="Code" />
+      <Caption value="Code" />
       <DeclaredType>
         <AttributeType />
       </DeclaredType>
@@ -16,6 +16,13 @@
     <Attribute>
       <Name value="Description" />
       <Caption value="Description" />
+      <DeclaredType>
+        <AttributeType />
+      </DeclaredType>
+    </Attribute>
+    <Attribute>
+      <Name value="Key" />
+      <Caption value="Key" />
       <DeclaredType>
         <AttributeType />
       </DeclaredType>

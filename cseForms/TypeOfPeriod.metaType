@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<MetaType>
+  <Name value="TypeOfPeriod" />
+  <Caption value="Type of period" />
+  <TypeSpec>
+    <AttributeType>
+      <BaseType value="Enum" />
+      <EnumValues>
+        <AttributeEnumValue>
+          <Name value="Release" />
+          <Caption value="Release" />
+          <Description value="Release" />
+          <Value value="Release" />
+        </AttributeEnumValue>
+        <AttributeEnumValue>
+          <Name value="Amendment" />
+          <Caption value="Amendment" />
+          <Description value="Amendment" />
+          <Value value="Amendment" />
+        </AttributeEnumValue>
+        <AttributeEnumValue>
+          <Name value="Completion" />
+          <Caption value="Completion" />
+          <Description value="Completion" />
+          <Value value="Completion" />
+        </AttributeEnumValue>
+        <AttributeEnumValue>
+          <Name value="Documents" />
+          <Caption value="Documents" />
+          <Description value="Documents" />
+          <Value value="Documents" />
+        </AttributeEnumValue>
+        <AttributeEnumValue>
+          <Name value="Discharge" />
+          <Caption value="Discharge" />
+          <Description value="Discharge" />
+          <Value value="Discharge" />
+        </AttributeEnumValue>
+        <AttributeEnumValue>
+          <Name value="DischargeID" />
+          <Caption value="Discharge ID" />
+          <Description value="DischargeID" />
+          <Value value="DischargeID" />
+        </AttributeEnumValue>
+        <AttributeEnumValue>
+          <Name value="Accounting" />
+          <Caption value="Accounting" />
+          <Description value="Accounting" />
+          <Value value="Accounting" />
+        </AttributeEnumValue>
+        <AttributeEnumValue>
+          <Name value="AccountingSI" />
+          <Caption value="Accounting SI" />
+          <Description value="AccountingSI" />
+          <Value value="AccountingSI" />
+        </AttributeEnumValue>
+        <AttributeEnumValue>
+          <Name value="Output" />
+          <Caption value="Output" />
+          <Description value="Output" />
+          <Value value="Output" />
+        </AttributeEnumValue>
+        <AttributeEnumValue>
+          <Name value="GoodsTS" />
+          <Caption value="Goods TS" />
+          <Description value="GoodsTS" />
+          <Value value="GoodsTS" />
+        </AttributeEnumValue>
+        <AttributeEnumValue>
+          <Name value="Exemption" />
+          <Caption value="Exemption" />
+          <Description value="Exemption" />
+          <Value value="Exemption" />
+        </AttributeEnumValue>
+        <AttributeEnumValue>
+          <Name value="Manipulation" />
+          <Caption value="Manipulation" />
+          <Description value="Manipulation" />
+          <Value value="Manipulation" />
+        </AttributeEnumValue>
+      </EnumValues>
+    </AttributeType>
+  </TypeSpec>
+</MetaType>

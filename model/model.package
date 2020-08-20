@@ -10,6 +10,12 @@
         <PackageItem Src="Messages\PLData.dataEntity" />
         <PackageItem Src="Messages\SECData.dataEntity" />
         <PackageItem Src="Messages\SPData.dataEntity" />
+        <PackageItem Src="Messages\AMSSPApplication.dataEntity" />
+        <PackageItem Src="Messages\AMSSPApplicationModification.dataEntity" />
+        <PackageItem Src="Messages\AMSSPApplicationRejection.dataEntity" />
+        <PackageItem Src="Messages\AMSSPAuthorization.dataEntity" />
+        <PackageItem Src="Messages\AMSSPAuthorizationModification.dataEntity" />
+        <PackageItem Src="Messages\AMSSPAuthorizationWithdrawal.dataEntity" />
       </Items>
     </PackageFolder>
     <PackageFolder Name="MetaTypes">
@@ -23,12 +29,14 @@
         <PackageItem Src="MetaTypes\PostCode.metaType" />
         <PackageItem Src="MetaTypes\Pracovnik.metaType" />
         <PackageItem Src="MetaTypes\OperatorName.metaType" />
-        <PackageItem Src="MetaTypes\String100_type.metaType" />
         <PackageItem Src="MetaTypes\String200_type.metaType" />
         <PackageItem Src="MetaTypes\GuaranteeType.metaType" />
         <PackageItem Src="MetaTypes\GRN.metaType" />
         <PackageItem Src="MetaTypes\PeriodDuration.metaType" />
         <PackageItem Src="MetaTypes\SealIdType.metaType" />
+        <PackageItem Src="MetaTypes\CSRD2CodelistDescription.metaType" />
+        <PackageItem Src="MetaTypes\ASState.metaType" />
+        <PackageItem Src="MetaTypes\CisloZJPPovoleni.metaType" />
       </Items>
     </PackageFolder>
     <PackageFolder Name="Enumerations">
@@ -42,9 +50,29 @@
     </PackageFolder>
     <PackageFolder Name="CodeLists">
       <Items>
-        <PackageItem Src="CodeLists\CustomsOffice.dataEntity" />
         <PackageItem Src="CodeLists\codeListDescription.customExpressionFunction" />
         <PackageItem Src="CodeLists\MJT.dataEntity" />
+        <PackageItem Src="CodeLists\CustomsOffices.dataEntity" />
+        <PackageItem Src="CodeLists\RepresentativeStatusCode.dataEntity" />
+        <PackageItem Src="CodeLists\AMSAuthorizationType.dataEntity" />
+        <PackageItem Src="CodeLists\CountryCodesFullList.dataEntity" />
+        <PackageItem Src="CodeLists\AMSAuthorizationWithdrawalReason.dataEntity" />
+        <PackageItem Src="CodeLists\AMSApplicationRejectionReason.dataEntity" />
+        <PackageItem Src="CodeLists\CommodityCode.dataEntity" />
+        <PackageItem Src="CodeLists\TYPMANCS.dataEntity" />
+        <PackageItem Src="CodeLists\REZIM4.dataEntity" />
+        <PackageItem Src="CodeLists\CEL_UR.dataEntity" />
+      </Items>
+    </PackageFolder>
+    <PackageFolder Name="Datasets">
+      <Items>
+        <PackageItem Src="Datasets\DatasetPWEIClient.dataEntity" />
+        <PackageItem Src="Datasets\DatasetSPClient.dataEntity" />
+        <PackageItem Src="Datasets\DatasetPlace.dataEntity" />
+        <PackageItem Src="Datasets\DatasetControl.dataEntity" />
+        <PackageItem Src="Datasets\DatasetOtherClient.dataEntity" />
+        <PackageItem Src="Datasets\DatasetAuditSubject.dataEntity" />
+        <PackageItem Src="Datasets\DatasetElComm.dataEntity" />
       </Items>
     </PackageFolder>
   </Items>
