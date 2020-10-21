@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<PackageLocalizations>
+  <Name value="localizations" />
+  <Strings>
+    <LocalizedString LocID="AppVersion">
+      <Values>
+        <LocaleValue Lang="cs" Value="App version" />
+        <LocaleValue Lang="EN" Value="App version" />
+        <LocaleValue Lang="ME" Value="App version" />
+        <LocaleValue Lang="en" Value="AppVersion" />
+        <LocaleValue Lang="me" Value="AppVersion" />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="Mode">
+      <Values>
+        <LocaleValue Lang="cs" Value="Mode" />
+        <LocaleValue Lang="EN" Value="Mode" />
+        <LocaleValue Lang="ME" Value="Mode" />
+        <LocaleValue Lang="en" Value="Mode" />
+        <LocaleValue Lang="me" Value="Mode" />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="Transit">
+      <Values>
+        <LocaleValue Lang="cs" Value="Transit" />
+        <LocaleValue Lang="EN" Value="Transit" />
+        <LocaleValue Lang="ME" Value="Transit" />
+        <LocaleValue Lang="en" Value="Transit" />
+        <LocaleValue Lang="me" Value="Transit" />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="Places">
+      <Values>
+        <LocaleValue Lang="cs" Value="Places" />
+        <LocaleValue Lang="EN" Value="Places" />
+        <LocaleValue Lang="ME" Value="Places" />
+        <LocaleValue Lang="en" Value="Places" />
+        <LocaleValue Lang="me" Value="Places" />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="Communication">
+      <Values>
+        <LocaleValue Lang="cs" Value="Communication" />
+        <LocaleValue Lang="EN" Value="Communication" />
+        <LocaleValue Lang="ME" Value="Communication" />
+        <LocaleValue Lang="en" Value="Communication" />
+        <LocaleValue Lang="me" Value="Communication" />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="Language">
+      <Values>
+        <LocaleValue Lang="cs" Value="Language" />
+        <LocaleValue Lang="EN" Value="Language" />
+        <LocaleValue Lang="ME" Value="Language" />
+        <LocaleValue Lang="en" Value="Language" />
+        <LocaleValue Lang="me" Value="Language" />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="User">
+      <Values>
+        <LocaleValue Lang="cs" Value="User" />
+        <LocaleValue Lang="EN" Value="User" />
+        <LocaleValue Lang="ME" Value="User" />
+        <LocaleValue Lang="en" Value="User" />
+        <LocaleValue Lang="me" Value="User" />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="CustomsOffice">
+      <Values>
+        <LocaleValue Lang="cs" Value="Customs office" />
+        <LocaleValue Lang="EN" Value="Customs office" />
+        <LocaleValue Lang="ME" Value="Customs office" />
+        <LocaleValue Lang="en" Value="CustomsOffice" />
+        <LocaleValue Lang="me" Value="CustomsOffice" />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="WideMode">
+      <Values>
+        <LocaleValue Lang="cs" Value="Wide mode" />
+        <LocaleValue Lang="EN" Value="Wide mode" />
+        <LocaleValue Lang="ME" Value="Wide mode" />
+        <LocaleValue Lang="en" Value="WideMode" />
+        <LocaleValue Lang="me" Value="WideMode" />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="ColorizeMode">
+      <Values>
+        <LocaleValue Lang="cs" Value="ColorizeMode" />
+        <LocaleValue Lang="EN" Value="Colorized mode" />
+        <LocaleValue Lang="ME" Value="Colorized mode" />
+        <LocaleValue Lang="en" Value="ColorizeMode" />
+        <LocaleValue Lang="me" Value="ColorizeMode" />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="ChangeCustomsOffice">
+      <Values>
+        <LocaleValue Lang="cs" Value="Change Customs office" />
+        <LocaleValue Lang="EN" Value="Change customs office" />
+        <LocaleValue Lang="ME" Value="Change customs office" />
+        <LocaleValue Lang="en" Value="ChangeCustomsOffice" />
+        <LocaleValue Lang="me" Value="ChangeCustomsOffice" />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="Version">
+      <Values>
+        <LocaleValue Lang="cs" Value="Version" />
+        <LocaleValue Lang="EN" Value="Version" />
+        <LocaleValue Lang="ME" Value="Version" />
+        <LocaleValue Lang="en" Value="Version" />
+        <LocaleValue Lang="me" Value="Version" />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="AMS">
+      <Values>
+        <LocaleValue Lang="cs" Value="AMS" />
+        <LocaleValue Lang="EN" Value="AMS Int ME" />
+        <LocaleValue Lang="ME" Value="AMS Int ME" />
+        <LocaleValue Lang="en" Value="AMS" />
+        <LocaleValue Lang="me" Value="AMS" />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="Master">
+      <Values>
+        <LocaleValue Lang="cs" Value="Master" />
+        <LocaleValue Lang="EN" Value="Master" />
+        <LocaleValue Lang="ME" Value="Master" />
+        <LocaleValue Lang="en" Value="Master" />
+        <LocaleValue Lang="me" Value="Master" />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="AMSKlientMontenegro">
+      <Values>
+        <LocaleValue Lang="cs" Value="AMS klient - Montenegro" />
+        <LocaleValue Lang="EN" Value="AMS client Montenegro" />
+        <LocaleValue Lang="ME" Value="AMS client Montenegro" />
+        <LocaleValue Lang="en" Value="AMSKlientMontenegro" />
+        <LocaleValue Lang="me" Value="AMSKlientMontenegro" />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="COME123450">
+      <Values>
+        <LocaleValue Lang="cs" Value="CO: ME123450" />
+        <LocaleValue Lang="EN" Value="COME123450" />
+        <LocaleValue Lang="ME" Value="COME123450" />
+        <LocaleValue Lang="en" Value="COME123450" />
+        <LocaleValue Lang="me" Value="COME123450" />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="NotAuthentificated">
+      <Values>
+        <LocaleValue Lang="cs" Value="not authentificated" />
+        <LocaleValue Lang="EN" Value="NotAuthentificated" />
+        <LocaleValue Lang="ME" Value="NotAuthentificated" />
+        <LocaleValue Lang="en" Value="NotAuthentificated" />
+        <LocaleValue Lang="me" Value="NotAuthentificated" />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="RoleReadFilesWriteReactivation">
+      <Values>
+        <LocaleValue Lang="cs" Value="Role: Read, Files, Write, Reactivation" />
+        <LocaleValue Lang="EN" Value="Role" />
+        <LocaleValue Lang="ME" Value="Role" />
+        <LocaleValue Lang="en" Value="RoleReadFilesWriteReactivation" />
+        <LocaleValue Lang="me" Value="RoleReadFilesWriteReactivation" />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="LocalizedString1">
+      <Values>
+        <LocaleValue Lang="cs" />
+      </Values>
+    </LocalizedString>
+  </Strings>
+</PackageLocalizations>

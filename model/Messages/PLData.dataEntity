@@ -5,6 +5,16 @@
   <Caption value="PLData" />
   <MtsImportOptions.MTS.ID value="/PLData" />
   <MtsImportOptions.MTS.Type value="message" />
+  <PropertyLocalizationData.PropertyLocalizations>
+    <PropertyLocalizationData>
+      <LocalizedProperties>
+        <LocalizedProperty>
+          <Localization reference="+Localizations.PLData" />
+          <PropertyName value="Caption" />
+        </LocalizedProperty>
+      </LocalizedProperties>
+    </PropertyLocalizationData>
+  </PropertyLocalizationData.PropertyLocalizations>
   <Children>
     <Attribute>
       <Name value="Country" />
@@ -12,12 +22,22 @@
       <MetaType reference="+MetaTypes.Zeme" />
       <MtsImportOptions.MTS.ID value="/PLData/Country" />
       <MtsImportOptions.MTS.Type value="element" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.KodZeme" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
       <Validators>
         <Validator Name="regex">
           <MtsImportOptions.MTS.Regex value="[A-Z]{2}" />
           <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
           <ErrorMessage IsValid="True">
-            <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+            <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
             <ResultType>
               <BaseType value="String" />
             </ResultType>
@@ -37,6 +57,16 @@
       <MetaType reference="+MetaTypes.AMSID" />
       <MtsImportOptions.MTS.ID value="/PLData/PlaceID" />
       <MtsImportOptions.MTS.Type value="element" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.EvidencniCislo" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="ResponsibleCustomsOfiice" />
@@ -44,12 +74,22 @@
       <MetaType reference="+MetaTypes.CustomsOfficeRefNum_type" />
       <MtsImportOptions.MTS.ID value="/PLData/ResponsibleCustomsOfiice" />
       <MtsImportOptions.MTS.Type value="element" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.VydavajiciAZodpovednyCU" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
       <Validators>
         <Validator Name="regex">
           <MtsImportOptions.MTS.Regex value="[A-Z]{2}[A-Z0-9]{6}" />
           <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
           <ErrorMessage IsValid="True">
-            <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+            <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
             <ResultType>
               <BaseType value="String" />
             </ResultType>
@@ -69,6 +109,16 @@
       <MetaType reference="+MetaTypes.TIN" />
       <MtsImportOptions.MTS.ID value="/PLData/TIN" />
       <MtsImportOptions.MTS.Type value="element" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.TINSubjektuProNejzJeMistoPlatne" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="TinName" />
@@ -80,6 +130,16 @@
           <StrMaxLength value="255" />
         </AttributeType>
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.NazevSubjektu" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="GUID" />
@@ -89,6 +149,16 @@
       <DeclaredType>
         <AttributeType />
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.GUID" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="State" />
@@ -100,6 +170,16 @@
           <StrMaxLength value="20" />
         </AttributeType>
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.Stav" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Complex>
       <Name value="PlaceDetail" />
@@ -107,6 +187,16 @@
       <IsRequired value="True" />
       <MtsImportOptions.MTS.ID value="/PLData/PlaceDetail" />
       <MtsImportOptions.MTS.Type value="group" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.DetailMista" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
       <Children>
         <Attribute>
           <Name value="ValidityCustomsOffice" />
@@ -114,12 +204,22 @@
           <MetaType reference="+MetaTypes.CustomsOfficeRefNum_type" />
           <MtsImportOptions.MTS.ID value="/PLData/PlaceDetail/ValidityCustomsOffice" />
           <MtsImportOptions.MTS.Type value="element" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.CUPlatnosti" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
           <Validators>
             <Validator Name="regex">
               <MtsImportOptions.MTS.Regex value="[A-Z]{2}[A-Z0-9]{6}" />
               <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
               <ErrorMessage IsValid="True">
-                <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+                <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
                 <ResultType>
                   <BaseType value="String" />
                 </ResultType>
@@ -143,6 +243,16 @@
               <StrMaxLength value="300" />
             </AttributeType>
           </DeclaredType>
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.OznaceniMista" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
         </Attribute>
         <Attribute>
           <Name value="StreetAndNr" />
@@ -150,6 +260,16 @@
           <MetaType reference="+MetaTypes.StreetAndNr" />
           <MtsImportOptions.MTS.ID value="/PLData/PlaceDetail/StreetAndNr" />
           <MtsImportOptions.MTS.Type value="element" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.UliceACP" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
         </Attribute>
         <Attribute>
           <Name value="City" />
@@ -157,6 +277,16 @@
           <MetaType reference="+MetaTypes.City" />
           <MtsImportOptions.MTS.ID value="/PLData/PlaceDetail/City" />
           <MtsImportOptions.MTS.Type value="element" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.Mesto" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
         </Attribute>
         <Attribute>
           <Name value="PostCode" />
@@ -164,6 +294,16 @@
           <MetaType reference="+MetaTypes.PostCode" />
           <MtsImportOptions.MTS.ID value="/PLData/PlaceDetail/PostCode" />
           <MtsImportOptions.MTS.Type value="element" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.PSC" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
         </Attribute>
         <Attribute>
           <Name value="Country" />
@@ -171,12 +311,22 @@
           <MetaType reference="+MetaTypes.Zeme" />
           <MtsImportOptions.MTS.ID value="/PLData/PlaceDetail/Country" />
           <MtsImportOptions.MTS.Type value="element" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.Zeme" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
           <Validators>
             <Validator Name="regex">
               <MtsImportOptions.MTS.Regex value="[A-Z]{2}" />
               <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
               <ErrorMessage IsValid="True">
-                <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+                <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
                 <ResultType>
                   <BaseType value="String" />
                 </ResultType>
@@ -200,6 +350,16 @@
               <BaseType value="DateTime" />
             </AttributeType>
           </DeclaredType>
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.PocatekPlatnosti" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
         </Attribute>
         <Attribute>
           <Name value="ValidityEndDate" />
@@ -211,6 +371,16 @@
               <BaseType value="DateTime" />
             </AttributeType>
           </DeclaredType>
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.KonecPlatnosti" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
         </Attribute>
         <Attribute>
           <Name value="ResponsiblePerson" />
@@ -218,6 +388,16 @@
           <MetaType reference="+MetaTypes.Pracovnik" />
           <MtsImportOptions.MTS.ID value="/PLData/PlaceDetail/ResponsiblePerson" />
           <MtsImportOptions.MTS.Type value="element" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.OsobaCUZodpovednaZaVydan69F811B6" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
         </Attribute>
         <Attribute>
           <Name value="GUID" />
@@ -227,6 +407,16 @@
           <DeclaredType>
             <AttributeType />
           </DeclaredType>
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.GUID" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
         </Attribute>
         <Attribute>
           <Name value="EvidenceDate" />
@@ -238,6 +428,16 @@
               <BaseType value="DateTime" />
             </AttributeType>
           </DeclaredType>
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.DatumEvidence" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
         </Attribute>
         <Attribute>
           <Name value="PlaceSpecification" />
@@ -249,6 +449,16 @@
               <StrMaxLength value="300" />
             </AttributeType>
           </DeclaredType>
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.SpecifikaceMista" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
         </Attribute>
       </Children>
     </Complex>

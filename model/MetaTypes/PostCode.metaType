@@ -5,9 +5,19 @@
   <Caption value="PSČ" />
   <MtsImportOptions.MTS.ID value="PostCode" />
   <MtsImportOptions.MTS.Type value="metatype" />
+  <PropertyLocalizationData.PropertyLocalizations>
+    <PropertyLocalizationData>
+      <LocalizedProperties>
+        <LocalizedProperty>
+          <Localization reference="+Localizations.PSC" />
+          <PropertyName value="Caption" />
+        </LocalizedProperty>
+      </LocalizedProperties>
+    </PropertyLocalizationData>
+  </PropertyLocalizationData.PropertyLocalizations>
   <TypeSpec>
     <AttributeType>
-      <StrMaxLength value="9" />
+      <StrMaxLength value="17" />
     </AttributeType>
   </TypeSpec>
 </MetaType>

@@ -5,6 +5,16 @@
   <Caption value="Dataset Schválených míst" />
   <MtsImportOptions.MTS.ID value="DatasetPlace" />
   <MtsImportOptions.MTS.Type value="client-dataset" />
+  <PropertyLocalizationData.PropertyLocalizations>
+    <PropertyLocalizationData>
+      <LocalizedProperties>
+        <LocalizedProperty>
+          <Localization reference="+Localizations.DatasetSchvalenychMist" />
+          <PropertyName value="Caption" />
+        </LocalizedProperty>
+      </LocalizedProperties>
+    </PropertyLocalizationData>
+  </PropertyLocalizationData.PropertyLocalizations>
   <Children>
     <Attribute>
       <Name value="Country" />
@@ -12,12 +22,22 @@
       <MetaType reference="+MetaTypes.Zeme" />
       <MtsImportOptions.MTS.ID value="DatasetPlace/Country" />
       <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.KodZeme" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
       <Validators>
         <Validator Name="regex">
           <MtsImportOptions.MTS.Regex value="[A-Z]{2}" />
           <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
           <ErrorMessage IsValid="True">
-            <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+            <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
             <ResultType>
               <BaseType value="String" />
             </ResultType>
@@ -37,6 +57,16 @@
       <MetaType reference="+MetaTypes.AMSID" />
       <MtsImportOptions.MTS.ID value="DatasetPlace/PlaceID" />
       <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.EvidencniCislo" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="ResponsibleCustomsOffice" />
@@ -44,12 +74,22 @@
       <MetaType reference="+MetaTypes.CustomsOfficeRefNum_type" />
       <MtsImportOptions.MTS.ID value="DatasetPlace/ResponsibleCustomsOffice" />
       <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.VydavajiciAZodpovednyCU" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
       <Validators>
         <Validator Name="regex">
           <MtsImportOptions.MTS.Regex value="[A-Z]{2}[A-Z0-9]{6}" />
           <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
           <ErrorMessage IsValid="True">
-            <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+            <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
             <ResultType>
               <BaseType value="String" />
             </ResultType>
@@ -69,6 +109,16 @@
       <MetaType reference="+MetaTypes.TIN" />
       <MtsImportOptions.MTS.ID value="DatasetPlace/TIN" />
       <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.TINSubjektuProNejzJeMistoPlatne" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="TinName" />
@@ -80,6 +130,16 @@
           <StrMaxLength value="255" />
         </AttributeType>
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.NazevSubjektu" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="GUID" />
@@ -90,6 +150,16 @@
       <DeclaredType>
         <AttributeType />
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.GUID" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="State" />
@@ -101,6 +171,16 @@
           <StrMaxLength value="20" />
         </AttributeType>
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.Stav" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="Name" />
@@ -112,6 +192,16 @@
           <StrMaxLength value="300" />
         </AttributeType>
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.OznaceniMista1" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="ValidityStartDate" />
@@ -123,6 +213,16 @@
           <BaseType value="DateTime" />
         </AttributeType>
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.PocatekPlatnosti" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="ValidityEndDate" />
@@ -134,6 +234,16 @@
           <BaseType value="DateTime" />
         </AttributeType>
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.KonecPlatnosti" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="ValidityCustomsOffice" />
@@ -141,12 +251,22 @@
       <MetaType reference="+MetaTypes.CustomsOfficeRefNum_type" />
       <MtsImportOptions.MTS.ID value="DatasetPlace/ValidityCustomsOffice" />
       <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.CUPlatnosti" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
       <Validators>
         <Validator Name="regex">
           <MtsImportOptions.MTS.Regex value="[A-Z]{2}[A-Z0-9]{6}" />
           <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
           <ErrorMessage IsValid="True">
-            <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+            <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
             <ResultType>
               <BaseType value="String" />
             </ResultType>

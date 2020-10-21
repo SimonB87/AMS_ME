@@ -5,9 +5,19 @@
   <Caption value="Ulice a č.p." />
   <MtsImportOptions.MTS.ID value="StreetAndNr" />
   <MtsImportOptions.MTS.Type value="metatype" />
+  <PropertyLocalizationData.PropertyLocalizations>
+    <PropertyLocalizationData>
+      <LocalizedProperties>
+        <LocalizedProperty>
+          <Localization reference="+Localizations.UliceACP" />
+          <PropertyName value="Caption" />
+        </LocalizedProperty>
+      </LocalizedProperties>
+    </PropertyLocalizationData>
+  </PropertyLocalizationData.PropertyLocalizations>
   <TypeSpec>
     <AttributeType>
-      <StrMaxLength value="50" />
+      <StrMaxLength value="70" />
     </AttributeType>
   </TypeSpec>
 </MetaType>

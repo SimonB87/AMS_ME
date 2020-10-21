@@ -5,6 +5,16 @@
   <Caption value="Dataset elektronické komunikace" />
   <MtsImportOptions.MTS.ID value="DatasetElComm" />
   <MtsImportOptions.MTS.Type value="client-dataset" />
+  <PropertyLocalizationData.PropertyLocalizations>
+    <PropertyLocalizationData>
+      <LocalizedProperties>
+        <LocalizedProperty>
+          <Localization reference="+Localizations.DatasetElektronickeKomunikace" />
+          <PropertyName value="Caption" />
+        </LocalizedProperty>
+      </LocalizedProperties>
+    </PropertyLocalizationData>
+  </PropertyLocalizationData.PropertyLocalizations>
   <Children>
     <Attribute>
       <Name value="GUID" />
@@ -15,6 +25,16 @@
       <DeclaredType>
         <AttributeType />
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.GUID" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="IssuingCountry" />
@@ -23,12 +43,22 @@
       <MetaType reference="+MetaTypes.Zeme" />
       <MtsImportOptions.MTS.ID value="DatasetElComm/IssuingCountry" />
       <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.VydavajiciZeme" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
       <Validators>
         <Validator Name="regex">
           <MtsImportOptions.MTS.Regex value="[A-Z]{2}" />
           <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
           <ErrorMessage IsValid="True">
-            <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+            <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
             <ResultType>
               <BaseType value="String" />
             </ResultType>
@@ -49,6 +79,16 @@
       <MetaType reference="+MetaTypes.TIN" />
       <MtsImportOptions.MTS.ID value="DatasetElComm/TIN" />
       <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.TINEORICislo" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="State" />
@@ -57,6 +97,16 @@
       <MetaType reference="+MetaTypes.ASState" />
       <MtsImportOptions.MTS.ID value="DatasetElComm/State" />
       <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.Stav" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="StateName" />
@@ -64,6 +114,16 @@
       <MetaType reference="+MetaTypes.String200_type" />
       <MtsImportOptions.MTS.ID value="DatasetElComm/StateName" />
       <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.Stav" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="AuthorizationType" />
@@ -77,6 +137,16 @@
           <StrMinLength value="3" />
         </AttributeType>
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.TypPovoleni" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="AuthorizationTypeName" />
@@ -84,6 +154,16 @@
       <MetaType reference="+MetaTypes.String200_type" />
       <MtsImportOptions.MTS.ID value="DatasetElComm/AuthorizationTypeName" />
       <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.TypPovoleni" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="ResponsibleCustomsOffice" />
@@ -92,12 +172,22 @@
       <MetaType reference="+MetaTypes.CustomsOfficeRefNum_type" />
       <MtsImportOptions.MTS.ID value="DatasetElComm/ResponsibleCustomsOffice" />
       <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.CelniUradZodpovednyZaMod572FCE8D" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
       <Validators>
         <Validator Name="regex">
           <MtsImportOptions.MTS.Regex value="[A-Z]{2}[A-Z0-9]{6}" />
           <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
           <ErrorMessage IsValid="True">
-            <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+            <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
             <ResultType>
               <BaseType value="String" />
             </ResultType>
@@ -117,6 +207,16 @@
       <MetaType reference="+MetaTypes.OperatorName" />
       <MtsImportOptions.MTS.ID value="DatasetElComm/OperatorName" />
       <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.NazevDrzitelePovoleni" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="OperatorStreetAndNr" />
@@ -124,6 +224,16 @@
       <MetaType reference="+MetaTypes.StreetAndNr" />
       <MtsImportOptions.MTS.ID value="DatasetElComm/OperatorStreetAndNr" />
       <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.UliceACPSidla" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="OperatorCity" />
@@ -131,6 +241,16 @@
       <MetaType reference="+MetaTypes.City" />
       <MtsImportOptions.MTS.ID value="DatasetElComm/OperatorCity" />
       <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.MestoSidlaSubjektu" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="OperatorPostCode" />
@@ -138,6 +258,16 @@
       <MetaType reference="+MetaTypes.PostCode" />
       <MtsImportOptions.MTS.ID value="DatasetElComm/OperatorPostCode" />
       <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.PSC" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="OperatorCountry" />
@@ -150,12 +280,22 @@
           <StrMinLength value="2" />
         </AttributeType>
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.ZemeSidlaSubjektu" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
       <Validators>
         <Validator Name="regex">
           <MtsImportOptions.MTS.Regex value="[A-Z]{2}" />
           <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
           <ErrorMessage IsValid="True">
-            <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+            <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
             <ResultType>
               <BaseType value="String" />
             </ResultType>
@@ -179,6 +319,16 @@
           <BaseType value="Date" />
         </AttributeType>
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.DatumVydaniRozhodnuti" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="ValidityStartDate" />
@@ -190,6 +340,16 @@
           <BaseType value="DateTime" />
         </AttributeType>
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.RozhodnutiPlatneOd" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="EvidenceDate" />
@@ -201,6 +361,16 @@
           <BaseType value="DateTime" />
         </AttributeType>
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.EvidenceDate" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="DecidingCustomsOffice" />
@@ -208,12 +378,22 @@
       <MetaType reference="+MetaTypes.CustomsOfficeRefNum_type" />
       <MtsImportOptions.MTS.ID value="DatasetElComm/DecidingCustomsOffice" />
       <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.RozhodujiciCelniUrad" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
       <Validators>
         <Validator Name="regex">
           <MtsImportOptions.MTS.Regex value="[A-Z]{2}[A-Z0-9]{6}" />
           <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
           <ErrorMessage IsValid="True">
-            <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+            <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
             <ResultType>
               <BaseType value="String" />
             </ResultType>
@@ -237,6 +417,16 @@
           <BaseType value="DateTime" />
         </AttributeType>
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.KonecPlatnostiTetoUdalosBDF4EAC3" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="LimitedAuthorizationValidity" />
@@ -248,6 +438,16 @@
           <BaseType value="Bool" />
         </AttributeType>
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.JeDelkaPlatnostiOmezena" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="AuthorizationValidUntil" />
@@ -259,6 +459,16 @@
           <BaseType value="Date" />
         </AttributeType>
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.RozhodnutiPlatneDo" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="EventType" />
@@ -271,12 +481,22 @@
           <StrMinLength value="2" />
         </AttributeType>
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.TypUdalostiRozhodnuti" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
       <Validators>
         <Validator Name="regex">
           <MtsImportOptions.MTS.Regex value="[A-Za-z]*" />
           <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
           <ErrorMessage IsValid="True">
-            <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+            <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
             <ResultType>
               <BaseType value="String" />
             </ResultType>
@@ -300,6 +520,16 @@
           <BaseType value="Bool" />
         </AttributeType>
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.Zruseno" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="ApplicationSubmissionDate" />
@@ -311,6 +541,16 @@
           <BaseType value="Date" />
         </AttributeType>
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.DatumPodaniZadosti" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="DecisionStartDate" />
@@ -322,6 +562,16 @@
           <BaseType value="DateTime" />
         </AttributeType>
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.DatumRozhodnuti" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="AMSCompleteID" />
@@ -330,15 +580,25 @@
       <MtsImportOptions.MTS.Type value="client-dataset-item" />
       <DeclaredType>
         <AttributeType>
-          <StrMaxLength value="22" />
+          <StrMaxLength value="27" />
         </AttributeType>
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.AMSIDVcetneZeme" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
       <Validators>
         <Validator Name="regex">
           <MtsImportOptions.MTS.Regex value="ME[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}" />
           <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
           <ErrorMessage IsValid="True">
-            <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+            <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
             <ResultType>
               <BaseType value="String" />
             </ResultType>
@@ -362,6 +622,16 @@
           <StrMaxLength value="10" />
         </AttributeType>
       </DeclaredType>
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.TypAMSPovoleni" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
     </Attribute>
     <Attribute>
       <Name value="AMSID" />
@@ -369,12 +639,22 @@
       <MetaType reference="+MetaTypes.CisloZJPPovoleni" />
       <MtsImportOptions.MTS.ID value="DatasetElComm/AMSID" />
       <MtsImportOptions.MTS.Type value="client-dataset-item" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.EvidencniCisloPovoleni" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
       <Validators>
         <Validator Name="regex">
           <MtsImportOptions.MTS.Regex value="ME[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}" />
           <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
           <ErrorMessage IsValid="True">
-            <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+            <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
             <ResultType>
               <BaseType value="String" />
             </ResultType>

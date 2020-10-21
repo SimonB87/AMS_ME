@@ -17,5 +17,6 @@
     <PackageItem Src="globalApiObjects.globalApiObjects" />
     <PackageItem Src="globalVariables.globalVariables" />
     <PackageItem Src="mode.metaType" />
+    <PackageItem Src="localizations.packageLocalizations" />
   </Items>
 </Package>

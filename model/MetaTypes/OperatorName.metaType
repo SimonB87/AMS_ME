@@ -5,6 +5,16 @@
   <Caption value="Název firmy" />
   <MtsImportOptions.MTS.ID value="OperatorName" />
   <MtsImportOptions.MTS.Type value="metatype" />
+  <PropertyLocalizationData.PropertyLocalizations>
+    <PropertyLocalizationData>
+      <LocalizedProperties>
+        <LocalizedProperty>
+          <Localization reference="+Localizations.NazevFirmy" />
+          <PropertyName value="Caption" />
+        </LocalizedProperty>
+      </LocalizedProperties>
+    </PropertyLocalizationData>
+  </PropertyLocalizationData.PropertyLocalizations>
   <TypeSpec>
     <AttributeType>
       <StrMaxLength value="300" />

@@ -5,6 +5,16 @@
   <Caption value="Typ zajištění" />
   <MtsImportOptions.MTS.ID value="GuaranteeType" />
   <MtsImportOptions.MTS.Type value="metatype" />
+  <PropertyLocalizationData.PropertyLocalizations>
+    <PropertyLocalizationData>
+      <LocalizedProperties>
+        <LocalizedProperty>
+          <Localization reference="+Localizations.TypZajisteni" />
+          <PropertyName value="Caption" />
+        </LocalizedProperty>
+      </LocalizedProperties>
+    </PropertyLocalizationData>
+  </PropertyLocalizationData.PropertyLocalizations>
   <TypeSpec>
     <AttributeType>
       <StrMaxLength value="4" />

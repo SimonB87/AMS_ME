@@ -5,6 +5,16 @@
   <Caption value="CS/RD2 Codelist description" />
   <MtsImportOptions.MTS.ID value="CSRD2CodelistDescription" />
   <MtsImportOptions.MTS.Type value="metatype" />
+  <PropertyLocalizationData.PropertyLocalizations>
+    <PropertyLocalizationData>
+      <LocalizedProperties>
+        <LocalizedProperty>
+          <Localization reference="+Localizations.CSRD2CodelistDescription" />
+          <PropertyName value="Caption" />
+        </LocalizedProperty>
+      </LocalizedProperties>
+    </PropertyLocalizationData>
+  </PropertyLocalizationData.PropertyLocalizations>
   <TypeSpec>
     <AttributeType>
       <StrMaxLength value="512" />

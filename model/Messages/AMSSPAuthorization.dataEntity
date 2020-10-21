@@ -5,6 +5,16 @@
   <Caption value="ZJP povolení" />
   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization" />
   <MtsImportOptions.MTS.Type value="message" />
+  <PropertyLocalizationData.PropertyLocalizations>
+    <PropertyLocalizationData>
+      <LocalizedProperties>
+        <LocalizedProperty>
+          <Localization reference="+Localizations.ZJPPovoleni" />
+          <PropertyName value="Caption" />
+        </LocalizedProperty>
+      </LocalizedProperties>
+    </PropertyLocalizationData>
+  </PropertyLocalizationData.PropertyLocalizations>
   <Children>
     <Complex>
       <Name value="AMS" />
@@ -13,6 +23,16 @@
       <IsRequired value="True" />
       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS" />
       <MtsImportOptions.MTS.Type value="group" />
+      <PropertyLocalizationData.PropertyLocalizations>
+        <PropertyLocalizationData>
+          <LocalizedProperties>
+            <LocalizedProperty>
+              <Localization reference="+Localizations.AMS" />
+              <PropertyName value="Caption" />
+            </LocalizedProperty>
+          </LocalizedProperties>
+        </PropertyLocalizationData>
+      </PropertyLocalizationData.PropertyLocalizations>
       <Children>
         <Attribute>
           <Name value="GUID" />
@@ -22,6 +42,16 @@
           <DeclaredType>
             <AttributeType />
           </DeclaredType>
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.GUID" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
         </Attribute>
         <Attribute>
           <Name value="IssuingCountry" />
@@ -29,12 +59,22 @@
           <MetaType reference="+MetaTypes.Zeme" />
           <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/IssuingCountry" />
           <MtsImportOptions.MTS.Type value="element" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.VydavajiciZeme" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
           <Validators>
             <Validator Name="regex">
               <MtsImportOptions.MTS.Regex value="[A-Z]{2}" />
               <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
               <ErrorMessage IsValid="True">
-                <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+                <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
                 <ResultType>
                   <BaseType value="String" />
                 </ResultType>
@@ -55,6 +95,16 @@
           <MetaType reference="+MetaTypes.TIN" />
           <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/TIN" />
           <MtsImportOptions.MTS.Type value="element" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.TINEORICislo" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
         </Attribute>
         <Reference>
           <Name value="AuthorizationType" />
@@ -62,6 +112,16 @@
           <IsRequired value="True" />
           <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/AuthorizationType" />
           <MtsImportOptions.MTS.Type value="element" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.TypPovoleniZJP" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
           <Children>
             <Include>
               <Include reference="+DataEntities.AMSAuthorizationType" />
@@ -75,12 +135,22 @@
           <MetaType reference="+MetaTypes.CustomsOfficeRefNum_type" />
           <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/ResponsibleCustomsOffice" />
           <MtsImportOptions.MTS.Type value="element" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.CelniUradZodpovednyZaMod572FCE8D" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
           <Validators>
             <Validator Name="regex">
               <MtsImportOptions.MTS.Regex value="[A-Z]{2}[A-Z0-9]{6}" />
               <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
               <ErrorMessage IsValid="True">
-                <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+                <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
                 <ResultType>
                   <BaseType value="String" />
                 </ResultType>
@@ -100,12 +170,22 @@
           <MetaType reference="+MetaTypes.CisloZJPPovoleni" />
           <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/AMSID" />
           <MtsImportOptions.MTS.Type value="element" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.EvidencniCisloZjednoduse1CC66418" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
           <Validators>
             <Validator Name="UniqueAMSID">
               <MtsImportOptions.MTS.ID value="UniqueAMSID" />
               <MtsImportOptions.MTS.Type value="rule-constraint" />
               <ErrorMessage IsValid="True">
-                <ExpressionText><![CDATA["UniqueAMSID"]]></ExpressionText>
+                <ExpressionText><![CDATA[localized.UniqueAMSID]]></ExpressionText>
                 <ResultType>
                   <BaseType value="String" />
                 </ResultType>
@@ -121,7 +201,7 @@
               <MtsImportOptions.MTS.Regex value="ME[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}" />
               <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
               <ErrorMessage IsValid="True">
-                <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+                <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
                 <ResultType>
                   <BaseType value="String" />
                 </ResultType>
@@ -141,6 +221,16 @@
           <IsRequired value="True" />
           <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event" />
           <MtsImportOptions.MTS.Type value="group" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.UdalostRozhodnuti" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
           <Children>
             <Attribute>
               <Name value="OperatorName" />
@@ -149,6 +239,16 @@
               <MetaType reference="+MetaTypes.OperatorName" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/OperatorName" />
               <MtsImportOptions.MTS.Type value="element" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.NazevSubjektu" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Attribute>
               <Name value="OperatorStreetAndNr" />
@@ -156,6 +256,16 @@
               <MetaType reference="+MetaTypes.StreetAndNr" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/OperatorStreetAndNr" />
               <MtsImportOptions.MTS.Type value="element" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.UliceACPSidla" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Attribute>
               <Name value="OperatorCity" />
@@ -163,6 +273,16 @@
               <MetaType reference="+MetaTypes.City" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/OperatorCity" />
               <MtsImportOptions.MTS.Type value="element" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.MestoSidlaSubjektu" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Attribute>
               <Name value="OperatorPostCode" />
@@ -170,12 +290,32 @@
               <MetaType reference="+MetaTypes.PostCode" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/OperatorPostCode" />
               <MtsImportOptions.MTS.Type value="element" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.PSC" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Reference>
               <Name value="OperatorCountry" />
               <Caption value="Země sídla subjektu" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/OperatorCountry" />
               <MtsImportOptions.MTS.Type value="element" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.ZemeSidlaSubjektu" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Include>
                   <Include reference="+DataEntities.CountryCodesFullList" />
@@ -193,6 +333,16 @@
                   <StrMaxLength value="30" />
                 </AttributeType>
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.CisloJednaci" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Attribute>
               <Name value="YourMark" />
@@ -204,6 +354,16 @@
                   <StrMaxLength value="30" />
                 </AttributeType>
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.VaseZnacka" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Attribute>
               <Name value="HandledBy" />
@@ -215,6 +375,16 @@
                   <StrMaxLength value="20" />
                 </AttributeType>
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.VyrizujeLinka" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Attribute>
               <Name value="DecisionDate" />
@@ -227,6 +397,16 @@
                   <BaseType value="Date" />
                 </AttributeType>
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.DatumVydaniRozhodnuti" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Attribute>
               <Name value="ValidityStartDate" />
@@ -239,6 +419,16 @@
                   <BaseType value="DateTime" />
                 </AttributeType>
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.PlatneOd" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Attribute>
               <Name value="DecidingCustomsOffice" />
@@ -247,12 +437,22 @@
               <MetaType reference="+MetaTypes.CustomsOfficeRefNum_type" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/DecidingCustomsOffice" />
               <MtsImportOptions.MTS.Type value="element" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.RozhodujiciCelniUrad" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Validators>
                 <Validator Name="regex">
                   <MtsImportOptions.MTS.Regex value="[A-Z]{2}[A-Z0-9]{6}" />
                   <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
                   <ErrorMessage IsValid="True">
-                    <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+                    <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
                     <ResultType>
                       <BaseType value="String" />
                     </ResultType>
@@ -273,6 +473,16 @@
               <MetaType reference="+MetaTypes.Pracovnik" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/DecidingPerson" />
               <MtsImportOptions.MTS.Type value="element" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.OsobniCisloVydavateleRozhodnuti" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Collection>
               <Name value="File" />
@@ -280,6 +490,16 @@
               <MaxCount value="1000" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/File" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.SouborPrilohy" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Attribute>
                   <Name value="IsFulltext" />
@@ -292,6 +512,16 @@
                       <BaseType value="Bool" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.JePlnyTextCiJenDoplnekPl035366F9" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="FileContent" />
@@ -302,6 +532,16 @@
                   <DeclaredType>
                     <AttributeType />
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.ObsahSouboru" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="FileName" />
@@ -314,6 +554,16 @@
                       <StrMaxLength value="255" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.NazevSouboru" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="FileType" />
@@ -326,6 +576,16 @@
                       <StrMaxLength value="255" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.TypSouboru" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
               </Children>
             </Collection>
@@ -335,6 +595,16 @@
               <IsRequired value="True" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Authorization" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.ZakladniPrvkyPovoleni" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Attribute>
                   <Name value="LimitedAuthorizationValidity" />
@@ -347,6 +617,16 @@
                       <BaseType value="Bool" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.JeDelkaPlatnostiOmezena" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="AuthorizationValidUntil" />
@@ -358,12 +638,22 @@
                       <BaseType value="Date" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.RozhodnutiPlatneDo" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Validators>
                     <Validator Name="AuthValidUntil">
                       <MtsImportOptions.MTS.ID value="AuthValidUntil" />
                       <MtsImportOptions.MTS.Type value="rule-constraint" />
                       <ErrorMessage IsValid="True">
-                        <ExpressionText><![CDATA["AuthValidUntil"]]></ExpressionText>
+                        <ExpressionText><![CDATA[localized.AuthValidUntil]]></ExpressionText>
                         <ResultType>
                           <BaseType value="String" />
                         </ResultType>
@@ -379,7 +669,7 @@
                       <MtsImportOptions.MTS.ID value="ExpirationAndValidityCheck" />
                       <MtsImportOptions.MTS.Type value="rule-constraint" />
                       <ErrorMessage IsValid="True">
-                        <ExpressionText><![CDATA["ExpirationAndValidityCheck"]]></ExpressionText>
+                        <ExpressionText><![CDATA[localized.ExpirationAndValidityCheck]]></ExpressionText>
                         <ResultType>
                           <BaseType value="String" />
                         </ResultType>
@@ -395,7 +685,7 @@
                       <MtsImportOptions.MTS.ID value="LimitedValidityDate" />
                       <MtsImportOptions.MTS.Type value="condition-constraint" />
                       <ErrorMessage IsValid="True">
-                        <ExpressionText><![CDATA["LimitedValidityDate"]]></ExpressionText>
+                        <ExpressionText><![CDATA[localized.LimitedValidityDate]]></ExpressionText>
                         <ResultType>
                           <BaseType value="String" />
                         </ResultType>
@@ -420,6 +710,16 @@ THEN Authorisation Valid Until shall be filled */]]></ExpressionText>
                       <StrMaxLength value="50" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.JmenoZodpovedneOsobyNaSt4783D2C6" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="ResponsiblePersonPhone" />
@@ -431,12 +731,22 @@ THEN Authorisation Valid Until shall be filled */]]></ExpressionText>
                       <StrMaxLength value="50" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.TelefonNaZodpovednouOsob5A1F4366" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Validators>
                     <Validator Name="regex">
                       <MtsImportOptions.MTS.Regex value="\+\d+" />
                       <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
                       <ErrorMessage IsValid="True">
-                        <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+                        <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
                         <ResultType>
                           <BaseType value="String" />
                         </ResultType>
@@ -460,12 +770,22 @@ THEN Authorisation Valid Until shall be filled */]]></ExpressionText>
                       <StrMaxLength value="200" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.ResponsiblePersonEMail" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Validators>
                     <Validator Name="RespPerNotified">
                       <MtsImportOptions.MTS.ID value="RespPerNotified" />
                       <MtsImportOptions.MTS.Type value="condition-constraint" />
                       <ErrorMessage IsValid="True">
-                        <ExpressionText><![CDATA["RespPerNotified"]]></ExpressionText>
+                        <ExpressionText><![CDATA[localized.RespPerNotified]]></ExpressionText>
                         <ResultType>
                           <BaseType value="String" />
                         </ResultType>
@@ -491,6 +811,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                       <BaseType value="Bool" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.ZodpovednaOsobaChceBytNo398AC635" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
               </Children>
             </Complex>
@@ -499,6 +829,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
               <Caption value="Zbožové kódy" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/GoodsList" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.ZbozoveKody" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Attribute>
                   <Name value="GoodsListType" />
@@ -510,12 +850,22 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                       <BaseType value="Bool" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.TypVyctuZbozovychKoduPoz0DCC0D4A" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Validators>
                     <Validator Name="SPGoodsTypeMandatory">
                       <MtsImportOptions.MTS.ID value="SPGoodsTypeMandatory" />
                       <MtsImportOptions.MTS.Type value="condition-constraint" />
                       <ErrorMessage IsValid="True">
-                        <ExpressionText><![CDATA["SPGoodsTypeMandatory"]]></ExpressionText>
+                        <ExpressionText><![CDATA[localized.SPGoodsTypeMandatory]]></ExpressionText>
                         <ResultType>
                           <BaseType value="String" />
                         </ResultType>
@@ -535,6 +885,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <MaxCount value="1000" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/GoodsList/GoodsItem" />
                   <MtsImportOptions.MTS.Type value="group" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.VycetZbozovychKodu" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
                     <Reference>
                       <Name value="CNCode" />
@@ -542,6 +902,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                       <IsRequired value="True" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/GoodsList/GoodsItem/CNCode" />
                       <MtsImportOptions.MTS.Type value="element" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.ZbozovyKod" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                       <Children>
                         <Include>
                           <Include reference="+DataEntities.CommodityCode" />
@@ -559,6 +929,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                           <BaseType value="Bool" />
                         </AttributeType>
                       </DeclaredType>
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.PovolenaZakazana" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                     </Attribute>
                   </Children>
                   <ItemValidators>
@@ -566,7 +946,7 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                       <MtsImportOptions.MTS.ID value="SPGoodsTypeMandatory" />
                       <MtsImportOptions.MTS.Type value="condition-constraint" />
                       <ErrorMessage IsValid="True">
-                        <ExpressionText><![CDATA["SPGoodsTypeMandatory"]]></ExpressionText>
+                        <ExpressionText><![CDATA[localized.SPGoodsTypeMandatory]]></ExpressionText>
                         <ResultType>
                           <BaseType value="String" />
                         </ResultType>
@@ -585,6 +965,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <Caption value="Zbožové kódy - úplná data" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/GoodsList/CompleteData" />
                   <MtsImportOptions.MTS.Type value="group" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.ZbozoveKodyUplnaData" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
                     <Attribute>
                       <Name value="GoodsListType" />
@@ -597,6 +987,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                           <BaseType value="Bool" />
                         </AttributeType>
                       </DeclaredType>
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.TypVyctuZbozovychKoduPoz0DCC0D4A" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                     </Attribute>
                     <Collection>
                       <Name value="GoodsItem" />
@@ -605,6 +1005,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                       <MinCount value="1" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/GoodsList/CompleteData/GoodsItem" />
                       <MtsImportOptions.MTS.Type value="group" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.VycetZbozovychKodu" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                       <Children>
                         <Reference>
                           <Name value="CNCode" />
@@ -612,6 +1022,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                           <IsRequired value="True" />
                           <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/GoodsList/CompleteData/GoodsItem/CNCode" />
                           <MtsImportOptions.MTS.Type value="element" />
+                          <PropertyLocalizationData.PropertyLocalizations>
+                            <PropertyLocalizationData>
+                              <LocalizedProperties>
+                                <LocalizedProperty>
+                                  <Localization reference="+Localizations.ZbozovyKod" />
+                                  <PropertyName value="Caption" />
+                                </LocalizedProperty>
+                              </LocalizedProperties>
+                            </PropertyLocalizationData>
+                          </PropertyLocalizationData.PropertyLocalizations>
                           <Children>
                             <Include>
                               <Include reference="+DataEntities.CommodityCode" />
@@ -629,6 +1049,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                               <BaseType value="Bool" />
                             </AttributeType>
                           </DeclaredType>
+                          <PropertyLocalizationData.PropertyLocalizations>
+                            <PropertyLocalizationData>
+                              <LocalizedProperties>
+                                <LocalizedProperty>
+                                  <Localization reference="+Localizations.PovolenaZakazana" />
+                                  <PropertyName value="Caption" />
+                                </LocalizedProperty>
+                              </LocalizedProperties>
+                            </PropertyLocalizationData>
+                          </PropertyLocalizationData.PropertyLocalizations>
                         </Attribute>
                       </Children>
                     </Collection>
@@ -638,7 +1068,7 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                       <MtsImportOptions.MTS.ID value="SPCompleteDataMandatory" />
                       <MtsImportOptions.MTS.Type value="condition-constraint" />
                       <ErrorMessage IsValid="True">
-                        <ExpressionText><![CDATA["SPCompleteDataMandatory"]]></ExpressionText>
+                        <ExpressionText><![CDATA[localized.SPCompleteDataMandatory]]></ExpressionText>
                         <ResultType>
                           <BaseType value="String" />
                         </ResultType>
@@ -657,6 +1087,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <Caption value="Zbožové kódy - neúplná data" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/GoodsList/InCompleteData" />
                   <MtsImportOptions.MTS.Type value="group" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.ZbozoveKodyNeuplnaData" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
                     <Attribute>
                       <Name value="GoodsListType" />
@@ -669,6 +1109,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                           <BaseType value="Bool" />
                         </AttributeType>
                       </DeclaredType>
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.TypVyctuZbozovychKoduPoz0DCC0D4A" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                     </Attribute>
                     <Collection>
                       <Name value="GoodsItem" />
@@ -677,6 +1127,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                       <MinCount value="1" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/GoodsList/InCompleteData/GoodsItem" />
                       <MtsImportOptions.MTS.Type value="group" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.VycetZbozovychKodu" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                       <Children>
                         <Reference>
                           <Name value="CNCode" />
@@ -684,6 +1144,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                           <IsRequired value="True" />
                           <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/GoodsList/InCompleteData/GoodsItem/CNCode" />
                           <MtsImportOptions.MTS.Type value="element" />
+                          <PropertyLocalizationData.PropertyLocalizations>
+                            <PropertyLocalizationData>
+                              <LocalizedProperties>
+                                <LocalizedProperty>
+                                  <Localization reference="+Localizations.ZbozovyKod" />
+                                  <PropertyName value="Caption" />
+                                </LocalizedProperty>
+                              </LocalizedProperties>
+                            </PropertyLocalizationData>
+                          </PropertyLocalizationData.PropertyLocalizations>
                           <Children>
                             <Include>
                               <Include reference="+DataEntities.CommodityCode" />
@@ -701,6 +1171,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                               <BaseType value="Bool" />
                             </AttributeType>
                           </DeclaredType>
+                          <PropertyLocalizationData.PropertyLocalizations>
+                            <PropertyLocalizationData>
+                              <LocalizedProperties>
+                                <LocalizedProperty>
+                                  <Localization reference="+Localizations.PovolenaZakazana" />
+                                  <PropertyName value="Caption" />
+                                </LocalizedProperty>
+                              </LocalizedProperties>
+                            </PropertyLocalizationData>
+                          </PropertyLocalizationData.PropertyLocalizations>
                         </Attribute>
                       </Children>
                     </Collection>
@@ -710,7 +1190,7 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                       <MtsImportOptions.MTS.ID value="SPInCompleteDataMandatory" />
                       <MtsImportOptions.MTS.Type value="condition-constraint" />
                       <ErrorMessage IsValid="True">
-                        <ExpressionText><![CDATA["SPInCompleteDataMandatory"]]></ExpressionText>
+                        <ExpressionText><![CDATA[localized.SPInCompleteDataMandatory]]></ExpressionText>
                         <ResultType>
                           <BaseType value="String" />
                         </ResultType>
@@ -730,7 +1210,7 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <MtsImportOptions.MTS.ID value="SPGoodsMandatory" />
                   <MtsImportOptions.MTS.Type value="condition-constraint" />
                   <ErrorMessage IsValid="True">
-                    <ExpressionText><![CDATA["SPGoodsMandatory"]]></ExpressionText>
+                    <ExpressionText><![CDATA[localized.SPGoodsMandatory]]></ExpressionText>
                     <ResultType>
                       <BaseType value="String" />
                     </ResultType>
@@ -749,6 +1229,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
               <Caption value="Celní úřady" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsOffices" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.CelniUrady" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Collection>
                   <Name value="CustomsOfficeOfRelease" />
@@ -756,6 +1246,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <MaxCount value="100" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsOffices/CustomsOfficeOfRelease" />
                   <MtsImportOptions.MTS.Type value="group" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.CelniUradPropusteni" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
                     <Reference>
                       <Name value="CustomsOfficeReferenceNumber" />
@@ -763,6 +1263,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                       <IsRequired value="True" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsOffices/CustomsOfficeOfRelease/CustomsOfficeReferenceNumber" />
                       <MtsImportOptions.MTS.Type value="element" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.CisloCU" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                       <Children>
                         <Include>
                           <Include reference="+DataEntities.CustomsOffices" />
@@ -775,6 +1285,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                       <MaxCount value="99" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsOffices/CustomsOfficeOfRelease/AuthorizedAgreedLocation" />
                       <MtsImportOptions.MTS.Type value="group" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.SchvaleneMisto" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                       <Children>
                         <Attribute>
                           <Name value="Country" />
@@ -782,12 +1302,22 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                           <MetaType reference="+MetaTypes.Zeme" />
                           <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsOffices/CustomsOfficeOfRelease/AuthorizedAgreedLocation/Country" />
                           <MtsImportOptions.MTS.Type value="element" />
+                          <PropertyLocalizationData.PropertyLocalizations>
+                            <PropertyLocalizationData>
+                              <LocalizedProperties>
+                                <LocalizedProperty>
+                                  <Localization reference="+Localizations.ZemeSchvalenehoSjednaneh91E7181A" />
+                                  <PropertyName value="Caption" />
+                                </LocalizedProperty>
+                              </LocalizedProperties>
+                            </PropertyLocalizationData>
+                          </PropertyLocalizationData.PropertyLocalizations>
                           <Validators>
                             <Validator Name="regex">
                               <MtsImportOptions.MTS.Regex value="[A-Z]{2}" />
                               <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
                               <ErrorMessage IsValid="True">
-                                <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+                                <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
                                 <ResultType>
                                   <BaseType value="String" />
                                 </ResultType>
@@ -807,6 +1337,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                           <MetaType reference="+MetaTypes.AMSID" />
                           <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsOffices/CustomsOfficeOfRelease/AuthorizedAgreedLocation/PlaceID" />
                           <MtsImportOptions.MTS.Type value="element" />
+                          <PropertyLocalizationData.PropertyLocalizations>
+                            <PropertyLocalizationData>
+                              <LocalizedProperties>
+                                <LocalizedProperty>
+                                  <Localization reference="+Localizations.IDSchvalenehoSjednanehoUmisteni" />
+                                  <PropertyName value="Caption" />
+                                </LocalizedProperty>
+                              </LocalizedProperties>
+                            </PropertyLocalizationData>
+                          </PropertyLocalizationData.PropertyLocalizations>
                         </Attribute>
                         <Attribute>
                           <Name value="CountryPlaceID" />
@@ -819,6 +1359,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                               <StrMaxLength value="50" />
                             </AttributeType>
                           </DeclaredType>
+                          <PropertyLocalizationData.PropertyLocalizations>
+                            <PropertyLocalizationData>
+                              <LocalizedProperties>
+                                <LocalizedProperty>
+                                  <Localization reference="+Localizations.CountryPlaceID" />
+                                  <PropertyName value="Caption" />
+                                </LocalizedProperty>
+                              </LocalizedProperties>
+                            </PropertyLocalizationData>
+                          </PropertyLocalizationData.PropertyLocalizations>
                         </Attribute>
                       </Children>
                     </Collection>
@@ -828,6 +1378,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                       <MaxCount value="999" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsOffices/CustomsOfficeOfRelease/TemporaryStorage" />
                       <MtsImportOptions.MTS.Type value="group" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.DocasnySklad" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                       <Children>
                         <Attribute>
                           <Name value="IssuingCountry" />
@@ -836,12 +1396,22 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                           <MetaType reference="+MetaTypes.Zeme" />
                           <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsOffices/CustomsOfficeOfRelease/TemporaryStorage/IssuingCountry" />
                           <MtsImportOptions.MTS.Type value="element" />
+                          <PropertyLocalizationData.PropertyLocalizations>
+                            <PropertyLocalizationData>
+                              <LocalizedProperties>
+                                <LocalizedProperty>
+                                  <Localization reference="+Localizations.VydavajiciZeme" />
+                                  <PropertyName value="Caption" />
+                                </LocalizedProperty>
+                              </LocalizedProperties>
+                            </PropertyLocalizationData>
+                          </PropertyLocalizationData.PropertyLocalizations>
                           <Validators>
                             <Validator Name="regex">
                               <MtsImportOptions.MTS.Regex value="[A-Z]{2}" />
                               <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
                               <ErrorMessage IsValid="True">
-                                <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+                                <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
                                 <ResultType>
                                   <BaseType value="String" />
                                 </ResultType>
@@ -862,6 +1432,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                           <MetaType reference="+MetaTypes.AMSID" />
                           <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsOffices/CustomsOfficeOfRelease/TemporaryStorage/AMSID" />
                           <MtsImportOptions.MTS.Type value="element" />
+                          <PropertyLocalizationData.PropertyLocalizations>
+                            <PropertyLocalizationData>
+                              <LocalizedProperties>
+                                <LocalizedProperty>
+                                  <Localization reference="+Localizations.CisloPovoleni" />
+                                  <PropertyName value="Caption" />
+                                </LocalizedProperty>
+                              </LocalizedProperties>
+                            </PropertyLocalizationData>
+                          </PropertyLocalizationData.PropertyLocalizations>
                         </Attribute>
                       </Children>
                     </Collection>
@@ -871,7 +1451,7 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                       <MtsImportOptions.MTS.ID value="SPCustomsOfficeOfReleaseMandatory" />
                       <MtsImportOptions.MTS.Type value="condition-constraint" />
                       <ErrorMessage IsValid="True">
-                        <ExpressionText><![CDATA["SPCustomsOfficeOfReleaseMandatory"]]></ExpressionText>
+                        <ExpressionText><![CDATA[localized.SPCustomsOfficeOfRelease2F4FC7EA]]></ExpressionText>
                         <ResultType>
                           <BaseType value="String" />
                         </ResultType>
@@ -891,6 +1471,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <MaxCount value="100" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsOffices/ConsignmentControlCustomsOffice" />
                   <MtsImportOptions.MTS.Type value="group" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.CelniUradKontrolyZasilky" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
                     <Attribute>
                       <Name value="CustomsOfficeReferenceNumber" />
@@ -899,12 +1489,22 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                       <MetaType reference="+MetaTypes.CustomsOfficeRefNum_type" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsOffices/ConsignmentControlCustomsOffice/CustomsOfficeReferenceNumber" />
                       <MtsImportOptions.MTS.Type value="element" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.CisloCU" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                       <Validators>
                         <Validator Name="regex">
                           <MtsImportOptions.MTS.Regex value="[A-Z]{2}[A-Z0-9]{6}" />
                           <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
                           <ErrorMessage IsValid="True">
-                            <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+                            <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
                             <ResultType>
                               <BaseType value="String" />
                             </ResultType>
@@ -924,6 +1524,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                       <MaxCount value="99" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsOffices/ConsignmentControlCustomsOffice/AuthorizedAgreedLocation" />
                       <MtsImportOptions.MTS.Type value="group" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.SchvaleneMisto" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                       <Children>
                         <Attribute>
                           <Name value="Country" />
@@ -931,12 +1541,22 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                           <MetaType reference="+MetaTypes.Zeme" />
                           <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsOffices/ConsignmentControlCustomsOffice/AuthorizedAgreedLocation/Country" />
                           <MtsImportOptions.MTS.Type value="element" />
+                          <PropertyLocalizationData.PropertyLocalizations>
+                            <PropertyLocalizationData>
+                              <LocalizedProperties>
+                                <LocalizedProperty>
+                                  <Localization reference="+Localizations.ZemeSchvalenehoSjednaneh91E7181A" />
+                                  <PropertyName value="Caption" />
+                                </LocalizedProperty>
+                              </LocalizedProperties>
+                            </PropertyLocalizationData>
+                          </PropertyLocalizationData.PropertyLocalizations>
                           <Validators>
                             <Validator Name="regex">
                               <MtsImportOptions.MTS.Regex value="[A-Z]{2}" />
                               <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
                               <ErrorMessage IsValid="True">
-                                <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+                                <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
                                 <ResultType>
                                   <BaseType value="String" />
                                 </ResultType>
@@ -956,6 +1576,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                           <MetaType reference="+MetaTypes.AMSID" />
                           <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsOffices/ConsignmentControlCustomsOffice/AuthorizedAgreedLocation/PlaceID" />
                           <MtsImportOptions.MTS.Type value="element" />
+                          <PropertyLocalizationData.PropertyLocalizations>
+                            <PropertyLocalizationData>
+                              <LocalizedProperties>
+                                <LocalizedProperty>
+                                  <Localization reference="+Localizations.IDSchvalenehoSjednanehoUmisteni" />
+                                  <PropertyName value="Caption" />
+                                </LocalizedProperty>
+                              </LocalizedProperties>
+                            </PropertyLocalizationData>
+                          </PropertyLocalizationData.PropertyLocalizations>
                         </Attribute>
                         <Attribute>
                           <Name value="CountryPlaceID" />
@@ -968,6 +1598,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                               <StrMaxLength value="50" />
                             </AttributeType>
                           </DeclaredType>
+                          <PropertyLocalizationData.PropertyLocalizations>
+                            <PropertyLocalizationData>
+                              <LocalizedProperties>
+                                <LocalizedProperty>
+                                  <Localization reference="+Localizations.CountryPlaceID" />
+                                  <PropertyName value="Caption" />
+                                </LocalizedProperty>
+                              </LocalizedProperties>
+                            </PropertyLocalizationData>
+                          </PropertyLocalizationData.PropertyLocalizations>
                         </Attribute>
                       </Children>
                       <ItemValidators>
@@ -975,7 +1615,7 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                           <MtsImportOptions.MTS.ID value="CCAllowedInLI" />
                           <MtsImportOptions.MTS.Type value="condition-constraint" />
                           <ErrorMessage IsValid="True">
-                            <ExpressionText><![CDATA["CCAllowedInLI"]]></ExpressionText>
+                            <ExpressionText><![CDATA[localized.CCAllowedInLI]]></ExpressionText>
                             <ResultType>
                               <BaseType value="String" />
                             </ResultType>
@@ -997,6 +1637,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <MaxCount value="100" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsOffices/CustomsOfficeOControl_FZ" />
                   <MtsImportOptions.MTS.Type value="group" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.CelniUradKontrolyFZ" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
                     <Reference>
                       <Name value="CustomsOfficeReferenceNumber" />
@@ -1004,6 +1654,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                       <IsRequired value="True" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsOffices/CustomsOfficeOControl_FZ/CustomsOfficeReferenceNumber" />
                       <MtsImportOptions.MTS.Type value="element" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.EvidencniCisloCelnihoUradu" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                       <Children>
                         <Include>
                           <Include reference="+DataEntities.CustomsOffices" />
@@ -1018,6 +1678,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <MaxCount value="100" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsOffices/SupervisingCustomsOffice" />
                   <MtsImportOptions.MTS.Type value="group" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.CelniUradDohledu" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
                     <Reference>
                       <Name value="CustomsOfficeReferenceNumber" />
@@ -1025,6 +1695,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                       <IsRequired value="True" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsOffices/SupervisingCustomsOffice/CustomsOfficeReferenceNumber" />
                       <MtsImportOptions.MTS.Type value="element" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.CisloCU" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                       <Children>
                         <Include>
                           <Include reference="+DataEntities.CustomsOffices" />
@@ -1041,6 +1721,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
               <MaxCount value="999" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CentralizedClearanceProcedure" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.CentralizovaneCelniRizeni" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Attribute>
                   <Name value="IssuingCountry" />
@@ -1049,12 +1739,22 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <MetaType reference="+MetaTypes.Zeme" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CentralizedClearanceProcedure/IssuingCountry" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.VydavajiciZeme" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Validators>
                     <Validator Name="regex">
                       <MtsImportOptions.MTS.Regex value="[A-Z]{2}" />
                       <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
                       <ErrorMessage IsValid="True">
-                        <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+                        <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
                         <ResultType>
                           <BaseType value="String" />
                         </ResultType>
@@ -1075,6 +1775,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <MetaType reference="+MetaTypes.AMSID" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CentralizedClearanceProcedure/AMSID" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.CisloPovoleni" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
               </Children>
             </Collection>
@@ -1084,6 +1794,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
               <MaxCount value="999" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/ManufacturerParticipatingPerson" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.ZpracovatelJinaZucastnenaOsoba" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Attribute>
                   <Name value="TIN" />
@@ -1092,6 +1812,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <MetaType reference="+MetaTypes.TIN" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/ManufacturerParticipatingPerson/TIN" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.TINEORICislo" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="Name" />
@@ -1100,6 +1830,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <MetaType reference="+MetaTypes.OperatorName" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/ManufacturerParticipatingPerson/Name" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.NazevFirmy" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="StreetAndNr" />
@@ -1108,6 +1848,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <MetaType reference="+MetaTypes.StreetAndNr" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/ManufacturerParticipatingPerson/StreetAndNr" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.UliceACP" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="City" />
@@ -1116,6 +1866,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <MetaType reference="+MetaTypes.City" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/ManufacturerParticipatingPerson/City" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.Mesto" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="PostCode" />
@@ -1124,6 +1884,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <MetaType reference="+MetaTypes.PostCode" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/ManufacturerParticipatingPerson/PostCode" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.PSC" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="Country" />
@@ -1132,12 +1902,22 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <MetaType reference="+MetaTypes.Zeme" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/ManufacturerParticipatingPerson/Country" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.Zeme" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Validators>
                     <Validator Name="regex">
                       <MtsImportOptions.MTS.Regex value="[A-Z]{2}" />
                       <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
                       <ErrorMessage IsValid="True">
-                        <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+                        <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
                         <ResultType>
                           <BaseType value="String" />
                         </ResultType>
@@ -1158,6 +1938,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
               <Caption value="Manipulace" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Manipulations" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.Manipulace" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Collection>
                   <Name value="Manipulation" />
@@ -1165,6 +1955,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <MaxCount value="999" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Manipulations/Manipulation" />
                   <MtsImportOptions.MTS.Type value="group" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.ManipulaceVCelnimSklade" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
                     <Reference>
                       <Name value="OriginalCNCode" />
@@ -1172,6 +1972,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                       <IsRequired value="True" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Manipulations/Manipulation/OriginalCNCode" />
                       <MtsImportOptions.MTS.Type value="element" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.ZbozovyKod" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                       <Children>
                         <Include>
                           <Include reference="+DataEntities.CommodityCode" />
@@ -1184,6 +1994,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                       <IsRequired value="True" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Manipulations/Manipulation/ManipulationType" />
                       <MtsImportOptions.MTS.Type value="element" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.TypManipulace" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                       <Children>
                         <Include>
                           <Include reference="+DataEntities.TYPMANCS" />
@@ -1195,6 +2015,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                       <Caption value="Manipulovaný zbožový kód" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Manipulations/Manipulation/ManipulatedCNCode" />
                       <MtsImportOptions.MTS.Type value="element" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.ManipulovanyZbozovyKod" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                       <Children>
                         <Include>
                           <Include reference="+DataEntities.CommodityCode" />
@@ -1206,6 +2036,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                       <Caption value="Měrná jednotka" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Manipulations/Manipulation/UnitOfMeasure" />
                       <MtsImportOptions.MTS.Type value="element" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.MernaJednotka" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                       <Children>
                         <Include>
                           <Include reference="+DataEntities.MJT" />
@@ -1222,6 +2062,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
               <MaxCount value="3" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Representation" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.TypZastoupeni" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Reference>
                   <Name value="TypeOfRepresentation" />
@@ -1229,6 +2079,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <IsRequired value="True" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Representation/TypeOfRepresentation" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.ZpusobZastoupeni" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
                     <Include>
                       <Include reference="+DataEntities.RepresentativeStatusCode" />
@@ -1241,7 +2101,7 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <MtsImportOptions.MTS.ID value="SPRepresentationMandatory" />
                   <MtsImportOptions.MTS.Type value="condition-constraint" />
                   <ErrorMessage IsValid="True">
-                    <ExpressionText><![CDATA["SPRepresentationMandatory"]]></ExpressionText>
+                    <ExpressionText><![CDATA[localized.SPRepresentationMandatory]]></ExpressionText>
                     <ResultType>
                       <BaseType value="String" />
                     </ResultType>
@@ -1261,6 +2121,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
               <MaxCount value="99" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Guarantee" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.ZajisteniCelnihoDluhu" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Attribute>
                   <Name value="GuaranteeType" />
@@ -1269,6 +2139,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <MetaType reference="+MetaTypes.GuaranteeType" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Guarantee/GuaranteeType" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.TypZajisteniCelnihoDluhu" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="GuaranteeID" />
@@ -1276,12 +2156,22 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <MetaType reference="+MetaTypes.GRN" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Guarantee/GuaranteeID" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.CisloZajisteni" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Validators>
                     <Validator Name="regex">
                       <MtsImportOptions.MTS.Regex value="[0-9]{2}[A-Z]{2}[A-Z0-9]{12}[0-9]([0-9A-Z]{7})?" />
                       <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
                       <ErrorMessage IsValid="True">
-                        <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+                        <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
                         <ResultType>
                           <BaseType value="String" />
                         </ResultType>
@@ -1301,7 +2191,7 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <MtsImportOptions.MTS.ID value="SPGuaranteeMandatory" />
                   <MtsImportOptions.MTS.Type value="condition-constraint" />
                   <ErrorMessage IsValid="True">
-                    <ExpressionText><![CDATA["SPGuaranteeMandatory"]]></ExpressionText>
+                    <ExpressionText><![CDATA[localized.SPGuaranteeMandatory]]></ExpressionText>
                     <ResultType>
                       <BaseType value="String" />
                     </ResultType>
@@ -1321,6 +2211,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
               <MaxCount value="9" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Period" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.Lhuta" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Reference>
                   <Name value="TypeOfPeriod" />
@@ -1328,6 +2228,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <IsRequired value="True" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Period/TypeOfPeriod" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.TypLhuty" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
                     <Include>
                       <Include reference="+DataEntities.TypeOfTimerEnum" />
@@ -1344,6 +2254,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                       <StrMaxLength value="10" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.MJ" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="PeriodDuration" />
@@ -1352,6 +2272,16 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <MetaType reference="+MetaTypes.PeriodDuration" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Period/PeriodDuration" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.DelkaLhuty" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
               </Children>
               <ItemValidators>
@@ -1359,7 +2289,7 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   <MtsImportOptions.MTS.ID value="SPPeriodAuthType" />
                   <MtsImportOptions.MTS.Type value="rule-constraint" />
                   <ErrorMessage IsValid="True">
-                    <ExpressionText><![CDATA["SPPeriodAuthType"]]></ExpressionText>
+                    <ExpressionText><![CDATA[localized.SPPeriodAuthType]]></ExpressionText>
                     <ResultType>
                       <BaseType value="String" />
                     </ResultType>
@@ -1379,7 +2309,7 @@ LI:
                   <MtsImportOptions.MTS.ID value="SPPeriodCount" />
                   <MtsImportOptions.MTS.Type value="rule-constraint" />
                   <ErrorMessage IsValid="True">
-                    <ExpressionText><![CDATA["SPPeriodCount"]]></ExpressionText>
+                    <ExpressionText><![CDATA[localized.SPPeriodCount]]></ExpressionText>
                     <ResultType>
                       <BaseType value="String" />
                     </ResultType>
@@ -1395,7 +2325,7 @@ LI:
                   <MtsImportOptions.MTS.ID value="SPPeriodMandatory" />
                   <MtsImportOptions.MTS.Type value="condition-constraint" />
                   <ErrorMessage IsValid="True">
-                    <ExpressionText><![CDATA["SPPeriodMandatory"]]></ExpressionText>
+                    <ExpressionText><![CDATA[localized.SPPeriodMandatory]]></ExpressionText>
                     <ResultType>
                       <BaseType value="String" />
                     </ResultType>
@@ -1415,6 +2345,16 @@ LI:
               <MaxCount value="99" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/ProcedureWithEconomicImpact" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.PovoleniRHU" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Attribute>
                   <Name value="IssuingCountry" />
@@ -1423,12 +2363,22 @@ LI:
                   <MetaType reference="+MetaTypes.Zeme" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/ProcedureWithEconomicImpact/IssuingCountry" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.VydavajiciZeme" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Validators>
                     <Validator Name="regex">
                       <MtsImportOptions.MTS.Regex value="[A-Z]{2}" />
                       <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
                       <ErrorMessage IsValid="True">
-                        <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+                        <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
                         <ResultType>
                           <BaseType value="String" />
                         </ResultType>
@@ -1449,6 +2399,16 @@ LI:
                   <MetaType reference="+MetaTypes.AMSID" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/ProcedureWithEconomicImpact/AMSID" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.CisloPovoleni" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="Regime" />
@@ -1461,6 +2421,16 @@ LI:
                       <StrMinLength value="2" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.Rezim" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
               </Children>
             </Collection>
@@ -1469,6 +2439,16 @@ LI:
               <Caption value="Celní režimy" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsProcedure" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.CelniRezimy" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Collection>
                   <Name value="CustomsProcedureCombination" />
@@ -1476,6 +2456,16 @@ LI:
                   <MaxCount value="999" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsProcedure/CustomsProcedureCombination" />
                   <MtsImportOptions.MTS.Type value="group" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.KombinaceCelnichRezimu" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
                     <Reference>
                       <Name value="CustomsProcedureCombinationCode" />
@@ -1483,6 +2473,16 @@ LI:
                       <IsRequired value="True" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsProcedure/CustomsProcedureCombination/CustomsProcedureCombinationCode" />
                       <MtsImportOptions.MTS.Type value="element" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.KodKombinaceCelnichRezimu" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                       <Children>
                         <Include>
                           <Include reference="+DataEntities.REZIM4" />
@@ -1495,6 +2495,16 @@ LI:
                       <IsRequired value="True" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsProcedure/CustomsProcedureCombination/CustomsProcedureCode" />
                       <MtsImportOptions.MTS.Type value="element" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.KodCelnihoRezimu" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                       <Children>
                         <Include>
                           <Include reference="+DataEntities.CEL_UR" />
@@ -1507,7 +2517,7 @@ LI:
                       <MtsImportOptions.MTS.ID value="SPCustomsProcedureCombinationMandatory" />
                       <MtsImportOptions.MTS.Type value="condition-constraint" />
                       <ErrorMessage IsValid="True">
-                        <ExpressionText><![CDATA["SPCustomsProcedureCombinationMandatory"]]></ExpressionText>
+                        <ExpressionText><![CDATA[localized.SPCustomsProcedureCombinEEE1EBBA]]></ExpressionText>
                         <ResultType>
                           <BaseType value="String" />
                         </ResultType>
@@ -1527,6 +2537,16 @@ LI:
                   <MaxCount value="999" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsProcedure/CompleteData" />
                   <MtsImportOptions.MTS.Type value="group" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.KombinaceCelnichRezimuUplnaData" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
                     <Collection>
                       <Name value="CustomsProcedureCombination" />
@@ -1534,6 +2554,16 @@ LI:
                       <MaxCount value="999" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsProcedure/CompleteData/CustomsProcedureCombination" />
                       <MtsImportOptions.MTS.Type value="group" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.KombinaceCelnichRezimu" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                       <Children>
                         <Reference>
                           <Name value="CustomsProcedureCombinationCode" />
@@ -1541,6 +2571,16 @@ LI:
                           <IsRequired value="True" />
                           <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsProcedure/CompleteData/CustomsProcedureCombination/CustomsProcedureCombinationCode" />
                           <MtsImportOptions.MTS.Type value="element" />
+                          <PropertyLocalizationData.PropertyLocalizations>
+                            <PropertyLocalizationData>
+                              <LocalizedProperties>
+                                <LocalizedProperty>
+                                  <Localization reference="+Localizations.KodKombinaceCelnichRezimu" />
+                                  <PropertyName value="Caption" />
+                                </LocalizedProperty>
+                              </LocalizedProperties>
+                            </PropertyLocalizationData>
+                          </PropertyLocalizationData.PropertyLocalizations>
                           <Children>
                             <Include>
                               <Include reference="+DataEntities.REZIM4" />
@@ -1553,6 +2593,16 @@ LI:
                           <IsRequired value="True" />
                           <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsProcedure/CompleteData/CustomsProcedureCombination/CustomsProcedureCode" />
                           <MtsImportOptions.MTS.Type value="element" />
+                          <PropertyLocalizationData.PropertyLocalizations>
+                            <PropertyLocalizationData>
+                              <LocalizedProperties>
+                                <LocalizedProperty>
+                                  <Localization reference="+Localizations.KodCelnihoRezimu" />
+                                  <PropertyName value="Caption" />
+                                </LocalizedProperty>
+                              </LocalizedProperties>
+                            </PropertyLocalizationData>
+                          </PropertyLocalizationData.PropertyLocalizations>
                           <Children>
                             <Include>
                               <Include reference="+DataEntities.CEL_UR" />
@@ -1567,7 +2617,7 @@ LI:
                       <MtsImportOptions.MTS.ID value="SPCompleteDataMandatory" />
                       <MtsImportOptions.MTS.Type value="condition-constraint" />
                       <ErrorMessage IsValid="True">
-                        <ExpressionText><![CDATA["SPCompleteDataMandatory"]]></ExpressionText>
+                        <ExpressionText><![CDATA[localized.SPCompleteDataMandatory]]></ExpressionText>
                         <ResultType>
                           <BaseType value="String" />
                         </ResultType>
@@ -1587,6 +2637,16 @@ LI:
                   <MaxCount value="999" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsProcedure/InCompleteData" />
                   <MtsImportOptions.MTS.Type value="group" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.KombinaceCelnichRezimuNe5A880BD2" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
                     <Collection>
                       <Name value="CustomsProcedureCombination" />
@@ -1594,6 +2654,16 @@ LI:
                       <MaxCount value="999" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsProcedure/InCompleteData/CustomsProcedureCombination" />
                       <MtsImportOptions.MTS.Type value="group" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.KombinaceCelnichRezimu" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                       <Children>
                         <Reference>
                           <Name value="CustomsProcedureCombinationCode" />
@@ -1601,6 +2671,16 @@ LI:
                           <IsRequired value="True" />
                           <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsProcedure/InCompleteData/CustomsProcedureCombination/CustomsProcedureCombinationCode" />
                           <MtsImportOptions.MTS.Type value="element" />
+                          <PropertyLocalizationData.PropertyLocalizations>
+                            <PropertyLocalizationData>
+                              <LocalizedProperties>
+                                <LocalizedProperty>
+                                  <Localization reference="+Localizations.KodKombinaceCelnichRezimu" />
+                                  <PropertyName value="Caption" />
+                                </LocalizedProperty>
+                              </LocalizedProperties>
+                            </PropertyLocalizationData>
+                          </PropertyLocalizationData.PropertyLocalizations>
                           <Children>
                             <Include>
                               <Include reference="+DataEntities.REZIM4" />
@@ -1613,6 +2693,16 @@ LI:
                           <IsRequired value="True" />
                           <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/CustomsProcedure/InCompleteData/CustomsProcedureCombination/CustomsProcedureCode" />
                           <MtsImportOptions.MTS.Type value="element" />
+                          <PropertyLocalizationData.PropertyLocalizations>
+                            <PropertyLocalizationData>
+                              <LocalizedProperties>
+                                <LocalizedProperty>
+                                  <Localization reference="+Localizations.KodCelnihoRezimu" />
+                                  <PropertyName value="Caption" />
+                                </LocalizedProperty>
+                              </LocalizedProperties>
+                            </PropertyLocalizationData>
+                          </PropertyLocalizationData.PropertyLocalizations>
                           <Children>
                             <Include>
                               <Include reference="+DataEntities.CEL_UR" />
@@ -1627,7 +2717,7 @@ LI:
                       <MtsImportOptions.MTS.ID value="SPInCompleteDataMandatory" />
                       <MtsImportOptions.MTS.Type value="condition-constraint" />
                       <ErrorMessage IsValid="True">
-                        <ExpressionText><![CDATA["SPInCompleteDataMandatory"]]></ExpressionText>
+                        <ExpressionText><![CDATA[localized.SPInCompleteDataMandatory]]></ExpressionText>
                         <ResultType>
                           <BaseType value="String" />
                         </ResultType>
@@ -1648,6 +2738,16 @@ LI:
               <Caption value="Země" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Countries" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.Zeme" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Collection>
                   <Name value="AllowedCountry" />
@@ -1655,6 +2755,16 @@ LI:
                   <MaxCount value="999" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Countries/AllowedCountry" />
                   <MtsImportOptions.MTS.Type value="group" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.PovoleneZeme" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
                     <Attribute>
                       <Name value="CountryCode" />
@@ -1668,6 +2778,16 @@ LI:
                           <StrMinLength value="2" />
                         </AttributeType>
                       </DeclaredType>
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.KodZeme" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                     </Attribute>
                   </Children>
                 </Collection>
@@ -1678,6 +2798,16 @@ LI:
               <Caption value="Závěry" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Seals" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.Zavery" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Collection>
                   <Name value="Seal" />
@@ -1685,6 +2815,16 @@ LI:
                   <MaxCount value="999" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Seals/Seal" />
                   <MtsImportOptions.MTS.Type value="group" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.Zavera" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
                     <Attribute>
                       <Name value="SealID" />
@@ -1693,6 +2833,16 @@ LI:
                       <MetaType reference="+MetaTypes.SealIdType" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Seals/Seal/SealID" />
                       <MtsImportOptions.MTS.Type value="element" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.CisloZavery" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                     </Attribute>
                   </Children>
                 </Collection>
@@ -1706,6 +2856,16 @@ LI:
                       <BaseType value="Bool" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.PovoleniPouzitiZvlastnih467406F4" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
               </Children>
             </Complex>
@@ -1714,6 +2874,16 @@ LI:
               <Caption value="Zóny" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Zone" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.Zony" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Attribute>
                   <Name value="ZoneName" />
@@ -1722,6 +2892,16 @@ LI:
                   <MetaType reference="+MetaTypes.OperatorName" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Zone/ZoneName" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.NazevZony" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="ZoneStreetAndNr" />
@@ -1730,6 +2910,16 @@ LI:
                   <MetaType reference="+MetaTypes.StreetAndNr" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Zone/ZoneStreetAndNr" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.UliceACPSidla" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="ZoneCity" />
@@ -1738,6 +2928,16 @@ LI:
                   <MetaType reference="+MetaTypes.City" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Zone/ZoneCity" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.MestoSidlaSubjektu" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="ZonePostCode" />
@@ -1746,6 +2946,16 @@ LI:
                   <MetaType reference="+MetaTypes.PostCode" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Zone/ZonePostCode" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.PSC" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Reference>
                   <Name value="ZoneCountry" />
@@ -1753,6 +2963,16 @@ LI:
                   <IsRequired value="True" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Zone/ZoneCountry" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.ZemeZony" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
                     <Include>
                       <Include reference="+DataEntities.CountryCodesFullList" />
@@ -1765,6 +2985,16 @@ LI:
                   <IsRequired value="True" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Zone/ZoneType" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.TypZony" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
                     <Include>
                       <Include reference="+DataEntities.ZoneTypeEnum" />
@@ -1781,6 +3011,16 @@ LI:
                       <StrMaxLength value="5000" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.Podminky" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="IssueConditions" />
@@ -1793,6 +3033,16 @@ LI:
                       <BaseType value="Bool" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.KVydaniPodminek" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
               </Children>
             </Complex>
@@ -1801,6 +3051,16 @@ LI:
               <Caption value="Ukladatelé" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Depositors" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.Ukladatele" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Collection>
                   <Name value="Depositor" />
@@ -1809,6 +3069,16 @@ LI:
                   <MinCount value="1" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Depositors/Depositor" />
                   <MtsImportOptions.MTS.Type value="group" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.Ukladatel" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
                     <Attribute>
                       <Name value="TIN" />
@@ -1817,6 +3087,16 @@ LI:
                       <MetaType reference="+MetaTypes.TIN" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Depositors/Depositor/TIN" />
                       <MtsImportOptions.MTS.Type value="element" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.TINEORICislo" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                     </Attribute>
                     <Attribute>
                       <Name value="Name" />
@@ -1825,6 +3105,16 @@ LI:
                       <MetaType reference="+MetaTypes.OperatorName" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Depositors/Depositor/Name" />
                       <MtsImportOptions.MTS.Type value="element" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.NazevSubjektu" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                     </Attribute>
                     <Attribute>
                       <Name value="StreetAndNr" />
@@ -1832,6 +3122,16 @@ LI:
                       <MetaType reference="+MetaTypes.StreetAndNr" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Depositors/Depositor/StreetAndNr" />
                       <MtsImportOptions.MTS.Type value="element" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.UliceACPSidla" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                     </Attribute>
                     <Attribute>
                       <Name value="City" />
@@ -1839,6 +3139,16 @@ LI:
                       <MetaType reference="+MetaTypes.City" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Depositors/Depositor/City" />
                       <MtsImportOptions.MTS.Type value="element" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.MestoSidlaSubjektu" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                     </Attribute>
                     <Attribute>
                       <Name value="PostCode" />
@@ -1846,12 +3156,32 @@ LI:
                       <MetaType reference="+MetaTypes.PostCode" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Depositors/Depositor/PostCode" />
                       <MtsImportOptions.MTS.Type value="element" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.PSC" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                     </Attribute>
                     <Reference>
                       <Name value="Country" />
                       <Caption value="Země sídla subjektu" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Depositors/Depositor/Country" />
                       <MtsImportOptions.MTS.Type value="element" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.ZemeSidlaSubjektu" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
                       <Children>
                         <Include>
                           <Include reference="+DataEntities.CountryCodesFullList" />
@@ -1867,6 +3197,16 @@ LI:
               <Caption value="Základní vlastnosti zjednodušeného postupu" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/SP" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.ZakladniVlastnostiZjednoDEC6CB36" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Attribute>
                   <Name value="SimplifiedProcedureBasedOnAEO" />
@@ -1879,6 +3219,16 @@ LI:
                       <BaseType value="Bool" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.ZJPVydanNaZakladeAEO" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
               </Children>
             </Complex>
@@ -1887,6 +3237,16 @@ LI:
               <Caption value="ZJP ZCP/DCP" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/SPSI" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.ZJPZCPDCP" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Reference>
                   <Name value="TypeOfPaybackPeriod" />
@@ -1894,6 +3254,16 @@ LI:
                   <IsRequired value="True" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/SPSI/TypeOfPaybackPeriod" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.TypLhutySplatnosti" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
                     <Include>
                       <Include reference="+DataEntities.TypeOfPaybackPeriodEnum" />
@@ -1906,6 +3276,16 @@ LI:
                   <MetaType reference="+MetaTypes.PeriodDuration" />
                   <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/SPSI/DaysOfPayback" />
                   <MtsImportOptions.MTS.Type value="element" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.PocetDniSplatnosti" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
               </Children>
             </Complex>
@@ -1914,6 +3294,16 @@ LI:
               <Caption value="ZJP MŘ v dovozu" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/SPLI" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.ZJPMRVDovozu" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Attribute>
                   <Name value="CompleteData" />
@@ -1926,6 +3316,16 @@ LI:
                       <BaseType value="Bool" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.UplnaData" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="InCompleteData" />
@@ -1938,6 +3338,16 @@ LI:
                       <BaseType value="Bool" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.NeuplnaData" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
               </Children>
             </Complex>
@@ -1946,6 +3356,16 @@ LI:
               <Caption value="SPLE" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/SPLE" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.SPLE" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Attribute>
                   <Name value="GoodsOfCommonAgrPolicyAllowed" />
@@ -1957,6 +3377,16 @@ LI:
                       <BaseType value="Bool" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.LzeDeklarovatZboziSZP" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
               </Children>
             </Complex>
@@ -1965,6 +3395,16 @@ LI:
               <Caption value="ZJP CCŘ v dovozu" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/SPCI" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.ZJPCCRVDovozu" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Attribute>
                   <Name value="AllowedInLI" />
@@ -1976,6 +3416,16 @@ LI:
                       <BaseType value="Bool" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.LzeVZJPMR" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="AllowedInSI" />
@@ -1987,6 +3437,16 @@ LI:
                       <BaseType value="Bool" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.LzeVZJPZCPDCP" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
               </Children>
             </Complex>
@@ -1995,6 +3455,16 @@ LI:
               <Caption value="ZJP schválený odesílatel / příjemce" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/SPAx" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.ZJPSchvalenyOdesilatelPrijemce" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Attribute>
                   <Name value="SensitiveGoodsAllowed" />
@@ -2006,6 +3476,16 @@ LI:
                       <BaseType value="Bool" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.LzeDeklarovatZboziSeZvys0391A069" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="SPFreeFromBindingItineraryAllowed" />
@@ -2017,6 +3497,16 @@ LI:
                       <BaseType value="Bool" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.PovoleniZprosteniPovinno1ABD3E87" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="ExportDeclarationDischargeByTDAllowed" />
@@ -2028,6 +3518,16 @@ LI:
                       <BaseType value="Bool" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.PovolenaMoznostUkonceniVD39558EF" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="TDDTBDDFormFallbackProcedureAllowed" />
@@ -2039,6 +3539,16 @@ LI:
                       <BaseType value="Bool" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.VRamciHavarijnihoPostupu307C7256" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="Phase1" />
@@ -2050,6 +3560,16 @@ LI:
                       <BaseType value="Bool" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.FazeI" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="Phase2" />
@@ -2061,6 +3581,16 @@ LI:
                       <BaseType value="Bool" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.FazeII" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
               </Children>
             </Complex>
@@ -2069,6 +3599,16 @@ LI:
               <Caption value="Povolení dočasného skladu" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/SPTS" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.PovoleniDocasnehoSkladu" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Attribute>
                   <Name value="GuaranteeRequired" />
@@ -2081,6 +3621,16 @@ LI:
                       <BaseType value="Bool" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.ZajisteniCelnihoDluhuPozadovano" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="PercentOfGuaranteeRequired" />
@@ -2094,6 +3644,16 @@ LI:
                       <IntMin value="1" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.ProcentoPozadovanehoZajisteni" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
               </Children>
             </Complex>
@@ -2102,6 +3662,16 @@ LI:
               <Caption value="ZJP označování T5" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/SPT5" />
               <MtsImportOptions.MTS.Type value="group" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.ZJPOznacovaniT5" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Attribute>
                   <Name value="T5Code" />
@@ -2113,6 +3683,16 @@ LI:
                       <StrMaxLength value="5" />
                     </AttributeType>
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.T5Kod" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
               </Children>
             </Complex>
@@ -2122,7 +3702,7 @@ LI:
               <MtsImportOptions.MTS.ID value="AuthorizedAgreedLocationMandatory" />
               <MtsImportOptions.MTS.Type value="rule-constraint" />
               <ErrorMessage IsValid="True">
-                <ExpressionText><![CDATA["AuthorizedAgreedLocationMandatory"]]></ExpressionText>
+                <ExpressionText><![CDATA[localized.AuthorizedAgreedLocation9CBBB61D]]></ExpressionText>
                 <ResultType>
                   <BaseType value="String" />
                 </ResultType>

@@ -2,7 +2,6 @@
 <?data-format version="0.400"?>
 <Form>
   <Name value="AMS_History" />
-  <Caption value="Historie přístupů k souborům" />
   <Content>
     <Panel>
       <Name value="AMS_HistoryPnl" />
@@ -21,14 +20,6 @@
               <Orientation value="Horizontal" />
               <Panel.Height value="#" />
               <Panel.Width value="*" />
-              <Children>
-                <Breadcrumbs identity="Breadcrumbs.4d3eeadca3c54f1caa1d677db7e07acb">
-                  <Name value="breadcrumbs" />
-                  <controller reference="+GlobalApiObjects.breadcrumbsCtr" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="*" />
-                </Breadcrumbs>
-              </Children>
               <CssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-panel" />
@@ -53,11 +44,13 @@
                   <Columns>
                     <DataColumn>
                       <Name value="edb_UserCol" />
-                      <Caption value="Osobní číslo uživatele" />
                       <Content>
                         <TextBox>
                           <Name value="edb_User" />
                           <CaptionPosition value="Hide" />
+                          <Bindings>
+                            <Binding SourceProperty="Caption" Expression="localized.LocalizedString2" />
+                          </Bindings>
                           <CssClass>
                             <CssClassConditional>
                               <ClassName value="{theme}-textbox" />
@@ -66,6 +59,9 @@
                           </CssClass>
                         </TextBox>
                       </Content>
+                      <Bindings>
+                        <Binding SourceProperty="Caption" Expression="localized.OsobniCisloUzivatele" />
+                      </Bindings>
                       <HeaderCssClass>
                         <CssClassConditional>
                           <ClassName value="{theme}-datacolumn" />
@@ -75,11 +71,13 @@
                     </DataColumn>
                     <DataColumn>
                       <Name value="edb_FileNameCol" />
-                      <Caption value="Název souboru" />
                       <Content>
                         <TextBox>
                           <Name value="edb_FileName" />
                           <CaptionPosition value="Hide" />
+                          <Bindings>
+                            <Binding SourceProperty="Caption" Expression="localized.LocalizedString2" />
+                          </Bindings>
                           <CssClass>
                             <CssClassConditional>
                               <ClassName value="{theme}-textbox" />
@@ -88,6 +86,9 @@
                           </CssClass>
                         </TextBox>
                       </Content>
+                      <Bindings>
+                        <Binding SourceProperty="Caption" Expression="localized.NazevSouboru" />
+                      </Bindings>
                       <HeaderCssClass>
                         <CssClassConditional>
                           <ClassName value="{theme}-datacolumn" />
@@ -97,11 +98,13 @@
                     </DataColumn>
                     <DataColumn>
                       <Name value="edb_FileTypeCol" />
-                      <Caption value="Typ souboru" />
                       <Content>
                         <TextBox>
                           <Name value="edb_FileType" />
                           <CaptionPosition value="Hide" />
+                          <Bindings>
+                            <Binding SourceProperty="Caption" Expression="localized.LocalizedString2" />
+                          </Bindings>
                           <CssClass>
                             <CssClassConditional>
                               <ClassName value="{theme}-textbox" />
@@ -110,6 +113,9 @@
                           </CssClass>
                         </TextBox>
                       </Content>
+                      <Bindings>
+                        <Binding SourceProperty="Caption" Expression="localized.TypSouboru" />
+                      </Bindings>
                       <HeaderCssClass>
                         <CssClassConditional>
                           <ClassName value="{theme}-datacolumn" />
@@ -169,4 +175,7 @@ url.updatePageUrl()]]></Script>
       </DataContext>
     </ActionBlock>
   </Actions>
+  <Bindings>
+    <Binding SourceProperty="Caption" Expression="localized.HistoriePristupuKSouborum" />
+  </Bindings>
 </Form>

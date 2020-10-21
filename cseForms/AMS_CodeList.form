@@ -2,7 +2,6 @@
 <?data-format version="0.400"?>
 <Form>
   <Name value="AMS_CodeList" />
-  <Caption value="Zobrazení dat číselníku" />
   <Content>
     <Panel>
       <Name value="AMS_CodeListPnl" />
@@ -21,14 +20,6 @@
               <Orientation value="Horizontal" />
               <Panel.Height value="#" />
               <Panel.Width value="*" />
-              <Children>
-                <Breadcrumbs identity="Breadcrumbs.4d3eeadca3c54f1caa1d677db7e07acb">
-                  <Name value="breadcrumbs" />
-                  <controller reference="+GlobalApiObjects.breadcrumbsCtr" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="*" />
-                </Breadcrumbs>
-              </Children>
               <CssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-panel" />
@@ -48,13 +39,13 @@
               <Children>
                 <TextBox>
                   <Name value="edb_CodeList" />
-                  <Caption value="Název číselníku" />
                   <CaptionPosition value="Top" />
                   <IsEnabled value="False" />
                   <Panel.Height value="#" />
                   <Panel.Width value="50%" />
                   <Bindings>
                     <Binding SourceProperty="Data" Expression="" />
+                    <Binding SourceProperty="Caption" Expression="localized.NazevCiselniku" />
                   </Bindings>
                   <CssClass>
                     <CssClassConditional>
@@ -65,13 +56,13 @@
                 </TextBox>
                 <DatePicker>
                   <Name value="dtp_CodeListDate" />
-                  <Caption value="Data číselníku platné k datu" />
                   <CaptionPosition value="Top" />
                   <IsEnabled value="False" />
                   <Panel.Height value="#" />
                   <Panel.Width value="50%" />
                   <Bindings>
                     <Binding SourceProperty="Data" Expression="" />
+                    <Binding SourceProperty="Caption" Expression="localized.DataCiselnikuPlatneKDatu" />
                   </Bindings>
                   <CssClass>
                     <CssClassConditional>
@@ -98,7 +89,6 @@
               <Columns>
                 <DataColumn>
                   <Name value="edb_CodeCol" />
-                  <Caption value="Kód" />
                   <Content>
                     <TextBox>
                       <Name value="edb_Code" />
@@ -106,6 +96,7 @@
                       <IsEnabled value="False" />
                       <Bindings>
                         <Binding SourceProperty="Data" Expression="" />
+                        <Binding SourceProperty="Caption" Expression="localized.LocalizedString2" />
                       </Bindings>
                       <CssClass>
                         <CssClassConditional>
@@ -115,6 +106,9 @@
                       </CssClass>
                     </TextBox>
                   </Content>
+                  <Bindings>
+                    <Binding SourceProperty="Caption" Expression="localized.Kod" />
+                  </Bindings>
                   <HeaderCssClass>
                     <CssClassConditional>
                       <ClassName value="{theme}-datacolumn" />
@@ -124,7 +118,6 @@
                 </DataColumn>
                 <DataColumn>
                   <Name value="edb_NameCol" />
-                  <Caption value="Název" />
                   <Content>
                     <Panel>
                       <Name value="panel2" />
@@ -138,6 +131,7 @@
                           <Panel.Width value="*" />
                           <Bindings>
                             <Binding SourceProperty="Data" Expression="" />
+                            <Binding SourceProperty="Caption" Expression="localized.LocalizedString2" />
                           </Bindings>
                           <CssClass>
                             <CssClassConditional>
@@ -155,6 +149,9 @@
                       </CssClass>
                     </Panel>
                   </Content>
+                  <Bindings>
+                    <Binding SourceProperty="Caption" Expression="localized.Nazev" />
+                  </Bindings>
                   <HeaderCssClass>
                     <CssClassConditional>
                       <ClassName value="{theme}-datacolumn" />
@@ -193,6 +190,16 @@
         <Complex>
           <Name value="model" />
           <Caption value="Model" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.Model" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
         </Complex>
       </Children>
     </DataContext>
@@ -227,4 +234,7 @@ form.actions.setBreadcrumbs()]]></Script>
       </DataContext>
     </ActionBlock>
   </Actions>
+  <Bindings>
+    <Binding SourceProperty="Caption" Expression="localized.ZobrazeniDatCiselniku" />
+  </Bindings>
 </Form>

@@ -6,6 +6,16 @@
   <Description value="Identifikační číslo subjektu. &#xA;Standardní AQMetaMan formát je an..17 &#xA;V celních evidencích se pro něj u českých subjektů používá EORI (řádné) nebo ad hoc EORI. V některých evidencích může mít podobu IČ, DIČ, RČ.&#xA;  &#xA;" />
   <MtsImportOptions.MTS.ID value="TIN" />
   <MtsImportOptions.MTS.Type value="metatype" />
+  <PropertyLocalizationData.PropertyLocalizations>
+    <PropertyLocalizationData>
+      <LocalizedProperties>
+        <LocalizedProperty>
+          <Localization reference="+Localizations.TIN" />
+          <PropertyName value="Caption" />
+        </LocalizedProperty>
+      </LocalizedProperties>
+    </PropertyLocalizationData>
+  </PropertyLocalizationData.PropertyLocalizations>
   <TypeSpec>
     <AttributeType>
       <StrMaxLength value="17" />

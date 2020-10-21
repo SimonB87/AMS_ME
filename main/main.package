@@ -17,5 +17,6 @@
     </PackageFolder>
     <PackageItem Src="globalApiObjects.globalApiObjects" />
     <PackageItem Src="globalActions.globalActions" />
+    <PackageItem Src="localizations.packageLocalizations" />
   </Items>
 </Package>

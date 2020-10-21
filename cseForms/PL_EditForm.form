@@ -2,7 +2,6 @@
 <?data-format version="0.400"?>
 <Form>
   <Name value="PL_EditForm" />
-  <Caption value="Detail schváleného místa" />
   <Content>
     <Panel>
       <Name value="PL_EditFormPnl_parent" />
@@ -18,10 +17,12 @@
           <Children>
             <Label>
               <Name value="NavigationLbl" />
-              <Data value="Navigation" />
               <Heading value="h3" />
               <Panel.Height value="#" />
               <Panel.Width value="100%" />
+              <Bindings>
+                <Binding SourceProperty="Data" Expression="localized.Navigation" />
+              </Bindings>
               <CssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-label" />
@@ -31,12 +32,14 @@
             </Label>
             <HyperLink>
               <Name value="general_link" />
-              <Data value="General" />
               <Panel.Height value="#" />
               <Panel.Width value="*" />
               <OnClick>
                 <ActionEvent ReferencedAction="~handler_general_link_OnClick" />
               </OnClick>
+              <Bindings>
+                <Binding SourceProperty="Data" Expression="localized.General" />
+              </Bindings>
               <CssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-hyperlink" />
@@ -178,12 +181,14 @@
                       <Children>
                         <Button>
                           <Name value="button3" />
-                          <Caption value="OK" />
                           <Panel.Height value="#" />
                           <Panel.Width value="150px" />
                           <OnClick>
                             <ActionEvent ReferencedAction="~handler_button3_OnClick" />
                           </OnClick>
+                          <Bindings>
+                            <Binding SourceProperty="Caption" Expression="localized.OK" />
+                          </Bindings>
                           <CssClass>
                             <CssClassConditional>
                               <ClassName value="{theme}-button" />
@@ -199,9 +204,11 @@
                         </Button>
                         <Button>
                           <Name value="btn_Delete" />
-                          <Caption value="Zrušení" />
                           <Panel.Height value="#" />
                           <Panel.Width value="150px" />
+                          <Bindings>
+                            <Binding SourceProperty="Caption" Expression="localized.Zruseni" />
+                          </Bindings>
                           <CssClass>
                             <CssClassConditional>
                               <ClassName value="{theme}-button" />
@@ -211,13 +218,15 @@
                         </Button>
                         <Button>
                           <Name value="button7" />
-                          <Caption value="Modifikace" />
                           <IsVisible value="False" />
                           <Panel.Height value="#" />
                           <Panel.Width value="150px" />
                           <OnClick>
                             <ActionEvent ReferencedAction="~handler_button7_OnClick" />
                           </OnClick>
+                          <Bindings>
+                            <Binding SourceProperty="Caption" Expression="localized.Modifikace" />
+                          </Bindings>
                           <CssClass>
                             <CssClassConditional>
                               <ClassName value="{theme}-button" />
@@ -233,12 +242,14 @@
                         </Button>
                         <Button>
                           <Name value="btn_Close" />
-                          <Caption value="Zavřít" />
                           <Panel.Height value="#" />
                           <Panel.Width value="150px" />
                           <OnClick>
                             <ActionEvent ReferencedAction="~action1" />
                           </OnClick>
+                          <Bindings>
+                            <Binding SourceProperty="Caption" Expression="localized.Zavrit" />
+                          </Bindings>
                           <CssClass>
                             <CssClassConditional>
                               <ClassName value="{theme}-button" />
@@ -322,7 +333,6 @@
               <Children>
                 <GroupBox>
                   <Name value="validations_grp" />
-                  <Caption value="Validation summary" />
                   <Panel.Height value="#" />
                   <Panel.Width value="*" />
                   <Content>
@@ -386,6 +396,9 @@
                       </CssClass>
                     </Panel>
                   </Content>
+                  <Bindings>
+                    <Binding SourceProperty="Caption" Expression="localized.ValidationSummary" />
+                  </Bindings>
                   <CssClass>
                     <CssClassConditional>
                       <ClassName value="{theme}-groupbox" />
@@ -436,7 +449,6 @@
                           <Children>
                             <TextBox>
                               <Name value="edb_PlaceCountry" />
-                              <Caption value="Evid." />
                               <CaptionPosition value="Top" />
                               <Panel.Height value="#" />
                               <Panel.Width value="14%" />
@@ -444,6 +456,7 @@
                                 <Binding SourceProperty="Data" Expression="form.model.Country" />
                                 <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.model.Country.isRequired()" />
                                 <Binding SourceProperty="IsEnabled" Expression="form._modificationDisabled" />
+                                <Binding SourceProperty="Caption" Expression="localized.Evid" />
                               </Bindings>
                               <CssClass>
                                 <CssClassConditional>
@@ -454,7 +467,6 @@
                             </TextBox>
                             <TextBox>
                               <Name value="edb_PlaceID" />
-                              <Caption value="číslo schváleného místa" />
                               <CaptionPosition value="Top" />
                               <Panel.Height value="#" />
                               <Panel.Width value="33%" />
@@ -462,6 +474,7 @@
                                 <Binding SourceProperty="Data" Expression="form.model.PlaceID" />
                                 <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.model.PlaceID.isRequired()" />
                                 <Binding SourceProperty="IsEnabled" Expression="form._modificationDisabled" />
+                                <Binding SourceProperty="Caption" Expression="localized.CisloSchvalenehoMista" />
                               </Bindings>
                               <CssClass>
                                 <CssClassConditional>
@@ -472,7 +485,6 @@
                             </TextBox>
                             <TextBox>
                               <Name value="edb_ResponsibleCustomsOffice" />
-                              <Caption value="Celní úřad zapisující" />
                               <CaptionPosition value="Top" />
                               <Panel.Height value="#" />
                               <Panel.Width value="33%" />
@@ -480,6 +492,7 @@
                                 <Binding SourceProperty="Data" Expression="form.model.ResponsibleCustomsOfiice" />
                                 <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.model.ResponsibleCustomsOfiice.isRequired()" />
                                 <Binding SourceProperty="IsEnabled" Expression="form._modificationDisabled" />
+                                <Binding SourceProperty="Caption" Expression="localized.CelniUradZapisujici" />
                               </Bindings>
                               <CssClass>
                                 <CssClassConditional>
@@ -504,7 +517,6 @@
                           <Children>
                             <TextBox>
                               <Name value="edb_TIN" />
-                              <Caption value="Osoba, které bylo místo schváleno (EORI)" />
                               <CaptionPosition value="Top" />
                               <Panel.Height value="#" />
                               <Panel.Width value="40%" />
@@ -512,6 +524,7 @@
                                 <Binding SourceProperty="Data" Expression="form.model.TIN" />
                                 <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.model.TIN.isRequired()" />
                                 <Binding SourceProperty="IsEnabled" Expression="form._modificationDisabled" />
+                                <Binding SourceProperty="Caption" Expression="localized.OsobaKtereByloMistoSchvalenoEORI" />
                               </Bindings>
                               <CssClass>
                                 <CssClassConditional>
@@ -522,7 +535,6 @@
                             </TextBox>
                             <TextBox>
                               <Name value="edb_TinName" />
-                              <Caption value="Název / jméno subjektu" />
                               <CaptionPosition value="Top" />
                               <Panel.Height value="#" />
                               <Panel.Width value="40%" />
@@ -530,6 +542,7 @@
                                 <Binding SourceProperty="Data" Expression="form.model.TinName" />
                                 <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.model.TinName.isRequired()" />
                                 <Binding SourceProperty="IsEnabled" Expression="form._modificationDisabled" />
+                                <Binding SourceProperty="Caption" Expression="localized.NazevJmenoSubjektu1" />
                               </Bindings>
                               <CssClass>
                                 <CssClassConditional>
@@ -892,6 +905,10 @@
           <ClassName value="{theme}-panel" />
           <IsThemedStyle value="True" />
         </CssClassConditional>
+        <CssClassConditional>
+          <ClassName value="{theme}-disabledAll" />
+          <IsThemedStyle value="True" />
+        </CssClassConditional>
       </CssClass>
     </Panel>
   </Content>
@@ -901,6 +918,16 @@
         <Collection>
           <Name value="collection1" />
           <Caption value="Collection 1" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.Collection1" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
           <Children>
             <Attribute>
               <Name value="Name" />
@@ -908,6 +935,16 @@
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.Name" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Attribute>
               <Name value="StreetAndNr" />
@@ -915,6 +952,16 @@
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.StreetAndNr" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Attribute>
               <Name value="City" />
@@ -922,6 +969,16 @@
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.City" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Attribute>
               <Name value="PostCode" />
@@ -929,6 +986,16 @@
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.PostCode" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Attribute>
               <Name value="PlaceSpecification" />
@@ -936,10 +1003,30 @@
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.PlaceSpecification" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Reference>
               <Name value="ValidityCustomsOffice" />
               <Caption value="Validity customs office" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.ValidityCustomsOffice" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Attribute>
                   <Name value="Key" />
@@ -947,6 +1034,16 @@
                   <DeclaredType>
                     <AttributeType />
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.Key" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="Description" />
@@ -954,6 +1051,16 @@
                   <DeclaredType>
                     <AttributeType />
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.Description" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
               </Children>
             </Reference>
@@ -965,6 +1072,16 @@
                   <BaseType value="Date" />
                 </AttributeType>
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.ValidityStartDate" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Attribute>
               <Name value="ValidityEndDate" />
@@ -974,10 +1091,30 @@
                   <BaseType value="Date" />
                 </AttributeType>
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.ValidityEndDate" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Reference>
               <Name value="ResponsiblePerson" />
               <Caption value="Responsible person" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.ResponsiblePerson" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Attribute>
                   <Name value="Key" />
@@ -985,6 +1122,16 @@
                   <DeclaredType>
                     <AttributeType />
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.Key" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="Description" />
@@ -992,6 +1139,16 @@
                   <DeclaredType>
                     <AttributeType />
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.Description" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
               </Children>
             </Reference>
@@ -1003,6 +1160,16 @@
                   <BaseType value="Date" />
                 </AttributeType>
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.EvidenceDate" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Attribute>
               <Name value="DetailID" />
@@ -1010,10 +1177,30 @@
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.DetailID" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Reference>
               <Name value="Country" />
               <Caption value="Country" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.Country" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Attribute>
                   <Name value="Key" />
@@ -1021,6 +1208,16 @@
                   <DeclaredType>
                     <AttributeType />
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.Key" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="Description" />
@@ -1028,6 +1225,16 @@
                   <DeclaredType>
                     <AttributeType />
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.Description" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
               </Children>
             </Reference>
@@ -1041,10 +1248,30 @@
               <BaseType value="Integer" />
             </AttributeType>
           </DeclaredType>
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.Index_Collection1" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
         </Attribute>
         <Reference>
           <Name value="reference1" />
           <Caption value="Reference 1" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.Reference1" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
           <Children>
             <Attribute>
               <Name value="Key" />
@@ -1052,6 +1279,16 @@
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.Key" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Attribute>
               <Name value="Description" />
@@ -1059,12 +1296,32 @@
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.Description" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
           </Children>
         </Reference>
         <Complex>
           <Name value="model" />
           <Caption value="Model" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.Model" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
           <Children>
             <Include>
               <Include reference="/(model.13c525570c9b4339a1f151f546c52d45)+DataEntities.PLData" />
@@ -1077,6 +1334,16 @@
                   <BaseType value="DateTime" />
                 </AttributeType>
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations._actualDate1" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
           </Children>
         </Complex>
@@ -1088,10 +1355,30 @@
               <BaseType value="Bool" />
             </AttributeType>
           </DeclaredType>
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.IsEditing1" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
         </Attribute>
         <Complex>
           <Name value="panelsVisibility" />
           <Caption value="Panels visibility" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.PanelsVisibility" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
           <Children>
             <Attribute>
               <Name value="isGeneralVisible" />
@@ -1101,6 +1388,16 @@
                   <BaseType value="Bool" />
                 </AttributeType>
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.IsGeneralVisible1" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Attribute>
               <Name value="isPlaceVisible" />
@@ -1110,6 +1407,16 @@
                   <BaseType value="Bool" />
                 </AttributeType>
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.IsPlaceVisible" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
           </Children>
         </Complex>
@@ -1118,6 +1425,16 @@
           <DeclaredType>
             <AttributeType />
           </DeclaredType>
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.LocalizedString1" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
         </Attribute>
         <Attribute>
           <Name value="mode" />
@@ -1125,6 +1442,16 @@
           <DataContextParameter.IsInput value="True" />
           <DataContextParameter.IsInputRequired value="True" />
           <MetaType reference="+MetaTypes.mode" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.Mode" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
         </Attribute>
         <Attribute>
           <Name value="state" />
@@ -1134,6 +1461,16 @@
           <DeclaredType>
             <AttributeType />
           </DeclaredType>
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.State" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
         </Attribute>
         <Attribute>
           <Name value="guid" />
@@ -1142,6 +1479,36 @@
           <DeclaredType>
             <AttributeType />
           </DeclaredType>
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.Guid" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
+        </Attribute>
+        <Attribute>
+          <Name value="isModifyWithFutureRemoval" />
+          <Caption value="Is modify with future removal" />
+          <DataContextParameter.IsInput value="True" />
+          <DeclaredType>
+            <AttributeType>
+              <BaseType value="Bool" />
+            </AttributeType>
+          </DeclaredType>
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.IsModifyWithFutureRemoval" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
         </Attribute>
         <Computed>
           <Name value="_modificationDisabled" />
@@ -1152,6 +1519,16 @@
               <BaseType value="Bool" />
             </ResultType>
           </Expression>
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations._ModificationDisabled" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
         </Computed>
       </Children>
       <Modifiers>
@@ -1162,7 +1539,7 @@
           <Validators>
             <Validator Name="df_validateAttribute_ValidityStartDate">
               <ErrorMessage IsValid="True">
-                <ExpressionText><![CDATA["VAL056"]]></ExpressionText>
+                <ExpressionText><![CDATA[localized.VAL056]]></ExpressionText>
                 <ResultType>
                   <BaseType value="String" />
                 </ResultType>
@@ -1238,7 +1615,12 @@ url.updatePageUrl()
 
 form.model._actualDate = getDateTime()
 
-form.isEditing = false]]></Script>
+form.isEditing = false
+
+if (form.mode = enums.mode.Modify) then
+	if form.isModifyWithFutureRemoval and form.guid.hasValue() then
+		form.actions.sendMessageToCenter("AMSFutureRemoval", "{\"AMS\":\"GUID\": \"" + form.guid + "\"}")
+endIf endIf]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
@@ -1283,5 +1665,87 @@ endif
         <ActionDataContext />
       </DataContext>
     </ActionBlock>
+    <ActionBlock>
+      <Name value="sendMessageToCenter" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[var response = packages.main.apiobjects.CIC.postAsync(typeOfMessage, inputStructure)
+
+if response.isError() then
+
+	globals.errors.serverValidationComplex.fromJson(response.extractJson("Error"))
+	globals.errors.serverValidationErrors.fromJson(globals.errors.serverValidationComplex.MessageCheckError.toJson())
+	globals.globalUiState.isValidationsActive = true
+
+	system.console(response.extractJson("Error"))
+
+	var errorMessage = defaultString()
+	var errorCount = defaultInt()
+
+	errorCount = form.model.validationErrorsCount() + globals.Errors.serverValidationErrors.count()
+
+	if (errorCount > 1) then 
+		errorMessage = "There are " + toString(errorCount) + " errors in the message, please fix them to continue."
+	else
+		errorMessage = "There is " + toString(errorCount) + " error in the message, please fix it to continue."
+	endif
+	
+	apiobjects.notificationsCtrl.addError(errorMessage)
+	
+else
+
+	apiobjects.notificationsCtrl.addSuccess("Message was saved corretly.")
+	
+	system.console(response.getMessageType())
+	system.console(response.getJsonString())
+	navigation.cseForms.MainForm.go()
+
+endif]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext>
+          <Children>
+            <Attribute>
+              <Name value="typeOfMessage" />
+              <Caption value="Type of message" />
+              <DataContextParameter.IsInput value="True" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.TypeOfMessage" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
+            </Attribute>
+            <Attribute>
+              <Name value="inputStructure" />
+              <Caption value="Input structure" />
+              <DataContextParameter.IsInput value="True" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.InputStructure" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
+            </Attribute>
+          </Children>
+        </ActionDataContext>
+      </DataContext>
+    </ActionBlock>
   </Actions>
+  <Bindings>
+    <Binding SourceProperty="Caption" Expression="localized.DetailSchvalenehoMista" />
+  </Bindings>
 </Form>

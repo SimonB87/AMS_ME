@@ -2,7 +2,6 @@
 <?data-format version="0.400"?>
 <Form>
   <Name value="Audit_EditForm" />
-  <Caption value="Detail auditu subjektu" />
   <Content>
     <Panel>
       <Name value="Audit_EditFormPnl" />
@@ -15,14 +14,6 @@
           <Orientation value="Horizontal" />
           <Panel.Height value="#" />
           <Panel.Width value="*" />
-          <Children>
-            <Breadcrumbs identity="Breadcrumbs.4d3eeadca3c54f1caa1d677db7e07acb">
-              <Name value="breadcrumbs" />
-              <controller reference="+GlobalApiObjects.breadcrumbsCtr" />
-              <Panel.Height value="#" />
-              <Panel.Width value="*" />
-            </Breadcrumbs>
-          </Children>
           <CssClass>
             <CssClassConditional>
               <ClassName value="{theme}-panel" />
@@ -42,13 +33,13 @@
           <Children>
             <TextBox>
               <Name value="edb_TIN" />
-              <Caption value="EORI" />
               <CaptionPosition value="Top" />
               <IsEnabled value="False" />
               <Panel.Height value="#" />
               <Panel.Width value="50%" />
               <Bindings>
                 <Binding SourceProperty="Data" Expression="" />
+                <Binding SourceProperty="Caption" Expression="localized.EORI" />
               </Bindings>
               <CssClass>
                 <CssClassConditional>
@@ -59,13 +50,13 @@
             </TextBox>
             <TextBox>
               <Name value="edb_OperatorName" />
-              <Caption value="Název/jméno subjektu" />
               <CaptionPosition value="Top" />
               <IsEnabled value="False" />
               <Panel.Height value="#" />
               <Panel.Width value="50%" />
               <Bindings>
                 <Binding SourceProperty="Data" Expression="" />
+                <Binding SourceProperty="Caption" Expression="localized.NazevJmenoSubjektu" />
               </Bindings>
               <CssClass>
                 <CssClassConditional>
@@ -90,13 +81,13 @@
           <Children>
             <TextBox>
               <Name value="edb_OperatorStreetAndNr" />
-              <Caption value="Ulice a č.p." />
               <CaptionPosition value="Top" />
               <IsEnabled value="False" />
               <Panel.Height value="#" />
               <Panel.Width value="50%" />
               <Bindings>
                 <Binding SourceProperty="Data" Expression="" />
+                <Binding SourceProperty="Caption" Expression="localized.UliceACP" />
               </Bindings>
               <CssClass>
                 <CssClassConditional>
@@ -107,13 +98,13 @@
             </TextBox>
             <TextBox>
               <Name value="edb_OperatorCity" />
-              <Caption value="Město" />
               <CaptionPosition value="Top" />
               <IsEnabled value="False" />
               <Panel.Height value="#" />
               <Panel.Width value="50%" />
               <Bindings>
                 <Binding SourceProperty="Data" Expression="" />
+                <Binding SourceProperty="Caption" Expression="localized.Mesto" />
               </Bindings>
               <CssClass>
                 <CssClassConditional>
@@ -172,7 +163,6 @@
                   <Children>
                     <DatePicker>
                       <Name value="dtp_AuditStartDate" />
-                      <Caption value="Datum započetí auditu" />
                       <CaptionPosition value="Top" />
                       <IsEnabled value="False" />
                       <Panel.Height value="#" />
@@ -180,6 +170,7 @@
                       <Bindings>
                         <Binding SourceProperty="Data" Expression="AuditStartDate" />
                         <Binding SourceProperty="IsRequiredMarkVisible" Expression="AuditStartDate.isRequired()" />
+                        <Binding SourceProperty="Caption" Expression="localized.DatumZapocetiAuditu" />
                       </Bindings>
                       <CssClass>
                         <CssClassConditional>
@@ -190,7 +181,6 @@
                     </DatePicker>
                     <DatePicker>
                       <Name value="dtp_AuditEndDate" />
-                      <Caption value="Datum ukončení auditu" />
                       <CaptionPosition value="Top" />
                       <IsEnabled value="False" />
                       <Panel.Height value="#" />
@@ -198,6 +188,7 @@
                       <Bindings>
                         <Binding SourceProperty="Data" Expression="AuditEndDate" />
                         <Binding SourceProperty="IsRequiredMarkVisible" Expression="AuditEndDate.isRequired()" />
+                        <Binding SourceProperty="Caption" Expression="localized.DatumUkonceniAuditu" />
                       </Bindings>
                       <CssClass>
                         <CssClassConditional>
@@ -208,7 +199,6 @@
                     </DatePicker>
                     <DatePicker>
                       <Name value="dtp_EvidenceDate" />
-                      <Caption value="Datum zápisu do aplikace" />
                       <CaptionPosition value="Top" />
                       <IsEnabled value="False" />
                       <Panel.Height value="#" />
@@ -216,6 +206,7 @@
                       <Bindings>
                         <Binding SourceProperty="Data" Expression="EvidenceDate" />
                         <Binding SourceProperty="IsRequiredMarkVisible" Expression="EvidenceDate.isRequired()" />
+                        <Binding SourceProperty="Caption" Expression="localized.DatumZapisuDoAplikace" />
                       </Bindings>
                       <CssClass>
                         <CssClassConditional>
@@ -240,7 +231,6 @@
                   <Children>
                     <TextBox>
                       <Name value="edb_AuditNumber" />
-                      <Caption value="Číslo kontroly" />
                       <CaptionPosition value="Top" />
                       <IsEnabled value="False" />
                       <Panel.Height value="#" />
@@ -248,6 +238,7 @@
                       <Bindings>
                         <Binding SourceProperty="Data" Expression="AuditNumber" />
                         <Binding SourceProperty="IsRequiredMarkVisible" Expression="AuditNumber.isRequired()" />
+                        <Binding SourceProperty="Caption" Expression="localized.CisloKontroly" />
                       </Bindings>
                       <CssClass>
                         <CssClassConditional>
@@ -258,7 +249,6 @@
                     </TextBox>
                     <TextBox>
                       <Name value="edb_AuditProtocolNumber" />
-                      <Caption value="Číslo protokolu" />
                       <CaptionPosition value="Top" />
                       <IsEnabled value="False" />
                       <Panel.Height value="#" />
@@ -266,6 +256,7 @@
                       <Bindings>
                         <Binding SourceProperty="Data" Expression="AuditProtocolNumber" />
                         <Binding SourceProperty="IsRequiredMarkVisible" Expression="AuditProtocolNumber.isRequired()" />
+                        <Binding SourceProperty="Caption" Expression="localized.CisloProtokolu" />
                       </Bindings>
                       <CssClass>
                         <CssClassConditional>
@@ -276,7 +267,6 @@
                     </TextBox>
                     <TextBox>
                       <Name value="edb_ControledByUser" />
-                      <Caption value="Pracovník provádějící audit" />
                       <CaptionPosition value="Top" />
                       <IsEnabled value="False" />
                       <Panel.Height value="#" />
@@ -284,6 +274,7 @@
                       <Bindings>
                         <Binding SourceProperty="Data" Expression="ControlledByUser" />
                         <Binding SourceProperty="IsRequiredMarkVisible" Expression="ControlledByUser.isRequired()" />
+                        <Binding SourceProperty="Caption" Expression="localized.PracovnikProvadejiciAudit" />
                       </Bindings>
                       <CssClass>
                         <CssClassConditional>
@@ -302,7 +293,6 @@
                 </Panel>
                 <ReferenceCombo>
                   <Name value="cbb_Result" />
-                  <Caption value="Výsledek" />
                   <CaptionPosition value="Top" />
                   <DisplayMember value="Description" />
                   <IsEnabled value="False" />
@@ -312,6 +302,7 @@
                   <Bindings>
                     <Binding SourceProperty="Data" Expression="reference1" />
                     <Binding SourceProperty="IsRequiredMarkVisible" Expression="reference1.isRequired()" />
+                    <Binding SourceProperty="Caption" Expression="localized.Vysledek" />
                   </Bindings>
                   <CssClass>
                     <CssClassConditional>
@@ -330,7 +321,6 @@
                   <Columns>
                     <DataColumn>
                       <Name value="edb_FileNameCol" />
-                      <Caption value="Název souboru" />
                       <Content>
                         <TextBox>
                           <Name value="edb_FileName" />
@@ -349,6 +339,9 @@
                           </CssClass>
                         </TextBox>
                       </Content>
+                      <Bindings>
+                        <Binding SourceProperty="Caption" Expression="localized.NazevSouboru" />
+                      </Bindings>
                       <HeaderCssClass>
                         <CssClassConditional>
                           <ClassName value="{theme}-datacolumn" />
@@ -358,7 +351,6 @@
                     </DataColumn>
                     <DataColumn>
                       <Name value="edb_FileTypeCol" />
-                      <Caption value="Typ" />
                       <Content>
                         <TextBox>
                           <Name value="edb_FileType" />
@@ -377,6 +369,9 @@
                           </CssClass>
                         </TextBox>
                       </Content>
+                      <Bindings>
+                        <Binding SourceProperty="Caption" Expression="localized.Typ" />
+                      </Bindings>
                       <HeaderCssClass>
                         <CssClassConditional>
                           <ClassName value="{theme}-datacolumn" />
@@ -386,7 +381,6 @@
                     </DataColumn>
                     <DataColumn>
                       <Name value="edb_FileContentCol" />
-                      <Caption value="edb_FileContent" />
                       <Content>
                         <TextBox>
                           <Name value="edb_FileContent" />
@@ -405,6 +399,9 @@
                           </CssClass>
                         </TextBox>
                       </Content>
+                      <Bindings>
+                        <Binding SourceProperty="Caption" Expression="localized.Edb_FileContent" />
+                      </Bindings>
                       <HeaderCssClass>
                         <CssClassConditional>
                           <ClassName value="{theme}-datacolumn" />
@@ -414,7 +411,6 @@
                     </DataColumn>
                     <DataColumn>
                       <Name value="edb_FileSizeCol" />
-                      <Caption value="Velikost" />
                       <Content>
                         <TextBox>
                           <Name value="edb_FileSize" />
@@ -433,6 +429,9 @@
                           </CssClass>
                         </TextBox>
                       </Content>
+                      <Bindings>
+                        <Binding SourceProperty="Caption" Expression="localized.Velikost" />
+                      </Bindings>
                       <HeaderCssClass>
                         <CssClassConditional>
                           <ClassName value="{theme}-datacolumn" />
@@ -456,9 +455,11 @@
                   <Children>
                     <Button>
                       <Name value="btn_History" />
-                      <Caption value="Historie" />
                       <Panel.Height value="#" />
                       <Panel.Width value="150px" />
+                      <Bindings>
+                        <Binding SourceProperty="Caption" Expression="localized.Historie" />
+                      </Bindings>
                       <CssClass>
                         <CssClassConditional>
                           <ClassName value="{theme}-button" />
@@ -468,9 +469,11 @@
                     </Button>
                     <Button>
                       <Name value="btn_ShowFile" />
-                      <Caption value="Zobrazení souboru" />
                       <Panel.Height value="#" />
                       <Panel.Width value="150px" />
+                      <Bindings>
+                        <Binding SourceProperty="Caption" Expression="localized.ZobrazeniSouboru" />
+                      </Bindings>
                       <CssClass>
                         <CssClassConditional>
                           <ClassName value="{theme}-button" />
@@ -508,9 +511,11 @@
           <Children>
             <Button>
               <Name value="btn_AMSDetail" />
-              <Caption value="Detail povolení" />
               <Panel.Height value="#" />
               <Panel.Width value="150px" />
+              <Bindings>
+                <Binding SourceProperty="Caption" Expression="localized.DetailPovoleni" />
+              </Bindings>
               <CssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-button" />
@@ -520,9 +525,11 @@
             </Button>
             <Button>
               <Name value="btn_DWHReport" />
-              <Caption value="DWH Report" />
               <Panel.Height value="#" />
               <Panel.Width value="150px" />
+              <Bindings>
+                <Binding SourceProperty="Caption" Expression="localized.DWHReport" />
+              </Bindings>
               <CssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-button" />
@@ -548,7 +555,6 @@
           <Columns>
             <DataColumn>
               <Name value="edb_AMSIDCol" />
-              <Caption value="Číslo povolení" />
               <Content>
                 <TextBox>
                   <Name value="edb_AMSID" />
@@ -556,6 +562,7 @@
                   <IsEnabled value="False" />
                   <Bindings>
                     <Binding SourceProperty="Data" Expression="" />
+                    <Binding SourceProperty="Caption" Expression="localized.LocalizedString2" />
                   </Bindings>
                   <CssClass>
                     <CssClassConditional>
@@ -565,6 +572,9 @@
                   </CssClass>
                 </TextBox>
               </Content>
+              <Bindings>
+                <Binding SourceProperty="Caption" Expression="localized.CisloPovoleni" />
+              </Bindings>
               <HeaderCssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-datacolumn" />
@@ -574,7 +584,6 @@
             </DataColumn>
             <DataColumn>
               <Name value="cbb_AuthorizationTypeCol" />
-              <Caption value="Typ povolení" />
               <Content>
                 <ReferenceCombo>
                   <Name value="cbb_AuthorizationType" />
@@ -595,6 +604,9 @@
                   </CssClass>
                 </ReferenceCombo>
               </Content>
+              <Bindings>
+                <Binding SourceProperty="Caption" Expression="localized.TypPovoleni" />
+              </Bindings>
               <HeaderCssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-datacolumn" />
@@ -604,7 +616,6 @@
             </DataColumn>
             <DataColumn>
               <Name value="edb_StateNameCol" />
-              <Caption value="Stav" />
               <Content>
                 <TextBox>
                   <Name value="edb_StateName" />
@@ -612,6 +623,7 @@
                   <IsEnabled value="False" />
                   <Bindings>
                     <Binding SourceProperty="Data" Expression="" />
+                    <Binding SourceProperty="Caption" Expression="localized.LocalizedString2" />
                   </Bindings>
                   <CssClass>
                     <CssClassConditional>
@@ -621,6 +633,9 @@
                   </CssClass>
                 </TextBox>
               </Content>
+              <Bindings>
+                <Binding SourceProperty="Caption" Expression="localized.Stav" />
+              </Bindings>
               <HeaderCssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-datacolumn" />
@@ -630,7 +645,6 @@
             </DataColumn>
             <DataColumn>
               <Name value="cbb_EventTypeCol" />
-              <Caption value="Typ události" />
               <Content>
                 <ReferenceCombo>
                   <Name value="cbb_EventType" />
@@ -651,6 +665,9 @@
                   </CssClass>
                 </ReferenceCombo>
               </Content>
+              <Bindings>
+                <Binding SourceProperty="Caption" Expression="localized.TypUdalosti" />
+              </Bindings>
               <HeaderCssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-datacolumn" />
@@ -660,12 +677,14 @@
             </DataColumn>
             <DataColumn>
               <Name value="edb_SupervisingCustomsOfficesCol" />
-              <Caption value="CÚ dohledu" />
               <Content>
                 <TextBox>
                   <Name value="edb_SupervisingCustomsOffices" />
                   <CaptionPosition value="Hide" />
                   <IsEnabled value="False" />
+                  <Bindings>
+                    <Binding SourceProperty="Caption" Expression="localized.LocalizedString2" />
+                  </Bindings>
                   <CssClass>
                     <CssClassConditional>
                       <ClassName value="{theme}-textbox" />
@@ -674,6 +693,9 @@
                   </CssClass>
                 </TextBox>
               </Content>
+              <Bindings>
+                <Binding SourceProperty="Caption" Expression="localized.CUDohledu" />
+              </Bindings>
               <HeaderCssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-datacolumn" />
@@ -683,12 +705,14 @@
             </DataColumn>
             <DataColumn>
               <Name value="edb_StateCol" />
-              <Caption value="edb_State" />
               <Content>
                 <TextBox>
                   <Name value="edb_State" />
                   <CaptionPosition value="Hide" />
                   <IsEnabled value="False" />
+                  <Bindings>
+                    <Binding SourceProperty="Caption" Expression="localized.LocalizedString2" />
+                  </Bindings>
                   <CssClass>
                     <CssClassConditional>
                       <ClassName value="{theme}-textbox" />
@@ -697,6 +721,9 @@
                   </CssClass>
                 </TextBox>
               </Content>
+              <Bindings>
+                <Binding SourceProperty="Caption" Expression="localized.Edb_State" />
+              </Bindings>
               <HeaderCssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-datacolumn" />
@@ -706,12 +733,14 @@
             </DataColumn>
             <DataColumn>
               <Name value="edb_AMSTypeCol" />
-              <Caption value="edb_AMSType" />
               <Content>
                 <TextBox>
                   <Name value="edb_AMSType" />
                   <CaptionPosition value="Hide" />
                   <IsEnabled value="False" />
+                  <Bindings>
+                    <Binding SourceProperty="Caption" Expression="localized.LocalizedString2" />
+                  </Bindings>
                   <CssClass>
                     <CssClassConditional>
                       <ClassName value="{theme}-textbox" />
@@ -720,6 +749,9 @@
                   </CssClass>
                 </TextBox>
               </Content>
+              <Bindings>
+                <Binding SourceProperty="Caption" Expression="localized.Edb_AMSType" />
+              </Bindings>
               <HeaderCssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-datacolumn" />
@@ -743,9 +775,11 @@
           <Children>
             <Button>
               <Name value="btn_OK" />
-              <Caption value="OK" />
               <Panel.Height value="#" />
               <Panel.Width value="150px" />
+              <Bindings>
+                <Binding SourceProperty="Caption" Expression="localized.OK" />
+              </Bindings>
               <CssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-button" />
@@ -755,9 +789,11 @@
             </Button>
             <Button>
               <Name value="btn_Close" />
-              <Caption value="Zavřít" />
               <Panel.Height value="#" />
               <Panel.Width value="150px" />
+              <Bindings>
+                <Binding SourceProperty="Caption" Expression="localized.Zavrit" />
+              </Bindings>
               <CssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-button" />
@@ -767,9 +803,11 @@
             </Button>
             <Button>
               <Name value="btn_Validate" />
-              <Caption value="Validace" />
               <Panel.Height value="#" />
               <Panel.Width value="150px" />
+              <Bindings>
+                <Binding SourceProperty="Caption" Expression="localized.Validace" />
+              </Bindings>
               <CssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-button" />
@@ -779,9 +817,11 @@
             </Button>
             <Button>
               <Name value="btn_RunAudit" />
-              <Caption value="Vložit zprávu" />
               <Panel.Height value="#" />
               <Panel.Width value="150px" />
+              <Bindings>
+                <Binding SourceProperty="Caption" Expression="localized.VlozitZpravu" />
+              </Bindings>
               <CssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-button" />
@@ -791,9 +831,11 @@
             </Button>
             <Button>
               <Name value="btn_temp" />
-              <Caption value="btn_temp" />
               <Panel.Height value="#" />
               <Panel.Width value="150px" />
+              <Bindings>
+                <Binding SourceProperty="Caption" Expression="localized.Btn_temp" />
+              </Bindings>
               <CssClass>
                 <CssClassConditional>
                   <ClassName value="{theme}-button" />
@@ -829,10 +871,30 @@
               <BaseType value="Integer" />
             </AttributeType>
           </DeclaredType>
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.Index_Collection1" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
         </Attribute>
         <Collection>
           <Name value="collection1" />
           <Caption value="collection1" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.Collection1" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
           <Children>
             <Attribute>
               <Name value="AuditStartDate" />
@@ -842,6 +904,16 @@
                   <BaseType value="Date" />
                 </AttributeType>
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.AuditStartDate" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Attribute>
               <Name value="AuditEndDate" />
@@ -851,6 +923,16 @@
                   <BaseType value="Date" />
                 </AttributeType>
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.AuditEndDate" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Attribute>
               <Name value="EvidenceDate" />
@@ -860,6 +942,16 @@
                   <BaseType value="Date" />
                 </AttributeType>
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.EvidenceDate" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Attribute>
               <Name value="AuditNumber" />
@@ -869,6 +961,16 @@
                   <BaseType value="Integer" />
                 </AttributeType>
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.AuditNumber" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Attribute>
               <Name value="AuditProtocolNumber" />
@@ -878,10 +980,30 @@
                   <BaseType value="Integer" />
                 </AttributeType>
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.AuditProtocolNumber" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Reference>
               <Name value="reference1" />
               <Caption value="Reference 1" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.Reference1" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Attribute>
                   <Name value="Key" />
@@ -889,6 +1011,16 @@
                   <DeclaredType>
                     <AttributeType />
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.Key" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="Description" />
@@ -896,6 +1028,16 @@
                   <DeclaredType>
                     <AttributeType />
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.Description" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
               </Children>
             </Reference>
@@ -905,10 +1047,30 @@
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.ControlledByUser" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Collection>
               <Name value="collection2" />
               <Caption value="collection2" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.Collection1" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
               <Children>
                 <Attribute>
                   <Name value="FileID" />
@@ -916,6 +1078,16 @@
                   <DeclaredType>
                     <AttributeType />
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.FileGUID" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="FileName" />
@@ -923,6 +1095,16 @@
                   <DeclaredType>
                     <AttributeType />
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.FileName" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="FileType" />
@@ -930,6 +1112,16 @@
                   <DeclaredType>
                     <AttributeType />
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.FileType" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="FileContent" />
@@ -937,6 +1129,16 @@
                   <DeclaredType>
                     <AttributeType />
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.FileContent" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
                 <Attribute>
                   <Name value="FileSize" />
@@ -944,6 +1146,16 @@
                   <DeclaredType>
                     <AttributeType />
                   </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.FileSize" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
               </Children>
             </Collection>
@@ -953,12 +1165,32 @@
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.EventGUID" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
           </Children>
         </Collection>
         <Reference>
           <Name value="reference1" />
           <Caption value="Reference 1" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.Reference1" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
           <Children>
             <Attribute>
               <Name value="Key" />
@@ -966,6 +1198,16 @@
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.Key" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Attribute>
               <Name value="Description" />
@@ -973,12 +1215,32 @@
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.Description" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
           </Children>
         </Reference>
         <Reference>
           <Name value="reference2" />
           <Caption value="Reference 2" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.Reference1" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
           <Children>
             <Attribute>
               <Name value="Key" />
@@ -986,6 +1248,16 @@
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.Key" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
             <Attribute>
               <Name value="Description" />
@@ -993,6 +1265,16 @@
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.Description" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
             </Attribute>
           </Children>
         </Reference>
@@ -1015,4 +1297,7 @@ url.updatePageUrl()]]></Script>
       </DataContext>
     </ActionBlock>
   </Actions>
+  <Bindings>
+    <Binding SourceProperty="Caption" Expression="localized.DetailAudituSubjektu" />
+  </Bindings>
 </Form>

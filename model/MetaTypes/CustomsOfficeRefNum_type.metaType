@@ -5,6 +5,16 @@
   <Caption value="Customs office reference number" />
   <MtsImportOptions.MTS.ID value="CustomsOfficeRefNum_type" />
   <MtsImportOptions.MTS.Type value="metatype" />
+  <PropertyLocalizationData.PropertyLocalizations>
+    <PropertyLocalizationData>
+      <LocalizedProperties>
+        <LocalizedProperty>
+          <Localization reference="+Localizations.CustomsOfficeReferenceNumber" />
+          <PropertyName value="Caption" />
+        </LocalizedProperty>
+      </LocalizedProperties>
+    </PropertyLocalizationData>
+  </PropertyLocalizationData.PropertyLocalizations>
   <TypeSpec>
     <AttributeType>
       <StrMaxLength value="8" />
@@ -16,7 +26,7 @@
       <MtsImportOptions.MTS.Regex value="[A-Z]{2}[A-Z0-9]{6}" />
       <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
       <ErrorMessage IsValid="True">
-        <ExpressionText><![CDATA["Value is not valid"]]></ExpressionText>
+        <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
         <ResultType>
           <BaseType value="String" />
         </ResultType>

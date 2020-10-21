@@ -16,6 +16,9 @@
         <PackageItem Src="Messages\AMSSPAuthorization.dataEntity" />
         <PackageItem Src="Messages\AMSSPAuthorizationModification.dataEntity" />
         <PackageItem Src="Messages\AMSSPAuthorizationWithdrawal.dataEntity" />
+        <PackageItem Src="Messages\AMSECAuthorizationModification.dataEntity" />
+        <PackageItem Src="Messages\AMSFutureRemoval.dataEntity" />
+        <PackageItem Src="Messages\ErrorMsg.dataEntity" />
       </Items>
     </PackageFolder>
     <PackageFolder Name="MetaTypes">
@@ -37,6 +40,7 @@
         <PackageItem Src="MetaTypes\CSRD2CodelistDescription.metaType" />
         <PackageItem Src="MetaTypes\ASState.metaType" />
         <PackageItem Src="MetaTypes\CisloZJPPovoleni.metaType" />
+        <PackageItem Src="MetaTypes\String100_type.metaType" />
       </Items>
     </PackageFolder>
     <PackageFolder Name="Enumerations">
@@ -46,6 +50,7 @@
         <PackageItem Src="Enumerations\ZoneTypeEnum.dataEntity" />
         <PackageItem Src="Enumerations\TypeOfPaybackPeriodEnum.dataEntity" />
         <PackageItem Src="Enumerations\ControlResultEnum.dataEntity" />
+        <PackageItem Src="Enumerations\CertificateUsage.dataEntity" />
       </Items>
     </PackageFolder>
     <PackageFolder Name="CodeLists">
@@ -62,6 +67,7 @@
         <PackageItem Src="CodeLists\TYPMANCS.dataEntity" />
         <PackageItem Src="CodeLists\REZIM4.dataEntity" />
         <PackageItem Src="CodeLists\CEL_UR.dataEntity" />
+        <PackageItem Src="CodeLists\CertificateIssuer.dataEntity" />
       </Items>
     </PackageFolder>
     <PackageFolder Name="Datasets">
@@ -75,5 +81,6 @@
         <PackageItem Src="Datasets\DatasetElComm.dataEntity" />
       </Items>
     </PackageFolder>
+    <PackageItem Src="localizations.packageLocalizations" />
   </Items>
 </Package>
