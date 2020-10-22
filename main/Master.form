@@ -263,7 +263,7 @@
       <Children>
         <Attribute>
           <Name value="appVersion" />
-          <Caption value="App version" />
+          <Caption value="AppVersion" />
           <DeclaredType>
             <AttributeType />
           </DeclaredType>
@@ -308,7 +308,6 @@ apiobjects.CIC.setHeader("X-CustomsOffice", selectedCo)
 var headerLang = "EN"
 apiobjects.CIC.setHeader("x-language", headerLang)
 
-//TODO vyhodit prototype codelist
 packages.cseForms.apiobjects.prototypeCodelist.fillFromJson("[{\"Key\": \"NO\", \"Description\": \"NO\"},{\"Key\": \"NP\", \"Description\": \"NP\"},{\"Key\": \"PT\", \"Description\": \"PT\"},{\"Key\": \"PP\", \"Description\": \"PP\"}]")
 
 form.actions.loadCodelists()

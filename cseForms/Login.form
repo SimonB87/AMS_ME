@@ -479,7 +479,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations.UserName1" />
+                          <Localization reference="+Localizations.UserName" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -510,7 +510,7 @@
                         <PropertyLocalizationData>
                           <LocalizedProperties>
                             <LocalizedProperty>
-                              <Localization reference="+Localizations.Name1" />
+                              <Localization reference="+Localizations.Name" />
                               <PropertyName value="Caption" />
                             </LocalizedProperty>
                           </LocalizedProperties>
@@ -519,7 +519,7 @@
                     </Attribute>
                     <Collection>
                       <Name value="Organization" />
-                      <Caption value="Organization" />
+                      <Caption value="Organisation" />
                       <PropertyLocalizationData.PropertyLocalizations>
                         <PropertyLocalizationData>
                           <LocalizedProperties>
@@ -554,7 +554,7 @@
                 </Collection>
                 <Collection>
                   <Name value="Organization" />
-                  <Caption value="Organization" />
+                  <Caption value="Organisation" />
                   <PropertyLocalizationData.PropertyLocalizations>
                     <PropertyLocalizationData>
                       <LocalizedProperties>
@@ -576,7 +576,7 @@
                         <PropertyLocalizationData>
                           <LocalizedProperties>
                             <LocalizedProperty>
-                              <Localization reference="+Localizations.Value1" />
+                              <Localization reference="+Localizations.Value" />
                               <PropertyName value="Caption" />
                             </LocalizedProperty>
                           </LocalizedProperties>
@@ -663,7 +663,7 @@
                 <PropertyLocalizationData>
                   <LocalizedProperties>
                     <LocalizedProperty>
-                      <Localization reference="+Localizations.Code2" />
+                      <Localization reference="+Localizations.Code" />
                       <PropertyName value="Caption" />
                     </LocalizedProperty>
                   </LocalizedProperties>
@@ -694,7 +694,7 @@
                 <PropertyLocalizationData>
                   <LocalizedProperties>
                     <LocalizedProperty>
-                      <Localization reference="+Localizations.ApplRole1" />
+                      <Localization reference="+Localizations.ApplRole" />
                       <PropertyName value="Caption" />
                     </LocalizedProperty>
                   </LocalizedProperties>
@@ -711,7 +711,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations.ApplRoleCode1" />
+                          <Localization reference="+Localizations.ApplRoleCode" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -746,7 +746,7 @@
                 <PropertyLocalizationData>
                   <LocalizedProperties>
                     <LocalizedProperty>
-                      <Localization reference="+Localizations.ApplRole2" />
+                      <Localization reference="+Localizations.ApplRole" />
                       <PropertyName value="Caption" />
                     </LocalizedProperty>
                   </LocalizedProperties>
@@ -763,7 +763,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations.ApplRoleCode2" />
+                          <Localization reference="+Localizations.ApplRoleCode" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -798,7 +798,7 @@
                 <PropertyLocalizationData>
                   <LocalizedProperties>
                     <LocalizedProperty>
-                      <Localization reference="+Localizations.UserName2" />
+                      <Localization reference="+Localizations.UserName" />
                       <PropertyName value="Caption" />
                     </LocalizedProperty>
                   </LocalizedProperties>

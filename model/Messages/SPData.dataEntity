@@ -315,7 +315,7 @@
             </Reference>
             <Attribute>
               <Name value="OperatorName" />
-              <Caption value="Název subjektu" />
+              <Caption value="Název Subjektu" />
               <MetaType reference="+MetaTypes.OperatorName" />
               <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/OperatorName" />
               <MtsImportOptions.MTS.Type value="element" />
@@ -2963,7 +2963,7 @@
                     </Attribute>
                     <Attribute>
                       <Name value="Name" />
-                      <Caption value="Název subjektu" />
+                      <Caption value="Název Subjektu" />
                       <MetaType reference="+MetaTypes.OperatorName" />
                       <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/Depositors/Depositor/Name" />
                       <MtsImportOptions.MTS.Type value="element" />

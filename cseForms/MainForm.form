@@ -1520,24 +1520,6 @@
                           </CssClass>
                         </Button>
                         <Button>
-                          <Name value="editFuruteChange" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="165px" />
-                          <OnClick>
-                            <ActionEvent ReferencedAction="~handler_removeFuruteChange_OnClick" />
-                          </OnClick>
-                          <Bindings>
-                            <Binding SourceProperty="IsVisible" Expression="form.buttonsVisibility.isEditFutureVisible" />
-                            <Binding SourceProperty="Caption" Expression="localized.EditFutureChange" />
-                          </Bindings>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-button" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Button>
-                        <Button>
                           <Name value="cancelFutureChange" />
                           <Panel.Height value="#" />
                           <Panel.Width value="165px" />
@@ -1675,59 +1657,77 @@
                       <columns>
                         <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
                           <Name value="Status" />
-                          <Caption value="Status" />
                           <ColumnName value="State" />
                           <DataType value="string" />
                           <EnableFilter value="False" />
+                          <Bindings>
+                            <Binding SourceProperty="Caption" Expression="localized.State" />
+                          </Bindings>
                         </listColumn>
                         <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
                           <Name value="StatusName" />
-                          <Caption value="Status name" />
                           <ColumnName value="StateName" />
                           <DataType value="string" />
+                          <Bindings>
+                            <Binding SourceProperty="Caption" Expression="localized.StateName" />
+                          </Bindings>
                         </listColumn>
                         <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
                           <Name value="GUID" />
-                          <Caption value="GUID" />
                           <ColumnName value="GUID" />
                           <DataType value="string" />
                           <IsVisible value="False" />
+                          <Bindings>
+                            <Binding SourceProperty="Caption" Expression="localized.Guid" />
+                          </Bindings>
                         </listColumn>
                         <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
                           <Name value="TIN" />
-                          <Caption value="TIN" />
                           <ColumnName value="TIN" />
                           <DataType value="string" />
+                          <Bindings>
+                            <Binding SourceProperty="Caption" Expression="localized.TIN" />
+                          </Bindings>
                         </listColumn>
                         <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
                           <Name value="AuthorizationType" />
-                          <Caption value="Authorization type" />
                           <ColumnName value="AuthorizationType" />
                           <DataType value="string" />
+                          <Bindings>
+                            <Binding SourceProperty="Caption" Expression="localized.AuthorizationType" />
+                          </Bindings>
                         </listColumn>
                         <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
                           <Name value="ResponsibleCO" />
-                          <Caption value="Authorizing Office" />
                           <ColumnName value="ResponsibleCustomsOffice" />
                           <DataType value="string" />
+                          <Bindings>
+                            <Binding SourceProperty="Caption" Expression="localized.ResponsibleCO" />
+                          </Bindings>
                         </listColumn>
                         <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
                           <Name value="OperatorName" />
-                          <Caption value="Operator name" />
                           <ColumnName value="OperatorName" />
                           <DataType value="string" />
+                          <Bindings>
+                            <Binding SourceProperty="Caption" Expression="localized.OperatorName" />
+                          </Bindings>
                         </listColumn>
                         <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
                           <Name value="ApplicationDate" />
-                          <Caption value="Application date" />
                           <ColumnName value="EvidenceDate" />
                           <DataType value="date" />
+                          <Bindings>
+                            <Binding SourceProperty="Caption" Expression="localized.ApplicationDate" />
+                          </Bindings>
                         </listColumn>
                         <listColumn identity="List.a6f439c3b8e944f383863f66ff1261c8">
                           <Name value="AuthorizationValidFrom" />
-                          <Caption value="Authorization valid from" />
                           <ColumnName value="ValidityStartDate" />
                           <DataType value="date" />
+                          <Bindings>
+                            <Binding SourceProperty="Caption" Expression="localized.AuthorizationType" />
+                          </Bindings>
                         </listColumn>
                       </columns>
                     </List>
@@ -1806,7 +1806,7 @@
             <PropertyLocalizationData>
               <LocalizedProperties>
                 <LocalizedProperty>
-                  <Localization reference="+Localizations.Ui1" />
+                  <Localization reference="+Localizations.Ui" />
                   <PropertyName value="Caption" />
                 </LocalizedProperty>
               </LocalizedProperties>
@@ -9975,7 +9975,7 @@
                   <Children>
                     <Attribute>
                       <Name value="SelectedTab" />
-                      <Caption value="SelectedTab" />
+                      <Caption value="Selected tab" />
                       <DeclaredType>
                         <AttributeType>
                           <BaseType value="Integer" />
@@ -10190,7 +10190,7 @@
                   <Children>
                     <Attribute>
                       <Name value="SelectedTab" />
-                      <Caption value="SelectedTab" />
+                      <Caption value="Selected tab" />
                       <DeclaredType>
                         <AttributeType>
                           <BaseType value="Integer" />
@@ -10345,7 +10345,7 @@
                   <Children>
                     <Attribute>
                       <Name value="SelectedTab" />
-                      <Caption value="SelectedTab" />
+                      <Caption value="Selected tab" />
                       <DeclaredType>
                         <AttributeType>
                           <BaseType value="Integer" />
@@ -10500,7 +10500,7 @@
                   <Children>
                     <Attribute>
                       <Name value="SelectedTab" />
-                      <Caption value="SelectedTab" />
+                      <Caption value="Selected tab" />
                       <DeclaredType>
                         <AttributeType>
                           <BaseType value="Integer" />
@@ -10655,7 +10655,7 @@
                   <Children>
                     <Attribute>
                       <Name value="SelectedTab" />
-                      <Caption value="SelectedTab" />
+                      <Caption value="Selected tab" />
                       <DeclaredType>
                         <AttributeType>
                           <BaseType value="Integer" />
@@ -10810,7 +10810,7 @@
                   <Children>
                     <Attribute>
                       <Name value="SelectedTab" />
-                      <Caption value="SelectedTab" />
+                      <Caption value="Selected tab" />
                       <DeclaredType>
                         <AttributeType>
                           <BaseType value="Integer" />
@@ -10965,7 +10965,7 @@
                   <Children>
                     <Attribute>
                       <Name value="SelectedTab" />
-                      <Caption value="SelectedTab" />
+                      <Caption value="Selected tab" />
                       <DeclaredType>
                         <AttributeType>
                           <BaseType value="Integer" />
@@ -11040,7 +11040,7 @@
                   <Children>
                     <Attribute>
                       <Name value="SelectedTab" />
-                      <Caption value="SelectedTab" />
+                      <Caption value="Selected tab" />
                       <DeclaredType>
                         <AttributeType>
                           <BaseType value="Integer" />
@@ -11115,7 +11115,7 @@
                   <Children>
                     <Attribute>
                       <Name value="SelectedTab" />
-                      <Caption value="SelectedTab" />
+                      <Caption value="Selected tab" />
                       <DeclaredType>
                         <AttributeType>
                           <BaseType value="Integer" />
@@ -11190,7 +11190,7 @@
                   <Children>
                     <Attribute>
                       <Name value="SelectedTab" />
-                      <Caption value="SelectedTab" />
+                      <Caption value="Selected tab" />
                       <DeclaredType>
                         <AttributeType>
                           <BaseType value="Integer" />
@@ -13697,7 +13697,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._PWEI1" />
+                          <Localization reference="+Localizations._PWEI" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -13716,7 +13716,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._SP1" />
+                          <Localization reference="+Localizations._SP" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -13735,7 +13735,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._CCR1" />
+                          <Localization reference="+Localizations._CCR" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -13754,7 +13754,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Other1" />
+                          <Localization reference="+Localizations._Other" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -13773,7 +13773,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._TR1" />
+                          <Localization reference="+Localizations._TR" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -13792,7 +13792,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._PL1" />
+                          <Localization reference="+Localizations._PL" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -13811,7 +13811,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._CTRL1" />
+                          <Localization reference="+Localizations._CTRL" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -13830,7 +13830,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Audit1" />
+                          <Localization reference="+Localizations._Audit" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -13849,7 +13849,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._EC1" />
+                          <Localization reference="+Localizations._EC" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -13982,7 +13982,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Application_Accepted_SP1" />
+                          <Localization reference="+Localizations._Application_Accepted_SP" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14001,7 +14001,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Authorization_Rejected_SP1" />
+                          <Localization reference="+Localizations._Authorization_Rejected_SP" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14020,7 +14020,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Authorization_Accepted_SP1" />
+                          <Localization reference="+Localizations._Authorization_Accepted_SP" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14039,7 +14039,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Authorization_Withdrawal_SP1" />
+                          <Localization reference="+Localizations._Authorization_Withdrawal_SP" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14058,7 +14058,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Authorization_Expired_SP1" />
+                          <Localization reference="+Localizations._Authorization_Expired_SP" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14077,7 +14077,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._All_SP1" />
+                          <Localization reference="+Localizations._All_SP" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14096,7 +14096,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Application_Accepted_CCR1" />
+                          <Localization reference="+Localizations._Application_Accepted_CCR" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14115,7 +14115,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Authorization_Rejected_CCR1" />
+                          <Localization reference="+Localizations._Authorization_Rejected_CCR" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14134,7 +14134,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Authorization_Accepted_CCR1" />
+                          <Localization reference="+Localizations._Authorization_Accepted_CCR" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14153,7 +14153,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Authorization_Withdrawal_CCR1" />
+                          <Localization reference="+Localizations._Authorization_Withdrawal_CCR" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14172,7 +14172,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Authorization_Expired_CCR1" />
+                          <Localization reference="+Localizations._Authorization_Expired_CCR" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14191,7 +14191,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._All_CCR1" />
+                          <Localization reference="+Localizations._All_CCR" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14210,7 +14210,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Application_Accepted_Other1" />
+                          <Localization reference="+Localizations._Application_Accepted_Other" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14229,7 +14229,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Authorization_Rejected_Other1" />
+                          <Localization reference="+Localizations._Authorization_Rejected_Other" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14248,7 +14248,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Authorization_Accepted_Other1" />
+                          <Localization reference="+Localizations._Authorization_Accepted_Other" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14267,7 +14267,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Authorization_Withdrawal_Other1" />
+                          <Localization reference="+Localizations._Authorization_Withdrawal_Other" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14286,7 +14286,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Authorization_Expired_Other1" />
+                          <Localization reference="+Localizations._Authorization_Expired_Other" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14305,7 +14305,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._All_Other1" />
+                          <Localization reference="+Localizations._All_Other" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14324,7 +14324,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Application_Accepted_TR1" />
+                          <Localization reference="+Localizations._Application_Accepted_TR" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14343,7 +14343,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Authorization_Rejected_TR1" />
+                          <Localization reference="+Localizations._Authorization_Rejected_TR" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14362,7 +14362,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Authorization_Accepted_TR1" />
+                          <Localization reference="+Localizations._Authorization_Accepted_TR" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14381,7 +14381,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Authorization_Withdrawal_TR1" />
+                          <Localization reference="+Localizations._Authorization_Withdrawal_TR" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14400,7 +14400,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Authorization_Expired_TR1" />
+                          <Localization reference="+Localizations._Authorization_Expired_TR" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14419,7 +14419,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._All_TR1" />
+                          <Localization reference="+Localizations._All_TR" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14438,7 +14438,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._All_PL1" />
+                          <Localization reference="+Localizations._All_PL" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14457,7 +14457,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Deleted_PL1" />
+                          <Localization reference="+Localizations._Deleted_PL" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14476,7 +14476,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._ToControl_CTRL1" />
+                          <Localization reference="+Localizations._ToControl_CTRL" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14495,7 +14495,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._All_CTRL1" />
+                          <Localization reference="+Localizations._All_CTRL" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14514,7 +14514,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._AuditSubjects1" />
+                          <Localization reference="+Localizations._AuditSubjects" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14533,7 +14533,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._All_Audit1" />
+                          <Localization reference="+Localizations._All_Audit" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14552,7 +14552,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Application_Accepted_EC1" />
+                          <Localization reference="+Localizations._Application_Accepted_EC" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14571,7 +14571,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Authorization_Rejected_EC1" />
+                          <Localization reference="+Localizations._Authorization_Rejected_EC" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14590,7 +14590,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Authorization_Accepted_EC1" />
+                          <Localization reference="+Localizations._Authorization_Accepted_EC" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14609,7 +14609,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Authorization_Withdrawal_EC1" />
+                          <Localization reference="+Localizations._Authorization_Withdrawal_EC" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14628,7 +14628,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._Authorization_Expired_EC1" />
+                          <Localization reference="+Localizations._Authorization_Expired_EC" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14647,7 +14647,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations._All_EC1" />
+                          <Localization reference="+Localizations._All_EC" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -14710,7 +14710,7 @@
         </Reference>
         <Reference>
           <Name value="reference2" />
-          <Caption value="Reference 2" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -14760,7 +14760,7 @@
         </Reference>
         <Reference>
           <Name value="reference3" />
-          <Caption value="Reference 3" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -14810,7 +14810,7 @@
         </Reference>
         <Reference>
           <Name value="reference4" />
-          <Caption value="Reference 4" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -14860,7 +14860,7 @@
         </Reference>
         <Reference>
           <Name value="reference5" />
-          <Caption value="Reference 5" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -14910,7 +14910,7 @@
         </Reference>
         <Reference>
           <Name value="reference6" />
-          <Caption value="Reference 6" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -15126,7 +15126,7 @@
             </Attribute>
             <Attribute>
               <Name value="EvidenceDate" />
-              <Caption value="Application date" />
+              <Caption value="Last change validity" />
               <DeclaredType>
                 <AttributeType>
                   <BaseType value="DateTime" />
@@ -15273,7 +15273,7 @@
                 <PropertyLocalizationData>
                   <LocalizedProperties>
                     <LocalizedProperty>
-                      <Localization reference="+Localizations.AuthorizationType1" />
+                      <Localization reference="+Localizations.AuthorizationType" />
                       <PropertyName value="Caption" />
                     </LocalizedProperty>
                   </LocalizedProperties>
@@ -15316,7 +15316,7 @@
             </Attribute>
             <Attribute>
               <Name value="EvidenceDate" />
-              <Caption value="Evidence date" />
+              <Caption value="EvidenceDate" />
               <DeclaredType>
                 <AttributeType>
                   <BaseType value="DateTime" />
@@ -15550,25 +15550,6 @@
                   <LocalizedProperties>
                     <LocalizedProperty>
                       <Localization reference="+Localizations.NewItemCaption" />
-                      <PropertyName value="Caption" />
-                    </LocalizedProperty>
-                  </LocalizedProperties>
-                </PropertyLocalizationData>
-              </PropertyLocalizationData.PropertyLocalizations>
-            </Attribute>
-            <Attribute>
-              <Name value="isEditFutureVisible" />
-              <Caption value="Is edit future visible" />
-              <DeclaredType>
-                <AttributeType>
-                  <BaseType value="Bool" />
-                </AttributeType>
-              </DeclaredType>
-              <PropertyLocalizationData.PropertyLocalizations>
-                <PropertyLocalizationData>
-                  <LocalizedProperties>
-                    <LocalizedProperty>
-                      <Localization reference="+Localizations.IsEditFutureVisible" />
                       <PropertyName value="Caption" />
                     </LocalizedProperty>
                   </LocalizedProperties>
@@ -16520,7 +16501,6 @@ var loadedState = form.decListReferenceRow.State
 form.loadedAuthorizationState = loadedState
 
 var declarationIsValiInFuture = form.actions.checkIfButtonWillBeDisplayedOnlyInFuture(form.decListReferenceRow.ValidityStartDate)
-form.buttonsVisibility.isEditFutureVisible = not declarationIsValiInFuture
 form.buttonsVisibility.isCancelFutureVisible = not declarationIsValiInFuture
 
 /* Application Accepted */
@@ -16616,7 +16596,7 @@ form.buttonsVisibility.isCancelVisible = false]]></Script>
       <Name value="handler_modify_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[form.actions.navigateToDetail(enums.mode.Modify, false)]]></Script>
+        <Script><![CDATA[form.actions.navigateToDetail(enums.mode.Modify)]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
@@ -16629,15 +16609,15 @@ form.buttonsVisibility.isCancelVisible = false]]></Script>
 form.guid = form.decListReferenceRow.GUID
 
 if loadedAuthorizationType = "SP" then
-	navigation.cseForms.SP_EditForm.withGuid(form.guid).withIsModifyWithFutureRemoval(isModyficationWithFutureRemoval).go(mode, form.loadedAuthorizationState)
+	navigation.cseForms.SP_EditForm.withGuid(form.guid).go(mode, form.loadedAuthorizationState)
 endif
 
 if loadedAuthorizationType = "EC" then
-	navigation.cseForms.EC_EditForm.withGuid(form.guid).withIsModifyWithFutureRemoval(isModyficationWithFutureRemoval).go(mode, form.loadedAuthorizationState)
+	navigation.cseForms.EC_EditForm.withGuid(form.guid).go(mode, form.loadedAuthorizationState)
 endif
 
 if loadedAuthorizationType = "PL" then
-	navigation.cseForms.PL_EditForm.withGuid(form.guid).withIsModifyWithFutureRemoval(isModyficationWithFutureRemoval).go(mode, form.loadedAuthorizationState)
+	navigation.cseForms.PL_EditForm.withGuid(form.guid).go(mode, form.loadedAuthorizationState)
 endif]]></Script>
       </ActionLangBody>
       <DataContext>
@@ -16654,26 +16634,6 @@ endif]]></Script>
                   <LocalizedProperties>
                     <LocalizedProperty>
                       <Localization reference="+Localizations.Mode" />
-                      <PropertyName value="Caption" />
-                    </LocalizedProperty>
-                  </LocalizedProperties>
-                </PropertyLocalizationData>
-              </PropertyLocalizationData.PropertyLocalizations>
-            </Attribute>
-            <Attribute>
-              <Name value="isModyficationWithFutureRemoval" />
-              <Caption value="Is modyfication with future removal" />
-              <DataContextParameter.IsInput value="True" />
-              <DeclaredType>
-                <AttributeType>
-                  <BaseType value="Bool" />
-                </AttributeType>
-              </DeclaredType>
-              <PropertyLocalizationData.PropertyLocalizations>
-                <PropertyLocalizationData>
-                  <LocalizedProperties>
-                    <LocalizedProperty>
-                      <Localization reference="+Localizations.IsModyficationWithFutureRemoval" />
                       <PropertyName value="Caption" />
                     </LocalizedProperty>
                   </LocalizedProperties>
@@ -16885,20 +16845,6 @@ endIf endIf]]></Script>
             </Attribute>
           </Children>
         </ActionDataContext>
-      </DataContext>
-    </ActionBlock>
-    <ActionBlock>
-      <Name value="handler_removeFuruteChange_OnClick" />
-      <IsPrivate value="True" />
-      <ActionLangBody IsValid="True">
-        <Script><![CDATA[var doFutureRemoval = system.confirm("Do you really want to modify and remove future change? This will enable you to change the future change, but you will need to save a new change in modify mode.")
-
-if doFutureRemoval then
-	form.actions.navigateToDetail(enums.mode.Modify, true)
-endIf]]></Script>
-      </ActionLangBody>
-      <DataContext>
-        <ActionDataContext />
       </DataContext>
     </ActionBlock>
     <ActionBlock>

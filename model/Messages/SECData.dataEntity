@@ -291,7 +291,7 @@
             </Reference>
             <Attribute>
               <Name value="OperatorName" />
-              <Caption value="Název subjektu" />
+              <Caption value="Název Subjektu" />
               <MetaType reference="+MetaTypes.OperatorName" />
               <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/OperatorName" />
               <MtsImportOptions.MTS.Type value="element" />

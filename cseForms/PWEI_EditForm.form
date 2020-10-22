@@ -3979,7 +3979,7 @@
         </Reference>
         <Reference>
           <Name value="reference2" />
-          <Caption value="Reference 2" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -4029,7 +4029,7 @@
         </Reference>
         <Reference>
           <Name value="reference3" />
-          <Caption value="Reference 3" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -4079,7 +4079,7 @@
         </Reference>
         <Reference>
           <Name value="reference4" />
-          <Caption value="Reference 4" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -4129,7 +4129,7 @@
         </Reference>
         <Reference>
           <Name value="reference5" />
-          <Caption value="Reference 5" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -4179,7 +4179,7 @@
         </Reference>
         <Reference>
           <Name value="reference6" />
-          <Caption value="Reference 6" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -4229,7 +4229,7 @@
         </Reference>
         <Reference>
           <Name value="reference7" />
-          <Caption value="Reference 7" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -4279,7 +4279,7 @@
         </Reference>
         <Reference>
           <Name value="reference8" />
-          <Caption value="Reference 8" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -4329,7 +4329,7 @@
         </Reference>
         <Reference>
           <Name value="reference9" />
-          <Caption value="Reference 9" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -4379,7 +4379,7 @@
         </Reference>
         <Reference>
           <Name value="reference10" />
-          <Caption value="Reference 10" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -4429,7 +4429,7 @@
         </Reference>
         <Reference>
           <Name value="reference11" />
-          <Caption value="Reference 11" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -4479,7 +4479,7 @@
         </Reference>
         <Reference>
           <Name value="reference12" />
-          <Caption value="Reference 12" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -4529,7 +4529,7 @@
         </Reference>
         <Reference>
           <Name value="reference13" />
-          <Caption value="Reference 13" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -4579,7 +4579,7 @@
         </Reference>
         <Reference>
           <Name value="reference14" />
-          <Caption value="Reference 14" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -4629,7 +4629,7 @@
         </Reference>
         <Reference>
           <Name value="reference15" />
-          <Caption value="Reference 15" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -4679,7 +4679,7 @@
         </Reference>
         <Reference>
           <Name value="reference16" />
-          <Caption value="Reference 16" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -4729,7 +4729,7 @@
         </Reference>
         <Reference>
           <Name value="reference17" />
-          <Caption value="Reference 17" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -4779,7 +4779,7 @@
         </Reference>
         <Reference>
           <Name value="reference18" />
-          <Caption value="Reference 18" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -4829,7 +4829,7 @@
         </Reference>
         <Reference>
           <Name value="reference19" />
-          <Caption value="Reference 19" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -4879,7 +4879,7 @@
         </Reference>
         <Reference>
           <Name value="reference20" />
-          <Caption value="Reference 20" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -4929,7 +4929,7 @@
         </Reference>
         <Reference>
           <Name value="reference21" />
-          <Caption value="Reference 21" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -4979,7 +4979,7 @@
         </Reference>
         <Reference>
           <Name value="reference22" />
-          <Caption value="Reference 22" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -5029,7 +5029,7 @@
         </Reference>
         <Reference>
           <Name value="reference23" />
-          <Caption value="Reference 23" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -5079,7 +5079,7 @@
         </Reference>
         <Reference>
           <Name value="reference24" />
-          <Caption value="Reference 24" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -5129,7 +5129,7 @@
         </Reference>
         <Reference>
           <Name value="reference25" />
-          <Caption value="Reference 25" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -5179,7 +5179,7 @@
         </Reference>
         <Reference>
           <Name value="reference26" />
-          <Caption value="Reference 26" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -5229,7 +5229,7 @@
         </Reference>
         <Reference>
           <Name value="reference27" />
-          <Caption value="Reference 27" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -5279,7 +5279,7 @@
         </Reference>
         <Reference>
           <Name value="reference28" />
-          <Caption value="Reference 28" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -5329,7 +5329,7 @@
         </Reference>
         <Reference>
           <Name value="reference29" />
-          <Caption value="Reference 29" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -5379,7 +5379,7 @@
         </Reference>
         <Reference>
           <Name value="reference30" />
-          <Caption value="Reference 30" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -5429,7 +5429,7 @@
         </Reference>
         <Reference>
           <Name value="reference31" />
-          <Caption value="Reference 31" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -5479,7 +5479,7 @@
         </Reference>
         <Reference>
           <Name value="reference32" />
-          <Caption value="Reference 32" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -5529,7 +5529,7 @@
         </Reference>
         <Collection>
           <Name value="collection1" />
-          <Caption value="Collection 1" />
+          <Caption value="collection1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -5543,7 +5543,7 @@
         </Collection>
         <Collection>
           <Name value="collection2" />
-          <Caption value="Collection 2" />
+          <Caption value="collection1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -5557,7 +5557,7 @@
         </Collection>
         <Attribute>
           <Name value="index_collection1" />
-          <Caption value="index_collection1" />
+          <Caption value="Index _ collection 1" />
           <DeclaredType>
             <AttributeType>
               <BaseType value="Integer" />
@@ -5576,7 +5576,7 @@
         </Attribute>
         <Attribute>
           <Name value="index_collection2" />
-          <Caption value="index_collection2" />
+          <Caption value="Index _ collection 1" />
           <DeclaredType>
             <AttributeType>
               <BaseType value="Integer" />
@@ -5630,7 +5630,7 @@
         </Complex>
         <Reference>
           <Name value="reference33" />
-          <Caption value="Reference 33" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -5680,7 +5680,7 @@
         </Reference>
         <Reference>
           <Name value="reference34" />
-          <Caption value="Reference 34" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>

@@ -151,7 +151,7 @@
     </Attribute>
     <Attribute>
       <Name value="AuthorizationType" />
-      <Caption value="AuthorizationType" />
+      <Caption value="Authorization Type" />
       <IsRequired value="True" />
       <MtsImportOptions.MTS.ID value="DatasetControl/AuthorizationType" />
       <MtsImportOptions.MTS.Type value="client-dataset-item" />

@@ -52,7 +52,7 @@
     </Attribute>
     <Attribute>
       <Name value="ValidFrom" />
-      <Caption value="ValidFrom" />
+      <Caption value="Valid from" />
       <MtsImportOptions.MTS.ID value="CertificateIssuer/ValidFrom" />
       <MtsImportOptions.MTS.Type value="codelist-item" />
       <DeclaredType>

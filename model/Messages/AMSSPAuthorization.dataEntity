@@ -234,7 +234,7 @@
           <Children>
             <Attribute>
               <Name value="OperatorName" />
-              <Caption value="Název subjektu" />
+              <Caption value="Název Subjektu" />
               <IsRequired value="True" />
               <MetaType reference="+MetaTypes.OperatorName" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/OperatorName" />
@@ -3100,7 +3100,7 @@ LI:
                     </Attribute>
                     <Attribute>
                       <Name value="Name" />
-                      <Caption value="Název subjektu" />
+                      <Caption value="Název Subjektu" />
                       <IsRequired value="True" />
                       <MetaType reference="+MetaTypes.OperatorName" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Depositors/Depositor/Name" />

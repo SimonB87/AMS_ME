@@ -56,7 +56,7 @@
     </Attribute>
     <Attribute>
       <Name value="OperatorName" />
-      <Caption value="Název subjektu" />
+      <Caption value="Název Subjektu" />
       <IsRequired value="True" />
       <MetaType reference="+MetaTypes.OperatorName" />
       <MtsImportOptions.MTS.ID value="DatasetAuditSubject/OperatorName" />

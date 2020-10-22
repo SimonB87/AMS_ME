@@ -2,7 +2,7 @@
 <?data-format version="0.400"?>
 <ProjectRoot>
   <CreatedOn value="2020-05-19T08:16:48.0989166+02:00" />
-  <Language value="cs" />
+  <Language value="en" />
   <ProjectName value="AmsInt" />
   <StartupForm reference="/(main.54b271120be14de18033000f6ed59f52)+UiParts.Master" />
   <MainForm>
@@ -34,7 +34,6 @@
   <Languages>
     <ProjectLanguageItem Language="me" />
     <ProjectLanguageItem Language="en" />
-    <ProjectLanguageItem Language="cs" />
   </Languages>
   <PackageReferences>
     <PackageReference Alias="CorePackage" IsComponentLib="True" IsReadOnly="True" IsSystem="True" Origin="system://CorePackage/CorePackage.package">

@@ -968,7 +968,7 @@
         </Reference>
         <Reference>
           <Name value="reference2" />
-          <Caption value="Reference 2" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -1018,7 +1018,7 @@
         </Reference>
         <Reference>
           <Name value="reference3" />
-          <Caption value="Reference 3" />
+          <Caption value="Reference 1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -1068,7 +1068,7 @@
         </Reference>
         <Collection>
           <Name value="collection1" />
-          <Caption value="Collection 1" />
+          <Caption value="collection1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -1082,7 +1082,7 @@
           <Children>
             <Collection>
               <Name value="collection2" />
-              <Caption value="collection2" />
+              <Caption value="collection1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -1202,7 +1202,7 @@
         </Collection>
         <Attribute>
           <Name value="index_collection1" />
-          <Caption value="index_collection1" />
+          <Caption value="Index _ collection 1" />
           <DeclaredType>
             <AttributeType>
               <BaseType value="Integer" />

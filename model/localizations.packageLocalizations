@@ -5,1752 +5,1752 @@
   <Strings>
     <LocalizedString LocID="DataRequest">
       <Values>
-        <LocaleValue Lang="cs" Value="DataRequest" />
+        <LocaleValue Lang="en" Value="DataRequest" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AMS">
       <Values>
-        <LocaleValue Lang="cs" Value="AMS" />
+        <LocaleValue Lang="en" Value="AMS" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="GUID">
       <Values>
-        <LocaleValue Lang="cs" Value="GUID" />
+        <LocaleValue Lang="en" Value="GUID" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PLData">
       <Values>
-        <LocaleValue Lang="cs" Value="PLData" />
+        <LocaleValue Lang="en" Value="PLData" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="KodZeme">
       <Values>
-        <LocaleValue Lang="cs" Value="Kód země" />
+        <LocaleValue Lang="en" Value="Kód země" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ValueIsNotValid">
       <Values>
-        <LocaleValue Lang="cs" Value="Value is not valid" />
+        <LocaleValue Lang="en" Value="Value is not valid" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="EvidencniCislo">
       <Values>
-        <LocaleValue Lang="cs" Value="Evidenční číslo" />
+        <LocaleValue Lang="en" Value="Evidenční číslo" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="VydavajiciAZodpovednyCU">
       <Values>
-        <LocaleValue Lang="cs" Value="Vydávající a zodpovědný CÚ" />
+        <LocaleValue Lang="en" Value="Vydávající a zodpovědný CÚ" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TINSubjektuProNejzJeMistoPlatne">
       <Values>
-        <LocaleValue Lang="cs" Value="TIN subjektu, pro nějž je místo platné" />
+        <LocaleValue Lang="en" Value="TIN subjektu, pro nějž je místo platné" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="NazevSubjektu">
       <Values>
-        <LocaleValue Lang="cs" Value="Název Subjektu" />
+        <LocaleValue Lang="en" Value="Název Subjektu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Stav">
       <Values>
-        <LocaleValue Lang="cs" Value="Stav" />
+        <LocaleValue Lang="en" Value="Stav" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DetailMista">
       <Values>
-        <LocaleValue Lang="cs" Value="Detail místa" />
+        <LocaleValue Lang="en" Value="Detail místa" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CUPlatnosti">
       <Values>
-        <LocaleValue Lang="cs" Value="CÚ platnosti" />
+        <LocaleValue Lang="en" Value="CÚ platnosti" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="OznaceniMista">
       <Values>
-        <LocaleValue Lang="cs" Value="Označení místa" />
+        <LocaleValue Lang="en" Value="Označení místa" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="UliceACP">
       <Values>
-        <LocaleValue Lang="cs" Value="Ulice a č.p." />
+        <LocaleValue Lang="en" Value="Ulice a č.p." />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Mesto">
       <Values>
-        <LocaleValue Lang="cs" Value="Město" />
+        <LocaleValue Lang="en" Value="Město" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PSC">
       <Values>
-        <LocaleValue Lang="cs" Value="PSČ" />
+        <LocaleValue Lang="en" Value="PSČ" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Zeme">
       <Values>
-        <LocaleValue Lang="cs" Value="Země" />
+        <LocaleValue Lang="en" Value="Země" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PocatekPlatnosti">
       <Values>
-        <LocaleValue Lang="cs" Value="Počátek platnosti" />
+        <LocaleValue Lang="en" Value="Počátek platnosti" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="KonecPlatnosti">
       <Values>
-        <LocaleValue Lang="cs" Value="Konec platnosti" />
+        <LocaleValue Lang="en" Value="Konec platnosti" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="OsobaCUZodpovednaZaVydan69F811B6">
       <Values>
-        <LocaleValue Lang="cs" Value="Osoba CÚ zodpovědná za vydání/modifikaci místa" />
+        <LocaleValue Lang="en" Value="Osoba CÚ zodpovědná za vydání/modifikaci místa" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatumEvidence">
       <Values>
-        <LocaleValue Lang="cs" Value="Datum evidence" />
+        <LocaleValue Lang="en" Value="Datum evidence" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SpecifikaceMista">
       <Values>
-        <LocaleValue Lang="cs" Value="Specifikace místa" />
+        <LocaleValue Lang="en" Value="Specifikace místa" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SECData">
       <Values>
-        <LocaleValue Lang="cs" Value="SECData" />
+        <LocaleValue Lang="en" Value="SECData" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="VydavajiciZeme">
       <Values>
-        <LocaleValue Lang="cs" Value="Vydávající země" />
+        <LocaleValue Lang="en" Value="Vydávající země" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TINEORICislo">
       <Values>
-        <LocaleValue Lang="cs" Value="TIN / EORI číslo" />
+        <LocaleValue Lang="en" Value="TIN / EORI číslo" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypPovoleniZJP">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ povolení/ZJP" />
+        <LocaleValue Lang="en" Value="Typ povolení/ZJP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CelniUradZodpovednyZaMod572FCE8D">
       <Values>
-        <LocaleValue Lang="cs" Value="Celní úřad zodpovědný za modifikaci a údržbu povolení" />
+        <LocaleValue Lang="en" Value="Celní úřad zodpovědný za modifikaci a údržbu povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Zruseno">
       <Values>
-        <LocaleValue Lang="cs" Value="Zrušeno" />
+        <LocaleValue Lang="en" Value="Zrušeno" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatumPosledniUdalosti">
       <Values>
-        <LocaleValue Lang="cs" Value="Datum poslední události" />
+        <LocaleValue Lang="en" Value="Datum poslední události" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="UdalostRozhodnuti">
       <Values>
-        <LocaleValue Lang="cs" Value="Událost / Rozhodnutí" />
+        <LocaleValue Lang="en" Value="Událost / Rozhodnutí" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypUdalostiRozhodnuti">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ události/rozhodnutí" />
+        <LocaleValue Lang="en" Value="Typ události/rozhodnutí" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="UliceACPSidla">
       <Values>
-        <LocaleValue Lang="cs" Value="Ulice a č.p. sídla" />
+        <LocaleValue Lang="en" Value="Ulice a č.p. sídla" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="MestoSidlaSubjektu">
       <Values>
-        <LocaleValue Lang="cs" Value="Město sídla subjektu" />
+        <LocaleValue Lang="en" Value="Město sídla subjektu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZemeSidlaSubjektu">
       <Values>
-        <LocaleValue Lang="cs" Value="Země sídla subjektu" />
+        <LocaleValue Lang="en" Value="Země sídla subjektu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CisloJednaci">
       <Values>
-        <LocaleValue Lang="cs" Value="Číslo jednací" />
+        <LocaleValue Lang="en" Value="Číslo jednací" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="VaseZnacka">
       <Values>
-        <LocaleValue Lang="cs" Value="Vaše značka" />
+        <LocaleValue Lang="en" Value="Vaše značka" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="VyrizujeLinka">
       <Values>
-        <LocaleValue Lang="cs" Value="Vyřizuje/linka" />
+        <LocaleValue Lang="en" Value="Vyřizuje/linka" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatumVydaniRozhodnuti">
       <Values>
-        <LocaleValue Lang="cs" Value="Datum vydání rozhodnutí" />
+        <LocaleValue Lang="en" Value="Datum vydání rozhodnutí" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PlatneOd">
       <Values>
-        <LocaleValue Lang="cs" Value="Platné od" />
+        <LocaleValue Lang="en" Value="Platné od" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="EvidenceDate">
       <Values>
-        <LocaleValue Lang="cs" Value="EvidenceDate" />
+        <LocaleValue Lang="en" Value="EvidenceDate" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="RozhodujiciCelniUrad">
       <Values>
-        <LocaleValue Lang="cs" Value="Rozhodující celní úřad" />
+        <LocaleValue Lang="en" Value="Rozhodující celní úřad" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="OsobniCisloVydavateleRozhodnuti">
       <Values>
-        <LocaleValue Lang="cs" Value="Osobní číslo vydavatele rozhodnutí" />
+        <LocaleValue Lang="en" Value="Osobní číslo vydavatele rozhodnutí" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="JmenoFunkceATitulVydavajiciOsoby">
       <Values>
-        <LocaleValue Lang="cs" Value="Jméno, funkce a titul vydávající osoby" />
+        <LocaleValue Lang="en" Value="Jméno, funkce a titul vydávající osoby" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="KonecPlatnostiTetoUdalosBDF4EAC3">
       <Values>
-        <LocaleValue Lang="cs" Value="Konec platnosti této události (dopočítávané v okamžiku vzniku následujícího události)" />
+        <LocaleValue Lang="en" Value="Konec platnosti této události (dopočítávané v okamžiku vzniku následujícího události)" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SouborPrilohy">
       <Values>
-        <LocaleValue Lang="cs" Value="Soubor přílohy" />
+        <LocaleValue Lang="en" Value="Soubor přílohy" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="JePlnyTextCiJenDoplnekPl035366F9">
       <Values>
-        <LocaleValue Lang="cs" Value="Je plný text či jen doplněk plného textu?" />
+        <LocaleValue Lang="en" Value="Je plný text či jen doplněk plného textu?" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="NazevSouboru">
       <Values>
-        <LocaleValue Lang="cs" Value="Název souboru" />
+        <LocaleValue Lang="en" Value="Název souboru" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypSouboru">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ souboru" />
+        <LocaleValue Lang="en" Value="Typ souboru" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZakladniPrvkyPovoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="Základní prvky povolení" />
+        <LocaleValue Lang="en" Value="Základní prvky povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="JeDelkaPlatnostiOmezena">
       <Values>
-        <LocaleValue Lang="cs" Value="Je délka platnosti omezená?" />
+        <LocaleValue Lang="en" Value="Je délka platnosti omezená?" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="RozhodnutiPlatneDo">
       <Values>
-        <LocaleValue Lang="cs" Value="Rozhodnutí platné do" />
+        <LocaleValue Lang="en" Value="Rozhodnutí platné do" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="JmenoZodpovedneOsobyNaSt4783D2C6">
       <Values>
-        <LocaleValue Lang="cs" Value="Jméno zodpovědné osoby na straně deklaranta" />
+        <LocaleValue Lang="en" Value="Jméno zodpovědné osoby na straně deklaranta" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TelefonNaZodpovednouOsob5A1F4366">
       <Values>
-        <LocaleValue Lang="cs" Value="Telefon na zodpovědnou osobu na straně deklaranta" />
+        <LocaleValue Lang="en" Value="Telefon na zodpovědnou osobu na straně deklaranta" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ResponsiblePersonEMail">
       <Values>
-        <LocaleValue Lang="cs" Value="ResponsiblePersonEMail" />
+        <LocaleValue Lang="en" Value="ResponsiblePersonEMail" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZodpovednaOsobaChceBytNo398AC635">
       <Values>
-        <LocaleValue Lang="cs" Value="Zodpovědná osoba chce být notifikována o změnách v CŘ" />
+        <LocaleValue Lang="en" Value="Zodpovědná osoba chce být notifikována o změnách v CŘ" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZamitnutiZadosti">
       <Values>
-        <LocaleValue Lang="cs" Value="Zamítnutí žádosti" />
+        <LocaleValue Lang="en" Value="Zamítnutí žádosti" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PopisDuvoduZamitnuti">
       <Values>
-        <LocaleValue Lang="cs" Value="Popis důvodu zamítnutí" />
+        <LocaleValue Lang="en" Value="Popis důvodu zamítnutí" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="OdejmutiZruseniPovoleniZJP">
       <Values>
-        <LocaleValue Lang="cs" Value="Odejmutí/zrušení povolení/ZJP" />
+        <LocaleValue Lang="en" Value="Odejmutí/zrušení povolení/ZJP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DuvodOdejmutiZruseniPovoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="Důvod odejmutí/zrušení povolení" />
+        <LocaleValue Lang="en" Value="Důvod odejmutí/zrušení povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CertifkatProPodepisovani">
       <Values>
-        <LocaleValue Lang="cs" Value="Certifkát pro podepisování" />
+        <LocaleValue Lang="en" Value="Certifkát pro podepisování" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="GUIDCertifikatu">
       <Values>
-        <LocaleValue Lang="cs" Value="GUID certifikátu" />
+        <LocaleValue Lang="en" Value="GUID certifikátu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SystemovyCertifikat">
       <Values>
-        <LocaleValue Lang="cs" Value="Systémový certifikát" />
+        <LocaleValue Lang="en" Value="Systémový certifikát" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SerioveCislo">
       <Values>
-        <LocaleValue Lang="cs" Value="Sériové číslo" />
+        <LocaleValue Lang="en" Value="Sériové číslo" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IssuerCode">
       <Values>
-        <LocaleValue Lang="cs" Value="IssuerCode" />
+        <LocaleValue Lang="en" Value="IssuerCode" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Vydavatel">
       <Values>
-        <LocaleValue Lang="cs" Value="Vydavatel" />
+        <LocaleValue Lang="en" Value="Vydavatel" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="RodneCislo">
       <Values>
-        <LocaleValue Lang="cs" Value="Rodné číslo" />
+        <LocaleValue Lang="en" Value="Rodné číslo" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="UzivatelCertifikatu">
       <Values>
-        <LocaleValue Lang="cs" Value="Uživatel certifikátu" />
+        <LocaleValue Lang="en" Value="Uživatel certifikátu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="EMailLdrziteleCertifikatu">
       <Values>
-        <LocaleValue Lang="cs" Value="e-mail ldržitele certifikátu" />
+        <LocaleValue Lang="en" Value="e-mail ldržitele certifikátu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PouzitiCertifkatu">
       <Values>
-        <LocaleValue Lang="cs" Value="Použití certifkátu" />
+        <LocaleValue Lang="en" Value="Použití certifkátu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CertifikatyProElUdrzbuPa45370931">
       <Values>
-        <LocaleValue Lang="cs" Value="Certifikáty pro el. údržbu parametrů komunikace" />
+        <LocaleValue Lang="en" Value="Certifikáty pro el. údržbu parametrů komunikace" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CertifkatProSifrovani">
       <Values>
-        <LocaleValue Lang="cs" Value="Certifkát pro šifrování" />
+        <LocaleValue Lang="en" Value="Certifkát pro šifrování" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="KomunikacniPovoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="Komunikační povolení" />
+        <LocaleValue Lang="en" Value="Komunikační povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PovoleniPodavatECPDoRezimuDovozu">
       <Values>
-        <LocaleValue Lang="cs" Value="Povolení podávat e-CP do režimu dovozu" />
+        <LocaleValue Lang="en" Value="Povolení podávat e-CP do režimu dovozu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PovoleniPodavatVstupniSC3F22BA36">
       <Values>
-        <LocaleValue Lang="cs" Value="Povolení podávat vstupní SCP a oznámení o příjezdu" />
+        <LocaleValue Lang="en" Value="Povolení podávat vstupní SCP a oznámení o příjezdu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PovoleniPredkladatElektr38C13FCB">
       <Values>
-        <LocaleValue Lang="cs" Value="Povolení předkládat elektronicky celní prohlášení do režimu tranzit / povolení elektronicky komunikovat s CÚ určení v tranzitu" />
+        <LocaleValue Lang="en" Value="Povolení předkládat elektronicky celní prohlášení do režimu tranzit / povolení elektronicky komunikovat s CÚ určení v tranzitu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PovoleniPredkladatElektrA575A638">
       <Values>
-        <LocaleValue Lang="cs" Value="Povolení předkládat elektronicky celní prohlášení do vývozu" />
+        <LocaleValue Lang="en" Value="Povolení předkládat elektronicky celní prohlášení do vývozu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PovoleniElektronickyKomu75BB3EC7">
       <Values>
-        <LocaleValue Lang="cs" Value="Povolení elektronicky komunikovat s úřadem výstupu ve vývozu" />
+        <LocaleValue Lang="en" Value="Povolení elektronicky komunikovat s úřadem výstupu ve vývozu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PovoleniElektronickyKomu566945CF">
       <Values>
-        <LocaleValue Lang="cs" Value="Povolení elektronicky komunikovat s CÚ záruky" />
+        <LocaleValue Lang="en" Value="Povolení elektronicky komunikovat s CÚ záruky" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZpravyKeVstupnimuSouhrnn1A56FD70">
       <Values>
-        <LocaleValue Lang="cs" Value="Zprávy ke vstupnímu souhrnnému celnímu prohlášení podaných osobou uvedenou v článku 36b odst. 4 celního kodex v případech, kdy je žadatel uveden jako přepravce nebo zástupce" />
+        <LocaleValue Lang="en" Value="Zprávy ke vstupnímu souhrnnému celnímu prohlášení podaných osobou uvedenou v článku 36b odst. 4 celního kodex v případech, kdy je žadatel uveden jako přepravce nebo zástupce" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SdeleniOPodminkachElektr4A8AD194">
       <Values>
-        <LocaleValue Lang="cs" Value="Sdělení o podmínkách elektronické komunikace v EMCS" />
+        <LocaleValue Lang="en" Value="Sdělení o podmínkách elektronické komunikace v EMCS" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SdeleniOPodminkachElektrAC4E2130">
       <Values>
-        <LocaleValue Lang="cs" Value="Sdělení o podmínkách elektronické komunikace v RZL" />
+        <LocaleValue Lang="en" Value="Sdělení o podmínkách elektronické komunikace v RZL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PollingPassword">
       <Values>
-        <LocaleValue Lang="cs" Value="Polling Password" />
+        <LocaleValue Lang="en" Value="Polling Password" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="EvidencniCisloZjednoduse1CC66418">
       <Values>
-        <LocaleValue Lang="cs" Value="Evidenční číslo zjednodušeného postupu" />
+        <LocaleValue Lang="en" Value="Evidenční číslo zjednodušeného postupu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SPData">
       <Values>
-        <LocaleValue Lang="cs" Value="SPData" />
+        <LocaleValue Lang="en" Value="SPData" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="State">
       <Values>
-        <LocaleValue Lang="cs" Value="State" />
+        <LocaleValue Lang="en" Value="State" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Key">
       <Values>
-        <LocaleValue Lang="cs" Value="Key" />
+        <LocaleValue Lang="en" Value="Key" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Description">
       <Values>
-        <LocaleValue Lang="cs" Value="Description" />
+        <LocaleValue Lang="en" Value="Description" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="OperatorCountry">
       <Values>
-        <LocaleValue Lang="cs" Value="Operator country" />
+        <LocaleValue Lang="en" Value="Operator country" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DuvodZamitnutiZadosti">
       <Values>
-        <LocaleValue Lang="cs" Value="Důvod zamítnutí žádosti" />
+        <LocaleValue Lang="en" Value="Důvod zamítnutí žádosti" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZbozoveKody">
       <Values>
-        <LocaleValue Lang="cs" Value="Zbožové kódy" />
+        <LocaleValue Lang="en" Value="Zbožové kódy" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypVyctuZbozovychKoduPoz0DCC0D4A">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ výčtu zbožových kódů (pozitivní/negativní)" />
+        <LocaleValue Lang="en" Value="Typ výčtu zbožových kódů (pozitivní/negativní)" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="VycetZbozovychKodu">
       <Values>
-        <LocaleValue Lang="cs" Value="Výčet zbožových kódů" />
+        <LocaleValue Lang="en" Value="Výčet zbožových kódů" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PovolenaZakazana">
       <Values>
-        <LocaleValue Lang="cs" Value="Povolená / zakázaná" />
+        <LocaleValue Lang="en" Value="Povolená / zakázaná" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZbozovyKod">
       <Values>
-        <LocaleValue Lang="cs" Value="Zbožový kód" />
+        <LocaleValue Lang="en" Value="Zbožový kód" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZbozoveKodyUplnaData">
       <Values>
-        <LocaleValue Lang="cs" Value="Zbožové kódy - úplná data" />
+        <LocaleValue Lang="en" Value="Zbožové kódy - úplná data" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZbozoveKodyNeuplnaData">
       <Values>
-        <LocaleValue Lang="cs" Value="Zbožové kódy - neúplná data" />
+        <LocaleValue Lang="en" Value="Zbožové kódy - neúplná data" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CelniUrady">
       <Values>
-        <LocaleValue Lang="cs" Value="Celní úřady" />
+        <LocaleValue Lang="en" Value="Celní úřady" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CelniUradPropusteni">
       <Values>
-        <LocaleValue Lang="cs" Value="Celní úřad propuštění" />
+        <LocaleValue Lang="en" Value="Celní úřad propuštění" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CisloCU">
       <Values>
-        <LocaleValue Lang="cs" Value="Číslo CÚ" />
+        <LocaleValue Lang="en" Value="Číslo CÚ" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SchvaleneMisto">
       <Values>
-        <LocaleValue Lang="cs" Value="Schválené místo" />
+        <LocaleValue Lang="en" Value="Schválené místo" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZemeSchvalenehoSjednaneh91E7181A">
       <Values>
-        <LocaleValue Lang="cs" Value="Země schváleného/sjednaného umístění" />
+        <LocaleValue Lang="en" Value="Země schváleného/sjednaného umístění" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IDSchvalenehoSjednanehoUmisteni">
       <Values>
-        <LocaleValue Lang="cs" Value="ID schváleného/sjednaného umístění" />
+        <LocaleValue Lang="en" Value="ID schváleného/sjednaného umístění" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CountryPlaceID">
       <Values>
-        <LocaleValue Lang="cs" Value="CountryPlaceID" />
+        <LocaleValue Lang="en" Value="CountryPlaceID" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DocasnySklad">
       <Values>
-        <LocaleValue Lang="cs" Value="Dočasný sklad" />
+        <LocaleValue Lang="en" Value="Dočasný sklad" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CisloPovoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="Číslo povolení" />
+        <LocaleValue Lang="en" Value="Číslo povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CelniUradKontrolyZasilky">
       <Values>
-        <LocaleValue Lang="cs" Value="Celní úřad kontroly zásilky" />
+        <LocaleValue Lang="en" Value="Celní úřad kontroly zásilky" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CelniUradKontrolyFZ">
       <Values>
-        <LocaleValue Lang="cs" Value="Celní úřad kontroly FZ" />
+        <LocaleValue Lang="en" Value="Celní úřad kontroly FZ" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="EvidencniCisloCelnihoUradu">
       <Values>
-        <LocaleValue Lang="cs" Value="Evidenční číslo celního úřadu" />
+        <LocaleValue Lang="en" Value="Evidenční číslo celního úřadu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CelniUradDohledu">
       <Values>
-        <LocaleValue Lang="cs" Value="Celní úřad dohledu" />
+        <LocaleValue Lang="en" Value="Celní úřad dohledu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CentralizovaneCelniRizeni">
       <Values>
-        <LocaleValue Lang="cs" Value="Centralizované celní řízení" />
+        <LocaleValue Lang="en" Value="Centralizované celní řízení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZpracovatelJinaZucastnenaOsoba">
       <Values>
-        <LocaleValue Lang="cs" Value="Zpracovatel / jiná zúčastněná osoba" />
+        <LocaleValue Lang="en" Value="Zpracovatel / jiná zúčastněná osoba" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="NazevFirmy">
       <Values>
-        <LocaleValue Lang="cs" Value="Název firmy" />
+        <LocaleValue Lang="en" Value="Název firmy" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Manipulace">
       <Values>
-        <LocaleValue Lang="cs" Value="Manipulace" />
+        <LocaleValue Lang="en" Value="Manipulace" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ManipulaceVCelnimSklade">
       <Values>
-        <LocaleValue Lang="cs" Value="Manipulace v celním skladě" />
+        <LocaleValue Lang="en" Value="Manipulace v celním skladě" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypManipulace">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ manipulace" />
+        <LocaleValue Lang="en" Value="Typ manipulace" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ManipulovanyZbozovyKod">
       <Values>
-        <LocaleValue Lang="cs" Value="Manipulovaný zbožový kód" />
+        <LocaleValue Lang="en" Value="Manipulovaný zbožový kód" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="MernaJednotka">
       <Values>
-        <LocaleValue Lang="cs" Value="Měrná jednotka" />
+        <LocaleValue Lang="en" Value="Měrná jednotka" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypZastoupeni">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ zastoupení" />
+        <LocaleValue Lang="en" Value="Typ zastoupení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZpusobZastoupeni">
       <Values>
-        <LocaleValue Lang="cs" Value="Způsob zastoupení" />
+        <LocaleValue Lang="en" Value="Způsob zastoupení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZajisteniCelnihoDluhu">
       <Values>
-        <LocaleValue Lang="cs" Value="Zajištění celního dluhu" />
+        <LocaleValue Lang="en" Value="Zajištění celního dluhu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypZajisteniCelnihoDluhu">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ zajištění celního dluhu" />
+        <LocaleValue Lang="en" Value="Typ zajištění celního dluhu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CisloZajisteni">
       <Values>
-        <LocaleValue Lang="cs" Value="Číslo zajištění" />
+        <LocaleValue Lang="en" Value="Číslo zajištění" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Lhuta">
       <Values>
-        <LocaleValue Lang="cs" Value="Lhůta" />
+        <LocaleValue Lang="en" Value="Lhůta" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypLhuty">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ lhůty" />
+        <LocaleValue Lang="en" Value="Typ lhůty" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="MJ">
       <Values>
-        <LocaleValue Lang="cs" Value="MJ" />
+        <LocaleValue Lang="en" Value="MJ" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DelkaLhuty">
       <Values>
-        <LocaleValue Lang="cs" Value="Délka lhůty" />
+        <LocaleValue Lang="en" Value="Délka lhůty" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PovoleniRHU">
       <Values>
-        <LocaleValue Lang="cs" Value="Povolení RHÚ" />
+        <LocaleValue Lang="en" Value="Povolení RHÚ" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Rezim">
       <Values>
-        <LocaleValue Lang="cs" Value="Režim" />
+        <LocaleValue Lang="en" Value="Režim" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CelniRezimy">
       <Values>
-        <LocaleValue Lang="cs" Value="Celní režimy" />
+        <LocaleValue Lang="en" Value="Celní režimy" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="KombinaceCelnichRezimu">
       <Values>
-        <LocaleValue Lang="cs" Value="Kombinace celních režimů" />
+        <LocaleValue Lang="en" Value="Kombinace celních režimů" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="KodKombinaceCelnichRezimu">
       <Values>
-        <LocaleValue Lang="cs" Value="Kód kombinace celních režimů" />
+        <LocaleValue Lang="en" Value="Kód kombinace celních režimů" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="KodCelnihoRezimu">
       <Values>
-        <LocaleValue Lang="cs" Value="Kód celního režimu" />
+        <LocaleValue Lang="en" Value="Kód celního režimu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="KombinaceCelnichRezimuUplnaData">
       <Values>
-        <LocaleValue Lang="cs" Value="Kombinace celních režimů - úplná data" />
+        <LocaleValue Lang="en" Value="Kombinace celních režimů - úplná data" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="KombinaceCelnichRezimuNe5A880BD2">
       <Values>
-        <LocaleValue Lang="cs" Value="Kombinace celních režimů - neúplná data" />
+        <LocaleValue Lang="en" Value="Kombinace celních režimů - neúplná data" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PovoleneZeme">
       <Values>
-        <LocaleValue Lang="cs" Value="Povolené země" />
+        <LocaleValue Lang="en" Value="Povolené země" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Zavery">
       <Values>
-        <LocaleValue Lang="cs" Value="Závěry" />
+        <LocaleValue Lang="en" Value="Závěry" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Zavera">
       <Values>
-        <LocaleValue Lang="cs" Value="Závěra" />
+        <LocaleValue Lang="en" Value="Závěra" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CisloZavery">
       <Values>
-        <LocaleValue Lang="cs" Value="Číslo závěry" />
+        <LocaleValue Lang="en" Value="Číslo závěry" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PovoleniPouzitiZvlastnih467406F4">
       <Values>
-        <LocaleValue Lang="cs" Value="Povolení použití zvláštního typu celních závěr" />
+        <LocaleValue Lang="en" Value="Povolení použití zvláštního typu celních závěr" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Zony">
       <Values>
-        <LocaleValue Lang="cs" Value="Zóny" />
+        <LocaleValue Lang="en" Value="Zóny" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="NazevZony">
       <Values>
-        <LocaleValue Lang="cs" Value="Název zóny" />
+        <LocaleValue Lang="en" Value="Název zóny" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZemeZony">
       <Values>
-        <LocaleValue Lang="cs" Value="Země zóny" />
+        <LocaleValue Lang="en" Value="Země zóny" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypZony">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ zóny" />
+        <LocaleValue Lang="en" Value="Typ zóny" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Podminky">
       <Values>
-        <LocaleValue Lang="cs" Value="Podmínky" />
+        <LocaleValue Lang="en" Value="Podmínky" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="KVydaniPodminek">
       <Values>
-        <LocaleValue Lang="cs" Value="K vydání podmínek" />
+        <LocaleValue Lang="en" Value="K vydání podmínek" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Ukladatele">
       <Values>
-        <LocaleValue Lang="cs" Value="Ukladatelé" />
+        <LocaleValue Lang="en" Value="Ukladatelé" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Ukladatel">
       <Values>
-        <LocaleValue Lang="cs" Value="Ukladatel" />
+        <LocaleValue Lang="en" Value="Ukladatel" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZakladniVlastnostiZjednoDEC6CB36">
       <Values>
-        <LocaleValue Lang="cs" Value="Základní vlastnosti zjednodušeného postupu" />
+        <LocaleValue Lang="en" Value="Základní vlastnosti zjednodušeného postupu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZJPVydanNaZakladeAEO">
       <Values>
-        <LocaleValue Lang="cs" Value="ZJP vydán na základě AEO" />
+        <LocaleValue Lang="en" Value="ZJP vydán na základě AEO" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZJPZCPDCP">
       <Values>
-        <LocaleValue Lang="cs" Value="ZJP ZCP/DCP" />
+        <LocaleValue Lang="en" Value="ZJP ZCP/DCP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypLhutySplatnosti">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ lhůty splatnosti" />
+        <LocaleValue Lang="en" Value="Typ lhůty splatnosti" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PocetDniSplatnosti">
       <Values>
-        <LocaleValue Lang="cs" Value="Počet dní splatnosti" />
+        <LocaleValue Lang="en" Value="Počet dní splatnosti" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZJPMRVDovozu">
       <Values>
-        <LocaleValue Lang="cs" Value="ZJP MŘ v dovozu" />
+        <LocaleValue Lang="en" Value="ZJP MŘ v dovozu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="UplnaData">
       <Values>
-        <LocaleValue Lang="cs" Value="Úplná data" />
+        <LocaleValue Lang="en" Value="Úplná data" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="NeuplnaData">
       <Values>
-        <LocaleValue Lang="cs" Value="Neúplná data" />
+        <LocaleValue Lang="en" Value="Neúplná data" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SPLE">
       <Values>
-        <LocaleValue Lang="cs" Value="SPLE" />
+        <LocaleValue Lang="en" Value="SPLE" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="LzeDeklarovatZboziSZP">
       <Values>
-        <LocaleValue Lang="cs" Value="Lze deklarovat zboží SZP" />
+        <LocaleValue Lang="en" Value="Lze deklarovat zboží SZP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZJPCCRVDovozu">
       <Values>
-        <LocaleValue Lang="cs" Value="ZJP CCŘ v dovozu" />
+        <LocaleValue Lang="en" Value="ZJP CCŘ v dovozu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="LzeVZJPMR">
       <Values>
-        <LocaleValue Lang="cs" Value="Lze v ZJP MŘ" />
+        <LocaleValue Lang="en" Value="Lze v ZJP MŘ" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="LzeVZJPZCPDCP">
       <Values>
-        <LocaleValue Lang="cs" Value="Lze v ZJP ZCP/DCP" />
+        <LocaleValue Lang="en" Value="Lze v ZJP ZCP/DCP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZJPSchvalenyOdesilatelPrijemce">
       <Values>
-        <LocaleValue Lang="cs" Value="ZJP schválený odesílatel / příjemce" />
+        <LocaleValue Lang="en" Value="ZJP schválený odesílatel / příjemce" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="LzeDeklarovatZboziSeZvys0391A069">
       <Values>
-        <LocaleValue Lang="cs" Value="Lze deklarovat zboží se zvýšeným rizikem podvodu" />
+        <LocaleValue Lang="en" Value="Lze deklarovat zboží se zvýšeným rizikem podvodu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PovoleniZprosteniPovinno1ABD3E87">
       <Values>
-        <LocaleValue Lang="cs" Value="Povolení zproštění povinnosti závazné trasy" />
+        <LocaleValue Lang="en" Value="Povolení zproštění povinnosti závazné trasy" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PovolenaMoznostUkonceniVD39558EF">
       <Values>
-        <LocaleValue Lang="cs" Value="Povolena možnost ukončení vývozního celního prohlášení propuštěním TCP ve ZJP" />
+        <LocaleValue Lang="en" Value="Povolena možnost ukončení vývozního celního prohlášení propuštěním TCP ve ZJP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="VRamciHavarijnihoPostupu307C7256">
       <Values>
-        <LocaleValue Lang="cs" Value="V rámci havarijního postupu povoleno použití tiskopisu TDD/TBDD namísto JSD" />
+        <LocaleValue Lang="en" Value="V rámci havarijního postupu povoleno použití tiskopisu TDD/TBDD namísto JSD" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="FazeI">
       <Values>
-        <LocaleValue Lang="cs" Value="Fáze I" />
+        <LocaleValue Lang="en" Value="Fáze I" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="FazeII">
       <Values>
-        <LocaleValue Lang="cs" Value="Fáze II" />
+        <LocaleValue Lang="en" Value="Fáze II" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PovoleniDocasnehoSkladu">
       <Values>
-        <LocaleValue Lang="cs" Value="Povolení dočasného skladu" />
+        <LocaleValue Lang="en" Value="Povolení dočasného skladu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZajisteniCelnihoDluhuPozadovano">
       <Values>
-        <LocaleValue Lang="cs" Value="Zajištění celního dluhu požadováno" />
+        <LocaleValue Lang="en" Value="Zajištění celního dluhu požadováno" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ProcentoPozadovanehoZajisteni">
       <Values>
-        <LocaleValue Lang="cs" Value="Procento požadovaného zajištění" />
+        <LocaleValue Lang="en" Value="Procento požadovaného zajištění" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZJPOznacovaniT5">
       <Values>
-        <LocaleValue Lang="cs" Value="ZJP označování T5" />
+        <LocaleValue Lang="en" Value="ZJP označování T5" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="T5Kod">
       <Values>
-        <LocaleValue Lang="cs" Value="T5 kód" />
+        <LocaleValue Lang="en" Value="T5 kód" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Kontrola">
       <Values>
-        <LocaleValue Lang="cs" Value="Kontrola" />
+        <LocaleValue Lang="en" Value="Kontrola" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="NavrhovaneDatumKontroly">
       <Values>
-        <LocaleValue Lang="cs" Value="Navrhované datum kontroly" />
+        <LocaleValue Lang="en" Value="Navrhované datum kontroly" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatumACasKontroly">
       <Values>
-        <LocaleValue Lang="cs" Value="Datum a čas kontroly" />
+        <LocaleValue Lang="en" Value="Datum a čas kontroly" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="VysledekKontroly">
       <Values>
-        <LocaleValue Lang="cs" Value="Výsledek kontroly" />
+        <LocaleValue Lang="en" Value="Výsledek kontroly" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZkontrolovanoUzivatelem">
       <Values>
-        <LocaleValue Lang="cs" Value="Zkontrolováno uživatelem" />
+        <LocaleValue Lang="en" Value="Zkontrolováno uživatelem" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatumZapisuDoEvidence">
       <Values>
-        <LocaleValue Lang="cs" Value="Datum zápisu do evidence" />
+        <LocaleValue Lang="en" Value="Datum zápisu do evidence" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PopisKontroly">
       <Values>
-        <LocaleValue Lang="cs" Value="Popis kontroly" />
+        <LocaleValue Lang="en" Value="Popis kontroly" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CisloJednaciKontroly">
       <Values>
-        <LocaleValue Lang="cs" Value="Číslo jednací kontroly" />
+        <LocaleValue Lang="en" Value="Číslo jednací kontroly" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CelniUradZapisujici">
       <Values>
-        <LocaleValue Lang="cs" Value="Celní úřad zapisující" />
+        <LocaleValue Lang="en" Value="Celní úřad zapisující" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZJPZadost">
       <Values>
-        <LocaleValue Lang="cs" Value="ZJP žádost" />
+        <LocaleValue Lang="en" Value="ZJP žádost" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ObsahSouboru">
       <Values>
-        <LocaleValue Lang="cs" Value="Obsah souboru" />
+        <LocaleValue Lang="en" Value="Obsah souboru" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ModifikaceZadostiZJP">
       <Values>
-        <LocaleValue Lang="cs" Value="Modifikace žádosti ZJP" />
+        <LocaleValue Lang="en" Value="Modifikace žádosti ZJP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ValidityStartDateCheck">
       <Values>
-        <LocaleValue Lang="cs" Value="ValidityStartDateCheck" />
+        <LocaleValue Lang="en" Value="ValidityStartDateCheck" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZamitnutiZadostiZJP">
       <Values>
-        <LocaleValue Lang="cs" Value="Zamítnutí žádosti ZJP" />
+        <LocaleValue Lang="en" Value="Zamítnutí žádosti ZJP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="RespPerNotified">
       <Values>
-        <LocaleValue Lang="cs" Value="RespPerNotified" />
+        <LocaleValue Lang="en" Value="RespPerNotified" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZJPPovoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="ZJP povolení" />
+        <LocaleValue Lang="en" Value="ZJP povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="UniqueAMSID">
       <Values>
-        <LocaleValue Lang="cs" Value="UniqueAMSID" />
+        <LocaleValue Lang="en" Value="UniqueAMSID" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AuthorizedAgreedLocation9CBBB61D">
       <Values>
-        <LocaleValue Lang="cs" Value="AuthorizedAgreedLocationMandatory" />
+        <LocaleValue Lang="en" Value="AuthorizedAgreedLocationMandatory" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AuthValidUntil">
       <Values>
-        <LocaleValue Lang="cs" Value="AuthValidUntil" />
+        <LocaleValue Lang="en" Value="AuthValidUntil" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ExpirationAndValidityCheck">
       <Values>
-        <LocaleValue Lang="cs" Value="ExpirationAndValidityCheck" />
+        <LocaleValue Lang="en" Value="ExpirationAndValidityCheck" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="LimitedValidityDate">
       <Values>
-        <LocaleValue Lang="cs" Value="LimitedValidityDate" />
+        <LocaleValue Lang="en" Value="LimitedValidityDate" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SPGoodsMandatory">
       <Values>
-        <LocaleValue Lang="cs" Value="SPGoodsMandatory" />
+        <LocaleValue Lang="en" Value="SPGoodsMandatory" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SPGoodsTypeMandatory">
       <Values>
-        <LocaleValue Lang="cs" Value="SPGoodsTypeMandatory" />
+        <LocaleValue Lang="en" Value="SPGoodsTypeMandatory" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SPCompleteDataMandatory">
       <Values>
-        <LocaleValue Lang="cs" Value="SPCompleteDataMandatory" />
+        <LocaleValue Lang="en" Value="SPCompleteDataMandatory" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SPInCompleteDataMandatory">
       <Values>
-        <LocaleValue Lang="cs" Value="SPInCompleteDataMandatory" />
+        <LocaleValue Lang="en" Value="SPInCompleteDataMandatory" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SPCustomsOfficeOfRelease2F4FC7EA">
       <Values>
-        <LocaleValue Lang="cs" Value="SPCustomsOfficeOfReleaseMandatory" />
+        <LocaleValue Lang="en" Value="SPCustomsOfficeOfReleaseMandatory" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CCAllowedInLI">
       <Values>
-        <LocaleValue Lang="cs" Value="CCAllowedInLI" />
+        <LocaleValue Lang="en" Value="CCAllowedInLI" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SPRepresentationMandatory">
       <Values>
-        <LocaleValue Lang="cs" Value="SPRepresentationMandatory" />
+        <LocaleValue Lang="en" Value="SPRepresentationMandatory" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SPGuaranteeMandatory">
       <Values>
-        <LocaleValue Lang="cs" Value="SPGuaranteeMandatory" />
+        <LocaleValue Lang="en" Value="SPGuaranteeMandatory" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SPPeriodAuthType">
       <Values>
-        <LocaleValue Lang="cs" Value="SPPeriodAuthType" />
+        <LocaleValue Lang="en" Value="SPPeriodAuthType" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SPPeriodCount">
       <Values>
-        <LocaleValue Lang="cs" Value="SPPeriodCount" />
+        <LocaleValue Lang="en" Value="SPPeriodCount" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SPPeriodMandatory">
       <Values>
-        <LocaleValue Lang="cs" Value="SPPeriodMandatory" />
+        <LocaleValue Lang="en" Value="SPPeriodMandatory" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SPCustomsProcedureCombinEEE1EBBA">
       <Values>
-        <LocaleValue Lang="cs" Value="SPCustomsProcedureCombinationMandatory" />
+        <LocaleValue Lang="en" Value="SPCustomsProcedureCombinationMandatory" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ModifikaceZJPPovoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="Modifikace ZJP povolení" />
+        <LocaleValue Lang="en" Value="Modifikace ZJP povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="OdnetiZJPPovoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="Odnětí ZJP povolení" />
+        <LocaleValue Lang="en" Value="Odnětí ZJP povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DruhUdalosti">
       <Values>
-        <LocaleValue Lang="cs" Value="Druh události" />
+        <LocaleValue Lang="en" Value="Druh události" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DruhLhutySplatnosti">
       <Values>
-        <LocaleValue Lang="cs" Value="Druh lhůty splatnosti" />
+        <LocaleValue Lang="en" Value="Druh lhůty splatnosti" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Code">
       <Values>
-        <LocaleValue Lang="cs" Value="Code" />
+        <LocaleValue Lang="en" Value="Code" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ControlResult">
       <Values>
-        <LocaleValue Lang="cs" Value="Control result" />
+        <LocaleValue Lang="en" Value="Control result" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="MerneJednotkyProTARIC">
       <Values>
-        <LocaleValue Lang="cs" Value="Měrné jednotky pro TARIC" />
+        <LocaleValue Lang="en" Value="Měrné jednotky pro TARIC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="KodMerneJednotkyProTARIC">
       <Values>
-        <LocaleValue Lang="cs" Value="Kód měrné jednotky pro TARIC" />
+        <LocaleValue Lang="en" Value="Kód měrné jednotky pro TARIC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Popis">
       <Values>
-        <LocaleValue Lang="cs" Value="Popis" />
+        <LocaleValue Lang="en" Value="Popis" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Description">
       <Values>
-        <LocaleValue Lang="cs" Value="_ description" />
+        <LocaleValue Lang="en" Value="_ description" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CustomsOffices">
       <Values>
-        <LocaleValue Lang="cs" Value="CustomsOffices" />
+        <LocaleValue Lang="en" Value="CustomsOffices" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ReferenceNumber">
       <Values>
-        <LocaleValue Lang="cs" Value="ReferenceNumber" />
+        <LocaleValue Lang="en" Value="ReferenceNumber" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ValidFrom">
       <Values>
-        <LocaleValue Lang="cs" Value="Valid from" />
+        <LocaleValue Lang="en" Value="Valid from" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ValidTo">
       <Values>
-        <LocaleValue Lang="cs" Value="Valid to" />
+        <LocaleValue Lang="en" Value="Valid to" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ReferenceNumberMainOffice">
       <Values>
-        <LocaleValue Lang="cs" Value="ReferenceNumberMainOffice" />
+        <LocaleValue Lang="en" Value="ReferenceNumberMainOffice" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ReferenceNumberHigherAuthority">
       <Values>
-        <LocaleValue Lang="cs" Value="ReferenceNumberHigherAuthority" />
+        <LocaleValue Lang="en" Value="ReferenceNumberHigherAuthority" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ReferenceNumberTakeOver">
       <Values>
-        <LocaleValue Lang="cs" Value="ReferenceNumberTakeOver" />
+        <LocaleValue Lang="en" Value="ReferenceNumberTakeOver" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ReferenceNumberCompetentADFECF38">
       <Values>
-        <LocaleValue Lang="cs" Value="ReferenceNumberCompetentAuthorityOfEnquiry" />
+        <LocaleValue Lang="en" Value="ReferenceNumberCompetentAuthorityOfEnquiry" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ReferenceNumberCompetent21D6A0A8">
       <Values>
-        <LocaleValue Lang="cs" Value="ReferenceNumberCompetentAuthorityOfRecovery" />
+        <LocaleValue Lang="en" Value="ReferenceNumberCompetentAuthorityOfRecovery" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CountryCode">
       <Values>
-        <LocaleValue Lang="cs" Value="CountryCode" />
+        <LocaleValue Lang="en" Value="CountryCode" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="UnLocodeId">
       <Values>
-        <LocaleValue Lang="cs" Value="UnLocodeId" />
+        <LocaleValue Lang="en" Value="UnLocodeId" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="RegionCode">
       <Values>
-        <LocaleValue Lang="cs" Value="RegionCode" />
+        <LocaleValue Lang="en" Value="RegionCode" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="NctsEntryDate">
       <Values>
-        <LocaleValue Lang="cs" Value="NctsEntryDate" />
+        <LocaleValue Lang="en" Value="NctsEntryDate" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="NearestOffice">
       <Values>
-        <LocaleValue Lang="cs" Value="NearestOffice" />
+        <LocaleValue Lang="en" Value="NearestOffice" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PostalCode">
       <Values>
-        <LocaleValue Lang="cs" Value="PostalCode" />
+        <LocaleValue Lang="en" Value="PostalCode" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PhoneNumber">
       <Values>
-        <LocaleValue Lang="cs" Value="PhoneNumber" />
+        <LocaleValue Lang="en" Value="PhoneNumber" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="FaxNumber">
       <Values>
-        <LocaleValue Lang="cs" Value="FaxNumber" />
+        <LocaleValue Lang="en" Value="FaxNumber" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TelexNumber">
       <Values>
-        <LocaleValue Lang="cs" Value="TelexNumber" />
+        <LocaleValue Lang="en" Value="TelexNumber" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="EMailAddress">
       <Values>
-        <LocaleValue Lang="cs" Value="EMailAddress" />
+        <LocaleValue Lang="en" Value="EMailAddress" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="GeoInfoCode">
       <Values>
-        <LocaleValue Lang="cs" Value="GeoInfoCode" />
+        <LocaleValue Lang="en" Value="GeoInfoCode" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TraderDedicated">
       <Values>
-        <LocaleValue Lang="cs" Value="TraderDedicated" />
+        <LocaleValue Lang="en" Value="TraderDedicated" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="StreetAndNumber">
       <Values>
-        <LocaleValue Lang="cs" Value="StreetAndNumber" />
+        <LocaleValue Lang="en" Value="StreetAndNumber" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="City">
       <Values>
-        <LocaleValue Lang="cs" Value="City" />
+        <LocaleValue Lang="en" Value="City" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="RepresentativeStatusCode">
       <Values>
-        <LocaleValue Lang="cs" Value="RepresentativeStatusCode" />
+        <LocaleValue Lang="en" Value="RepresentativeStatusCode" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AMSAuthorizationType">
       <Values>
-        <LocaleValue Lang="cs" Value="AMS Authorization Type" />
+        <LocaleValue Lang="en" Value="AMS Authorization Type" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AuthorizationType">
       <Values>
-        <LocaleValue Lang="cs" Value="Authorization Type" />
+        <LocaleValue Lang="en" Value="Authorization Type" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ShortenedDescription">
       <Values>
-        <LocaleValue Lang="cs" Value="Shortened description" />
+        <LocaleValue Lang="en" Value="Shortened description" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SPApplicationShortcut">
       <Values>
-        <LocaleValue Lang="cs" Value="SP application shortcut" />
+        <LocaleValue Lang="en" Value="SP application shortcut" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CustomsOfficeRole">
       <Values>
-        <LocaleValue Lang="cs" Value="Customs office role" />
+        <LocaleValue Lang="en" Value="Customs office role" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DeclarationType">
       <Values>
-        <LocaleValue Lang="cs" Value="Declaration type" />
+        <LocaleValue Lang="en" Value="Declaration type" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsSP">
       <Values>
-        <LocaleValue Lang="cs" Value="Is SP?" />
+        <LocaleValue Lang="en" Value="Is SP?" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CustomsProcedureCode">
       <Values>
-        <LocaleValue Lang="cs" Value="Customs procedure code" />
+        <LocaleValue Lang="en" Value="Customs procedure code" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CustomsRegime">
       <Values>
-        <LocaleValue Lang="cs" Value="Customs regime" />
+        <LocaleValue Lang="en" Value="Customs regime" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsPWEI">
       <Values>
-        <LocaleValue Lang="cs" Value="Is PWEI?" />
+        <LocaleValue Lang="en" Value="Is PWEI?" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="RegisteredInAMS">
       <Values>
-        <LocaleValue Lang="cs" Value="Registered in AMS?" />
+        <LocaleValue Lang="en" Value="Registered in AMS?" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="InspectionInterval">
       <Values>
-        <LocaleValue Lang="cs" Value="Inspection interval" />
+        <LocaleValue Lang="en" Value="Inspection interval" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IdentifierOfAClientPage">
       <Values>
-        <LocaleValue Lang="cs" Value="Identifier of a client page" />
+        <LocaleValue Lang="en" Value="Identifier of a client page" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CountryCodesFullList">
       <Values>
-        <LocaleValue Lang="cs" Value="CountryCodesFullList" />
+        <LocaleValue Lang="en" Value="CountryCodesFullList" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TccEntryDate">
       <Values>
-        <LocaleValue Lang="cs" Value="TccEntryDate" />
+        <LocaleValue Lang="en" Value="TccEntryDate" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="GeoNomenclatureCode">
       <Values>
-        <LocaleValue Lang="cs" Value="GeoNomenclatureCode" />
+        <LocaleValue Lang="en" Value="GeoNomenclatureCode" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CountryRegimeCode">
       <Values>
-        <LocaleValue Lang="cs" Value="CountryRegimeCode" />
+        <LocaleValue Lang="en" Value="CountryRegimeCode" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AMSAuthorizationWithdrawalReason">
       <Values>
-        <LocaleValue Lang="cs" Value="AMS Authorization Withdrawal Reason" />
+        <LocaleValue Lang="en" Value="AMS Authorization Withdrawal Reason" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AuthorizationWithdrawalR13AC2D1D">
       <Values>
-        <LocaleValue Lang="cs" Value="Authorization withdrawal reason code" />
+        <LocaleValue Lang="en" Value="Authorization withdrawal reason code" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="JustificationNecessary">
       <Values>
-        <LocaleValue Lang="cs" Value="Justification necessary" />
+        <LocaleValue Lang="en" Value="Justification necessary" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SPRelated">
       <Values>
-        <LocaleValue Lang="cs" Value="SP related" />
+        <LocaleValue Lang="en" Value="SP related" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PWEIRelated">
       <Values>
-        <LocaleValue Lang="cs" Value="PWEI related" />
+        <LocaleValue Lang="en" Value="PWEI related" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ApplicationRejectionReason">
       <Values>
-        <LocaleValue Lang="cs" Value="Application Rejection Reason" />
+        <LocaleValue Lang="en" Value="Application Rejection Reason" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ApplicationRejectionReasonCode">
       <Values>
-        <LocaleValue Lang="cs" Value="Application Rejection Reason code" />
+        <LocaleValue Lang="en" Value="Application Rejection Reason code" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PWEIRelated1">
       <Values>
-        <LocaleValue Lang="cs" Value="PWEI related" />
+        <LocaleValue Lang="en" Value="PWEI related" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CommodityCodesFullIncludCB0563D2">
       <Values>
-        <LocaleValue Lang="cs" Value="Commodity codes - full, including 2 and 4digits codes" />
+        <LocaleValue Lang="en" Value="Commodity codes - full, including 2 and 4digits codes" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CommodityCode">
       <Values>
-        <LocaleValue Lang="cs" Value="Commodity code" />
+        <LocaleValue Lang="en" Value="Commodity code" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypManipulaceVCelnimSkladu">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ manipulace v celním skladu" />
+        <LocaleValue Lang="en" Value="Typ manipulace v celním skladu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Popis1">
       <Values>
-        <LocaleValue Lang="cs" Value="Popis" />
+        <LocaleValue Lang="en" Value="Popis" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PriznakZdaTypManipulaceM99D491E5">
       <Values>
-        <LocaleValue Lang="cs" Value="Příznak zda typ manipulace může vést ke změně zbožového kódu" />
+        <LocaleValue Lang="en" Value="Příznak zda typ manipulace může vést ke změně zbožového kódu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CtyrmistnyRezim">
       <Values>
-        <LocaleValue Lang="cs" Value="Čtyřmístný režim" />
+        <LocaleValue Lang="en" Value="Čtyřmístný režim" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CtyrmistnyCelniRezim">
       <Values>
-        <LocaleValue Lang="cs" Value="Čtyřmístný celní režim" />
+        <LocaleValue Lang="en" Value="Čtyřmístný celní režim" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="VyznamKodu">
       <Values>
-        <LocaleValue Lang="cs" Value="Význam kódu" />
+        <LocaleValue Lang="en" Value="Význam kódu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CelneSchvaleneUrceniRezim">
       <Values>
-        <LocaleValue Lang="cs" Value="Celně schválené určení / režim" />
+        <LocaleValue Lang="en" Value="Celně schválené určení / režim" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DovozniVyvozniRezim">
       <Values>
-        <LocaleValue Lang="cs" Value="Dovozní/vývozní režim" />
+        <LocaleValue Lang="en" Value="Dovozní/vývozní režim" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypOdpovidajicihoPovolen64594C16">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ odpovídajícího povolení režimu s hospodářským účinkem" />
+        <LocaleValue Lang="en" Value="Typ odpovídajícího povolení režimu s hospodářským účinkem" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PouzitelnyVRamciZJPMR">
       <Values>
-        <LocaleValue Lang="cs" Value="Použitelný v rámci ZJP MŘ?" />
+        <LocaleValue Lang="en" Value="Použitelný v rámci ZJP MŘ?" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="LzePodatZjednoduseneCelnCEF3FAA1">
       <Values>
-        <LocaleValue Lang="cs" Value="Lze podat zjednodušené celní prohlášení?" />
+        <LocaleValue Lang="en" Value="Lze podat zjednodušené celní prohlášení?" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="MuzeRezimPredchazetTranzitu">
       <Values>
-        <LocaleValue Lang="cs" Value="Může režim předcházet tranzitu?" />
+        <LocaleValue Lang="en" Value="Může režim předcházet tranzitu?" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PopisCesky">
       <Values>
-        <LocaleValue Lang="cs" Value="Popis česky" />
+        <LocaleValue Lang="en" Value="Popis česky" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="KontrolaPlneDleTARIC">
       <Values>
-        <LocaleValue Lang="cs" Value="Kontrola plně dle TARIC?" />
+        <LocaleValue Lang="en" Value="Kontrola plně dle TARIC?" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatasetPWEI">
       <Values>
-        <LocaleValue Lang="cs" Value="Dataset PWEI" />
+        <LocaleValue Lang="en" Value="Dataset PWEI" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZemeVydani">
       <Values>
-        <LocaleValue Lang="cs" Value="Země vydání" />
+        <LocaleValue Lang="en" Value="Země vydání" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="EORITIN">
       <Values>
-        <LocaleValue Lang="cs" Value="EORI/TIN" />
+        <LocaleValue Lang="en" Value="EORI/TIN" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypPovoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ povolení" />
+        <LocaleValue Lang="en" Value="Typ povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZodpovednyCelniUrad">
       <Values>
-        <LocaleValue Lang="cs" Value="Zodpovědný celní úřad" />
+        <LocaleValue Lang="en" Value="Zodpovědný celní úřad" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="NazevDrzitelePovoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="Název držitele povolení" />
+        <LocaleValue Lang="en" Value="Název držitele povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZemeSidla">
       <Values>
-        <LocaleValue Lang="cs" Value="Země sídla" />
+        <LocaleValue Lang="en" Value="Země sídla" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatumPlatnostiPosledniUdalosti">
       <Values>
-        <LocaleValue Lang="cs" Value="Datum platnosti poslední události" />
+        <LocaleValue Lang="en" Value="Datum platnosti poslední události" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatumZapisu">
       <Values>
-        <LocaleValue Lang="cs" Value="Datum zápisu" />
+        <LocaleValue Lang="en" Value="Datum zápisu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="RozhodnujiciCU">
       <Values>
-        <LocaleValue Lang="cs" Value="Rozhodnující CÚ" />
+        <LocaleValue Lang="en" Value="Rozhodnující CÚ" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="KonecPlatnostiUdalosti">
       <Values>
-        <LocaleValue Lang="cs" Value="Konec platnosti události" />
+        <LocaleValue Lang="en" Value="Konec platnosti události" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypPosleniUdalosti">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ poslení události" />
+        <LocaleValue Lang="en" Value="Typ poslení události" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PrijetimCP">
       <Values>
-        <LocaleValue Lang="cs" Value="Přijetím CP" />
+        <LocaleValue Lang="en" Value="Přijetím CP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PrijetimCPTextove">
       <Values>
-        <LocaleValue Lang="cs" Value="Přijetím CP - textově" />
+        <LocaleValue Lang="en" Value="Přijetím CP - textově" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZrusenoSeZpetnouUcinnosti">
       <Values>
-        <LocaleValue Lang="cs" Value="Zrušeno se zpětnou účinností" />
+        <LocaleValue Lang="en" Value="Zrušeno se zpětnou účinností" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatumPodaniZadosti">
       <Values>
-        <LocaleValue Lang="cs" Value="Datum podání žádosti" />
+        <LocaleValue Lang="en" Value="Datum podání žádosti" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatumPlatnostiPosledniho8BA347B8">
       <Values>
-        <LocaleValue Lang="cs" Value="Datum platnosti posledního rozhodnutí" />
+        <LocaleValue Lang="en" Value="Datum platnosti posledního rozhodnutí" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IDVcetneKoduZeme">
       <Values>
-        <LocaleValue Lang="cs" Value="ID včetně kódu země" />
+        <LocaleValue Lang="en" Value="ID včetně kódu země" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypAMSPovoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ AMS povolení" />
+        <LocaleValue Lang="en" Value="Typ AMS povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="EvidencniCisloPovoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="Evidenční číslo povolení" />
+        <LocaleValue Lang="en" Value="Evidenční číslo povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatasetSP">
       <Values>
-        <LocaleValue Lang="cs" Value="Dataset SP" />
+        <LocaleValue Lang="en" Value="Dataset SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatasetSchvalenychMist">
       <Values>
-        <LocaleValue Lang="cs" Value="Dataset Schválených míst" />
+        <LocaleValue Lang="en" Value="Dataset Schválených míst" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="OznaceniMista1">
       <Values>
-        <LocaleValue Lang="cs" Value="Označení místa" />
+        <LocaleValue Lang="en" Value="Označení místa" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatasetKontrol">
       <Values>
-        <LocaleValue Lang="cs" Value="Dataset kontrol" />
+        <LocaleValue Lang="en" Value="Dataset kontrol" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AMSGUID">
       <Values>
-        <LocaleValue Lang="cs" Value="AMSGUID" />
+        <LocaleValue Lang="en" Value="AMSGUID" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AMSType">
       <Values>
-        <LocaleValue Lang="cs" Value="AMSType" />
+        <LocaleValue Lang="en" Value="AMSType" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AMSTypeText">
       <Values>
-        <LocaleValue Lang="cs" Value="AMSTypeText" />
+        <LocaleValue Lang="en" Value="AMSTypeText" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IssuingCountry">
       <Values>
-        <LocaleValue Lang="cs" Value="IssuingCountry" />
+        <LocaleValue Lang="en" Value="IssuingCountry" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AMSCompleteID">
       <Values>
-        <LocaleValue Lang="cs" Value="AMSCompleteID" />
+        <LocaleValue Lang="en" Value="AMSCompleteID" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AuthorizationTypeName">
       <Values>
-        <LocaleValue Lang="cs" Value="AuthorizationTypeName" />
+        <LocaleValue Lang="en" Value="AuthorizationTypeName" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TIN">
       <Values>
-        <LocaleValue Lang="cs" Value="TIN" />
+        <LocaleValue Lang="en" Value="TIN" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ResponsibleCustomsOffice">
       <Values>
-        <LocaleValue Lang="cs" Value="ResponsibleCustomsOffice" />
+        <LocaleValue Lang="en" Value="ResponsibleCustomsOffice" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ControlGUID">
       <Values>
-        <LocaleValue Lang="cs" Value="ControlGUID" />
+        <LocaleValue Lang="en" Value="ControlGUID" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SuggestDate">
       <Values>
-        <LocaleValue Lang="cs" Value="SuggestDate" />
+        <LocaleValue Lang="en" Value="SuggestDate" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ControlDateTime">
       <Values>
-        <LocaleValue Lang="cs" Value="ControlDateTime" />
+        <LocaleValue Lang="en" Value="ControlDateTime" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ResultValue">
       <Values>
-        <LocaleValue Lang="cs" Value="ResultValue" />
+        <LocaleValue Lang="en" Value="ResultValue" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ControledByUser">
       <Values>
-        <LocaleValue Lang="cs" Value="ControledByUser" />
+        <LocaleValue Lang="en" Value="ControledByUser" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CelniUradyDohledu">
       <Values>
-        <LocaleValue Lang="cs" Value="Celní úřady dohledu" />
+        <LocaleValue Lang="en" Value="Celní úřady dohledu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AMSID">
       <Values>
-        <LocaleValue Lang="cs" Value="AMSID" />
+        <LocaleValue Lang="en" Value="AMSID" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatasetOther">
       <Values>
-        <LocaleValue Lang="cs" Value="Dataset Other" />
+        <LocaleValue Lang="en" Value="Dataset Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatasetAudituSubjektu">
       <Values>
-        <LocaleValue Lang="cs" Value="Dataset Auditu subjektu" />
+        <LocaleValue Lang="en" Value="Dataset Auditu subjektu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatumZahajeniAuditu">
       <Values>
-        <LocaleValue Lang="cs" Value="Datum zahájení auditu" />
+        <LocaleValue Lang="en" Value="Datum zahájení auditu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatumKonceAuditu">
       <Values>
-        <LocaleValue Lang="cs" Value="Datum konce auditu" />
+        <LocaleValue Lang="en" Value="Datum konce auditu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="VysledekAuditu">
       <Values>
-        <LocaleValue Lang="cs" Value="Výsledek auditu" />
+        <LocaleValue Lang="en" Value="Výsledek auditu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="VysledekAudituTextem">
       <Values>
-        <LocaleValue Lang="cs" Value="Výsledek auditu textem" />
+        <LocaleValue Lang="en" Value="Výsledek auditu textem" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CUDohledu">
       <Values>
-        <LocaleValue Lang="cs" Value="CU dohledu" />
+        <LocaleValue Lang="en" Value="CU dohledu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatasetElektronickeKomunikace">
       <Values>
-        <LocaleValue Lang="cs" Value="Dataset elektronické komunikace" />
+        <LocaleValue Lang="en" Value="Dataset elektronické komunikace" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="RozhodnutiPlatneOd">
       <Values>
-        <LocaleValue Lang="cs" Value="Rozhodnutí platné od" />
+        <LocaleValue Lang="en" Value="Rozhodnutí platné od" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatumRozhodnuti">
       <Values>
-        <LocaleValue Lang="cs" Value="Datum rozhodnutí" />
+        <LocaleValue Lang="en" Value="Datum rozhodnutí" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AMSIDVcetneZeme">
       <Values>
-        <LocaleValue Lang="cs" Value="AMS ID včetně země" />
+        <LocaleValue Lang="en" Value="AMS ID včetně země" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IDZJPPovoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="ID ZJP/povolení" />
+        <LocaleValue Lang="en" Value="ID ZJP/povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CustomsOfficeReferenceNumber">
       <Values>
-        <LocaleValue Lang="cs" Value="Customs office reference number" />
+        <LocaleValue Lang="en" Value="Customs office reference number" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CisloPracovnika">
       <Values>
-        <LocaleValue Lang="cs" Value="Číslo pracovníka" />
+        <LocaleValue Lang="en" Value="Číslo pracovníka" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="String200">
       <Values>
-        <LocaleValue Lang="cs" Value="String 200" />
+        <LocaleValue Lang="en" Value="String 200" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypZajisteni">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ zajištění" />
+        <LocaleValue Lang="en" Value="Typ zajištění" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="GRNGuaranteeReferenceNumber">
       <Values>
-        <LocaleValue Lang="cs" Value="GRN - Guarantee Reference Number" />
+        <LocaleValue Lang="en" Value="GRN - Guarantee Reference Number" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CSRD2CodelistDescription">
       <Values>
-        <LocaleValue Lang="cs" Value="CS/RD2 Codelist description" />
+        <LocaleValue Lang="en" Value="CS/RD2 Codelist description" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="StavPovoleniZJP">
       <Values>
-        <LocaleValue Lang="cs" Value="Stav Povolení/ZJP" />
+        <LocaleValue Lang="en" Value="Stav Povolení/ZJP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CisloZJPNeboPovoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="Číslo ZJP nebo povolení" />
+        <LocaleValue Lang="en" Value="Číslo ZJP nebo povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ModifikaceElkomPovoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="Modifikace Elkom povolení" />
+        <LocaleValue Lang="en" Value="Modifikace Elkom povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ECCertValidity">
       <Values>
-        <LocaleValue Lang="cs" Value="ECCertValidity" />
+        <LocaleValue Lang="en" Value="ECCertValidity" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="OdstraneniBudouciZmeny">
       <Values>
-        <LocaleValue Lang="cs" Value="Odstranění budoucí změny" />
+        <LocaleValue Lang="en" Value="Odstranění budoucí změny" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ErrorMessage">
       <Values>
-        <LocaleValue Lang="cs" Value="Error Message" />
+        <LocaleValue Lang="en" Value="Error Message" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZpusobPouzitiCertifikatu">
       <Values>
-        <LocaleValue Lang="cs" Value="Způsob použití certifikátu" />
+        <LocaleValue Lang="en" Value="Způsob použití certifikátu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DescriptionLanguage">
       <Values>
-        <LocaleValue Lang="cs" Value="Description language" />
+        <LocaleValue Lang="en" Value="Description language" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CertificateIssuer">
       <Values>
-        <LocaleValue Lang="cs" Value="Certificate issuer" />
+        <LocaleValue Lang="en" Value="Certificate issuer" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CodeOfCertificateIssuerF983602E8">
       <Values>
-        <LocaleValue Lang="cs" Value="Code of certificate issuer (first CN attribute from Issuer element)" />
+        <LocaleValue Lang="en" Value="Code of certificate issuer (first CN attribute from Issuer element)" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="NameOfCertificationAuthority">
       <Values>
-        <LocaleValue Lang="cs" Value="Name of certification authority" />
+        <LocaleValue Lang="en" Value="Name of certification authority" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="String100">
       <Values>
-        <LocaleValue Lang="cs" Value="String 100" />
+        <LocaleValue Lang="en" Value="String 100" />
       </Values>
     </LocalizedString>
   </Strings>

@@ -16,43 +16,147 @@
           <Panel.Width value="263px" />
           <Children>
             <Panel>
-              <Name value="headings_pnl" />
+              <Name value="panel_headings" />
               <Orientation value="Vertical" />
               <Panel.Height value="#" />
               <Panel.Width value="*" />
               <Children>
-                <Label>
-                  <Name value="NavigationLbl1" />
-                  <Heading value="h3" />
+                <Panel>
+                  <Name value="panel_name" />
+                  <Orientation value="Horizontal" />
                   <Panel.Height value="#" />
-                  <Panel.Width value="100%" />
-                  <Bindings>
-                    <Binding SourceProperty="IsVisible" Expression="form.historyVersion._isNotAnoherVersion" />
-                    <Binding SourceProperty="Data" Expression="mode" />
-                  </Bindings>
+                  <Panel.Width value="*" />
+                  <Children>
+                    <HyperLink>
+                      <Name value="label_name" />
+                      <Panel.Height value="#" />
+                      <Panel.HorizontalAlignment value="Center" />
+                      <Panel.Width value="100%" />
+                      <Target value="_self" />
+                      <Bindings>
+                        <Binding SourceProperty="Data" Expression="localized.AMS" />
+                      </Bindings>
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-hyperlink" />
+                          <Condition value="False" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-name" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </HyperLink>
+                    <Panel>
+                      <Name value="panel61" />
+                      <Orientation value="Horizontal" />
+                      <Panel.Height value="#" />
+                      <Panel.Width value="*" />
+                      <Bindings>
+                        <Binding SourceProperty="IsVisible" Expression="globals.isTest" />
+                      </Bindings>
+                      <Children>
+                        <Label>
+                          <Name value="label13" />
+                          <Panel.Height value="#" />
+                          <Panel.Width value="100%" />
+                          <Bindings>
+                            <Binding SourceProperty="Data" Expression="localized.TESTMODE" />
+                          </Bindings>
+                          <CssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-label" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                          </CssClass>
+                        </Label>
+                      </Children>
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-panel" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-test" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </Panel>
+                  </Children>
                   <CssClass>
                     <CssClassConditional>
-                      <ClassName value="{theme}-label" />
+                      <ClassName value="{theme}-panel" />
                       <IsThemedStyle value="True" />
                     </CssClassConditional>
                   </CssClass>
-                </Label>
-                <Label>
-                  <Name value="secondLabel" />
-                  <Heading value="h3" />
+                </Panel>
+                <Panel>
+                  <Name value="panel_title" />
+                  <IsVisible value="False" />
+                  <Orientation value="Horizontal" />
                   <Panel.Height value="#" />
-                  <Panel.Width value="100%" />
-                  <Bindings>
-                    <Binding SourceProperty="IsVisible" Expression="form.historyVersion._isAnotherVersion" />
-                    <Binding SourceProperty="Data" Expression="localized.HistoricVersion" />
-                  </Bindings>
+                  <Panel.Width value="*" />
+                  <Children>
+                    <Label>
+                      <Name value="label_title" />
+                      <Panel.Height value="#" />
+                      <Panel.Width value="*" />
+                      <Bindings>
+                        <Binding SourceProperty="Data" Expression="mode" />
+                      </Bindings>
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-label" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-title" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </Label>
+                  </Children>
                   <CssClass>
                     <CssClassConditional>
-                      <ClassName value="{theme}-label" />
+                      <ClassName value="{theme}-panel" />
                       <IsThemedStyle value="True" />
                     </CssClassConditional>
                   </CssClass>
-                </Label>
+                </Panel>
+                <Panel>
+                  <Name value="panel_subtitle" />
+                  <IsVisible value="False" />
+                  <Orientation value="Horizontal" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="*" />
+                  <Children>
+                    <Label>
+                      <Name value="label_subtitle" />
+                      <Panel.Height value="#" />
+                      <Panel.Width value="150px" />
+                      <Bindings>
+                        <Binding SourceProperty="Data" Expression="localized.LocalizedString2" />
+                      </Bindings>
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-label" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-subtitle" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </Label>
+                  </Children>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-panel" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </Panel>
               </Children>
               <CssClass>
                 <CssClassConditional>
@@ -61,6 +165,11 @@
                 </CssClassConditional>
                 <CssClassConditional>
                   <ClassName value="{theme}-headings" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+                <CssClassConditional>
+                  <ClassName value="{theme}-declistHeadings" />
+                  <Condition value="False" />
                   <IsThemedStyle value="True" />
                 </CssClassConditional>
               </CssClass>
@@ -448,6 +557,9 @@
                           <Caption value="Modify" />
                           <Panel.Height value="#" />
                           <Panel.Width value="150px" />
+                          <OnClick>
+                            <ActionEvent ReferencedAction="~modify" />
+                          </OnClick>
                           <Bindings>
                             <Binding SourceProperty="IsVisible" Expression="buttonsVisibility.isModifyVisible" />
                           </Bindings>
@@ -463,6 +575,9 @@
                           <Caption value="Authorize" />
                           <Panel.Height value="#" />
                           <Panel.Width value="150px" />
+                          <OnClick>
+                            <ActionEvent ReferencedAction="~authorisaze" />
+                          </OnClick>
                           <Bindings>
                             <Binding SourceProperty="IsVisible" Expression="buttonsVisibility.isAuthorizeVisible" />
                           </Bindings>
@@ -478,6 +593,9 @@
                           <Caption value="Reject" />
                           <Panel.Height value="#" />
                           <Panel.Width value="150px" />
+                          <OnClick>
+                            <ActionEvent ReferencedAction="~reject" />
+                          </OnClick>
                           <Bindings>
                             <Binding SourceProperty="IsVisible" Expression="buttonsVisibility.isRejectVisible" />
                           </Bindings>
@@ -493,6 +611,9 @@
                           <Caption value="Withdraw" />
                           <Panel.Height value="#" />
                           <Panel.Width value="150px" />
+                          <OnClick>
+                            <ActionEvent ReferencedAction="~withdraw" />
+                          </OnClick>
                           <Bindings>
                             <Binding SourceProperty="IsVisible" Expression="buttonsVisibility.isWithdrawVisible" />
                           </Bindings>
@@ -508,26 +629,11 @@
                           <Caption value="Cancel" />
                           <Panel.Height value="#" />
                           <Panel.Width value="150px" />
-                          <Bindings>
-                            <Binding SourceProperty="IsVisible" Expression="buttonsVisibility.isCancelVisible" />
-                          </Bindings>
-                          <CssClass>
-                            <CssClassConditional>
-                              <ClassName value="{theme}-button" />
-                              <IsThemedStyle value="True" />
-                            </CssClassConditional>
-                          </CssClass>
-                        </Button>
-                        <Button>
-                          <Name value="btn_editFuruteChange1" />
-                          <Caption value="Btn _ edit furute change 1" />
-                          <Panel.Height value="#" />
-                          <Panel.Width value="165px" />
                           <OnClick>
-                            <ActionEvent ReferencedAction="~editFutureChange" />
+                            <ActionEvent ReferencedAction="~cancel" />
                           </OnClick>
                           <Bindings>
-                            <Binding SourceProperty="IsVisible" Expression="buttonsVisibility.isEditFutureVisible" />
+                            <Binding SourceProperty="IsVisible" Expression="buttonsVisibility.isCancelVisible" />
                           </Bindings>
                           <CssClass>
                             <CssClassConditional>
@@ -545,7 +651,7 @@
                             <ActionEvent ReferencedAction="~cancelFutureChange" />
                           </OnClick>
                           <Bindings>
-                            <Binding SourceProperty="IsVisible" Expression="buttonsVisibility.isCancelVisible" />
+                            <Binding SourceProperty="IsVisible" Expression="buttonsVisibility.isCancelFutureVisible" />
                           </Bindings>
                           <CssClass>
                             <CssClassConditional>
@@ -4537,7 +4643,7 @@
             </Reference>
             <Reference>
               <Name value="reference41" />
-              <Caption value="Reference 41" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -4587,7 +4693,7 @@
             </Reference>
             <Reference>
               <Name value="reference40" />
-              <Caption value="Reference 40" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -4637,7 +4743,7 @@
             </Reference>
             <Reference>
               <Name value="reference39" />
-              <Caption value="Reference 39" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -4687,7 +4793,7 @@
             </Reference>
             <Attribute>
               <Name value="index_collection4" />
-              <Caption value="index_collection4" />
+              <Caption value="Index _ collection 1" />
               <DeclaredType>
                 <AttributeType>
                   <BaseType value="Integer" />
@@ -4706,7 +4812,7 @@
             </Attribute>
             <Collection>
               <Name value="collection4" />
-              <Caption value="Collection 4" />
+              <Caption value="collection1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -4720,7 +4826,7 @@
             </Collection>
             <Reference>
               <Name value="reference38" />
-              <Caption value="Reference 38" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -4770,7 +4876,7 @@
             </Reference>
             <Reference>
               <Name value="reference37" />
-              <Caption value="Reference 37" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -4820,7 +4926,7 @@
             </Reference>
             <Reference>
               <Name value="reference36" />
-              <Caption value="Reference 36" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -4870,7 +4976,7 @@
             </Reference>
             <Reference>
               <Name value="reference35" />
-              <Caption value="Reference 35" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -4920,7 +5026,7 @@
             </Reference>
             <Reference>
               <Name value="reference34" />
-              <Caption value="Reference 34" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -4970,7 +5076,7 @@
             </Reference>
             <Reference>
               <Name value="reference33" />
-              <Caption value="Reference 33" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -5020,7 +5126,7 @@
             </Reference>
             <Reference>
               <Name value="reference32" />
-              <Caption value="Reference 32" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -5070,7 +5176,7 @@
             </Reference>
             <Reference>
               <Name value="reference31" />
-              <Caption value="Reference 31" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -5120,7 +5226,7 @@
             </Reference>
             <Reference>
               <Name value="reference30" />
-              <Caption value="Reference 30" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -5170,7 +5276,7 @@
             </Reference>
             <Reference>
               <Name value="reference29" />
-              <Caption value="Reference 29" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -5220,7 +5326,7 @@
             </Reference>
             <Reference>
               <Name value="reference28" />
-              <Caption value="Reference 28" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -5270,7 +5376,7 @@
             </Reference>
             <Reference>
               <Name value="reference27" />
-              <Caption value="Reference 27" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -5320,7 +5426,7 @@
             </Reference>
             <Reference>
               <Name value="reference26" />
-              <Caption value="Reference 26" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -5370,7 +5476,7 @@
             </Reference>
             <Reference>
               <Name value="reference25" />
-              <Caption value="Reference 25" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -5420,7 +5526,7 @@
             </Reference>
             <Reference>
               <Name value="reference24" />
-              <Caption value="Reference 24" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -5505,7 +5611,7 @@
             </Complex>
             <Reference>
               <Name value="reference23" />
-              <Caption value="Reference 23" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -5555,7 +5661,7 @@
             </Reference>
             <Reference>
               <Name value="reference22" />
-              <Caption value="Reference 22" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -5605,7 +5711,7 @@
             </Reference>
             <Reference>
               <Name value="reference21" />
-              <Caption value="Reference 21" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -5655,7 +5761,7 @@
             </Reference>
             <Reference>
               <Name value="reference20" />
-              <Caption value="Reference 20" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -5705,7 +5811,7 @@
             </Reference>
             <Reference>
               <Name value="reference19" />
-              <Caption value="Reference 19" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -5755,7 +5861,7 @@
             </Reference>
             <Reference>
               <Name value="reference18" />
-              <Caption value="Reference 18" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -5805,7 +5911,7 @@
             </Reference>
             <Reference>
               <Name value="reference17" />
-              <Caption value="Reference 17" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -5855,7 +5961,7 @@
             </Reference>
             <Reference>
               <Name value="reference16" />
-              <Caption value="Reference 16" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -5905,7 +6011,7 @@
             </Reference>
             <Reference>
               <Name value="reference15" />
-              <Caption value="Reference 15" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -5955,7 +6061,7 @@
             </Reference>
             <Reference>
               <Name value="reference14" />
-              <Caption value="Reference 14" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -6005,7 +6111,7 @@
             </Reference>
             <Attribute>
               <Name value="index_collection3" />
-              <Caption value="index_collection3" />
+              <Caption value="Index _ collection 1" />
               <DeclaredType>
                 <AttributeType>
                   <BaseType value="Integer" />
@@ -6024,7 +6130,7 @@
             </Attribute>
             <Collection>
               <Name value="collection3" />
-              <Caption value="Collection 3" />
+              <Caption value="collection1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -6038,7 +6144,7 @@
             </Collection>
             <Reference>
               <Name value="reference13" />
-              <Caption value="Reference 13" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -6088,7 +6194,7 @@
             </Reference>
             <Attribute>
               <Name value="index_collection2" />
-              <Caption value="index_collection2" />
+              <Caption value="Index _ collection 1" />
               <DeclaredType>
                 <AttributeType>
                   <BaseType value="Integer" />
@@ -6107,7 +6213,7 @@
             </Attribute>
             <Collection>
               <Name value="collection2" />
-              <Caption value="Collection 2" />
+              <Caption value="collection1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -6121,7 +6227,7 @@
             </Collection>
             <Reference>
               <Name value="reference12" />
-              <Caption value="Reference 12" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -6171,7 +6277,7 @@
             </Reference>
             <Reference>
               <Name value="reference11" />
-              <Caption value="Reference 11" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -6256,7 +6362,7 @@
             </Complex>
             <Reference>
               <Name value="reference10" />
-              <Caption value="Reference 10" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -6306,7 +6412,7 @@
             </Reference>
             <Reference>
               <Name value="reference9" />
-              <Caption value="Reference 9" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -6356,7 +6462,7 @@
             </Reference>
             <Reference>
               <Name value="reference8" />
-              <Caption value="Reference 8" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -6406,7 +6512,7 @@
             </Reference>
             <Reference>
               <Name value="reference7" />
-              <Caption value="Reference 7" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -6456,7 +6562,7 @@
             </Reference>
             <Reference>
               <Name value="reference6" />
-              <Caption value="Reference 6" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -6506,7 +6612,7 @@
             </Reference>
             <Reference>
               <Name value="reference5" />
-              <Caption value="Reference 5" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -6556,7 +6662,7 @@
             </Reference>
             <Reference>
               <Name value="reference4" />
-              <Caption value="Reference 4" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -6606,7 +6712,7 @@
             </Reference>
             <Reference>
               <Name value="reference3" />
-              <Caption value="Reference 3" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -6656,7 +6762,7 @@
             </Reference>
             <Reference>
               <Name value="reference2" />
-              <Caption value="Reference 2" />
+              <Caption value="Reference 1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -6741,7 +6847,7 @@
             </Complex>
             <Attribute>
               <Name value="index_collection1" />
-              <Caption value="index_collection1" />
+              <Caption value="Index _ collection 1" />
               <DeclaredType>
                 <AttributeType>
                   <BaseType value="Integer" />
@@ -6760,7 +6866,7 @@
             </Attribute>
             <Collection>
               <Name value="collection1" />
-              <Caption value="Collection 1" />
+              <Caption value="collection1" />
               <PropertyLocalizationData.PropertyLocalizations>
                 <PropertyLocalizationData>
                   <LocalizedProperties>
@@ -6927,7 +7033,7 @@
                 </Attribute>
                 <Attribute>
                   <Name value="FileContent" />
-                  <Caption value="File content" />
+                  <Caption value="FileContent" />
                   <DeclaredType>
                     <AttributeType />
                   </DeclaredType>
@@ -7026,7 +7132,7 @@
                 </Attribute>
                 <Attribute>
                   <Name value="FileContent" />
-                  <Caption value="File content" />
+                  <Caption value="FileContent" />
                   <DeclaredType>
                     <AttributeType />
                   </DeclaredType>
@@ -7071,7 +7177,7 @@
                 <PropertyLocalizationData>
                   <LocalizedProperties>
                     <LocalizedProperty>
-                      <Localization reference="+Localizations.IsGeneralVisible2" />
+                      <Localization reference="+Localizations.IsGeneralVisible" />
                       <PropertyName value="Caption" />
                     </LocalizedProperty>
                   </LocalizedProperties>
@@ -7261,7 +7367,7 @@
                 <PropertyLocalizationData>
                   <LocalizedProperties>
                     <LocalizedProperty>
-                      <Localization reference="+Localizations.IsFilesVisible1" />
+                      <Localization reference="+Localizations.IsFilesVisible" />
                       <PropertyName value="Caption" />
                     </LocalizedProperty>
                   </LocalizedProperties>
@@ -7443,7 +7549,7 @@
         </Complex>
         <Attribute>
           <Name value="isEditing" />
-          <Caption value="isEditing" />
+          <Caption value="Is editing" />
           <DeclaredType>
             <AttributeType>
               <BaseType value="Bool" />
@@ -7453,7 +7559,7 @@
             <PropertyLocalizationData>
               <LocalizedProperties>
                 <LocalizedProperty>
-                  <Localization reference="+Localizations.IsEditing2" />
+                  <Localization reference="+Localizations.IsEditing" />
                   <PropertyName value="Caption" />
                 </LocalizedProperty>
               </LocalizedProperties>
@@ -7462,7 +7568,7 @@
         </Attribute>
         <Attribute>
           <Name value="_actualDate" />
-          <Caption value="_actualDate" />
+          <Caption value="_ actual date" />
           <DeclaredType>
             <AttributeType>
               <BaseType value="Date" />
@@ -7472,7 +7578,7 @@
             <PropertyLocalizationData>
               <LocalizedProperties>
                 <LocalizedProperty>
-                  <Localization reference="+Localizations._actualDate2" />
+                  <Localization reference="+Localizations._ActualDate" />
                   <PropertyName value="Caption" />
                 </LocalizedProperty>
               </LocalizedProperties>
@@ -7500,7 +7606,7 @@
         </Attribute>
         <Complex>
           <Name value="menusVisibilty" />
-          <Caption value="Menus visibilty" />
+          <Caption value="Menus visibility" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -7524,7 +7630,7 @@
                 <PropertyLocalizationData>
                   <LocalizedProperties>
                     <LocalizedProperty>
-                      <Localization reference="+Localizations.IsGeneralMenuVisible1" />
+                      <Localization reference="+Localizations.IsGeneralMenuVisible" />
                       <PropertyName value="Caption" />
                     </LocalizedProperty>
                   </LocalizedProperties>
@@ -7543,7 +7649,7 @@
                 <PropertyLocalizationData>
                   <LocalizedProperties>
                     <LocalizedProperty>
-                      <Localization reference="+Localizations.IsGeneralMenuActive1" />
+                      <Localization reference="+Localizations.IsGeneralMenuActive" />
                       <PropertyName value="Caption" />
                     </LocalizedProperty>
                   </LocalizedProperties>
@@ -7988,7 +8094,7 @@
         </Attribute>
         <Attribute>
           <Name value="eventGUID" />
-          <Caption value="Event GUID" />
+          <Caption value="EventGUID" />
           <DataContextParameter.IsInput value="True" />
           <DeclaredType>
             <AttributeType />
@@ -7998,26 +8104,6 @@
               <LocalizedProperties>
                 <LocalizedProperty>
                   <Localization reference="+Localizations.EventGUID" />
-                  <PropertyName value="Caption" />
-                </LocalizedProperty>
-              </LocalizedProperties>
-            </PropertyLocalizationData>
-          </PropertyLocalizationData.PropertyLocalizations>
-        </Attribute>
-        <Attribute>
-          <Name value="isModifyWithFutureRemoval" />
-          <Caption value="Is modify with future removal" />
-          <DataContextParameter.IsInput value="True" />
-          <DeclaredType>
-            <AttributeType>
-              <BaseType value="Bool" />
-            </AttributeType>
-          </DeclaredType>
-          <PropertyLocalizationData.PropertyLocalizations>
-            <PropertyLocalizationData>
-              <LocalizedProperties>
-                <LocalizedProperty>
-                  <Localization reference="+Localizations.IsModifyWithFutureRemoval" />
                   <PropertyName value="Caption" />
                 </LocalizedProperty>
               </LocalizedProperties>
@@ -8095,7 +8181,7 @@
                 <PropertyLocalizationData>
                   <LocalizedProperties>
                     <LocalizedProperty>
-                      <Localization reference="+Localizations._IsOperatorEditable1" />
+                      <Localization reference="+Localizations._IsOperatorEditable" />
                       <PropertyName value="Caption" />
                     </LocalizedProperty>
                   </LocalizedProperties>
@@ -8669,15 +8755,6 @@
               </DeclaredType>
             </Attribute>
             <Attribute>
-              <Name value="isEditFutureVisible" />
-              <Caption value="Is edit future visible" />
-              <DeclaredType>
-                <AttributeType>
-                  <BaseType value="Bool" />
-                </AttributeType>
-              </DeclaredType>
-            </Attribute>
-            <Attribute>
               <Name value="isCancelFutureVisible" />
               <Caption value="Is cancel future visible" />
               <DeclaredType>
@@ -9045,7 +9122,7 @@
             </Computed>
             <Attribute>
               <Name value="FileContent" />
-              <Caption value="File content" />
+              <Caption value="FileContent" />
               <DeclaredType>
                 <AttributeType />
               </DeclaredType>
@@ -9087,6 +9164,29 @@
               </PropertyLocalizationData.PropertyLocalizations>
             </Computed>
           </Children>
+        </Modifier>
+        <Modifier>
+          <Name value="modifier_518767F6_Code" />
+          <ShowAsChanges value="True" />
+          <SourcePath value="model.AMS.Event.GoodsList.GoodsItem.CNCode.Code" />
+          <Validators>
+            <Validator Name="isCodeUnique">
+              <ErrorMessage IsValid="True">
+                <ExpressionText><![CDATA["Goods item code has to be unique. It is not allowed to include codes in existing higher order groups."]]></ExpressionText>
+                <ResultType>
+                  <BaseType value="String" />
+                </ResultType>
+              </ErrorMessage>
+              <IsValid IsValid="True">
+                <ExpressionText><![CDATA[(this.owner().collection().where(Current.CNCode.Code = this.Code).count() > 1) ? 
+	False :
+	( (this.owner().collection().where(Current.CNCode.Code = subString(this.Code, 1, 4)).count() > 1) ? False: True )]]></ExpressionText>
+                <ResultType>
+                  <BaseType value="Bool" />
+                </ResultType>
+              </IsValid>
+            </Validator>
+          </Validators>
         </Modifier>
       </Modifiers>
     </DataContext>
@@ -9168,10 +9268,6 @@ if (form.mode = enums.mode.Modify) then
 	form.auxiliaryVariables.decisionDateCaption = "Datum doručení žádosti"
 	form.model.AMS.Event.ValidityStartDate = addHours(form._actualDateTime,1)
 	form.model.AMS.Event.EvidenceDate = form._actualDateTime
-	if form.isModifyWithFutureRemoval and form.guid.hasValue() then
-		var guidString = SubString(toString(form.guid),2,36)
-		form.actions.sendMessageToMTS("AMSFutureRemoval", "{\"AMS\":{\"GUID\": \"" + guidString + "\"}}")
-	endIf
 endif
 
 if (form.mode = enums.mode.Authorize) then
@@ -10196,7 +10292,6 @@ endIf]]></Script>
 var loadedState = form.model.AMS.State.Key
 
 var declarationIsValiInFuture = form.actions.checkIfButtonWillBeDisplayedOnlyInFuture(form.model.AMS.LastEventValidityStartDate)
-form.buttonsVisibility.isEditFutureVisible = not declarationIsValiInFuture
 form.buttonsVisibility.isCancelFutureVisible = not declarationIsValiInFuture
 
 if form.mode = enums.mode.Detail then
@@ -10312,36 +10407,67 @@ endIf endIf]]></Script>
       </DataContext>
     </ActionBlock>
     <ActionBlock>
+      <Name value="editFutureChange" />
+      <Category value="lifeCycleAction" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[var doFutureRemoval = system.confirm("TODO Localisation - Do you really want to modify and remove future change? This will enable you to change the future change, but you will need to save a new change in modify mode.")
+
+if doFutureRemoval then
+    //TODO 
+    //run init on form once again with enums.mode.
+endIf
+]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
       <Name value="cancelFutureChange" />
-      <Category value="lifeCycleActions" />
+      <Category value="lifeCycleAction" />
       <ActionLangBody IsValid="True">
         <Script><![CDATA[var confirm = system.confirm("Do you want to erase current future change? This will return the declaration data to previous state.")
 
 if confirm then
 
-	var typeOfMessage = "AMSFutureRemoval"
-	var inputStructure = "{\"AMS\":{\"GUID\": \"" + form.model.AMS.GUID + "\"}}"
-	
-	var response = packages.main.apiobjects.CIC.postAsync(typeOfMessage, inputStructure)
-	
-	if (response.isError() or (response.getMessageType() = "IN906A")) then
-	
-		system.console(response.getMessageType())
-		
-		var errorMsg = response.getErrorMessage()
-	    system.consoleError(errorMsg)
-	
-		system.consoleError(response.extractJson("Error"))
-		
-		apiobjects.notificationsCtrl.addError("An error occured")
-		
-	else
-	
-		apiobjects.notificationsCtrl.addSuccess("Message was sent corretly.")
-		navigation.cseForms.MainForm.go()
-	
-	endif
+    var typeOfMessage = "AMSFutureRemoval"
+    var inputStructure = "{\"AMS\":{\"GUID\": \"" + form.model.AMS.GUID + "\"}}"
+    
+    var response = packages.main.apiobjects.CIC.postAsync(typeOfMessage, inputStructure)
+    
+    if (response.isError() or (response.getMessageType() = "IN906A")) then
+    
+        system.console(response.getMessageType())
+        
+        var errorMsg = response.getErrorMessage()
+        system.consoleError(errorMsg)
+    
+        system.consoleError(response.extractJson("Error"))
+        
+        apiobjects.notificationsCtrl.addError("An error occured")
+        
+    else
+    
+        apiobjects.notificationsCtrl.addSuccess("Message was sent corretly.")
+        navigation.cseForms.MainForm.go()
+    
+    endif
 
+endIf
+]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="authorisaze" />
+      <Category value="lifeCycleAction" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[var userDecision = system.confirm("TODO - Localisation - Do you want to authorize this decision?")
+
+if userDecision then
+	navigation.cseForms.SP_EditForm.withGuid(form.model.AMS.GUID).go(enums.mode.Authorize, form.model.AMS.State.Key)
 endIf]]></Script>
       </ActionLangBody>
       <DataContext>
@@ -10349,14 +10475,55 @@ endIf]]></Script>
       </DataContext>
     </ActionBlock>
     <ActionBlock>
-      <Name value="editFutureChange" />
-      <Category value="lifeCycleActions" />
+      <Name value="reject" />
+      <Category value="lifeCycleAction" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[var doFutureRemoval = system.confirm("TODO Localisation - Do you really want to modify and remove future change? This will enable you to change the future change, but you will need to save a new change in modify mode.")
+        <Script><![CDATA[var userDecision = system.confirm("TODO - Localisation - Do you want to reject this decision?")
 
-if doFutureRemoval then
-	//TODO change from .go(enums.mode.Modify) to last used mode on declaration
-	navigation.cseForms.SP_EditForm.withGuid(form.model.AMS.GUID).withIsModifyWithFutureRemoval(true).go(enums.mode.Modify, form.model.AMS.State.Key)
+if userDecision then
+	navigation.cseForms.SP_EditForm.withGuid(form.model.AMS.GUID).go(enums.mode.Reject, form.model.AMS.State.Key)
+endIf]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="withdraw" />
+      <Category value="lifeCycleAction" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[var userDecision = system.confirm("TODO - Localisation - Do you want to withdraw this decision?")
+
+if userDecision then
+	navigation.cseForms.SP_EditForm.withGuid(form.model.AMS.GUID).go(enums.mode.Withdraw, form.model.AMS.State.Key)
+endIf]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="cancel" />
+      <Category value="lifeCycleAction" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[var userDecision = system.confirm("TODO - Localisation - Do you want to cancel this decision?")
+
+if userDecision then
+	navigation.cseForms.SP_EditForm.withGuid(form.model.AMS.GUID).go(enums.mode.Cancel , form.model.AMS.State.Key)
+endIf]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="modify" />
+      <Category value="lifeCycleAction" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[var userDecision = system.confirm("TODO - Localisation - You can only modify from main site. Do you want to leave to main site?")
+
+if userDecision then
+	navigation.cseForms.MainForm.go()
 endIf]]></Script>
       </ActionLangBody>
       <DataContext>

@@ -179,6 +179,8 @@ body {
   background-color: #fff !important;
   font-size: 12px;
   font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+  min-height: 620px !important;
+  overflow: auto;
 }
 body .smx-content {
   padding: 20px !important;

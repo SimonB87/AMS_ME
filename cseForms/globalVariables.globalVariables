@@ -283,7 +283,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations.ErrorType1" />
+                          <Localization reference="+Localizations.ErrorType" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -300,7 +300,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations.Pointer1" />
+                          <Localization reference="+Localizations.Pointer" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -317,7 +317,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations.Reason1" />
+                          <Localization reference="+Localizations.Reason" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>
@@ -369,7 +369,7 @@
                 <PropertyLocalizationData>
                   <LocalizedProperties>
                     <LocalizedProperty>
-                      <Localization reference="+Localizations.Pointer2" />
+                      <Localization reference="+Localizations.Pointer" />
                       <PropertyName value="Caption" />
                     </LocalizedProperty>
                   </LocalizedProperties>
@@ -637,7 +637,7 @@
                     <PropertyLocalizationData>
                       <LocalizedProperties>
                         <LocalizedProperty>
-                          <Localization reference="+Localizations.Code1" />
+                          <Localization reference="+Localizations.Code" />
                           <PropertyName value="Caption" />
                         </LocalizedProperty>
                       </LocalizedProperties>

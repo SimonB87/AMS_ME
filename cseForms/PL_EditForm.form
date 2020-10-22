@@ -917,7 +917,7 @@
       <Children>
         <Collection>
           <Name value="collection1" />
-          <Caption value="Collection 1" />
+          <Caption value="collection1" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
@@ -1154,7 +1154,7 @@
             </Reference>
             <Attribute>
               <Name value="EvidenceDate" />
-              <Caption value="Evidence date" />
+              <Caption value="EvidenceDate" />
               <DeclaredType>
                 <AttributeType>
                   <BaseType value="Date" />
@@ -1242,7 +1242,7 @@
         </Collection>
         <Attribute>
           <Name value="index_collection1" />
-          <Caption value="index_collection1" />
+          <Caption value="Index _ collection 1" />
           <DeclaredType>
             <AttributeType>
               <BaseType value="Integer" />
@@ -1328,7 +1328,7 @@
             </Include>
             <Attribute>
               <Name value="_actualDate" />
-              <Caption value="_actualDate" />
+              <Caption value="_ actual date" />
               <DeclaredType>
                 <AttributeType>
                   <BaseType value="DateTime" />
@@ -1338,7 +1338,7 @@
                 <PropertyLocalizationData>
                   <LocalizedProperties>
                     <LocalizedProperty>
-                      <Localization reference="+Localizations._actualDate1" />
+                      <Localization reference="+Localizations._ActualDate" />
                       <PropertyName value="Caption" />
                     </LocalizedProperty>
                   </LocalizedProperties>
@@ -1359,7 +1359,7 @@
             <PropertyLocalizationData>
               <LocalizedProperties>
                 <LocalizedProperty>
-                  <Localization reference="+Localizations.IsEditing1" />
+                  <Localization reference="+Localizations.IsEditing" />
                   <PropertyName value="Caption" />
                 </LocalizedProperty>
               </LocalizedProperties>
@@ -1392,7 +1392,7 @@
                 <PropertyLocalizationData>
                   <LocalizedProperties>
                     <LocalizedProperty>
-                      <Localization reference="+Localizations.IsGeneralVisible1" />
+                      <Localization reference="+Localizations.IsGeneralVisible" />
                       <PropertyName value="Caption" />
                     </LocalizedProperty>
                   </LocalizedProperties>

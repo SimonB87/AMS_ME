@@ -7,7 +7,6 @@
     <PackageFolder Name="JS">
       <Items>
         <ResourceItem ResourceName="ScrollFromTop.js" LinkerAction="Script" OutputFileName="ScrollFromTop.js" Src="JS\ScrollFromTop.js" />
-        <ResourceItem ResourceName="AccorditionNav.js" LinkerAction="Script" OutputFileName="AccorditionNav.js" Src="JS\AccorditionNav.js" />
       </Items>
     </PackageFolder>
     <PackageFolder Name="CSS">

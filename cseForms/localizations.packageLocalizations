@@ -5,4110 +5,3755 @@
   <Strings>
     <LocalizedString LocID="PrototypeReference">
       <Values>
-        <LocaleValue Lang="cs" Value="prototype reference" />
+        <LocaleValue Lang="en" Value="prototype reference" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Key">
       <Values>
-        <LocaleValue Lang="cs" Value="Key" />
+        <LocaleValue Lang="en" Value="Key" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Description">
       <Values>
-        <LocaleValue Lang="cs" Value="Description" />
+        <LocaleValue Lang="en" Value="Description" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsLoading">
       <Values>
-        <LocaleValue Lang="cs" Value="Is loading" />
+        <LocaleValue Lang="en" Value="Is loading" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="GlobalUIState">
       <Values>
-        <LocaleValue Lang="cs" Value="Global UI state" />
+        <LocaleValue Lang="en" Value="Global UI state" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsTransitActive">
       <Values>
-        <LocaleValue Lang="cs" Value="Is transit active" />
+        <LocaleValue Lang="en" Value="Is transit active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsPlacesActive">
       <Values>
-        <LocaleValue Lang="cs" Value="Is places active" />
+        <LocaleValue Lang="en" Value="Is places active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsCommunicationActive">
       <Values>
-        <LocaleValue Lang="cs" Value="Is communication active" />
+        <LocaleValue Lang="en" Value="Is communication active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsValidationsActive">
       <Values>
-        <LocaleValue Lang="cs" Value="Is validations active" />
+        <LocaleValue Lang="en" Value="Is validations active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Errors">
       <Values>
-        <LocaleValue Lang="cs" Value="Errors" />
+        <LocaleValue Lang="en" Value="Errors" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ServerValidationErrors">
       <Values>
-        <LocaleValue Lang="cs" Value="Server validation errors" />
+        <LocaleValue Lang="en" Value="Server validation errors" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Reason">
       <Values>
-        <LocaleValue Lang="cs" Value="Reason" />
+        <LocaleValue Lang="en" Value="Reason" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ErrorType">
       <Values>
-        <LocaleValue Lang="cs" Value="Error type" />
+        <LocaleValue Lang="en" Value="Error type" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Pointer">
       <Values>
-        <LocaleValue Lang="cs" Value="Pointer" />
+        <LocaleValue Lang="en" Value="Pointer" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ServerValidationComplex">
       <Values>
-        <LocaleValue Lang="cs" Value="Server validation complex" />
+        <LocaleValue Lang="en" Value="Server validation complex" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="MessageCheckError">
       <Values>
-        <LocaleValue Lang="cs" Value="Message check error" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="ErrorType1">
-      <Values>
-        <LocaleValue Lang="cs" Value="Error type" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="Pointer1">
-      <Values>
-        <LocaleValue Lang="cs" Value="Pointer" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="Reason1">
-      <Values>
-        <LocaleValue Lang="cs" Value="Reason" />
+        <LocaleValue Lang="en" Value="Message check error" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ClientValidationErrors">
       <Values>
-        <LocaleValue Lang="cs" Value="Client validation errors" />
+        <LocaleValue Lang="en" Value="Client validation errors" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Message">
       <Values>
-        <LocaleValue Lang="cs" Value="Message" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="Pointer2">
-      <Values>
-        <LocaleValue Lang="cs" Value="Pointer" />
+        <LocaleValue Lang="en" Value="Message" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Type">
       <Values>
-        <LocaleValue Lang="cs" Value="Type" />
+        <LocaleValue Lang="en" Value="Type" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsConfirm">
       <Values>
-        <LocaleValue Lang="cs" Value="Is confirm" />
+        <LocaleValue Lang="en" Value="Is confirm" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsLimitedWidth">
       <Values>
-        <LocaleValue Lang="cs" Value="Is limited width" />
+        <LocaleValue Lang="en" Value="Is limited width" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="NeedRelogin">
       <Values>
-        <LocaleValue Lang="cs" Value="Need relogin" />
+        <LocaleValue Lang="en" Value="Need relogin" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsSettingsVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is settings visible" />
+        <LocaleValue Lang="en" Value="Is settings visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsUserInfoVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is user info visible" />
+        <LocaleValue Lang="en" Value="Is user info visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsDevelopVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is develop visible" />
+        <LocaleValue Lang="en" Value="Is develop visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsWideScreen">
       <Values>
-        <LocaleValue Lang="cs" Value="Is wide screen" />
-        <LocaleValue Lang="en" Value="Is not wide screen" />
+        <LocaleValue Lang="en" Value="Is wide screen" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsTest">
       <Values>
-        <LocaleValue Lang="cs" Value="Is test" />
+        <LocaleValue Lang="en" Value="Is test" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Model">
       <Values>
-        <LocaleValue Lang="cs" Value="Model" />
+        <LocaleValue Lang="en" Value="Model" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Index_Collection1">
       <Values>
-        <LocaleValue Lang="cs" Value="Index _ collection 1" />
+        <LocaleValue Lang="en" Value="Index _ collection 1" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Collection1">
       <Values>
-        <LocaleValue Lang="cs" Value="collection1" />
+        <LocaleValue Lang="en" Value="collection1" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AuditStartDate">
       <Values>
-        <LocaleValue Lang="cs" Value="AuditStartDate" />
+        <LocaleValue Lang="en" Value="AuditStartDate" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AuditEndDate">
       <Values>
-        <LocaleValue Lang="cs" Value="AuditEndDate" />
+        <LocaleValue Lang="en" Value="AuditEndDate" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="EvidenceDate">
       <Values>
-        <LocaleValue Lang="cs" Value="EvidenceDate" />
+        <LocaleValue Lang="en" Value="EvidenceDate" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AuditNumber">
       <Values>
-        <LocaleValue Lang="cs" Value="AuditNumber" />
+        <LocaleValue Lang="en" Value="AuditNumber" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AuditProtocolNumber">
       <Values>
-        <LocaleValue Lang="cs" Value="AuditProtocolNumber" />
+        <LocaleValue Lang="en" Value="AuditProtocolNumber" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Reference1">
       <Values>
-        <LocaleValue Lang="cs" Value="Reference 1" />
+        <LocaleValue Lang="en" Value="Reference 1" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ControlledByUser">
       <Values>
-        <LocaleValue Lang="cs" Value="ControlledByUser" />
+        <LocaleValue Lang="en" Value="ControlledByUser" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="FileGUID">
       <Values>
-        <LocaleValue Lang="cs" Value="FileGUID" />
+        <LocaleValue Lang="en" Value="FileGUID" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="FileName">
       <Values>
-        <LocaleValue Lang="cs" Value="FileName" />
+        <LocaleValue Lang="en" Value="FileName" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="FileType">
       <Values>
-        <LocaleValue Lang="cs" Value="FileType" />
+        <LocaleValue Lang="en" Value="FileType" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="FileContent">
       <Values>
-        <LocaleValue Lang="cs" Value="FileContent" />
+        <LocaleValue Lang="en" Value="FileContent" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="FileSize">
       <Values>
-        <LocaleValue Lang="cs" Value="FileSize" />
+        <LocaleValue Lang="en" Value="FileSize" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="EventGUID">
       <Values>
-        <LocaleValue Lang="cs" Value="EventGUID" />
+        <LocaleValue Lang="en" Value="EventGUID" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="FileID">
       <Values>
-        <LocaleValue Lang="cs" Value="FileID" />
+        <LocaleValue Lang="en" Value="FileID" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="EventID">
       <Values>
-        <LocaleValue Lang="cs" Value="EventID" />
+        <LocaleValue Lang="en" Value="EventID" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="VAL056">
       <Values>
-        <LocaleValue Lang="cs" Value="VAL056" />
+        <LocaleValue Lang="en" Value="VAL056" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Complex1">
       <Values>
-        <LocaleValue Lang="cs" Value="Complex 1" />
+        <LocaleValue Lang="en" Value="Complex 1" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SelectedTab">
       <Values>
-        <LocaleValue Lang="cs" Value="Selected tab" />
+        <LocaleValue Lang="en" Value="Selected tab" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PanelsVisibility">
       <Values>
-        <LocaleValue Lang="cs" Value="Panels visibility" />
+        <LocaleValue Lang="en" Value="Panels visibility" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsGeneralVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is general visible" />
+        <LocaleValue Lang="en" Value="Is general visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsResponsiblePersonVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is responsible person visible" />
+        <LocaleValue Lang="en" Value="Is responsible person visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsAMSECVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is AMSEC visible" />
+        <LocaleValue Lang="en" Value="Is AMSEC visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsSignVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is sign visible" />
+        <LocaleValue Lang="en" Value="Is sign visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsMaintVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is maint visible" />
+        <LocaleValue Lang="en" Value="Is maint visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsFilesVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is files visible" />
+        <LocaleValue Lang="en" Value="Is files visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsEventsVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is events visible" />
+        <LocaleValue Lang="en" Value="Is events visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsRejectionVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is rejection visible" />
+        <LocaleValue Lang="en" Value="Is rejection visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsWithdrawalVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is withdrawal visible" />
+        <LocaleValue Lang="en" Value="Is withdrawal visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsInDetailVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is in detail visible" />
+        <LocaleValue Lang="en" Value="Is in detail visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsDecidingPersonNameVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is deciding person name visible" />
+        <LocaleValue Lang="en" Value="Is deciding person name visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsEditing">
       <Values>
-        <LocaleValue Lang="cs" Value="Is editing" />
+        <LocaleValue Lang="en" Value="Is editing" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_ActualDate">
       <Values>
-        <LocaleValue Lang="cs" Value="_ actual date" />
+        <LocaleValue Lang="en" Value="_ actual date" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="MenusVisibility">
       <Values>
-        <LocaleValue Lang="cs" Value="Menus visibility" />
+        <LocaleValue Lang="en" Value="Menus visibility" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsGeneralMenuVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is general menu visible" />
+        <LocaleValue Lang="en" Value="Is general menu visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsAMSECMenuVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is AMSEC menu visible" />
+        <LocaleValue Lang="en" Value="Is AMSEC menu visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsSignMenuVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is sign menu visible" />
+        <LocaleValue Lang="en" Value="Is sign menu visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsMaintMenuVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is maint menu visible" />
+        <LocaleValue Lang="en" Value="Is maint menu visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsFilesMenuVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is files menu visible" />
+        <LocaleValue Lang="en" Value="Is files menu visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsEventsMenuVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is events menu visible" />
+        <LocaleValue Lang="en" Value="Is events menu visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsRejectionMenuVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is rejection menu visible" />
+        <LocaleValue Lang="en" Value="Is rejection menu visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsWithdrawalMenuVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is withdrawal menu visible" />
+        <LocaleValue Lang="en" Value="Is withdrawal menu visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsGeneralMenuActive">
       <Values>
-        <LocaleValue Lang="cs" Value="Is general menu active" />
+        <LocaleValue Lang="en" Value="Is general menu active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsAMSECMenuActive">
       <Values>
-        <LocaleValue Lang="cs" Value="Is AMSEC menu active" />
+        <LocaleValue Lang="en" Value="Is AMSEC menu active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsSignMenuActive">
       <Values>
-        <LocaleValue Lang="cs" Value="Is sign menu active" />
+        <LocaleValue Lang="en" Value="Is sign menu active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsMaintMenuActive">
       <Values>
-        <LocaleValue Lang="cs" Value="Is maint menu active" />
+        <LocaleValue Lang="en" Value="Is maint menu active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsFilesMenuActive">
       <Values>
-        <LocaleValue Lang="cs" Value="Is files menu active" />
+        <LocaleValue Lang="en" Value="Is files menu active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsEventsMenuActive">
       <Values>
-        <LocaleValue Lang="cs" Value="Is events menu active" />
+        <LocaleValue Lang="en" Value="Is events menu active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsRejectionMenuActive">
       <Values>
-        <LocaleValue Lang="cs" Value="Is rejection menu active" />
+        <LocaleValue Lang="en" Value="Is rejection menu active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsWithdrawalMenuActive">
       <Values>
-        <LocaleValue Lang="cs" Value="Is withdrawal menu active" />
+        <LocaleValue Lang="en" Value="Is withdrawal menu active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Mode">
       <Values>
-        <LocaleValue Lang="cs" Value="Mode" />
+        <LocaleValue Lang="en" Value="Mode" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="State">
       <Values>
-        <LocaleValue Lang="cs" Value="State" />
+        <LocaleValue Lang="en" Value="State" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Guid">
       <Values>
-        <LocaleValue Lang="cs" Value="Guid" />
+        <LocaleValue Lang="en" Value="Guid" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ComponentsEditable">
       <Values>
-        <LocaleValue Lang="cs" Value="Components editable" />
+        <LocaleValue Lang="en" Value="Components editable" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_IsTINEditable">
       <Values>
-        <LocaleValue Lang="cs" Value="_ is TIN editable" />
+        <LocaleValue Lang="en" Value="_ is TIN editable" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_IsOperatorEditable">
       <Values>
-        <LocaleValue Lang="cs" Value="_ is operator editable" />
+        <LocaleValue Lang="en" Value="_ is operator editable" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_IsValidityStartDateEnabled">
       <Values>
-        <LocaleValue Lang="cs" Value="_ is validity start date enabled" />
+        <LocaleValue Lang="en" Value="_ is validity start date enabled" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_IsDecidingPersonNameEditable">
       <Values>
-        <LocaleValue Lang="cs" Value="_ is deciding person name editable" />
+        <LocaleValue Lang="en" Value="_ is deciding person name editable" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Ui">
       <Values>
-        <LocaleValue Lang="cs" Value="ui" />
+        <LocaleValue Lang="en" Value="ui" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Panels">
       <Values>
-        <LocaleValue Lang="cs" Value="panels" />
+        <LocaleValue Lang="en" Value="panels" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="LoginPnl">
       <Values>
-        <LocaleValue Lang="cs" Value="LoginPnl" />
+        <LocaleValue Lang="en" Value="LoginPnl" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="IsVisible" />
+        <LocaleValue Lang="en" Value="IsVisible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsEnabled">
       <Values>
-        <LocaleValue Lang="cs" Value="IsEnabled" />
+        <LocaleValue Lang="en" Value="IsEnabled" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Msg">
       <Values>
-        <LocaleValue Lang="cs" Value="Msg" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="Ui1">
-      <Values>
-        <LocaleValue Lang="cs" Value="ui" />
+        <LocaleValue Lang="en" Value="Msg" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="MainFormPnl">
       <Values>
-        <LocaleValue Lang="cs" Value="MainFormPnl" />
+        <LocaleValue Lang="en" Value="MainFormPnl" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Fpn_Head">
       <Values>
-        <LocaleValue Lang="cs" Value="fpn_Head" />
+        <LocaleValue Lang="en" Value="fpn_Head" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsParentEnabled">
       <Values>
-        <LocaleValue Lang="cs" Value="IsParentEnabled" />
+        <LocaleValue Lang="en" Value="IsParentEnabled" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Fpn_Buttons">
       <Values>
-        <LocaleValue Lang="cs" Value="fpn_Buttons" />
+        <LocaleValue Lang="en" Value="fpn_Buttons" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Pnl_Spacer">
       <Values>
-        <LocaleValue Lang="cs" Value="pnl_Spacer" />
+        <LocaleValue Lang="en" Value="pnl_Spacer" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Fpn_Buttons_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="fpn_Buttons_SP" />
+        <LocaleValue Lang="en" Value="fpn_Buttons_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Pnl_Spacer_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="pnl_Spacer_SP" />
+        <LocaleValue Lang="en" Value="pnl_Spacer_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Fpn_Buttons_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="fpn_Buttons_CCR" />
+        <LocaleValue Lang="en" Value="fpn_Buttons_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Pnl_Spacer_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="pnl_Spacer_CCR" />
+        <LocaleValue Lang="en" Value="pnl_Spacer_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Fpn_Buttons_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="fpn_Buttons_Other" />
+        <LocaleValue Lang="en" Value="fpn_Buttons_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Pnl_Spacer_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="pnl_Spacer_Other" />
+        <LocaleValue Lang="en" Value="pnl_Spacer_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Fpn_Buttons_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="fpn_Buttons_TR" />
+        <LocaleValue Lang="en" Value="fpn_Buttons_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Pnl_Spacer_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="pnl_Spacer_TR" />
+        <LocaleValue Lang="en" Value="pnl_Spacer_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Fpn_Buttons_PL">
       <Values>
-        <LocaleValue Lang="cs" Value="fpn_Buttons_PL" />
+        <LocaleValue Lang="en" Value="fpn_Buttons_PL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Fpn_Buttons_CTRL">
       <Values>
-        <LocaleValue Lang="cs" Value="fpn_Buttons_CTRL" />
+        <LocaleValue Lang="en" Value="fpn_Buttons_CTRL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Fpn_Buttons_Audit">
       <Values>
-        <LocaleValue Lang="cs" Value="fpn_Buttons_Audit" />
+        <LocaleValue Lang="en" Value="fpn_Buttons_Audit" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Fpn_Buttons_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="fpn_Buttons_EC" />
+        <LocaleValue Lang="en" Value="fpn_Buttons_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Pnl_Spacer_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="pnl_Spacer_EC" />
+        <LocaleValue Lang="en" Value="pnl_Spacer_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TextBoxes">
       <Values>
-        <LocaleValue Lang="cs" Value="textBoxes" />
+        <LocaleValue Lang="en" Value="textBoxes" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TbVyhledatPovoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="tbVyhledatPovoleni" />
+        <LocaleValue Lang="en" Value="tbVyhledatPovoleni" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Buttons">
       <Values>
-        <LocaleValue Lang="cs" Value="buttons" />
+        <LocaleValue Lang="en" Value="buttons" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="BtnVyhledatPovoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="btnVyhledatPovoleni" />
+        <LocaleValue Lang="en" Value="btnVyhledatPovoleni" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Help">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Help" />
+        <LocaleValue Lang="en" Value="btn_Help" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewExistingAuthorization">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewExistingAuthorization" />
+        <LocaleValue Lang="en" Value="btn_NewExistingAuthorization" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewForeignAuthorization">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewForeignAuthorization" />
+        <LocaleValue Lang="en" Value="btn_NewForeignAuthorization" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewApplication">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewApplication" />
+        <LocaleValue Lang="en" Value="btn_NewApplication" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Modify_mf">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Modify_mf" />
+        <LocaleValue Lang="en" Value="btn_Modify_mf" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewAuthorization">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewAuthorization" />
+        <LocaleValue Lang="en" Value="btn_NewAuthorization" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewRejection">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewRejection" />
+        <LocaleValue Lang="en" Value="btn_NewRejection" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewWithdrawal">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewWithdrawal" />
+        <LocaleValue Lang="en" Value="btn_NewWithdrawal" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewCancel">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewCancel" />
+        <LocaleValue Lang="en" Value="btn_NewCancel" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Remove">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Remove" />
+        <LocaleValue Lang="en" Value="btn_Remove" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Detail">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Detail" />
+        <LocaleValue Lang="en" Value="btn_Detail" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Authorization_Exhausted">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Authorization_Exhausted" />
+        <LocaleValue Lang="en" Value="btn_Authorization_Exhausted" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Authorization_Withdrawed">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Authorization_Withdrawed" />
+        <LocaleValue Lang="en" Value="btn_Authorization_Withdrawed" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewExistingAuthorization_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewExistingAuthorization_SP" />
+        <LocaleValue Lang="en" Value="btn_NewExistingAuthorization_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewForeignAuthorization_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewForeignAuthorization_SP" />
+        <LocaleValue Lang="en" Value="btn_NewForeignAuthorization_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewApplication_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewApplication_SP" />
+        <LocaleValue Lang="en" Value="btn_NewApplication_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Modify_mf_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Modify_mf_SP" />
+        <LocaleValue Lang="en" Value="btn_Modify_mf_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewAuthorization_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewAuthorization_SP" />
+        <LocaleValue Lang="en" Value="btn_NewAuthorization_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewRejection_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewRejection_SP" />
+        <LocaleValue Lang="en" Value="btn_NewRejection_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewWithdrawal_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewWithdrawal_SP" />
+        <LocaleValue Lang="en" Value="btn_NewWithdrawal_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewCancel_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewCancel_SP" />
+        <LocaleValue Lang="en" Value="btn_NewCancel_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Remove_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Remove_SP" />
+        <LocaleValue Lang="en" Value="btn_Remove_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Detail_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Detail_SP" />
+        <LocaleValue Lang="en" Value="btn_Detail_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Authorization_Exhausted_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Authorization_Exhausted_SP" />
+        <LocaleValue Lang="en" Value="btn_Authorization_Exhausted_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Authorization_Withdrawed_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Authorization_Withdrawed_SP" />
+        <LocaleValue Lang="en" Value="btn_Authorization_Withdrawed_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewExistingAuthorization_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewExistingAuthorization_CCR" />
+        <LocaleValue Lang="en" Value="btn_NewExistingAuthorization_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewForeignAuthorization_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewForeignAuthorization_CCR" />
+        <LocaleValue Lang="en" Value="btn_NewForeignAuthorization_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewApplication_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewApplication_CCR" />
+        <LocaleValue Lang="en" Value="btn_NewApplication_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Modify_mf_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Modify_mf_CCR" />
+        <LocaleValue Lang="en" Value="btn_Modify_mf_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewAuthorization_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewAuthorization_CCR" />
+        <LocaleValue Lang="en" Value="btn_NewAuthorization_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewRejection_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewRejection_CCR" />
+        <LocaleValue Lang="en" Value="btn_NewRejection_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewWithdrawal_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewWithdrawal_CCR" />
+        <LocaleValue Lang="en" Value="btn_NewWithdrawal_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewCancel_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewCancel_CCR" />
+        <LocaleValue Lang="en" Value="btn_NewCancel_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Remove_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Remove_CCR" />
+        <LocaleValue Lang="en" Value="btn_Remove_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Detail_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Detail_CCR" />
+        <LocaleValue Lang="en" Value="btn_Detail_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Authorization_Exhausted_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Authorization_Exhausted_CCR" />
+        <LocaleValue Lang="en" Value="btn_Authorization_Exhausted_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Authorization_Withdrawed_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Authorization_Withdrawed_CCR" />
+        <LocaleValue Lang="en" Value="btn_Authorization_Withdrawed_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewExistingAuthoriza777FCF86">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewExistingAuthorization_Other" />
+        <LocaleValue Lang="en" Value="btn_NewExistingAuthorization_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewForeignAuthorizat06B813D5">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewForeignAuthorization_Other" />
+        <LocaleValue Lang="en" Value="btn_NewForeignAuthorization_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewApplication_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewApplication_Other" />
+        <LocaleValue Lang="en" Value="btn_NewApplication_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Modify_mf_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Modify_mf_Other" />
+        <LocaleValue Lang="en" Value="btn_Modify_mf_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewAuthorization_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewAuthorization_Other" />
+        <LocaleValue Lang="en" Value="btn_NewAuthorization_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewRejection_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewRejection_Other" />
+        <LocaleValue Lang="en" Value="btn_NewRejection_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewWithdrawal_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewWithdrawal_Other" />
+        <LocaleValue Lang="en" Value="btn_NewWithdrawal_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewCancel_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewCancel_Other" />
+        <LocaleValue Lang="en" Value="btn_NewCancel_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Remove_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Remove_Other" />
+        <LocaleValue Lang="en" Value="btn_Remove_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Detail_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Detail_Other" />
+        <LocaleValue Lang="en" Value="btn_Detail_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Authorization_ExhausB58AF477">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Authorization_Exhausted_Other" />
+        <LocaleValue Lang="en" Value="btn_Authorization_Exhausted_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Authorization_Withdr6B2C4603">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Authorization_Withdrawed_Other" />
+        <LocaleValue Lang="en" Value="btn_Authorization_Withdrawed_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewExistingAuthorization_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewExistingAuthorization_TR" />
+        <LocaleValue Lang="en" Value="btn_NewExistingAuthorization_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewForeignAuthorization_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewForeignAuthorization_TR" />
+        <LocaleValue Lang="en" Value="btn_NewForeignAuthorization_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewApplication_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewApplication_TR" />
+        <LocaleValue Lang="en" Value="btn_NewApplication_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Modify_mf_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Modify_mf_TR" />
+        <LocaleValue Lang="en" Value="btn_Modify_mf_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewAuthorization_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewAuthorization_TR" />
+        <LocaleValue Lang="en" Value="btn_NewAuthorization_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewRejection_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewRejection_TR" />
+        <LocaleValue Lang="en" Value="btn_NewRejection_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewWithdrawal_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewWithdrawal_TR" />
+        <LocaleValue Lang="en" Value="btn_NewWithdrawal_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewCancel_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewCancel_TR" />
+        <LocaleValue Lang="en" Value="btn_NewCancel_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Remove_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Remove_TR" />
+        <LocaleValue Lang="en" Value="btn_Remove_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Detail_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Detail_TR" />
+        <LocaleValue Lang="en" Value="btn_Detail_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Authorization_Exhausted_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Authorization_Exhausted_TR" />
+        <LocaleValue Lang="en" Value="btn_Authorization_Exhausted_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Authorization_Withdrawed_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Authorization_Withdrawed_TR" />
+        <LocaleValue Lang="en" Value="btn_Authorization_Withdrawed_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_New_PL">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_New_PL" />
+        <LocaleValue Lang="en" Value="btn_New_PL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Modify_PL">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Modify_PL" />
+        <LocaleValue Lang="en" Value="btn_Modify_PL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Delete_PL">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Delete_PL" />
+        <LocaleValue Lang="en" Value="btn_Delete_PL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Detail_PL">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Detail_PL" />
+        <LocaleValue Lang="en" Value="btn_Detail_PL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_RunControl_CTRL">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_RunControl_CTRL" />
+        <LocaleValue Lang="en" Value="btn_RunControl_CTRL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_RunControl_Multi_CTRL">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_RunControl_Multi_CTRL" />
+        <LocaleValue Lang="en" Value="btn_RunControl_Multi_CTRL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Detail_CTRL">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Detail_CTRL" />
+        <LocaleValue Lang="en" Value="btn_Detail_CTRL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_AMSDetail_CTRL">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_AMSDetail_CTRL" />
+        <LocaleValue Lang="en" Value="btn_AMSDetail_CTRL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_RunAudit_Audit">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_RunAudit_Audit" />
+        <LocaleValue Lang="en" Value="btn_RunAudit_Audit" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Detail_Audit">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Detail_Audit" />
+        <LocaleValue Lang="en" Value="btn_Detail_Audit" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewExistingAuthorization_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewExistingAuthorization_EC" />
+        <LocaleValue Lang="en" Value="btn_NewExistingAuthorization_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewForeignAuthorization_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewForeignAuthorization_EC" />
+        <LocaleValue Lang="en" Value="btn_NewForeignAuthorization_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewApplication_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewApplication_EC" />
+        <LocaleValue Lang="en" Value="btn_NewApplication_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Modify_mf_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Modify_mf_EC" />
+        <LocaleValue Lang="en" Value="btn_Modify_mf_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewAuthorization_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewAuthorization_EC" />
+        <LocaleValue Lang="en" Value="btn_NewAuthorization_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewRejection_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewRejection_EC" />
+        <LocaleValue Lang="en" Value="btn_NewRejection_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewWithdrawal_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewWithdrawal_EC" />
+        <LocaleValue Lang="en" Value="btn_NewWithdrawal_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_NewCancel_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_NewCancel_EC" />
+        <LocaleValue Lang="en" Value="btn_NewCancel_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Remove_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Remove_EC" />
+        <LocaleValue Lang="en" Value="btn_Remove_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Detail_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Detail_EC" />
+        <LocaleValue Lang="en" Value="btn_Detail_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Authorization_Exhausted_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Authorization_Exhausted_EC" />
+        <LocaleValue Lang="en" Value="btn_Authorization_Exhausted_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_Authorization_Withdrawed_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_Authorization_Withdrawed_EC" />
+        <LocaleValue Lang="en" Value="btn_Authorization_Withdrawed_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_LanguageEnglish">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_LanguageEnglish" />
+        <LocaleValue Lang="en" Value="btn_LanguageEnglish" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_LanguageCzech">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_LanguageCzech" />
+        <LocaleValue Lang="en" Value="btn_LanguageCzech" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_LanguageSerbia">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_LanguageSerbia" />
+        <LocaleValue Lang="en" Value="btn_LanguageSerbia" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Labels">
       <Values>
-        <LocaleValue Lang="cs" Value="labels" />
+        <LocaleValue Lang="en" Value="labels" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Cap_User_Name">
       <Values>
-        <LocaleValue Lang="cs" Value="cap_User_Name" />
+        <LocaleValue Lang="en" Value="cap_User_Name" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Cap_User_Role">
       <Values>
-        <LocaleValue Lang="cs" Value="cap_User_Role" />
+        <LocaleValue Lang="en" Value="cap_User_Role" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Cap_User_CU">
       <Values>
-        <LocaleValue Lang="cs" Value="cap_User_CU" />
+        <LocaleValue Lang="en" Value="cap_User_CU" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TabControls">
       <Values>
-        <LocaleValue Lang="cs" Value="tabControls" />
+        <LocaleValue Lang="en" Value="tabControls" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tbc_AMS">
       <Values>
-        <LocaleValue Lang="cs" Value="tbc_AMS" />
+        <LocaleValue Lang="en" Value="tbc_AMS" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_PWEI">
       <Values>
-        <LocaleValue Lang="cs" Value="_PWEI" />
+        <LocaleValue Lang="en" Value="_PWEI" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="_SP" />
+        <LocaleValue Lang="en" Value="_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="_CCR" />
+        <LocaleValue Lang="en" Value="_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="_Other" />
+        <LocaleValue Lang="en" Value="_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="_TR" />
+        <LocaleValue Lang="en" Value="_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_PL">
       <Values>
-        <LocaleValue Lang="cs" Value="_PL" />
+        <LocaleValue Lang="en" Value="_PL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_CTRL">
       <Values>
-        <LocaleValue Lang="cs" Value="_CTRL" />
+        <LocaleValue Lang="en" Value="_CTRL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Audit">
       <Values>
-        <LocaleValue Lang="cs" Value="_Audit" />
+        <LocaleValue Lang="en" Value="_Audit" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="_EC" />
+        <LocaleValue Lang="en" Value="_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tbc_PWEI">
       <Values>
-        <LocaleValue Lang="cs" Value="tbc_PWEI" />
+        <LocaleValue Lang="en" Value="tbc_PWEI" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Application_Accepted">
       <Values>
-        <LocaleValue Lang="cs" Value="_Application_Accepted" />
+        <LocaleValue Lang="en" Value="_Application_Accepted" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Rejected">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Rejected" />
+        <LocaleValue Lang="en" Value="_Authorization_Rejected" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Accepted">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Accepted" />
+        <LocaleValue Lang="en" Value="_Authorization_Accepted" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Withdrawal">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Withdrawal" />
+        <LocaleValue Lang="en" Value="_Authorization_Withdrawal" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Expired">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Expired" />
+        <LocaleValue Lang="en" Value="_Authorization_Expired" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_All">
       <Values>
-        <LocaleValue Lang="cs" Value="_All" />
+        <LocaleValue Lang="en" Value="_All" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tbc_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="tbc_SP" />
+        <LocaleValue Lang="en" Value="tbc_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Application_Accepted_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="_Application_Accepted_SP" />
+        <LocaleValue Lang="en" Value="_Application_Accepted_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Rejected_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Rejected_SP" />
+        <LocaleValue Lang="en" Value="_Authorization_Rejected_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Accepted_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Accepted_SP" />
+        <LocaleValue Lang="en" Value="_Authorization_Accepted_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Withdrawal_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Withdrawal_SP" />
+        <LocaleValue Lang="en" Value="_Authorization_Withdrawal_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Expired_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Expired_SP" />
+        <LocaleValue Lang="en" Value="_Authorization_Expired_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_All_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="_All_SP" />
+        <LocaleValue Lang="en" Value="_All_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tbc_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="tbc_CCR" />
+        <LocaleValue Lang="en" Value="tbc_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Application_Accepted_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="_Application_Accepted_CCR" />
+        <LocaleValue Lang="en" Value="_Application_Accepted_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Rejected_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Rejected_CCR" />
+        <LocaleValue Lang="en" Value="_Authorization_Rejected_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Accepted_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Accepted_CCR" />
+        <LocaleValue Lang="en" Value="_Authorization_Accepted_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Withdrawal_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Withdrawal_CCR" />
+        <LocaleValue Lang="en" Value="_Authorization_Withdrawal_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Expired_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Expired_CCR" />
+        <LocaleValue Lang="en" Value="_Authorization_Expired_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_All_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="_All_CCR" />
+        <LocaleValue Lang="en" Value="_All_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tbc_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="tbc_Other" />
+        <LocaleValue Lang="en" Value="tbc_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Application_Accepted_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="_Application_Accepted_Other" />
+        <LocaleValue Lang="en" Value="_Application_Accepted_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Rejected_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Rejected_Other" />
+        <LocaleValue Lang="en" Value="_Authorization_Rejected_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Accepted_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Accepted_Other" />
+        <LocaleValue Lang="en" Value="_Authorization_Accepted_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Withdrawal_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Withdrawal_Other" />
+        <LocaleValue Lang="en" Value="_Authorization_Withdrawal_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Expired_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Expired_Other" />
+        <LocaleValue Lang="en" Value="_Authorization_Expired_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_All_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="_All_Other" />
+        <LocaleValue Lang="en" Value="_All_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tbc_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="tbc_TR" />
+        <LocaleValue Lang="en" Value="tbc_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Application_Accepted_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="_Application_Accepted_TR" />
+        <LocaleValue Lang="en" Value="_Application_Accepted_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Rejected_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Rejected_TR" />
+        <LocaleValue Lang="en" Value="_Authorization_Rejected_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Accepted_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Accepted_TR" />
+        <LocaleValue Lang="en" Value="_Authorization_Accepted_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Withdrawal_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Withdrawal_TR" />
+        <LocaleValue Lang="en" Value="_Authorization_Withdrawal_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Expired_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Expired_TR" />
+        <LocaleValue Lang="en" Value="_Authorization_Expired_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_All_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="_All_TR" />
+        <LocaleValue Lang="en" Value="_All_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tbc_PL">
       <Values>
-        <LocaleValue Lang="cs" Value="tbc_PL" />
+        <LocaleValue Lang="en" Value="tbc_PL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_All_PL">
       <Values>
-        <LocaleValue Lang="cs" Value="_All_PL" />
+        <LocaleValue Lang="en" Value="_All_PL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Deleted_PL">
       <Values>
-        <LocaleValue Lang="cs" Value="_Deleted_PL" />
+        <LocaleValue Lang="en" Value="_Deleted_PL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tbc_CTRL">
       <Values>
-        <LocaleValue Lang="cs" Value="tbc_CTRL" />
+        <LocaleValue Lang="en" Value="tbc_CTRL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_ToControl_CTRL">
       <Values>
-        <LocaleValue Lang="cs" Value="_ToControl_CTRL" />
+        <LocaleValue Lang="en" Value="_ToControl_CTRL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_All_CTRL">
       <Values>
-        <LocaleValue Lang="cs" Value="_All_CTRL" />
+        <LocaleValue Lang="en" Value="_All_CTRL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tbc_Audit">
       <Values>
-        <LocaleValue Lang="cs" Value="tbc_Audit" />
+        <LocaleValue Lang="en" Value="tbc_Audit" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_AuditSubjects">
       <Values>
-        <LocaleValue Lang="cs" Value="_AuditSubjects" />
+        <LocaleValue Lang="en" Value="_AuditSubjects" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_All_Audit">
       <Values>
-        <LocaleValue Lang="cs" Value="_All_Audit" />
+        <LocaleValue Lang="en" Value="_All_Audit" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tbc_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="tbc_EC" />
+        <LocaleValue Lang="en" Value="tbc_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Application_Accepted_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="_Application_Accepted_EC" />
+        <LocaleValue Lang="en" Value="_Application_Accepted_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Rejected_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Rejected_EC" />
+        <LocaleValue Lang="en" Value="_Authorization_Rejected_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Accepted_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Accepted_EC" />
+        <LocaleValue Lang="en" Value="_Authorization_Accepted_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Withdrawal_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Withdrawal_EC" />
+        <LocaleValue Lang="en" Value="_Authorization_Withdrawal_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Expired_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Expired_EC" />
+        <LocaleValue Lang="en" Value="_Authorization_Expired_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_All_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="_All_EC" />
+        <LocaleValue Lang="en" Value="_All_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tabs">
       <Values>
-        <LocaleValue Lang="cs" Value="tabs" />
+        <LocaleValue Lang="en" Value="tabs" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_PWEI">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_PWEI" />
+        <LocaleValue Lang="en" Value="tab_PWEI" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Visible">
       <Values>
-        <LocaleValue Lang="cs" Value="Visible" />
+        <LocaleValue Lang="en" Value="Visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_SP" />
+        <LocaleValue Lang="en" Value="tab_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_CCR" />
+        <LocaleValue Lang="en" Value="tab_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Other" />
+        <LocaleValue Lang="en" Value="tab_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_TR" />
+        <LocaleValue Lang="en" Value="tab_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_PL">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_PL" />
+        <LocaleValue Lang="en" Value="tab_PL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_CTRL">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_CTRL" />
+        <LocaleValue Lang="en" Value="tab_CTRL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Audit">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Audit" />
+        <LocaleValue Lang="en" Value="tab_Audit" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_EC" />
+        <LocaleValue Lang="en" Value="tab_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Application_Accepted">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Application_Accepted" />
+        <LocaleValue Lang="en" Value="tab_Application_Accepted" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Rejected">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Rejected" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Rejected" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Accepted">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Accepted" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Accepted" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Withdrawal">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Withdrawal" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Withdrawal" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Expired">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Expired" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Expired" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_All">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_All" />
+        <LocaleValue Lang="en" Value="tab_All" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Application_Accepted_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Application_Accepted_SP" />
+        <LocaleValue Lang="en" Value="tab_Application_Accepted_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Rejected_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Rejected_SP" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Rejected_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Accepted_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Accepted_SP" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Accepted_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Withdrawal_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Withdrawal_SP" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Withdrawal_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Expired_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Expired_SP" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Expired_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_All_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_All_SP" />
+        <LocaleValue Lang="en" Value="tab_All_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Application_Accepted_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Application_Accepted_CCR" />
+        <LocaleValue Lang="en" Value="tab_Application_Accepted_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Rejected_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Rejected_CCR" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Rejected_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Accepted_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Accepted_CCR" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Accepted_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Withdrawal_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Withdrawal_CCR" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Withdrawal_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Expired_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Expired_CCR" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Expired_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_All_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_All_CCR" />
+        <LocaleValue Lang="en" Value="tab_All_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Application_Accepted_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Application_Accepted_Other" />
+        <LocaleValue Lang="en" Value="tab_Application_Accepted_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Rejected_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Rejected_Other" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Rejected_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Accepted_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Accepted_Other" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Accepted_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Withdr14897FA2">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Withdrawal_Other" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Withdrawal_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Expired_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Expired_Other" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Expired_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_All_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_All_Other" />
+        <LocaleValue Lang="en" Value="tab_All_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Application_Accepted_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Application_Accepted_TR" />
+        <LocaleValue Lang="en" Value="tab_Application_Accepted_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Rejected_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Rejected_TR" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Rejected_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Accepted_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Accepted_TR" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Accepted_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Withdrawal_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Withdrawal_TR" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Withdrawal_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Expired_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Expired_TR" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Expired_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_All_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_All_TR" />
+        <LocaleValue Lang="en" Value="tab_All_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_All_PL">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_All_PL" />
+        <LocaleValue Lang="en" Value="tab_All_PL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Deleted_PL">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Deleted_PL" />
+        <LocaleValue Lang="en" Value="tab_Deleted_PL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_ToControl_CTRL">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_ToControl_CTRL" />
+        <LocaleValue Lang="en" Value="tab_ToControl_CTRL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_All_CTRL">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_All_CTRL" />
+        <LocaleValue Lang="en" Value="tab_All_CTRL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_AuditSubjects">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_AuditSubjects" />
+        <LocaleValue Lang="en" Value="tab_AuditSubjects" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_All_Audit">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_All_Audit" />
+        <LocaleValue Lang="en" Value="tab_All_Audit" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Application_Accepted_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Application_Accepted_EC" />
+        <LocaleValue Lang="en" Value="tab_Application_Accepted_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Rejected_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Rejected_EC" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Rejected_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Accepted_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Accepted_EC" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Accepted_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Withdrawal_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Withdrawal_EC" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Withdrawal_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_Authorization_Expired_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_Authorization_Expired_EC" />
+        <LocaleValue Lang="en" Value="tab_Authorization_Expired_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tab_All_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="tab_All_EC" />
+        <LocaleValue Lang="en" Value="tab_All_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ReferenceCombos">
       <Values>
-        <LocaleValue Lang="cs" Value="referenceCombos" />
+        <LocaleValue Lang="en" Value="referenceCombos" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Cmb_Type_NewRecord">
       <Values>
-        <LocaleValue Lang="cs" Value="cmb_Type_NewRecord" />
+        <LocaleValue Lang="en" Value="cmb_Type_NewRecord" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Cmb_Type_NewRecord_SP">
       <Values>
-        <LocaleValue Lang="cs" Value="cmb_Type_NewRecord_SP" />
+        <LocaleValue Lang="en" Value="cmb_Type_NewRecord_SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Cmb_Type_NewRecord_CCR">
       <Values>
-        <LocaleValue Lang="cs" Value="cmb_Type_NewRecord_CCR" />
+        <LocaleValue Lang="en" Value="cmb_Type_NewRecord_CCR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Cmb_Type_NewRecord_Other">
       <Values>
-        <LocaleValue Lang="cs" Value="cmb_Type_NewRecord_Other" />
+        <LocaleValue Lang="en" Value="cmb_Type_NewRecord_Other" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Cmb_Type_NewRecord_TR">
       <Values>
-        <LocaleValue Lang="cs" Value="cmb_Type_NewRecord_TR" />
+        <LocaleValue Lang="en" Value="cmb_Type_NewRecord_TR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Cmb_Type_NewRecord_EC">
       <Values>
-        <LocaleValue Lang="cs" Value="cmb_Type_NewRecord_EC" />
+        <LocaleValue Lang="en" Value="cmb_Type_NewRecord_EC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Constants">
       <Values>
-        <LocaleValue Lang="cs" Value="constants" />
+        <LocaleValue Lang="en" Value="constants" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tabs1">
       <Values>
-        <LocaleValue Lang="cs" Value="tabs" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_PWEI1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_PWEI" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_SP1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_SP" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_CCR1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_CCR" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Other1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Other" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_TR1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_TR" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_PL1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_PL" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_CTRL1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_CTRL" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Audit1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Audit" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_EC1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_EC" />
+        <LocaleValue Lang="en" Value="tabs" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Application_Accepted1">
       <Values>
-        <LocaleValue Lang="cs" Value="_Application_Accepted" />
+        <LocaleValue Lang="en" Value="_Application_Accepted" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Rejected1">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Rejected" />
+        <LocaleValue Lang="en" Value="_Authorization_Rejected" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Accepted1">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Accepted" />
+        <LocaleValue Lang="en" Value="_Authorization_Accepted" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Withdrawal1">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Withdrawal" />
+        <LocaleValue Lang="en" Value="_Authorization_Withdrawal" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Authorization_Expired1">
       <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Expired" />
+        <LocaleValue Lang="en" Value="_Authorization_Expired" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_All1">
       <Values>
-        <LocaleValue Lang="cs" Value="_All" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Application_Accepted_SP1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Application_Accepted_SP" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Authorization_Rejected_SP1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Rejected_SP" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Authorization_Accepted_SP1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Accepted_SP" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Authorization_Withdrawal_SP1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Withdrawal_SP" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Authorization_Expired_SP1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Expired_SP" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_All_SP1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_All_SP" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Application_Accepted_CCR1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Application_Accepted_CCR" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Authorization_Rejected_CCR1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Rejected_CCR" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Authorization_Accepted_CCR1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Accepted_CCR" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Authorization_Withdrawal_CCR1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Withdrawal_CCR" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Authorization_Expired_CCR1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Expired_CCR" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_All_CCR1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_All_CCR" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Application_Accepted_Other1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Application_Accepted_Other" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Authorization_Rejected_Other1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Rejected_Other" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Authorization_Accepted_Other1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Accepted_Other" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Authorization_Withdrawal_Other1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Withdrawal_Other" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Authorization_Expired_Other1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Expired_Other" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_All_Other1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_All_Other" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Application_Accepted_TR1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Application_Accepted_TR" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Authorization_Rejected_TR1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Rejected_TR" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Authorization_Accepted_TR1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Accepted_TR" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Authorization_Withdrawal_TR1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Withdrawal_TR" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Authorization_Expired_TR1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Expired_TR" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_All_TR1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_All_TR" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_All_PL1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_All_PL" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Deleted_PL1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Deleted_PL" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_ToControl_CTRL1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_ToControl_CTRL" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_All_CTRL1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_All_CTRL" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_AuditSubjects1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_AuditSubjects" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_All_Audit1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_All_Audit" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Application_Accepted_EC1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Application_Accepted_EC" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Authorization_Rejected_EC1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Rejected_EC" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Authorization_Accepted_EC1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Accepted_EC" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Authorization_Withdrawal_EC1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Withdrawal_EC" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_Authorization_Expired_EC1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_Authorization_Expired_EC" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_All_EC1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_All_EC" />
+        <LocaleValue Lang="en" Value="_All" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Msg1">
       <Values>
-        <LocaleValue Lang="cs" Value="Msg" />
+        <LocaleValue Lang="en" Value="Msg" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DecListDataSource">
       <Values>
-        <LocaleValue Lang="cs" Value="Dec list data source" />
+        <LocaleValue Lang="en" Value="Dec list data source" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="GUID2">
       <Values>
-        <LocaleValue Lang="cs" Value="GUID" />
+        <LocaleValue Lang="en" Value="GUID" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Authorization">
       <Values>
-        <LocaleValue Lang="cs" Value="Authorization" />
+        <LocaleValue Lang="en" Value="Authorization" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TIN">
       <Values>
-        <LocaleValue Lang="cs" Value="TIN" />
+        <LocaleValue Lang="en" Value="TIN" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AuthorizationType">
       <Values>
-        <LocaleValue Lang="cs" Value="Authorization type" />
+        <LocaleValue Lang="en" Value="Authorization type" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ResponsibleCO">
       <Values>
-        <LocaleValue Lang="cs" Value="Responsible CO" />
+        <LocaleValue Lang="en" Value="Responsible CO" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SubjectName">
       <Values>
-        <LocaleValue Lang="cs" Value="Subject name" />
+        <LocaleValue Lang="en" Value="Subject name" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ApplicationDate">
       <Values>
-        <LocaleValue Lang="cs" Value="Application date" />
+        <LocaleValue Lang="en" Value="Last change validity" />
+        <LocaleValue Lang="me" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AuthorizationValidFrom">
       <Values>
-        <LocaleValue Lang="cs" Value="Authorization valid from" />
+        <LocaleValue Lang="en" Value="Authorization valid from" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="StateName">
       <Values>
-        <LocaleValue Lang="cs" Value="State name" />
+        <LocaleValue Lang="en" Value="State name" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DecListReferenceRow">
       <Values>
-        <LocaleValue Lang="cs" Value="Dec list reference row" />
+        <LocaleValue Lang="en" Value="Dec list reference row" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TIN1">
       <Values>
-        <LocaleValue Lang="cs" Value="TIN" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="AuthorizationType1">
-      <Values>
-        <LocaleValue Lang="cs" Value="Authorization type" />
+        <LocaleValue Lang="en" Value="TIN" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ResponsibleCustomsOffice">
       <Values>
-        <LocaleValue Lang="cs" Value="Responsible customs office" />
+        <LocaleValue Lang="en" Value="Responsible customs office" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="OperatorName">
       <Values>
-        <LocaleValue Lang="cs" Value="Operator name" />
+        <LocaleValue Lang="en" Value="Operator name" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ValidityStartDate">
       <Values>
-        <LocaleValue Lang="cs" Value="Validity start date" />
+        <LocaleValue Lang="en" Value="Validity start date" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ButtonsVisibility">
       <Values>
-        <LocaleValue Lang="cs" Value="Buttons visibility" />
+        <LocaleValue Lang="en" Value="Buttons visibility" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsSetNewApplicationVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is set new application visible" />
+        <LocaleValue Lang="en" Value="Is set new application visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsModifyVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is modify visible" />
+        <LocaleValue Lang="en" Value="Is modify visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsAuthorizeVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is authorize visible" />
+        <LocaleValue Lang="en" Value="Is authorize visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsWithdrawVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is withdraw visible" />
+        <LocaleValue Lang="en" Value="Is withdraw visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsRejectVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is reject visible" />
+        <LocaleValue Lang="en" Value="Is reject visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsCancelVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is cancel visible" />
+        <LocaleValue Lang="en" Value="Is cancel visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsDetailVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is detail visible" />
+        <LocaleValue Lang="en" Value="Is detail visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsNewCommunicationApplic87B7F1B8">
       <Values>
-        <LocaleValue Lang="cs" Value="Is new communication application visible" />
+        <LocaleValue Lang="en" Value="Is new communication application visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsNewPlacevisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is new placevisible" />
+        <LocaleValue Lang="en" Value="Is new placevisible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="NewItemCaption">
       <Values>
-        <LocaleValue Lang="cs" Value="New item caption" />
+        <LocaleValue Lang="en" Value="New item caption" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ActiveMenuItem">
       <Values>
-        <LocaleValue Lang="cs" Value="Active menu item" />
+        <LocaleValue Lang="en" Value="Active menu item" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Applications_Link_Active">
       <Values>
-        <LocaleValue Lang="cs" Value="Applications _ link _ active" />
+        <LocaleValue Lang="en" Value="Applications _ link _ active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="RejectedApplications_Link_Active">
       <Values>
-        <LocaleValue Lang="cs" Value="Rejected applications _ link _ active" />
+        <LocaleValue Lang="en" Value="Rejected applications _ link _ active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="GrantedAuthorizations_Li435A3CCF">
       <Values>
-        <LocaleValue Lang="cs" Value="Granted authorizations _ link _ active" />
+        <LocaleValue Lang="en" Value="Granted authorizations _ link _ active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="WithdrawnAuthorizations_812D2294">
       <Values>
-        <LocaleValue Lang="cs" Value="Withdrawn authorizations _ link _ active" />
+        <LocaleValue Lang="en" Value="Withdrawn authorizations _ link _ active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ExpiredAuthorizations_LiB498B00B">
       <Values>
-        <LocaleValue Lang="cs" Value="Expired authorizations _ link _ active" />
+        <LocaleValue Lang="en" Value="Expired authorizations _ link _ active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="All_Link_Active">
       <Values>
-        <LocaleValue Lang="cs" Value="All _ link _ active" />
+        <LocaleValue Lang="en" Value="All _ link _ active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AuthorizedPlaces_Link_Active">
       <Values>
-        <LocaleValue Lang="cs" Value="Authorized places _ link _ active" />
+        <LocaleValue Lang="en" Value="Authorized places _ link _ active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CancelledPlaces_Link_Active">
       <Values>
-        <LocaleValue Lang="cs" Value="Cancelled places _ link _ active" />
+        <LocaleValue Lang="en" Value="Cancelled places _ link _ active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Applications_Link2_Active">
       <Values>
-        <LocaleValue Lang="cs" Value="Applications _ link 2_ active" />
+        <LocaleValue Lang="en" Value="Applications _ link 2_ active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="RejectedApplications_LinE85DA27D">
       <Values>
-        <LocaleValue Lang="cs" Value="Rejected applications _ link 2_ active" />
+        <LocaleValue Lang="en" Value="Rejected applications _ link 2_ active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="GrantedAuthorizations_Li23206FB1">
       <Values>
-        <LocaleValue Lang="cs" Value="Granted authorizations _ link 2_ active" />
+        <LocaleValue Lang="en" Value="Granted authorizations _ link 2_ active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="WithdrawnAuthorizations_7AA340C0">
       <Values>
-        <LocaleValue Lang="cs" Value="Withdrawn authorizations _ link 2_ active" />
+        <LocaleValue Lang="en" Value="Withdrawn authorizations _ link 2_ active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ExpiredAuthorizations_LiF79C7FD5">
       <Values>
-        <LocaleValue Lang="cs" Value="Expired authorizations _ link 2_ active" />
+        <LocaleValue Lang="en" Value="Expired authorizations _ link 2_ active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="All_Link2_Active">
       <Values>
-        <LocaleValue Lang="cs" Value="All _ link 2_ active" />
+        <LocaleValue Lang="en" Value="All _ link 2_ active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CancelledAuthorizations_0DF73563">
       <Values>
-        <LocaleValue Lang="cs" Value="Cancelled authorizations _ link _ active" />
+        <LocaleValue Lang="en" Value="Cancelled authorizations _ link _ active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CancelledAuthorizations_9B944379">
       <Values>
-        <LocaleValue Lang="cs" Value="Cancelled authorizations _ link 2_ active" />
+        <LocaleValue Lang="en" Value="Cancelled authorizations _ link 2_ active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="LoadedAuthorizationType">
       <Values>
-        <LocaleValue Lang="cs" Value="Loaded authorization type" />
+        <LocaleValue Lang="en" Value="Loaded authorization type" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="LoadedAuthorizationState">
       <Values>
-        <LocaleValue Lang="cs" Value="Loaded authorization state" />
+        <LocaleValue Lang="en" Value="Loaded authorization state" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_AuthorizeButtonCaption">
       <Values>
-        <LocaleValue Lang="cs" Value="_ authorize button caption" />
+        <LocaleValue Lang="en" Value="_ authorize button caption" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AMS">
       <Values>
-        <LocaleValue Lang="cs" Value="AMS" />
+        <LocaleValue Lang="en" Value="AMS" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Name">
       <Values>
-        <LocaleValue Lang="cs" Value="Name" />
+        <LocaleValue Lang="en" Value="Name" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="StreetAndNr">
       <Values>
-        <LocaleValue Lang="cs" Value="Street and nr" />
+        <LocaleValue Lang="en" Value="Street and nr" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="City">
       <Values>
-        <LocaleValue Lang="cs" Value="City" />
+        <LocaleValue Lang="en" Value="City" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PostCode">
       <Values>
-        <LocaleValue Lang="cs" Value="Post code" />
+        <LocaleValue Lang="en" Value="Post code" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PlaceSpecification">
       <Values>
-        <LocaleValue Lang="cs" Value="Place specification" />
+        <LocaleValue Lang="en" Value="Place specification" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ValidityCustomsOffice">
       <Values>
-        <LocaleValue Lang="cs" Value="Validity customs office" />
+        <LocaleValue Lang="en" Value="Validity customs office" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ValidityEndDate">
       <Values>
-        <LocaleValue Lang="cs" Value="Validity end date" />
+        <LocaleValue Lang="en" Value="Validity end date" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ResponsiblePerson">
       <Values>
-        <LocaleValue Lang="cs" Value="Responsible person" />
+        <LocaleValue Lang="en" Value="Responsible person" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DetailID">
       <Values>
-        <LocaleValue Lang="cs" Value="Detail ID" />
+        <LocaleValue Lang="en" Value="Detail ID" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Country">
       <Values>
-        <LocaleValue Lang="cs" Value="Country" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_actualDate1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_actualDate" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="IsEditing1">
-      <Values>
-        <LocaleValue Lang="cs" Value="Is editing" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="IsGeneralVisible1">
-      <Values>
-        <LocaleValue Lang="cs" Value="Is general visible" />
+        <LocaleValue Lang="en" Value="Country" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsPlaceVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is place visible" />
+        <LocaleValue Lang="en" Value="Is place visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="LocalizedString1">
       <Values>
-        <LocaleValue Lang="cs" />
+        <LocaleValue Lang="en" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_ModificationDisabled">
       <Values>
-        <LocaleValue Lang="cs" Value="_ modification disabled" />
+        <LocaleValue Lang="en" Value="_ modification disabled" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Attribute1">
       <Values>
-        <LocaleValue Lang="cs" Value="Attribute 1" />
+        <LocaleValue Lang="en" Value="Attribute 1" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Attribute2">
       <Values>
-        <LocaleValue Lang="cs" Value="Attribute 2" />
+        <LocaleValue Lang="en" Value="Attribute 2" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tbc_Event">
       <Values>
-        <LocaleValue Lang="cs" Value="Tbc _ event" />
+        <LocaleValue Lang="en" Value="Tbc _ event" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AuthorizationValidUntilH983A683C">
       <Values>
-        <LocaleValue Lang="cs" Value="Authorization Valid Until has to have a value" />
+        <LocaleValue Lang="en" Value="Authorization Valid Until has to have a value" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsCurrentlySelected">
       <Values>
-        <LocaleValue Lang="cs" Value="Is currently selected" />
+        <LocaleValue Lang="en" Value="Is currently selected" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TimeUnit">
       <Values>
-        <LocaleValue Lang="cs" Value="Time unit" />
+        <LocaleValue Lang="en" Value="Time unit" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="RecLength">
       <Values>
-        <LocaleValue Lang="cs" Value="Rec length" />
+        <LocaleValue Lang="en" Value="Rec length" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TemporaryModel">
       <Values>
-        <LocaleValue Lang="cs" Value="Temporary model" />
+        <LocaleValue Lang="en" Value="Temporary model" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tbc_Regimes">
       <Values>
-        <LocaleValue Lang="cs" Value="tbc_Regimes" />
+        <LocaleValue Lang="en" Value="tbc_Regimes" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tbc_Goods">
       <Values>
-        <LocaleValue Lang="cs" Value="Tbc _ goods" />
+        <LocaleValue Lang="en" Value="Tbc _ goods" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Tbc_Event1">
       <Values>
-        <LocaleValue Lang="cs" Value="tbc_Event" />
+        <LocaleValue Lang="en" Value="tbc_Event" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ModelState">
       <Values>
-        <LocaleValue Lang="cs" Value="Model state" />
+        <LocaleValue Lang="en" Value="Model state" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Index_GoodsItem">
       <Values>
-        <LocaleValue Lang="cs" Value="_ index _ goods item" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="IsGeneralVisible2">
-      <Values>
-        <LocaleValue Lang="cs" Value="Is general visible" />
+        <LocaleValue Lang="en" Value="_ index _ goods item" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsRespPersonVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is resp person visible" />
+        <LocaleValue Lang="en" Value="Is resp person visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsRepresentationVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is representation visible" />
+        <LocaleValue Lang="en" Value="Is representation visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsSpecialAXVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is special AX visible" />
+        <LocaleValue Lang="en" Value="Is special AX visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsGoodsVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is goods visible" />
+        <LocaleValue Lang="en" Value="Is goods visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsCustomsOfficesVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is customs offices visible" />
+        <LocaleValue Lang="en" Value="Is customs offices visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsAuthorizationVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is authorization visible" />
+        <LocaleValue Lang="en" Value="Is authorization visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsSealsVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is seals visible" />
+        <LocaleValue Lang="en" Value="Is seals visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsAuthorizationWithdrawalVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is authorization withdrawal visible" />
+        <LocaleValue Lang="en" Value="Is authorization withdrawal visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsApplicationRejectedVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is application rejected visible" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="IsFilesVisible1">
-      <Values>
-        <LocaleValue Lang="cs" Value="Is files visible" />
+        <LocaleValue Lang="en" Value="Is application rejected visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsControlVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is control visible" />
+        <LocaleValue Lang="en" Value="Is control visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsDtpValidityEndDateVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is dtp validity end date visible" />
+        <LocaleValue Lang="en" Value="Is dtp validity end date visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsLimitedValidParentVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is limited valid parent visible" />
+        <LocaleValue Lang="en" Value="Is limited valid parent visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsEvidenceDateParentVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is evidence date parent visible" />
+        <LocaleValue Lang="en" Value="Is evidence date parent visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsSensitiveGoodsVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is sensitive goods visible" />
+        <LocaleValue Lang="en" Value="Is sensitive goods visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsAuthorizedAgreedLocatiDD8F812E">
       <Values>
-        <LocaleValue Lang="cs" Value="Is authorized agreed location visible" />
+        <LocaleValue Lang="en" Value="Is authorized agreed location visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsGuaranteeVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is guarantee visible" />
+        <LocaleValue Lang="en" Value="Is guarantee visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsEventHistoryVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is event history visible" />
+        <LocaleValue Lang="en" Value="Is event history visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsExcludedGoodsVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is excluded goods visible" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="IsEditing2">
-      <Values>
-        <LocaleValue Lang="cs" Value="isEditing" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_actualDate2">
-      <Values>
-        <LocaleValue Lang="cs" Value="_actualDate" />
+        <LocaleValue Lang="en" Value="Is excluded goods visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsApplication">
       <Values>
-        <LocaleValue Lang="cs" Value="Is application" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="IsGeneralMenuVisible1">
-      <Values>
-        <LocaleValue Lang="cs" Value="Is general menu visible" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="IsGeneralMenuActive1">
-      <Values>
-        <LocaleValue Lang="cs" Value="Is general menu active" />
+        <LocaleValue Lang="en" Value="Is application" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsSpecialAXMenuVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is special AX menu visible" />
+        <LocaleValue Lang="en" Value="Is special AX menu visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsSpecialAXMenuActive">
       <Values>
-        <LocaleValue Lang="cs" Value="Is special AX menu active" />
+        <LocaleValue Lang="en" Value="Is special AX menu active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsGoodsMenuVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is goods menu visible" />
+        <LocaleValue Lang="en" Value="Is goods menu visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsGoodsMenuActive">
       <Values>
-        <LocaleValue Lang="cs" Value="Is goods menu active" />
+        <LocaleValue Lang="en" Value="Is goods menu active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsCustomsOfficesMenuVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is customs offices menu visible" />
+        <LocaleValue Lang="en" Value="Is customs offices menu visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsCustomsOfficesMenuActive">
       <Values>
-        <LocaleValue Lang="cs" Value="Is customs offices menu active" />
+        <LocaleValue Lang="en" Value="Is customs offices menu active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsAuthorizationMenuVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is authorization menu visible" />
+        <LocaleValue Lang="en" Value="Is authorization menu visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsAuthorizationMenuActive">
       <Values>
-        <LocaleValue Lang="cs" Value="Is authorization menu active" />
+        <LocaleValue Lang="en" Value="Is authorization menu active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsSealsMenuVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is seals menu visible" />
+        <LocaleValue Lang="en" Value="Is seals menu visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsSealsMenuActive">
       <Values>
-        <LocaleValue Lang="cs" Value="Is seals menu active" />
+        <LocaleValue Lang="en" Value="Is seals menu active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsAuthorizationWithdrawaF2D33C43">
       <Values>
-        <LocaleValue Lang="cs" Value="Is authorization withdrawal menu visible" />
+        <LocaleValue Lang="en" Value="Is authorization withdrawal menu visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsAuthorizationWithdrawa49F8BAC9">
       <Values>
-        <LocaleValue Lang="cs" Value="Is authorization withdrawal menu active" />
+        <LocaleValue Lang="en" Value="Is authorization withdrawal menu active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsApplicationRejectionMe6AC1EC22">
       <Values>
-        <LocaleValue Lang="cs" Value="Is application rejection menu visible" />
+        <LocaleValue Lang="en" Value="Is application rejection menu visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsApplicationRejectionMenuActive">
       <Values>
-        <LocaleValue Lang="cs" Value="Is application rejection menu active" />
+        <LocaleValue Lang="en" Value="Is application rejection menu active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsFileMenuVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is file menu visible" />
+        <LocaleValue Lang="en" Value="Is file menu visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsFileMenuActive">
       <Values>
-        <LocaleValue Lang="cs" Value="Is file menu active" />
+        <LocaleValue Lang="en" Value="Is file menu active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsControlMenuVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is control menu visible" />
+        <LocaleValue Lang="en" Value="Is control menu visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsControlMenuActive">
       <Values>
-        <LocaleValue Lang="cs" Value="Is control menu active" />
+        <LocaleValue Lang="en" Value="Is control menu active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsEventHistoryMenuVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is event history menu visible" />
+        <LocaleValue Lang="en" Value="Is event history menu visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsEventHistoryMenuActive">
       <Values>
-        <LocaleValue Lang="cs" Value="Is event history menu active" />
+        <LocaleValue Lang="en" Value="Is event history menu active" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsTINEditable">
       <Values>
-        <LocaleValue Lang="cs" Value="Is TIN editable" />
+        <LocaleValue Lang="en" Value="Is TIN editable" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_IsAuthorizationTypeEditable">
       <Values>
-        <LocaleValue Lang="cs" Value="_ is authorization type editable" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="_IsOperatorEditable1">
-      <Values>
-        <LocaleValue Lang="cs" Value="_ is operator editable" />
+        <LocaleValue Lang="en" Value="_ is authorization type editable" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_IsValidityStartDateEditable">
       <Values>
-        <LocaleValue Lang="cs" Value="_ is validity start date editable" />
+        <LocaleValue Lang="en" Value="_ is validity start date editable" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="NewApplication">
       <Values>
-        <LocaleValue Lang="cs" Value="New application" />
+        <LocaleValue Lang="en" Value="New application" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ModifyApplication">
       <Values>
-        <LocaleValue Lang="cs" Value="Modify application" />
+        <LocaleValue Lang="en" Value="Modify application" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="RejectApplication">
       <Values>
-        <LocaleValue Lang="cs" Value="Reject application" />
+        <LocaleValue Lang="en" Value="Reject application" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AuthorizeApplication">
       <Values>
-        <LocaleValue Lang="cs" Value="Authorize application" />
+        <LocaleValue Lang="en" Value="Authorize application" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ModifyAuthorisation">
       <Values>
-        <LocaleValue Lang="cs" Value="Modify authorisation" />
+        <LocaleValue Lang="en" Value="Modify authorisation" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="WithdrawOrCancelAuthorisation">
       <Values>
-        <LocaleValue Lang="cs" Value="Withdraw or cancel authorisation" />
+        <LocaleValue Lang="en" Value="Withdraw or cancel authorisation" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AuxiliaryVariables">
       <Values>
-        <LocaleValue Lang="cs" Value="Auxiliary variables" />
+        <LocaleValue Lang="en" Value="Auxiliary variables" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_IsCreateMode">
       <Values>
-        <LocaleValue Lang="cs" Value="_ is create mode" />
+        <LocaleValue Lang="en" Value="_ is create mode" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_IsAuthorizationValidUntEF6B0D53">
       <Values>
-        <LocaleValue Lang="cs" Value="_ is authorization valid until required" />
+        <LocaleValue Lang="en" Value="_ is authorization valid until required" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_IsWithdrawalMode">
       <Values>
-        <LocaleValue Lang="cs" Value="_ is withdrawal mode" />
+        <LocaleValue Lang="en" Value="_ is withdrawal mode" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_IsRejectionMode">
       <Values>
-        <LocaleValue Lang="cs" Value="_ is rejection mode" />
+        <LocaleValue Lang="en" Value="_ is rejection mode" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_IsDetailMode">
       <Values>
-        <LocaleValue Lang="cs" Value="_ is detail mode" />
+        <LocaleValue Lang="en" Value="_ is detail mode" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DecisionDateCaption">
       <Values>
-        <LocaleValue Lang="cs" Value="Decision date caption" />
+        <LocaleValue Lang="en" Value="Decision date caption" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_IsCreateModeAndLimitedA689B6590">
       <Values>
-        <LocaleValue Lang="cs" Value="_ is create mode and limited authorization validity" />
+        <LocaleValue Lang="en" Value="_ is create mode and limited authorization validity" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_IsModifyMode">
       <Values>
-        <LocaleValue Lang="cs" Value="_ is modify mode" />
+        <LocaleValue Lang="en" Value="_ is modify mode" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="HistoryVersion">
       <Values>
-        <LocaleValue Lang="cs" Value="History version" />
+        <LocaleValue Lang="en" Value="History version" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_IsAnotherVersion">
       <Values>
-        <LocaleValue Lang="cs" Value="_ is another version" />
+        <LocaleValue Lang="en" Value="_ is another version" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_IsNotAnoherVersion">
       <Values>
-        <LocaleValue Lang="cs" Value="_ is not anoher version" />
+        <LocaleValue Lang="en" Value="_ is not anoher version" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_ActualDateTime">
       <Values>
-        <LocaleValue Lang="cs" Value="_ actual date time" />
+        <LocaleValue Lang="en" Value="_ actual date time" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="GoodsExcludedFromTransit">
       <Values>
-        <LocaleValue Lang="cs" Value="Goods excluded from transit" />
+        <LocaleValue Lang="en" Value="Goods excluded from transit" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Code">
       <Values>
-        <LocaleValue Lang="cs" Value="Code" />
+        <LocaleValue Lang="en" Value="Code" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Kind">
       <Values>
-        <LocaleValue Lang="cs" Value="Kind" />
+        <LocaleValue Lang="en" Value="Kind" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsDetailMode">
       <Values>
-        <LocaleValue Lang="cs" Value="Is detail mode" />
+        <LocaleValue Lang="en" Value="Is detail mode" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypeOfMessage">
       <Values>
-        <LocaleValue Lang="cs" Value="Type of message" />
+        <LocaleValue Lang="en" Value="Type of message" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="InputStructure">
       <Values>
-        <LocaleValue Lang="cs" Value="Input structure" />
+        <LocaleValue Lang="en" Value="Input structure" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Detail">
       <Values>
-        <LocaleValue Lang="cs" Value="Detail" />
+        <LocaleValue Lang="en" Value="Detail" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Modify">
       <Values>
-        <LocaleValue Lang="cs" Value="Modify" />
+        <LocaleValue Lang="en" Value="Modify" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Authorize">
       <Values>
-        <LocaleValue Lang="cs" Value="Authorize" />
+        <LocaleValue Lang="en" Value="Authorize" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Reject">
       <Values>
-        <LocaleValue Lang="cs" Value="Reject" />
+        <LocaleValue Lang="en" Value="Reject" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Withdraw">
       <Values>
-        <LocaleValue Lang="cs" Value="Withdraw" />
+        <LocaleValue Lang="en" Value="Withdraw" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Cancel">
       <Values>
-        <LocaleValue Lang="cs" Value="Cancel" />
+        <LocaleValue Lang="en" Value="Cancel" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Create">
       <Values>
-        <LocaleValue Lang="cs" Value="Create" />
+        <LocaleValue Lang="en" Value="Create" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Historic">
       <Values>
-        <LocaleValue Lang="cs" Value="Historic" />
+        <LocaleValue Lang="en" Value="Historic" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Transit">
       <Values>
-        <LocaleValue Lang="cs" Value="Transit" />
+        <LocaleValue Lang="en" Value="Transit" />
         <LocaleValue Lang="EN" Value="Transit" />
         <LocaleValue Lang="ME" Value="Transit" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsDeclistMode">
       <Values>
-        <LocaleValue Lang="cs" Value="Is declist mode" />
+        <LocaleValue Lang="en" Value="Is declist mode" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="UserData">
       <Values>
-        <LocaleValue Lang="cs" Value="User data" />
+        <LocaleValue Lang="en" Value="User data" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="UserName">
       <Values>
-        <LocaleValue Lang="cs" Value="User name" />
+        <LocaleValue Lang="en" Value="User name" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Organisation">
       <Values>
-        <LocaleValue Lang="cs" Value="Organisation" />
+        <LocaleValue Lang="en" Value="Organisation" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Code">
       <Values>
-        <LocaleValue Lang="cs" Value="_ code" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="Code1">
-      <Values>
-        <LocaleValue Lang="cs" Value="Code" />
+        <LocaleValue Lang="en" Value="_ code" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="_Description">
       <Values>
-        <LocaleValue Lang="cs" Value="_ description" />
+        <LocaleValue Lang="en" Value="_ description" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CODescription">
       <Values>
-        <LocaleValue Lang="cs" Value="CO description" />
+        <LocaleValue Lang="en" Value="CO description" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ApplRole">
       <Values>
-        <LocaleValue Lang="cs" Value="Appl role" />
+        <LocaleValue Lang="en" Value="Appl role" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ApplRoleCode">
       <Values>
-        <LocaleValue Lang="cs" Value="Appl role code" />
+        <LocaleValue Lang="en" Value="Appl role code" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="LanguageCode">
       <Values>
-        <LocaleValue Lang="cs" Value="Language code" />
+        <LocaleValue Lang="en" Value="Language code" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AreErrorsVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Are errors visible" />
+        <LocaleValue Lang="en" Value="Are errors visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ServerErrors">
       <Values>
-        <LocaleValue Lang="cs" Value="Server errors" />
+        <LocaleValue Lang="en" Value="Server errors" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="LoginResponse">
       <Values>
-        <LocaleValue Lang="cs" Value="Login response" />
+        <LocaleValue Lang="en" Value="Login response" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="UserIdentity">
       <Values>
-        <LocaleValue Lang="cs" Value="User identity" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="UserName1">
-      <Values>
-        <LocaleValue Lang="cs" Value="User name" />
+        <LocaleValue Lang="en" Value="User identity" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="UserRole">
       <Values>
-        <LocaleValue Lang="cs" Value="User role" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="Name1">
-      <Values>
-        <LocaleValue Lang="cs" Value="Name" />
+        <LocaleValue Lang="en" Value="User role" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Value">
       <Values>
-        <LocaleValue Lang="cs" Value="Value" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="Value1">
-      <Values>
-        <LocaleValue Lang="cs" Value="Value" />
+        <LocaleValue Lang="en" Value="Value" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Environment">
       <Values>
-        <LocaleValue Lang="cs" Value="Environment" />
+        <LocaleValue Lang="en" Value="Environment" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ProjectDisplayName">
       <Values>
-        <LocaleValue Lang="cs" Value="Project display name" />
+        <LocaleValue Lang="en" Value="Project display name" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ProjectName">
       <Values>
-        <LocaleValue Lang="cs" Value="Project name" />
+        <LocaleValue Lang="en" Value="Project name" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Organisations">
       <Values>
-        <LocaleValue Lang="cs" Value="Organisations" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="Code2">
-      <Values>
-        <LocaleValue Lang="cs" Value="Code" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="ApplRole1">
-      <Values>
-        <LocaleValue Lang="cs" Value="Appl role" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="ApplRoleCode1">
-      <Values>
-        <LocaleValue Lang="cs" Value="Appl role code" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="ApplRole2">
-      <Values>
-        <LocaleValue Lang="cs" Value="Appl role" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="ApplRoleCode2">
-      <Values>
-        <LocaleValue Lang="cs" Value="Appl role code" />
+        <LocaleValue Lang="en" Value="Organisations" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="LoginRequestAMS">
       <Values>
-        <LocaleValue Lang="cs" Value="Login request AMS" />
-      </Values>
-    </LocalizedString>
-    <LocalizedString LocID="UserName2">
-      <Values>
-        <LocaleValue Lang="cs" Value="User name" />
+        <LocaleValue Lang="en" Value="Login request AMS" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Password">
       <Values>
-        <LocaleValue Lang="cs" Value="Password" />
+        <LocaleValue Lang="en" Value="Password" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsColorMode">
       <Values>
-        <LocaleValue Lang="cs" Value="Is color mode" />
+        <LocaleValue Lang="en" Value="Is color mode" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Version">
       <Values>
-        <LocaleValue Lang="cs" Value="Version" />
+        <LocaleValue Lang="en" Value="Version" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsNotColorizeMode">
       <Values>
-        <LocaleValue Lang="cs" Value="Is not colorize mode" />
+        <LocaleValue Lang="en" Value="Is not colorize mode" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsColorizedMode">
       <Values>
-        <LocaleValue Lang="cs" Value="Is colorized mode" />
+        <LocaleValue Lang="en" Value="Is colorized mode" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ServiceUrl">
       <Values>
-        <LocaleValue Lang="cs" Value="Service url" />
+        <LocaleValue Lang="en" Value="Service url" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZobrazeniDatCiselniku">
       <Values>
-        <LocaleValue Lang="cs" Value="Zobrazení dat číselníku" />
+        <LocaleValue Lang="en" Value="Zobrazení dat číselníku" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="NazevCiselniku">
       <Values>
-        <LocaleValue Lang="cs" Value="Název číselníku" />
+        <LocaleValue Lang="en" Value="Název číselníku" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DataCiselnikuPlatneKDatu">
       <Values>
-        <LocaleValue Lang="cs" Value="Data číselníku platné k datu" />
+        <LocaleValue Lang="en" Value="Data číselníku platné k datu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Kod">
       <Values>
-        <LocaleValue Lang="cs" Value="Kód" />
+        <LocaleValue Lang="en" Value="Kód" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="LocalizedString2">
       <Values>
-        <LocaleValue Lang="cs" />
+        <LocaleValue Lang="en" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Nazev">
       <Values>
-        <LocaleValue Lang="cs" Value="Název" />
+        <LocaleValue Lang="en" Value="Název" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="HistoriePristupuKSouborum">
       <Values>
-        <LocaleValue Lang="cs" Value="Historie přístupů k souborům" />
+        <LocaleValue Lang="en" Value="Historie přístupů k souborům" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="OsobniCisloUzivatele">
       <Values>
-        <LocaleValue Lang="cs" Value="Osobní číslo uživatele" />
+        <LocaleValue Lang="en" Value="Osobní číslo uživatele" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="NazevSouboru">
       <Values>
-        <LocaleValue Lang="cs" Value="Název souboru" />
+        <LocaleValue Lang="en" Value="Název souboru" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypSouboru">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ souboru" />
+        <LocaleValue Lang="en" Value="Typ souboru" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DetailAudituSubjektu">
       <Values>
-        <LocaleValue Lang="cs" Value="Detail auditu subjektu" />
+        <LocaleValue Lang="en" Value="Detail auditu subjektu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="EORI">
       <Values>
-        <LocaleValue Lang="cs" Value="EORI" />
+        <LocaleValue Lang="en" Value="EORI" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="NazevJmenoSubjektu">
       <Values>
-        <LocaleValue Lang="cs" Value="Název/jméno subjektu" />
+        <LocaleValue Lang="en" Value="Název/jméno subjektu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="UliceACP">
       <Values>
-        <LocaleValue Lang="cs" Value="Ulice a č.p." />
+        <LocaleValue Lang="en" Value="Ulice a č.p." />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Mesto">
       <Values>
-        <LocaleValue Lang="cs" Value="Město" />
+        <LocaleValue Lang="en" Value="Město" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatumZapocetiAuditu">
       <Values>
-        <LocaleValue Lang="cs" Value="Datum započetí auditu" />
+        <LocaleValue Lang="en" Value="Datum započetí auditu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatumUkonceniAuditu">
       <Values>
-        <LocaleValue Lang="cs" Value="Datum ukončení auditu" />
+        <LocaleValue Lang="en" Value="Datum ukončení auditu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatumZapisuDoAplikace">
       <Values>
-        <LocaleValue Lang="cs" Value="Datum zápisu do aplikace" />
+        <LocaleValue Lang="en" Value="Datum zápisu do aplikace" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CisloKontroly">
       <Values>
-        <LocaleValue Lang="cs" Value="Číslo kontroly" />
+        <LocaleValue Lang="en" Value="Číslo kontroly" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CisloProtokolu">
       <Values>
-        <LocaleValue Lang="cs" Value="Číslo protokolu" />
+        <LocaleValue Lang="en" Value="Číslo protokolu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PracovnikProvadejiciAudit">
       <Values>
-        <LocaleValue Lang="cs" Value="Pracovník provádějící audit" />
+        <LocaleValue Lang="en" Value="Pracovník provádějící audit" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Vysledek">
       <Values>
-        <LocaleValue Lang="cs" Value="Výsledek" />
+        <LocaleValue Lang="en" Value="Výsledek" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Typ">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ" />
+        <LocaleValue Lang="en" Value="Typ" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Edb_FileContent">
       <Values>
-        <LocaleValue Lang="cs" Value="edb_FileContent" />
+        <LocaleValue Lang="en" Value="edb_FileContent" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Velikost">
       <Values>
-        <LocaleValue Lang="cs" Value="Velikost" />
+        <LocaleValue Lang="en" Value="Velikost" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Historie">
       <Values>
-        <LocaleValue Lang="cs" Value="Historie" />
+        <LocaleValue Lang="en" Value="Historie" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZobrazeniSouboru">
       <Values>
-        <LocaleValue Lang="cs" Value="Zobrazení souboru" />
+        <LocaleValue Lang="en" Value="Zobrazení souboru" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DetailPovoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="Detail povolení" />
+        <LocaleValue Lang="en" Value="Detail povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DWHReport">
       <Values>
-        <LocaleValue Lang="cs" Value="DWH Report" />
+        <LocaleValue Lang="en" Value="DWH Report" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CisloPovoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="Číslo povolení" />
+        <LocaleValue Lang="en" Value="Číslo povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypPovoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ povolení" />
+        <LocaleValue Lang="en" Value="Typ povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Stav">
       <Values>
-        <LocaleValue Lang="cs" Value="Stav" />
+        <LocaleValue Lang="en" Value="Stav" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypUdalosti">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ události" />
+        <LocaleValue Lang="en" Value="Typ události" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CUDohledu">
       <Values>
-        <LocaleValue Lang="cs" Value="CÚ dohledu" />
+        <LocaleValue Lang="en" Value="CÚ dohledu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Edb_State">
       <Values>
-        <LocaleValue Lang="cs" Value="edb_State" />
+        <LocaleValue Lang="en" Value="edb_State" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Edb_AMSType">
       <Values>
-        <LocaleValue Lang="cs" Value="edb_AMSType" />
+        <LocaleValue Lang="en" Value="edb_AMSType" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="OK">
       <Values>
-        <LocaleValue Lang="cs" Value="OK" />
+        <LocaleValue Lang="en" Value="OK" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Zavrit">
       <Values>
-        <LocaleValue Lang="cs" Value="Zavřít" />
+        <LocaleValue Lang="en" Value="Zavřít" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Validace">
       <Values>
-        <LocaleValue Lang="cs" Value="Validace" />
+        <LocaleValue Lang="en" Value="Validace" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="VlozitZpravu">
       <Values>
-        <LocaleValue Lang="cs" Value="Vložit zprávu" />
+        <LocaleValue Lang="en" Value="Vložit zprávu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Btn_temp">
       <Values>
-        <LocaleValue Lang="cs" Value="btn_temp" />
+        <LocaleValue Lang="en" Value="btn_temp" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DetailPrehodnoceniPovoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="Detail přehodnocení povolení" />
+        <LocaleValue Lang="en" Value="Detail přehodnocení povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatumPrehodnoceni">
       <Values>
-        <LocaleValue Lang="cs" Value="Datum přehodnocení" />
+        <LocaleValue Lang="en" Value="Datum přehodnocení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CelniUradZapisujici">
       <Values>
-        <LocaleValue Lang="cs" Value="Celní úřad zapisující" />
+        <LocaleValue Lang="en" Value="Celní úřad zapisující" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CisloJednaciKontroly">
       <Values>
-        <LocaleValue Lang="cs" Value="Číslo jednací kontroly" />
+        <LocaleValue Lang="en" Value="Číslo jednací kontroly" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Popis">
       <Values>
-        <LocaleValue Lang="cs" Value="Popis" />
+        <LocaleValue Lang="en" Value="Popis" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Evid">
       <Values>
-        <LocaleValue Lang="cs" Value="Evid." />
+        <LocaleValue Lang="en" Value="Evid." />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CisloPovoleni1">
       <Values>
-        <LocaleValue Lang="cs" Value="číslo povolení" />
+        <LocaleValue Lang="en" Value="číslo povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZodpovednyCU">
       <Values>
-        <LocaleValue Lang="cs" Value="Zodpovědný CÚ" />
+        <LocaleValue Lang="en" Value="Zodpovědný CÚ" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Edb_FileContent_Audit">
       <Values>
-        <LocaleValue Lang="cs" Value="edb_FileContent_Audit" />
+        <LocaleValue Lang="en" Value="edb_FileContent_Audit" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="NejzazsiDatumPristihoPre524AEA19">
       <Values>
-        <LocaleValue Lang="cs" Value="Nejzazší datum příštího přehodnocení" />
+        <LocaleValue Lang="en" Value="Nejzazší datum příštího přehodnocení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZmenaLhutyPristihoPrehodnoceni">
       <Values>
-        <LocaleValue Lang="cs" Value="Změna lhůty příštího přehodnocení" />
+        <LocaleValue Lang="en" Value="Změna lhůty příštího přehodnocení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ProvestPrehodnoceni">
       <Values>
-        <LocaleValue Lang="cs" Value="Provést přehodnocení" />
+        <LocaleValue Lang="en" Value="Provést přehodnocení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsModifyWithFutureRemoval">
       <Values>
-        <LocaleValue Lang="cs" Value="Is modify with future removal" />
+        <LocaleValue Lang="en" Value="Is modify with future removal" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="General">
       <Values>
-        <LocaleValue Lang="cs" Value="General" />
+        <LocaleValue Lang="en" Value="General" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AMSEC">
       <Values>
-        <LocaleValue Lang="cs" Value="AMSEC" />
+        <LocaleValue Lang="en" Value="AMSEC" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CertificateSign">
       <Values>
-        <LocaleValue Lang="cs" Value="Certificate Sign" />
+        <LocaleValue Lang="en" Value="Certificate Sign" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CertificateMaint">
       <Values>
-        <LocaleValue Lang="cs" Value="Certificate Maint" />
+        <LocaleValue Lang="en" Value="Certificate Maint" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Rejection">
       <Values>
-        <LocaleValue Lang="cs" Value="Rejection" />
+        <LocaleValue Lang="en" Value="Rejection" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Withdrawal">
       <Values>
-        <LocaleValue Lang="cs" Value="Withdrawal" />
+        <LocaleValue Lang="en" Value="Withdrawal" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Files">
       <Values>
-        <LocaleValue Lang="cs" Value="Files" />
+        <LocaleValue Lang="en" Value="Files" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Events">
       <Values>
-        <LocaleValue Lang="cs" Value="Events" />
+        <LocaleValue Lang="en" Value="Events" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ValidationSummary">
       <Values>
-        <LocaleValue Lang="cs" Value="Validation summary" />
+        <LocaleValue Lang="en" Value="Validation summary" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CelniRezim">
       <Values>
-        <LocaleValue Lang="cs" Value="Celní režim" />
+        <LocaleValue Lang="en" Value="Celní režim" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PSC">
       <Values>
-        <LocaleValue Lang="cs" Value="PSČ" />
+        <LocaleValue Lang="en" Value="PSČ" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZemeSidla">
       <Values>
-        <LocaleValue Lang="cs" Value="Země sídla" />
+        <LocaleValue Lang="en" Value="Země sídla" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="OdpovednaOsobaDeklaranta">
       <Values>
-        <LocaleValue Lang="cs" Value="Odpovědná osoba deklaranta" />
+        <LocaleValue Lang="en" Value="Odpovědná osoba deklaranta" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SouhlasSeZasilanimTechni7E0253DC">
       <Values>
-        <LocaleValue Lang="cs" Value="Souhlas se zasíláním technických informací prostřednictím e-mailu" />
+        <LocaleValue Lang="en" Value="Souhlas se zasíláním technických informací prostřednictím e-mailu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Telefon">
       <Values>
-        <LocaleValue Lang="cs" Value="Telefon" />
+        <LocaleValue Lang="en" Value="Telefon" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="EMail">
       <Values>
-        <LocaleValue Lang="cs" Value="E-mail" />
+        <LocaleValue Lang="en" Value="E-mail" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CisloJednaci">
       <Values>
-        <LocaleValue Lang="cs" Value="Číslo jednací" />
+        <LocaleValue Lang="en" Value="Číslo jednací" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SpisovaZnacka">
       <Values>
-        <LocaleValue Lang="cs" Value="Spisová značka" />
+        <LocaleValue Lang="en" Value="Spisová značka" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="VyrizujeLinka">
       <Values>
-        <LocaleValue Lang="cs" Value="Vyřizuje/linka" />
+        <LocaleValue Lang="en" Value="Vyřizuje/linka" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatumRozhodnuti">
       <Values>
-        <LocaleValue Lang="cs" Value="Datum rozhodnutí" />
+        <LocaleValue Lang="en" Value="Datum rozhodnutí" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PocatekPlatnostiRozhodnuti">
       <Values>
-        <LocaleValue Lang="cs" Value="Počátek platnosti rozhodnutí" />
+        <LocaleValue Lang="en" Value="Počátek platnosti rozhodnutí" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypUdalostiRozhodnuti">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ události / rozhodnutí" />
+        <LocaleValue Lang="en" Value="Typ události / rozhodnutí" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="VydavajiciCU">
       <Values>
-        <LocaleValue Lang="cs" Value="Vydávající CÚ" />
+        <LocaleValue Lang="en" Value="Vydávající CÚ" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PollingPassword">
       <Values>
-        <LocaleValue Lang="cs" Value="Polling Password" />
+        <LocaleValue Lang="en" Value="Polling Password" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PovoleniPredkladatElektr38C13FCB">
       <Values>
-        <LocaleValue Lang="cs" Value="Povolení předkládat elektronicky celní prohlášení do režimu tranzit / povolení elektronicky komunikovat s CÚ určení v tranzitu" />
+        <LocaleValue Lang="en" Value="Povolení předkládat elektronicky celní prohlášení do režimu tranzit / povolení elektronicky komunikovat s CÚ určení v tranzitu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PovoleniElektronickyKomu566945CF">
       <Values>
-        <LocaleValue Lang="cs" Value="Povolení elektronicky komunikovat s CÚ záruky" />
+        <LocaleValue Lang="en" Value="Povolení elektronicky komunikovat s CÚ záruky" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="VyhledatDleCCertifikatu">
       <Values>
-        <LocaleValue Lang="cs" Value="Vyhledat dle č. certifikátu:" />
+        <LocaleValue Lang="en" Value="Vyhledat dle č. certifikátu:" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Vyhledat">
       <Values>
-        <LocaleValue Lang="cs" Value="Vyhledat" />
+        <LocaleValue Lang="en" Value="Vyhledat" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZobrazitDataCertifikatu">
       <Values>
-        <LocaleValue Lang="cs" Value="Zobrazit data certifikátu" />
+        <LocaleValue Lang="en" Value="Zobrazit data certifikátu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CisloCertifikatu">
       <Values>
-        <LocaleValue Lang="cs" Value="Číslo certifikátu" />
+        <LocaleValue Lang="en" Value="Číslo certifikátu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CertAutorita">
       <Values>
-        <LocaleValue Lang="cs" Value="Cert. autorita" />
+        <LocaleValue Lang="en" Value="Cert. autorita" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="RodneCislo">
       <Values>
-        <LocaleValue Lang="cs" Value="Rodné číslo" />
+        <LocaleValue Lang="en" Value="Rodné číslo" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="VydanoNa">
       <Values>
-        <LocaleValue Lang="cs" Value="Vydáno na" />
+        <LocaleValue Lang="en" Value="Vydáno na" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Vydavatel">
       <Values>
-        <LocaleValue Lang="cs" Value="Vydavatel" />
+        <LocaleValue Lang="en" Value="Vydavatel" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Email1">
       <Values>
-        <LocaleValue Lang="cs" Value="Email" />
+        <LocaleValue Lang="en" Value="Email" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Pouziti">
       <Values>
-        <LocaleValue Lang="cs" Value="Použití" />
+        <LocaleValue Lang="en" Value="Použití" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="StahnoutDataCertifikatu">
       <Values>
-        <LocaleValue Lang="cs" Value="Stáhnout data certifikátů" />
+        <LocaleValue Lang="en" Value="Stáhnout data certifikátů" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="VlozitCertifikatRucne">
       <Values>
-        <LocaleValue Lang="cs" Value="Vložit certifikát ručně" />
+        <LocaleValue Lang="en" Value="Vložit certifikát ručně" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Edb_ErrorDescription_EC_Maint">
       <Values>
-        <LocaleValue Lang="cs" Value="edb_ErrorDescription_EC_Maint" />
+        <LocaleValue Lang="en" Value="edb_ErrorDescription_EC_Maint" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Edb_Data_EC_Maint">
       <Values>
-        <LocaleValue Lang="cs" Value="edb_Data_EC_Maint" />
+        <LocaleValue Lang="en" Value="edb_Data_EC_Maint" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="StahnoutDataCertifikatu1">
       <Values>
-        <LocaleValue Lang="cs" Value="Stáhnout data certifikátu" />
+        <LocaleValue Lang="en" Value="Stáhnout data certifikátu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Edb_ErrorDescription_EC_Encr">
       <Values>
-        <LocaleValue Lang="cs" Value="edb_ErrorDescription_EC_Encr" />
+        <LocaleValue Lang="en" Value="edb_ErrorDescription_EC_Encr" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Edb_Data_EC_Encr">
       <Values>
-        <LocaleValue Lang="cs" Value="edb_Data_EC_Encr" />
+        <LocaleValue Lang="en" Value="edb_Data_EC_Encr" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypVznikuPovoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ vzniku povolení" />
+        <LocaleValue Lang="en" Value="Typ vzniku povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Login">
       <Values>
-        <LocaleValue Lang="cs" Value="Login" />
+        <LocaleValue Lang="en" Value="Login" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsEditFutureVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is edit future visible" />
+        <LocaleValue Lang="en" Value="Is edit future visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsCancelFutureVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is cancel future visible" />
+        <LocaleValue Lang="en" Value="Is cancel future visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TESTMODE">
       <Values>
-        <LocaleValue Lang="cs" Value="TEST MODE" />
+        <LocaleValue Lang="en" Value="TEST MODE" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="All">
       <Values>
-        <LocaleValue Lang="cs" Value="All " />
+        <LocaleValue Lang="en" Value="All " />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AcceptedApplications">
       <Values>
-        <LocaleValue Lang="cs" Value="Accepted applications" />
+        <LocaleValue Lang="en" Value="Accepted applications" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="RejectedApplications">
       <Values>
-        <LocaleValue Lang="cs" Value="Rejected applications" />
+        <LocaleValue Lang="en" Value="Rejected applications" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="GrantedAuthorizations">
       <Values>
-        <LocaleValue Lang="cs" Value="Granted authorizations" />
+        <LocaleValue Lang="en" Value="Granted authorizations" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="WithdrawnAuthorizations">
       <Values>
-        <LocaleValue Lang="cs" Value="Withdrawn authorizations" />
+        <LocaleValue Lang="en" Value="Withdrawn authorizations" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CancelledAuthorizations">
       <Values>
-        <LocaleValue Lang="cs" Value="Cancelled authorizations" />
+        <LocaleValue Lang="en" Value="Cancelled authorizations" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ExpiredAuthorizations">
       <Values>
-        <LocaleValue Lang="cs" Value="Expired authorizations" />
+        <LocaleValue Lang="en" Value="Expired authorizations" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AuthorizedPlaces">
       <Values>
-        <LocaleValue Lang="cs" Value="Authorized places" />
+        <LocaleValue Lang="en" Value="Authorized places" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CancelledPlaces">
       <Values>
-        <LocaleValue Lang="cs" Value="Cancelled places" />
+        <LocaleValue Lang="en" Value="Cancelled places" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="All1">
       <Values>
-        <LocaleValue Lang="cs" Value="All" />
+        <LocaleValue Lang="en" Value="All" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Applications">
       <Values>
-        <LocaleValue Lang="cs" Value="Applications" />
+        <LocaleValue Lang="en" Value="Applications" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="GrantedAuthorizations1">
       <Values>
-        <LocaleValue Lang="cs" Value="Granted Authorizations" />
+        <LocaleValue Lang="en" Value="Granted Authorizations" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ME">
       <Values>
-        <LocaleValue Lang="cs" Value="ME" />
+        <LocaleValue Lang="en" Value="ME" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="LocalizedString3">
       <Values>
-        <LocaleValue Lang="cs" Value="|" />
+        <LocaleValue Lang="en" Value="|" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="EN">
       <Values>
-        <LocaleValue Lang="cs" Value="EN" />
+        <LocaleValue Lang="en" Value="EN" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Places">
       <Values>
-        <LocaleValue Lang="cs" Value="Places" />
+        <LocaleValue Lang="en" Value="Places" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Communication">
       <Values>
-        <LocaleValue Lang="cs" Value="Communication" />
+        <LocaleValue Lang="en" Value="Communication" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Withdraw1">
       <Values>
-        <LocaleValue Lang="cs" Value="Withdraw 1" />
+        <LocaleValue Lang="en" Value="Withdraw 1" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Cancel1">
       <Values>
-        <LocaleValue Lang="cs" Value="Cancel 1" />
+        <LocaleValue Lang="en" Value="Cancel 1" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="EditFutureChange">
       <Values>
-        <LocaleValue Lang="cs" Value="Edit future change" />
+        <LocaleValue Lang="en" Value="Edit future change" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CancelFutureChange">
       <Values>
-        <LocaleValue Lang="cs" Value="Cancel future change" />
+        <LocaleValue Lang="en" Value="Cancel future change" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsModyficationWithFutureRemoval">
       <Values>
-        <LocaleValue Lang="cs" Value="Is modyfication with future removal" />
+        <LocaleValue Lang="en" Value="Is modyfication with future removal" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Result">
       <Values>
-        <LocaleValue Lang="cs" Value="Result" />
+        <LocaleValue Lang="en" Value="Result" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DetailSchvalenehoMista">
       <Values>
-        <LocaleValue Lang="cs" Value="Detail schváleného místa" />
+        <LocaleValue Lang="en" Value="Detail schváleného místa" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Navigation">
       <Values>
-        <LocaleValue Lang="cs" Value="Navigation" />
+        <LocaleValue Lang="en" Value="Navigation" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Zruseni">
       <Values>
-        <LocaleValue Lang="cs" Value="Zrušení" />
+        <LocaleValue Lang="en" Value="Zrušení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Modifikace">
       <Values>
-        <LocaleValue Lang="cs" Value="Modifikace" />
+        <LocaleValue Lang="en" Value="Modifikace" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CisloSchvalenehoMista">
       <Values>
-        <LocaleValue Lang="cs" Value="číslo schváleného místa" />
+        <LocaleValue Lang="en" Value="číslo schváleného místa" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="OsobaKtereByloMistoSchvalenoEORI">
       <Values>
-        <LocaleValue Lang="cs" Value="Osoba, které bylo místo schváleno (EORI)" />
+        <LocaleValue Lang="en" Value="Osoba, které bylo místo schváleno (EORI)" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="NazevJmenoSubjektu1">
       <Values>
-        <LocaleValue Lang="cs" Value="Název / jméno subjektu" />
+        <LocaleValue Lang="en" Value="Název / jméno subjektu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="EORI1">
       <Values>
-        <LocaleValue Lang="cs" Value="(1) EORI" />
+        <LocaleValue Lang="en" Value="(1) EORI" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CelniRezim1">
       <Values>
-        <LocaleValue Lang="cs" Value="(2) Celní režim" />
+        <LocaleValue Lang="en" Value="(2) Celní režim" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PrijetimCP">
       <Values>
-        <LocaleValue Lang="cs" Value="Přijetím CP" />
+        <LocaleValue Lang="en" Value="Přijetím CP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Dtp_LastEventValidityStartDate">
       <Values>
-        <LocaleValue Lang="cs" Value="dtp_LastEventValidityStartDate" />
+        <LocaleValue Lang="en" Value="dtp_LastEventValidityStartDate" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PartNumber">
       <Values>
-        <LocaleValue Lang="cs" Value="Part Number" />
+        <LocaleValue Lang="en" Value="Part Number" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DalsiSubjektPodavajiciCeCA549A7B">
       <Values>
-        <LocaleValue Lang="cs" Value="(1.1) Další subjekt podávající celní prohlášení?" />
+        <LocaleValue Lang="en" Value="(1.1) Další subjekt podávající celní prohlášení?" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PocatekPlatnostiRozhodnuti1">
       <Values>
-        <LocaleValue Lang="cs" Value="(6) Počátek platnosti rozhodnutí" />
+        <LocaleValue Lang="en" Value="(6) Počátek platnosti rozhodnutí" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="KonecPlatnostiRozhodnuti">
       <Values>
-        <LocaleValue Lang="cs" Value="(6) Konec platnosti rozhodnutí" />
+        <LocaleValue Lang="en" Value="(6) Konec platnosti rozhodnutí" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="OmezeniDelkyPlatnosti">
       <Values>
-        <LocaleValue Lang="cs" Value="Omezení délky platnosti" />
+        <LocaleValue Lang="en" Value="Omezení délky platnosti" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatumUkonceniRozhodnuti">
       <Values>
-        <LocaleValue Lang="cs" Value="Datum ukončení rozhodnutí" />
+        <LocaleValue Lang="en" Value="Datum ukončení rozhodnutí" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZpetnaUcinnost">
       <Values>
-        <LocaleValue Lang="cs" Value="Zpětná účinnost" />
+        <LocaleValue Lang="en" Value="Zpětná účinnost" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AZpetnaUcinnostOd">
       <Values>
-        <LocaleValue Lang="cs" Value="(6a) Zpětná účinnost od" />
+        <LocaleValue Lang="en" Value="(6a) Zpětná účinnost od" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="KodKN">
       <Values>
-        <LocaleValue Lang="cs" Value="Kód KN" />
+        <LocaleValue Lang="en" Value="Kód KN" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DoplnkovyKod">
       <Values>
-        <LocaleValue Lang="cs" Value="Doplňkový kód" />
+        <LocaleValue Lang="en" Value="Doplňkový kód" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="KodKNProDozajisteni">
       <Values>
-        <LocaleValue Lang="cs" Value="Kód KN pro dozajištění" />
+        <LocaleValue Lang="en" Value="Kód KN pro dozajištění" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Mnozstvi">
       <Values>
-        <LocaleValue Lang="cs" Value="Množství" />
+        <LocaleValue Lang="en" Value="Množství" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="HodnotaVEUR">
       <Values>
-        <LocaleValue Lang="cs" Value="Hodnota v EUR" />
+        <LocaleValue Lang="en" Value="Hodnota v EUR" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="OdpisovaMernaJednotka">
       <Values>
-        <LocaleValue Lang="cs" Value="Odpisová měrná jednotka" />
+        <LocaleValue Lang="en" Value="Odpisová měrná jednotka" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Vyteznost">
       <Values>
-        <LocaleValue Lang="cs" Value="Výtěžnost" />
+        <LocaleValue Lang="en" Value="Výtěžnost" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CisloCU">
       <Values>
-        <LocaleValue Lang="cs" Value="Číslo CÚ" />
+        <LocaleValue Lang="en" Value="Číslo CÚ" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="LhutaProVyrizeniRezimuMesice">
       <Values>
-        <LocaleValue Lang="cs" Value="(13) Lhůta pro vyřízení režimu (měsíce)" />
+        <LocaleValue Lang="en" Value="(13) Lhůta pro vyřízení režimu (měsíce)" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AZjednodusenyPostupMistn82DE7E13">
       <Values>
-        <LocaleValue Lang="cs" Value="(14a) Zjednodušený postup místního řízení při propuštění do režimu (Povolen kód 3)" />
+        <LocaleValue Lang="en" Value="(14a) Zjednodušený postup místního řízení při propuštění do režimu (Povolen kód 3)" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="BZjednodusenyPostupMistn06347D3A">
       <Values>
-        <LocaleValue Lang="cs" Value="(14b) Zjednodušený postup místního řízení při vyřízení režimu" />
+        <LocaleValue Lang="en" Value="(14b) Zjednodušený postup místního řízení při vyřízení režimu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZajisteniCelnihoDluhuPozadovano">
       <Values>
-        <LocaleValue Lang="cs" Value="(16) Zajištění celního dluhu požadováno" />
+        <LocaleValue Lang="en" Value="(16) Zajištění celního dluhu požadováno" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZarukaVJinemState">
       <Values>
-        <LocaleValue Lang="cs" Value="Záruka v jiném státě   " />
+        <LocaleValue Lang="en" Value="Záruka v jiném státě   " />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="LocalizedString4">
       <Values>
-        <LocaleValue Lang="cs" Value="9120" />
+        <LocaleValue Lang="en" Value="9120" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZD2">
       <Values>
-        <LocaleValue Lang="cs" Value="9ZD2" />
+        <LocaleValue Lang="en" Value="9ZD2" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypPozadovanehoSkladu">
       <Values>
-        <LocaleValue Lang="cs" Value="(18) Typ požadovaného skladu" />
+        <LocaleValue Lang="en" Value="(18) Typ požadovaného skladu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SkladNeboSkladovaciZarizeniTypE">
       <Values>
-        <LocaleValue Lang="cs" Value="(19) Sklad nebo skladovací zařízení (Typ E)" />
+        <LocaleValue Lang="en" Value="(19) Sklad nebo skladovací zařízení (Typ E)" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="LhutaProPodaniInventuryMesice">
       <Values>
-        <LocaleValue Lang="cs" Value="(20) Lhůta pro podání inventury (měsíce)" />
+        <LocaleValue Lang="en" Value="(20) Lhůta pro podání inventury (měsíce)" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="RovnocenneZbozi">
       <Values>
-        <LocaleValue Lang="cs" Value="(18) Rovnocenné zboží" />
+        <LocaleValue Lang="en" Value="(18) Rovnocenné zboží" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="KonecneUziti">
       <Values>
-        <LocaleValue Lang="cs" Value="Konečné užití" />
+        <LocaleValue Lang="en" Value="Konečné užití" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PredcasnyVyvoz">
       <Values>
-        <LocaleValue Lang="cs" Value="(19) Předčasný vývoz" />
+        <LocaleValue Lang="en" Value="(19) Předčasný vývoz" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Zajisteni">
       <Values>
-        <LocaleValue Lang="cs" Value="(16) % zajištění" />
+        <LocaleValue Lang="en" Value="(16) % zajištění" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DozajisteniCelnihoDluhuP7417BCF5">
       <Values>
-        <LocaleValue Lang="cs" Value="Dozajištění celního dluhu požadováno" />
+        <LocaleValue Lang="en" Value="Dozajištění celního dluhu požadováno" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Dozajisteni">
       <Values>
-        <LocaleValue Lang="cs" Value="% dozajištění" />
+        <LocaleValue Lang="en" Value="% dozajištění" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Manipulace">
       <Values>
-        <LocaleValue Lang="cs" Value="Manipulace" />
+        <LocaleValue Lang="en" Value="Manipulace" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="LhutaProManipulaciDny">
       <Values>
-        <LocaleValue Lang="cs" Value="Lhůta pro manipulaci (dny)" />
+        <LocaleValue Lang="en" Value="Lhůta pro manipulaci (dny)" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Vyneti">
       <Values>
-        <LocaleValue Lang="cs" Value="Vynětí" />
+        <LocaleValue Lang="en" Value="Vynětí" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="LhutaProVynetiDny">
       <Values>
-        <LocaleValue Lang="cs" Value="Lhůta pro vynětí (dny)" />
+        <LocaleValue Lang="en" Value="Lhůta pro vynětí (dny)" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="HospodarskaPodminka">
       <Values>
-        <LocaleValue Lang="cs" Value="Hospodářská podmínka" />
+        <LocaleValue Lang="en" Value="Hospodářská podmínka" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="OsvobozovaciKod">
       <Values>
-        <LocaleValue Lang="cs" Value="Osvobozovací kód" />
+        <LocaleValue Lang="en" Value="Osvobozovací kód" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="NahradniVyrobky">
       <Values>
-        <LocaleValue Lang="cs" Value="(19) Náhradní výrobky" />
+        <LocaleValue Lang="en" Value="(19) Náhradní výrobky" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="NahradniVyrobkyPopis">
       <Values>
-        <LocaleValue Lang="cs" Value="(19) Náhradní výrobky - popis" />
+        <LocaleValue Lang="en" Value="(19) Náhradní výrobky - popis" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PovoleniUdelenoJineOsobe9363C1A4">
       <Values>
-        <LocaleValue Lang="cs" Value="(20) Povolení uděleno jiné osobě než té, která nechává provádět zušlechťovací operace (čl. 147 odst. 2.kodexu)" />
+        <LocaleValue Lang="en" Value="(20) Povolení uděleno jiné osobě než té, která nechává provádět zušlechťovací operace (čl. 147 odst. 2.kodexu)" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SystemProsteVymeny">
       <Values>
-        <LocaleValue Lang="cs" Value="Systém prosté výměny" />
+        <LocaleValue Lang="en" Value="Systém prosté výměny" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SystemProsteVymeny1">
       <Values>
-        <LocaleValue Lang="cs" Value="(18) Systém prosté výměny" />
+        <LocaleValue Lang="en" Value="(18) Systém prosté výměny" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DuvodOdnetiPovoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="Důvod odnětí povolení" />
+        <LocaleValue Lang="en" Value="Důvod odnětí povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DuvodOdnetiPovoleniSlovy">
       <Values>
-        <LocaleValue Lang="cs" Value="Důvod odnětí povolení slovy" />
+        <LocaleValue Lang="en" Value="Důvod odnětí povolení slovy" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DuvodZamitnutiZadosti">
       <Values>
-        <LocaleValue Lang="cs" Value="Důvod zamítnutí žádosti " />
+        <LocaleValue Lang="en" Value="Důvod zamítnutí žádosti " />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DuvodZamitnutiZadostiSlovy">
       <Values>
-        <LocaleValue Lang="cs" Value="Důvod zamítnutí žádosti slovy" />
+        <LocaleValue Lang="en" Value="Důvod zamítnutí žádosti slovy" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypPozadovanehoSkladu1">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ požadovaného skladu" />
+        <LocaleValue Lang="en" Value="Typ požadovaného skladu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="PovoleniDleClanku147Odst2CK">
       <Values>
-        <LocaleValue Lang="cs" Value="povolení dle článku 147 odst. 2 CK" />
+        <LocaleValue Lang="en" Value="povolení dle článku 147 odst. 2 CK" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IdentifikacniCisloEORI">
       <Values>
-        <LocaleValue Lang="cs" Value="Identifikační číslo (EORI)" />
+        <LocaleValue Lang="en" Value="Identifikační číslo (EORI)" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypManipulace">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ manipulace" />
+        <LocaleValue Lang="en" Value="Typ manipulace" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="KodKNPoManipulaci">
       <Values>
-        <LocaleValue Lang="cs" Value="Kód KN po manipulaci" />
+        <LocaleValue Lang="en" Value="Kód KN po manipulaci" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Zkontrolovano">
       <Values>
-        <LocaleValue Lang="cs" Value="Zkontrolováno" />
+        <LocaleValue Lang="en" Value="Zkontrolováno" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Edb_FileContent_CTRL">
       <Values>
-        <LocaleValue Lang="cs" Value="edb_FileContent_CTRL" />
+        <LocaleValue Lang="en" Value="edb_FileContent_CTRL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypVznikuPovoleniSP">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ vzniku povolení / SP" />
+        <LocaleValue Lang="en" Value="Typ vzniku povolení / SP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Povoleni">
       <Values>
-        <LocaleValue Lang="cs" Value="Povolení" />
+        <LocaleValue Lang="en" Value="Povolení" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Zamitnuti">
       <Values>
-        <LocaleValue Lang="cs" Value="Zamítnutí" />
+        <LocaleValue Lang="en" Value="Zamítnutí" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Odneti">
       <Values>
-        <LocaleValue Lang="cs" Value="Odnětí" />
+        <LocaleValue Lang="en" Value="Odnětí" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Odstraneni">
       <Values>
-        <LocaleValue Lang="cs" Value="Odstranění" />
+        <LocaleValue Lang="en" Value="Odstranění" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="VlozitSoubor">
       <Values>
-        <LocaleValue Lang="cs" Value="Vložit soubor" />
+        <LocaleValue Lang="en" Value="Vložit soubor" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DownloadFileLink">
       <Values>
-        <LocaleValue Lang="cs" Value="Download file link" />
+        <LocaleValue Lang="en" Value="Download file link" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ShowAddNewFilePanel">
       <Values>
-        <LocaleValue Lang="cs" Value="Show add new file panel" />
+        <LocaleValue Lang="en" Value="Show add new file panel" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AddNewFile">
       <Values>
-        <LocaleValue Lang="cs" Value="Add new file" />
+        <LocaleValue Lang="en" Value="Add new file" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="JePlnyTextCiJenDoplnekPl035366F9">
       <Values>
-        <LocaleValue Lang="cs" Value="Je plný text či jen doplněk plného textu?" />
+        <LocaleValue Lang="en" Value="Je plný text či jen doplněk plného textu?" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="NewFilesCollection">
       <Values>
-        <LocaleValue Lang="cs" Value="New files collection" />
+        <LocaleValue Lang="en" Value="New files collection" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IsSaveBtnVisible">
       <Values>
-        <LocaleValue Lang="cs" Value="Is save btn visible" />
+        <LocaleValue Lang="en" Value="Is save btn visible" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="HistoricVersion">
       <Values>
-        <LocaleValue Lang="cs" Value=" Historic version" />
+        <LocaleValue Lang="en" Value=" Historic version" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="SpecialAX">
       <Values>
-        <LocaleValue Lang="cs" Value="SpecialAX" />
+        <LocaleValue Lang="en" Value="SpecialAX" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Goods">
       <Values>
-        <LocaleValue Lang="cs" Value="Goods" />
+        <LocaleValue Lang="en" Value="Goods" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CustomsOffice">
       <Values>
-        <LocaleValue Lang="cs" Value="Customs office" />
+        <LocaleValue Lang="en" Value="Customs office" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Seals">
       <Values>
-        <LocaleValue Lang="cs" Value="Seals" />
+        <LocaleValue Lang="en" Value="Seals" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="File">
       <Values>
-        <LocaleValue Lang="cs" Value="File" />
+        <LocaleValue Lang="en" Value="File" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Control">
       <Values>
-        <LocaleValue Lang="cs" Value="Control" />
+        <LocaleValue Lang="en" Value="Control" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="EventHistory">
       <Values>
-        <LocaleValue Lang="cs" Value="Event history" />
+        <LocaleValue Lang="en" Value="Event history" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Save">
       <Values>
-        <LocaleValue Lang="cs" Value="Save" />
+        <LocaleValue Lang="en" Value="Save" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="LoadLatestVersion">
       <Values>
-        <LocaleValue Lang="cs" Value="Load latest version" />
+        <LocaleValue Lang="en" Value="Load latest version" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TINHolder">
       <Values>
-        <LocaleValue Lang="cs" Value="TIN Holder" />
+        <LocaleValue Lang="en" Value="TIN Holder" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CisloZJP">
       <Values>
-        <LocaleValue Lang="cs" Value="číslo ZJP" />
+        <LocaleValue Lang="en" Value="číslo ZJP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypPovoleniZJP">
       <Values>
-        <LocaleValue Lang="cs" Value="Typ povolení ZJP" />
+        <LocaleValue Lang="en" Value="Typ povolení ZJP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="OperatorCountry">
       <Values>
-        <LocaleValue Lang="cs" Value="Operator country" />
+        <LocaleValue Lang="en" Value="Operator country" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Delete">
       <Values>
-        <LocaleValue Lang="cs" Value="Delete" />
+        <LocaleValue Lang="en" Value="Delete" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Add">
       <Values>
-        <LocaleValue Lang="cs" Value="Add" />
+        <LocaleValue Lang="en" Value="Add" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Odebrat">
       <Values>
-        <LocaleValue Lang="cs" Value="Odebrat" />
+        <LocaleValue Lang="en" Value="Odebrat" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ZboziVzdyVyjmuteZeZJP">
       <Values>
-        <LocaleValue Lang="cs" Value="Zboží vždy vyjmuté ze ZJP" />
+        <LocaleValue Lang="en" Value="Zboží vždy vyjmuté ze ZJP" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CelniUrad">
       <Values>
-        <LocaleValue Lang="cs" Value="Celní úřad" />
+        <LocaleValue Lang="en" Value="Celní úřad" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CustomsOfficeReferenceNumber">
       <Values>
-        <LocaleValue Lang="cs" Value="Customs Office Reference Number" />
+        <LocaleValue Lang="en" Value="Customs Office Reference Number" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Zeme">
       <Values>
-        <LocaleValue Lang="cs" Value="Země" />
+        <LocaleValue Lang="en" Value="Země" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Misto">
       <Values>
-        <LocaleValue Lang="cs" Value="Místo" />
+        <LocaleValue Lang="en" Value="Místo" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="IDZeme">
       <Values>
-        <LocaleValue Lang="cs" Value="ID země" />
+        <LocaleValue Lang="en" Value="ID země" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Remove">
       <Values>
-        <LocaleValue Lang="cs" Value="Remove" />
+        <LocaleValue Lang="en" Value="Remove" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AddAgreedLocation">
       <Values>
-        <LocaleValue Lang="cs" Value="Add Agreed Location" />
+        <LocaleValue Lang="en" Value="Add Agreed Location" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="TypeOfPeriod">
       <Values>
-        <LocaleValue Lang="cs" Value="Type of period" />
+        <LocaleValue Lang="en" Value="Type of period" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="RemovePeriod">
       <Values>
-        <LocaleValue Lang="cs" Value="Remove period" />
+        <LocaleValue Lang="en" Value="Remove period" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="RemoveGuarantee">
       <Values>
-        <LocaleValue Lang="cs" Value="Remove guarantee" />
+        <LocaleValue Lang="en" Value="Remove guarantee" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="CurrentDecisionFiles">
       <Values>
-        <LocaleValue Lang="cs" Value="Current Decision Files" />
+        <LocaleValue Lang="en" Value="Current Decision Files" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AddNewFiles">
       <Values>
-        <LocaleValue Lang="cs" Value="Add New Files" />
+        <LocaleValue Lang="en" Value="Add New Files" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="FileReaderAddAnnex">
       <Values>
-        <LocaleValue Lang="cs" Value="File reader add annex" />
+        <LocaleValue Lang="en" Value="File reader add annex" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AddFile">
       <Values>
-        <LocaleValue Lang="cs" Value="Add File" />
+        <LocaleValue Lang="en" Value="Add File" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="AddedNewFiles">
       <Values>
-        <LocaleValue Lang="cs" Value="Added new files" />
+        <LocaleValue Lang="en" Value="Added new files" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Edb_FileGUID_CTRL">
       <Values>
-        <LocaleValue Lang="cs" Value="edb_FileGUID_CTRL" />
+        <LocaleValue Lang="en" Value="edb_FileGUID_CTRL" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="DatumEvidence">
       <Values>
-        <LocaleValue Lang="cs" Value="Datum evidence" />
+        <LocaleValue Lang="en" Value="Datum evidence" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Current">
       <Values>
-        <LocaleValue Lang="cs" Value="Current" />
+        <LocaleValue Lang="en" Value="Current" />
       </Values>
     </LocalizedString>
   </Strings>
