@@ -554,6 +554,9 @@
                           <Caption value="New application" />
                           <Panel.Height value="#" />
                           <Panel.Width value="160px" />
+                          <OnClick>
+                            <ActionEvent ReferencedAction="~newApplicationNavigation" />
+                          </OnClick>
                           <CssClass>
                             <CssClassConditional>
                               <ClassName value="{theme}-button" />
@@ -9416,13 +9419,13 @@ form.model.AMS.Event.Authorization.LimitedAuthorizationValidity = TRUE
 form.model.AMS.Event.Authorization.AuthorizationValidUntil = addDays(form._actualDate, 1)
 
 if (form.mode in [enums.mode.Create, enums.mode.CreateModify ]) then
-	form.model.AMS.Event.ValidityStartDate = addHours(getDateTime(), 1)
+	form.model.AMS.Event.ValidityStartDate = addHours(form._actualDateTime, 1)
 	form.model.AMS.Event.ValidityEndDate = addYears(getDate(), 79)
 	form.model.AMS.Event.EventType.Key = "NA"
 	form.model.AMS.Event.EvidenceDate = getDateTime()
 endif
 
-if (form.mode in [enums.mode.Modify, enums.mode.RejectModify, enums.mode.CreateModify, enums.mode.AuthorizeModify, enums.mode.CancelModify, enums.mode.WithdrawModify ]) then
+if (form.mode in [enums.mode.Modify, enums.mode.RejectModify, enums.mode.CreateModify, enums.mode.AuthorizeModify, enums.mode.CancelModify, enums.mode.Withdraw, enums.mode.WithdrawModify ]) then
 	form.auxiliaryVariables.decisionDateCaption = "Datum doručení žádosti"
 	form.model.AMS.Event.ValidityStartDate = addHours(form._actualDateTime,1)
 	form.model.AMS.Event.EvidenceDate = form._actualDateTime
@@ -9703,6 +9706,7 @@ if (isTrue(state in ["AUA", "FUA"] )) then
 endif
 
 if 	isTrue(state="AUC") then
+
 	if (form.model.AMS.AuthorizationType.Code <> "SSE") then	//Originally PP
 		form.menusVisibilty.isGoodsMenuVisible = true
 		form.menusVisibilty.isAuthorizationMenuVisible = true
@@ -9893,6 +9897,10 @@ endif
 
 if ((form.mode = enums.mode.Authorize ) and (form.model.AMS.State.Key = "AUC")) then
 	form.panelsVisibility.isRespPersonVisible = true
+endIf
+
+if ( form.mode in [enums.mode.Cancel, enums.mode.CancelModify ]) then
+	form.menusVisibilty.isAuthorizationWithdrawalMenuVisible = true
 endIf]]></Script>
       </ActionLangBody>
       <DataContext>
@@ -10029,11 +10037,11 @@ form.model.AMS.Event.Authorization.ResponsiblePersonWantsToBeNotified = true
 form.actions.sortGoodsItemBeforeSending()
 
 if(form.model.validationErrorsCount() = 0) then
-	if form.mode = packages.main.enums.mode.Create then
+	if form.mode in [enums.mode.Create, enums.mode.CreateModify ] then
 		form.newApplication.fromJson(form.model.toJson())
 		form.actions.sendMessageToMTS("AMSSPApplication",form.newApplication.toJson())
 	else
-		if form.mode = packages.main.enums.mode.Modify then
+		if form.mode in [enums.mode.Modify, enums.mode.AuthorizeModify] then
 			if isTrue(form.state = "APA") then
 				form.modifyApplication.fromJson(form.model.toJson())
 				form.actions.sendMessageToMTS("AMSSPApplicationModification",form.modifyApplication.toJson())
@@ -10042,11 +10050,11 @@ if(form.model.validationErrorsCount() = 0) then
 					form.rejectApplication.fromJson(form.model.toJson())
 					form.actions.sendMessageToMTS("AMSSPApplicationRejectionModification",form.rejectApplication.toJson())
 				else
-					if (isTrue(form.state = "AUA") OR isTrue(form.state = "FUA") OR isTrue(form.state = "AUE") ) then
+					if (isTrue(form.state in ["AUA","FUA","AUE"] )) then
 						form.modifyAuthorisation.fromJson(form.model.toJson())
 						form.actions.sendMessageToMTS("AMSSPAuthorizationModification",form.modifyAuthorisation.toJson())
 					else
-						if (isTrue(form.state = "AUW") OR isTrue(form.state = "FUW")) then
+						if (isTrue(form.state in ["AUW", "FUW"] )) then
 							form.withdrawOrCancelAuthorisation.fromJson(form.model.toJson())
 							form.actions.sendMessageToMTS("AMSSPAuthorizationWithdrawalModification",form.withdrawOrCancelAuthorisation.toJson())
 						else
@@ -10059,24 +10067,45 @@ if(form.model.validationErrorsCount() = 0) then
 				endif
 			endif
 		else
-			if form.mode = packages.main.enums.mode.Reject then
+			if form.mode = enums.mode.Reject then
 					form.rejectApplication.fromJson(form.model.toJson())
 					form.actions.sendMessageToMTS("AMSSPApplicationRejection",form.rejectApplication.toJson())				
 			else
-				if form.mode = packages.main.enums.mode.Authorize then
+				if form.mode = enums.mode.Authorize then
 					if (isTrue(form.state = "APA") OR isTrue(form.state = "AUC") OR isTrue(form.state = "AUW")) then
 						form.authorizeApplication.fromJson(form.model.toJson())
 						form.authorizeApplication.AMS.AMSID.clear()
 						form.actions.sendMessageToMTS("AMSSPAuthorization",form.authorizeApplication.toJson())
 					endif
 				else 
-					if form.mode = packages.main.enums.mode.Withdraw then
+					if form.mode = enums.mode.Withdraw then
 						form.withdrawOrCancelAuthorisation.fromJson(form.model.toJson())
 						form.actions.sendMessageToMTS("AMSSPAuthorizationWithdrawal", form.withdrawOrCancelAuthorisation.toJson())
 					else
-						if form.mode = packages.main.enums.mode.Cancel then
+						if form.mode = enums.mode.Cancel then
 							form.withdrawOrCancelAuthorisation.fromJson(form.model.toJson())
 							form.actions.sendMessageToMTS("AMSSPAuthorizationCancellation", form.withdrawOrCancelAuthorisation.toJson())
+						else
+							if form.mode = enums.mode.RejectModify then
+								form.rejectApplication.fromJson(form.model.toJson())
+								form.actions.sendMessageToMTS("AMSSPApplicationRejectionModification",form.rejectApplication.toJson())
+							else
+								if form.mode = enums.mode.AuthorizeModify then
+									form.authorizeApplication.fromJson(form.model.toJson())
+									form.authorizeApplication.AMS.AMSID.clear()
+									form.actions.sendMessageToMTS("AMSSPAuthorizationModification",form.authorizeApplication.toJson())
+								else
+									if form.mode = enums.mode.WithdrawModify then
+										form.withdrawOrCancelAuthorisation.fromJson(form.model.toJson())
+										form.actions.sendMessageToMTS("AMSSPAuthorizationWithdrawalModification", form.withdrawOrCancelAuthorisation.toJson())
+									else
+										if form.mode = enums.mode.CancelModify then
+											form.withdrawOrCancelAuthorisation.fromJson(form.model.toJson())
+											form.actions.sendMessageToMTS("AMSSPAuthorizationCancellationModification", form.withdrawOrCancelAuthorisation.toJson())
+										endIf
+									endIf
+								endIf
+							endIf
 						endif
 					endif
 				endif
@@ -10648,6 +10677,19 @@ endIf]]></Script>
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
         <Script><![CDATA[params.data.removeMe()]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="newApplicationNavigation" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[var userDecision = system.confirm("TODO - Localisation - Do you want to create a new application?")
+
+if userDecision then
+	navigation.main.SP_EditForm.go(packages.main.enums.mode.Create, defaultString())
+endIf]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />

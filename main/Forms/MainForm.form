@@ -16340,6 +16340,7 @@ globals.isLoading = false]]></Script>
       <ActionLangBody IsValid="True">
         <Script><![CDATA[globals.isLoading = true
 form.apiobjects.listCtrl.setReady(false)
+form.apiobjects.listCtrl.clearInvisibleColumnsFilters()
 form.apiobjects.listCtrl.clearState()
 form.actions.clearActiveMenus()
 form.activeMenuItem.all_link_active = true
@@ -16573,7 +16574,7 @@ endif
 
 /* Authorization Cancelled */
 if isTrue(loadedState = "AUC") then
-	form.buttonsVisibility.isModifyVisible = false
+	form.buttonsVisibility.isModifyVisible = declarationIsValiInFuture
 	form.buttonsVisibility.isAuthorizeVisible = declarationIsValiInFuture
 	form._AuthorizeButtonCaption="Authorize"
 	form.buttonsVisibility.isRejectVisible = false
@@ -16584,7 +16585,7 @@ endif
 
 /* Authorization Expired */
 if loadedState = "AUE" then
-	form.buttonsVisibility.isModifyVisible = false
+	form.buttonsVisibility.isModifyVisible = declarationIsValiInFuture
 	form.buttonsVisibility.isAuthorizeVisible = declarationIsValiInFuture
 	form._AuthorizeButtonCaption="Re-Approval"
 	form.buttonsVisibility.isRejectVisible = false
