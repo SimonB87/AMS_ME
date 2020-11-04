@@ -198,7 +198,7 @@
               </IsValid>
             </Validator>
             <Validator Name="regex">
-              <MtsImportOptions.MTS.Regex value="ME[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}" />
+              <MtsImportOptions.MTS.Regex value="[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}" />
               <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
               <ErrorMessage IsValid="True">
                 <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
@@ -207,7 +207,7 @@
                 </ResultType>
               </ErrorMessage>
               <IsValid IsValid="True">
-                <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "^ME[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}$") : true)]]></ExpressionText>
+                <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}$") : true)]]></ExpressionText>
                 <ResultType>
                   <BaseType value="Bool" />
                 </ResultType>
@@ -234,7 +234,7 @@
           <Children>
             <Attribute>
               <Name value="OperatorName" />
-              <Caption value="Název Subjektu" />
+              <Caption value="Název subjektu" />
               <IsRequired value="True" />
               <MetaType reference="+MetaTypes.OperatorName" />
               <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/OperatorName" />
@@ -351,7 +351,7 @@
               <MtsImportOptions.MTS.Type value="element" />
               <DeclaredType>
                 <AttributeType>
-                  <StrMaxLength value="30" />
+                  <StrMaxLength value="50" />
                 </AttributeType>
               </DeclaredType>
               <PropertyLocalizationData.PropertyLocalizations>
@@ -372,7 +372,7 @@
               <MtsImportOptions.MTS.Type value="element" />
               <DeclaredType>
                 <AttributeType>
-                  <StrMaxLength value="20" />
+                  <StrMaxLength value="50" />
                 </AttributeType>
               </DeclaredType>
               <PropertyLocalizationData.PropertyLocalizations>
@@ -707,7 +707,7 @@ THEN Authorisation Valid Until shall be filled */]]></ExpressionText>
                   <MtsImportOptions.MTS.Type value="element" />
                   <DeclaredType>
                     <AttributeType>
-                      <StrMaxLength value="50" />
+                      <StrMaxLength value="70" />
                     </AttributeType>
                   </DeclaredType>
                   <PropertyLocalizationData.PropertyLocalizations>
@@ -767,7 +767,7 @@ THEN Authorisation Valid Until shall be filled */]]></ExpressionText>
                   <MtsImportOptions.MTS.Type value="element" />
                   <DeclaredType>
                     <AttributeType>
-                      <StrMaxLength value="200" />
+                      <StrMaxLength value="256" />
                     </AttributeType>
                   </DeclaredType>
                   <PropertyLocalizationData.PropertyLocalizations>
@@ -2240,7 +2240,7 @@ THEN Responsible Person Email shall be filled. */]]></ExpressionText>
                   </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
                     <Include>
-                      <Include reference="+DataEntities.TypeOfTimerEnum" />
+                      <Include reference="+DataEntities.AMSSimplifiedProcedureTimeLimits" />
                     </Include>
                   </Children>
                 </Reference>
@@ -3100,7 +3100,7 @@ LI:
                     </Attribute>
                     <Attribute>
                       <Name value="Name" />
-                      <Caption value="Název Subjektu" />
+                      <Caption value="Název subjektu" />
                       <IsRequired value="True" />
                       <MetaType reference="+MetaTypes.OperatorName" />
                       <MtsImportOptions.MTS.ID value="/AMSSPAuthorization/AMS/Event/Depositors/Depositor/Name" />

@@ -2,8 +2,7 @@
 <?data-format version="0.400"?>
 <DataEntity>
   <Name value="AMSFutureRemoval" />
-  <Caption value="Odstranění budoucí změny" />
-  <MtsImportOptions.MTS.Acronym value="AS005" />
+  <Caption value="AMSFutureRemoval" />
   <MtsImportOptions.MTS.ID value="/AMSFutureRemoval" />
   <MtsImportOptions.MTS.Type value="message" />
   <PropertyLocalizationData.PropertyLocalizations>

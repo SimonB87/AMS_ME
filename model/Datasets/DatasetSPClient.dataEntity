@@ -595,7 +595,7 @@
       </PropertyLocalizationData.PropertyLocalizations>
       <Validators>
         <Validator Name="regex">
-          <MtsImportOptions.MTS.Regex value="ME[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}" />
+          <MtsImportOptions.MTS.Regex value="[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}" />
           <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
           <ErrorMessage IsValid="True">
             <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
@@ -604,7 +604,7 @@
             </ResultType>
           </ErrorMessage>
           <IsValid IsValid="True">
-            <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "^ME[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}$") : true)]]></ExpressionText>
+            <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}$") : true)]]></ExpressionText>
             <ResultType>
               <BaseType value="Bool" />
             </ResultType>
@@ -651,7 +651,7 @@
       </PropertyLocalizationData.PropertyLocalizations>
       <Validators>
         <Validator Name="regex">
-          <MtsImportOptions.MTS.Regex value="ME[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}" />
+          <MtsImportOptions.MTS.Regex value="[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}" />
           <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
           <ErrorMessage IsValid="True">
             <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
@@ -660,7 +660,7 @@
             </ResultType>
           </ErrorMessage>
           <IsValid IsValid="True">
-            <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "^ME[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}$") : true)]]></ExpressionText>
+            <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}$") : true)]]></ExpressionText>
             <ResultType>
               <BaseType value="Bool" />
             </ResultType>

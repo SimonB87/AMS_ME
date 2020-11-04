@@ -315,7 +315,7 @@
             </Reference>
             <Attribute>
               <Name value="OperatorName" />
-              <Caption value="Název Subjektu" />
+              <Caption value="Název subjektu" />
               <MetaType reference="+MetaTypes.OperatorName" />
               <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/OperatorName" />
               <MtsImportOptions.MTS.Type value="element" />
@@ -428,7 +428,7 @@
               <MtsImportOptions.MTS.Type value="element" />
               <DeclaredType>
                 <AttributeType>
-                  <StrMaxLength value="30" />
+                  <StrMaxLength value="50" />
                 </AttributeType>
               </DeclaredType>
               <PropertyLocalizationData.PropertyLocalizations>
@@ -449,7 +449,7 @@
               <MtsImportOptions.MTS.Type value="element" />
               <DeclaredType>
                 <AttributeType>
-                  <StrMaxLength value="20" />
+                  <StrMaxLength value="50" />
                 </AttributeType>
               </DeclaredType>
               <PropertyLocalizationData.PropertyLocalizations>
@@ -777,7 +777,7 @@
                   <MtsImportOptions.MTS.Type value="element" />
                   <DeclaredType>
                     <AttributeType>
-                      <StrMaxLength value="50" />
+                      <StrMaxLength value="70" />
                     </AttributeType>
                   </DeclaredType>
                   <PropertyLocalizationData.PropertyLocalizations>
@@ -837,7 +837,7 @@
                   <MtsImportOptions.MTS.Type value="element" />
                   <DeclaredType>
                     <AttributeType>
-                      <StrMaxLength value="200" />
+                      <StrMaxLength value="256" />
                     </AttributeType>
                   </DeclaredType>
                   <PropertyLocalizationData.PropertyLocalizations>
@@ -854,6 +854,7 @@
                 <Attribute>
                   <Name value="ResponsiblePersonWantsToBeNotified" />
                   <Caption value="Zodpovědná osoba chce být notifikována o změnách v CŘ" />
+                  <IsRequired value="True" />
                   <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/Authorization/ResponsiblePersonWantsToBeNotified" />
                   <MtsImportOptions.MTS.Type value="element" />
                   <DeclaredType>
@@ -1147,25 +1148,6 @@
                       </PropertyLocalizationData.PropertyLocalizations>
                       <Children>
                         <Attribute>
-                          <Name value="CNCode" />
-                          <Caption value="Zbožový kód" />
-                          <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/GoodsList/CompleteData/GoodsItem/CNCode" />
-                          <MtsImportOptions.MTS.Type value="element" />
-                          <DeclaredType>
-                            <AttributeType />
-                          </DeclaredType>
-                          <PropertyLocalizationData.PropertyLocalizations>
-                            <PropertyLocalizationData>
-                              <LocalizedProperties>
-                                <LocalizedProperty>
-                                  <Localization reference="+Localizations.ZbozovyKod" />
-                                  <PropertyName value="Caption" />
-                                </LocalizedProperty>
-                              </LocalizedProperties>
-                            </PropertyLocalizationData>
-                          </PropertyLocalizationData.PropertyLocalizations>
-                        </Attribute>
-                        <Attribute>
                           <Name value="Allowed" />
                           <Caption value="Povolená / zakázaná" />
                           <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/GoodsList/CompleteData/GoodsItem/Allowed" />
@@ -1186,6 +1168,17 @@
                             </PropertyLocalizationData>
                           </PropertyLocalizationData.PropertyLocalizations>
                         </Attribute>
+                        <Reference>
+                          <Name value="CNCode" />
+                          <Caption value="Zbožový kód" />
+                          <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/GoodsList/CompleteData/GoodsItem/CNCode" />
+                          <MtsImportOptions.MTS.Type value="element" />
+                          <Children>
+                            <Include>
+                              <Include reference="+DataEntities.CommodityCode" />
+                            </Include>
+                          </Children>
+                        </Reference>
                       </Children>
                     </Collection>
                   </Children>
@@ -1245,25 +1238,6 @@
                       </PropertyLocalizationData.PropertyLocalizations>
                       <Children>
                         <Attribute>
-                          <Name value="CNCode" />
-                          <Caption value="Zbožový kód" />
-                          <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/GoodsList/InCompleteData/GoodsItem/CNCode" />
-                          <MtsImportOptions.MTS.Type value="element" />
-                          <DeclaredType>
-                            <AttributeType />
-                          </DeclaredType>
-                          <PropertyLocalizationData.PropertyLocalizations>
-                            <PropertyLocalizationData>
-                              <LocalizedProperties>
-                                <LocalizedProperty>
-                                  <Localization reference="+Localizations.ZbozovyKod" />
-                                  <PropertyName value="Caption" />
-                                </LocalizedProperty>
-                              </LocalizedProperties>
-                            </PropertyLocalizationData>
-                          </PropertyLocalizationData.PropertyLocalizations>
-                        </Attribute>
-                        <Attribute>
                           <Name value="Allowed" />
                           <Caption value="Povolená / zakázaná" />
                           <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/GoodsList/InCompleteData/GoodsItem/Allowed" />
@@ -1284,6 +1258,17 @@
                             </PropertyLocalizationData>
                           </PropertyLocalizationData.PropertyLocalizations>
                         </Attribute>
+                        <Reference>
+                          <Name value="CNCode" />
+                          <Caption value="Zbožový kód" />
+                          <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/GoodsList/InCompleteData/GoodsItem/CNCode" />
+                          <MtsImportOptions.MTS.Type value="element" />
+                          <Children>
+                            <Include>
+                              <Include reference="+DataEntities.CommodityCode" />
+                            </Include>
+                          </Children>
+                        </Reference>
                       </Children>
                     </Collection>
                   </Children>
@@ -1323,28 +1308,17 @@
                     </PropertyLocalizationData>
                   </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
-                    <Attribute>
+                    <Reference>
                       <Name value="CustomsOfficeReferenceNumber" />
                       <Caption value="Číslo CÚ" />
                       <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/CustomsOffices/CustomsOfficeOfRelease/CustomsOfficeReferenceNumber" />
                       <MtsImportOptions.MTS.Type value="element" />
-                      <DeclaredType>
-                        <AttributeType>
-                          <StrMaxLength value="8" />
-                          <StrMinLength value="8" />
-                        </AttributeType>
-                      </DeclaredType>
-                      <PropertyLocalizationData.PropertyLocalizations>
-                        <PropertyLocalizationData>
-                          <LocalizedProperties>
-                            <LocalizedProperty>
-                              <Localization reference="+Localizations.CisloCU" />
-                              <PropertyName value="Caption" />
-                            </LocalizedProperty>
-                          </LocalizedProperties>
-                        </PropertyLocalizationData>
-                      </PropertyLocalizationData.PropertyLocalizations>
-                    </Attribute>
+                      <Children>
+                        <Include>
+                          <Include reference="+DataEntities.CustomsOffices" />
+                        </Include>
+                      </Children>
+                    </Reference>
                     <Collection>
                       <Name value="AuthorizedAgreedLocation" />
                       <Caption value="Schválené místo" />
@@ -1718,28 +1692,17 @@
                     </PropertyLocalizationData>
                   </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
-                    <Attribute>
+                    <Reference>
                       <Name value="CustomsOfficeReferenceNumber" />
                       <Caption value="Číslo CÚ" />
                       <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/CustomsOffices/SupervisingCustomsOffice/CustomsOfficeReferenceNumber" />
                       <MtsImportOptions.MTS.Type value="element" />
-                      <DeclaredType>
-                        <AttributeType>
-                          <StrMaxLength value="8" />
-                          <StrMinLength value="8" />
-                        </AttributeType>
-                      </DeclaredType>
-                      <PropertyLocalizationData.PropertyLocalizations>
-                        <PropertyLocalizationData>
-                          <LocalizedProperties>
-                            <LocalizedProperty>
-                              <Localization reference="+Localizations.CisloCU" />
-                              <PropertyName value="Caption" />
-                            </LocalizedProperty>
-                          </LocalizedProperties>
-                        </PropertyLocalizationData>
-                      </PropertyLocalizationData.PropertyLocalizations>
-                    </Attribute>
+                      <Children>
+                        <Include>
+                          <Include reference="+DataEntities.CustomsOffices" />
+                        </Include>
+                      </Children>
+                    </Reference>
                   </Children>
                 </Collection>
               </Children>
@@ -1987,71 +1950,6 @@
                     </PropertyLocalizationData>
                   </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
-                    <Attribute>
-                      <Name value="OriginalCNCode" />
-                      <Caption value="Zbožový kód" />
-                      <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/Manipulations/Manipulation/OriginalCNCode" />
-                      <MtsImportOptions.MTS.Type value="element" />
-                      <DeclaredType>
-                        <AttributeType>
-                          <StrMaxLength value="8" />
-                          <StrMinLength value="8" />
-                        </AttributeType>
-                      </DeclaredType>
-                      <PropertyLocalizationData.PropertyLocalizations>
-                        <PropertyLocalizationData>
-                          <LocalizedProperties>
-                            <LocalizedProperty>
-                              <Localization reference="+Localizations.ZbozovyKod" />
-                              <PropertyName value="Caption" />
-                            </LocalizedProperty>
-                          </LocalizedProperties>
-                        </PropertyLocalizationData>
-                      </PropertyLocalizationData.PropertyLocalizations>
-                    </Attribute>
-                    <Attribute>
-                      <Name value="ManipulationType" />
-                      <Caption value="Typ manipulace" />
-                      <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/Manipulations/Manipulation/ManipulationType" />
-                      <MtsImportOptions.MTS.Type value="element" />
-                      <DeclaredType>
-                        <AttributeType>
-                          <StrMaxLength value="10" />
-                        </AttributeType>
-                      </DeclaredType>
-                      <PropertyLocalizationData.PropertyLocalizations>
-                        <PropertyLocalizationData>
-                          <LocalizedProperties>
-                            <LocalizedProperty>
-                              <Localization reference="+Localizations.TypManipulace" />
-                              <PropertyName value="Caption" />
-                            </LocalizedProperty>
-                          </LocalizedProperties>
-                        </PropertyLocalizationData>
-                      </PropertyLocalizationData.PropertyLocalizations>
-                    </Attribute>
-                    <Attribute>
-                      <Name value="ManipulatedCNCode" />
-                      <Caption value="Manipulovaný zbožový kód" />
-                      <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/Manipulations/Manipulation/ManipulatedCNCode" />
-                      <MtsImportOptions.MTS.Type value="element" />
-                      <DeclaredType>
-                        <AttributeType>
-                          <StrMaxLength value="10" />
-                          <StrMinLength value="8" />
-                        </AttributeType>
-                      </DeclaredType>
-                      <PropertyLocalizationData.PropertyLocalizations>
-                        <PropertyLocalizationData>
-                          <LocalizedProperties>
-                            <LocalizedProperty>
-                              <Localization reference="+Localizations.ManipulovanyZbozovyKod" />
-                              <PropertyName value="Caption" />
-                            </LocalizedProperty>
-                          </LocalizedProperties>
-                        </PropertyLocalizationData>
-                      </PropertyLocalizationData.PropertyLocalizations>
-                    </Attribute>
                     <Reference>
                       <Name value="UnitOfMeasure" />
                       <Caption value="Měrná jednotka" />
@@ -2070,6 +1968,39 @@
                       <Children>
                         <Include>
                           <Include reference="+DataEntities.MJT" />
+                        </Include>
+                      </Children>
+                    </Reference>
+                    <Reference>
+                      <Name value="OriginalCNCode" />
+                      <Caption value="Zbožový kód" />
+                      <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/Manipulations/Manipulation/OriginalCNCode" />
+                      <MtsImportOptions.MTS.Type value="element" />
+                      <Children>
+                        <Include>
+                          <Include reference="+DataEntities.CommodityCode" />
+                        </Include>
+                      </Children>
+                    </Reference>
+                    <Reference>
+                      <Name value="ManipulationType" />
+                      <Caption value="Typ manipulace" />
+                      <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/Manipulations/Manipulation/ManipulationType" />
+                      <MtsImportOptions.MTS.Type value="element" />
+                      <Children>
+                        <Include>
+                          <Include reference="+DataEntities.TYPMANCS" />
+                        </Include>
+                      </Children>
+                    </Reference>
+                    <Reference>
+                      <Name value="ManipulatedCNCode" />
+                      <Caption value="Manipulovaný zbožový kód" />
+                      <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/Manipulations/Manipulation/ManipulatedCNCode" />
+                      <MtsImportOptions.MTS.Type value="element" />
+                      <Children>
+                        <Include>
+                          <Include reference="+DataEntities.CommodityCode" />
                         </Include>
                       </Children>
                     </Reference>
@@ -2223,7 +2154,7 @@
                   </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
                     <Include>
-                      <Include reference="+DataEntities.TypeOfTimerEnum" />
+                      <Include reference="+DataEntities.AMSSimplifiedProcedureTimeLimits" />
                     </Include>
                   </Children>
                 </Reference>
@@ -2393,50 +2324,28 @@
                     </PropertyLocalizationData>
                   </PropertyLocalizationData.PropertyLocalizations>
                   <Children>
-                    <Attribute>
+                    <Reference>
                       <Name value="CustomsProcedureCombinationCode" />
                       <Caption value="Kód kombinace celních režimů" />
                       <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/CustomsProcedure/CustomsProcedureCombination/CustomsProcedureCombinationCode" />
                       <MtsImportOptions.MTS.Type value="element" />
-                      <DeclaredType>
-                        <AttributeType>
-                          <StrMaxLength value="4" />
-                          <StrMinLength value="4" />
-                        </AttributeType>
-                      </DeclaredType>
-                      <PropertyLocalizationData.PropertyLocalizations>
-                        <PropertyLocalizationData>
-                          <LocalizedProperties>
-                            <LocalizedProperty>
-                              <Localization reference="+Localizations.KodKombinaceCelnichRezimu" />
-                              <PropertyName value="Caption" />
-                            </LocalizedProperty>
-                          </LocalizedProperties>
-                        </PropertyLocalizationData>
-                      </PropertyLocalizationData.PropertyLocalizations>
-                    </Attribute>
-                    <Attribute>
+                      <Children>
+                        <Include>
+                          <Include reference="+DataEntities.REZIM4" />
+                        </Include>
+                      </Children>
+                    </Reference>
+                    <Reference>
                       <Name value="CustomsProcedureCode" />
                       <Caption value="Kód celního režimu" />
                       <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/CustomsProcedure/CustomsProcedureCombination/CustomsProcedureCode" />
                       <MtsImportOptions.MTS.Type value="element" />
-                      <DeclaredType>
-                        <AttributeType>
-                          <StrMaxLength value="2" />
-                          <StrMinLength value="2" />
-                        </AttributeType>
-                      </DeclaredType>
-                      <PropertyLocalizationData.PropertyLocalizations>
-                        <PropertyLocalizationData>
-                          <LocalizedProperties>
-                            <LocalizedProperty>
-                              <Localization reference="+Localizations.KodCelnihoRezimu" />
-                              <PropertyName value="Caption" />
-                            </LocalizedProperty>
-                          </LocalizedProperties>
-                        </PropertyLocalizationData>
-                      </PropertyLocalizationData.PropertyLocalizations>
-                    </Attribute>
+                      <Children>
+                        <Include>
+                          <Include reference="+DataEntities.CEL_UR" />
+                        </Include>
+                      </Children>
+                    </Reference>
                   </Children>
                 </Collection>
                 <Collection>
@@ -2473,50 +2382,28 @@
                         </PropertyLocalizationData>
                       </PropertyLocalizationData.PropertyLocalizations>
                       <Children>
-                        <Attribute>
+                        <Reference>
                           <Name value="CustomsProcedureCombinationCode" />
                           <Caption value="Kód kombinace celních režimů" />
                           <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/CustomsProcedure/CompleteData/CustomsProcedureCombination/CustomsProcedureCombinationCode" />
                           <MtsImportOptions.MTS.Type value="element" />
-                          <DeclaredType>
-                            <AttributeType>
-                              <StrMaxLength value="4" />
-                              <StrMinLength value="4" />
-                            </AttributeType>
-                          </DeclaredType>
-                          <PropertyLocalizationData.PropertyLocalizations>
-                            <PropertyLocalizationData>
-                              <LocalizedProperties>
-                                <LocalizedProperty>
-                                  <Localization reference="+Localizations.KodKombinaceCelnichRezimu" />
-                                  <PropertyName value="Caption" />
-                                </LocalizedProperty>
-                              </LocalizedProperties>
-                            </PropertyLocalizationData>
-                          </PropertyLocalizationData.PropertyLocalizations>
-                        </Attribute>
-                        <Attribute>
+                          <Children>
+                            <Include>
+                              <Include reference="+DataEntities.REZIM4" />
+                            </Include>
+                          </Children>
+                        </Reference>
+                        <Reference>
                           <Name value="CustomsProcedureCode" />
                           <Caption value="Kód celního režimu" />
                           <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/CustomsProcedure/CompleteData/CustomsProcedureCombination/CustomsProcedureCode" />
                           <MtsImportOptions.MTS.Type value="element" />
-                          <DeclaredType>
-                            <AttributeType>
-                              <StrMaxLength value="2" />
-                              <StrMinLength value="2" />
-                            </AttributeType>
-                          </DeclaredType>
-                          <PropertyLocalizationData.PropertyLocalizations>
-                            <PropertyLocalizationData>
-                              <LocalizedProperties>
-                                <LocalizedProperty>
-                                  <Localization reference="+Localizations.KodCelnihoRezimu" />
-                                  <PropertyName value="Caption" />
-                                </LocalizedProperty>
-                              </LocalizedProperties>
-                            </PropertyLocalizationData>
-                          </PropertyLocalizationData.PropertyLocalizations>
-                        </Attribute>
+                          <Children>
+                            <Include>
+                              <Include reference="+DataEntities.CEL_UR" />
+                            </Include>
+                          </Children>
+                        </Reference>
                       </Children>
                     </Collection>
                   </Children>
@@ -2555,50 +2442,28 @@
                         </PropertyLocalizationData>
                       </PropertyLocalizationData.PropertyLocalizations>
                       <Children>
-                        <Attribute>
+                        <Reference>
                           <Name value="CustomsProcedureCombinationCode" />
                           <Caption value="Kód kombinace celních režimů" />
                           <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/CustomsProcedure/InCompleteData/CustomsProcedureCombination/CustomsProcedureCombinationCode" />
                           <MtsImportOptions.MTS.Type value="element" />
-                          <DeclaredType>
-                            <AttributeType>
-                              <StrMaxLength value="4" />
-                              <StrMinLength value="4" />
-                            </AttributeType>
-                          </DeclaredType>
-                          <PropertyLocalizationData.PropertyLocalizations>
-                            <PropertyLocalizationData>
-                              <LocalizedProperties>
-                                <LocalizedProperty>
-                                  <Localization reference="+Localizations.KodKombinaceCelnichRezimu" />
-                                  <PropertyName value="Caption" />
-                                </LocalizedProperty>
-                              </LocalizedProperties>
-                            </PropertyLocalizationData>
-                          </PropertyLocalizationData.PropertyLocalizations>
-                        </Attribute>
-                        <Attribute>
+                          <Children>
+                            <Include>
+                              <Include reference="+DataEntities.REZIM4" />
+                            </Include>
+                          </Children>
+                        </Reference>
+                        <Reference>
                           <Name value="CustomsProcedureCode" />
                           <Caption value="Kód celního režimu" />
                           <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/CustomsProcedure/InCompleteData/CustomsProcedureCombination/CustomsProcedureCode" />
                           <MtsImportOptions.MTS.Type value="element" />
-                          <DeclaredType>
-                            <AttributeType>
-                              <StrMaxLength value="2" />
-                              <StrMinLength value="2" />
-                            </AttributeType>
-                          </DeclaredType>
-                          <PropertyLocalizationData.PropertyLocalizations>
-                            <PropertyLocalizationData>
-                              <LocalizedProperties>
-                                <LocalizedProperty>
-                                  <Localization reference="+Localizations.KodCelnihoRezimu" />
-                                  <PropertyName value="Caption" />
-                                </LocalizedProperty>
-                              </LocalizedProperties>
-                            </PropertyLocalizationData>
-                          </PropertyLocalizationData.PropertyLocalizations>
-                        </Attribute>
+                          <Children>
+                            <Include>
+                              <Include reference="+DataEntities.CEL_UR" />
+                            </Include>
+                          </Children>
+                        </Reference>
                       </Children>
                     </Collection>
                   </Children>
@@ -2825,27 +2690,6 @@
                     </PropertyLocalizationData>
                   </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
-                <Attribute>
-                  <Name value="ZoneCountry" />
-                  <Caption value="Země zóny" />
-                  <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/Zone/ZoneCountry" />
-                  <MtsImportOptions.MTS.Type value="element" />
-                  <DeclaredType>
-                    <AttributeType>
-                      <StrMaxLength value="2" />
-                    </AttributeType>
-                  </DeclaredType>
-                  <PropertyLocalizationData.PropertyLocalizations>
-                    <PropertyLocalizationData>
-                      <LocalizedProperties>
-                        <LocalizedProperty>
-                          <Localization reference="+Localizations.ZemeZony" />
-                          <PropertyName value="Caption" />
-                        </LocalizedProperty>
-                      </LocalizedProperties>
-                    </PropertyLocalizationData>
-                  </PropertyLocalizationData.PropertyLocalizations>
-                </Attribute>
                 <Reference>
                   <Name value="ZoneType" />
                   <Caption value="Typ zóny" />
@@ -2909,6 +2753,17 @@
                     </PropertyLocalizationData>
                   </PropertyLocalizationData.PropertyLocalizations>
                 </Attribute>
+                <Reference>
+                  <Name value="ZoneCountry" />
+                  <Caption value="Země zóny" />
+                  <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/Zone/ZoneCountry" />
+                  <MtsImportOptions.MTS.Type value="element" />
+                  <Children>
+                    <Include>
+                      <Include reference="+DataEntities.CountryCodesFullList" />
+                    </Include>
+                  </Children>
+                </Reference>
               </Children>
             </Complex>
             <Complex>
@@ -2963,7 +2818,7 @@
                     </Attribute>
                     <Attribute>
                       <Name value="Name" />
-                      <Caption value="Název Subjektu" />
+                      <Caption value="Název subjektu" />
                       <MetaType reference="+MetaTypes.OperatorName" />
                       <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/Depositors/Depositor/Name" />
                       <MtsImportOptions.MTS.Type value="element" />
@@ -3029,27 +2884,17 @@
                         </PropertyLocalizationData>
                       </PropertyLocalizationData.PropertyLocalizations>
                     </Attribute>
-                    <Attribute>
+                    <Reference>
                       <Name value="Country" />
                       <Caption value="Země sídla subjektu" />
                       <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/Depositors/Depositor/Country" />
                       <MtsImportOptions.MTS.Type value="element" />
-                      <DeclaredType>
-                        <AttributeType>
-                          <StrMaxLength value="2" />
-                        </AttributeType>
-                      </DeclaredType>
-                      <PropertyLocalizationData.PropertyLocalizations>
-                        <PropertyLocalizationData>
-                          <LocalizedProperties>
-                            <LocalizedProperty>
-                              <Localization reference="+Localizations.ZemeSidlaSubjektu" />
-                              <PropertyName value="Caption" />
-                            </LocalizedProperty>
-                          </LocalizedProperties>
-                        </PropertyLocalizationData>
-                      </PropertyLocalizationData.PropertyLocalizations>
-                    </Attribute>
+                      <Children>
+                        <Include>
+                          <Include reference="+DataEntities.CountryCodesFullList" />
+                        </Include>
+                      </Children>
+                    </Reference>
                   </Children>
                 </Collection>
               </Children>
@@ -3556,6 +3401,17 @@
                 </Attribute>
               </Children>
             </Complex>
+            <Reference>
+              <Name value="CountryCodesFullList" />
+              <Caption value="Země sídla subjektu" />
+              <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/OperatorCountry" />
+              <MtsImportOptions.MTS.Type value="element" />
+              <Children>
+                <Include>
+                  <Include reference="+DataEntities.CountryCodesFullList" />
+                </Include>
+              </Children>
+            </Reference>
           </Children>
         </Complex>
         <Collection>
@@ -3903,6 +3759,7 @@
             <Attribute>
               <Name value="GUID" />
               <Caption value="GUID" />
+              <IsRequired value="True" />
               <MtsImportOptions.MTS.ID value="/SPData/AMS/EventHistory/GUID" />
               <MtsImportOptions.MTS.Type value="element" />
               <DeclaredType>
@@ -3922,6 +3779,7 @@
             <Reference>
               <Name value="EventType" />
               <Caption value="Typ události/rozhodnutí" />
+              <IsRequired value="True" />
               <MtsImportOptions.MTS.ID value="/SPData/AMS/EventHistory/EventType" />
               <MtsImportOptions.MTS.Type value="element" />
               <PropertyLocalizationData.PropertyLocalizations>
@@ -3943,6 +3801,7 @@
             <Attribute>
               <Name value="ValidityStartDate" />
               <Caption value="Platné od" />
+              <IsRequired value="True" />
               <MtsImportOptions.MTS.ID value="/SPData/AMS/EventHistory/ValidityStartDate" />
               <MtsImportOptions.MTS.Type value="element" />
               <DeclaredType>
@@ -3964,6 +3823,7 @@
             <Attribute>
               <Name value="EvidenceDate" />
               <Caption value="EvidenceDate" />
+              <IsRequired value="True" />
               <MtsImportOptions.MTS.ID value="/SPData/AMS/EventHistory/EvidenceDate" />
               <MtsImportOptions.MTS.Type value="element" />
               <DeclaredType>
@@ -3985,6 +3845,7 @@
             <Attribute>
               <Name value="DecidingCustomsOffice" />
               <Caption value="Rozhodující celní úřad" />
+              <IsRequired value="True" />
               <MetaType reference="+MetaTypes.CustomsOfficeRefNum_type" />
               <MtsImportOptions.MTS.ID value="/SPData/AMS/EventHistory/DecidingCustomsOffice" />
               <MtsImportOptions.MTS.Type value="element" />
@@ -4020,6 +3881,7 @@
             <Attribute>
               <Name value="DecidingPerson" />
               <Caption value="Osobní číslo vydavatele rozhodnutí" />
+              <IsRequired value="True" />
               <MetaType reference="+MetaTypes.Pracovnik" />
               <MtsImportOptions.MTS.ID value="/SPData/AMS/EventHistory/DecidingPerson" />
               <MtsImportOptions.MTS.Type value="element" />
@@ -4037,6 +3899,7 @@
             <Attribute>
               <Name value="ValidityEndDate" />
               <Caption value="Konec platnosti této události (dopočítávané v okamžiku vzniku následujícího události)" />
+              <IsRequired value="True" />
               <MtsImportOptions.MTS.ID value="/SPData/AMS/EventHistory/ValidityEndDate" />
               <MtsImportOptions.MTS.Type value="element" />
               <DeclaredType>
@@ -4075,7 +3938,7 @@
           </PropertyLocalizationData.PropertyLocalizations>
           <Validators>
             <Validator Name="regex">
-              <MtsImportOptions.MTS.Regex value="ME[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}" />
+              <MtsImportOptions.MTS.Regex value="[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}" />
               <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
               <ErrorMessage IsValid="True">
                 <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
@@ -4084,7 +3947,7 @@
                 </ResultType>
               </ErrorMessage>
               <IsValid IsValid="True">
-                <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "^ME[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}$") : true)]]></ExpressionText>
+                <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}$") : true)]]></ExpressionText>
                 <ResultType>
                   <BaseType value="Bool" />
                 </ResultType>

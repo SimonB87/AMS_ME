@@ -50,7 +50,7 @@
     </LocalizedString>
     <LocalizedString LocID="NazevSubjektu">
       <Values>
-        <LocaleValue Lang="en" Value="Název Subjektu" />
+        <LocaleValue Lang="en" Value="Název subjektu" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="Stav">
@@ -1210,7 +1210,7 @@
     </LocalizedString>
     <LocalizedString LocID="AuthorizationType">
       <Values>
-        <LocaleValue Lang="en" Value="Authorization Type" />
+        <LocaleValue Lang="en" Value="AuthorizationType" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ShortenedDescription">
@@ -1715,7 +1715,7 @@
     </LocalizedString>
     <LocalizedString LocID="OdstraneniBudouciZmeny">
       <Values>
-        <LocaleValue Lang="en" Value="Odstranění budoucí změny" />
+        <LocaleValue Lang="en" Value="AMSFutureRemoval" />
       </Values>
     </LocalizedString>
     <LocalizedString LocID="ErrorMessage">

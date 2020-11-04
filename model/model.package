@@ -51,12 +51,14 @@
         <PackageItem Src="Enumerations\TypeOfPaybackPeriodEnum.dataEntity" />
         <PackageItem Src="Enumerations\ControlResultEnum.dataEntity" />
         <PackageItem Src="Enumerations\CertificateUsage.dataEntity" />
+        <PackageItem Src="Enumerations\AuthorizationState.dataEntity" />
       </Items>
     </PackageFolder>
     <PackageFolder Name="CodeLists">
       <Items>
         <PackageItem Src="CodeLists\codeListDescription.customExpressionFunction" />
         <PackageItem Src="CodeLists\MJT.dataEntity" />
+        <PackageItem Src="CodeLists\AMSSimplifiedProcedureTimeLimits.dataEntity" />
         <PackageItem Src="CodeLists\CustomsOffices.dataEntity" />
         <PackageItem Src="CodeLists\RepresentativeStatusCode.dataEntity" />
         <PackageItem Src="CodeLists\AMSAuthorizationType.dataEntity" />

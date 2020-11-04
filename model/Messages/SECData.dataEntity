@@ -291,7 +291,7 @@
             </Reference>
             <Attribute>
               <Name value="OperatorName" />
-              <Caption value="Název Subjektu" />
+              <Caption value="Název subjektu" />
               <MetaType reference="+MetaTypes.OperatorName" />
               <MtsImportOptions.MTS.ID value="/SECData/AMS/Event/OperatorName" />
               <MtsImportOptions.MTS.Type value="element" />
@@ -420,7 +420,7 @@
               <MtsImportOptions.MTS.Type value="element" />
               <DeclaredType>
                 <AttributeType>
-                  <StrMaxLength value="30" />
+                  <StrMaxLength value="50" />
                 </AttributeType>
               </DeclaredType>
               <PropertyLocalizationData.PropertyLocalizations>
@@ -441,7 +441,7 @@
               <MtsImportOptions.MTS.Type value="element" />
               <DeclaredType>
                 <AttributeType>
-                  <StrMaxLength value="20" />
+                  <StrMaxLength value="50" />
                 </AttributeType>
               </DeclaredType>
               <PropertyLocalizationData.PropertyLocalizations>
@@ -789,7 +789,7 @@
                   <MtsImportOptions.MTS.Type value="element" />
                   <DeclaredType>
                     <AttributeType>
-                      <StrMaxLength value="50" />
+                      <StrMaxLength value="70" />
                     </AttributeType>
                   </DeclaredType>
                   <PropertyLocalizationData.PropertyLocalizations>
@@ -849,7 +849,7 @@
                   <MtsImportOptions.MTS.Type value="element" />
                   <DeclaredType>
                     <AttributeType>
-                      <StrMaxLength value="200" />
+                      <StrMaxLength value="256" />
                     </AttributeType>
                   </DeclaredType>
                   <PropertyLocalizationData.PropertyLocalizations>
@@ -1926,7 +1926,7 @@
           </PropertyLocalizationData.PropertyLocalizations>
           <Validators>
             <Validator Name="regex">
-              <MtsImportOptions.MTS.Regex value="ME[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}" />
+              <MtsImportOptions.MTS.Regex value="[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}" />
               <MtsImportOptions.MTS.Type value="regular-expression-constraint" />
               <ErrorMessage IsValid="True">
                 <ExpressionText><![CDATA[localized.ValueIsNotValid]]></ExpressionText>
@@ -1935,7 +1935,7 @@
                 </ResultType>
               </ErrorMessage>
               <IsValid IsValid="True">
-                <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "^ME[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}$") : true)]]></ExpressionText>
+                <ExpressionText><![CDATA[(attr.hasValue() ? ValidateAgainstRegularExpression(attr, "[A-Z]{3}ME[0-9]{6}-[0-9]{4}-[0-9]{8}$") : true)]]></ExpressionText>
                 <ResultType>
                   <BaseType value="Bool" />
                 </ResultType>

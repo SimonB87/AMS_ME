@@ -149,7 +149,7 @@
           <Children>
             <Attribute>
               <Name value="OperatorName" />
-              <Caption value="Název Subjektu" />
+              <Caption value="Název subjektu" />
               <IsRequired value="True" />
               <MetaType reference="+MetaTypes.OperatorName" />
               <MtsImportOptions.MTS.ID value="/AMSSPApplicationModification/AMS/Event/OperatorName" />
@@ -266,7 +266,7 @@
               <MtsImportOptions.MTS.Type value="element" />
               <DeclaredType>
                 <AttributeType>
-                  <StrMaxLength value="30" />
+                  <StrMaxLength value="50" />
                 </AttributeType>
               </DeclaredType>
               <PropertyLocalizationData.PropertyLocalizations>
@@ -287,7 +287,7 @@
               <MtsImportOptions.MTS.Type value="element" />
               <DeclaredType>
                 <AttributeType>
-                  <StrMaxLength value="20" />
+                  <StrMaxLength value="50" />
                 </AttributeType>
               </DeclaredType>
               <PropertyLocalizationData.PropertyLocalizations>

@@ -204,7 +204,7 @@
                   <Children>
                     <FormPlaceholder>
                       <Name value="formPlaceholder" />
-                      <InitialForm reference="/(cseForms.b5b300393a7b425eaf69acead7edfe1a)+UiParts.MainForm" />
+                      <InitialForm reference="+UiParts.MainForm" />
                       <Panel.Height value="#" />
                       <Panel.Width value="*" />
                     </FormPlaceholder>
@@ -242,9 +242,15 @@
           <Panel.Height value="#" />
           <Panel.Width value="*" />
           <Bindings>
-            <Binding SourceProperty="IsVisible" Expression="packages.cseForms.globals.isLoading" />
+            <Binding SourceProperty="IsVisible" Expression="globals.isLoading" />
           </Bindings>
         </BusyIndicator>
+        <NotificationPanel identity="Notifications.7ff832fd4a2b4377bafd2e81a99bbcfc">
+          <Name value="notificationPanel1" />
+          <controller reference="+GlobalApiObjects.notificationsCtrl" />
+          <Panel.Height value="#" />
+          <Panel.Width value="*" />
+        </NotificationPanel>
       </Children>
       <CssClass>
         <CssClassConditional>
@@ -281,12 +287,12 @@
         <Attribute>
           <Name value="mode" />
           <Caption value="Mode" />
-          <MetaType reference="/(cseForms.b5b300393a7b425eaf69acead7edfe1a)+MetaTypes.mode" />
+          <MetaType reference="+MetaTypes.mode" />
           <PropertyLocalizationData.PropertyLocalizations>
             <PropertyLocalizationData>
               <LocalizedProperties>
                 <LocalizedProperty>
-                  <Localization reference="+Localizations.Mode" />
+                  <Localization reference="+Localizations.Mode1" />
                   <PropertyName value="Caption" />
                 </LocalizedProperty>
               </LocalizedProperties>
@@ -306,27 +312,29 @@
         <Script><![CDATA[var selectedCo = "ME123456"
 apiobjects.CIC.setHeader("X-CustomsOffice", selectedCo)
 var headerLang = "EN"
+packages.main.globals.isEnLang = true
 apiobjects.CIC.setHeader("x-language", headerLang)
 
-packages.cseForms.apiobjects.prototypeCodelist.fillFromJson("[{\"Key\": \"NO\", \"Description\": \"NO\"},{\"Key\": \"NP\", \"Description\": \"NP\"},{\"Key\": \"PT\", \"Description\": \"PT\"},{\"Key\": \"PP\", \"Description\": \"PP\"}]")
+//TODO pak smazat prototypeCodelist
+packages.main.apiobjects.prototypeCodelist.fillFromJson("[{\"Key\": \"NO\", \"Description\": \"NO\"},{\"Key\": \"NP\", \"Description\": \"NP\"},{\"Key\": \"PT\", \"Description\": \"PT\"},{\"Key\": \"PP\", \"Description\": \"PP\"}]")
 
 form.actions.loadCodelists()
 
 apiobjects.urlRouter.clearUrl()
 
-packages.cseForms.globals.isLimitedWidth = true
+globals.isLimitedWidth = true
 form.appVersion = apiobjects.appVersion.get()
 
 if (form.apiobjects.browserStorage1.getItem("WideMode") = "true") then
-	packages.cseForms.globals.isNotWideScreen = true
+	globals.isNotWideScreen = true
 else
-	packages.cseForms.globals.isNotWideScreen = false	
+	globals.isNotWideScreen = false	
 endif
 
 if (form.apiobjects.browserStorage1.getItem("ColorMode") = "true") then
-	packages.cseForms.globals.isNotColorizeMode = true
+	globals.isNotColorizeMode = true
 else
-	packages.cseForms.globals.isNotColorizeMode = true
+	globals.isNotColorizeMode = true
 endif]]></Script>
       </ActionLangBody>
       <DataContext>
@@ -337,7 +345,7 @@ endif]]></Script>
       <Name value="handler_label1_OnClick" />
       <IsPrivate value="True" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[navigation.cseForms.MainForm.go()]]></Script>
+        <Script><![CDATA[navigation.main.MainForm.go()]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />
@@ -346,7 +354,7 @@ endif]]></Script>
     <ActionBlock>
       <Name value="loadCodelists" />
       <ActionLangBody IsValid="True">
-        <Script><![CDATA[packages.cseForms.globals.isLoading = true
+        <Script><![CDATA[globals.isLoading = true
 packages.main.apiobjects.AMSAuthorizationType.startLoadingData(getDateTime())
 packages.main.apiobjects.CountryCodesFullList.startLoadingData(getDateTime())
 packages.main.apiobjects.AMSApplicationRejectionReason.startLoadingData(getDateTime())
@@ -357,7 +365,7 @@ packages.main.apiobjects.EventTypeEnum.startLoadingData(getDateTime())
 packages.main.apiobjects.AMSSimplifiedProcedureTimeLimits.startLoadingData(getDateTime())
 packages.main.apiobjects.GoodsExcludedFromTransit.startLoadingData(getDateTime())
 packages.main.apiobjects.CustomsOffices.setDateTime((getDateTime()))
-packages.cseForms.globals.isLoading = false]]></Script>
+globals.isLoading = false]]></Script>
       </ActionLangBody>
       <DataContext>
         <ActionDataContext />

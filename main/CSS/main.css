@@ -293,10 +293,10 @@ body .panel-cell {
 .relative {
   position: relative !important;
 }
-.absoluteTopRight {
+html .smx-button.btn-remove.absoluteTopRight {
   position: absolute !important;
-  top: 0;
-  right: 0;
+  top: 6px !important;
+  right: -8px !important;
 }
 .absoluteCenter {
   position: fixed;
@@ -685,8 +685,10 @@ div#formPlaceholder > * {
 .smx-button.btn-secondary.absoluteTopRight,
 .smx-imagebutton.btn-secondary.absoluteTopRight {
   top: initial !important;
-  right: -9px !important;
-  bottom: -5px !important;
+  right: -6px !important;
+  bottom: -11px !important;
+  border-bottom: rgba(0,0,0,0.1) solid 1px;
+  border-top: 0;
 }
 .smx-button.btn-alternate button,
 .smx-imagebutton.btn-alternate button {
@@ -784,6 +786,30 @@ html body .smx-notColorize button {
   color: #212529 !important;
   background-color: #fff !important;
 }
+.smx-userInfo button {
+  padding: 0 !important;
+}
+.buttonToDelete {
+  font-family: "Segoe UI Light", "Open Sans", "Helvetica Neue Light", "HelveticaNeue-Light", sans-serif;
+  outline: medium none;
+  color: #fff;
+  border-radius: 0.35rem;
+  padding: 4px 12px;
+  vertical-align: middle;
+  text-align: center;
+  height: 100%;
+  min-height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 0.8rem;
+  background-color: #de7922;
+  border-color: #da624a;
+  transition: 0.5s all;
+}
+.buttonToDelete:hover {
+  background-color: #da624a;
+  border-color: #da624a;
+  box-shadow: 0 0.125rem 0.625rem rgba(222,121,34,0.4), 0 0.0625rem 0.125rem rgba(108,117,125,0.5);
+}
 input:not([type=checkbox]),
 textarea,
 select {
@@ -828,6 +854,9 @@ select:focus {
   border-color: #0e6de2 !important;
   box-shadow: 0 0 0 0.2rem rgba(14,109,226,0.25) !important;
   outline: none !important;
+}
+.editor .errorText {
+  padding-top: 5px;
 }
 textarea {
   height: auto !important;
@@ -891,33 +920,6 @@ html .sffw-paging-repeater-ctrl-index-input {
   padding: 2px 8px !important;
   margin-left: 1em;
   text-align: center;
-}
-input[type=file] {
-  padding: 0 !important;
-}
-input[type=file]::-webkit-file-upload-button {
-  visibility: hidden;
-}
-input[type=file]::before {
-  content: 'Select file';
-  display: inline-block;
-  background: linear-gradient(top, #f9f9f9, #e3e3e3);
-  border: 1px solid #999;
-  border-radius: 3px;
-  padding: 5px 8px;
-  outline: none;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  cursor: pointer;
-  text-shadow: 1px 1px #fff;
-  font-weight: 700;
-  font-size: 10pt;
-}
-input[type=file]:hover::before {
-  border-color: #000;
-}
-input[type=file]:active::before {
-  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
 }
 .enumradiogroup fieldset {
   padding: 0;
@@ -2529,29 +2531,36 @@ span.flatpickr-weekday {
 .sidePanel .component.label {
   padding: 1.5rem;
 }
-.smx-hyperlink {
+.smx-nav .smx-hyperlink,
+.sidePanel .smx-hyperlink {
   padding: 0;
   border-left: 1em transparent solid;
 }
-.smx-hyperlink:hover {
+.smx-nav .smx-hyperlink:hover,
+.sidePanel .smx-hyperlink:hover {
   color: #da624a;
   background: #fcf1ef;
 }
-.active,
-.sideLink-active {
+.smx-nav .active,
+.sidePanel .active,
+.smx-nav .sideLink-active,
+.sidePanel .sideLink-active {
   color: #da624a;
   background: #fcf1ef;
   border-left: 1em solid rgba(218,98,74,0.5) !important;
 }
-.subMenuItem {
+.smx-nav .subMenuItem,
+.sidePanel .subMenuItem {
   padding-bottom: 16px !important;
 }
-.subMenuItem > a {
+.smx-nav .subMenuItem > a,
+.sidePanel .subMenuItem > a {
   position: absolute;
   transform: translate(20px, -15px);
   width: 89%;
 }
-.subMenuItem > a:after {
+.smx-nav .subMenuItem > a:after,
+.sidePanel .subMenuItem > a:after {
   position: absolute;
   left: 0;
   content: "\00bb ";
@@ -2560,11 +2569,11 @@ span.flatpickr-weekday {
   content: "\232A ";
   font-size: 0.8rem;
 }
-.longsubMenuItem a {
+.smx-nav .longsubMenuItem a,
+.sidePanel .longsubMenuItem a {
   line-height: 15px !important;
 }
 .smx-nav .smx-declistHeadings h3 {
-  padding: 20px;
   text-align: center;
 }
 .smx-nav-bar {
@@ -2600,13 +2609,17 @@ span.flatpickr-weekday {
   border: 1px transparent solid;
 }
 .smx-nav-bar .toTop {
-  margin-left: 80px;
+  margin-left: 86px;
 }
 .smx-nav-bar .toTop button {
   font-size: 2em;
+  padding: 0 !important;
 }
 .smx-nav.smaller a {
   font-size: 0.9em;
+}
+.smx-nav.smx-larger {
+  top: 108px !important;
 }
 .smx-nav-controls {
   position: relative;
@@ -2744,7 +2757,6 @@ div[data-name="panel_ListGuarantor_Buttons"] {
 }
 .smx-datatable table th .datatable-column-caption-wrap {
   position: relative;
-  font-size: 0.9rem;
   font-weight: 300;
   padding: 7px;
 }
@@ -3051,11 +3063,8 @@ html sffw-collapsible-sticky-panel {
   padding: 0 !important;
 }
 sffw-notification-panel-status-icon {
-  position: absolute;
-  left: 276px;
-  top: 101px;
   height: initial !important;
-  width: 69px !important;
+  width: 39px !important;
   z-index: 999;
 }
 sffw-notification-panel-status-icon:after {
@@ -3091,14 +3100,24 @@ sffw-notification-panel-status-icon .notification-trigger {
   text-align: center;
   min-height: calc(2.25rem + 2px);
   height: 39px !important;
-  width: 69px !important;
   padding: 0;
   outline: none;
   z-index: 101;
 }
 sffw-notification-panel-status-icon .notification-trigger .notification-num {
   top: 5px;
-  right: 20px;
+  right: -5px;
+}
+.declist-icon {
+  position: absolute;
+  left: 281px;
+  top: 70px;
+}
+.nodeclist-icon {
+  width: auto !important;
+  position: absolute;
+  left: 242px;
+  top: 6px;
 }
 .notification-panel-header {
   display: none !important;
@@ -3199,6 +3218,9 @@ sffw-growl-notification {
 .groupbox > fieldset > .component {
   width: 100%;
   height: 100%;
+}
+html body .cgb > fieldset > div {
+  padding: 0;
 }
 .cgb > fieldset > legend > div > span:nth-of-type(2) {
   display: inline-block;
@@ -3352,6 +3374,15 @@ html .sffw-navigation-tree-node-indent-3.sffw-navigation-tree-node-selected {
 }
 .smx-languages .button {
   width: 100% !important;
+}
+.smx-languageActive:hover {
+  background-color: transparent !important;
+}
+.smx-languageActive a {
+  font-weight: bold;
+}
+.smx-languageActive a:hover {
+  text-decoration: underline !important;
 }
 .smx-languageActive button {
   border-bottom: 2px #c0392b solid;
@@ -3886,8 +3917,53 @@ div.tab-nav a.active.button {
 .smx-headings h4 {
   text-align: center;
 }
-input[type="file"] {
+.smx-labelPrimary h3 {
+  font-weight: bold;
+}
+.smx-larger h3 {
+  font-size: 18px;
+  line-height: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0;
+  padding-top: 6px;
+}
+.smx-larger h5 {
+  padding-left: 0px;
+  padding-top: 0px;
+  text-align: center;
+}
+input[type=file] {
+  padding: 0 !important;
   border: 0;
+}
+input[type=file]::-webkit-file-upload-button {
+  visibility: hidden;
+}
+input[type=file]::before {
+  content: 'Select file';
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+  position: absolute;
+}
+input[type=file]:hover::before {
+  border-color: #000;
+}
+input[type=file]:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+input[type=file]:focus {
+  height: 115%;
 }
 /* Project modificators */
 .smx-GMS * {
@@ -3929,6 +4005,21 @@ input[type="file"] {
 }
 .smx-NCTS * {
   box-sizing: border-box;
+  vertical-align: top;
+}
+.smx-NCTS .smx-labelPrimary h3 {
+  font-size: 18px;
+  line-height: 25px;
+  padding: 0;
+}
+@media screen and (max-width: 1919px) {
+  .smx-NCTS .tabs .tab a {
+    padding: 10px 5px !important;
+    min-height: 52px !important;
+  }
+}
+div#mainFormHolder > div > div {
+  vertical-align: top;
 }
 .smx-AMS * {
   box-sizing: border-box;

@@ -1,0 +1,897 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?data-format version="0.400"?>
+<Form>
+  <Name value="Login" />
+  <Content>
+    <Panel>
+      <Name value="LoginPnl_parent" />
+      <Orientation value="Horizontal" />
+      <Panel.Height value="#" />
+      <Panel.Width value="*" />
+      <Children>
+        <Panel>
+          <Name value="LoginPnl" />
+          <Orientation value="Vertical" />
+          <Panel.Height value="#" />
+          <Panel.Width value="50%" />
+          <Children>
+            <Panel>
+              <Name value="panel1" />
+              <Orientation value="Vertical" />
+              <Panel.Height value="#" />
+              <Panel.Width value="500px" />
+              <Children>
+                <Panel>
+                  <Name value="panel2" />
+                  <Orientation value="Horizontal" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="*" />
+                  <Children>
+                    <Panel>
+                      <Name value="panel4" />
+                      <Orientation value="Vertical" />
+                      <Panel.Height value="#" />
+                      <Panel.Width value="*" />
+                      <Children>
+                        <Panel>
+                          <Name value="panel8" />
+                          <Orientation value="Horizontal" />
+                          <Panel.Height value="#" />
+                          <Panel.HorizontalAlignment value="Center" />
+                          <Panel.Width value="100%" />
+                          <Children>
+                            <Label>
+                              <Name value="label12" />
+                              <Heading value="h2" />
+                              <Panel.Height value="#" />
+                              <Panel.HorizontalAlignment value="Center" />
+                              <Panel.Width value="100%" />
+                              <Bindings>
+                                <Binding SourceProperty="Data" Expression="localized.ams" />
+                              </Bindings>
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-label" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                              </CssClass>
+                            </Label>
+                          </Children>
+                          <CssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-panel" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                          </CssClass>
+                        </Panel>
+                        <GroupBox>
+                          <Name value="grp_Authentication" />
+                          <Panel.Height value="#" />
+                          <Panel.HorizontalAlignment value="Center" />
+                          <Panel.Width value="100%" />
+                          <Content>
+                            <Panel>
+                              <Name value="panel7" />
+                              <Orientation value="Vertical" />
+                              <Children>
+                                <Panel>
+                                  <Name value="panel6" />
+                                  <Orientation value="Horizontal" />
+                                  <Panel.Height value="#" />
+                                  <Panel.Width value="*" />
+                                  <Children>
+                                    <Panel>
+                                      <Name value="panel5" />
+                                      <Orientation value="Vertical" />
+                                      <Panel.Height value="#" />
+                                      <Panel.Width value="*" />
+                                      <Children>
+                                        <Panel>
+                                          <Name value="panel3" />
+                                          <Orientation value="Horizontal" />
+                                          <Panel.Height value="#" />
+                                          <Panel.Width value="*" />
+                                          <Children>
+                                            <ReferenceCombo>
+                                              <Name value="cmb_Organisation" />
+                                              <CaptionPosition value="Top" />
+                                              <DisplayMember value="_description" />
+                                              <IsRequiredMarkVisible value="True" />
+                                              <Panel.Height value="#" />
+                                              <Panel.Width value="250px" />
+                                              <ReferenceList reference="+GlobalApiObjects.prototypeCodelist" />
+                                              <Bindings>
+                                                <Binding SourceProperty="Data" Expression="organisation" />
+                                                <Binding SourceProperty="Caption" Expression="organisation.caption()" />
+                                              </Bindings>
+                                              <CssClass>
+                                                <CssClassConditional>
+                                                  <ClassName value="{theme}-referencecombo" />
+                                                  <IsThemedStyle value="True" />
+                                                </CssClassConditional>
+                                                <CssClassConditional>
+                                                  <ClassName value="{theme}-selectCOList" />
+                                                  <IsThemedStyle value="True" />
+                                                </CssClassConditional>
+                                              </CssClass>
+                                            </ReferenceCombo>
+                                          </Children>
+                                          <CssClass>
+                                            <CssClassConditional>
+                                              <ClassName value="{theme}-panel" />
+                                              <IsThemedStyle value="True" />
+                                            </CssClassConditional>
+                                          </CssClass>
+                                        </Panel>
+                                        <Panel>
+                                          <Name value="panel12" />
+                                          <Orientation value="Horizontal" />
+                                          <Panel.Height value="#" />
+                                          <Panel.Width value="*" />
+                                          <Children>
+                                            <Button>
+                                              <Name value="button111" />
+                                              <Panel.Height value="#" />
+                                              <Panel.VerticalAlignment value="Bottom" />
+                                              <Panel.Width value="250px" />
+                                              <Bindings>
+                                                <Binding SourceProperty="Caption" Expression="localized.LocalizedString2" />
+                                              </Bindings>
+                                              <CssClass>
+                                                <CssClassConditional>
+                                                  <ClassName value="{theme}-button" />
+                                                  <IsThemedStyle value="True" />
+                                                </CssClassConditional>
+                                                <CssClassConditional>
+                                                  <ClassName value="{theme}-selectCO" />
+                                                  <IsThemedStyle value="True" />
+                                                </CssClassConditional>
+                                              </CssClass>
+                                            </Button>
+                                          </Children>
+                                          <CssClass>
+                                            <CssClassConditional>
+                                              <ClassName value="{theme}-panel" />
+                                              <IsThemedStyle value="True" />
+                                            </CssClassConditional>
+                                          </CssClass>
+                                        </Panel>
+                                      </Children>
+                                      <CssClass>
+                                        <CssClassConditional>
+                                          <ClassName value="{theme}-panel" />
+                                          <IsThemedStyle value="True" />
+                                        </CssClassConditional>
+                                      </CssClass>
+                                    </Panel>
+                                  </Children>
+                                  <CssClass>
+                                    <CssClassConditional>
+                                      <ClassName value="{theme}-panel" />
+                                      <IsThemedStyle value="True" />
+                                    </CssClassConditional>
+                                  </CssClass>
+                                </Panel>
+                              </Children>
+                              <CssClass>
+                                <CssClassConditional>
+                                  <ClassName value="{theme}-panel" />
+                                  <IsThemedStyle value="True" />
+                                </CssClassConditional>
+                                <CssClassConditional>
+                                  <ClassName value="disable-autologin" />
+                                  <Bindings>
+                                    <Binding SourceProperty="Condition" Expression="globals.needRelogin" />
+                                  </Bindings>
+                                </CssClassConditional>
+                              </CssClass>
+                            </Panel>
+                          </Content>
+                          <Bindings>
+                            <Binding SourceProperty="Caption" Expression="localized.LocalizedString2" />
+                          </Bindings>
+                          <CssClass>
+                            <CssClassConditional>
+                              <ClassName value="{theme}-groupbox" />
+                              <IsThemedStyle value="True" />
+                            </CssClassConditional>
+                          </CssClass>
+                        </GroupBox>
+                      </Children>
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-panel" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </Panel>
+                  </Children>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-panel" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </Panel>
+                <Panel>
+                  <Name value="panel_Errors" />
+                  <Orientation value="Horizontal" />
+                  <Panel.Height value="#" />
+                  <Panel.Width value="*" />
+                  <Bindings>
+                    <Binding SourceProperty="IsVisible" Expression="form.ui.panels.areErrorsVisible" />
+                  </Bindings>
+                  <Children>
+                    <CustomHtml>
+                      <Name value="customHtml1" />
+                      <HtmlMarkup><![CDATA[<div style="color:red">Server response:</div>
+<code><pre><div data-bind="html: $value"></div></pre></code>]]></HtmlMarkup>
+                      <Panel.Height value="#" />
+                      <Panel.Width value="*" />
+                      <Bindings>
+                        <Binding SourceProperty="Data" Expression="form.serverErrors" />
+                      </Bindings>
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-customhtml" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </CustomHtml>
+                  </Children>
+                  <CssClass>
+                    <CssClassConditional>
+                      <ClassName value="{theme}-panel" />
+                      <IsThemedStyle value="True" />
+                    </CssClassConditional>
+                  </CssClass>
+                </Panel>
+              </Children>
+              <CssClass>
+                <CssClassConditional>
+                  <ClassName value="{theme}-panel" />
+                  <IsThemedStyle value="True" />
+                </CssClassConditional>
+                <CssClassConditional>
+                  <ClassName value="absoluteCenter" />
+                </CssClassConditional>
+                <CssClassConditional>
+                  <ClassName value="box" />
+                  <Condition value="False" />
+                </CssClassConditional>
+                <CssClassConditional>
+                  <ClassName value="gms" />
+                </CssClassConditional>
+              </CssClass>
+            </Panel>
+          </Children>
+          <CssClass>
+            <CssClassConditional>
+              <ClassName value="{theme}-panel" />
+              <IsThemedStyle value="True" />
+            </CssClassConditional>
+          </CssClass>
+        </Panel>
+      </Children>
+      <CssClass>
+        <CssClassConditional>
+          <ClassName value="{theme}-panel" />
+          <IsThemedStyle value="True" />
+        </CssClassConditional>
+      </CssClass>
+    </Panel>
+  </Content>
+  <DataContext>
+    <DataContext>
+      <Children>
+        <Complex>
+          <Name value="ui" />
+          <Caption value="ui" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.Ui" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
+          <Children>
+            <Complex>
+              <Name value="panels" />
+              <Caption value="panels" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.Panels" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
+              <Children>
+                <Complex>
+                  <Name value="LoginPnl" />
+                  <Caption value="LoginPnl" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.LoginPnl" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
+                  <Children>
+                    <Computed>
+                      <Name value="IsVisible" />
+                      <Caption value="IsVisible" />
+                      <Expression IsValid="True">
+                        <ExpressionText><![CDATA[true]]></ExpressionText>
+                        <ResultType>
+                          <BaseType value="Bool" />
+                        </ResultType>
+                      </Expression>
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.IsVisible" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
+                    </Computed>
+                    <Computed>
+                      <Name value="IsEnabled" />
+                      <Caption value="IsEnabled" />
+                      <Expression IsValid="True">
+                        <ExpressionText><![CDATA[true]]></ExpressionText>
+                        <ResultType>
+                          <BaseType value="Bool" />
+                        </ResultType>
+                      </Expression>
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.IsEnabled" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
+                    </Computed>
+                  </Children>
+                </Complex>
+                <Attribute>
+                  <Name value="areErrorsVisible" />
+                  <Caption value="Are errors visible" />
+                  <DeclaredType>
+                    <AttributeType>
+                      <BaseType value="Bool" />
+                    </AttributeType>
+                  </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.AreErrorsVisible" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
+                </Attribute>
+              </Children>
+            </Complex>
+          </Children>
+        </Complex>
+        <Complex>
+          <Name value="model" />
+          <Caption value="Model" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.Model" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
+          <Children>
+            <Attribute>
+              <Name value="msg" />
+              <Caption value="Msg" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.Msg" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
+            </Attribute>
+          </Children>
+        </Complex>
+        <Attribute>
+          <Name value="serverErrors" />
+          <Caption value="Server errors" />
+          <DeclaredType>
+            <AttributeType />
+          </DeclaredType>
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.ServerErrors" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
+        </Attribute>
+        <Complex>
+          <Name value="loginResponse" />
+          <Caption value="Login response" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.LoginResponse" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
+          <Children>
+            <Complex>
+              <Name value="UserIdentity" />
+              <Caption value="User identity" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.UserIdentity" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
+              <Children>
+                <Attribute>
+                  <Name value="UserName" />
+                  <Caption value="User name" />
+                  <DeclaredType>
+                    <AttributeType />
+                  </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.UserName" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
+                </Attribute>
+                <Collection>
+                  <Name value="UserRole" />
+                  <Caption value="User role" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.UserRole" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
+                  <Children>
+                    <Attribute>
+                      <Name value="Name" />
+                      <Caption value="Name" />
+                      <DeclaredType>
+                        <AttributeType />
+                      </DeclaredType>
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.Name" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
+                    </Attribute>
+                    <Collection>
+                      <Name value="Organization" />
+                      <Caption value="Organisation" />
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.Organisation" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
+                      <Children>
+                        <Attribute>
+                          <Name value="Value" />
+                          <Caption value="Value" />
+                          <DeclaredType>
+                            <AttributeType />
+                          </DeclaredType>
+                          <PropertyLocalizationData.PropertyLocalizations>
+                            <PropertyLocalizationData>
+                              <LocalizedProperties>
+                                <LocalizedProperty>
+                                  <Localization reference="+Localizations.Value" />
+                                  <PropertyName value="Caption" />
+                                </LocalizedProperty>
+                              </LocalizedProperties>
+                            </PropertyLocalizationData>
+                          </PropertyLocalizationData.PropertyLocalizations>
+                        </Attribute>
+                      </Children>
+                    </Collection>
+                  </Children>
+                </Collection>
+                <Collection>
+                  <Name value="Organization" />
+                  <Caption value="Organisation" />
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.Organisation" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
+                  <Children>
+                    <Attribute>
+                      <Name value="Value" />
+                      <Caption value="Value" />
+                      <DeclaredType>
+                        <AttributeType />
+                      </DeclaredType>
+                      <PropertyLocalizationData.PropertyLocalizations>
+                        <PropertyLocalizationData>
+                          <LocalizedProperties>
+                            <LocalizedProperty>
+                              <Localization reference="+Localizations.Value" />
+                              <PropertyName value="Caption" />
+                            </LocalizedProperty>
+                          </LocalizedProperties>
+                        </PropertyLocalizationData>
+                      </PropertyLocalizationData.PropertyLocalizations>
+                    </Attribute>
+                  </Children>
+                </Collection>
+              </Children>
+            </Complex>
+            <Complex>
+              <Name value="Environment" />
+              <Caption value="Environment" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.Environment" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
+              <Children>
+                <Attribute>
+                  <Name value="ProjectDisplayName" />
+                  <Caption value="Project display name" />
+                  <DeclaredType>
+                    <AttributeType />
+                  </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.ProjectDisplayName" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
+                </Attribute>
+                <Attribute>
+                  <Name value="ProjectName" />
+                  <Caption value="Project name" />
+                  <DeclaredType>
+                    <AttributeType />
+                  </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.ProjectName" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
+                </Attribute>
+              </Children>
+            </Complex>
+          </Children>
+        </Complex>
+        <Collection>
+          <Name value="organisations" />
+          <Caption value="Organisations" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.Organisations" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
+          <Children>
+            <Attribute>
+              <Name value="code" />
+              <Caption value="Code" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.Code" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
+            </Attribute>
+            <Attribute>
+              <Name value="description" />
+              <Caption value="Description" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.Description" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
+            </Attribute>
+            <Collection>
+              <Name value="applRole" />
+              <Caption value="Appl role" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.ApplRole" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
+              <Children>
+                <Attribute>
+                  <Name value="applRoleCode" />
+                  <Caption value="Appl role code" />
+                  <DeclaredType>
+                    <AttributeType />
+                  </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.ApplRoleCode" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
+                </Attribute>
+              </Children>
+            </Collection>
+          </Children>
+        </Collection>
+        <Reference>
+          <Name value="organisation" />
+          <Caption value="Organisation" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.Organisation" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
+          <Children>
+            <Include>
+              <Include reference="/(model.13c525570c9b4339a1f151f546c52d45)+DataEntities.CustomsOffices" />
+            </Include>
+            <Collection>
+              <Name value="applRole" />
+              <Caption value="Appl role" />
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.ApplRole" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
+              <Children>
+                <Attribute>
+                  <Name value="applRoleCode" />
+                  <Caption value="Appl role code" />
+                  <DeclaredType>
+                    <AttributeType />
+                  </DeclaredType>
+                  <PropertyLocalizationData.PropertyLocalizations>
+                    <PropertyLocalizationData>
+                      <LocalizedProperties>
+                        <LocalizedProperty>
+                          <Localization reference="+Localizations.ApplRoleCode" />
+                          <PropertyName value="Caption" />
+                        </LocalizedProperty>
+                      </LocalizedProperties>
+                    </PropertyLocalizationData>
+                  </PropertyLocalizationData.PropertyLocalizations>
+                </Attribute>
+              </Children>
+            </Collection>
+          </Children>
+        </Reference>
+        <Complex>
+          <Name value="loginRequestAMS" />
+          <Caption value="Login request AMS" />
+          <PropertyLocalizationData.PropertyLocalizations>
+            <PropertyLocalizationData>
+              <LocalizedProperties>
+                <LocalizedProperty>
+                  <Localization reference="+Localizations.LoginRequestAMS" />
+                  <PropertyName value="Caption" />
+                </LocalizedProperty>
+              </LocalizedProperties>
+            </PropertyLocalizationData>
+          </PropertyLocalizationData.PropertyLocalizations>
+          <Children>
+            <Attribute>
+              <Name value="userName" />
+              <Caption value="User name" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.UserName" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
+            </Attribute>
+            <Attribute>
+              <Name value="password" />
+              <Caption value="Password" />
+              <DeclaredType>
+                <AttributeType />
+              </DeclaredType>
+              <PropertyLocalizationData.PropertyLocalizations>
+                <PropertyLocalizationData>
+                  <LocalizedProperties>
+                    <LocalizedProperty>
+                      <Localization reference="+Localizations.Password" />
+                      <PropertyName value="Caption" />
+                    </LocalizedProperty>
+                  </LocalizedProperties>
+                </PropertyLocalizationData>
+              </PropertyLocalizationData.PropertyLocalizations>
+            </Attribute>
+          </Children>
+        </Complex>
+      </Children>
+    </DataContext>
+  </DataContext>
+  <OnCreate>
+    <ActionEvent ReferencedAction="~init" />
+  </OnCreate>
+  <Actions>
+    <ActionBlock>
+      <Name value="init" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[// Login - Inicializace
+var url = packages.main.apiobjects.urlRouter.findFormUrl(navigation.main.Login.fullName)
+url.updatePageUrl()
+
+var msg = form.model.msg
+var dt = getDate()
+
+// Codelisty
+// pokud Codelist používá sl. '_description', ve zprávě musí příslušná reference obsahovat atribut '_description'
+
+form.serverErrors = defaultString()
+
+if globals.needRelogin = true then
+	form.organisation.clear()
+endif
+
+
+
+var response = packages.main.apiobjects.CIC.postAsync("login", form.loginRequestAMS.toJson())
+//system.console("autentikace")
+var a = " "
+if response.isError()
+then
+	form.serverErrors = response.getJsonString()
+else
+	form.loginResponse.fromJson(response.getJsonString())
+	
+	//packages.main.actions.setServerConnectionXToken(response.getHeader("x-authtoken"))
+    
+	system.console(form.loginResponse.toJson())
+	
+	//naplnit strukturu oragizations .. a pak číselník
+	var roleExists = false
+	foreach orgItem in form.loginResponse.UserIdentity.Organization do
+		var newOrganization = form.organisations.addItem()
+		newOrganization.code = orgItem.Value
+		foreach roleItem in form.loginResponse.UserIdentity.UserRole do
+			if roleItem.Organization.exists(current.Value = orgItem.Value) then 
+				var newRole = newOrganization.applRole.addItem()
+				newRole.applRoleCode = roleItem.Name
+			endif
+		endfor	
+	endfor
+			
+	//system.console(form.organisations.toJson())
+
+	packages.main.apiobjects.Organisations.fillFromJson(form.organisations.toJson())
+	
+    globals.userData.userName = form.loginResponse.UserIdentity.UserName
+
+endif]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+  </Actions>
+  <Bindings>
+    <Binding SourceProperty="Caption" Expression="localized.Login" />
+  </Bindings>
+</Form>

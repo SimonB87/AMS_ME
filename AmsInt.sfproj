@@ -10,11 +10,11 @@
   </MainForm>
   <MTS.ImportOptions>
     <MtsImportOptions>
-      <DomainCode value="AMS" />
-      <LastFileName value="C:\Users\simon.buryan\Documents\Screen factory\metasystem_messages\AMSMEInt_2.xml" />
-      <ProjectCode value="AMSMEInt" />
+      <DomainCode value="ScreenFactory" />
+      <LastFileName value="C:\Users\simon.buryan\Documents\Screen factory\metasystem_messages\AMS_ME_SF_b.xml" />
+      <ProjectCode value="AMS_ME_SF" />
       <ProjectVersion value="1.0.0" />
-      <Revision value="100" />
+      <Revision value="26" />
     </MtsImportOptions>
   </MTS.ImportOptions>
   <Options>
@@ -42,10 +42,6 @@
     </PackageReference>
     <PackageReference Alias="main" Origin="main\main.package">
       <ReferencedIdentity value="main.54b271120be14de18033000f6ed59f52" />
-      <ReferencedVersion value="0.0.0" />
-    </PackageReference>
-    <PackageReference Alias="cseForms" Origin="cseForms\cseForms.package">
-      <ReferencedIdentity value="cseForms.b5b300393a7b425eaf69acead7edfe1a" />
       <ReferencedVersion value="0.0.0" />
     </PackageReference>
     <PackageReference Alias="busyIndicator" IsComponentLib="True" Origin="sffw\BusyIndicator\BusyIndicator.package">
@@ -90,7 +86,7 @@
     </PackageReference>
     <PackageReference Alias="UrlRouter" IsComponentLib="True" Origin="sffw\UrlRouter\UrlRouter.package">
       <ReferencedIdentity value="UrlRouter.69a71809c45249cbb2999d13bb9100c0" />
-      <ReferencedVersion value="3.0.3" />
+      <ReferencedVersion value="4.0.0" />
     </PackageReference>
     <PackageReference Alias="collapsibleGroupBox" IsComponentLib="True" Origin="sffw\CollapsibleGroupbox\CollapsibleGroupBox.package">
       <ReferencedIdentity value="collapsibleGroupBox.cfca4faa9e574885bad67cbe322167a7" />

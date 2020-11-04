@@ -137,6 +137,32 @@
             </PropertyLocalizationData>
           </PropertyLocalizationData.PropertyLocalizations>
         </AttributeEnumValue>
+        <AttributeEnumValue>
+          <Name value="RejectModify" />
+          <Caption value="Modify Rejection" />
+          <Description value="Modify Rejection" />
+          <Value value="Modify Reject" />
+        </AttributeEnumValue>
+        <AttributeEnumValue>
+          <Name value="CreateModify" />
+          <Caption value="Modify Create" />
+          <Value value="Modify Create" />
+        </AttributeEnumValue>
+        <AttributeEnumValue>
+          <Name value="AuthorizeModify" />
+          <Caption value="Modify Authorize" />
+          <Value value="Modify Authorize" />
+        </AttributeEnumValue>
+        <AttributeEnumValue>
+          <Name value="CancelModify" />
+          <Caption value="Modify Cancel" />
+          <Value value="Modify Cancel" />
+        </AttributeEnumValue>
+        <AttributeEnumValue>
+          <Name value="WithdrawModify" />
+          <Caption value="Modify Withdraw" />
+          <Value value="Modify Withdraw" />
+        </AttributeEnumValue>
       </EnumValues>
     </AttributeType>
   </TypeSpec>

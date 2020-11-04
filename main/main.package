@@ -14,8 +14,20 @@
         <ResourceItem ResourceName="main.css" LinkerAction="Css" OutputFileName="main.css" Src="CSS\main.css" />
       </Items>
     </PackageFolder>
+    <PackageFolder Name="Forms">
+      <Items>
+        <PackageItem Src="Forms\Login.form" />
+        <PackageItem Src="Forms\EC_EditForm.form" />
+        <PackageItem Src="Forms\PL_EditForm.form" />
+        <PackageItem Src="Forms\PWEI_EditForm.form" />
+        <PackageItem Src="Forms\SP_EditForm.form" />
+        <PackageItem Src="Forms\MainForm.form" />
+      </Items>
+    </PackageFolder>
     <PackageItem Src="globalApiObjects.globalApiObjects" />
     <PackageItem Src="globalActions.globalActions" />
+    <PackageItem Src="globalVariables.globalVariables" />
     <PackageItem Src="localizations.packageLocalizations" />
+    <PackageItem Src="mode.metaType" />
   </Items>
 </Package>
