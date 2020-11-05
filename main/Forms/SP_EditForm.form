@@ -10030,10 +10030,6 @@ endif]]></Script>
       <ActionLangBody IsValid="True">
         <Script><![CDATA[globals.isLoading = true
 
-/* JUST FOR TESTING PURPOSES */
-form.model.AMS.Event.Authorization.ResponsiblePersonWantsToBeNotified = true
-/* DONT FORGET TO REMOVE AFTER I GET HOW TO SOLVE THIS */
-
 form.actions.sortGoodsItemBeforeSending()
 
 if(form.model.validationErrorsCount() = 0) then
@@ -10407,13 +10403,18 @@ endIf]]></Script>
 var loadedState = form.model.AMS.State.Key
 
 var declarationIsValiInFuture = form.actions.checkIfButtonWillBeDisplayedOnlyInFuture(form.model.AMS.LastEventValidityStartDate)
-form.buttonsVisibility.isCancelFutureVisible = not declarationIsValiInFuture
+
+if form.mode = enums.mode.Detail then
+	form.buttonsVisibility.isCancelFutureVisible = not declarationIsValiInFuture
+endIf
 
 if form.mode = enums.mode.Detail then
 	/* Application Accepted */
 	//if loadedState = "Application Accepted" then //
 	if isTrue(loadedState = "APA") then
-		form.buttonsVisibility.isModifyVisible = declarationIsValiInFuture
+		if form.mode = enums.mode.Detail then
+			form.buttonsVisibility.isModifyVisible = declarationIsValiInFuture
+		endIf
 		form.buttonsVisibility.isAuthorizeVisible = declarationIsValiInFuture
 		form.uiState.dynamicCaption.authorizeButtonCaption="Authorize"
 		form.buttonsVisibility.isRejectVisible = declarationIsValiInFuture
@@ -10423,7 +10424,9 @@ if form.mode = enums.mode.Detail then
 	
 	/* Authorization Rejected OR Future Authorization Rejected */
 	if (isTrue(loadedState = "AUR") OR isTrue(loadedState = "FUR")) then
-		form.buttonsVisibility.isModifyVisible = declarationIsValiInFuture
+		if form.mode = enums.mode.Detail then
+			form.buttonsVisibility.isModifyVisible = declarationIsValiInFuture
+		endIf
 		form.buttonsVisibility.isAuthorizeVisible = false
 		form.buttonsVisibility.isRejectVisible = false
 		form.buttonsVisibility.isWithdrawVisible = false
@@ -10432,7 +10435,9 @@ if form.mode = enums.mode.Detail then
 	
 	/* Authorization Granted */
 	if (isTrue(loadedState = "AUA") OR isTrue(loadedState = "FUA")) then
-		form.buttonsVisibility.isModifyVisible = declarationIsValiInFuture
+		if form.mode = enums.mode.Detail then
+			form.buttonsVisibility.isModifyVisible = declarationIsValiInFuture
+		endIf
 		form.buttonsVisibility.isAuthorizeVisible = false
 		form.buttonsVisibility.isRejectVisible = false
 		form.buttonsVisibility.isWithdrawVisible = declarationIsValiInFuture
@@ -10441,7 +10446,9 @@ if form.mode = enums.mode.Detail then
 	
 	/* Authorization Withdrawn */
 	if (isTrue(loadedState = "AUW") OR isTrue(loadedState = "FUW")) then
-		form.buttonsVisibility.isModifyVisible = declarationIsValiInFuture
+		if form.mode = enums.mode.Detail then
+			form.buttonsVisibility.isModifyVisible = declarationIsValiInFuture
+		endIf
 		form.buttonsVisibility.isAuthorizeVisible = declarationIsValiInFuture
 		form.uiState.dynamicCaption.authorizeButtonCaption="Authorize"
 		form.buttonsVisibility.isRejectVisible = false
@@ -10451,7 +10458,9 @@ if form.mode = enums.mode.Detail then
 	
 	/* Authorization Cancelled */
 	if isTrue(loadedState = "AUC") then
-		form.buttonsVisibility.isModifyVisible = false
+		if form.mode = enums.mode.Detail then
+			form.buttonsVisibility.isModifyVisible = declarationIsValiInFuture
+		endIf
 		form.buttonsVisibility.isAuthorizeVisible = declarationIsValiInFuture
 		form.uiState.dynamicCaption.authorizeButtonCaption="Authorize"
 		form.buttonsVisibility.isRejectVisible = false
@@ -10461,7 +10470,9 @@ if form.mode = enums.mode.Detail then
 	
 	/* Authorization Expired */
 	if loadedState = "AUE" then
-		form.buttonsVisibility.isModifyVisible = false
+		if form.mode = enums.mode.Detail then
+			form.buttonsVisibility.isModifyVisible = declarationIsValiInFuture
+		endIf
 		form.buttonsVisibility.isAuthorizeVisible = declarationIsValiInFuture
 		form.uiState.dynamicCaption.authorizeButtonCaption="Re-Approval"
 		form.buttonsVisibility.isRejectVisible = false
