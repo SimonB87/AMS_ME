@@ -535,6 +535,18 @@ div#formPlaceholder > * {
     opacity: 100%;
   }
 }
+.smx-header {
+  position: fixed;
+  top: 0;
+  width: calc(100% - 263px) !important;
+  z-index: 999;
+}
+.smx-header-smaller {
+  padding-top: 50px !important;
+}
+.smx-body {
+  padding-top: 100px !important;
+}
 .develop {
   bottom: 20px;
   right: 20px;
@@ -2578,9 +2590,9 @@ span.flatpickr-weekday {
 }
 .smx-nav-bar {
   padding-left: 6px !important;
+  padding-right: 15px !important;
   height: 50px;
   display: block;
-  width: 99% !important;
   margin-left: 6px;
 }
 .smx-nav-bar div {
@@ -3110,13 +3122,13 @@ sffw-notification-panel-status-icon .notification-trigger .notification-num {
 }
 .declist-icon {
   position: absolute;
-  left: 281px;
+  left: 18px;
   top: 70px;
 }
 .nodeclist-icon {
   width: auto !important;
   position: absolute;
-  left: 242px;
+  left: -28px;
   top: 6px;
 }
 .notification-panel-header {
@@ -3463,7 +3475,7 @@ html .sffw-navigation-tree-node-indent-3.sffw-navigation-tree-node-selected {
   color: #c0392b;
 }
 .tab.tab-selected {
-  transform: translate3d(0, 2px, 0) !important;
+  transform: translate3d(0, 3px, 0) !important;
 }
 .tab.tab-selected a {
   background: #fff;
@@ -3818,6 +3830,7 @@ html .sffw-navigation-tree-node-indent-3.sffw-navigation-tree-node-selected {
     padding: 18px 0;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+    line-height: 16px;
   }
   .tabs .tab a::after {
     content: "";
@@ -3829,9 +3842,11 @@ html .sffw-navigation-tree-node-indent-3.sffw-navigation-tree-node-selected {
     height: 0;
     transition-property: height;
     transition-duration: 200ms;
+    border-top-right-radius: 0.35rem;
+    border-top-left-radius: 0.35rem;
   }
   .tabs .tab a:hover {
-    padding-top: 15px;
+    padding-top: 18px;
   }
   .tabs .tab a:hover::after {
     height: 6px;

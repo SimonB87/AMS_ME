@@ -1256,116 +1256,133 @@
           <Panel.Width value="*" />
           <Children>
             <Panel>
-              <Name value="panel_tabs" />
-              <Orientation value="Horizontal" />
+              <Name value="panel_header" />
+              <Orientation value="Vertical" />
               <Panel.Height value="#" />
               <Panel.Width value="*" />
               <Children>
                 <Panel>
-                  <Name value="Tab0X_Blank" />
+                  <Name value="panel_tabs" />
                   <Orientation value="Horizontal" />
                   <Panel.Height value="#" />
-                  <Panel.Width value="5%" />
+                  <Panel.Width value="*" />
+                  <Children>
+                    <Panel>
+                      <Name value="Tab0X_Blank" />
+                      <Orientation value="Horizontal" />
+                      <Panel.Height value="#" />
+                      <Panel.Width value="5%" />
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-panel" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </Panel>
+                    <HyperLink>
+                      <Name value="Tab01_Transit" />
+                      <Panel.Height value="#" />
+                      <Panel.Width value="30%" />
+                      <Target value="_self" />
+                      <OnClick>
+                        <ActionEvent ReferencedAction="~handler_Tab01_Transit_OnClick" />
+                      </OnClick>
+                      <Bindings>
+                        <Binding SourceProperty="Data" Expression="localized.Transit" />
+                      </Bindings>
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-hyperlink" />
+                          <Condition value="False" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                        <CssClassConditional>
+                          <ClassName value="tab" />
+                        </CssClassConditional>
+                        <CssClassConditional>
+                          <ClassName value="tab-selected" />
+                          <Bindings>
+                            <Binding SourceProperty="Condition" Expression="globals.globalUIState.isTransitActive" />
+                          </Bindings>
+                        </CssClassConditional>
+                      </CssClass>
+                    </HyperLink>
+                    <HyperLink>
+                      <Name value="Tab02_Places" />
+                      <Panel.Height value="#" />
+                      <Panel.Width value="30%" />
+                      <Target value="_self" />
+                      <OnClick>
+                        <ActionEvent ReferencedAction="~handler_Tab02_Places_OnClick" />
+                      </OnClick>
+                      <Bindings>
+                        <Binding SourceProperty="Data" Expression="localized.Places" />
+                      </Bindings>
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-hyperlink" />
+                          <Condition value="False" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                        <CssClassConditional>
+                          <ClassName value="tab" />
+                        </CssClassConditional>
+                        <CssClassConditional>
+                          <ClassName value="tab-selected" />
+                          <Bindings>
+                            <Binding SourceProperty="Condition" Expression="globals.globalUIState.isPlacesActive" />
+                          </Bindings>
+                        </CssClassConditional>
+                      </CssClass>
+                    </HyperLink>
+                    <HyperLink>
+                      <Name value="Tab03_Communication" />
+                      <Panel.Height value="#" />
+                      <Panel.Width value="30%" />
+                      <Target value="_self" />
+                      <OnClick>
+                        <ActionEvent ReferencedAction="~handler_Tab03_Communication_OnClick" />
+                      </OnClick>
+                      <Bindings>
+                        <Binding SourceProperty="Data" Expression="localized.Communication" />
+                      </Bindings>
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-hyperlink" />
+                          <Condition value="False" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                        <CssClassConditional>
+                          <ClassName value="tab" />
+                        </CssClassConditional>
+                        <CssClassConditional>
+                          <ClassName value="tab-selected" />
+                          <Bindings>
+                            <Binding SourceProperty="Condition" Expression="globals.globalUIState.isCommunicationActive" />
+                          </Bindings>
+                        </CssClassConditional>
+                      </CssClass>
+                    </HyperLink>
+                    <Panel>
+                      <Name value="Tab0Y_Blank" />
+                      <Orientation value="Horizontal" />
+                      <Panel.Height value="#" />
+                      <Panel.Width value="5%" />
+                      <CssClass>
+                        <CssClassConditional>
+                          <ClassName value="{theme}-panel" />
+                          <IsThemedStyle value="True" />
+                        </CssClassConditional>
+                      </CssClass>
+                    </Panel>
+                  </Children>
                   <CssClass>
                     <CssClassConditional>
                       <ClassName value="{theme}-panel" />
                       <IsThemedStyle value="True" />
                     </CssClassConditional>
-                  </CssClass>
-                </Panel>
-                <HyperLink>
-                  <Name value="Tab01_Transit" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="30%" />
-                  <Target value="_self" />
-                  <OnClick>
-                    <ActionEvent ReferencedAction="~handler_Tab01_Transit_OnClick" />
-                  </OnClick>
-                  <Bindings>
-                    <Binding SourceProperty="Data" Expression="localized.Transit" />
-                  </Bindings>
-                  <CssClass>
                     <CssClassConditional>
-                      <ClassName value="{theme}-hyperlink" />
-                      <Condition value="False" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                    <CssClassConditional>
-                      <ClassName value="tab" />
-                    </CssClassConditional>
-                    <CssClassConditional>
-                      <ClassName value="tab-selected" />
-                      <Bindings>
-                        <Binding SourceProperty="Condition" Expression="globals.globalUIState.isTransitActive" />
-                      </Bindings>
-                    </CssClassConditional>
-                  </CssClass>
-                </HyperLink>
-                <HyperLink>
-                  <Name value="Tab02_Places" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="30%" />
-                  <Target value="_self" />
-                  <OnClick>
-                    <ActionEvent ReferencedAction="~handler_Tab02_Places_OnClick" />
-                  </OnClick>
-                  <Bindings>
-                    <Binding SourceProperty="Data" Expression="localized.Places" />
-                  </Bindings>
-                  <CssClass>
-                    <CssClassConditional>
-                      <ClassName value="{theme}-hyperlink" />
-                      <Condition value="False" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                    <CssClassConditional>
-                      <ClassName value="tab" />
-                    </CssClassConditional>
-                    <CssClassConditional>
-                      <ClassName value="tab-selected" />
-                      <Bindings>
-                        <Binding SourceProperty="Condition" Expression="globals.globalUIState.isPlacesActive" />
-                      </Bindings>
-                    </CssClassConditional>
-                  </CssClass>
-                </HyperLink>
-                <HyperLink>
-                  <Name value="Tab03_Communication" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="30%" />
-                  <Target value="_self" />
-                  <OnClick>
-                    <ActionEvent ReferencedAction="~handler_Tab03_Communication_OnClick" />
-                  </OnClick>
-                  <Bindings>
-                    <Binding SourceProperty="Data" Expression="localized.Communication" />
-                  </Bindings>
-                  <CssClass>
-                    <CssClassConditional>
-                      <ClassName value="{theme}-hyperlink" />
-                      <Condition value="False" />
-                      <IsThemedStyle value="True" />
-                    </CssClassConditional>
-                    <CssClassConditional>
-                      <ClassName value="tab" />
-                    </CssClassConditional>
-                    <CssClassConditional>
-                      <ClassName value="tab-selected" />
-                      <Bindings>
-                        <Binding SourceProperty="Condition" Expression="globals.globalUIState.isCommunicationActive" />
-                      </Bindings>
-                    </CssClassConditional>
-                  </CssClass>
-                </HyperLink>
-                <Panel>
-                  <Name value="Tab0Y_Blank" />
-                  <Orientation value="Horizontal" />
-                  <Panel.Height value="#" />
-                  <Panel.Width value="5%" />
-                  <CssClass>
-                    <CssClassConditional>
-                      <ClassName value="{theme}-panel" />
-                      <IsThemedStyle value="True" />
+                      <ClassName value="tabs" />
                     </CssClassConditional>
                   </CssClass>
                 </Panel>
@@ -1376,7 +1393,8 @@
                   <IsThemedStyle value="True" />
                 </CssClassConditional>
                 <CssClassConditional>
-                  <ClassName value="tabs" />
+                  <ClassName value="{theme}-header" />
+                  <IsThemedStyle value="True" />
                 </CssClassConditional>
               </CssClass>
             </Panel>
@@ -1789,6 +1807,10 @@
           <CssClass>
             <CssClassConditional>
               <ClassName value="{theme}-panel" />
+              <IsThemedStyle value="True" />
+            </CssClassConditional>
+            <CssClassConditional>
+              <ClassName value="{theme}-body" />
               <IsThemedStyle value="True" />
             </CssClassConditional>
           </CssClass>
