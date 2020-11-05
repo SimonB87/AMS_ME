@@ -3248,11 +3248,6 @@
         <LocaleValue Lang="en" Value="EN" />
       </Values>
     </LocalizedString>
-    <LocalizedString LocID="Withdraw1">
-      <Values>
-        <LocaleValue Lang="en" Value="Withdraw 1" />
-      </Values>
-    </LocalizedString>
     <LocalizedString LocID="CancelFutureChange">
       <Values>
         <LocaleValue Lang="en" Value="Cancel future change" />
@@ -3868,6 +3863,16 @@
     <LocalizedString LocID="validationRequiredEmailForAuthorisation">
       <Values>
         <LocaleValue Lang="en" Value="In case of Authorisation or Authorisation modification, if you state that responsible person want to be notified,  then email is required" />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="CancelAuthorisation">
+      <Values>
+        <LocaleValue Lang="en" Value="Cancel Authorisation" />
+      </Values>
+    </LocalizedString>
+    <LocalizedString LocID="WithdrawAuthorisation">
+      <Values>
+        <LocaleValue Lang="en" Value="Withdraw Authorisation" />
       </Values>
     </LocalizedString>
   </Strings>

@@ -854,7 +854,6 @@
                 <Attribute>
                   <Name value="ResponsiblePersonWantsToBeNotified" />
                   <Caption value="Zodpovědná osoba chce být notifikována o změnách v CŘ" />
-                  <IsRequired value="True" />
                   <MtsImportOptions.MTS.ID value="/SPData/AMS/Event/Authorization/ResponsiblePersonWantsToBeNotified" />
                   <MtsImportOptions.MTS.Type value="element" />
                   <DeclaredType>

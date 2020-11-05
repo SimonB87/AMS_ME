@@ -332,7 +332,7 @@
               </OnClick>
               <Bindings>
                 <Binding SourceProperty="IsVisible" Expression="menusVisibilty.isAuthorizationWithdrawalMenuVisible" />
-                <Binding SourceProperty="Data" Expression="localized.Withdrawal" />
+                <Binding SourceProperty="Data" Expression="form.modelState.customLables.labelWithdrawOrCancel" />
               </Bindings>
               <CssClass>
                 <CssClassConditional>
@@ -1299,7 +1299,7 @@
                                           <Bindings>
                                             <Binding SourceProperty="Data" Expression="model.AMS.Event.Authorization.ResponsiblePersonWantsToBeNotified" />
                                             <Binding SourceProperty="Caption" Expression="model.AMS.Event.Authorization.ResponsiblePersonWantsToBeNotified.caption()" />
-                                            <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.modelState.customRequirements.isModeAuthorizationOrModify" />
+                                            <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.modelState.customRequirements.isModeAuthorizationOrAuthorizeModify" />
                                           </Bindings>
                                           <CssClass>
                                             <CssClassConditional>
@@ -1796,7 +1796,7 @@
                                               <ReferenceList reference="+GlobalApiObjects.RepresentativeStatusCode" />
                                               <Bindings>
                                                 <Binding SourceProperty="Data" Expression="TypeOfRepresentation" />
-                                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.modelState.customRequirements.isModeAuthorizationOrModify" />
+                                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.modelState.customRequirements.isModeAuthorizationOrAuthorizeModify" />
                                                 <Binding SourceProperty="Caption" Expression="TypeOfRepresentation.caption()" />
                                               </Bindings>
                                               <CssClass>
@@ -2494,7 +2494,7 @@
                                               <Panel.Width value="50%" />
                                               <Bindings>
                                                 <Binding SourceProperty="Caption" Expression="localized.CustomsOfficeReferenceNumber" />
-                                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.modelState.customRequirements.isModeAuthorizationOrModify" />
+                                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.modelState.customRequirements.isModeAuthorizationOrAuthorizeModify" />
                                                 <Binding SourceProperty="Data" Expression="CustomsOfficeReferenceNumber" />
                                               </Bindings>
                                               <CssClass>
@@ -2847,7 +2847,7 @@
                                               <Bindings>
                                                 <Binding SourceProperty="Data" Expression="TypeOfPeriod" />
                                                 <Binding SourceProperty="Caption" Expression="TypeOfPeriod.caption()" />
-                                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.modelState.customRequirements.isModeAuthorizationOrModify" />
+                                                <Binding SourceProperty="IsRequiredMarkVisible" Expression="form.modelState.customRequirements.isModeAuthorizationOrAuthorizeModify" />
                                               </Bindings>
                                               <CssClass>
                                                 <CssClassConditional>
@@ -7235,19 +7235,39 @@
                   <Name value="isModeAuthorizationAndPersonsWantTobeNotified" />
                   <Caption value="Is mode authorization and persons want tobe notified" />
                   <Expression IsValid="True">
-                    <ExpressionText><![CDATA[(form.modelState.customRequirements.isModeAuthorizationOrModify and (form.model.AMS.Event.Authorization.ResponsiblePersonWantsToBeNotified)) ? true : false]]></ExpressionText>
+                    <ExpressionText><![CDATA[(form.modelState.customRequirements.isModeAuthorization and 
+form.modelState.customRequirements.isModeAuthorizationOrAuthorizeModify and 
+form.model.AMS.Event.Authorization.ResponsiblePersonWantsToBeNotified) ? true : false]]></ExpressionText>
                     <ResultType>
                       <BaseType value="Bool" />
                     </ResultType>
                   </Expression>
                 </Computed>
                 <Computed>
-                  <Name value="isModeAuthorizationOrModify" />
-                  <Caption value="Is mode authorization or modify" />
+                  <Name value="isModeAuthorizationOrAuthorizeModify" />
+                  <Caption value="Is mode authorization or authorize modify" />
                   <Expression IsValid="True">
-                    <ExpressionText><![CDATA[((form.mode = enums.mode.Authorize) or (form.mode = enums.mode.Modify)) ? true : false]]></ExpressionText>
+                    <ExpressionText><![CDATA[((form.mode = enums.mode.Authorize) or (form.mode = enums.mode.AuthorizeModify)) ? true : false]]></ExpressionText>
                     <ResultType>
                       <BaseType value="Bool" />
+                    </ResultType>
+                  </Expression>
+                </Computed>
+              </Children>
+            </Complex>
+            <Complex>
+              <Name value="customLables" />
+              <Caption value="Custom lables" />
+              <Children>
+                <Computed>
+                  <Name value="labelWithdrawOrCancel" />
+                  <Caption value="Label withdraw or cancel" />
+                  <Expression IsValid="True">
+                    <ExpressionText><![CDATA[form.mode in [enums.mode.Cancel, enums.mode.CancelModify ] ? localized.CancelAuthorisation :
+	form.mode in [enums.mode.Withdraw , enums.mode.WithdrawModify ] ? localized.WithdrawAuthorisation : 
+		localized.WithdrawAuthorisation]]></ExpressionText>
+                    <ResultType>
+                      <BaseType value="String" />
                     </ResultType>
                   </Expression>
                 </Computed>
@@ -9293,9 +9313,7 @@
               </ErrorMessage>
               <IsValid IsValid="True">
                 <ExpressionText><![CDATA[(form.mode in [enums.mode.Authorize, enums.mode.AuthorizeModify] ) ? 
-	(this.ResponsiblePersonWantsToBeNotified.hasValue() ? 
-		true : 
-		false) : 
+	(this.ResponsiblePersonWantsToBeNotified.hasValue() ? true : false) : 
 	true]]></ExpressionText>
                 <ResultType>
                   <BaseType value="Bool" />
@@ -9338,7 +9356,7 @@
                 </ResultType>
               </ErrorMessage>
               <IsValid IsValid="True">
-                <ExpressionText><![CDATA[( (form.mode in [enums.mode.Authorize, enums.mode.AuthorizeModify]) and (this.ResponsiblePersonEMail.hasValue() = false) ) ? false : true]]></ExpressionText>
+                <ExpressionText><![CDATA[( (form.mode in [enums.mode.Authorize, enums.mode.AuthorizeModify]) and (this.ResponsiblePersonWantsToBeNotified = true) ) ? false : true]]></ExpressionText>
                 <ResultType>
                   <BaseType value="Bool" />
                 </ResultType>
@@ -9454,25 +9472,7 @@ if (form.mode in [enums.mode.Authorize, enums.mode.AuthorizeModify]) then
 		
 endif
 
-if (form.mode in [enums.mode.Authorize, enums.mode.AuthorizeModify]) then
-
-	if (form.model.AMS.Event.Authorization.ResponsiblePersonWantsToBeNotified.hasValue() = false) then
-		form.model.AMS.Event.Authorization.ResponsiblePersonWantsToBeNotified = false
-	endIf
-	if (form.model.AMS.Event.GoodsList.GoodsListType.hasValue() = false ) then
-		form.model.AMS.Event.GoodsList.GoodsListType = false
-	endIf
-	if (form.model.AMS.Event.Period.count() = 0) then
-		form.model.AMS.Event.Period.addItem()
-	endIf
-	if (form.model.AMS.Event.Representation.count() = 0) then
-		form.model.AMS.Event.Representation.addItem()
-	endIf
-	if (form.model.AMS.Event.CustomsOffices.CustomsOfficeOfRelease.count() = 0 ) then
-		form.model.AMS.Event.CustomsOffices.CustomsOfficeOfRelease.addItem()
-	endIf
-	
-endIf
+form.actions.forAuthorisationAndAuthorisationModifyAddFirstItemToEmptyCollections()
 
 if (form.mode in [enums.mode.Reject, enums.mode.RejectModify ]) then
 	form.model.AMS.Event.ValidityStartDate = addHours(form._actualDateTime,1)
@@ -9699,27 +9699,15 @@ if (isTrue(state in ["AUA", "FUA"] )) then
 	endif
 
 	if form.mode in [enums.mode.Cancel, enums.mode.CancelModify ] then
-		form.menusVisibilty.isAuthorizationMenuVisible = true
 		form.menusVisibilty.isAuthorizationWithdrawalMenuVisible = true
 	endif
 
 endif
 
 if 	isTrue(state="AUC") then
-
-	if (form.model.AMS.AuthorizationType.Code <> "SSE") then	//Originally PP
-		form.menusVisibilty.isGoodsMenuVisible = true
-		form.menusVisibilty.isAuthorizationMenuVisible = true
-	else
-		form.menusVisibilty.isSealsMenuVisible = true
-	endif
-
-	if (form.model.AMS.AuthorizationType.Code in ["ACR", "NCR"]) then //Originally ZO and NO
-		form.menusVisibilty.isSpecialAXMenuVisible = true
-		form.menusVisibilty.isSealsMenuVisible = true
-	endif
-	
-	form.menusVisibilty.isCustomsOfficesMenuVisible = true
+	if ( form.mode in [enums.mode.Cancel, enums.mode.CancelModify ]) then
+		form.menusVisibilty.isAuthorizationWithdrawalMenuVisible = true
+	endIf
 endif
 
 if (isTrue(state in ["AUW", "FUW"] )) then
@@ -9897,10 +9885,6 @@ endif
 
 if ((form.mode = enums.mode.Authorize ) and (form.model.AMS.State.Key = "AUC")) then
 	form.panelsVisibility.isRespPersonVisible = true
-endIf
-
-if ( form.mode in [enums.mode.Cancel, enums.mode.CancelModify ]) then
-	form.menusVisibilty.isAuthorizationWithdrawalMenuVisible = true
 endIf]]></Script>
       </ActionLangBody>
       <DataContext>
@@ -10700,6 +10684,36 @@ endIf]]></Script>
 
 if userDecision then
 	navigation.main.SP_EditForm.go(packages.main.enums.mode.Create, defaultString())
+endIf]]></Script>
+      </ActionLangBody>
+      <DataContext>
+        <ActionDataContext />
+      </DataContext>
+    </ActionBlock>
+    <ActionBlock>
+      <Name value="forAuthorisationAndAuthorisationModifyAddFirstItemToEmptyCollections" />
+      <ActionLangBody IsValid="True">
+        <Script><![CDATA[if (form.mode in [enums.mode.Authorize, enums.mode.AuthorizeModify]) then
+
+	if (form.model.AMS.Event.Authorization.ResponsiblePersonWantsToBeNotified.hasValue() = false) then
+		form.model.AMS.Event.Authorization.ResponsiblePersonWantsToBeNotified = false
+	endIf
+	if (form.model.AMS.Event.GoodsList.GoodsListType.hasValue() = false ) then
+		form.model.AMS.Event.GoodsList.GoodsListType = false
+	endIf
+	if (form.model.AMS.Event.Period.count() = 0) then
+		form.model.AMS.Event.Period.addItem()
+	endIf
+	if (form.model.AMS.Event.Representation.count() = 0) then
+		form.model.AMS.Event.Representation.addItem()
+	endIf
+	if (form.model.AMS.Event.CustomsOffices.CustomsOfficeOfRelease.count() = 0 ) then
+		form.model.AMS.Event.CustomsOffices.CustomsOfficeOfRelease.addItem()
+	endIf
+	if (form.model.AMS.AuthorizationType.Code in ["ACR","NCR"] ) then
+		form.model.AMS.Event.Guarantee.addItem()
+	endIf
+	
 endIf]]></Script>
       </ActionLangBody>
       <DataContext>
